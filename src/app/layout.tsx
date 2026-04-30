@@ -13,12 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="theme-claude">
-      <body className="min-h-screen font-sans antialiased">
+    <html lang="en" className="dark">
+      <body className="min-h-screen bg-slate-950 font-sans">
         <div className="flex min-h-screen">
           <Sidebar />
-          <main className="flex-1 px-6 py-8 md:px-10 lg:px-12 overflow-y-auto">
-            <div className="max-w-5xl mx-auto fade-up">
+          <main className="flex-1 p-4 lg:p-8 overflow-y-auto">
+            <div className="max-w-4xl mx-auto">
               {children}
             </div>
           </main>
