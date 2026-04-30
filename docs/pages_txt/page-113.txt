@@ -1,0 +1,43 @@
+94 Chapter 3 Image Quality
+(a) Find the FWHM.
+(b) Determine the resolution of this imaging system in lines per cm.
+3.8 Consider a one-dimensional linear imaging system whose PSF is given by
+h(x;ξ) = e
+−(x−ξ)2
+2 ,
+which represents the response to the shifted impulse δ(x − ξ).
+(a) What is the PSF of a system having the same basic form of PSF as that
+above but whose FWHM is one half as large?
+(b) Does the resolution of the system improve when you make the above
+change in FWHM? Why?
+(c) What characteristics should be expected from the MTF in an imaging
+system that has high contrast (low blurring)?
+3.9 Consider again the LSI medical imaging system of Problem 3.2.
+(a) Calculate its line spread function(LSF).
+(b) What is the FWHM associated with this system?
+3.10 Consider a one-dimensional medical imaging system which is composed
+of two subsystems with PSFs given by
+h1(x) = e−x2/2 and h2(x) = e−x2/200.
+(a) What is the FWHM associated with each subsystem?
+(b) What is the FWHM associated with the overall system?
+(c) Which subsystem most greatly affects the FWHM of the overall system?
+3.11 A bar phantom is imaged by an LSI system, which is modeled as an ideal
+moving average system. The PSF of the system is
+h(x, y) = rect
+( x
+/Delta1, y
+/Delta1
+)
+.
+(a) If the bar separation of the bar phantom is /Delta1, what is the output of
+the image system?
+(b) If the bar separation is 0.5/Delta1, what is the output of the imaging system?
+(c) Derive the relation of the contrast of the output image with the bar
+separation and draw conclusion on the resolution of the imaging
+system.
+Random Variables and Noise
+3.12 Show that if N is a random variable with meanμN and standard deviation
+σN then
+M = N − μN
+σN
+is a random variable with mean μM = 0 and standard deviation σM = 1.

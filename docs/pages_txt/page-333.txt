@@ -1,0 +1,50 @@
+314 Chapter 9 Emission Computed Tomography
+processes. In both SPECT and PET, it is possible to model these physical
+processes in an attempt to reﬂect reality. Given these accurate, and elaborate,
+imaging models, a number of algorithms have been developed to produce better
+reconstructions than CBP. Broadly speaking, these algorithms fall into a class of
+algorithms called iterative reconstruction algorithms.
+In an iterative reconstruction algorithm, an initial ‘‘guess’’ of the distri-
+bution of radioactivity is made, quite frequently by using CBP. Let us denote
+this initial guess by f
+(0)(x, y). If this were the true activity concentration in
+the body (or sample), then we should expect to see speciﬁc projection values
+as a result, say g0(ℓ, θ). These expected measurements can be computed given
+a description of the imaging geometry and instrumentation, for example, our
+imaging equation (9.20) with (9.23). Computing the expected measurements
+given a source object is called solving the forward problem or forward pro-
+jection. This new ‘‘forward-estimated’’ sinogram can now be compared with
+the measured sinogram g(ℓ, θ). If the acquisition and reconstruction process
+is correctly modeled, and if the initial guess were correct, then these sino-
+grams would match. Otherwise, it is assumed that there are errors in the
+initial guess and that it should be modiﬁed, yielding a second guess f
+(1)(x, y).
+This concept of iteratively improved object estimates is the essence of iterative
+reconstruction.
+There are many different iterative reconstruction algorithms that have been
+developed and put into practice over the years. They differ primarily in how
+they modify the estimated distribution in response to differences between the
+estimated and observed projection values. Regardless of the details, in the end
+each algorithm produces a sequence of estimated cross sections, f
+(i)(x, y), i =
+0, 1, 2,... , the ﬁnal one of which (after some iteration stopping rule is satisﬁed)
+is the reconstruction that is used clinically. In essence, iterative reconstruction is
+based on successive estimates, with each successive estimate yielding a forward-
+estimated sinogram that is closer to the measured sinogram. We now present
+a very basic algorithm, called the Algebraic Reconstruction Technique (ART),
+which uses the Kaczmarz method for solving matrix equations, to illustrate this
+concept.
+Algebraic Reconstruction Technique (ART) Suppose the activity concentration
+(object) is represented by pixel values fj, j = 1, ... , m. Assuming that pj(x, y)
+j = 1, ... , m are indicator functions describing each pixel location and shape,
+then the object can be represented by
+f (x, y) =
+m∑
+j=1
+fjpj(x, y) . (9.28)
+Now we ask what will be the observations given just the radioactivity in pixelj?
+To ﬁnd the answer we only need to substitute fjpj(x, y)a s f (x, y) into (9.6) and
+(9.8) for SPECT or (9.20) and (9.23) for PET to determine determine g(ℓ, θ)f o r
+this source. For a particular lineL(ℓi, θi), the observation can be writtengi = aijfj,
+where aij represents the response to a unit activity concentration located in pixel
+j. If there is activity in more than one pixel, then each pixel will contribute by

@@ -1,0 +1,42 @@
+2 Part I Basic Imaging Principles
+In this book, we use a signals and systemsapproach to explain and analyze
+the most common imaging methods in radiology today. We want to answer
+the question: What do the images look like and why? We will discover that
+medical imaging physics allows us to image certain parameters of the body’s
+tissues, such as reﬂectivity in ultrasound imaging, linear attenuation coefﬁcient
+in computed tomography, and hydrogen proton density in magnetic resonance
+imaging. These physical parameters, which one can think of as ‘‘signals’’ within
+the body, represent the input signal into an imaging system. In medical imaging,
+the ‘‘object’’ or ‘‘signal’’ arising from the patient depends on the physical
+processes governing a given imaging modality. Thus, a given patient represents
+an ensemble of different objects or signals. In considering a given medical
+image, it is thus important to start with the physics that underlie the creation
+of signals from the patient for that modality. Accordingly, each part of this
+book is organized such that the ﬁrst chapter describes the relevant physics, and
+subsequent chapters describe those modalities based on the speciﬁc physical
+processes of that part.
+The ﬁrst output of any medical imaging system is based on physical
+measurements, which might be returning echoes in an ultrasound system, x-ray
+Figure I.1
+The four main medical
+imaging signals discussed
+in this book: (a) x-ray
+transmission through the
+body, (b) gamma ray
+emission from within the
+body, (c) ultrasound
+echoes, and (d) nuclear
+magnetic resonance
+induction. The
+corresponding medical
+imaging modalities are
+projection radiography,
+planar scintigraphy,
+ultrasound imaging, and
+magnetic resonance
+imaging. All images
+courtesy of GE
+Healthcare.
+(a)
+(c) (d)
+(b)

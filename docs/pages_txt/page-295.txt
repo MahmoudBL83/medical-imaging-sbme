@@ -1,0 +1,57 @@
+276 Chapter 8 Planar Scintigraphy
+Gaussian function. Accordingly [see (3.23)], we deﬁne
+hI(x, y) = exp
+{
+−4(x2 + y2)l n2/R2
+I
+}
+, (8.18)
+the intrinsic PSF of an Anger camera. Unlike collimator resolution, intrinsic
+resolution is not dependent on the target or its range. We can factor intrinsic
+resolution into our imaging equation for a planar source as follows:
+φ(x, y) = Ahfz0 (x, y) 1
+4πz2
+0
+exp
+{
+−
+∫ 0
+z0
+μ(x, y, z′;E) dz′
+}
+∗ hC(x, y;|z0|) ∗ hI(x, y) .
+(8.19)
+Generally, intrinsic resolution is much better than collimator resolution (i.e.,
+RI ≪ RC) at typical imaging depths, so the collimator’s geometric characteris-
+tics dominate effective resolution. The effective resolution is the result of the
+subsystem cascade of R
+I and RC, as discussed in Section 3.3.4.
+8.4.2 Sensitivity
+As noted above, not every gamma ray leaving the body will be directed at
+the camera. If possible, we would like to detect those that are directed at the
+camera in the right direction. There are two major factors that may prevent
+such detection. First, the photon may be absorbed in the collimator; second,
+the photon may pass through both the collimator and the scintillation crystal.
+A very high sensitivity (or efﬁciency) camera will detect most photons; a very
+low sensitivity (or efﬁciency) camera will reject or miss most photons. Most
+cameras are somewhere in-between; we now characterize sensitivity in more
+detail.
+Collimator Sensitivity From (8.13), we can see that longer collimator holes
+yield better resolution (smaller RC). When the holes are made longer, however,
+fewer gamma ray photons that impinge upon the collimator will actually pass
+through it and reach the scintillator crystal. This means that the collimator is
+less efﬁcient or less sensitive. The collimator efﬁciency ϵ, also called collimator
+sensitivity, is given by
+ϵ =
+( Kd
+2
+le(d + h)
+)2
+, (8.20)
+where K ≈ 0.25. The quantity ϵ reﬂects the fraction of photons (on average)
+that pass through the collimator for each emitted photon directed at the camera.
+All else being equal, we would like to choose collimator parameters that make
+ϵ as large as possible.
+The resolution of a parallel hole collimator is best at the collimator surface
+and degrades with distance |z|, as shown in (8.13). On the other hand, (8.20)
+shows that the sensitivity is independent of the distance between the source and

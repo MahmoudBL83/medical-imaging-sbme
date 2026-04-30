@@ -1,0 +1,46 @@
+5.2 Instrumentation 145
+Grids that have tall lead strips or ﬁne lead strip spacing—that is, higher
+grid ratios—are more capable of stopping off-axis radiation. However, there is
+a price to be paid for using grids. As the lead strips become wider or are packed
+more closely together in an effort to stop more scattered photons from reaching
+the detector, they will also stop some photons in the primary beam. This loss of
+beam intensity can increase image noise. To maintain a high-quality image, it
+then becomes necessary to increase the amount of radiation arriving at the grid,
+which increases the radiation dose to the patient. The grid conversion factor
+(GCF) characterizes the amount of additional exposure required for a particular
+grid. GCF is deﬁned as
+GCF = mAs with the grid
+mAs without the grid . (5.2)
+Typical GCF values range from 3 to 8.
+Having GCFs in the range 3–8 implies that some grids can absorb a large
+fraction of the incident radiation, so the impact of a grid should not be ignored.
+Since Compton scattering events are more isotropic at lower energies, it may
+not be necessary to use a grid at lower energies. A rule of thumb in projection
+radiography is to use a grid when the tube voltage is above 60 kVp. Compton
+scattering also increases with the thickness of the body part. Another rule of
+thumb in projection radiography is to use a grid when imaging a body part
+thicker than 10 cm.
+Grids can be mounted as stationary grids or used with a Potter-Bucky
+diaphragm, which moves the grid during exposure. The reason that Potter-
+Bucky grids are desirable is that stationary grids—especially those with low grid
+frequency—can introduce visible artifacts—lines or grid lines—into the image.
+The Potter-Bucky diaphragm causes the grid to move 2–3 cm during exposure
+in a linear or circular path. Since the lead strips within the grid move during
+exposure, their x-ray shadow also moves across the image plane, and its image
+is blurred out while the image of the patient is not blurred at all.
+Grids are used for nearly all x-ray examinations. The type of grid used varies
+with the examination. For example, thin body parts (e.g., extremities) generate
+less scatter than thick body parts (e.g., abdomen or chest), so a lower grid ratio
+might be employed for extremity exams than for abdominal exams.
+Airgaps Physical separation of the detector and the object—that is, leaving an
+airgap between the patient and the detector—is an effective means of scatter
+rejection. Because the scattered photons diverge radially from their point of
+origin inside the object, while the primary beam photons diverge from the
+source, separating the source and detector reduces the percentage of scattered
+photons that reach the plane of the detector. This can be demonstrated by simple
+geometry. The price that is paid for this airgap method of scatter reduction is
+increased geometric magniﬁcation and increased blurring or unsharpness due to
+x-ray focal spot size effects (see Section 5.4).
+Scanning Slits The use of mechanical lead slits that are placed in front of
+and/or in back of the patient has been evaluated and are used in some systems.
+These slits are moved together during the x-ray exposure, effectively providing

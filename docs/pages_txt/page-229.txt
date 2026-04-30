@@ -1,0 +1,62 @@
+210 Chapter 6 Computed Tomography
+Let (r, φ) be polar coordinates in the plane. Then x = r cos φ, y = r sin φ,
+and x cos θ + y sin θ = r cos φ cos θ + r sin φ sin θ = r cos(θ − φ). Substituting
+this last expression into (6.31) gives
+f (r, φ) = 1
+2
+∫ 2π
+0
+∫ T
+−T
+g(ℓ, θ)c(r cos(θ − φ) − ℓ) dℓ dθ , (6.32)
+which is a parallel-ray reconstruction formula forf written in polar coordinates.
+We now want to integrate overγ and β instead of ℓ and θ. This is a transfor-
+mation of coordinates, where the transformation is given in (6.28) and (6.29).
+The Jacobian of this transformation is D cos γ, and direct substitution yields
+f (r, φ) = 1
+2
+∫ 2π−γ
+−γ
+∫ sin−1 T
+D
+sin−1 −T
+D
+g(D sin γ, β + γ)
+× c(r cos(β + γ − φ) − D sin γ)D cos γ dγdβ. (6.33)
+The following simpliﬁcations to this integral can be made:
+• The limits of the outer integral can be replaced by 0 (lower limit) and 2 π
+(upper limit), since the functions are periodic in β with period 2π.
+• The expression sin −1 T
+D represents the largest angle γm that needs to be
+considered given that the object is contained in a disk of radius T. Thus, we
+can replace the upper and lower limits on the inner integral by γm and −γm,
+respectively.
+• We recognize the fan-beam projection as
+p(γ, β) = g(D sin γ, β + γ) . (6.34)
+This gives the basic fan-beam reconstruction formula:
+f (r, φ) = 1
+2
+∫ 2π
+0
+∫ γm
+−γm
+p(γ, β)c (r cos(β + γ − φ) − D sin γ) D cos γ dγdβ.
+(6.35)
+Fan-Beam Convolution Backprojection In this section, we manipulate the fan-
+beam reconstruction formula of (6.35) into a form that more closely resembles
+ordinary CBP.
+Consider an arbitrary point in the cross section, given by the polar coor-
+dinates (r, φ), as shown in Figure 6.18. Its position can also be deﬁned relative
+to the source and detector positions using the angle γ′ and radius D′, as shown
+in the ﬁgure. The argument of c(·) can be written in simpler form using these
+coordinates (after some trigonometric manipulation) as
+r cos(β + γ − φ) − D sin γ = D′ sin(γ′ − γ) , (6.36)
+where γ is an arbitrary angle as depicted in Figure 6.17. This yields
+f (r, φ) = 1
+2
+∫ 2π
+0
+∫ γm
+−γm
+p(γ, β)c(D′ sin[γ′ − γ])D cos γ dγdβ , (6.37)
+where D′ and γ′ are determined by r and φ.

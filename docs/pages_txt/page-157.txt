@@ -1,0 +1,53 @@
+138 Chapter 5 Projection Radiography
+Figure 5.5
+X-ray spectra leaving the
+tube, the ﬁlter, and the
+body.
+Leaving
+filter
+X-ray Photon energy, keV
+0
+0.2
+0.4
+0.6
+0.8
+Relative x-ray intensity
+20 40 60 80 100 120
+Leaving
+tube
+Leaving
+body
+Besides x-rays, heat is also produced at the anode by the bombardment of
+electrons. In fact, only about 1 percent of the energy deposited by the electron
+beam is turned into x-rays; the remaining 99 percent turns into heat. So, at
+the same time the ﬁlament current is applied, the anode is set into rotation
+by applying alternating current to the stator electromagnets located outside
+the tube’s glass housing. The rotors of this induction motor are connected to
+the anode inside the glass housing and arranged around bearings so that the
+anode can rotate freely. Anode rotation is necessary for nearly all diagnostic
+radiography equipment in order to avoid melting the anode target area because
+of high-energy transfer from the accelerated electrons to the target. In most
+x-ray tubes, the anode rotates at 3,200–3,600 revolutions per minute (rpm),
+but higher rpm tubes are also available for even better heat dissipation.
+In order to maintain a constant tube current (mA) while the tube voltage
+(kVp) is being applied, the ﬁlament circuit is very carefully controlled to keep
+a consistent electron cloud around the ﬁlament (i.e., a consistent amount of
+thermionic emission). The overall exposure is then determined by the duration
+of the applied kVp, which is controlled by either a ﬁxed timer circuit or an
+automatic exposure control (AEC) timer. A ﬁxed timer is generally a silicon-
+controlled rectiﬁer (SCR) switch timed by a microprocessor. Timing accuracy
+for these circuits is approximately 0.001 seconds. AEC timers have 5-mm-thick
+parallel-plate ionization chambers placed between the patient table and the ﬁlm-
+screen cassette (see Figure 5.2). An ionization chamber is a radiation detector
+that generates a current when air molecules are ionized by x-rays passing through
+the chamber and the free electrons and ions are attracted to anode and cathode
+plates, respectively, which are held at a constant voltage. The voltage achieved
+across the plates is used to trigger the SCR, which shuts off the tube voltage and
+terminates the exposure.
+The product of the tube current and the exposure time yields the milliampere-
+second (mAs) value for the exposure. When a ﬁxed timer is used, the radiologist
+controls both the mA and the exposure time directly and thereby determines
+the mAs for the exposure. In AEC timers, the mAs is set by the radiologist
+and the exposure time is determined automatically by the AEC circuitry. A
+maximum time is set to prevent accidental overdose in the event the AEC circuit
+malfunctions or the ionization chamber is missing or incorrectly positioned.

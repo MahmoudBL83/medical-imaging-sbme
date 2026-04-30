@@ -1,0 +1,49 @@
+6.4 Image Quality in CT 221
+Since ϱ 0 = 1/d, T = d = 0.25 cm, and D = M, we have
+Pp = 2π2
+3
+1
+0.252
+1
+σ2μ
+= 1.87 × 1010 minimum .
+6.4.3 Artifacts
+This section identiﬁes and brieﬂy explains some of the artifacts that can appear
+in CT images. Several of these are depicted in Figure 3.15.
+Aliasing The projections will be aliased if they are undersampled. The effect on
+a projection is that higher frequency information will appear as lower frequency
+artifacts, as discussed in Section 3.6. These artifacts will continue through the
+process of reconstruction (CBP, Fourier method, etc.), and appear as artifacts
+in the image. The most readily apparent of these artifacts are streak artifacts
+which appear to emanate, in particular, from small bright objects within the
+image. An insufﬁcient number of projections also causes aliasing. These artifacts
+also appear in the reconstructed images, often as streaks emanating from object
+boundaries at points which have small radii of curvature. These streaks may be
+either dark or bright, depending on the precise location of the objects and edges
+within the ﬁeld-of-view.
+Aliasing may be eliminated by sampling at a high enough (spatial sampling)
+rate, assuming the object is band limited, or by low-pass ﬁltering prior to
+sampling. Both of these goals are achieved to some degree in current clinical
+scanners. High sampling rates are achieved by providing numerous detectors
+within the fan-beam and by sampling at numerous angles. Ultimately, the
+number of detectors is limited by physical size, efﬁciency, and the fact that
+smaller detectors receive fewer photons and, hence, have higher measurement
+variance. The number of angles is limited by storage capacity time (both to
+scan and reconstruct), and dose. Low-pass ﬁltering (along each projection) is
+achieved by the physical aperture of each detector, which acts as a boxcar ﬁlter.
+There is no effective low-pass ﬁltering in angle.
+Another potential source for artifacts is in the backprojection-summation
+process, which must supply ﬁltered projection values for a ﬁnite set of points
+(x
+i, yj) (pixels) in the plane. The critical issues are how many pixels will be used
+over the ﬁeld-of-view and what will be the method of interpolation. Too few,
+and we produce an aliased version of the correct image, showing moir´e patterns
+that appear as a structured textures that do not really exist. For such a coarse
+image, the projections should be low-pass ﬁltered before backprojection.
+A general rule of thumb for designing CT systems is that the number of
+detectors should be approximately equal to the number of projections that
+should be approximately equal to the number of points on the side of a
+reconstructed image. A typical 3G system has around 700 detectors, acquires
+1,000 projections, and reconstructs a 512 × 512 image.
+Beam Hardening Beam hardening is caused by energy-selective attenuation
+of the x-rays, as discussed in Section 5.2.2, and refers to the phenomenon

@@ -1,0 +1,39 @@
+22 Chapter 2 Signals and Systems
+where
+sinc(x) = sin(πx)
+πx . (2.22)
+The 1-D sinc function is plotted in Figure 2.4(b). This function consists of a
+main lobe and side lobes, which are smaller in height and eventually diminish
+to zero for large values of x. It alternates between positive and negative values
+by passing through zero at points x =± 1, ±2, ... .
+The rect and sinc functions are useful in understanding the inﬂuence of
+the ﬁnite width of pixels in portraying an originally continuous signal as a
+discrete image.
+2.2.5 Exponential and Sinusoidal Signals
+Another continuous signal is the complex exponential signal, given by
+e(x, y) = ej2π(u0x+v0y) , (2.23)
+where u0 and v0 are two real-valued parameters and j2 =− 1. These parameters
+are usually referred to as fundamental frequencies, and have units that are the
+inverse of the units of x and y. For example, if x and y are given in mm, then u0
+and v0 have the unit mm−1.
+The complex exponential signal can be decomposed into real and imaginary
+parts using two sinusoidal signals:
+s(x, y) = sin[2π(u0x + v0y)] and c(x, y) = cos[2π(u0x + v0y)] . (2.24)
+Indeed,
+e(x, y) = ej2π(u0x+v0y)
+= cos[2π(u0x + v0y)] + j sin[2π(u0x + v0y)]
+= c(x, y) + js(x, y) . (2.25)
+On the other hand, a sinusoidal signal can be written in terms of two
+complex exponential signals, since
+s(x, y) = sin[2π(u0x + v0y)] = 1
+2j ej2π(u0x+v0y) − 1
+2j e−j2π(u0x+v0y) , (2.26)
+c(x, y) = cos[2π(u0x + v0y)] = 1
+2ej2π(u0x+v0y) + 1
+2e−j2π(u0x+v0y) . (2.27)
+The fundamental frequencies u0 and v0 affect the oscillating behavior of the
+sinusoidal signals in the x and y directions, respectively. For example, small
+values of u0 result in slow oscillations in the x direction, whereas large values
+result in fast oscillations in the x direction. This is illustrated in Figure 2.5.
+The concepts of exponential signals are particularly useful in Fourier analy-
+sis, which is used in image reconstruction and in understanding MRI.

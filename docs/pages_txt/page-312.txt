@@ -1,0 +1,35 @@
+Emission Computed
+Tomography
+CHAPTER
+99
+Planar scintigraphy is the only direct imaging approach in nuclear medicine
+(i.e., an image exists directly at the end of frame mode acquisition). The other
+two imaging methods in nuclear medicine—single photon emission computed
+tomography (SPECT) and positron emission tomography (PET)—require com-
+puted tomography image reconstruction methods. Like computed tomography
+(CT), these modalities require the acquisition of projection data, which are then
+reconstructed into transverse (or transaxial) slice images. SPECT systems can be
+designed around a customized array of detectors but are usually based on one
+or more high-quality Anger cameras, which rotate around the body to acquire
+a series of projection images with different angular orientations. Multiple cross
+sections of the body can be reconstructed—in parallel, in principle—from these
+data. It is reasonable to say that SPECT is to planar scintigraphy as multiple-row
+detector CT is to projection radiography.
+PET is in a class of its own, however, having no suitable analogy in other
+imaging modalities. PET measures the location of the line on which a positron is
+annihilated, an event that produces two simultaneous 511 keV gamma photons
+(or annihilation photons). After accumulating many such coincidence lines, line
+integrals of activity are produced and computed tomography reconstruction
+methods are directly applied.
+PET is unique in both its physics and chemistry. The most commonly used
+PET radionuclides, carbon-11, nitrogen-13, oxygen-15, and ﬂuorine-18, are
+isotopes of elements that occur naturally in organic molecules. (Fluorine usually
+does not, but it is a bioisosteric substitute for hydrogen.) Thus, radiopharmaceu-
+tical synthesis is simpliﬁed, and the tracer principle (which mandates as small a
+change in the molecule to be traced as possible) is better satisﬁed. Indeed, useful
+PET radiopharmaceuticals are now available to measure in vivosuch important
+physiologic and biochemical processes as blood ﬂow, oxygen, glucose, and
+free fatty acid metabolism, amino acid transport, and neuroreceptor density.
+The short half-lives of the radionuclides (e.g., carbon-11, 20 minutes; nitrogen-
+13, 10 minutes; oxygen-15, 2 minutes; ﬂuorine-18, 110 minutes) permit the
+293

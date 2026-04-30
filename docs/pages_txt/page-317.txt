@@ -1,0 +1,36 @@
+298 Chapter 9 Emission Computed Tomography
+registered SPECT or PET and CT slices are obtained, and the emission images
+can be superimposed on the CT slices (with the emission activity typically
+depicted in color, and the CT in shades of gray). This type of display makes it
+much easier to determine the anatomic location of any increased (or decreased)
+area of activity.
+The ﬁrst combined SPECT/CT systems used low-output x-ray tubes, pro-
+ducing CT images of relatively poor quality (i.e., limited spatial resolution and
+higher noise than conventional diagnostic CT images); they were not considered
+usable for diagnosis, only for anatomic localization. Most current-generation
+SPECT/CT systems use high-output tubes and produce CT images of routine
+diagnostic quality.
+Of importance, the CT images can also be used to help determine the
+attenuation experienced by the photons emitted from the radiotracer; this
+attenuation effect, which confounds the measurement of activity, is intrinsic to
+SPECT imaging [see (9.2) and (9.6)]. The CT images provide a transmission
+dataset for use in reconstruction, as described in Section 9.2.1 below.
+9.1.2 PET Instrumentation
+Positron emitting radionuclides are used in PET; the radiopharmaceuticals make
+PET a functional imaging technique and in the family of nuclear medicine
+modalities. A typical PET system is shown in Figure 9.3. From the outside, we
+only see the plastic housing, and a PET system looks just like a CT or magnetic
+resonance imaging (MRI) system, but the hardware is quite different in PET.
+Consider a positron-emitting radiopharmaceutical distributed in a patient
+and refer to Figure 9.4 for the following discussion. When a positron is emitted,
+it travels up to several millimeters in tissue depositing its kinetic energy. It then
+meets a free electron in the tissue, and mutual annihilation occurs (recall that a
+positron is an antielectron). From conservation of energy—noting that 511 keV
+is the energy equivalent to the rest mass of an electron or positron—two 511 keV
+annihilation (gamma ray) photons appear. From conservation of momentum,
+the two 511 keV photons are emitted back-to-back; that is, they propagate
+outward from the site of annihilation (almost exactly) 180
+◦ apart.
+Figure 9.3
+A PET system. Courtesy
+of GE Healthcare.

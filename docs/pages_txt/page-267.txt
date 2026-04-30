@@ -1,0 +1,44 @@
+248 Chapter 7 The Physics of Nuclear Medicine
+which for very small /Delta1t is approximated by
+Pr[/Delta1N = 0] ≈ 1 − λN0/Delta1t . (7.13)
+Since for an extremely small interval, there is going to be only one disintegration,
+or none at all, and since probabilities must sum to 1, we can interpret λN0/Delta1t
+as the probability of having one disintegration from all N0 radioactive atoms
+in the time interval /Delta1t. This gives us another way to interpret the radioactive
+decay constant λ: It can be thought of as the probability of radioactive decay
+per radioactive atom per unit (small) time.
+If /Delta1t is treated as a parameter and allowed to vary, then (7.11) characterizes
+a time-varying process /Delta1N(/Delta1t), which is known as a Poisson counting process.
+Such a process counts the number of events (disintegrations, in this case)
+that have occurred over a certain period of time. In this case, the quantity
+λN0 is known as the Poisson rate (see Example 3.7). It has units of events
+(disintegrations) per second and can be thought of as a type of intensity of the
+Poisson process. It is also a measure of the activity A of the decay process.
+However, it must be reemphasized that the Poisson process behavior takes place
+over time periods much smaller than the half-life of a radionuclide. On the other
+hand, the radioactive decay describes the change in A over much longer periods
+of time.
+EXAMPLE 7.3
+A patient study needs to be completed in no more than 10 minutes with at least 3.5 million
+counts of photons to achieve the desired image quality.
+Question Suppose we detect 6 K photons in the ﬁrst second. What is the minimal
+half-life of the radionuclide for the study to be successful?
+Answer During the ﬁrst second, the number of photons detected is
+/Delta1N =
+1∫
+0
+λN0e−λtdt = N0(1 − e−λ) = 6K .
+We need at least 3.5 million counts in 10 minutes, so
+/Delta1N =
+600∫
+0
+λN0e−λtdt = N0(1 − e−600λ) ≥ 3, 500 K.
+The above two equations give us
+1 − e−600λ
+1 − e−λ ≥ 3, 500
+6 .
+Solving the inequality equation, we have
+λ ≤ 9.45 × 10−5 s−1.
+The minimal half-life is
+t1/2 = 0.693
+9.45 × 10−5Sec−1 = 7, 333 s ≈ 2h r .

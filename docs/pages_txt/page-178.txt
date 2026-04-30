@@ -1,0 +1,40 @@
+5.3 Image Formation 159
+Figure 5.15
+Imaging a uniform slab.
+Slab
+Line
+X-ray
+origin
+u
+d
+z0
+detector, as shown in Figure 5.15. Assume a monoenergetic x-ray spectrum for
+the present analysis. The central ray of the x-ray beam—that is, the ray that
+goes through the center of the object and hits the detector origin—encounters a
+net path length L through the object. Thus, the x-ray intensity at ( x, y) = (0, 0)
+will be I
+0 exp(−μL), where I0 is the intensity of the beam that would be present
+at the detector origin if the slab were not present.
+The x-rays propagating toward the detector point (x, y), however, experience
+a different path length through the slab. The path length through the slab along
+the line between the x-ray source and (x, y) is given by
+L′ = L
+cos θ . (5.10)
+Since L′ > L, more x-rays will be attenuated along this line than along the
+central path, and the x-ray intensity at the detector will be smaller. Ignoring the
+inverse square law, obliquity, and the anode heel effect, the intensity is given by
+Id(x, y) = I0e−μL/ cos θ . (5.11)
+If the inverse square law and obliquity are included, then the intensity is given by
+Id(x, y) = I0 cos3 θ e−μL/ cos θ . (5.12)
+If the anode heel effect is compensated by ﬁltration, then (5.12) represents a
+valid imaging equation for a homogeneous slab parallel to the image plane
+within the ﬁeld of view.
+The interpretation of radiographs, both visually and through automatic
+image analysis techniques, should be informed by (5.12) and by the anode heel
+effect (if not compensated). Since materials with larger attenuation are brighter
+when viewed on a light box (or a computer screen if digitally displayed), these
+effects will cause a shading artifactwithin a homogeneous object. This could be
+interpreted as representing a different attenuation within the object or different
+object thickness. It is truly an ambiguous situation. Radiologists are trained
+to study radiographic intensities locally, and to not compare absolute image
+values across the ﬁeld of view. This is not a desirable situation for automatic

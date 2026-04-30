@@ -1,0 +1,43 @@
+5.4 Noise and Scattering 173
+EXAMPLE 5.7
+Suppose that an x-ray tube is set up to ﬁre n 10,000-photon bursts at a detector and the
+detector’s output x is recorded as xi, i = 1, ... , n. Suppose that the mean and variance of
+{xi} is found to be x = 8, 000 and σ2
+x = 40, 000, respectively.
+Question What is the DQE of this detector?
+Answer Think of x = 8, 000 as an estimate of the average number of photons in the
+output of the detector. If the detector were simply counting photons, then the variance
+should also be 8,000, since photon count is a Poisson random variable. Yet, the measured
+variance is 40,000, ﬁve times the Poisson variance. This is conclusive evidence that there
+is variation in the detector’s response to detected photons. The SNR of the input is simply
+the intrinsic SNR of the photon burst,
+SNRin = 10,000√10,000 = 100 .
+The SNR of the output is
+SNRout = 8,000√40,000 = 40 .
+Therefore, the DQE for this detector is
+DQE =
+( 40
+100
+)2
+= 0.16 .
+Only about 16 percent of the incident photons are detected ‘‘correctly.’’
+5.4.3 Compton Scattering
+Earlier, we noted that Compton scattering degrades image quality. The reason
+for this is that Compton photons are deﬂected from their ideal straight-line
+path, and some are detected in locations away from the correct, straight-line
+location. This produces two unwanted results: a decrease in image contrast and
+a decrease in SNR.
+Effect on Image Contrast Compton scatter has an negative effect on image
+contrast. Consider a target with local contrast [see (3.12)] given by
+C = It − Ib
+Ib
+.
+Compton scatter adds a constant intensity Is to both target and background
+intensity, yielding a new contrast of
+C′ = (It + Is) − (Ib + Is)
+Ib + Is
+= C Ib
+Ib + Is
+= C
+1 + Is/Ib
+. (5.41)

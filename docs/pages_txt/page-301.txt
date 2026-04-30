@@ -1,0 +1,47 @@
+282 Chapter 8 Planar Scintigraphy
+If we are to keep the image acquisition duration to a feasible value, we must
+increase count rate in order to increase total counts. This situation is analogous
+to that in projection radiography, and some of the solutions are apparently the
+same—for example, improve detector efﬁciency or increase dose. But there are
+some practical considerations that must be addressed in planar scintigraphy that
+are largely missing in projection radiography. We know, for example, that it is
+straightforward to improve collimator efﬁciency, but it is at the expense of spatial
+resolution. So, for a given desired resolution, perhaps geared toward a particular
+clinical goal, we cannot improve collimator efﬁciency beyond a certain value.
+We also know that we could improve detector efﬁciency in order to increase
+the number of detected photons. If that efﬁciency is improved by changes to
+the detector material, providing higher gamma ray stopping power with the
+same geometry, then that is good. A great deal of research has gone into this
+endeavor, leading to very efﬁcient detector materials today, and it is not clear
+how much farther this can be taken. The obvious solution is to increase the
+detector’s thickness, but we know that this will degrade resolution.
+As in projection radiography, we can increase the dose, in this case by inject-
+ing a larger amount of the radiotracer (i.e., more radioactivity) into the patient.
+Aside from the obvious, undesirable properties associated with increasing the
+dose of ionizing radiation to the patient, planar scintigraphy (unlike projection
+radiography) has a problem handling the larger numbers of photons per unit
+time with increasing activity incident upon the camera. In particular, after the
+deposition of energy in the detector, it takes a certain amount of time for the
+scintillation photons to be given off, and for the electronics to register a ‘‘count.’’
+During this time, called the dead time or resolving time τ of the Anger camera,
+the detector is only partially responsive to the deposition of additional energy.
+The inverse of the resolving time is the maximum counting rate of the camera:
+Maximum counting rate = 1
+τ . (8.30)
+In clinical situations, resolving times are typically between 10 and 15μs, and this
+leads to maximum counting rates of between 60K and 100K counts per second.
+Furthermore, Anger cameras are paralyzable, which means that the observed
+count rate does not simply plateau at 1
+τ , but actually begins to progressively
+decrease (the camera ‘‘loses counts’’), as the radioactivity increases.
+Furthermore, exceeding the maximum counting rate may causepulse pileup,
+a situation that occurs when two or more photons are absorbed in the crystal
+too close together to be counted as separate events. The photons may be treated
+as a single event whose energy is the sum of the energies deposited by the two (or
+more) photons; in this case, both (or more) are rejected due to energy window
+considerations. Alternatively, only the second may be rejected, due to the time
+required to count the ﬁrst. Either case represents a loss of counts and an excess,
+unnecessary dose to the patient.
+8.5 Summary and Key Concepts
+Nuclear medicine produces images of function (body physiology and biochem-
+istry). Planar scintigraphy is the nuclear medicine technique that produces 2-D

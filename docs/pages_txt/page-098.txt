@@ -1,0 +1,47 @@
+3.5 Signal-to-Noise Ratio 79
+where [see also (3.9)]
+SNRp(u, v) = |H(u, v)|2|F(u, v)|2
+NPS(u, v) = MTF2(u, v)
+NPS(u, v) |F(u, v)|2H2(0, 0) (3.67)
+is called the frequency-dependent power SNR. The frequency-dependent power
+SNR quantiﬁes, at a given frequency, the relative ‘‘strength’’ of signal to that
+of noise at the output of the LSI system under consideration. From (3.66) and
+(3.67), SNR
+p(u, v) provides a relationship between contrast, resolution, noise,
+and image quality. For a given output noise level (i.e., a ﬁxed NPS) and a given
+input f (x, y), better contrast and resolution properties (i.e., a larger MTF) result
+in better image quality (i.e., a higher output power SNR).
+3.5.3 Differential SNR
+Consider an object (or target) of interest placed on a background. Let ft
+and fb be the average image intensities within the target and background,
+respectively. A useful choice for SNR is obtained by taking the ‘‘signal’’ to
+be the difference in average image intensity values between the target and the
+background integrated over the area A of the target, and by taking the ‘‘noise’’
+to be the random ﬂuctuation of image intensity from its mean over an area A
+of the background. This leads to the differential signal-to-noise ratio(SNR
+diff),
+given by
+SNRdiff = A(ft − fb)
+σb(A) , (3.68)
+where σb(A) is the standard deviation of image intensity values from their mean
+over an area A of the background. From (3.12), we have
+SNRdiff = CAfb
+σb(A) , (3.69)
+which relates the differential SNR to contrast.
+EXAMPLE 3.12
+Consider the case of projection radiography. We may take fb to be the average photon
+count per unit area in the background region around a target, in which case, fb = λb,
+where λb is the mean of the underlying Poisson distribution governing the number of
+background photons counted per unit area. Notice that, in this case, σb(A) =
+√
+λbA.
+Question What is the average number of background photons counted per unit area,
+if we want to achieve a desirable differential SNR?
+Answer From (3.69),
+SNRdiff = CAλb√
+Aλb
+= C
+√
+Aλb . (3.70)
+From (3.70), the differential SNR is approximately proportional to contrast as well as
+to the square root of the object area multiplied by radiation exposure (characterized by

@@ -1,0 +1,100 @@
+66 Chapter 3 Image Quality
+Notice that the overall FWHM R is dominated by the largest (i.e., the poorest
+resolution) term. Thus, small improvements in any given subsystem’s resolution
+do not often yield noticeable improvements in overall system resolution.
+The following example shows that, when a medical imaging system is
+composed of subsystems with Gaussian PSFs, (3.22) gives the exact value of the
+FWHM of the overall system.
+EXAMPLE 3.5
+Consider a 1-D medical imaging system with PSFh(x) composed of two subsystems with
+Gaussian PSFs of the form
+h1(x) = 1√
+2πσ1
+exp
+{
+−x2
+2σ2
+1
+}
+and h2(x) = 1√
+2πσ2
+exp
+{
+−x2
+2σ2
+2
+}
+. (3.23)
+Question What is the FWHM of this system?
+Answer The FWHMs R1 and R2 associated with the two subsystems h1 and h2,
+respectively, are given by R1 = 2x1 and R2 = 2x2, where x1 and x2 are such that
+h1(x1) = 1√
+2πσ1
+exp
+{
+−x2
+1
+2σ2
+1
+}
+= 1
+2
+√
+2πσ1
+, (3.24)
+and
+h2(x2) = 1√
+2πσ2
+exp
+{
+−x2
+2
+2σ2
+2
+}
+= 1
+2
+√
+2πσ2
+. (3.25)
+After algebraic manipulation of (3.24) and (3.25),
+R1 = 2σ1
+√
+2l n2 a n d R2 = 2σ2
+√
+2l n2 . (3.26)
+Following Example 2.4, it can be shown that the PSF h(x) of the overall system is given
+by
+h(x) = h1(x) ∗ h2(x) = 1√
+2π(σ2
+1 + σ2
+2 )
+exp
+{
+−x2
+2(σ2
+1 + σ2
+2 )
+}
+. (3.27)
+The FWHM R of this system is given by R = 2x0, where x0 is such that
+h(x0) = exp
+{
+−x2
+0
+2(σ2
+1 + σ2
+2 )
+}
+= 0.5 , (3.28)
+from which we obtain
+R = 2
+√
+σ2
+1 + σ2
+2
+√
+2l n2 . (3.29)
+If contrast and resolution are quantiﬁed using the MTF, then the MTF of
+the overall system will be given by
+MTF(u, v) = MTF1(u, v)MTF2(u, v) ··· MTFK(u, v) , (3.30)

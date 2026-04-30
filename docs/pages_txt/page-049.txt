@@ -1,0 +1,61 @@
+30 Chapter 2 Signals and Systems
+2.3.5 Separable Systems
+Separable systems form an important class of LSI systems. As with separable
+signals, a 2-D LSI system with PSF h(x, y)i sa separable system if there are two
+1-D systems with PSFs h1(x) and h2(y), such that
+h(x, y) = h1(x)h2(y) . (2.55)
+A 2-D separable system consists of a cascade of two 1-D systems, one applied
+in the x direction and the other one in the y direction. Therefore, for a 2-D
+separable system, the 2-D convolution integral (2.38) can be calculated using
+two simpler 1-D convolution integrals, as follows:
+• Compute w(x, y) =
+∫ ∞
+−∞
+f (ξ, y)h1(x − ξ) dξ, for every y.
+• Compute g(x, y) =
+∫ ∞
+−∞
+w(x, η)h2(y − η) dη, for every x.
+Indeed,
+∫ ∞
+−∞
+w(x, η)h2(y − η) dη =
+∫ ∞
+−∞
+[∫ ∞
+−∞
+f (ξ, η)h1(x − ξ)dξ
+]
+h2(y − η) dη
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (ξ, η)h1(x − ξ)h2(y − η) dξdη
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (ξ, η)h(x − ξ, y − η) dξdη [from (2.55)]
+= h(x, y) ∗ f (x, y) = g(x, y) . (2.56)
+The ﬁrst step keepsy ﬁxed, treats imagef (x, y) as a 1-D signal, and convolves
+it with the PSFh1(x) to obtain w(x, y) for every y. The second step keepsx ﬁxed,
+treats image w(x, y) as a 1-D signal, and convolves it with the PSF h2(y). This is
+illustrated in Figure 2.8, which depicts the result of convolving an image with a
+Figure 2.8
+Calculation of the output
+of a 2-D separable system
+by using two 1-D steps in
+cascade.
+1-D convolution
+f(x, y) g(x, y)w(x, y)
+x x
+y
+(0, 0) (0, 0) (0, 0)
+y y
+x
+f(x, y) /H11569 h1(x)
+1-D convolution
+w(x, y) /H11569 h2(y)

@@ -1,0 +1,47 @@
+162 Chapter 5 Projection Radiography
+Imaging Equation with Geometric Effects It is useful to develop an imaging
+equation that incorporates the geometric effects we have presented in this
+section. To do this, we utilize an idealized object t
+z(x, y) that is inﬁnitesimally
+thin and located in a single plane given by the coordinate z and is capable of
+differentially attenuating x-rays as a function of x and y. This object can be
+thought of as a sheet of paper impregnated with a distribution of lead; a pictorial
+representation is given in Figure 5.13.
+We should think of tz(x, y)a sa transmittivity, rather than an attenuation;
+it replaces the entire exponential factor, rather than μ itself. Accordingly, if the
+object is located at the detector face—so that there is no magniﬁcation—the
+recorded intensity would be
+Id(x, y) = I0 cos3 θ td(x, y) , (5.16)
+where
+cos θ = d√
+d2 + x2 + y2
+. (5.17)
+In general, when the object is located at arbitrary z, where 0 < z ≤ d,t h e
+magniﬁcation must be taken into account. This effect is just a scaling of the size
+of the object, and it is
+Id(x, y) = I0 cos3 θ tz(x/M(z), y/M(z)) . (5.18)
+Putting (5.18) together with (5.14) and (5.17) yields
+Id(x, y) = I0
+(
+d√
+d2 + x2 + y2
+)3
+tz(xz/d, yz/d) . (5.19)
+This equation is a reasonable approximation for relatively thin objects that have
+nearly the same magniﬁcation and no variation in their attenuation in the z
+direction. This equation does not take into account the effect of integration
+along ray paths through thick objects (such as the human body).
+5.3.3 Blurring Effects
+It was shown above that divergent rays will blur edges of objects that are thick
+in the range direction. There are two effects, however, that will blur objects even
+if they do not have az extent: extended sources and the detector thickness—that
+is, the intensifying screen in ﬁlm-based systems, the PSP phosphor in CR systems,
+and the scintillator or s-Se plate in CCD, TFT, and CMOS digital radiography
+systems. Both of these processes can be modeled as convolutional effects that
+degrade image resolution. They are not present in (5.18) and (5.19) because in
+these equations there is only magniﬁcation and intensity changes made to the
+inﬁnitesimally thin object t
+z(x, y). We now explore these two effects in detail.
+Extended Sources Another characteristic of projection radiographs is blurri-
+ness arising from the nonzero extent of the x-ray source—the spot size of the
+site of x-ray emissions from the anode. As shown in Figure 5.18, this blurring

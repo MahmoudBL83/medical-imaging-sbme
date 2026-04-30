@@ -1,0 +1,35 @@
+Signals and Systems
+CHAPTER
+22
+2.1 Introduction
+Signals and systems are two fundamental concepts for modeling medical imag-
+ing systems. Signals are mathematical functions of one or more independent
+variables, capable of modeling a variety of physical processes. Systems respond
+to signals by producing new signals. They are useful for modeling how physical
+processes (signals) change in natural environments and how devices, such as
+medical imaging instruments, create new signals (i.e., images). This chapter
+provides an introduction to the theory of signals and systems, with a focus on
+those tools required for modeling medical imaging systems.
+Signals can be classiﬁed into three categories: (1) continuous, (2) discrete,
+and (3) mixed. A continuous signal is a function of independent variables that
+range over a continuum of values. For example, in computed tomography (CT),
+the distribution of x-ray attenuation in a cross-section within the body can be
+mathematically modeled using a function f (x, y) of two independent real-valued
+variables x and y, which represent two spatial dimensions. Physical processes
+are usually modeled using continuous signals. Some medical images, such as
+those obtained on x-ray ﬁlm, are also modeled as continuous signals.
+A discrete signal is a function of independent variables that range over
+discrete values. These signals can be used to model physical processes that
+naturally correspond to discrete values. For example, the times of arrival of
+photons in a radioactive decay process form a discrete sequence of arrival
+times—that is, an intrinsically discrete signal. Discrete signals can also be used
+to represent continuous signals. For example, the x-ray distribution f (x, y)
+described above might be represented in a computer as a function f
+d(m, n)o f
+two independent discrete variables m and n.
+Finally, a mixed signal is a function of some continuous and some discrete
+independent variables. Signals of this type are acquired by certain medical
+imaging instruments. For example, in CT, a signal g(ℓ, θk), k = 1, 2,... ,i s
+recorded as a result of a parallel or fan beam of x-rays passing through an
+object. Variable ℓ is often modeled as continuous-valued, representing the
+15

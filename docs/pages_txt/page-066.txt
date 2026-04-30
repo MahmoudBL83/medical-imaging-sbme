@@ -1,0 +1,48 @@
+2.8 Summary and Key Concepts 47
+The scaling theorem for the Hankel transform, (2.120), is then used to yield
+f(r) = H−1
+{
+rect
+( q
+2ϱ 0
+)}
+= 4ϱ 2
+0 jinc(2ϱ 0r) .
+2.8 Summary and Key Concepts
+In this book, we take a signals and systems approach to the understanding and
+analysis of medical imaging systems. Signals model physical processes; systems
+model how medical imaging systems create new signals (images, in our case)
+from these original signals. In this chapter, we presented the following key
+concepts that you should now understand:
+1. Signals are mathematical functions, and they can be continuous, discrete, or
+mixed.
+2. The point impulse or impulse function is used as the input signal to
+characterize the response of a system, which is the impulse response.
+3. Comb and sampling functions, rect and sinc functions, and exponential
+and sinusoidal signals are used to help describe and characterize imaging
+systems.
+4. A system is linear if, when the input consists of a collection of signals, the
+output is a summation of the responses of the system to each individual
+input signal.
+5. A system is shift-invariant if an arbitrary translation of the input signal
+results in an identical translation of the output.
+6. A signal is separable if it can be represented as the product of 1-D signals.
+7. The Fourier transform represents signals as a sum of sinusoids of different
+frequencies, with associated magnitude and phase.
+8. The Fourier space analog of the impulse response is the transfer function.
+9. The output of a linear, shift-invariant system is the convolution of the input
+with the impulse response; in Fourier space, it is the product of the Fourier
+transform of the input and the transfer function.
+10. Functions that are circularly symmetric have Fourier transforms that are
+also circularly symmetric.
+11. The Hankel transformis a one-dimensional transform that yields the Fourier
+transform of circularly symmetric functions.
+Further Reading
+Gonzalez, R.C. and Woods, R.E.Digital Image Pro-
+cessing, 3rd ed. Upper Saddle River, NJ: Prentice
+Hall, 2007.
+Macovski, A. Medical Imaging Systems. Englewood
+Cliffs, NJ: Prentice Hall, 1983.
+Oppenheim, A.V., Willsky, A.S., and Nawad, S.H.
+Signals and Systems , 2nd ed. Upper Saddle
+River, NJ: Prentice Hall, 1996.

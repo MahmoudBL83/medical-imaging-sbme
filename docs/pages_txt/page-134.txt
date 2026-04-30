@@ -1,0 +1,50 @@
+4.4 Nature and Properties of Ionizing Radiation 115
+or ionizing the atom, and temporarily leaving a hole in that shell. (This can also
+happen to higher-orbit electrons but is not signiﬁcant in imaging.) The K-shell
+hole is then ﬁlled by an electron from the L-shell, M-shell, or N-shell. Since the
+electron binding energy of the K-shell is higher than that of the L-, M-, or N-
+shell, there is aloss of energy as the electron ﬁlls the K-shell hole or vacancy. The
+loss of energy experienced by the outer-shell electron creates an EM photon.
+The x-ray is called a characteristic x-ray. The energy of the characteristic
+x-ray photon is exactly equal to the difference in electron binding energies
+between the two shells. In fact, the particular electron ‘‘subshells,’’ which have
+slightly different energies according to quantum physics, are distinguished. Since
+these electron binding energies are determined by the particular atom and those
+transitions allowed by quantum physics, these x-ray energies are ‘‘characteristic’’
+of particular atoms, which is the reason for the name characteristic x-rays.A
+given atom can be identiﬁed by the nature (energies and proportions) of the
+characteristic x-rays it generates.
+Bremsstrahlung radiation is caused by the interaction of an energetic elec-
+tron with the nucleus of an atom, as shown in Figure 4.4(c). As the electron
+approaches the nucleus, the positive charge of the nucleus attracts the electron,
+causing it to bend, as if to go into orbit around the nucleus. As the electron
+decelerates around the nucleus, it loses energy in the form of an EM photon,
+which comprises bremsstrahlung radiation (German for ‘‘braking radiation’’).
+Unless the electron actually strikes the nucleus, the electron departs the atom
+with a kinetic energy reduced by the energy of the emitted photon. In the
+rare event of a collision with the nucleus, the electron is annihilated, and the
+photon emitted has energy equal to the kinetic energy of the incident electron.
+Otherwise, the emitted photon must have energy lower than that of the incident
+electron. The intensity of bremsstrahlung radiation increases with the energy of
+the incident electron and the atomic number of the atom with which it interacts.
+As discussed in Chapter 5, bremsstrahlung radiation is the primary source
+of x-rays from an x-ray tube. This is because an x-ray tube works by accelerating
+electrons across a voltage potential in a vacuum. When the electrons strike the
+target or anode, which is usually tungsten, they lose energy by both collisional
+and radiative transfer; so heat, characteristic x-rays, and bremsstrahlung x-
+rays are produced. The x-ray energies produced by the characteristic and
+bremsstrahlung interactions differ in character, as shown in Figure 4.5. The
+bremsstrahlung spectrum, sometimes called the continuous spectrum, has its
+highest energy equal to the anode-to-cathode potential. In this ﬁgure, different
+potentials are considered: 45 kV, 61 kV, 80 kV, 100 kV, and 120 kV. For a
+given ﬁxed potential, x-rays at the highest energies are produced only by the rare
+direct collisions between energetic electrons and anode nuclei. It is increasingly
+more likely for lower energy bremsstrahlung interactions to take place; it is
+approximately a linear increase with frequency decreasing from the maximum
+energy. At the lower energies, bremsstrahlung radiation is still produced, but is
+absorbed by the anode itself, so the spectrum goes to (effectively) zero.
+Characteristic x-rays can be generated only if the incident electrons have
+sufﬁcient energy to eject inner-shell electrons. For a tungsten anode, the K-shell
+binding energy is 69.5 keV, the L-shell binding energy is approximately 12 keV,
+and the M-shell binding energy is under 3 keV. Thus, the characteristic x-rays
+from tungsten are all under 70 keV, and include energies of approximately

@@ -1,0 +1,80 @@
+78 Chapter 3 Image Quality
+Question What is the power SNR of such a system?
+Answer In this framework, the power SNR at the output of this system is given by
+SNRp =
+∫ ∞
+−∞
+∫ ∞
+−∞
+|h(x, y) ∗ f (x, y)|2 dx dy
+σ2
+N
+, (3.61)
+where the noise power is speciﬁed by the variance σ2
+N. Usually, it is assumed that there is
+no correlation between noise values and that for every (x, y)
+μN(x, y) = 0 and σN(x, y) = σN. (3.62)
+This type of noise is known as white noise.
+White noise is a crude approximation of reality, but it is convenient to use
+since it leads to mathematically simple models. Keep in mind that, in most cases,
+it is more accurate to consider correlated noise and assume some mathematical
+expression for such correlation. In this case, if we assume that the noise mean
+and variance do not depend on (x, y) (a common assumption that characterizes
+so-called wide-sense stationary noise), then it can be shown that
+SNR
+p =
+∫ ∞
+−∞
+∫ ∞
+−∞
+|h(x, y) ∗ f (x, y)|2 dx dy
+∫ ∞
+−∞
+∫ ∞
+−∞
+NPS(u, v) du dv
+, (3.63)
+where
+NPS(u, v) = lim
+x0,y0→∞
+1
+4x0y0
+E
+[⏐⏐⏐⏐
+∫ x0
+−x0
+∫ y0
+−y0
+[N(x, y) − μN]
+exp (−j2π(ux + vy)) dx dy
+⏐⏐
+⏐
+⏐
+2]
+, (3.64)
+is known as the noise power spectrum (NPS). From (3.63) and Parseval’s
+theorem, given by (2.96), we have
+SNRp =
+∫ ∞
+−∞
+∫ ∞
+−∞
+|H(u, v)|2 |F(u, v)|2 du dv
+∫ ∞
+−∞
+∫ ∞
+−∞
+NPS(u, v) du dv
+(3.65)
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+SNRp(u, v)NPS(u, v) du dv
+∫ ∞
+−∞
+∫ ∞
+−∞
+NPS(u, v) du dv
+, (3.66)

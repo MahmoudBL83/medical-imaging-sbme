@@ -1,0 +1,49 @@
+Problems 231
+6.28 Consider an object comprising three squares of the same size with width
+20 cm, as shown in Figure P6.3. The origin of the coordinate system
+is located at the center of the middle square. The linear attenuation
+coefﬁcient in these three regions are μ
+1 = 0.1c m−1, μ2 = 0.2c m−1, and
+μ3 = 0.3c m−1, respectively.
+Figure P6.3
+Object geometry for
+Problem 6.28.
+m1 m2 m3
+x
+y
+20 cm
+20 cm
+20 cm 20 cm
+Assume that parallel ray geometry is used.
+(a) Find g(ℓ,0 ◦).
+(b) Find g(ℓ,9 0◦).
+(c) Find g(ℓ,4 5◦). Sketch it and carefully label the axes.
+(d) Sketch b45◦ (x, y). Find the value b45◦ (1, 1).
+Now, assume we are using a 3G CT scanner. The source–detector
+distance is 1.5 m.
+(e) What is the smallest possible circular FOV to image the entire object
+shown in the ﬁgure? What is the shortest length of the detector array
+that will ‘‘cover’’ the FOV?
+(f) Suppose the detector array has 256 elements. Using the CT ‘‘rule of
+thumb,’’ how many angles should be acquired? What is the pixel size of
+the reconstructed image (assuming the image covers the entire FOV.)
+6.29 A square object with side-width of 40 cm is imaged by a ﬁrst generation
+CT scanner.
+(a) What type of collimators should be used for the source and the
+detector?
+(b) What is the smallest circular FOV to cover the entire object?
+(c) Suppose the smallest angular increment of the scanner is 0.25◦ and we
+strictly obey the CT ‘‘rule of thumb.’’ How many line integrals should
+we measure for each angle? If the reconstructed image is just large
+enough to cover the FOV, what is the size of the pixels?
+(d) We found that the reconstructed image was noisy. Is it possible to
+double the SNR given that we cannot change the 0.25-degree angular
+increment and will not violate the rule of thumb? Explain.
+(e) Suppose the object has a constant linear attenuation coefﬁcient of
+0.1 cm−1, sketch g(ℓ,4 5◦) and carefully label the axes.
+(f) Sketch b45◦ (x, y). Find the value b45◦ (10, 10).
+6.30 You are designing a CT scanner. You always use the rules M = D = J
+and ϱ 0 = 1/d. You want a circular ﬁeld-of-view (FOV) having a 60 cm
+diameter, so your image will be a square with 60 cm sides.
+(a) You want your system to be able to resolve two point sources separated
+by 1 mm, to that at least one square pixel can always be put between

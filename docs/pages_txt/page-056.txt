@@ -1,0 +1,30 @@
+2.5 Properties of the Fourier Transform 37
+2.5.2 Translation
+If F(u, v) is the Fourier transform of a signal f (x, y), and if
+fx0y0 (x, y) = f (x − x0, y − y0) , (2.79)
+then
+F2D(fx0y0 )(u, v) = F(u, v)e−j2π(ux0+vy0) . (2.80)
+Notice that, in this case,
+⏐⏐F2D(fx0y0 )(u, v)
+⏐⏐= |F(u, v)| , (2.81)
+and
+̸ F2D(fx0y0 )(u, v) = ̸ F(u, v) − 2π(ux0 + vy0) . (2.82)
+Therefore, translating a signal f (x, y) does not affect its magnitude spectrum but
+subtracts a constant phase of 2π(ux0 + vy0) at each frequency (u, v).
+2.5.3 Conjugation and Conjugate Symmetry
+If F(u, v) is the Fourier transform of a complex-valued signal f (x, y), then
+F2D(f ∗)(u, v) = F∗(−u, −v) , (2.83)
+where ∗ denotes the complex conjugate. This is known as the conjugation
+property of the Fourier transform. When f is real-valued, its Fourier transform
+exhibits conjugate symmetry, which is deﬁned by
+F(u, v) = F∗(−u, −v) . (2.84)
+In this case, the real part FR(u, v)o f F(u, v) and the magnitude spectrum |F(u, v)|
+are symmetric functions, whereas the imaginary partFI(u, v) and phase spectrum
+̸ F(u, v)a r eantisymmetric functions:
+FR(u, v) = FR(−u, −v) and FI(u, v) =− FI(−u, −v) , (2.85)
+|F(u, v)| = |F(−u, −v)| and ̸ F(u, v) =− ̸ F(−u, −v) . (2.86)
+Notice that the three magnitude spectra depicted in Figure 2.9 are symmetric
+around the origin.
+2.5.4 Scaling
+If F(u, v) is the Fourier transform of a signal f (x, y), and if
+fab(x, y) = f (ax, by) , (2.87)

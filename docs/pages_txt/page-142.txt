@@ -1,0 +1,44 @@
+4.5 Attenuation of Electromagnetic Radiation 123
+Therefore, the energy of this equivalent beam must be
+E =
+∫∞
+0 E′S(E′) dE′
+∫∞
+0 S(E′) dE′ .
+This expression should look vaguely familiar; it is the expression for center of mass of a
+sheetlike object having mass density S(E). Alternatively, the numerator is the expression
+for the mean of a random variable ifS(E) were its pdf. The denominator normalizes S(E)
+so that the ratio effectively does compute the mean. The energy computed this way is
+sometimes called the effective energy of a polyenergetic source. We will see an alternate
+deﬁnition in Chapter 6.
+4.5.2 Narrow Beam, Monoenergetic Photons
+Consider a beam of N monoenergetic photons incident upon a thin slab of
+homogeneous material, as shown in Figure 4.7(a). The depicted geometry is
+called narrow beam geometry because the photon beam is no wider than the
+detector used to detect or count the photons. In this case, if the slab were not
+present (and ignoring statistical effects and problems of detector efﬁciency),
+the detector would record N photons. With the slab present, however, some
+photons will be absorbed within the slab by the photoelectric effect, and other
+photons will be deﬂected away from the detector by Compton events. Overall,
+the detector count N′ will be smaller than N, which is the primary characteristic
+of attenuation, which we now explore in more detail.
+Suppose n photons are ‘‘lost’’ in the above experiment. Provided that
+/Delta1x is small, we would expect that doubling /Delta1x should double n, and dou-
+bling N should also double n. In other words, n is proportional to both N
+and /Delta1x,o r
+n = μN/Delta1x , (4.20)
+Figure 4.7
+Two geometries by which
+to study attenuation:
+(a) narrow beam
+geometry and (b) broad
+beam geometry.
+Detector
+Detector
+Slab
+Slab
+N Photon Burst
+7N Photon Burst
+/H9004x
+(a)
+(b)

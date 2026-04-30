@@ -1,0 +1,37 @@
+150 Chapter 5 Projection Radiography
+leaving ‘‘holes’’ in the europium; it is these holes that represent the latent image
+that is stored in the PSP. Latent images last for hours, but as electrons ﬁnd
+ways to recombine with the holes, they will be unrecoverable after a few days
+of storage.
+PSPs must be processed in order to recover the latent image. From the
+viewpoint of work ﬂow in a radiology clinic, this aspect of CR bears great
+similarity to that of ﬁlm-based radiography, which is one reason (once price
+dropped and quality improved) why CR became a natural way to transition to
+digital radiography from ﬁlm-based systems. To make it even easier to transition,
+the CR cassette, as shown in Figure 5.12, can often be used directly in place of the
+ﬁlm-screen cassette in existing systems. But unlike ﬁlm, there are no chemicals
+involved in recovering the radiographic image in CR. Instead, reading a PSP
+involves use of a focused laser, which stimulates the trapped electrons so that
+they will recombine with the holes and produce light. To do this, a mechanical
+device, much like the paper roller in a laser printer, is used to slide the PSP to a
+position where a focused laser is scanned across a row of the PSP; the PSP is then
+slid to a new position and a new row is scanned, and so on. At each position
+of the laser, which is approximately 700 nm in wavelength and therefore red in
+color, blue light is emitted from the PSP in proportion to the number of trapped
+electrons that are liberated by the laser excitation. This emitted light is directed
+by mirrors toward a photodetector that is sensitive only to blue light, and the
+resultant electrical signal is digitized using an analog to digital converter (ADC).
+This produces a digital value—a pixel value—that is proportional to the x-ray
+intensity at the spot on the PSP being probed by the laser.
+Since the PSP is by design ‘‘raster scanned’’ row-by-row, the resulting
+data comprise rectilinear samples of a digital image, which can be directly
+manipulated and stored on a computer and displayed on a digital display. The
+density of spatial samples during scanning affects the resolution of the system,
+and the number of bits per pixel in the ADC affects the overall dynamic range of
+the system. For example, high-resolution systems might sample at 10 pixels/mm
+and each pixel value might be represented by a 16-bit digital word. The dynamic
+Figure 5.12
+A computed radiography
+(CR) cassette. Image
+courtesy of GE
+Healthcare.

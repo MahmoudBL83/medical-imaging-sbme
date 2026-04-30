@@ -1,0 +1,49 @@
+202 Chapter 6 Computed Tomography
+Figure 6.10
+(a) A backprojection
+image and (b) a
+backprojection
+summation image. (a) (b)
+about the distribution of the image intensities. 1 To incorporate information
+about the projections at other angles, we can simply add up (integrate) their
+backprojection images, yielding the backprojection summation image
+f
+b(x, y) =
+∫ π
+0
+bθ (x, y) dθ , (6.14)
+also called a laminogram. An example of a backprojection summation image is
+shown in Figure 6.10(b). Early scanners did this using a discrete approximation
+to the integral. However, it was soon shown analytically that this is the wrong
+thing to do; this is also revealed from the blurriness of Figure 6.10(b). The con-
+cept is useful, however, because the correct procedure also uses backprojection
+except that it applies to ﬁltered versions of the projections, as we shall see.
+EXAMPLE 6.3
+Question Consider the projection g(ℓ,4 5◦) = sgn(ℓ), where sgn( ℓ)i s −1 when ℓ ≤ 0
+and is +1 when ℓ> 0. What is the backprojection image bθ (x, y)a t θ = 45◦.
+Answer We have
+b45◦(x, y) = g (x cos 45◦ + y sin 45◦,4 5◦)
+= g
+(
+x
+√
+2
+2 + y
+√
+2
+2 ,4 5◦
+)
+= g
+( √
+2
+2 (x + y), 45◦
+)
+.
+When x + y is negative, g is −1; when x + y is positive, g is +1. Mathematically, this is
+b45◦(x, y) =
+{ −1 x + y ≤ 0
++1 x + y > 0 ,
+which is the desired result and is shown in Figure 6.11.
+1Actually, a backprojection image has inﬁnite energy (if its domain is considered to be the inﬁnite
+plane), and its projection at angle θ0 is inﬁnite. Therefore, it is not really consistent with the
+projection.

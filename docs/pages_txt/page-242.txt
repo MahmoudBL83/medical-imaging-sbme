@@ -1,0 +1,51 @@
+Further Reading 223
+6.5 Summary and Key Points
+Computed tomography solves the problem of loss of contrast present in pro-
+jection radiography that is caused by superposition of overlying structures, by
+focusing directly (and exclusively) on the cross-sectional image slice of interest.
+This strategy signiﬁcantly improves contrast, at the expense of spatial resolu-
+tion, but the gain in contrast is so important that CT is ubiquitous in medical
+imaging practice. In this chapter, we presented the following key concepts that
+you should now understand:
+1. A tomogram is an image of a cross-sectional plane or slice within or through
+the body.
+2. X-ray computed tomography(CT) produces tomograms of the distribution
+of linear attenuation coefﬁcients, expressed in Hounsﬁeld units.
+3. There are currently seven generations of CT scanner design, which depend
+on the relation between the x-ray source and detectors, and the extent and
+motion of the detectors (and patient table).
+4. The basic imaging equationis identical to that for projection radiography;
+the difference is that the ensemble of projections is used to reconstruct
+cross-sectional images.
+5. The most common reconstruction algorithm isﬁltered backprojection, which
+arises from the projection-slice theorem.
+6. In practice, the reconstruction algorithm must consider the geometry of the
+scanner—parallel-beam, fan-beam, helical-scan, or cone-beam.
+7. As in projection radiography, noise limits an image’s SNR.
+8. Other artifacts include aliasing, beam hardening, and—as in projection
+radiography— inclusion of Compton scattered photons.
+Further Reading
+Carlton, R.R. and Adler, A.M. Principles of Radio-
+graphic Imaging: An Art and a Science, 5th ed.
+Clifton Park, NY: Delmar Cengage Learning,
+2012.
+Kak, A.C. and Slaney, M. Principles of Comput-
+erized Tomographic Imaging. New York, NY:
+IEEE Press, 1988.
+Kalender, W.A. Computed Tomography, 3rd ed.
+Munich: Publicis MCD Verlag, 2011.
+Hsieh, J. Computed Tomography: Principles,
+Design, Artifacts, and Recent Advances . 2nd
+ed. Bellingham, WA: SPIE Press, 2009.
+Macovski, A. ‘‘Physical Problems of Computerized
+Tomography.’’ Proceedings of the IEEE 71,
+1983: 373–78.
+Macovski, A. Medical Imaging Systems. Englewood
+Cliffs, NJ: Prentice Hall, 1983.
+Mahesh, M. MDCT Physics: The Basics, Philadel-
+phia, PA: Lippincott Williams and Wilkins,
+2009.
+Wolbarst, A.B. Physics of Radiology, 2nd ed. Nor-
+walk, CT: Appleton and Lange, 2005.
+Zeng, G. Medical Image Reconstruction: A Concep-
+tual Tutorial, Heidelberg: Springer, 2010.

@@ -1,0 +1,55 @@
+36 Chapter 2 Signals and Systems
+for a ≤ x ≤ b. Therefore, the 1-D Fourier transform of the rect function is the sinc
+function (and vice versa).
+2.5 Properties of the Fourier Transform
+The Fourier transform satisﬁes a number of useful properties. Most of them
+are used in both theory and application to simplify calculations. The following
+sections discuss the most important ones. Refer to Table 2.2 for a summary.
+2.5.1 Linearity
+If the Fourier transforms of two signalsf (x, y) and g(x, y)a r eF(u, v) and G(u, v),
+respectively, then
+F2D(a1f + a2g)(u, v) = a1F(u, v) + a2G(u, v) , (2.78)
+where a1 and a2 are two constants. This property can be extended to a linear
+combination of an arbitrary number of signals.
+TABLE 2.2
+Properties of the Fourier Transform
+Property Signal Fourier Transform
+f (x, y) F(u, v)
+g(x, y) G(u, v)
+Linearity a1f (x, y) + a2g(x, y) a1F(u, v) + a2G(u, v)
+Translation f (x − x0, y − y0) F(u, v)e−j2π(ux0+vy0)
+Conjugation f ∗(x, y) F∗(−u, −v)
+Conjugate f (x, y) is real-valued F(u, v) = F∗(−u, −v)
+symmetry
+FR(u, v) = FR(−u, −v)
+FI(u, v) =− FI(−u, −v)
+|F(u, v)|=| F(−u, −v)|
+̸ F(u, v) =− ̸ F(−u, −v)
+Signal f (−x, −y) F(−u, −v)
+reversing
+Scaling f (ax, by) 1
+|ab|F
+( u
+a , v
+b
+)
+Rotation f (x cos θ − y sin θ, x sin θ + y cos θ) F(u cos θ − v sin θ, u sin θ + v cos θ)
+Circular f (x, y) is circularly symmetric F(u, v) is circularly symmetric
+symmetry
+|F(u, v)|= F(u, v)
+̸ F(u, v) = 0
+Convolution f (x, y) ∗ g(x, y) F(u, v)G(u, v)
+Product f (x, y)g(x, y) F(u, v) ∗ G(u, v)
+Separable f (x)g(y) F(u)G(v)
+product
+Parseval’s theorem
+∫ ∞
+−∞
+∫ ∞
+−∞
+|f (x, y)|2 dx dy=
+∫ ∞
+−∞
+∫ ∞
+−∞
+|F(u, v)|2 du dv.

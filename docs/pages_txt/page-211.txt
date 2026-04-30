@@ -1,0 +1,35 @@
+192 Chapter 6 Computed Tomography
+Figure 6.5
+The geometry of a
+fourth-generation (4G)
+CT scanner.
+rotational motion and highly parallel detection capability, however, allows for
+a dramatic decrease in scan time. A typical scanner acquires 1,000 projections
+with a fan-beam angle of 30–60 degrees incident upon 500–700 detectors and
+does this in 1–20 seconds. As in 2G systems, the detectors of a 3G system
+are collimated to reduce scattering artifacts, so there is some loss of detector
+collection efﬁciency. Furthermore, since the detectors must be very small, they
+cannot be as efﬁcient as those in 1G and 2G systems. Therefore, once again, to
+obtain the same image quality with a 3G scanner as that obtainable in 1G and
+2G systems, the dose must be slightly greater.
+A fourth-generation (4G) scanner, as shown in Figure 6.5, has a single
+rotating source with a larger ring of stationary detectors. A variation on this
+theme has the source outside the detectors with slight gaps between the detectors
+through which the x-rays can be ﬁred. Collimation cannot be used in this
+geometry since a detector must receive energy from a source that moves through
+many positions. Because the detectors are not collimated and because they can
+be physically large since they lie on a large ring, the detection efﬁciency of a
+4G scanner is higher than that of a 3G scanner. However, because the detectors
+cannot be collimated, they are also highly susceptible to scattering. This factor
+is so signiﬁcant that the image quality in 4G systems is only comparable to that
+of 3G systems, not better.
+One major design feature shared by the ﬁrst four generations of CT scanners
+is the presence of only one x-ray tube. This feature is primarily due to the fact that
+x-ray tubes are expensive and bulky and that they must be constantly calibrated.
+The need to rotate a bulky object—x-ray tube and/or detectors—limits the
+overall imaging speed of the scanner.Fifth-generation (5G) scannersare designed
+to solve this problem. Fifth-generation CT scanners, also known aselectron beam
+computed tomography(EBCT) scanners, are commercially available at this time
+but are not in widespread clinical use because of their high cost. EBCT uses
+a ﬂying electron beam, steered electromagnetically, to hit one of four tungsten
+anode strips that encircle the patient. X-rays are generated when the electron

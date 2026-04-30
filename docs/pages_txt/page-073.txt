@@ -1,0 +1,33 @@
+CHAPTER
+33
+Image Quality
+3.1 Introduction
+The primary purpose of a medical imaging system is to create images of the
+internal structures and functions of the human body that can be used by medical
+professionals to diagnose abnormal conditions, determine the underlying mech-
+anisms that produce and control these conditions, guide therapeutic procedures,
+and monitor the effectiveness of treatment. The ability of medical professionals
+to successfully accomplish these tasks strongly depends on the quality of the
+images acquired by the medical imaging system at hand, where by ‘‘quality’’ we
+mean the degree to which an image allows medical professionals to accomplish
+their goals.
+Image quality depends on the particular imaging modality used. With each
+modality, the range of image quality may be considerable, depending on the
+characteristics and setup of the particular medical imaging system, the skill
+of the operator handling the system, and several other factors, such as patient
+characteristics and imaging time. Studying how these factors affect image quality
+is an important and complicated task. This task is simpliﬁed by focusing on
+the following six important factors: (1) contrast, (2) resolution, (3) noise,
+(4) artifacts, (5) distortion, and (6) accuracy.
+The ability of medical professionals to discriminate among anatomical or
+functional features in a given image strongly depends on contrast. Contrast
+quantiﬁes the difference between image characteristics (e.g., intensities in shades
+of gray or color) of an object (or feature within an object) and surrounding
+objects or background. High contrast allows easier identiﬁcation of individual
+objects in an image, whereas low contrast makes this task difﬁcult. In the
+overview to Part I, we presented images from different modalities that have
+different contrast. For example, the brain structures in the positron emission
+tomography (PET) image in Figure I.4(c) are of higher contrast than the same
+structures in Figure I.4(a) or (b), because the actual signal coming from the
+patient is of intrinsically higher contrast in PET.
+54

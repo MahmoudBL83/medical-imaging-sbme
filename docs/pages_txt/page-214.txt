@@ -1,0 +1,58 @@
+6.2 CT Instrumentation 195
+introduced in CT for a variety of clinical applications. In the past, dual-energy
+CT data would be acquired by either scanning the subject twice using different
+kVp’s—for example, 80 kVp and 140 kVp—or by using a pulsed mode that
+excites the tube at alternating kVp’s during a single scan. Despite the clinical
+utility, these approaches were not very popular due to the increased scan time
+and other technical challenges.
+With the recent introduction of dual source CT (i.e., scanners with two
+x-ray tubes), the situation has changed, and many scanners that are capable of
+both rapid scanning at a single-energy and simultaneous dual-energy acquisition
+are being introduced into routine clinical use. Since two separate images are
+acquired, clinicians are able to study the images separately as in a dual-modality
+study like PET/CT or combine them into single image or collection of images that
+reveal different underlying tissue properties based on their linear attenuation
+coefﬁcients at the two effective energies.
+6.2.4 CT Detectors
+Most modern scanners usesolid-state detectors, as shown in Figure 6.6(a). These
+detectors contain a scintillation crystal in the ﬁrst stage, typically a cadmium
+tungstate, sodium iodide, bismuth germanate, yttrium-based, or cesium iodide
+crystal. X-rays interact with the crystal mainly by photoelectric effect, producing
+photoelectrons, similar to what happens to the phosphor in an intensifying
+screen. These electrons are excited and emit visible light when they spontaneously
+de-excite.
+This scintillation process results in a burst of light. The light is then converted
+to electric current using a solid-state photodiode that is attached tightly to the
+scintillator. (Some 4G and 5G scanners use photomultiplier tubes to convert
+light to electricity; see Section 8.2.3 for a description of such tubes.) For 1G,
+2G, and 3G systems, which use line collimators in front of the detectors, the
+efﬁciency of each detector may be increased by using thick crystals. However,
+thinner crystals must be used in 4G systems to allow the detectors to detect off-
+axis incident photons (as is required by the scanner geometry); unfortunately,
+thinner crystals have lower efﬁciency.
+In 3G scanners, very small and highly directional detectors are required.
+Either solid-state detectors, as described above, or xenon gas detectors, as
+shown in Figure 6.6(b), can be designed to satisfy these requirements. Xenon
+gas detectors use compressed xenon gas in long, thin tubes, which when ionized
+generate a current between an anode and cathode (maintained at a high potential
+difference). These detectors are typically less efﬁcient than solid-state detectors,
+Figure 6.6
+(a) Solid-state detectors,
+(b) xenon gas detectors,
+and (c) multiple
+(solid-state) detector
+array.
+......
+Scintillator
+crystals Photodiodes
+X-rays
+(a)
+Scintillator
+crystals Photodiodes
+X-rays
+(c)(b)
+X-rays
+Anode
+Cathode
+Xenon
+gas

@@ -1,0 +1,45 @@
+160 Chapter 5 Projection Radiography
+(computer-based) image analysis methods, in general, which requires such
+methods to be more complicated than would otherwise be the case.
+Depth-Dependent Magniﬁcation Another consequence of divergent x-rays is
+object magniﬁcation, which is speciﬁcally called depth-dependent magniﬁcation
+in radiography. Consider the ‘‘stick’’ object of height w shown in Figure 5.16.
+It is clear from the geometry that the object will always appear larger on the
+detector than it is in reality. Furthermore, the height of the object on the detector
+is different depending on the position of the object in the ﬁeld-of-view.
+Using the concept of similar triangles, it is easy to show that when the object
+is at position z, its height wz on the detector will be
+wz = w d
+z . (5.13)
+From this, we see that the magniﬁcation M(z) is given by
+M(z) = d
+z . (5.14)
+The magniﬁcation is a function of z, which is why this magniﬁcation is referred
+to as depth-dependent.
+There are three important consequences of depth-dependent magniﬁcation.
+First, two objects within the body of the same size may appear to have different
+sizes on the radiograph. Thus, judgments about relative sizes of anatomical
+features must be made with caution and knowledge. Second, anatomical features
+studied longitudinally—that is, using radiographs of the same patient taken over
+several months or years—can only be compared in size if the same radiographic
+conditions and patient positioning is used. A change in the patient’s weight, for
+example, may position a physiological landmark differently relative to the x-ray
+source causing an apparent change in size which could be falsely associated
+with the progression of disease. Third, the boundaries of a single object can
+be blurred simply because the ‘‘front’’ of the object is closer to the radiograph
+than its ‘‘back.’’ This effect, which might be called depth-dependent blurring,i s
+studied in the following example.
+Figure 5.16
+Depth-dependent
+magniﬁcation of a ‘‘stick’’
+object.
+X-ray
+origin
+Detector
+plane
+d
+z1 z2
+w
+w
+w1
+w2

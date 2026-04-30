@@ -1,0 +1,53 @@
+7.6 Radiotracers 249
+7.6 Radiotracers
+There are about 1,500 known radionuclides, of which 200 or so can be
+purchased. Out of these, however, only a dozen or so are suitable for nuclear
+medicine for several reasons. First, we desire ‘‘clean’’ gamma ray emitters—that
+is, ones that do not also emit alpha and beta particles (because these particles
+would only contribute to patient radiation dose without usefully contributing
+to image formation, as they would never make it out of the patient’s body).
+Positron emitters are also suitable because the positrons rapidly annihilate with
+electrons to produce gamma rays. Second, unlike projection radiography and
+CT, where we require attenuation of the radiation to produce image contrast,
+in nuclear medicine we would prefer that there would be no attenuation of the
+radiation. This is because in nuclear medicine we are trying to determine the
+location of the emitters; attenuation simultaneously adds to the patient dose and
+reduces the signal we can detect. This requirement suggests that the energy of the
+gamma rays should be high so that they leave the body with little attenuation.
+On the other hand, we must be able to actually detect the radiation once it leaves
+the body, and the higher the energy the less likely the gamma rays will interact
+in the detector. For these reasons (and others, as we will see later), the gamma
+emitters used in nuclear medicine have energies in the range 70–511 keV.
+Another important property of a radiotracer is its half-life. In general, the
+half-life of a radiotracer depends on both the physical half-life of the radionuclide
+and the biological half-life of the pharmaceutical; this biological half-life arises
+from body processes that metabolize or clear the pharmaceutical. The effective
+half-life T
+e combines the physical Tp and biological Tb half-lives:
+1
+Te
+= 1
+Tp
++ 1
+Tb
+. (7.14)
+In general, we need to be able to form images in a matter of minutes, not
+seconds or hours. If the radionuclide decays in seconds, there is hardly enough
+time to administer and metabolize the compound before the source is lost. On
+the other hand, if it takes hours to create an image, patient motion will be a
+serious problem and natural metabolic processes will change the distribution
+of the radiotracer in the body over the period of the exam. Furthermore, a
+long half-life increases the radiation dose to the patient. Therefore, the ideal
+effective half-life of the radionuclide is short but not too short. Typical times are
+on the order of minutes to several hours. Because of this relatively short time
+requirement, some radiotracers are made on-site in generators or cyclotrons,
+while others are ordered from a nearby radiopharmacy. A list of the more
+commonly used radionuclides and some of their properties is given in Table 7.1.
+An important characteristic of a radionuclide is that it must be useful and
+safe to ‘‘trace’’ within the body, either by itself or attached to a compound. Some
+of the radionuclides in Table 7.1 are more useful than others in this respect.
+Iodine, for example is a naturally occurring substance in the body, accumulating
+in the thyroid gland. Iodine-123 or I-131 in a sodium salt can be administered
+orally and measured in the thyroid to assess thyroid function. Technetium-99m
+can be used to label diethylene triamine pentaacetic acid (DTPA), which is
+ﬁltered by the kidneys, and serial images of the kidneys can be used to assess

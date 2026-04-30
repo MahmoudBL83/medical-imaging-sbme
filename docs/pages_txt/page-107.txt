@@ -1,0 +1,48 @@
+88 Chapter 3 Image Quality
+Figure 3.16
+(a) Size distortion in a
+radiographic imaging
+system due to
+magniﬁcation: although
+the sizes of the two dark
+objects are different, their
+projections are the same.
+(b) Shape distortion in a
+radiographic imaging
+system due to x-ray beam
+divergence: although the
+two dark objects are the
+same, the shapes of their
+projections are different.
+(a)
+X-ray source
+(b)
+X-ray source
+artifacts that appear in each particular imaging modality will be discussed in
+subsequent chapters.
+3.7.2 Distortion
+Medical imaging systems often introduce distortion, another factor affecting
+image quality. Distortion is geometrical in nature and refers to the inability of a
+medical imaging system to give an accurate impression of the shape, size, and/or
+position of objects of interest.
+In projection radiography, for example,size distortioncan be present due to
+magniﬁcation caused by the distance of the x-ray source from the object being
+imaged. This is illustrated in Figure 3.16(a). Notice that although the sizes of
+the two dark objects are different their projections are the same.
+On the other hand, shape distortioncan be generated as a result of unequal
+magniﬁcation of the object being imaged. One common cause of shape distortion
+is the fact that anatomical structures lie at different levels within the human body.
+In projection radiography, shape distortion is also caused by the divergence of
+the x-ray beam. This is illustrated in Figure 3.16(b). Notice that although the
+two dark objects are the same the shapes of their projections are different.
+Unfortunately, distortion can be very difﬁcult to determine and correct.
+In order to evaluate distortion, knowledge of the actual shape and size of
+the object being imaged is required. Moreover, a good understanding of the
+imaging geometry is necessary. Developing methods for correcting distortion
+is very important for increasing image quality and improving diagnosis. Dis-
+tortions introduced by each particular imaging modality will be discussed in
+later chapters.
+3.8 Accuracy
+The preceding discussions in this chapter have focused on quantitative metrics
+of image quality. Even so, we said at the outset that image quality ultimately
+must be judged in the context of a speciﬁc clinical application. Medical images

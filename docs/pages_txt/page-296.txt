@@ -1,0 +1,44 @@
+8.4 Image Quality 277
+the collimator. While this seems at ﬁrst to contradict the inverse-square law, it
+really does not. The ﬁeld of view of each hole increases with increasing distance.
+This means that each hole ‘‘sees’’ a larger area at a greater distance from the
+collimator (see Figure 8.10). Looking at it another way, more holes see the same
+source if it is farther away from the collimator. As a radioactive source is moved
+away from the face of the collimator, the count rate through the central hole
+decreases due to the inverse-square law. However, more and more holes see
+the source, and the total count rate remains constant. Since more holes see the
+source, its image is spread over a larger area of the crystal face (i.e., the image
+is progressively smeared out). Thus, the resolution gets worse with increasing
+distance. The reason why the overall sensitivity is not affected in the same way is
+because the counts from the source are not lost but instead distributed to other
+parts of the camera.
+Consider a ﬁxed source range |z| satisfying |z|≫ l
+e + b. Then,
+RC ≈ d
+le
+|z| , (8.21)
+and by substitution,
+ϵ ≈
+( RCKd
+|z|(d + h)
+)2
+. (8.22)
+This relationship shows that there is a tradeoff between resolution and sensi-
+tivity. Thus, while we already understand the need for separate high-energy,
+medium-energy, and low-energy collimators to account for differences in septal
+penetration, there is also the need to consider different collimators for the same
+energy range that trade off resolution and sensitivity. Table 8.1, for example,
+shows several low energy (i.e., for 140 keV) collimators and their resolutions
+and sensitivities.
+TABLE 8.1
+Resolution and Sensitivity for Several Collimators
+Collimator d (mm) l (mm) h (mm) Resolution Relative
+@ 10 cm (mm) sensitivity
+LEUHR 1.5 38 0.20 5.4 12.1
+LEHR 1.9 38 0.20 6.9 20.5
+LEAP 1.9 32 0.20 7.8 28.9
+LEHS 2.3 32 0.20 9.5 43.7
+LEUHR = low energy ultra-high resolution
+LEHR = low energy high resolution
+LEAP = low energy all purpose
+LEHS = low energy high sensitivity

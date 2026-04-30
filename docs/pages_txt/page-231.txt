@@ -1,0 +1,48 @@
+212 Chapter 6 Computed Tomography
+think of the phrase convolution weighted-backprojection when the projections
+are fan-beams.
+6.3.5 Helical CT Reconstruction
+Consider the helical CT scenario in which there is a single detector array and the
+patient table is continuously moved through the gantry. In this case, the nature
+of the acquired data is different than in single-slice CT. Since x-rays move at the
+speed of light, any acquired projection still corresponds to a single plane within
+the patient; however, because of the continuous movement of the patient, no two
+projections will correspond to the same plane. A given (fan-beam) projection
+is therefore identiﬁed uniquely by its longitudinal position z
+j, measured relative
+to the patient. The index j, in fact, not only identiﬁes the position zj of the
+projection but also determines its angle βj.
+Suppose there are M angles acquired over 360◦. Then, the acquired angles
+repeat such that βj − βj+M = 0. How far has the patient moved when the angle
+repeats? This is determined by the pitch of the helix, which is given by
+ζ = zj+M − zj , (6.43)
+which is in turn determined by the speed of gantry rotation and the table speed.
+Suppose that we want to reconstruct an image at the longitudinal position
+z. In conventional (single-slice) tomography, we would need many projections
+taken at a collection of angles within the axial plane passing through z.I n
+the helical geometry, however, we are not guaranteed even to have one such
+projection (because z may not correspond tozn for any n). It is standard practice
+to ‘‘create’’ the needed projections using linear interpolation of the projections
+that are measured in nearby slices. For example, suppose we would like the
+projection corresponding to the angle β
+j. We know that the projection angle βj
+is acquired at all linear positions zj+kM for k = 0, 1, 2,.... It is straightforward
+to ﬁnd k such that zj+kM ≤ z < zj+[k+1]M. We know that the scanner acquires
+projections at angleβj at both positionszj+kM and zj+[k+1]M. Linear interpolation
+between these two projections yields an estimate of the desired projection
+ˆpz(γ, βj) = z − zj+kM
+ζ pzj+[k+1]M (γ, βj)
++zj+[k+1]M − z
+ζ pzj+kM (γ, βj) , (6.44)
+which is valid for any position γ within the projection. This procedure can be
+repeated for all j = 1, ... , M, noting that the choice of k depends on both z and
+j. In this way, a complete set of projections for fan-beam reconstruction of the
+2-D slice at z is created. A fan-beam reconstruction formula can then be used to
+reconstruct a picture of the slice.
+Many factors will affect the quality of a helical CT image. In particular,
+the quality of interpolated data will be affected by the pitch of the helix. The
+pitch is determined by the rate of rotation of the gantry and the speed of the
+table feed. If the pitch is too big, while the fan is too thin, then aliasing artifacts
+will appear. To compensate, the fan could be made thicker, which provides a
+natural analog low-pass ﬁlter. Then, the images will be free from aliasing but
+will be blurry. In clinical scanners today, protocols are preset into the scanner

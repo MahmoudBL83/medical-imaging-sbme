@@ -1,0 +1,52 @@
+9.2 Image Formation 313
+Attenuation Correction Unlike SPECT, PET has a straightforward approach
+for handling attenuation. Suppose μ(x, y) is exactly known. Then, using (9.20),
+we can form attenuation-corrected measurements as
+gc(ℓ, θ) = n(ℓ, θ)
+K exp
+{∫ R
+−R
+μ(x(s′), y(s′);511 keV) ds′
+}
+. (9.25)
+We see by combining this equation with (9.20) thatgc(ℓ, θ) is exactly the integral
+of activity along the line L(ℓ, θ)
+gc(ℓ, θ) =
+∫ R
+−R
+f (x(s), y(s)) ds . (9.26)
+Corrected measurements can now be used to obtain a more accurate image of
+activity concentration. Here is the CBP formula that could be used, for example:
+ˆf (x, y) =
+∫ π
+0
+∫ ∞
+−∞
+gc(ℓ, θ)˜c(x cos θ + y sin θ − ℓ) dℓdθ. (9.27)
+As in both CT and SPECT, ˜c(ℓ) is an approximate ramp ﬁlter, deﬁned using
+an appropriate window function [see (9.11)]. Although CBP ignores both the
+blurring caused by the physical size of the detectors (larger than x-ray CT) and
+the statistical noise made prominent by the relatively low photon counts, it
+remained the routine method in PET reconstruction for many years.
+We see from (9.25) that it is only the line integrals of μ(x, y) that are
+required to correct the PET counts, not an actual image of μ(x, y). So actual
+reconstruction of μ(x, y) need not be carried out; instead, it is sufﬁcient to
+simply measure the line integrals of attenuation on each LOR in order to be
+able to compute the corrected measurements g
+c(ℓ, θ). As noted above, it is
+now standard to acquire CT data along with the PET data, using a combined
+PET/CT system. The CT data are converted to μ(x, y) (at 511 keV) via a
+nonlinear transformation, from which the line integrals of μ(x, y) (at 511 keV)
+are obtained. We note that in PET/MRI systems, the MR data cannot be readily
+converted to μ(x, y). Instead, current approaches rely on preexisting databases
+that convert MR-identiﬁed anatomic structures to μ(x, y) (at 511 keV) via
+segmentation and atlas-based methods.
+9.2.3 Iterative Reconstruction
+CBP was for many years the most commonly used reconstruction algorithm in
+SPECT and PET, and it is still often used. It can be efﬁciently implemented and
+is relatively robust to those physical factors present in ECT imaging that corrupt
+the imaging process—for example, limited detector resolution, Compton scatter,
+attenuation (at least in SPECT), and noise. However, use of CBP is optimal
+(and, indeed, analytically correct) only if the imaging equation is an accurate
+depiction of reality, which we know from the preceding discussion for both
+PET and (especially) SPECT is not the case because of the corrupting physical

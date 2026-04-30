@@ -1,0 +1,45 @@
+262 Chapter 8 Planar Scintigraphy
+due to the random nature of the Compton scatter angle. The rightmost limit of
+this plateau, called theCompton edge, represents Compton interactions in which
+the incoming (unscattered) gamma photon is backscattered 180 ◦ in the crystal,
+thus depositing the maximum energy possible in a single Compton interaction.
+The photopeak represents gamma photons that come directly from the source
+without interacting and losing any energy and deposit all of their energy in
+either a single photoelectric interaction or one or more Compton interactions
+followed by a photoelectric interaction. Because a gamma photon cannot lose
+all its energy in a single Compton scatter event, there is a separation between
+the Compton plateau and the photopeak.
+Of importance, scintillation detectors have imperfect energy resolution, as
+discussed later in the chapter. As a result, the photopeak, which should be an
+inﬁnitely thin vertical line, is spread. The degree of spreading is related to energy
+resolution in exactly the same way as the point spread function is related to
+spatial resolution.
+EXAMPLE 8.2
+The pulse height analyzer is used to reject photons that have been Compton scattered.
+Question What is the maximum angle through which a 140-keV photon can be
+scattered and still be accepted within a 20 percent pulse height window?
+Answer Note that 20 percent pulse height window is 10 percent on either side.
+Therefore,
+140 keV × 0.1 = 14 keV ,
+140 keV − 14 keV = 126 keV.
+Since
+hν′ = hν
+1 + hν
+m0c2 (1 − cos θ)
+,
+we have
+126 keV = 140 keV
+1 + 140 keV
+511 keV(1 − cos θ)
+.
+Solving for θ yields θ = 53.54◦.
+8.2.6 Gating Circuit
+The Z-pulse is proportional to the total energy deposited in the crystal by the
+gamma ray photon and is used by the pulse height analyzer to discriminate
+against Compton-scattered photons. The pulse height analyzer is used to set
+an acceptance window around the photopeak (the dominant energy for the
+particular radiotracer being used), as shown in Figure 8.5(b). Its lower threshold
+is set to discriminate against Compton events, which have lower energy than a
+non-Compton event. Its upper threshold is set to discriminate against multiple
+(simultaneous, summed) events, which have more energy than a single event
+(and for which ‘‘position’’ is a meaningless concept). Because scintillation

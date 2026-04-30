@@ -1,0 +1,61 @@
+72 Chapter 3 Image Quality
+The expected value and variance are given by
+μN = μ and σ2
+N = σ2 , (3.46)
+respectively. The integral in (3.45) cannot be evaluated in closed form, but it is
+usually tabulated in mathematics handbooks and can be numerically evaluated
+using most mathematics, statistics, and engineering software packages.
+EXAMPLE 3.6
+Distribution functions can be found by integrating their corresponding density function
+using (3.37).
+Question Can (3.44) be proved by direct integration?
+Answer The distribution function of a Gaussian random variable with mean μ and
+variance σ2 is
+PN(η) =
+η∫
+−∞
+pN(τ) dτ
+=
+η∫
+−∞
+1√
+2πσ 2
+e−(τ−μ)2/2σ2
+dτ
+= 1√
+2πσ 2
+η−μ
+σ∫
+−∞
+e−t2/2σ dt,l e t t = τ−μ
+σ
+= 1√
+2π
+0∫
+−∞
+e−t2/2 dt + erf
+( η − μ
+σ
+)
+= 1
+2 + erf
+( η − μ
+σ
+)
+.
+To get the last equality, we use the fact that 1√
+2π e−t2/2 is the pdf of the standard Gaussian
+random variable and is symmetric around t = 0.
+In general, the mean and variance do not uniquely specify a random
+variable. This means that, given μN and σ2
+N , there might be more than one pdf
+that produces the same mean and variance. However, in the case of a Gaussian
+random variable, the pdf is uniquely speciﬁed by its mean and variance.
+Usually, noise in medical imaging systems is the result of a summation of
+a large number of independent noise sources. According to the central limit
+theorem of probability, a random variable that is the sum of a large number of
+independent causes tends to be Gaussian. Therefore, it is often natural to model
+noise in medical imaging system by means of a Gaussian random variable.
+3.4.3 Discrete Random Variables
+When the random variable N takes only values η1, η2, ... , ηk,i ti ss a i dt o
+be a discrete random variable . This random variable is uniquely speciﬁed

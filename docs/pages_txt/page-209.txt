@@ -1,0 +1,15 @@
+190 Chapter 6 Computed Tomography
+Figure 6.2
+The geometry of a
+ﬁrst-generation (1G)
+CT scanner.
+Figure 6.3
+The geometry of a
+second-generation (2G)
+CT scanner.
+a 2G scanner, since radiation scattered from one ray could end up in another
+detector. Because of this phenomenon, the detectors in a 2G scanner are usually
+collimated so that they can receive radiation only from the correct direction.
+Collimation on detection, however, reduces efﬁciency and increases noise for a
+given dose. Hence, for a given dose and with an identical number of projections
+and measurements per projection, the 1G scanner will produce a better image.

@@ -1,0 +1,48 @@
+108 Chapter 4 Physics of Radiography
+TABLE 4.1
+Abbreviated Table of the Elements
+Atomic Mass Numbers Mass Numbers
+Number of Stable Isotopes of Unstable Isotopes
+Element Symbol ( Z)( A)( A)
+Hydrogen H 1 1, 2 3
+Helium He 2 3, 4 5, 6, 8
+Lithium Li 3 6, 7 5, 8, 9, 11
+Beryllium Be 4 9 6, 7, 8, 10, 11, 12
+Boron B 5 10, 11 8, 9, 12, 13
+Carbon C 6 12, 13 9, 10, 11, 14, 15, 16
+Nitrogen N 7 14, 15 12, 13, 16, 17, 18
+Oxygen O 8 16, 17, 18 13, 14, 15, 19, 20
+From Johns and Cunningham, 1983.
+and their atoms are radioactive. Radionuclides are statistically likely to undergo
+radioactive decay, which causes a rearrangement of the nucleus, which in turn
+gives off energy and results in a more stable nucleus. For example,
+14
+6 Co rC - 1 4
+denotes a radioactive carbon atom; it is statistically likely to decay into 14
+7 N,
+a stable nitrogen atom, during which a beta particle will be emitted from the
+nucleus. We will have a lot more to say about radionuclides and radioactivity in
+Chapters 7, 8, and 9.
+The electrons orbiting the nucleus are organized into so-called orbits or
+shells. The K shell is closest to the nucleus, the L shell is next, then the M shell,
+and so on. Electrons are restricted to speciﬁc quantum states within each shell.
+Only one electron is permitted to be in each state, and this leads to a maximum
+number of electrons per shell, given by 2n
+2, where n is the shell number (K = 1,
+L = 2, etc.). For example, only two electrons are permitted in the K shell, 8 in
+the L shell, 18 in the M shell, and 32 in the N shell. Each atom has a so-called
+ground state conﬁguration for its electrons, which corresponds to the lowest
+energy conﬁguration of the atom—nature’s preferred arrangement of electrons
+in a given atom. Generally speaking, in the ground state, the electrons will be
+in the lowest orbital shells and within the lowest energy quantum states within
+each shell. A diagram of the arrangement of electrons in shells for the carbon
+atom is shown in Figure 4.2.
+Figure 4.2
+The arrangement of
+electrons into shells for
+the carbon atom.
+K
+L
+M
+N
+Z /H11005 6

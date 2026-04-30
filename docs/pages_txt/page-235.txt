@@ -1,0 +1,58 @@
+216 Chapter 6 Computed Tomography
+The ramp ﬁlter window function can be written as
+W(ϱ ) = rect
+( ϱ
+2ϱ 0
+)
+.
+The ﬁrst zero ofS(ϱ ) is at frequencyϱ = 1/d. Sinceϱ 0 ≫ 1/d, the frequency cutoff deﬁned
+by the detectors is much less than that of the ramp ﬁlter, and the ramp ﬁlter window
+function can be ignored. Therefore, the (circularly symmetric) 2-D transfer function is
+(approximately) given by
+H(q) ≈ d sinc(dq) .
+From Table 2.3,
+H{sinc(r)}= 2r e c t (q)
+π
+√
+1 − 4q2
+.
+Using the fact that the forward and inverse Hankel transforms are the same, and [see
+(2.120)]
+H{f(ar)}= 1
+a2 F(q/a),
+we can work out the following (approximate) impulse response:
+h(r) = H−1{d sinc(dϱ )}
+= d 1
+d2
+2r e c t (r/d)
+π
+√
+1 − 4(r/d)2
+= 2r e c t (r/d)
+π
+√
+d2 − 4r2 .
+6.4.2 Noise
+Measurement Statistics A CT detector measures the intensity of the x-ray pulse
+after losses in the patient. There is intrinsic noise in such a measurement, coming
+from the Poisson nature of x-rays [see (3.52)]. In addition, body attenuation
+and limited detector efﬁciency reduce the measured number of photons, further
+increasing noise.
+2 We will make many approximations in this section in arriving
+at a useful approximate expression for the noise in a CT image. The ﬁrst
+approximation is that we will assume that the CT system is monoenergetic,
+operating at the effective energy
+E of the scanner. In this case, the statistical
+behavior of the scanner can be understood by converting the observed intensity
+at a given detector I
+d to an observed photon count as Nd = IdA/Delta1t/E.
+We denote the basic CT measurement for the ith detector and jth angle by
+gij =− ln
+( Nij
+N0
+)
+, (6.57)
+2The x-ray beam itself arises from a random process, and the number of x-rays in the beam is a
+Poisson random variable. Body attenuation and detector efﬁciency produce random deletions (in
+statistical jargon) of these x-rays, and the number of x-rays in the detected beam is also a Poisson
+random variable.

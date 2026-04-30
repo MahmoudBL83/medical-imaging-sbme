@@ -1,0 +1,37 @@
+6.3 Image Formation 207
+Figure 6.14
+Convolution step:
+(a) Original sinogram;
+(b) ﬁltered sinogram;
+(c) proﬁle of sinogram
+row [white line in (a)];
+and (d) proﬁle of ﬁltered
+sinogram row [white line
+in (b)].
+(a) (b)
+(c) (d)
+50 100 150 200 250 300
+50 100 150 200 250 300
+Figure 6.15
+Backprojection step.
+(a) A selected ﬁltered
+projection and (b) the
+backprojection image
+created from the ﬁltered
+projection.(a) (b)
+We have already seen the backprojection operation. Here, backprojection is
+applied to each ﬁltered projection, rather than the raw projection. An example
+is shown in Figure 6.15. Since the ﬁltered projections have both positive and
+negative values, backprojection images also have positive and negative values. It
+can be understood on an intuitive level that the presence of negative values will
+permit the reconstruction of a zero value outside the region of support of the
+object; of course, this requires the summation of many backprojection images
+for this to happen.
+The last step in reconstruction is the summation step, a process that is
+illustrated in Figure 6.16. Notice that the summation process is accomplished
+using an ‘‘accumulator’’ concept. Starting with a ‘‘zero’’ image, the ﬁrst (ﬁl-
+tered) backprojection image is added. Then, the second backprojection image
+is added, and so forth. There is no need to store hundreds of backprojec-
+tion images. The overall process of ﬁltered backprojection is very time and
+memory efﬁcient, which accounts for its great popularity over the past three
+decades.

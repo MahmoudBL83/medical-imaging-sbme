@@ -1,0 +1,49 @@
+318 Chapter 9 Emission Computed Tomography
+resolution of a SPECT or PET scanner); attenuation of photons by tissue;
+detection of scattered photons; accidental coincidence counting of random
+(unpaired) photons in coincidence, applicable only to PET imaging; and ‘‘noise’’
+resulting from the statistical nature of radioactive decay.
+9.3.1 Spatial Resolution
+As ﬁrst introduced in Chapter 3, all imaging systems have a limited ability
+to resolve small objects. The spatial resolution of an emission tomography
+system can be thought of as that distance by which two small point sources
+of radioactivity must be separated to be distinguished as separate in the image
+(see again Figure 3.6). The spatial resolution of a SPECT system is mainly
+determined by the resolution in the projection data, which itself is determined by
+the factors discussed in Section 8.4.1, and the effects of reconstruction, especially
+the speciﬁc ﬁlter used, since the approximate ramp ﬁlter given in (9.11) usually
+includes a low-pass ﬁlter W(ϱ ) to reduce noise. The spatial resolution of a PET
+system is mainly determined by the physical cross-section dimensions of each
+detector element and the effects of reconstruction. In addition, because PET
+uses the annihilation site, rather than the emission site of the positron per se,
+positron range (i.e., the distance the positron travels before annihilation) also
+limits resolution. In particular, positron range depends on the initial energy
+of the positron. Positrons are emitted with a range of energies, leading to a
+distribution of positron ranges. The effective spatial resolution of a PET scanner
+can be modeled as the convolution of the scanner’s intrinsic point spread
+function (PSF) with the positron range distribution.
+In practice, we can model SPECT and PET resolution as a cascade of LSI
+systems [see (2.46)]. The development is identical to that for CT resolution, as
+fully derived in Section 6.4.1. The ﬁnal expression for the relation between the
+reconstructed (but blurred) image and the object, identical to (6.56), is
+ˆf (x, y) = f (x, y) ∗ h(r) , (9.39)
+where r =
+√
+x2 + y2.
+Here (as in CT), h( r) represents the (cascaded) PSF and h( r) for SPECT
+includes (1) the (1-D, in-plane) projection PSF [i.e., (8.14), with y set to 0, and
+x = ℓ] and (2) w [identical to w in (6.48)]; h(r) for PET includes (1) a positron
+range function, (2) a rect function for detector width [identical to s in (6.48)],
+and (3) w.
+Finite spatial resolution in SPECT and PET results in two important, related
+effects. First, the image is blurred, with the degree of blurring dependent on
+the spatial resolution. This blurring prevents the delineation of edges of larger
+structures and may not allow the visualization of smaller ones as distinct
+objects. Second, neighboring areas are smeared and averaged together, reducing
+the measured value in the areas with greater radioactivity, and increasing it in
+the areas with lesser radioactivity (i.e., reducing contrast). Said another way,
+referring back to (3.1), the reduction in f
+max and the increase in fmin reduces
+modulation (or contrast). In this fashion, ﬁnite spatial resolution produces an
+underestimation of radioactivity in small structures with greater radioactivity,
+with progressive underestimation as the structures get smaller. The effect is

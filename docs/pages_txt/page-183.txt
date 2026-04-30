@@ -1,0 +1,48 @@
+164 Chapter 5 Projection Radiography
+Figure 5.19
+Principle of source
+magniﬁcation.
+z
+d
+Extended
+x-ray
+source
+Image of
+extended
+source
+Point
+hole
+Detector
+plane
+s(x, y)
+D
+D/H11032
+the image of the point hole shown in Figure 5.19. From the geometry, if the
+source has diameter D, then the image of the point hole located at range z will
+have diameter D′, given by
+D′ = d − z
+z D . (5.20)
+The factor multiplying D in (5.20) is the absolute value of thesource magniﬁca-
+tion m(z), which is given by
+m(z) =− d − z
+z . (5.21)
+The source magniﬁcation is negative because it inverts the image of the source,
+as can be appreciated by studying Figure 5.19. From (5.14), it can be seen that
+the depth-dependent (object) magniﬁcation and the source magniﬁcation are
+related as
+m(z) = 1 − M(z) . (5.22)
+To develop an imaging equation incorporating source magniﬁcation, con-
+sider the image of the point hole on the z-axis, as shown in Figure 5.19. Let the
+x-ray tube source spot be represented by the source intensity distributions(x, y),
+which we can think of as a disk emanating x-rays from all points within the disk.
+Ignoring geometric effects, the image will be an inverted and spatially scaled
+version of the source intensity distribution. In fact, the intensity distribution is
+I
+d(x, y) = ks(x/m, y/m) , (5.23)
+where m is the source magniﬁcation for a point at rangez, as given by (5.21). In
+particular, since m is negative, Id will be the symmetric image of s.
+The amplitude scaling termk in (5.23) must be found. It is determined using
+the fact that the integrated intensity on the detector plane must remain constant
+regardless of the position of the point hole on the z-axis. In other words,
+∫∫
+ks(x/m(z), y/m(z)) dx dy= constant , (5.24)

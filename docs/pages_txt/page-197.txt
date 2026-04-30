@@ -1,0 +1,29 @@
+178 Chapter 5 Projection Radiography
+5.15 Suppose that an x-ray tube ﬁres, on average, 10,000 photons per second
+at an x-ray image intensiﬁer. If the detector provides an average count
+of 10,000 photons per second, calculate and plot the variance of the
+detector’s output as a function of DQE. What DQE value is required for
+an output variance of 2,000?
+5.16 Calculate the DQE as a function of (u, v) for a nonideal detector with PSF
+h(x, y) = 1
+2π e−(x2+y2)/2 ,
+by assuming that the input to the detector is white Poisson noise.
+5.17 Figure P5.1 shows a projection radiograph of an off-axis, hollow, plastic
+cylinder. Make a simple sketch of the cylinder’s position and orientation
+relative to the source and detector, and explain the distortion in the image.
+Figure P5.1
+A projection radiograph
+of a plastic cylinder.
+(From A. Macovski,
+Medical Imaging Systems,
+1983.)
+5.18 Consider the projection radiography system depicted in Figure P5.2.
+Express the magniﬁcation ratio m12 = s1/s2 of the projections of the two
+objects O1 and O2 in terms of s, φ, d, d1, and d2.I f s = 5c m ,φ = 45o,
+d = 120 cm, d1 = 40 cm, and d2 = 80 cm, what is the value of m12?
+Figure P5.2
+An illustration of
+depth-dependent
+magniﬁcation.
+5.19 Consider the x-ray projection radiography system shown in Figure P5.3.
+The linear attenuation coefﬁcients areμA and μB for A and B, respectively.

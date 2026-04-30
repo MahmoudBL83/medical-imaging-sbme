@@ -1,0 +1,49 @@
+46 Chapter 2 Signals and Systems
+Figure 2.12
+The 1-D jinc and sinc
+functions.
+jinc(x)
+sinc(x) 1.0
+p/4
+x /H11005 1.2197
+x /H11005 3.2383
+x /H11005 2.2331
+x102 3 4 5/H110025 /H110024 /H110023 /H110022 /H110021
+A plot of the jinc(x) function, shown with the sinc(x) function for compari-
+son, is shown in Figure 2.12. Like the sinc, the jinc function has a central lobe
+with its maximum value at the origin (see Figure 2.12),
+jinc(0) = π
+4 , (2.118)
+and has a set of zeros as x →∞ . The ﬁrst few zeros are at the following
+locations:
+jinc(1.2197) = 0 , (2.119a)
+jinc(2.2331) = 0 , (2.119b)
+jinc(3.2383) = 0 . (2.119c)
+The jinc function takes on half its peak value at x = 0.70576.
+The scaling theorem for the Hankel transform is derived from that of the
+Fourier transform. First, it is recognized that the scaling parameters, a and b,
+must be equal, a = b, in order for circular symmetry to be preserved. From
+(2.88) it follows that
+H
+{
+f(ar)
+}
+= 1
+a2 F(q/a) . (2.120)
+EXAMPLE 2.11
+In some medical imaging systems, only spatial frequencies smaller thanϱ 0 can be imaged.
+Question What is the function having uniform spatial frequencies within the disk of
+radius ϱ 0 and what is its inverse Fourier transform?
+Answer The disk of radius ϱ 0 is a circularly symmetric function, a scaled version of
+rect(q) given by
+F(q) = rect
+( q
+2ϱ 0
+)
+.
+Since the inverse Hankel transform is the same as the forward Hankel transform, we
+have
+jinc(r) = H−1 {
+rect(q)
+}
+.

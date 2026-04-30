@@ -1,0 +1,45 @@
+9.2 Image Formation 315
+superposition to the measurements, yielding the discrete observation equation
+gi =
+m∑
+j=1
+aijfj . (9.29)
+The general solution is easier to see if we represent each collection of val-
+ues as vectors. Accordingly, we set g = (g1, ... , gn) and f = (f1, ... , fm) and
+ai = (ai1, ... , aim). Then
+gi = ai · f , (9.30)
+where · denotes inner product, and
+g = Af , (9.31)
+where A = [aij] is a matrix that concisely describes how to transform all the image
+pixel values into all the measurements. We note that (9.30) is a mathematical
+representation of the forward projection process mentioned above.
+Given this notation and conceptual setup, we observe that there is a
+straightforward solution if the matrix A is invertible, that is,
+f = A−1g . (9.32)
+However, the number of measurements is generally larger than the number of
+unknowns and A cannot be assumed to be square. Given more measurements
+than unknowns, however, an estimate ˆf of the object can be found by the least
+squares approach in linear algebra, and can be written as
+ˆf = (AT A)−1AT g , (9.33)
+where the T superscript denotes matrix transpose. This approach is known
+as the pseudoinverse estimate of f, and the equation is known as the normal
+equation. It is a practical solution only on very small problems; otherwise, there
+is a signiﬁcant burden in computing the required matrix inverse. Here is where
+the iterative solution comes in handy.
+The Kaczmarz method solves (9.31) using the following iteration
+ˆf
+(k)
+= ˆf
+(k−1)
+− (ai · ˆf
+(k−1)
+− gi)
+ai · ai
+ai , (9.34)
+which is carried out for each observationgi and then repeated until convergence.1
+This iteration uses one measurement at a time to updateˆf and does not require a
+matrix inverse; hence, it is computationally tractable. Notice that the quantity in
+the parenthesis in (9.34) includes an implementation of the forward projection
+process (the inner product) applied to the current image estimate, which is
+1Convergence in iterative reconstruction is the state that is attained when further iterations do not
+materially improve the reconstructed image.

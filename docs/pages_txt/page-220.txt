@@ -1,0 +1,40 @@
+6.3 Image Formation 201
+Figure 6.9
+(a) An object and (b) its
+sinogram.(a) (b)
+p
+u
+0
+to a projection comprising vertical lines. There is no need to proceed further in
+angle, since these projections are redundant.
+There are other interesting features in Figure 6.9(b). It is possible to see
+sweeping features that run vertically through the sinogram. These features are
+actually sinusoidal in character, and if the sinogram were ‘‘turned on its side,’’
+they would be described by sinusoidal functions. This is the origin of the
+name sinogram. It is straightforward to show that these features correspond to
+individual objects in the image; the Radon transform of small points in the image
+corresponds to (vertical) sinusoids in the sinogram. There are also accumulations
+of bright white spots in certain rows of the sinogram in Figure 6.9(b). Upon
+careful inspection of the image in Figure 6.9(a), it is apparent that these bright
+spots correspond to the alignment of bright spots on parallel lines in the
+projection at these speciﬁc angles. In other words, the regular alignment of
+features in the image along certain directions gives rise to periodic bright spots
+in the projections, which are revealed as organized features in the sinogram.
+Although the sinogram is certainly understandable, it could never be argued
+that it represents an image of the object. Clearly, it is necessary to take the data
+represented in the sinogram and process them so that they look like the cross
+section from which they came. This is the process of reconstruction, which we
+now begin to develop.
+Backprojection Let g(ℓ, θ) be the 2-D Radon transform off (x, y), and consider
+the projection at θ = θ0. In general, there are an inﬁnite number of functions
+f (x, y) that could give rise to this projection; hence, we cannot determine f (x, y)
+uniquely from a single projection. Intuition tells us that if g(ℓ, θ0) takes on a
+large value at ℓ = ℓ0, then f (x, y) must be large over the line (or somewhere on
+the line) L(ℓ0, θ0). One way to create an image with this property is to simply
+assign every point on L(ℓ0, θ0) the value g(ℓ0, θ0). When we repeat this for all ℓ,
+the resulting function is called a backprojection imageand is given formally by
+bθ (x, y) = g(x cos θ + y sin θ, θ) . (6.13)
+The backprojection image b30◦ (x, y) for the example in Figure 6.9 is shown in
+Figure 6.10(a).
+Loosely speaking, the backprojection image at angle θ0 is consistent with
+the projection at angle θ0, but its values are assigned with no prior information

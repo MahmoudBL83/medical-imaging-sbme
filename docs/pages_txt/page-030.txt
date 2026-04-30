@@ -1,0 +1,41 @@
+1.7 Ultrasound Imaging 11
+Figure 1.3
+(a) A SPECT scanner and
+(b) a series of SPECT
+heart scans.
+Source: Courtesy of GE
+Healthcare.
+(a) (b)
+1.7 Ultrasound Imaging
+Ultrasound imaging uses electrical-to-acoustical transducers to generate repeti-
+tive bursts of high-frequency sound. These pulses travel into the soft tissue of
+the body and reﬂect back to the transducer. The time-of-return of these pulses
+gives information about the location (depth) of a reﬂector, and the intensity
+of these pulses gives information about the strength of a reﬂector. By rapidly
+moving or scanning the transducer or its acoustical beam, real-time images of
+cross sections of soft tissue can be generated. Ultrasound imaging systems are
+comparatively inexpensive and completely noninvasive; therefore, these systems
+are widespread and in common usage. They are designed primarily to image
+anatomy and, although their image quality in some ways is not as good as other
+anatomical imaging modalities such as CT and MRI, they are real-time and
+highly adaptable to a wide variety of imaging goals.
+Ultrasound imaging systems offer several imaging modalities:
+• A-mode imaging, which generates a one-dimensional waveform, and as such
+does not really comprise an image. This mode, however, can provide very
+detailed information about rapid or subtle motion (e.g., of a heart valve).
+• B-mode imaging, which is ordinary cross-sectional anatomical imaging.
+There are several arrangements of transducers that can give rise to images
+with different appearances.
+• M-mode imaging, which generates a succession of A-mode signals, brightness
+modulated and displayed in real time on a computer display. M-mode
+generates an image that does not represent a cross section of anatomy but
+is important for measuring time-varying displacements of, for example, a
+heart valve.
+• Doppler imaging, which uses the property of frequency or phase shift caused
+by moving objects (like a police siren that has a higher frequency when
+approaching and a lower frequency when departing) to generate images that
+are color coded by their motion. Doppler is most commonly used, however,
+in an audio mode. Running the frequency shifts through speakers allows an
+aural analysis of motion which is not possible with a visual display.
+• Nonlinear imaging, which permits higher resolution imaging at greater
+depths and also permits imaging certain tissue properties.

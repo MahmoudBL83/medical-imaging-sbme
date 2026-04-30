@@ -1,0 +1,50 @@
+Problems 287
+8.10 You will be imaging a radioactive source using an Anger camera.
+(a) Sketch and label the pulse height spectrum. Make the photopeak at
+180 AU (for 140 keV photons).
+(b) Determine the maximum scatter angle such that the photons will be
+within a 10% pulse height window.
+For parts (c) and (d), assume the PMT arrangement and corresponding
+pulse heights shown in Figure P8.4.
+(c) Compute the Z-pulse.
+(d) Computer the position (X, Y) of the event.
+(e) What are the causes of event localization error?
+Figure P8.4
+See Problem 8.10.
+y
+x
+(2,2)
+(4,0)
+Pulse heights (AU):
+5, 15, 25, 10, 20, 45,
+5, 10, 40
+2
+3
+4
+5
+6
+7
+8
+9
+1
+Image Quality
+8.11 In practice the spatial resolution in a clinical nuclear medicine image is
+determined by three factors: the intrinsic resolution of the camera (I),
+the collimator resolution (C), and patient effects (P). Suppose the impulse
+response could be modeled as arising from the cascade of three linear
+shift-invariant systems, one for each factor.
+(a) Suppose each system has an impulse response given by a rect function,
+and suppose their widths are r
+I, rC, and rP, respectively. Find the
+FWHM of the cascade system.
+(b) Suppose each system has an impulse response given by a Gaussian,
+and suppose their standard deviations are σI, σC, and σP, respectively.
+Find the FWHM of the cascade system.
+8.12 We are conducting a study that requires us to acquire a number of images
+over a 2-hour period of time. Each acquisition lasts for 10 minutes and
+technetium-99m is used as the radiotracer. The images are recorded in
+frame mode with a matrix size of 128 × 128. In order to get satisfactory
+image quality, we need at least 2 million counts for each image.
+(a) In order for the last image to have enough counts, what is the total
+count in the ﬁrst minute of the study?
+(b) What is the SNR per pixel as a function of the image number?

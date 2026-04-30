@@ -1,0 +1,47 @@
+114 Chapter 4 Physics of Radiography
+medical images (column 1) and ending with those important in understanding
+the biological effects of radiation (column 2). Concepts that are relevant only in
+nuclear medicine are listed in italics and will be discussed in Chapter 7.
+4.4.1 Primary Energetic Electron Interactions
+The only particles of direct consequence to the formation of medical images are
+electrons and positrons.1 Since positrons are used solely in nuclear medicine, we
+postpone discussion of the interaction of positrons with matter until Chapter 7.
+Here we consider only the interaction of energetic electronswith matter.
+Energetic electrons interact and transfer energy to an absorbing medium by
+two modes: collisional transferand radiative transfer. In collisional transfer, by
+far the most common type of interaction at the electron energies used in medical
+imaging, a (typically small) fraction of the electron’s kinetic energy is transferred
+to another electron in the target medium with which it collides. As the affected
+atom returns to its original state, infrared radiation is generated, producing
+heat in the target medium. As shown in Figure 4.4(a), the incident electron’s
+path may be redirected as a result of the collision, and many more interactions,
+both collisional and radiative, may subsequently take place, until the incident
+electron’s kinetic energy is exhausted. Occasionally, a large amount of energy
+may be transferred to a struck electron, creating a new energetic electron, which
+forms a new path of ionization, called a delta ray, and a new set of collisional
+and radiative energy transfers.
+In radiative transfer, the energetic electron’s interaction with an atom
+produces x-rays. This can happen in two ways: characteristic radiation or
+bremsstrahlung radiation. In the generation of characteristic radiation, as shown
+in Figure 4.4(b), the incident electron collides with a K-shell electron, exciting
+Figure 4.4
+Energetic electrons can
+(a) collide with other
+electrons until they lose
+their energy; (b) eject a
+K-shell electron,
+generating a characteristic
+x-ray; or (c) be ‘‘braked’’
+by a nucleus, generating
+bremsstrahlung radiation.
+Delta ray
+Atoms
+Ejected electron
+Characteristic x-ray
+Nucleus
+Bremsstrahlung x-ray
+(a)
+(b)
+(c)
+1Other particles, most notably alpha particles, are relevant in the production of radiotracers for use
+in nuclear medicine (see Chapter 7).

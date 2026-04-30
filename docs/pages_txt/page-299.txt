@@ -1,0 +1,52 @@
+280 Chapter 8 Planar Scintigraphy
+the photopeak from a known energy source falls at the desired pulse height.
+Changing the applied voltage across the PMT changes the size of pulses coming
+out of the detector by changing the ampliﬁcation in the tube. If the voltage
+across each dynode is increased, electrons liberated from the previous dynode
+gain more kinetic energy. Upon striking the next dynode, a larger number of
+electrons are liberated. This leads to a larger signal from the PMT. Changing
+the ampliﬁcation in the electronics directly changes the size of each pulse.
+8.4.5 Noise
+The entire imaging process, from gamma ray emission to electron cascade in a
+PMT is governed by the Poisson probability law (as introduced in Section 3.4.3).
+In particular, the number of detected photons (per unit area) is a Poisson random
+variable (by way of analogy to the initial discussion in Section 6.4.2). In a Poisson
+process, the variance is equal to the mean, which we have used to simplify the
+analysis of noise in projection radiography. We now study the implication of
+this fact for planar scintigraphy.
+Signal-to-Noise Ratio Because both projection radiography and planar scintig-
+raphy are ultimately limited by the total number of photons per unit area
+contributing to image formation, the calculation of SNR is essentially the same
+for the two modalities. In Chapter 5, we related intensity to the total number
+of photons [see (5.35)] in projection radiography; this same relation appears
+in (4.16), where we used the term energy ﬂuence rate instead of intensity.B y
+way of analogy to Section 5.4.1, we will focus on N, the mean total number of
+acquired photons.
+The intrinsic SNR of the camera (for this acquisition) is [see (3.59)]
+SNR = N√
+N
+=
+√
+N . (8.23)
+Therefore, the intrinsic SNR of the image is made larger by increasing the
+number of detected photons. This situation is identical to that of projection
+radiography.
+We know that in frame mode, the face of the Anger camera is divided into
+a rectilinear grid of pixels. Suppose there are J × J pixels arranged in a square
+grid covering the camera. Then, without any prior knowledge about the source,
+we would expect to see the
+N detected photons spread evenly over all J2 pixels.
+Accordingly, the intrinsic SNR per pixel is given by
+SNRp =
+√
+N
+J2 =
+√
+N
+J . (8.24)
+An obvious, and important, implication of this equation is that the per-pixel SNR
+decreases as the pixel size becomes smaller. This should help to explain why it
+is not always advantageous to use a 512× 512 matrix for a planar scintigraphic
+image. Aside from the fact that the camera may not have sufﬁcient resolution to
+justify the implied pixel resolution, the SNR may drop precipitously, yielding a
+severely degraded image.

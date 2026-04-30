@@ -1,0 +1,42 @@
+52 Chapter 2 Signals and Systems
+(d) Compute the Fourier transform of h(t).
+(e) Plot the magnitude spectrum |H(u)| for T = 0.25, T = 0.1, and T =
+0.05.
+(f) What kind of ﬁlter is this LTI system?
+2.27 In CT image reconstruction, a ramp ﬁlter is used inﬁltered backprojection.
+The transfer function of the ramp ﬁlter is deﬁned as
+H(ϱ ) =| ϱ | .
+For practical reasons, a windowed ramp ﬁlter ˆH(ϱ ) = W(ϱ )|ϱ | is used
+instead of H(ϱ ).
+(a) Assume that W(ϱ ) is a rectangular window deﬁned as
+W(ϱ ) =
+{ 1, |ϱ |≤ ϱ 0
+0, otherwise ,
+where ϱ 0 is the cutoff frequency. Find ˆh(r) = F −1{ ˆH(ϱ )}.
+(b) What are the responses of a ramp ﬁlter to (1) a constant function
+f (r) = c and (2) a sinusoid function f (r) = sin(ωr).
+2.28 For the imaging system depicted in Figure P2.2, show that the output is a
+scaled and inverted replica of the input.
+Figure P2.2
+A cascade of subsystems
+representing the imaging
+system in Problem 2.28.
+f(x, y) f(ax, by) g(x, y)
+scaling 2D 2D( )( )
+2.29 A continuous signal
+f (x, y) =
+⎧
+⎪⎪
+⎨
+⎪⎪⎩
+1, for x = y = 0
+sin(ax) sin(by)
+π2xy , otherwise
+is corrupted by an additive sinusoidal signal
+η(x, y) = cos [2π(Ax + By)] , A, B ≥ 0,
+and a set of measurements
+g(x, y) = f (x, y) + η(x, y)
+is obtained. Design an ideal low-pass ﬁlter (an LSI system whose transfer
+function equals 1, for 0 ≤| u|≤ U,0 ≤| v|≤ V, and 0 otherwise) with
+impulse response h(x, y), such that
+f (x, y) = h(x, y) ∗ g(x, y) .

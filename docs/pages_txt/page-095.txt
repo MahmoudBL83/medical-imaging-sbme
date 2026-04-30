@@ -1,0 +1,43 @@
+76 Chapter 3 Image Quality
+since the Gaussian pdf is characterized completely by its mean and variance, we
+conclude that
+pS(η) = 1√
+2πσ 2
+S
+exp
+{
+−η2
+2σ2
+S
+}
+= 1√
+4πσ 2
+exp
+{−η2
+4σ2
+}
+.
+3.5 Signal-to-Noise Ratio
+In this book, we often assume that the output of a medical imaging system is
+a random variable G (or a collection of random variables), composed of two
+components, f and N. Component f , which is usually referred to as signal,i s
+the (deterministic or nonrandom) ‘‘true’’ value of G, whereas N is a random
+ﬂuctuation or error component due to noise. The identiﬁcation of an abnormal
+condition within the human body most often depends on how ‘‘close’’ an
+observed value g of G, characteristic to that condition, is to its true value f .
+A useful way to quantify this is by means of thesignal-to-noise ratio(SNR).
+The SNR describes the relative ‘‘strength’’ of signal f with respect to that of
+noise N. Higher SNR values indicate that g is a more accurate representation
+of f , whereas lower SNR values indicate that g is less accurate. Therefore,
+higher image quality requires that the output of a medical imaging system be
+characterized by high SNR.
+One way of thinking about the ‘‘signal’’ is that it is the modulation or
+contrast in the image, as discussed in Section 3.2, whereas ‘‘noise’’ is the
+unwanted, random ﬂuctuations discussed in Section 3.4. As discussed above,
+blurring reduces contrast and thus SNR; noise also reduces SNR. Figure 3.11
+depicts the effects of both blur and noise on SNR; as one moves from the upper
+left to the lower right, SNR decreases.Figure 3.11
+The effect of increasing
+blur and noise on SNR.
+Increasing blur
+Increasing noise

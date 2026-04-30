@@ -1,0 +1,45 @@
+258 Chapter 8 Planar Scintigraphy
+The magniﬁcation produced by converging and pinhole collimators is useful
+in those cases when the object being imaged is signiﬁcantly smaller than the
+ﬁeld of view of the camera and when the object’s size or the amount of detail
+within the object challenges the intrinsic spatial resolution capabilities of the
+system. With magniﬁcation, the image presented to the camera face is larger
+than life-size. This means that detail that is smaller in the ‘‘real world’’ than
+the resolving capability of the camera may possibly still be resolved, as long as
+the actual physical size presented to the camera face is larger than the camera’s
+intrinsic resolution. This same concept is what allows us to see small details
+with a magnifying glass that are invisible to the unaided eye.
+8.2.2 Scintillation Crystal
+The scintillation detectoris the most commonly used detector in nuclear medicine
+because it is more sensitive to electromagnetic radiation than a gas-ﬁlled detector.
+This type of detector is based on the property of certain crystals to emit light
+photons (scintillate) after deposition of energy in the crystal by ionizing radiation.
+The most commonly used scintillation crystal in nuclear instrumentation is
+sodium iodide with ‘‘thallium doping,’’ which is written as NaI[Tl]. Since
+NaI[Tl] crystals absorb moisture from air, the crystals are hermetically sealed
+in aluminum ‘‘cans.’’ Because the aluminum absorbs alphas and betas, NaI[Tl]
+detectors are generally used only for the detection of x-rays and gamma rays.
+The scintillation crystals in a gamma camera are typically 10–25 inches in
+diameter and 1/4–1 inch thick. The thicker crystals are used for high-energy
+gamma rays, while the thinner crystals are used for low-energy gamma rays. Of
+course, any camera has only one crystal, so the user purchases a system with
+a crystal thickness matched to his or her needs. Like the screens that are used
+in projection radiography, thicker crystals stop more radiation than thinner
+crystals, but they also have poorer spatial resolution—so there is a tradeoff
+between efﬁciency and resolution just as there is in projection radiography. We
+will have more to say about this later in the chapter.
+8.2.3 Photomultiplier Tubes
+Each gamma photon that interacts in the scintillation crystal (by a photoelec-
+tric or Compton scattering process) produces a burst of light in the crystal,
+comprising thousands of light (scintillation) photons. This light is reﬂected and
+channeled out of the back of the crystal, through a glass plate and is incident
+upon an array of photomultiplier tubes. Each photomultiplier tube (PMT),
+shown in Figure 8.3, is a vacuum tube with two important components: a
+sensitive front surface, called thephotocathode, and a series of electrodes, called
+dynodes. The PMT serves two important functions: it converts a light signal
+into an electrical signal and it ampliﬁes this electrical signal.
+The front surface of a PMT has a transparent window through which light
+travels in order to hit a photosensitive surface—the photocathode, an extremely
+thin layer of an alloy such as cesium and antimony. For every four to ﬁve light
+photons incident upon the photocathode, one electron is released or ejected
+from the photocathode by the photoelectric effect.

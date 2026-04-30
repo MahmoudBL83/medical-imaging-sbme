@@ -1,0 +1,41 @@
+4.3 Forms of Ionizing Radiation 111
+where m0 is the rest mass of the particle, v is the speed of the particle, and c
+is the speed of light. Einstein’s theory also tells us that there is an equivalence
+between the energy E of a particle and its mass, which is given by
+E = mc
+2 . (4.2)
+The kinetic energy of a particle is the difference in energy between the moving
+particle and the stationary particle:
+KE = E − E0
+= mc2 − m0c2 . (4.3)
+It is straightforward to show (see Problem 4.3) that when v is small relative to
+c, the kinetic energy reduces to
+KE = 1
+2mv2 , v ≪ c , (4.4)
+which is the usual (nonrelativistic) equation for kinetic energy.
+In nuclear medicine, we consider modes of radioactive decay that give rise to
+different kinds of particulate ionizing radiations (see Chapter 7). In projection
+radiography and computed tomography, however, the only particulate radiation
+we need to consider is due to electrons that are not bound in an atom and have
+gained kinetic energy. As we shall see, these electrons arise from a heated
+ﬁlament and a potential difference between a cathode and anode within an x-ray
+tube. In this case, we know the energies of these particles by the manner in which
+they were created. For example, electrons accelerated across an 80 kV potential
+will have energies equal to 80 keV. The speed and mass of these particles is
+interesting to know but largely irrelevant from an imaging point of view.
+EXAMPLE 4.2
+Consider an electron that has been accelerated between a cathode and anode held at a
+120 kV potential difference. Assume the situation is nonrelativistic.
+Question What is the speed of the electron when it ‘‘slams’’ into the anode?
+Answer The rest mass of an electron is 9 .11 × 10−31 kg. Because it was accelerated
+across a 120 kV potential, the electron must have kinetic energy given by KE= 120 keV.
+Therefore, assuming nonrelativistic speeds, we must have
+KE = 1
+2 × 9.11 × 10−31 kg × v2 = 120 keV
+Noting that 1 eV = 1.602 177 33 × 10−19 J and recalling that 1 J = 1kg m2/s2, we ﬁnd
+that
+v =
+√
+2 × 120 × 103 × 1.602 177 33 × 10−19 J
+9.11 × 10−31 kg
+= 2.054 × 108 m/s .

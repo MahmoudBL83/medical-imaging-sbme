@@ -1,0 +1,54 @@
+7.4 Modes of Decay 245
+Answer Since tP
+1/2 = 2tQ
+1/2, the decay constants of two radionuclides have the relation
+λP = λQ/2. So at t = 0, the radioactivities for P and Q are
+AP
+0 = λPN0 and AQ
+0 = λQN0 = 2AP
+0 .
+Based on the radioactive decay law, we have
+AP
+t = AP
+0e−λPt and AQ
+t = AQ
+0 e−λQt = 2AP
+0e−2λPt.
+By equating AP
+t and AQ
+t , we have the following equation for t:
+e−λPt = 2e−2λPt.
+The solution is t = ln 2
+λP
+= tP
+1/2.S oa t t = tP
+1/2, the radioactivities of two radionuclides are
+equal.
+7.4 Modes of Decay
+It is important to understand the different modes of radioactive decay as these
+govern the different types of ionizing radiation produced. There are four main
+modes of decay: (1) alpha decay, which results in emission of an alpha particle;
+(2) beta decay, which results in emission of a beta particle; (3) positron decay,
+which results in emission of a positron; and (4)isomeric transition, which results
+in emission of a gamma ray. These ionizing radiations fall into two classes:
+particulate radiation and electromagnetic radiation . The main particulate
+ionizing radiations resulting from radioactive decay are alphas, betas, and
+positrons. Alpha particles consist of two protons and two neutrons, beta
+particles are identical to electrons except that they originate from the nucleus of
+an atom, and positrons are antimatter electrons. The electromagnetic ionizing
+radiations resulting from radioactive decay are gamma rays. Of these, in medical
+imaging we are only concerned with positrons (used for positron emission
+tomography in Chapter 9) and gamma rays (used for planar scintigraphy in
+Chapter 8 and single photon emission computed tomography in Chapter 9).
+7.4.1 Positron Decay and Electron Capture
+A nuclide with a ratio of neutrons to protons too low for stability can undergo
+electron capture or positron decay. These processes can be thought of as the
+transformation of a proton into a neutron, although that is not what literally
+occurs. A positron β
++ is emitted in the process of positron decay:
+p → n + β+ + ν ,
+where p is a proton, n is a neutron, and ν is a neutrino. For example, carbon-11
+decays by positron emission to boron-11:
+11
+6 C → 11
+5 B + β+ + ν.

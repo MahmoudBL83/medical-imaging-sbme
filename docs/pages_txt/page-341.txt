@@ -1,0 +1,52 @@
+322 Chapter 9 Emission Computed Tomography
+or cameras; PET utilizes a dedicated imaging system containing a ring or multi-
+ple rings of detectors. In this chapter, we presented the following key concepts
+that you should now understand:
+1. Emission computed tomographyincludes single photon emission computed
+tomography (SPECT) and positron emission tomography(PET).
+2. SPECT is based on an ensemble of projection images, each of which is
+usually a conventional planar scintigram.
+3. PET has no projection analog and is based on coincidence detection of
+paired gamma rays (‘‘annihilation photons’’) following positron-electron
+annihilation.
+4. SPECT is typically performed with rotating Anger scintillation cameras (with
+multicamera systems being the most common); specialized geometry systems
+now exist for enhanced sensitivity, especially for cardiac imaging.
+5. PET is always performed with a dedicated PET scanner; such scanners are
+always multislice and typically operate in 3-D mode.
+6. Multimodality SPECT and PET systems are common; these systems incor-
+porate CT (or MRI) to facilitate anatomic localization and attenuation
+correction.
+7. The basic SPECT imaging equationis, in essence, identical to that in planar
+scintigraphy, except for a change in notation that facilitates consideration
+of reconstruction; reconstruction can follow the approach outlined for CT.
+8. The activity and attenuation terms in the basic SPECT imaging equationare
+not separable; thus, there is no closed-form analytic solution for attenuation
+correction in SPECT.
+9. The basic PET imaging equation is similar to that for SPECT, with one
+important difference: the use of coincidence detection leads to an attenuation
+term whose limits of integration span the entire body; thus, PET has a
+closed-form solution for attenuation correction.
+10. Iterative reconstruction is a newer, more computer-intensive approach that
+implicitly takes the random nature of decay into account and can incorporate
+models of attenuation, scatter, and blur.
+11. Image qualityin SPECT and PET is limited byresolution, scatter, and noise.
+Further Reading
+Bendriem, B. and Townsend, D.W. The Theory and
+Practice of 3D PET, Dordrecht, Netherlands:
+Kluwer Academic Publishers, 1998.
+Cherry, S.R., Sorenson, J.A., and Phelps, M.E.
+Physics in Nuclear Medicine, 4th ed. Philadel-
+phia, PA: W. B. Saunders, 2012.
+Christian, P.E. and Waterstram-Rich, K.M.Nuclear
+Medicine and PET/CT: Technology and Tech-
+niques, 7th ed., New York, NY: Elsevier/
+Mosby, 2012.
+Hudson, H.M. and Larkin, R.S. ‘‘Accelerated
+Image Reconstruction Using Ordered Subsets of
+Projection Data,’’ IEEE Transactions on Medi-
+cal Imaging, 13(4):601–609, 1994.
+Shepp, L.A. and Vardi, Y. ‘‘Maximum Likeli-
+hood Reconstruction for Emission Tomogra-
+phy,’’ IEEE Transactions on Medical Imaging,
+MI-1(2):113–122, 1982.

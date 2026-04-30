@@ -1,0 +1,37 @@
+Contents xiii
+10.5 Beam Pattern Formation and Focusing 353
+10.5.1 Simple Field Pattern Model 354
+10.5.2 Diffraction Formulation 355
+10.5.3 Focusing 361
+10.6 Summary and Key Concepts 362
+11
+Ultrasound Imaging Systems 367
+11.1 Introduction 367
+11.2 Instrumentation 367
+11.2.1 Ultrasound Transducer 367
+11.2.2 Ultrasound Probes 372
+11.3 Pulse-Echo Imaging 374
+11.3.1 The Pulse-Echo Equation 374
+11.4 Transducer Motion 377
+11.5 Ultrasound Imaging Modes 380
+11.5.1 A-Mode Scan 380
+11.5.2 M-Mode Scan 381
+11.5.3 B-Mode Scan 381
+11.6 Steering and Focusing 386
+11.6.1 Transmit Steering and Focusing 386
+11.6.2 Beamforming and Dynamic Focusing 388
+11.7 Three-Dimensional Ultrasound Imaging 391
+11.8 Image Quality 392
+11.8.1 Resolution 392
+11.8.2 Noise and Speckle 395
+11.9 Summary and Key Concepts 396
+Part V Magnetic Resonance Imaging 407
+12
+Physics of Magnetic Resonance 410
+12.1 Introduction 410
+12.2 Microscopic Magnetization 410
+12.3 Macroscopic Magnetization 412
+12.4 Precession and Larmor Frequency 414
+12.5 Transverse and Longitudinal Magnetization 416
+12.5.1 NMR Signals 417
+12.5.2 Rotating Frame 419

@@ -1,0 +1,34 @@
+3.2 Contrast 57
+Figure 3.1
+Four instances of a
+sinusoidal signal f (x, y) =
+A + B sin(2πu0x), with
+mf = B/A = 0,
+0.2, 0.5, 1.
+mf /H11005 0 mf /H11005 0.2
+mf /H11005 0.5 mf /H11005 1
+the output g(x, y) of the system is given by
+g(x, y) = AH(0, 0)+ B |H(u0,0 )| sin(2πu0x) . (3.5)
+Notice that the recorded image g(x, y) of the sinusoidal object f (x, y)i s
+also sinusoidal with (the same) frequency u0. From (3.5), gmax = AH(0, 0)+
+B|H(u0,0 )| and gmin = AH(0, 0)− B|H(u0,0 )|, in which case the modulation of
+g(x, y) is given by
+mg = B|H(u0,0 )|
+AH(0, 0) = mf
+|H(u0,0 )|
+H(0, 0) . (3.6)
+The modulation mg of g(x, y) depends on the spatial frequency u0.
+The way an LSI medical imaging system affects modulation, and therefore
+contrast, is illustrated in Figure 3.2. The output modulationmg is a scaled version
+of the input modulation mf , the scaling factor being the magnitude spectrum
+|H(u0,0 )| of the medical imaging system under consideration. If H(0, 0) = 1
+and |H(u0,0 )| < 1, then mg < mf , and since both signals f (x, y) and g(x, y) have
+the same average value, the output g(x, y) will have less contrast than the input
+f (x, y).
+The ratio of the output modulation to the input modulation as a function
+of spatial frequency is called the modulation transfer function (MTF), and
+[by rearranging (3.6)] is given by
+MTF(u) = mg
+mf
+= |H(u,0 )|
+H(0, 0) . (3.7)

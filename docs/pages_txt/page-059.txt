@@ -1,0 +1,58 @@
+40 Chapter 2 Signals and Systems
+2.5.8 Separable Product
+If f is a separable signal, such that
+f (x, y) = f1(x)f2(y) , (2.93)
+then
+F2D(f )(u, v) = F1(u)F2(v) , (2.94)
+where
+F1(u) = F1D(f1)(u) and F2(v) = F1D(f2)(v) (2.95)
+are the 1-D Fourier transforms of f1(x) and f2(y), respectively. Therefore, the
+Fourier transform of a separable signal is also separable. In this case, the Fourier
+transform of a separable 2-D signalf (x, y) can be computed by independently cal-
+culating the two 1-D Fourier transforms of f1(x) and f2(y) and then multiplying
+the results.
+2.5.9 Parseval’s Theorem
+If F(u, v) is the Fourier transform of a signal f (x, y), then
+∫ ∞
+−∞
+∫ ∞
+−∞
+|f (x, y)|2 dx dy=
+∫ ∞
+−∞
+∫ ∞
+−∞
+|F(u, v)|2 du dv, (2.96)
+which is known as Parseval’s theorem. This relationship says that the total
+energy of a signal f (x, y) in the spatial domain equals its total energy in the
+frequency domain. In other words, the Fourier transform (as well as its inverse)
+are energy-preserving (‘‘unit gain’’) transformations.
+2.5.10 Separability
+The Fourier transform F(u, v) of a 2-D signal f (x, y) can be calculated using two
+simpler 1-D Fourier transforms, as follows:
+• Compute r(u, y) =
+∫ ∞
+−∞
+f (x, y)e−j2πux dx, for every y.
+• Compute F(u, v) =
+∫ ∞
+−∞
+r(u, y)e−j2πvy dy, for every u.
+Indeed,
+∫ ∞
+−∞
+r(u, y)e−j2πvy dy =
+∫ ∞
+−∞
+[∫ ∞
+−∞
+f (x, y)e−j2πux dx
+]
+e−j2πvy dy
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)e−j2π(ux+vy) dx dy
+= F(u, v) . (2.97)

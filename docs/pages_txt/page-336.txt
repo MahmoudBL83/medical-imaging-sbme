@@ -1,0 +1,55 @@
+9.3 Image Quality in SPECT and PET 317
+It can be shown that the following ML-EM iteration
+f (k+1)
+j =
+f (k)
+j
+aj
+n∑
+i=1
+aji
+ni
+ni(f(k))
+(9.37)
+converges to the ML solution. Here, f(k) is the k-th estimate of the image, and
+aj =
+n∑
+i=1
+aij , j = 1, ... , m (9.38)
+are the sensitivity factors that characterize the sensitivity of each voxel to the
+collection of measurements. (If aj = 0f o rs o m ej, then the geometry of the
+system cannot estimate fj, and this pixel should be excluded from the model.)
+The ML-EM algorithm (9.37) makes use of the forward model through ni(f(k)),
+although the comparison with the observations is done using a ratio rather than
+a difference. We see that if ni = ni(f(k)) for all i, then the image estimate remains
+unchanged because of the deﬁnition of the sensitivity factors in (9.38).
+In the past, ML-EM approaches suffered from lengthy reconstruction times
+and difﬁculty in converging to a useful solution, particularly in the presence
+of signiﬁcant noise. (Difﬁculties in convergence lead to increased numbers of
+iterations, increasing overall reconstruction time.) Hudson and Larkin made
+a major breakthrough when they developed an algorithm— ordered subsets
+expectation maximization (OSEM)—that utilizes ‘‘ordered subsets’’ to acceler-
+ate iterative reconstruction. In this approach, observations are grouped into an
+ordered sequence of subsets or blocks. For example, if a full set of projections
+consists of 360 views and there are 15 subsets, each subset would consist of
+24 views. Of major importance, these subsets represent mutually exclusive and
+collectively exhaustive use of the projection data, and they are treated indepen-
+dently in parallel. One iteration of the algorithm is a single pass through all the
+subsets. However, the reconstructed image is updated after every subset, which
+accelerates convergence.
+Ordered subsets are an extension of iterative reconstruction. In Hudson
+and Larkin’s original implementation, they used Shepp and Vardi’s expectation
+maximization approach. Like any standard EM algorithm, this consists of
+a backprojection–projection–backprojection sequence. At each iteration, the
+reconstruction from the previous iteration is the starting point. In OSEM, the
+standard EM algorithm is applied to each of the subsets in turn. Such an
+approach can be applied to both SPECT and PET imaging. In SPECT, the
+subsets may correspond to natural groupings of projections—for example, each
+head in a triple-head system. In PET, projection data may be reorganized after
+acquisition to deﬁne blocks or subsets in a similar fashion. OSEM has become
+the preferred approach to reconstruction in emission tomography (including
+both SPECT and PET).
+9.3 Image Quality in SPECT and PET
+From a physics point of view, there are ﬁve major factors that affect image
+quality and the quantiﬁcation of absolute radioactivity in emission tomography.
+These include ﬁnite spatial resolution (e.g., the in-plane and axial spatial

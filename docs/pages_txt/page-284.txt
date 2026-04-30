@@ -1,0 +1,51 @@
+8.3 Image Formation 265
+by (xk, yk). Suppose the amplitudes of their response to a scintillation event are
+given by ak, k = 1, ... , K. These heights are viewed as representing samples of a
+2-D distribution of light, and the location of the maximum of this distribution
+represents the position (X, Y) of the event.
+We could set ( X, Y) equal to the location of the PMT having the largest
+amplitude, but that would provide only a very crude estimate of the location,
+yielding a resolution on the order of the size of a tube. Instead, scintillation
+cameras implement a center of mass calculation to estimate (X, Y). To calculate
+the center of mass of the tube responses, we ﬁrst form1
+Z =
+K∑
+k=1
+ak , (8.1)
+which represents the mass of the event’s light distribution. This signal is also
+proportional to the total light output from the scintillation event (called the
+Z-pulse) and is used in the pulse height analysis circuit, as previously discussed.
+Given the total mass Z, the components of the center of mass ( X, Y)a r e
+calculated as
+X = 1
+Z
+K∑
+k=1
+xkak , (8.2)
+Y = 1
+Z
+K∑
+k=1
+ykak . (8.3)
+These three values (X, Y, Z) represent the ‘‘heart’’ of an Anger camera. Together,
+they provide the location ( X, Y) of the scintillation event and the total light
+output Z—or, equivalently, the total energy—of the event.
+It is worth making a couple of comments about this process. First, it should
+be understood that theak’s are actually waveforms, short pulses arising from the
+scintillation event causing the cascading electrons in each PMT. The individual
+numbers X, Y, and Z represent values obtained at the peak of such pulses or
+by integrating over a short time frame. Second, small signals occurring in PMTs
+that are distant from the event can degrade the position estimates. Therefore,
+a threshold circuit is added to permit only signals above a certain level to
+contribute the estimates of X and Y.T h i sdiscriminator circuit does not apply
+to the estimate of Z, which still uses the output of all PMTs. Do not confuse
+this discriminator circuit with the pulse height gating circuit, which determines
+whether the Z signal is in a range sufﬁcient to qualify the event as both a
+non-Compton and nonmultiple event.
+In a modern Anger camera, the event position estimation is implemented
+digitally. In most camera designs, the output of each photomultiplier tube goes
+directly to a separate analog-to-digital converter, typically with at least 16-
+bit precision. Then, software embedded in programmable read-only memory
+1In this and the following two equations, we use discrete summation instead of integration to
+acknowledge the relatively small number of PMTs, photodiodes, or other signal outputs from a
+camera.

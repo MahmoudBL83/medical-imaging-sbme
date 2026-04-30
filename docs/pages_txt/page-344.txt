@@ -1,0 +1,63 @@
+Problems 325
+radionuclide with concentration f = 0.5 mCi/cm3 ﬁlls the lower triangle.
+The linear attenuation coefﬁcients in the two regions are μ1 = 0.1c m−1
+and μ2 = 0.2c m−1. Assume perfect detection in all cases and ignore the
+inverse square law effect.
+(a) We image the radioactivity using a 2D SPECT scanner. Compute the
+projected radioactivities gSPECT (ℓ,0 ◦) and gSPECT (ℓ, 180◦). The camera
+is located on the +y-axis looking down when θ = 0◦.
+(b) Now assume the radionuclide in part (a) is replaced by a positron
+emitting radionuclide with the same concentration. Assume the linear
+attenuation coefﬁcients in the two regions are the same as in part (a).
+If using a 2D PET scanner, compute g
+PET (ℓ,0 ◦) and gPET (ℓ, 180◦).
+(c) Explain why attenuation is not a big problem in PET.
+Figure P9.4
+An object with triangular
+compartments. See
+Problem 9.4.
+2 cm
+2 cm
+y
+x
+μ1
+μ2
+9.5 Ignoring the inverse square law and attenuation, an approximate recon-
+struction for SPECT imaging is given by
+ˆf (x, y) =
+∫ π
+0
+∫ ∞
+−∞
+g(ℓ, θ)˜c(x cos θ + y sin θ − ℓ)dℓ dθ ,
+where ˜c(ℓ) = F −1
+1D {|ϱ |W(ϱ )} and W(ϱ ) is a rectangular windowing ﬁlter
+that cuts off at ϱ = ϱ 0. Suppose we use M projections ( θ1, θ2, ..., θM)
+uniformly spaced over the range [0, π), and N + 1 (odd) ray paths per
+projection. Assume the spacing between detectors is T, and gij = gθj (iT).
+A discrete approximation to the reconstruction of ˆf (x, y) can be written as
+ˆf (x, y) = πT
+M
+M∑
+j=1
+N/2∑
+i=−N/2
+gij ˜c(x cos θj + y sin θj − iT) .
+(a) The observation gij is proportional to the number of photons hitting
+the detector i at angle θj, Nij, that is,gij = kNij. Assume Nij is a Poisson
+random variable with mean Nij and is independent for different i
+and j. Give the mean and the variance of the reconstructed image,
+mean[ˆf (x, y)] and var[ˆf (x, y)].
+(b) Show that
+π
+M
+M∑
+j=1
+T
+N/2∑
+i=−N/2
+[˜c(x cos θj + ysinjθ − iT)]2
+can be approximated as
+2πϱ 3
+0
+3 .

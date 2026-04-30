@@ -1,0 +1,45 @@
+264 Chapter 8 Planar Scintigraphy
+8.2.8 Solid State and Other New Cameras
+While Anger scintillation cameras remain the dominant nuclear medicine imag-
+ing device, newer detectors are rapidly appearing. Of these, the solid state
+camera is fast becoming an important competitor to the Anger camera. Solid
+state cameras use semiconductors as the detector. Of note, semiconductors
+directly produce current when gamma photons deposit energy in them, and thus
+a semiconductor detector combines the functions of the crystal and PMTs. The
+most commonly used semiconductor is cadmium-zinc-telluride (usually abbrevi-
+ated as CZT); CZT has better energy resolution and count-rate capability than
+typical scintillation detectors. The basic signal in a semiconductor detector is pro-
+duced by electron-hole pairscreated along the path as radiation passes through
+the detector and produces ionization. Each electron-hole pair is somewhat anal-
+ogous to an ion pair. The motion of electron-hole pairs in an applied electric ﬁeld
+generates the electrical signal. In many cases, the semiconductor is pixelated,
+meaning that it is partially cut (in the thickness direction) into an array of 1 to
+3 mm pixels. This pixelation facilitates the algorithms used for event positioning.
+A hybrid approach between a conventional scintillation detector with PMTs
+and a semiconductor detector is the use of a scintillation crystal (typically,
+pixelated cesium iodide instead of continuous sodium iodide) with photodiodes
+instead of photomultiplier tubes. This is essentially the same approach as
+discussed in Section 6.2.4 for CT. While such systems are not ‘‘solid state’’ in the
+same way as a semiconductor, they are often labeled this way in the marketplace.
+Whether a continuous or pixelated detector is used and whether the detection
+system is solid state, the general approach to image formation described below
+is equally valid.
+Despite these advances, the conventional gamma camera remains the
+‘‘workhorse’’ of nuclear imaging. This is because its performance-to-cost ratio is
+very high, particularly at larger ﬁelds of view—for example, for general purpose
+and SPECT imaging.
+8.3 Image Formation
+The primary mechanism for creating images in planar scintigraphy is to detect
+and estimate the position of individual scintillation events on the face of an
+Anger camera. We now describe how the locations of these events are estimated,
+how these locations are combined to produce images, and what these images
+represent mathematically in terms of the distribution of radioactivity in the body.
+8.3.1 Event Position Estimation
+A single scintillation event produces a ﬂash of light that yields a response from
+many, if not all, PMTs attached to the Anger camera. The amplitude or height of
+each tube’s response is proportional to its distance from the scintillation event,
+and this is how the position (X, Y) of the scintillation event is encoded. We start
+our discussion of event position estimation with a general mathematical frame-
+work and then specialize the presentation to both analog and digital cameras.
+Consider a coordinate system with the origin (0, 0) at the center of the
+crystal. Let the PMTs be indexed by k = 1, ... , K, and their positions be given

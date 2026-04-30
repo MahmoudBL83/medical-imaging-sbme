@@ -1,0 +1,43 @@
+70 Chapter 3 Image Quality
+purely deterministic arguments. This deviation, arising from the random nature
+of radioactive emissions, accounts for the noise that is present in all nuclear
+medicine images.
+3.4.1 Random Variables
+The numerical quantity associated with a random event orexperiment is called a
+random variable. Different repetitions of the experiment may produce different
+observed values—that is, the experiment has a random outcome. A random vari-
+able is mathematically described by PN(η), its probability distribution function
+(PDF), given by
+PN(η) = Pr[N ≤ η] , (3.33)
+where Pr[ ·] denotes probability. The PDF gives the probability that random
+variable N will take on a value less than or equal toη. Notice that 0≤ PN(η) ≤ 1,
+PN(−∞) = 0, PN(∞) = 1, and PN(η1) ≤ PN(η2), for η1 ≤ η2.
+3.4.2 Continuous Random Variables
+If PN(η) is a continuous function of η, then N is a continuous random variable.
+This random variable is uniquely speciﬁed by its probability density function
+(pdf),1
+pN(η) = dPN(η)
+dη . (3.34)
+Any pdf satisﬁes the following three properties:
+pN(η) ≥ 0 , (3.35)
+∫ ∞
+−∞
+pN(η) dη = 1 , (3.36)
+PN(η) =
+∫ η
+−∞
+pN(u) du . (3.37)
+In practice, the pdf of a random variable may not be known. Instead, a
+random variable is often characterized by its expected value
+μN = E[N] =
+∫ ∞
+−∞
+ηpN(η) dη , (3.38)
+also called its mean, and its variance
+σ2
+N = Var[N] = E[(N − μN)2] =
+∫ ∞
+−∞
+(η − μN)2pN(η) dη , (3.39)
+1By convention, the abbreviation for probability density function is (lower case) pdf, and the
+abbreviation for probability distribution function is (upper case) PDF.

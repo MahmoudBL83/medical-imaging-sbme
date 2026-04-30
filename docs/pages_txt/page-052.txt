@@ -1,0 +1,58 @@
+2.4 The Fourier Transform 33
+and
+̸ F(u, v) = tan−1
+( FI(u, v)
+FR(u, v)
+)
+, (2.67)
+where FR(u, v) andFI(u, v) are the real and imaginary parts ofF(u, v), respectively
+[i.e., F(u, v) = FR(u, v) + jFI(u, v)], in which case
+F(u, v) = |F(u, v)| ej̸ F(u,v) . (2.68)
+The magnitude |F(u, v)| and phase ̸ F(u, v) are usually referred to as the mag-
+nitude spectrum and the phase spectrum, respectively. Moreover, the square
+|F(u, v)|2 of the magnitude spectrum is usually referred to as the power spec-
+trum. Notice that both the magnitude and phase spectra are required to uniquely
+determine f (x, y).
+We now provide a few examples of signals and their corresponding Fourier
+transforms. Some basic Fourier transform pairs are summarized in Table 2.1.
+EXAMPLE 2.5
+Consider the point impulse δ(x, y).
+Question What is its Fourier transform?
+Answer From (2.62), we have
+F2D(δ)(u, v) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+δ(x, y)e−j2π(ux+vy) dx dy
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+δ(x, y)e−j2π(u0+v0) dx dy [from (2.7)]
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+δ(x, y) dx dy= 1 [from (2.5)] . (2.69)
+In this case, the magnitude spectrum is 1, whereas the phase spectrum is 0. Therefore,
+the Fourier transform of a point impulse is constant over all frequencies, with strength
+equal to 1.
+TABLE 2.1
+Basic Fourier Transform Pairs
+Signal Fourier Transform
+1 δ(u, v)
+δ(x, y)1
+δ (x − x0, y − y0) e−j2π(ux0+vy0)
+δs (x, y; /Delta1x, /Delta1y) comb(u/Delta1x, v/Delta1y)
+ej2π(u0x+v0y) δ(u − u0, v − v0)
+sin [2π (u0x + v0y)] 1
+2j [δ (u − u0, v − v0) − δ (u + u0, v + v0)]
+cos [2π (u0x + v0y)] 1
+2 [δ (u − u0, v − v0) + δ (u + u0, v + v0)]
+rect(x, y) sinc( u, v)
+sinc(x, y)r e c t ( u, v)
+comb(x, y) comb( u, v)
+e−π(x2+y2) e−π(u2+v2)

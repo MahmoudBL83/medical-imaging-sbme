@@ -1,0 +1,50 @@
+9.1 Instrumentation 295
+stacked to form a reconstructed volume. We will have much more to say about
+this in Section 9.2.
+Two types of collimators are used in a rotating-camera SPECT system (see
+Section 8.2.1). Most often, a parallel-hole collimator is used; this geometry
+corresponds to that of parallel-beam geometry in CT. Here, the geometry is
+parallel both in-plane and in the axial direction. In some cases, a fan-beam
+collimator is used. This collimator converges in-plane, like a converging col-
+limator but has parallel-hole geometry in the axial direction. With fan-beam
+collimation in each contiguous 1-D projection, the ‘‘stack’’ has fan-beam
+geometry, but the slice-to-slice geometry is parallel. In rare cases until now
+(although increasingly more often than in the past), a collimator-detector
+system with more complicated geometry is used, requiring more sophisticated
+reconstruction algorithms. Such systems are brieﬂy considered below.
+Perhaps the biggest advance in the most commonly used clinical SPECT
+systems is the incorporation of multiple Anger cameras—a dual-head system is
+shown in Figure 9.1. As shown in Table 9.1, adding camera heads increases sen-
+sitivity, all else being equal. Dual-head variable-angle systems that are capable
+of orienting the heads at both 90
+◦ and 180◦ are particularly popular as this opti-
+mizes the acquisition geometry for the two most commonly performed nuclear
+medicine procedures: cardiac SPECT and whole-body bone scans. These two
+types of studies account for at least 70 percent of all nuclear medicine imaging
+procedures. Cardiac SPECT is often performed with 180
+◦ acquisition (i.e., only
+a 180 ◦ arc of projection data around the heart is acquired), whereas many
+other SPECT studies use 360◦ of projection data. This has been a controversial
+issue for over two decades now. Because of photon attenuation, the ‘‘front’’
+180
+◦ of data and the ‘‘back’’ 180 ◦ of data are not identical. In some cases,
+it thus helps to use the full 360 ◦ of data; in others (i.e., when the organ
+of interest—such as the heart—is located towards the front or the back),
+it may be detrimental to image quality to use the full 360
+◦ of data.
+The increased sensitivity provided by multihead systems can be used pri-
+marily in three ways. First, it can be used to decrease noise while using the same
+acquisition time as with a single-head system. Second, it can be used to decrease
+acquisition time to get the same counts as a single-head system; this decreased
+acquisition time increases patient throughput, decreases motion (and associated
+TABLE 9.1
+Comparison of Acquisition Times and Relative Sensitivities for Single- and
+Multihead Systems with Identical Camera Heads and Collimation
+360◦ 180◦
+Acquisition Relative Acquisition Relative
+Times Sensitivities Times Sensitivities
+Single 30 1 30 1
+Double (heads@180
+◦) 15 2 30 1
+Double (heads@90◦) 15 2 15 2
+Triple 10 3 20 1.5

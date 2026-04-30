@@ -1,0 +1,49 @@
+148 Chapter 5 Projection Radiography
+of the interior of the cassette contains a spongy, foam material that applies a
+uniform pressure against the screen so that a uniform contact is created between
+the ﬁlm and all parts of each of the screens. Optical mirrors are located outside
+the screens, pointed inward so that nearly all the light produced in the screens
+ends up exposing the ﬁlm. Some systems, particularly those with high resolution
+such as mammography systems, contain only one screen, but the principle of
+holding the ﬁlm tightly against the single screen within the cassette still applies.
+Film must be loaded in a darkroom in order to avoid premature exposure.
+The cassette is opened like a suitcase or briefcase only as much as is required
+to slip in the radiographic ﬁlm. This minimizes the amount of dust and other
+contaminants that might end up inside the cassette. When the cassette is closed,
+pressure is applied so that the foam inside compresses, creating a uniform
+contact between the screens and the ﬁlm. Cassettes and screens must be cleaned
+regularly in order to avoid contaminants that might appear in the images.
+5.2.6 X-Ray Image Intensiﬁers
+X-ray image intensiﬁers(XRIIs) are used in ﬂuoroscopy, where low-dose, real-
+time projection radiography is required, whereas a conventional x-ray system
+might use a ﬁlament current of 50–1,200 mA, a ﬂuoroscopy unit would typically
+use only 0.5–5.0 mA so that the x-ray tube can operate continuously. The light
+levels produced by these low-intensity x-rays striking a conventional phosphor
+are too low for human vision in room lighting, so the XRII was developed to
+amplify the light. A diagram depicting an XRII is given in Figure 5.11.
+X-rays pass through an input windowmade of aluminum or titanium, with
+a thickness ranging between 0.25 and 0.5 mm. This type of material creates
+minimal loss of x-ray photons, yet it is capable of holding a vacuum. The
+x-rays then strike a 0.5-mm-thick input phosphor [typically CsI(Na)], which
+is circular with a diameter ranging between 15 and 40 cm. The x-ray photons
+that are absorbed in the input phosphor generate ﬂashes of light that are
+channeled toward the photocathode. Photons that travel backward toward the
+input window are reﬂected by a 0.5-mm-thick aluminum sheet that supports the
+input phosphor.
+Figure 5.11
+Block diagram of an x-ray
+image intensiﬁer (XRII).
+Input phosphor
+X-rays
+Input window
+Phosphor Lens
+Film camera
+TV
+camera
+Beam
+splitter
+Anode
+Output
+window
+Light sensor
+Photocathode

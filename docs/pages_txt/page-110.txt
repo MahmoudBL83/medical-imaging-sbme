@@ -1,0 +1,42 @@
+3.8 Accuracy 91
+In practice, the threshold must be chosen as a balance between sensitivity
+and speciﬁcity. The choice of threshold for a speciﬁc test depends on the
+relative cost-of-errors in calling a normal patient abnormal or a diseased patient
+normal. The threshold also depends on the prevalence or proportion of all
+patients who have the disease, because in practice we are interested in two other
+parameters:
+• Positive predictive value (PPV), which is the fraction of patients called
+abnormal who actually have the disease
+• Negative predictive value (NPV), which is the fraction of persons called
+normal who do not have the disease
+Notice that
+PPV = a
+a + b and NPV = d
+c + d , (3.84)
+and that both depend on prevalence (PR), which is given by
+PR = a + c
+a + b + c + d . (3.85)
+EXAMPLE 3.14
+Diagnostic accuracy alone cannot tell how good a diagnostic method is. This example
+shows that a bad diagnostic method can still achieve a high DA.
+Question Consider a group of 100 patients, among which 10 are diseased and
+90 are normal. We simply label all patients as normal. Construct the contingency
+table for this test and determine the sensitivity, speciﬁcity, and diagnostic accuracy of
+the test.
+Answer The contingency table for the test is shown below.
+Disease
++ −
+Test + 0 0
+− 10 90
+From the table, we have a = b = 0, c = 10, and d = 90. So the sensitivity, speciﬁcity,
+and diagnostic accuracy of the test are
+Sensitivity = a
+a + c = 0,
+Speciﬁcity = d
+b + d = 1.0,
+DA = a + d
+a + b + c + d = 0.9 .
+It can be seen that although all patients with the disease are diagnosed wrong, we still
+have a relatively high diagnostic accuracy of 0.9. This is simply because the patients
+without the disease comprise the majority of patients in the group being studied. This
+would be considered a ﬂawed experimental design.

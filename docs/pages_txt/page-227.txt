@@ -1,0 +1,47 @@
+208 Chapter 6 Computed Tomography
+Figure 6.16
+Summation step.
+(a) Partial summation
+images using just 40, 80,
+and 120 (out of 240 total)
+projections. (b) The
+ﬁltered projections that
+are used in the partial
+summation images shown
+in (a). (c) The image that
+is reconstructed using all
+240 ﬁltered projections.
+40/240 80/240 120/240
+Partial summations
+Final reconstructionFiltered sinogram
+240/240
+240
+120
+80
+40
+(a)
+(b) (c)
+6.3.4 Fan-Beam Reconstruction
+As discussed in Section 6.2, all modern commercial scanners have a fan-beam
+source-to-detector arrangement. Therefore, in practice it is necessary to recon-
+struct images from fan-beam projections rather than parallel-ray projections. In
+this section, we develop a CBP reconstruction algorithm that can be applied to
+a fan-beam geometry.
+Geometry There are three basic fan-beam geometries to consider: (1) those
+that have equal angles between the measured ray-paths, (2) those that have
+equal detector spacing, and (3) those that have equal angles and equal detector
+spacing. The third geometry can only be satisﬁed if the detectors are placed
+along a circular arc whose center is at the source. In this section, we consider the
+equal-angle case with detectors positioned on a circular arc. A reconstruction
+formula for the case of equal detectors on a straight line can be developed using
+analogous means.
+We consider the fan-beam geometry shown in Figure 6.17. This is a 3G
+geometry in which the source and detector rotate together around the laboratory
+origin, also called the rotational isocenter. A fan-beam projection, measured at
+each rotational position of the source, is denoted p(γ, β) [in analogy to g(ℓ, θ)],
+where γ is the angular position of a given detector and β is the angular position
+of the source, as shown in Figure 6.17. Notice that both γ and β are angles
+measured in the counterclockwise direction; however, their origins are different
+and so are their reference directions (physical orientations when taking on zero
+values). In particular, β measures the source position around the isocenter, and
+it is zero when the source is resting on the +y-axis. On the other hand, γ is

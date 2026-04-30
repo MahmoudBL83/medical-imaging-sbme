@@ -1,0 +1,43 @@
+4.5 Attenuation of Electromagnetic Radiation 121
+contrast is created in radiography modalities. Although this is actually a sta-
+tistical process, we study attenuation here as though it were deterministic. In
+Chapter 5, we will include the statistical aspects in a very natural way, as we
+study noise in projection radiographs.
+4.5.1 Measures of X-Ray Beam Strength
+In radiography, we are generally concerned with a brief burst of x-rays, also
+c a l l e da nx - r a ybeam. For many reasons, we are also concerned with the
+‘‘strength’’ of the x-ray burst. For example, in the design of x-ray detection
+systems used to form images, it is critical to characterize the strength of the
+x-ray beam in order to characterize the inherent noise in the system and to adjust
+the dynamic range of the detection system. Measures of x-ray beam strength
+are also used in estimating the (adverse) biological effects of ionizing radiation.
+This is critical because ionizing radiation is potentially harmful. At high doses,
+it can cause burns or cataract formation, for example. Even at low doses, it can
+increase the risk of cancer. It turns out that there are many ways to deﬁne and
+measure the strength of x-rays. In this section, we consider several of the most
+common and important measures of x-ray beam strength.
+The conceptually simplest measure of the strength of an x-ray burst is simply
+the number of photons N in the burst. It is also important to consider the area
+over which these photons are spread. Accordingly, we deﬁne thephoton ﬂuence
+/Phi1as the number of photons N per unit area A,
+/Phi1= N
+A , (4.13)
+where the area is oriented at a right angle to the direction of the radiation beam
+propagation. It is sometimes important to account fortime, since measurements
+may take place over a ﬁxed interval /Delta1t. Accordingly, photon ﬂuence rate φ is
+deﬁned as
+φ = N
+A/Delta1t . (4.14)
+It may be of interest to know how much energy the burst is carrying and
+could deposit into a material if totally absorbed. If each photon in the burst has
+the same energy hν—that is, the beam is monoenergetic—then the total energy
+of the burst is simply Nhν. We then deﬁne the energy ﬂuence /Psi1and energy
+ﬂuence rateψ as
+/Psi1= Nhν
+A , (4.15)
+ψ = Nhν
+A/Delta1t . (4.16)
+The energy ﬂuence rate is also known as the intensity of an x-ray beam, and it
+is often given the symbol I. From (4.14) and (4.16), we see that
+I = Eφ , (4.17)
+where E = hν. Intensity has units of energy per unit area per unit time.

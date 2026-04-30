@@ -1,0 +1,49 @@
+180 Chapter 5 Projection Radiography
+(e) Suppose you took the two exposed ﬁlms and subtracted their optical
+densities, creating a third image: D(x, y) = D(x, y;Eh) − D(x, y;El).
+Describe in mathematical terms what D(x, y) measures.
+5.21 Suppose you have a 20-cm-thick slab of material. You measure the fraction
+t(E) of x-rays that get through this material (on average) over the energy
+band 50–150 keV, and discover that it is well modeled by the relation
+log10 t(E) =− (E[keV] − 150)2
+5,000 .
+(a) Find an expression for the linear attenuation coefﬁcient of this
+material as a function of x-ray energy E.
+Suppose a 5-cm cube of a second material replaced a 5-cm cube of original
+material from the center of the slab and suppose this second material has
+linear attenuation coefﬁcient of 0.15 cm−2 at 75 keV.
+(b) What is the intrinsic contrast of this new material relative to the
+slab at 75 keV? (Intrinsic contrast is deﬁned by the linear attenuation
+coefﬁcients alone, as if you could image them directly.)
+(c) What is the contrast of this new material if imaged through a standard
+radiographic system at 75 keV? (Ignore photon noise, detector
+efﬁciency, beam divergence, scatter, and magniﬁcation effects.)
+5.22 A hypothetical x-ray tube has been designed. An x-ray burst from this
+tube yields exactly 10 4 x-ray photons at energy E1 = 60 keV and 10 5
+x-ray photons at energy E2 = 65 keV.
+(a) Draw the energy spectrum associated with this x-ray pulse. Explain
+why the units associated with the numbers 10 4 and 10 5 in the
+spectrum must be photons-keV.
+In the following parts of this question, assume that the above x-ray tube
+is used as a source in an imaging system to image a phantom, as shown
+in Figure P5.4. In addition, make the following simplifying assumptions:
+• Assume a parallel beam of x-rays that are uniformly distributed over
+an extended source.
+• Assume that the x-rays passing through the phantom undergo the
+photoelectric effect only; that is, neglect the effect of Compton scatter.
+Figure P5.4
+A phantom being imaged
+by an x-ray system. See
+Problem 5.22.
+X-ray source
+1 cm
+2 cm
+2 cm
+1 cmA2
+A1 A
+BA3
+x
+Detector
+The phantom consists of three areasA1, A2, and A3, as labeled. The linear
+attenuation coefﬁcients μ1, μ2, μ3 (units of cm−1) of these three areas at
+the energy levels present in the x-ray beam are given in the table below.

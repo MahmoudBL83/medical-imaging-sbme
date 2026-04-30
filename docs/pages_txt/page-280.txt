@@ -1,0 +1,67 @@
+8.2 Instrumentation 261
+a line drawn through its direction of ﬂight will not intersect its site of origin
+but instead the site of the Compton interaction. Thus, photons scattered into
+the ﬁeld of view could be falsely attributed to activity at the sites of Compton
+interactions in the patient. It is clearly not desirable to have these scattered
+photons contribute to the ﬁnal image, as they signiﬁcantly degrade resolution
+and contrast. It is important to note that a large percentage of photons striking
+the crystal have been scattered in the patient.
+Fortunately, photons that have been Compton scattered can be distin-
+guished from those that arrive directly by analyzing the energy deposited in
+the crystal via the Z-pulse, whose height is proportional to the total energy
+deposited in the crystal. In practice, we know the energy of gamma photons
+emitted from the radioactive source since we choose the radionuclide to use
+in a given imaging session and we understand its radioactive decay properties.
+If this amount of energy is deposited in the crystal, the gamma photon could
+not have Compton scattered in the patient since it would have lost some of
+its energy in the process [as determined in (4.8)]. Of course, a gamma photon
+could emerge from the patient with all its energy (i.e., without having interacted
+in the patient) and only deposit part of its energy in the crystal (via a Compton
+scattering interaction). We cannot distinguish between this event and one in
+which the gamma photon Compton scattered in the patient and then deposited
+all its remaining energy in the crystal via a subsequent photoelectric event. In
+practice, we can only be certain that the gamma photon has not scattered if it
+deposits in the crystal the full amount of energy with which it was emitted, and
+these are the only events we allow to contribute to image formation.
+Scintillation spectrometry, or pulse height analysis, refers to the use of a
+scintillation counting system to obtain an energy spectrum from a radioactive
+source. This energy spectrum is a plot of the number of pulses with a given
+pulse height as a function of the pulse height, as illustrated in Figure 8.5(a). The
+measured spectrum is a function of the energies of gamma rays emitted by the
+source and the interactions of these photons in the source and any intervening
+material (e.g., the body), and in the crystal. It should be noted that the pulse
+heights on the x-axis generally have arbitrary units (AU), although they could
+be scaled to units of energy (keV) if the camera were properly calibrated.
+A pulse height spectrum, as shown in Figure 8.5(a), has two main features:
+a broad plateau called the Compton plateau and a peak at the highest pulse
+heights, which is called the photopeak. The broad plateau represents Compton
+scatter interactions in the patient and/or crystal, broadly distributed in energy
+Figure 8.5
+Pulse height spectrum for
+technetium-99m, plotting
+number of pulses or count
+rate as a function of pulse
+height or energy.
+102
+103
+104
+105
+Number of pulses
+Compton
+plateau
+Compton
+Edge
+Photopeak
+0 50 100 150 200 250
+Pulse height, AU
+(a)
+102
+103
+104
+105
+Number of pulses
+0 50 100 150 200 250
+Pulse height, AU
+(b)
+Acceptance
+windows

@@ -1,0 +1,48 @@
+320 Chapter 9 Emission Computed Tomography
+both photons must escape the patient and be detected in coincidence, meaning
+that the total attenuation path length is longer for coincidence imaging than for
+SPECT. This distinction increases exponentially with patient size. For example,
+with PET, a 30 cm diameter patient requires an average attenuation correction
+factor of 16, whereas a 40 cm diameter patient requires a correction factor of 50.
+For comparison, the attenuation correction factor in cardiac SPECT imaging,
+where the photons pass through 20 cm of tissue, is just 20.
+As discussed above and formalized in (9.25) and (9.27), in PET an exact
+correction for attenuation can be made, while such is not the case in SPECT.
+In both SPECT and PET, scatter is usually estimated at the projection level
+by use of a model of the scattering process that incorporates characteristics of
+the scanner and the patient. This estimate is used to correct for scatter in the
+reconstruction process.
+9.3.3 Random Coincidences
+In PET, random or accidental coincidences are possible. These occur when one
+annihilation photon from one electron-positron annihilation event, and another
+annihilation photon from a different electron-positron annihilation event are
+detected in coincidence. Events A and D in Figure 9.11 depict random or
+accidental coincidences.
+The random coincidence count rate is given by the product of the coincidence
+time window and the ‘‘singles’’ (individual) count rates from the two opposing
+detectors in coincidence,
+R = 2τS
++S− , (9.40)
+where 2τ is the coincidence time window width andS+ and S− are the individual
+count rates of opposing detectors.
+As the activity in the ﬁeld of view increases, the true coincidence rate
+increases linearly (ignoring dead-time effects), but the random coincidence rate
+increases as the square of the increase in activity. Sensitivity may be increased
+by increasing the width of the coincidence time window (up to the point when
+the full coincidence time spectrum has been included), but only at the expense
+of acquisition of more random coincidences. A great challenge in coincidence
+imaging is to balance sensitivity (true coincidences) with random coincidences in
+optimizing the time window setting. Some manufacturers specify the window in
+terms of the time resolution of the system; others do so in terms of twice the time
+resolution, which is usually the actual window width, and therefore the more
+traditional speciﬁcation. The timing window, which typically ranges between 2
+and 20 ns, is primarily determined by the ‘‘speed’’ of the detector material.
+In practice, random or accidental coincidences are estimated from the
+observed projection data through use of (9.40) and then incorporated in the
+reconstruction process. As an alternative, an offset coincidence time window (in
+which the window is intentionally offset by a large time lag, such that any and
+all observed coincidences must be random) can be used to directly measure the
+random coincidence rate.
+9.3.4 Contrast
+In the process of considering the effects of ﬁnite spatial resolution and scatter,
+we noted their inﬂuence on image contrast in SPECT and PET. In both cases,

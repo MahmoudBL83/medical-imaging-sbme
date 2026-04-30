@@ -1,0 +1,55 @@
+310 Chapter 9 Emission Computed Tomography
+coincidence events or counts along LORs passing through them than will regions
+of low activity. The total number of coincidence counts along any given LOR
+represents an integration of the total activity along that line. We note that it is not
+possible to know the position along an LOR where the annihilation took place
+(except for TOF-PET, which is not part of our development here). Therefore, the
+measured number of counts on a particular line represents an integration of the
+activity on that line. That is, like SPECT, PET measures line integrals of activity.
+Imaging Equation Consider what happens at the site of a positron annihilation.
+Two gamma rays are generated, and they ﬂy off in opposite directions. As in
+SPECT, the gamma rays will have potentially different experiences. A gamma
+ray can be absorbed in the body, be scattered, miss the detector ring, or hit a
+detector in the ring (and we consider only 2-D PET here). As in the development
+of our imaging equation for planar scintigraphy (which was also used in SPECT),
+we ignore scattering and therefore assume that photons travel in straight lines.
+Unlike planar scintigraphy and SPECT, each PET detector has a ﬁxed spatial
+extent, and must be considered in pairs.
+Consider a distribution of radioactivity within the body (or sample)
+described by a radiotracer activity concentrationf (x, y, z). Consider a differential
+volume dxdydz lying halfway between the two detectors on a line connecting the
+center of the detectors. For simplicity, we assume each detector is at a distance
+R from this point. Since the radioactivity of this differential source is given by
+(8.4), the photon ﬂuence rate at a point ( x
+d, yd) on either detector (ignoring
+attenuation for now) due to this differential source dA = f (x, y, z) dx dy dzis
+dφ(xd, yd) = dA
+4πR2 . (9.14)
+Since photons in PET come in pairs, for each photon that hits one detector we
+can expect a simultaneous hit on the opposite detector. But if either photon fails
+to reach the detector because of attenuation the event will not be counted by
+the PET system. This corresponds to a reduction in photon ﬂuence rate due to
+attenuation.
+To determine the factor associated with this reduction in ﬂuence, we can
+carry out a brief ‘‘thought experiment.’’ Since for each annihilation both photons
+must reach their target in order to be counted, the attenuation going both ways
+matters. That is, the attenuation from s = 0t o s = R and s = 0t o s =− R both
+can contribute to a reduction in the count. In fact, since the two paths are
+colinear, the total attenuation seen by this pair of photons is the same that
+would be experienced by a single photon originating at s =− R on a trajectory
+through s = 0 and then on to s =+ R. The photon ﬂuence rate with attenuation
+included can therefore be written as
+dφ(x
+d, yd) = dA
+4πR2 exp
+{
+−
+∫ R
+−R
+μ(s;E)ds
+}
+. (9.15)
+It is the attenuation along the entire path that determines the loss factor
+for coincidence detection. That is, it does not matter where on this line the
+differential source is placed; the effect of attenuation on coincident counts will be
+the same.

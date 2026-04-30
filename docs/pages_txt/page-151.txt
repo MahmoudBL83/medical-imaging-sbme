@@ -1,0 +1,45 @@
+132 Chapter 4 Physics of Radiography
+Online at http://physics.nist.gov/xaamdi,
+Gaithersburg, MD: National Institute of
+Standards and Technology, 2004.
+Johns, E.J. and Cunningham, J.R. The Physics of
+Radiology. 4th ed. Springﬁeld, IL: Charles C
+Thomas Publisher, 1983.
+Wolbarst, A.B. Physics of Radiology, 2nd ed. Nor-
+walk, CT: Appleton and Lange, 2005.
+Problems
+Physics of Atoms
+4.1 The rest masses of a proton, neutron, and electron are 1 .67262171 ×
+10−27kg, 1.67492728 × 10−27kg, and 9.1093826 × 10−31kg, respectively.
+(a) The atomic mass unit (amu) is deﬁned as one twelfth of the actual mass
+of a carbon-12 atom (as a neutral atom in its nuclear and electronic
+ground state). The mass of a carbon-12 atom is less than the sum of the
+masses of its constituents; the difference is the mass defect. Calculate
+the mass defect (in kg or amu).
+(b) The binding energy is the energy equivalent to the mass defect. What
+is the binding energy of carbon-12?
+4.2 (a) Calculate the mass-equivalent energy of an electron at rest.
+(b) Determine the voltage potential difference between a cathode and
+anode in which electrons accelerated between the two will obtain
+speeds equal to 1/10 the speed of light.
+(c) Using relativistic equations, determine the speed of an electron that is
+accelerated across a 120 kV potential.
+4.3 Show that when a particle’s speed v is much smaller than the speed of
+light, its kinetic energy can be computed using the formula KE = mv
+2/2.
+Ionizing Radiation
+4.4 Compare characteristic radiation and bremsstrahlung radiation.
+4.5 (a) Explain why radiation with energy smaller than 13.6 eV is not consid-
+ered ionizing.
+(b) What are the differences between ionization and excitation?
+4.6 Ultraviolet light is deﬁned as EM waves having wavelengths in the range
+4–400 nanometers.
+(a) Determine the frequency range of ultraviolet light.
+(b) Determine the photon energy range of ultraviolet light.
+(c) Determine whether ultraviolet light is ionizing radiation or not.
+4.7 (a) Explain why the electron density of hydrogen is very nearly 6 × 1026
+electrons/kg.
+(b) Explain why the electron density of all other low atomic number
+materials is nearly 3 × 1026 electrons/kg.
+(c) Speculate why the electron density of materials might differ slightly
+from 3 × 1026 electrons/kg.

@@ -1,0 +1,63 @@
+286 Chapter 8 Planar Scintigraphy
+where ( x, y) is the location of the scintillation event, and ( xi, yi)i st h e
+center of the i-th PMT.
+Figure P8.2
+See Problem 8.8.
+1 cm
+1 cm
+x
+y
+1
+4
+2
+5
+3
+6
+789
+(a) Find the output of each PMT for a scintillation event that occurs at
+(−0.5, 0.5) cm.
+(b) What is the estimated position of the scintillation event?
+(c) Is the estimated position the same as its true position? If not, explain
+why.
+8.9 A series of scintillation events produce responses from the PMTs in an
+Anger camera. The recorded pulses have a photopeak centered at pulse
+height 180. The pulse height is proportional to the energy deposited into
+the crystal, which is shown in Figure P8.3(a). (This is not a pulse height
+spectrum.)Figure P8.3
+See Problem 8.9.
+140
+120
+130
+140
+150
+160
+170
+180
+190
+200
+150 160 170 180 190 200 210 220
+Energy deposited (keV)
+Pulse height
+(a)( b)
+y
+x
+12
+34
+5
+67
+2 mm
+(a) We want to set an acceptance window around the photopeak to reject
+those the photons that have undergone Compton scattering angles
+larger than 50 degrees. What is the range of photon energies that will
+be accepted by the acceptance window?
+Consider seven PMTs located around the origin of the x-y coordinates
+on the face of the Anger camera shown in Figure P8.3(b). The diameter
+of the tubes is 2 mm and each tube has been assigned a number. A
+single scintillation event yields a response from the PMTs. All other tubes
+recorded zero height except these 7 tubes, which recorded heights 40, 5,
+15, 15, 20, 45, 30 in the order of tube numbers.
+(b) Compute the Z-pulse. Will this pulse be accepted by the acceptance
+window?
+(c) Estimate the position of the event (X, Y).
+(d) Explain why we do not set ( X, Y) equal to the location of the PMT
+having the largest amplitude.

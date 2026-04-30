@@ -1,0 +1,55 @@
+92 Chapter 3 Image Quality
+3.9 Summary and Key Concepts
+Image quality characterizes the performance of a medical imaging system and
+directly affects clinical utility. It is assessed through a combination of speciﬁc
+performance parameters as measured in images. In this chapter, we presented
+the following key concepts that you should now understand:
+1. Image qualityrefers to the degree to which an image allows a radiologist to
+accomplish the clinical goals of the imaging study.
+2. The six most important factors inﬂuencing image quality are contrast,
+resolution, noise, artifacts, distortion, and accuracy.
+3. Contrast refers to the difference in image intensity of an object or target and
+surrounding objects or background.
+4. Resolution is the ability of an imaging system to distinguish and depict two
+signals that differ in space, time, or energy as distinct.
+5. Noise is any random ﬂuctuation in an image; noise generally interferes with
+the ability to detect a signal in an image.
+6. Continuous signals are transformed by sampling or discretization into
+discrete signals in order to be digitally represented.
+7. Aliasing is caused by improper sampling of a continuous signal, yielding
+artifacts in the resulting digital image.
+8. Artifacts are false signals in an image that do not represent any valid
+structural or functional signal in the patient.
+9. Distortion is any geometric inaccuracy in size or shape.
+10. Quantitative accuracy refers to the accuracy, compared with the truth, of
+numerical values obtained from an image; diagnostic accuracy refers to the
+accuracy of interpretations and conclusions about the presence or absence
+of disease drawn from image patterns.
+Further Reading
+Barrett, H.H. and Swindell, W. Radiological Imag-
+ing: The Theory of Image Formation, Detection,
+and Processing . New York, NY: Academic
+Press, 1981.
+Carlton, R.R. and Adler, A.M. Principles of Radio-
+graphic Imaging: An Art and a Science, 5th ed.
+Clifton Park, NY: Delmar Cengage Learning,
+2012.
+Cherry, S.R., Sorenson, J.A., and Phelps, M.E.
+Physics in Nuclear Medicine, 4th ed. Philadel-
+phia, PA: W. B. Saunders, 2012.
+Cunningham, I.A. ‘‘Applied Linear Systems The-
+ory.’’ pp. 79–159 in Handbook of Medical
+Imaging. Vol. 1, Physics and Psychophysics .
+Bellingham, WA: SPIE Press, 2000.
+Dobbins, J.T. ‘‘Image Quality Metrics for Digi-
+tal Systems.’’ pp. 161–222 in Handbook of
+Medical Imaging. Vol. 1, Physics and Psy-
+chophysics. Bellingham, WA: SPIE Press, 2000.
+Evans, A.L. The Evaluation of Medical Images .
+Bristol, England: Adam Hilger, 1981.
+Krestel, E. Imaging Systems for Medical Diag-
+nostics. Berlin, Germany: Siemens Aktienge-
+sellschaft, 1990.
+Papoulis, A. and Pillai, S.U. Probability, Random
+Variables and Stochastic Processes , 4th ed.
+New York, NY: McGraw-Hill, 2002.

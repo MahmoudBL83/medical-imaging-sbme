@@ -1,0 +1,27 @@
+104 Part II Radiographic Imaging
+Figure II.3
+Various CT images of the
+human body: (a) wrist,
+(b) torso and abdomen,
+(c) complete spine,
+(d) chest, and (e) ankle.
+Image (a) courtesy of Dr.
+Avneesh Chhabra,
+Department of Radiology,
+Johns Hopkins Hospital.
+Images (b) and (e)
+courtesy of GE
+Healthcare. Image (c)
+courtesy of Philips
+Healthcare. Image (d)
+courtesy of Osirix.
+(a)
+(b)
+(d)
+(c)
+(e)
+prominent in this image as well as darker regions that are caused by the negligible
+x-ray attenuation of air.
+Projection radiography and computed tomography both rely on an x-ray
+tube to produce the beam of ionizing radiation, and radiation detectors on the
+other side of the patient to detect the radiation that is passed through without

@@ -1,0 +1,43 @@
+Problems 97
+(c) Describe a sequential imaging process, involving groupings like those
+shown in the picture, which would guarantee that no aliasing occurs
+for any object.
+(d) What is the resolution (FWHM) of the imaging system in part (c)?
+(e) Can the sequential grouping you described in part (c) be done after an
+image is acquired using the small detectors? Explain.
+3.22 Consider the following 1-D imaging systems, system 1 and system 2, with
+PSFs given by
+h
+1(x) = rect(2x),
+h2(x) = e−πx2
+.
+(a) Calculate the full width half maximum of each system. Which has
+better spatial resolution?
+(b) Calculate the MTF of each system.
+You wish to image the following signal
+f (x) = cos(4πx)
+with each system. Let g1(x) be the output of system 1 when f (x)i s
+the input, and let g2(x) be the output of system 2 when f (x)i st h e
+input.
+(c) Calculate g1(x) and g2(x). Which system should you use to image
+this signal? Hint: you should not have to calculate any convolution
+integrals.
+(d) What is the largest sampling interval you can use to sample g1(x) and
+g2(x) such that you do not introduce distortion through aliasing?
+Artifacts, Distortion, and Accuracy
+3.23 Compare artifacts with noise, and state the common properties and
+differences between them.
+3.24 In projection radiography, size distortion is an artifact that cannot be
+ignored. Suppose the x-ray source is a perfect point source located at
+origin and the detector plane is the x = d plane. A ball centered on the
+x-axis between the source and the detector plane is imaged by the system.
+Assuming that the radius of the ball isr < d/2, derive the relation between
+the radius R of the image of the ball on the detector plane and the location
+of the ball. If the source-detector distance is ﬁxed, what measure(s) can be
+taken to reduce the size distortion? What is the smallest ratioR/r that can
+be achieved?
+3.25 A medical imaging system has a geometric distortion, which is well
+modeled as
+x = ξ + 1
+50ξη2 ,
+y = η ,

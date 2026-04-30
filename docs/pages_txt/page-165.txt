@@ -1,0 +1,50 @@
+146 Chapter 5 Projection Radiography
+a linear ‘‘scan’’ of the patient. Because the x-ray beam is collimated to a thin
+line, the amount of scatter generated is small, and because the detector is also
+collimated to a thin line, the amount of scatter accepted is small. Hence, these
+systems can provide greater than 95% scatter reduction, at the expense of a
+more complex and costly system and longer exposure times.
+5.2.5 Film-Screen Detectors
+In 1895, Roentgen discovered x-rays and made the ﬁrst radiograph by allowing
+the x-rays to directly expose a photographic plate. X-rays can directly expose
+today’s modern photographic ﬁlm, but this is a very inefﬁcient way to create
+a radiograph. In fact, only about 1–2 percent of the x-rays are stopped by the
+ﬁlm, so creating radiographs by direct ﬁlm exposure requires an unnecessarily
+large x-ray dose to the patient.
+To greatly improve their efﬁciency, ﬁlm-based diagnostic x-ray units always
+have intensifying screenson both sides of the radiographic ﬁlm. The intensifying
+screens stop most of the x-rays and convert them to light, which then exposes
+the ﬁlm. This is a very efﬁcient process, and the screens cause only a small
+amount of additional image blurring.
+In this section, we ﬁrst describe the process of luminescence, and the
+composition and dimensions of modern intensifying screens. We then describe
+the optical properties of radiographic ﬁlm. Finally, we conclude with a discussion
+of the radiographic cassette, which holds the intensifying screens and the ﬁlm.
+Intensifying Screens A cross section of a typical radiographic intensifying
+screen is shown in Figure 5.10. Since screens are used on both the front and
+back of the radiographic ﬁlm, all parts of the screen except the phosphor must
+be uniformly radiolucent. The phosphor is the active part of an intensifying
+screen; its purpose is to transform x-ray photons into light photons. The light
+photons then travel into the ﬁlm, causing it to be exposed and to form a latent
+image. The latent image is the ‘‘virtual’’ image resident in the ﬁlm, but it is not
+yet viewable by an observer.
+The base of the screen is provided for mechanical stability, but it must be
+somewhat ﬂexible so that it can be pushed tightly against the ﬁlm. It is typically
+made of polyester plastic. The reﬂective layer is provided so that light from the
+phosphor is reﬂected back into the ﬁlm rather than getting lost in the base. It is
+typically about 25 μm thick and made of magnesium oxide or titanium dioxide.
+A plastic protective coating is applied to the ﬁlm side of the screen to protect it
+from repeated ﬁlm loading and unloading.
+Phosphors are examples of materials that are luminescent; that is, they
+convert one form of energy, in this case x-rays, into light. Two types of
+luminescence are distinguished:ﬂuorescence, in which the emission of light takes
+Figure 5.10
+Geometry of an
+intensifying screen.
+Base
+Reflective layer
+Phosphor
+Protective coating
+1000 /H9262m
+150-300 /H9262m
+Film

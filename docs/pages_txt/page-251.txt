@@ -1,0 +1,41 @@
+232 Chapter 6 Computed Tomography
+them no matter what their orientation relative to the pixel area. What
+is the minimum number of detectors you must use?
+You decide to use 925 detectors, each 0.8 mm wide and ﬁt side-by-side on
+a line. You decide to place the x-ray source 180 cm away from the center
+of the detector array (orthogonal to the array, of course).
+(b) Will your FOV ﬁt within the fan? Explain your answer.
+Suppose μ = 0.2c m−1 and suppose there are an average of 1 .5 × 1011
+photons hitting the detector array for each projection.
+(c) What is the approximate SNR in dB of a tumor mass whose linear
+attenuation coefﬁcient is 0.25cm−1.
+6.31 You have the good fortune to acquire a used 3G CT scanner that has slip
+ring technology (continuously rotating 360-degree x-ray tube and detector
+array). Everything is in good working order except that only one detector
+channel is operational. Fortunately, you are able to switch this channel
+between detectors so that you can acquire data from any detector, but
+from only one detector for each pulse of the x-ray tube. The tube can
+be pulsed continuously at a rate of one pulse per millisecond. The gantry
+can rotate at one revolution per second. The geometry of the fan beam is
+shown in Figure P6.4.
+Figure P6.4
+Scanner geometry for
+Problem 6.31.
+50 cm
+70 cm
+35 cm
+Detector array
+X-ray source
+(a) Determine the fan angle from the depicted geometry.
+(b) Suppose 703 detectors are packed into the array depicted. Determine
+the spacing between the detectors.
+(c) Suppose data from only the central detector is acquired (as fast as
+possible) over a single counterclockwise rotation of the gantry (from
+the x-ray source on the top back to the x-ray source on the top).
+What line integrals are acquired? Draw the trajectory of data acquired
+over this one acquisition cycle on a sinogram diagram. Are any line
+integrals repeated? Explain.
+(d) Now suppose that data from only the bottom-left detector (with
+reference to Figure P6.4) is acquired, again over a single counter-
+clockwise rotation of the gantry with the fastest possible rotation
+and x-ray tube pulsing. What line integrals are acquired this time?

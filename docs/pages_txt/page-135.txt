@@ -1,0 +1,55 @@
+116 Chapter 4 Physics of Radiography
+Figure 4.5
+When energetic electrons
+bombard a target, two
+kinds of x-rays are
+produced: characteristic
+x-rays and
+bremsstrahlung x-rays.
+Low-energy x-rays of
+both types are absorbed
+by the medium.
+0
+0.2
+0.4
+0.6
+0.8
+1
+Relative x-ray intensity
+X-ray photon energy, keV
+0 20 40 60 80 100 120
+Bremsstrahlung
+radiation
+69.081 keV
+67.244 keV
+66.950 keV
+59.321 keV57.984 keV
+Characteristic
+radiation (tungsten)
+58 keV (from an L-shell to K-shell transition), 67 keV (from an M-shell to
+K-shell transition), and 69 keV (from a very outer shell to K-shell transition), as
+shown in Figure 4.5. (Transitions to the L-shell or M-shell result in such low-
+energy characteristic x-rays that they are either absorbed within the tungsten
+anode or ﬁltered out by the x-ray tube.)
+4.4.2 Primary Electromagnetic Radiation Interactions
+EM ionizing radiation interacts with matter through signiﬁcantly different
+mechanisms than particulate ionizing radiation. The three main mechanisms by
+which EM ionizing radiation interacts with materials are (1) the photoelectric
+effect, (2) Compton scatter, and (3) pair production. Since a photon must have
+at least 1.02 MeV of energy for pair production to occur and since the range of
+photon energies in medical imaging is about 25–500 keV, we will consider only
+the photoelectric effect and Compton scattering here.
+In both the photoelectric effect and Compton scattering, an incident x-ray
+photon interacts with the electron cloud of an atom. The primary difference
+between the two interactions is that in the photoelectric effect the photon is
+completely absorbed by the atom, while in Compton scattering the photon is
+not absorbed but instead loses energy and changes its direction. Both effects
+are important in imaging human tissues. The photoelectric effect is the primary
+mechanism that provides contrast between different types of tissues; Compton
+scattering is a primary mechanism for limiting the resolution of x-ray images,
+both in projection radiography and computed tomography. We now study both
+interactions in some detail.
+Photoelectric Effect In the photoelectric effect, a photon with energy hν
+interacts with the coulomb ﬁeld of the nucleus of an atom, causing the ejection
+of an electron, usually a K-shell electron, from the atom. This process is
+illustrated in Figures 4.6(a) and (b). The incident photon is completely absorbed

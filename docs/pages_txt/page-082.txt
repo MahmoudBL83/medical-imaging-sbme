@@ -1,0 +1,36 @@
+3.3 Resolution 63
+Figure 3.6
+An example of the effect
+of system resolution on
+the ability to differentiate
+two points. The FWHM
+equals the minimum
+distance that the two
+points must be separated
+in order to be
+distinguishable.
+Separation
+Separation
+(a)
+(b)
+(c)
+(d)
+h(x /H11002 x1)
+x1 x2
+h(x /H11002 x2)
+FWHM
+FWHM
+FWHM
+Separation
+Separation
+distance at which the two points are just distinguishable. Notice that, in this
+case, the two points are separated by the FWHM. Therefore, a decrease in the
+FWHM indicates an improvement in resolution.
+3.3.3 Resolution and Modulation Transfer Function
+Another way to quantify the resolution of a medical imaging system is as the
+smallest separation (in mm) between two adjacent maxima (or minima) in a
+sinusoidal input that can be resolved in the image. Consider the case when the
+input of a medical imaging system is sinusoidal of the formf (x, y) = B sin(2πux),
+with amplitude B and frequency u. From (3.5) and (3.7), the output of the system
+is given by
+g(x, y) = MTF(u)H(0, 0)B sin(2πux) . (3.17)

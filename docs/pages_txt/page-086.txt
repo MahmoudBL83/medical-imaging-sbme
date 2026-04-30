@@ -1,0 +1,47 @@
+3.3 Resolution 67
+in terms of the MTFs MTFk(u, v), k = 1, 2,... , K, of the individual subsystems.
+This is a direct consequence of (3.9) and the fact that the frequency response
+H(u, v) of the overall system is given by
+H(u, v) = H1(u, v)H2(u, v) ··· HK(u, v), (3.31)
+which is the product of the frequency responses Hk(u, v), k = 1, 2,... , K,o ft h e
+individual subsystems.
+Figure 3.8 depicts the MTF curves of three subsystems of a medical imaging
+system together with the MTF curve of the overall system. If one subsystem has
+a small value of the MTF at some spatial frequency, then the MTF of the overall
+system will be small at that frequency as well. In other words, the MTF of the
+overall system will always be less than the MTF of each subsystem. This follows
+from (3.30), which suggests that, for every k = 1, 2,... , K,
+MTF(u, v) ≤ MTFk(u, v), for every u, v, (3.32)
+provided that MTFk(u, v) ≤ 1, for every k = 1, 2,... , K. Therefore, the overall
+quality of a medical imaging system, in terms of contrast and resolution, will be
+inferior to the quality of each subsystem.
+From the previous discussion, the resolution of a medical imaging system
+can be speciﬁed by either its PSF or its LSF. In some medical imaging systems, we
+are able to create an object consisting of a very small ‘‘point’’ or ‘‘line’’ of some
+material. For example, we may create a very small and highly radioactive point
+or line source for measuring the resolution of a nuclear medicine camera. When
+a medical imaging system is mathematically modeled using an LSI system, its
+output to these objects will be the PSF and the LSF, respectively. This provides
+a practical way for calculating these two important response functions.
+From our discussion, we can see that spatial resolution and image contrast
+are tightly linked, since the Fourier transforms of the PSF and the LSF, which
+are measures of resolution, yield the MTF, which is a measure of contrast.
+Indeed, spatial resolution can be thought of as the ability of an imaging system
+to preserve object contrast in the image, since blurring, due to poor resolution,
+is what actually reduces contrast.
+In a nonisotropic system, the proﬁle through the PSF changes with orienta-
+tion; thus, the system has an orientation-dependent resolution. A good example
+Figure 3.8
+MTF curves of three
+subsystems of a medical
+imaging system and the
+MTF curve of the overall
+system.
+0 0.2 0.4 0.6 0.8 1.0 1.2 1.4
+1.0
+MTF(u)
+mm/H110021
+Spatial frequency u
+Overall system Subsystem 3
+Subsystem 2
+Subsystem 1

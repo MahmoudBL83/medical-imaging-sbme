@@ -1,0 +1,47 @@
+4.2 Ionization 107
+computed tomography (Chapter 6), planar scintigraphy (Chapter 8), and emis-
+sion computed tomography (Chapter 9). We start by describing the basic
+physical properties of the atom and the concepts of excitation and ioniza-
+tion. We then describe ionizing radiation in a more general context, concluding
+with its measurement and interaction with biological tissues.
+4.2 Ionization
+Ionization is the ejection of an electron from an atom, creating a free electron
+and an ion. Radiation that carries enough energy to ionize an atom is called
+ionizing radiation. Here, the term radiation covers a broad range of physical
+phenomena. For example, visible light, x-rays, gamma rays, and electron beams
+are all examples of radiation. High-energy EM waves such as x-rays and gamma
+rays are ionizing radiations; light is not. Particulate radiations such as an electron
+beam may be ionizing depending on the energy each particle possesses. We now
+discuss the structure of atoms and the process of ionization in more detail.
+4.2.1 Atomic Structure
+Today’s concept of atomic structure is based on a quantum mechanical picture
+of the atom (from the 1920s), which in turn arose from the Bohr model of
+the hydrogen atom (in 1913). An atom consists of a nucleus of protons and
+neutrons, which together are called nucleons, surrounded by orbiting electrons.
+A common visualization of atomic structure, sometimes called the planetary
+atom, is shown in Figure 4.1. The atomic number Z is equal to the number
+of protons in the nucleus and deﬁnes the element. Each proton has a positive
+charge equal in magnitude and opposite in charge to that of each electron. Since
+an atom as a whole is electrically neutral, there are an equal number of electrons
+and protons in an atom; hence, Z also represents the number of electrons in the
+atom. A short table of the elements is given in Table 4.1.
+The mass number Aof an atom is equal to the number of nucleons in the
+nucleus. The term nuclide refers to any unique combination of protons and
+neutrons forming a nucleus. Nuclides are typically denoted by either
+A
+ZX or X-A,
+where X is the element symbol. For example, 12
+6 C and C-12 are both symbols
+for the most abundant carbon atom. Notice that the element symbol and atomic
+number are redundant.
+As indicated in Table 4.1, the number of neutrons in a given nucleus is
+approximately equal to the number of protons; and certain combinations are
+stable, while others are unstable. Unstable nuclides are called radionuclides,
+Figure 4.1
+The planetary atom: a
+common (and useful)
+visualization of atomic
+structure.
+Protons
+Neutrons
+Electrons

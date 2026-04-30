@@ -1,0 +1,54 @@
+306 Chapter 9 Emission Computed Tomography
+Figure 9.8
+Integration geometry for
+SPECT imaging equation.
+Camera
+Camera
+(a) (b)
+y y
+x
+s
+s xu
+[introduced in (6.8) and (6.9)]
+x(s) = ℓ cos θ − s sin θ , (9.4)
+y(s) = ℓ sin θ + s cos θ. (9.5)
+Examination of the geometry shown in Figure 9.8, recognizing that the mean
+pixel count is related to the underlying photon ﬂuence rate bynk = ϵTAkφ(xk, yk)
+[see (8.8)], and careful substitution yields
+nk(ℓ, θ) = ϵTAkAh
+∫ R
+−∞
+f (x(s), y(s))
+4π(s − R)2 exp
+{
+−
+∫ R
+s
+μ(x(s′), y(s′);E) ds′
+}
+ds , (9.6)
+where nk(ℓ, θ) denotes the mean pixel count at lateral position ℓ and angle θ.
+Equation (9.6) is the starting point for a SPECT imaging equation.
+Unfortunately, there are two complications that make (9.6) generally intractable
+as an imaging equation. The ﬁrst complication has to do with the presence of a
+second unknown function, μ(x, y), the linear attenuation coefﬁcient. There has
+been a considerable amount of research into this problem; even when μ can be
+measured, inferred, or approximated, the presence of the additional term in
+the integrand leaves a relatively difﬁcult reconstruction problem at hand—one
+with no closed-form analytic solution. This is essentially one side of the
+second complication, which arises due to the position-dependent terms—the
+inverse-square law and the photon attenuation—in the integrand. Also, be
+aware that the same collimator sensitivity considerations that were discussed in
+Section 8.4.2 apply here as well.
+Instead of trying to solve (9.6) directly, we will develop a simpliﬁed form
+for image reconstruction—one that was used for many years in practice—by
+ignoring both the inverse square law and the attenuation terms in the integrand.
+Using this bold approximation yields
+nk(ℓ, θ) = ϵTAkAh
+∫ ∞
+−∞
+f (x(s), y(s)) ds , (9.7)
+where the upper limit of integration has been set to ∞ since f = 0 behind the
+collimator. We can now divide by the constant terms to form
+g(ℓ, θ) = nk(ℓ, θ)
+TAkAhϵ , (9.8)

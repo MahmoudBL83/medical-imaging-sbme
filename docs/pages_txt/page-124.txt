@@ -1,0 +1,38 @@
+Part II Radiographic Imaging 105
+being fully absorbed. In the case of projection radiography, the detector is
+sometimes a piece of ﬁlm, which then also serves as the display device. Increas-
+ingly often, the detector is a digital device that is capable of storing a latent
+image of the x-rays that hit the detector and either instantly or after a delay
+transmitting the latent image to a computer. In the case of computed tomog-
+raphy, an x-ray tube with a collection of detectors on the opposite side of the
+patient rotate together around the patient, producing x-ray images at a number
+of angles. These images, stored in a computer, form the projection dataused to
+reconstruct cross-sectional or transaxial images through the patient.
+Projection radiography is perhaps the most commonly performed medical
+imaging approach. It is used any time a physician needs an image of structures
+within the body, especially to obtain an overall picture of the torso and to
+examine bones. It is also commonly used during and after orthopedic surgery to
+verify the placement of artiﬁcial joints and various ﬁxation devices, as shown in
+Figure II.2.
+CT is distinguished from projection radiography in that it removes overlay-
+ing structures by reconstructing cross sections of the body rather than imaging
+projections. CT also produces images with lower resolution than conventional
+radiographs, and typically requires higher x-ray dose to the patient. Figure II.3
+shows various CT images of the human body.
+Modern CT scanners invariably acquire stacks of two-dimensional cross
+sections which can be handled by a computer as a three-dimensional (3-D)
+dataset. Because of this capability, CT images can be reformatted by the
+computer into arbitrary cross sections that are different than those that are
+natively acquired by the scanner. All of the images in Figure II.3 are reformatted
+with the exception of II.3(d). For example, in the large sagittal image shown in
+Figure II.3(c) the data were acquired axially while sliding the patient on a table
+through the axially-oriented CT scanner.
+Figure II.3(d) shows a cross section of the chest (including the heart in which
+all four chambers can be identiﬁed). The fact that the blood appears bright—as
+bright as bone—is because a contrast agent has been introduced. Also, it might
+be noticed that many of the bones appearing in these images have a bright ring
+around them, which appears somewhat similar to that of radiographs. Because
+the structures are not superposed in CT, this ring appearance actually reﬂects
+differences in the make-up of the tissues. In this case, cortical bone has a higher
+attenuation than cancellous bone and bone marrow, and is therefore brighter
+on these images.

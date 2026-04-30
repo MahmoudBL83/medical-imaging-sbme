@@ -1,0 +1,54 @@
+9.2 Image Formation 307
+which we recognize from (9.7) as the line integral of activity concentration.
+Therefore, using the impulse function [see (2.3)] and referring to (9.7), (9.8) can
+be written as
+g(ℓ, θ) =
+∫
+∞
+−∞
+∫ ∞
+−∞
+f (x, y)δ(x cos θ + y sin θ − ℓ) dx dy, (9.9)
+which is precisely the form of the standard CT imaging equation [see (6.10)].
+One important difference between the CT and SPECT cases is that the SPECT
+imaging equation uses the actual photon counts with a simple scaling factor
+in arriving at a Radon transform relation, while CT requires a logarithmic
+transformation of the observed x-ray intensities.
+Reconstruction Because of approximations made above, we can use the same
+CBP reconstruction formula in SPECT as in CT [see (6.26)]
+ˆf (x, y) =
+∫ π
+0
+∫ ∞
+−∞
+g(ℓ, θ)˜c(x cos θ + y sin θ − ℓ) dℓdθ. (9.10)
+This inverse formula is commonly used in SPECT even if only as a starting point
+for iterative reconstruction (see Section 9.2.3).
+In (9.10), ˜c is an approximate ramp ﬁlter, deﬁned in (6.27) and repeated
+here for convenience:
+˜c(ℓ) = F −1
+1D{|ϱ |W(ϱ )} . (9.11)
+In CT, the deﬁnition of the ramp windowing ﬁlter W(ϱ ) is not very critical.
+As long as its cutoff frequency ϱ 0 is high enough, there will be very little
+degradation in image quality. In SPECT, however, the windowing ﬁlter is very
+critical to image quality. In particular, if it is chosen to allow too many high
+frequencies through, then the SPECT images will be dominated by noise due to
+the high-frequency emphasis of the ramp ﬁlter. If, on the other hand, W(ϱ )i s
+chosen to pass only the very lowest spatial frequencies, then image detail will be
+absent. It is common to use a ramp combined with some sort of low-pass ﬁlter,
+such as a Butterworth ﬁlter, which is deﬁned as:
+W(ϱ ) = 1√
+1 +
+(
+ϱ
+ϱ c
+)2n
+, (9.12)
+where ϱ c is the ﬁlter’s critical or cut-off frequency andn is the order of the ﬁlter.
+Attenuation Correction Attenuation inﬂuences the relative, as well as absolute,
+apparent distribution of activity within an image; it is thus important to try to
+correct for this effect even if only subjective visual interpretation—rather than
+absolute quantiﬁcation—of the images is used. We used a simpliﬁed imaging
+equation (9.7), which does not include the effects of attenuation, in order to
+derive the convolution backprojection formula for SPECT that is given in (9.10).
+This was necessary because the inﬂuences of the activity concentration f and

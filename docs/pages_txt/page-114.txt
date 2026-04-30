@@ -1,0 +1,54 @@
+Problems 95
+3.13 Suppose N random variables Xi, i = 1, ··· , N, are independent with mean
+μi and variance σ2
+i , i = 1, ··· , N. Show that the mean and the variance of
+the random variable X =
+N∑
+i=1
+Xi are given by
+μ =
+N∑
+i=1
+μi and σ2 =
+N∑
+i=1
+σ2
+i .
+3.14 In the above problem, if Xi, i = 1, ··· , N, are not independent, will the
+equalities for the mean and variance of the sum of the random variables
+still hold? Explain.
+3.15 Show that the expected value and variance of a uniform random variable
+X over the interval (a, b) are given by
+μ
+X = a + b
+2 and σ2
+X = (b − a)2
+12 .
+3.16 Consider two medical imaging systems with PSFs h1(x, y) and h2(x, y) and
+MTFs MTF1(u, v) and MTF2(u, v), respectively, such that
+MTF1(u, v) ≤ MTF2(u, v) .
+Show that the system with the larger MTF, and thus with better contrast
+and resolution properties, is characterized by a larger output power SNR,
+given by (3.63), and is thus better in terms of image quality.
+3.17 Consider the system shown in Figure P3.1, in which an image f (x, y)
+is corrupted with zero mean white noise n(x, y) with variance σ2
+n .T h e
+corrupted image is input to a system with PSF h(x, y) to get an output
+image g(x, y).
+(a) What are the mean and variance of the noise in the output g(x, y)?
+(b) What are the power SNR for the input and output images of the
+system?
+(c) If the system does not change f (x, y) in any way, under what condi-
+tion(s) will the system improve the SNR?
+Figure P3.1
+A system with additive
+noise.
+/H11001
+f(x, y) g(x, y)
+n(x, y)
+h(x, y)
+Sampling Theory
+3.18 A signal f (t) is deﬁned as
+f (t) =
+{ sin(2πt/T), 0 ≤ t ≤ T
+0, otherwise .

@@ -1,0 +1,45 @@
+8.2 Instrumentation 259
+Figure 8.3
+A schematic of a
+photomultiplier tube.
+Dynodes
+Focusing
+grid
+Photocathode
+Light photons
+1,200 V
+Output signal
+Anode
+e/H11002
+e/H11002
+e/H11002
+e/H11002
+These photoelectrons are accelerated to the ﬁrst dynode, an electrode that
+is positively charged and positioned at a short distance from the photocathode
+(see Figure 8.3). For each electron reaching the ﬁrst dynode, 3–4 electrons
+are released. The second dynode has a higher voltage than the ﬁrst; thus, the
+electrons liberated from the ﬁrst dynode are accelerated to the second dynode.
+Each of these electrons in turn liberates three to four electrons from this second
+dynode. This process is repeated at 10–14 successive dynodes in the PMT,
+and 10
+6 to 108 electrons reach the tube’s anode (i.e., the ﬁnal, most positively
+charged electrode) for each electron liberated from the photocathode.
+These electrons comprise the output of the PMT, and they form a current
+pulse. The PMT outputs such a pulse each time a gamma photon interacts and
+deposits energy in the NaI[Tl] crystal, triggering the sequence of events in the
+tube as just described. This current pulse is directed into a preampliﬁer circuit,
+which ampliﬁes the signal to provide a voltage pulse with a peak voltage—that
+is, its pulse height—that ranges from a few millivolts to a few volts.
+As stated above, an array of PMTs covers the back of the crystal. This
+array means that light produced in the scintillation crystal is detected no matter
+where it is produced. An array is also necessary to produce the signals used
+in event positioning. The original Anger camera had seven PMTs, but modern
+gamma cameras have anywhere from 37 to 91 tubes or more, often arranged
+in a hexagonal pattern, as shown in Figure 8.4. Generally, more PMTs mean
+better spatial resolution and image uniformity, but this comes with a higher
+initial cost, more difﬁcult calibration procedures, and more costly maintenance.
+The number of tubes is determined by the size and shape of both the crystal
+and each individual PMT. The tubes must be smaller, of course, when there are
+more of them arrayed over the scintillation crystal. Early PMTs had round cross
+sections, whereas current PMTs often have hexagonal cross sections to better
+‘‘tile’’ the scintillation crystal without gaps between tubes.

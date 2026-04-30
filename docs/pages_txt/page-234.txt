@@ -1,0 +1,38 @@
+6.4 Image Quality in CT 215
+and therefore, upon taking the inverse Radon transform of both sides,
+h(x, y) = R−1{˜h(ℓ)} . (6.51)
+From the convolution property of the Radon transform (6.49), we can conclude
+that the reconstructed object is given by
+ˆf (x, y) = f (x, y) ∗ R−1{˜h(ℓ)} . (6.52)
+Therefore, the reconstructed estimate ˆf (x, y) is a blurry version of f (x, y), and
+the resolution of the system can be characterized by the point spread function
+(PSF) R−1{˜h(ℓ)}.
+To ﬁnd the PSF h(x, y), we use the projection-slice theorem (6.18). The
+Fourier transform of ˜h(ℓ) is given by
+˜H(ϱ ) = S(ϱ )W(ϱ ) , (6.53)
+which is independent of θ. Accordingly, the 2-D Fourier transform of h(x, y)
+must be circularly symmetric and given by
+H(q) = S(q)W(q) . (6.54)
+It follows that the PSF is also circularly symmetric and given by the inverse
+Hankel transform [see (2.113)]
+h(r) = H−1{S(ϱ )W(ϱ )} . (6.55)
+Finally, the reconstructed image is given by
+ˆf (x, y) = f (x, y) ∗ h(r) , (6.56)
+where r =
+√
+x2 + y2. The PSF is circularly symmetric and can be characterized
+by a full width at half maximum (FWHM) given the detector width, which then
+determines S(ϱ ), and the ramp ﬁlter window function W(ϱ ).
+EXAMPLE 6.5
+Suppose a CT system uses rectangular detectors having widthd and a rectangular window
+function with highest frequency ϱ 0 ≫ 1/d.
+Question What is the approximate PSF of this CT system?
+Answer Rectangular detectors with widthd blur the underlying projection with impulse
+response function
+s(ℓ) = rect
+( ℓ
+d
+)
+.
+In the frequency domain, this is represented by the ﬁlter
+S(ϱ ) = d sinc(dϱ ) .

@@ -1,0 +1,51 @@
+24 Chapter 2 Signals and Systems
+where X and Y are known as the signal periods in the x and y direction, respec-
+tively. From (2.29), we need to know a periodic signal only in the rectangular
+window 0 ≤ x < X,0 ≤ y < Y. The sampling function δs(x, y;/Delta1x, /Delta1y) [(2.14)]
+is a periodic signal with periods X = /Delta1x and Y = /Delta1y, whereas exponential and
+sinusoidal signals [(2.23) and (2.24)] are periodic with periods X = 1/u0 and
+Y = 1/v0.
+2.3 Systems
+A continuous-to-continuous (or simply continuous) system is deﬁned as a
+transformation S of an input continuous signal f (x, y)t oa n output continuous
+signal g(x, y). This is illustrated in Figure 2.6, which depicts the response of a
+system S to a point impulse. In general,
+g(x, y) = S[f (x, y)] , (2.30)
+which is known as theinput-output equationof system S. With a slight abuse of
+notation, we denote by S[f (x, y)] the value, at point (x, y), of the signal obtained
+by applying the transformation S on the entire signal f (x, y). The importance of
+(2.30) is that it implies that we can predict the output of an imaging system if
+we know the input f and the characteristics of the imaging system S.
+Equation (2.30) is too general to be useful in practice. In a particular
+application, there might be many choices for S, and the question is which one
+is more appropriate. For a choice of S to be useful, it should be mathematically
+tractable. It is therefore necessary to limit our choices, by considering systems
+obtained using transformations S that satisfy certain simplifying assumptions.
+Of course, any choice of S should accurately portray the actual situation.
+2.3.1 Linear Systems
+A simplifying assumption is that of linearity. A system S is a linear system
+if, when the input consists of a weighted summation of several signals, the
+output will also be a weighted summation of the responses of the system
+to each individual input signal. More precisely, for any collection {f
+k(x, y),
+k = 1, 2,... , K} of input signals, and for any collection {wk, k = 1, 2,... , K} of
+weights, we have
+S
+⎡
+⎣
+K∑
+k=1
+wkfk(x, y)
+⎤
+⎦ =
+K∑
+k=1
+wkS
+[
+fk(x, y)
+]
+. (2.31)
+Figure 2.6
+The response of a
+continuous system to a
+point impulse. Input f Output gSystem 

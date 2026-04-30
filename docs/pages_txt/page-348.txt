@@ -1,0 +1,12 @@
+Problems 329
+(a) Write an equation for the number of coincidence events Nc arising
+from positron annihilations at the center of the circle that will be
+detected as a function of N
+0, N+, and N−.
+For parts (b)–(d): Suppose that the radioactivity is the same everywhere
+and the value of g(ℓ1,0 ◦) is 2/3 of the value of g(0, 0◦).
+(b) Write an equation representing the relationship between μsquare and
+μcircle.
+(c) What is the ratio g(ℓ2,0 ◦)/g(0, 0◦)?
+(d) What is the local contrast on the 0◦ projection? (Take the peak of the
+circle as the object intensity.)

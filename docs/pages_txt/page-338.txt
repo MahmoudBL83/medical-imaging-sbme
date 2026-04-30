@@ -1,0 +1,52 @@
+9.3 Image Quality in SPECT and PET 319
+not eliminated until the object size is approximately three times the resolution
+of the imaging system. These effects, which also apply to the axial resolution
+(sometimes mistakenly called ‘‘slice thickness’’) of a tomographic scanner, are
+referred to as partial volume effects.
+9.3.2 Attenuation and Scatter
+The photons detected in nuclear medicine imaging are electromagnetic radiation.
+As such, they undergo two major types of interactions in tissue—photoelectric
+effect and Compton scattering—as discussed in Chapter 4. The photoelectric
+effect results in complete absorption of the photon, reducing observed count rate,
+while scattered photons are still detected. Since attenuation is a combination
+of absorption (by the photoelectric effect) and scatter (by Compton scattering),
+correction schemes can either treat these processes independently or jointly.
+As ﬁrst discussed in Section 5.4.3 in the context of projection radiography,
+large-angle scatter produces a low-level background ‘‘haze’’ in the image, which
+reduces contrast [see (5.41)]. This reduction in contrast arises from the addition
+of this scatter background, rather than a reduction in f
+max or an increase in fmin
+per se, as discussed above in the context of resolution effects and in (3.1). Event
+C in Figure 9.11 depicts a scatter coincidence in PET.
+Absorption produces a gradual, progressive underestimation of radioactivity
+from the edge to the center of the body, by about a factor of ﬁve to as much as
+50, depending on body size, photon energy, and SPECT versus PET detection
+(since comparison of (9.6) and (9.20) indicates that, for SPECT, the photon only
+has to travel through part of the body, whereas for PET, the sum of the two
+annihilation photons’ travel distance is always the complete body thickness).
+The same physics and mathematics that make ‘‘perfect’’ attenuation correction
+at least theoretically achievable in PET, but not in SPECT, make the effects of
+attenuation itself more dramatic in PET than in SPECT. This is counterintuitive
+given the difference in photon energies of the commonly used radionuclides
+for PET and SPECT. In PET, the main photon energy and linear attenuation
+coefﬁcient (for water) are 511 keV and 0.095 cm
+−1, respectively, while for
+SPECT they are 140 keV and 0.145 cm −1. (Note that the difference in energy
+is a factor of 3.7, but the difference in attenuation coefﬁcients is only about
+50 percent.) The underlying basis for higher attenuation in PET is the fact that
+Figure 9.11
+Coincidence counting in
+PET. B represents a true
+coincidence, A and D
+random or accidental
+coincidences, and C
+scattered coincidence.
+70
+10
+A
+CB
+D
+20
+3040
+50
+60

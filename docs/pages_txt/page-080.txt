@@ -1,0 +1,61 @@
+3.3 Resolution 61
+If we add a constant intensity Ic to the image, the intensities of the background and the
+target become fb = Io + Ic, and ft = It + Ic. The local contrast of the processed image is
+C′ = (It + Ic) − (Io + Ic)
+Io + Ic
+= It − Io
+Io + Ic
+= C Io
+Io + Ic
+< C.
+So, the local contrast is worse if we add a constant intensity Ic to the image.
+3.3 Resolution
+Resolution is another basic measure of image quality. For our purposes, resolu-
+tion can be thought of as the ability of a medical imaging system to accurately
+depict two distinct events in space, time, or frequency as separate. In this case,
+we talk about spatial, temporal,o r spectral resolution, respectively. Resolution
+can also be thought of as the degree of smearing, or blurring, a medical imaging
+system introduces to a single event in space, time, or frequency. These two
+ways of looking at resolution are related, because the less smearing a system
+introduces, the closer in space, time, or frequency two events can be and still be
+distinguished as separate. Therefore, a high resolution medical imaging system
+is characterized by low smearing, whereas a low resolution system is character-
+ized by high smearing. In this section, we mostly focus on spatial resolution,
+although a brief discussion of temporal and spectral resolution is also provided.
+Therefore, when we talk about ‘‘resolution,’’ we mean spatial resolution, unless
+otherwise speciﬁed.
+3.3.1 Line Spread Function
+As suggested above, we can think of resolution as the degree of smearing, or
+blurring, a medical imaging system introduces to a single event (e.g., a point)
+in space. This is the traditional PSF described in Chapter 2, and the response
+of an imaging system to a point source (i.e., a point impulse) is often used to
+characterize resolution. As an alternative, we can consider the response of a
+medical imaging system to a line impulse (see Section 2.2.2).
+Consider an LSI medical imaging system with isotropic PSF h(x, y) that is
+normalized to 1. Suppose that a line source, passing through the origin of the
+spatial domain, is imaged through the system. We will mathematically represent
+this line source by theline impulse f(x, y) = δ
+ℓ(x, y) [see (2.11)]. Since the system
+is isotropic, it is sufﬁcient to consider the response to a vertical line through the
+origin; from (2.11), we see that for this case, f (x, y) = δ(x). Then, the output
+g(x, y) of the system will be given by
+g(x, y) =
+∫
+∞
+−∞
+∫ ∞
+−∞
+h(ξ, η)f (x − ξ, y − η) dξ dη
+=
+∫ ∞
+−∞
+[∫ ∞
+−∞
+h(ξ, η)δ(x − ξ) dξ
+]
+dη
+=
+∫ ∞
+−∞
+h(x, η) dη , (3.13)
+where, in the third equality, we have used the 1-D analog of (2.6).

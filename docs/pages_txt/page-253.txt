@@ -1,0 +1,58 @@
+234 Chapter 6 Computed Tomography
+(a) Sketch the energy spectrum of the x-ray beam after it passes through
+the material. Explain your sketch.
+(b) Suppose that an object is imaged using a 1G CT scanner. In
+Figure P6.5(b) there are two different positions of the source and
+detector while imaging this same object. Explain why the two
+measurements should ideally be the same but are actually different in
+practice.
+(c) The fact that the two measurements are different causes artifacts in
+CT reconstruction. One way to reduce these artifacts is to acquire
+two measurements with two different input x-ray spectra, one having
+higher mean energy than the other. Describe how you might obtain
+these two measurements using the same x-ray tube.
+(d) This so-called dual-energy CT setup requires calibration. Four mea-
+surements are made on two test objects (Figure P6.6) using the two
+input spectra, yielding measurements given in the table below. The
+values in the table are line integrals (not x-ray intensities or numbers
+of photons). Explain why g
+L
+c1 is greater than gH
+c1.
+Figure P6.6
+Problem 6.33. Detector
+Aluminum WaterSource
+8 cm2 cm
+Detector
+Aluminum WaterSource
+CONFIGURATION 2CONFIGURATION 1
+8 cm 2 cm
+Conﬁguration 1 Conﬁguration 2
+Higher photon energy (keV) gH
+c1 =2 . 2 gH
+c2 =4 . 3
+Lower Photon energy (keV) gL
+c1 =3 . 1 6 gL
+c2 =6 . 7 9
+(e) Suppose you had access to a 75 keV (monoenergetic) x-ray source.
+Given μ(aluminum, 75 keV) = 0.7c m−1 and μ(water, 75 keV) =
+0.1866 cm−1, ﬁnd the line integrals, g75
+c1 and g75
+c2 , for each of the two
+conﬁgurations.
+(f) For calibration, coefﬁcients are to be determined so that measurements
+using the high and low spectra can be combined in a linear equation
+to yield what is expected from a monoenergetic 75 keV x-ray source.
+Given your result from part (e), ﬁnd the coefﬁcients aL and aH such
+that
+g75
+c1 = aLgL
+c1 + aHgH
+c1 ,
+g75
+c2 = aLgL
+c2 + aHgH
+c2 .
+(g) For an arbitrary object, your dual-energy CT scanner will obtain two
+sinograms gL(ℓ, θ) and gH(ℓ, θ). Write a mathematical expression for
+the reconstructed object, μ(object, 75 keV), given these sinograms.

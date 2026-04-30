@@ -1,0 +1,64 @@
+6.3 Image Formation 197
+be capable of ‘‘docking’’ with the scanner and locked into place so that motor-
+controlled positioning of the patient can be accomplished. Typically, there are
+positioning lights that can illuminate the patient to show the technician where
+the slice(s) will be acquired. The table can then be moved to position the patient
+under the guide lights in order to acquire the desired image(s).
+6.3 Image Formation
+6.3.1 Line Integrals
+In a CT system, the x-ray tube makes a short burst of x-rays that propagate
+(generally in a fan-beam geometry) through a cross section of the patient. The
+detectors detect the exit beam intensity integrated along a line between the x-ray
+source and each detector. As presented in Chapter 5 [see (5.3)], the (integrated)
+x-ray intensity at any given detector is given by
+I
+d =
+∫ Emax
+0
+S0(E)E exp
+[
+−
+∫ d
+0
+μ(s;E)ds
+]
+dE , (6.1)
+where S0(E) is the x-ray spectrum andμ(s;E) is the linear attenuation coefﬁcient
+along the line between the source and detector.
+Unfortunately, the integration over energy in (6.1), while physically correct,
+is in a mathematically intractable form for CT image reconstruction (to be
+discussed in Section 6.3.3). To get around this, we use the concept of effective
+energy, E, which is deﬁned as the energy that, in a given material, will produce
+the same measured intensity from a monoenergetic source as is measured using
+the actual polyenergetic source. This concept was ﬁrst presented in Example 4.4.
+Given this concept, it is correct to say that
+I
+d = I0 exp
+[
+−
+∫ d
+0
+μ(s;E) ds
+]
+. (6.2)
+Given a measurement of Id and knowledge of I0, (6.2) can be rearranged to
+yield a basic projection measurement gd,
+gd =− ln
+( Id
+I0
+)
+(6.3)
+=
+∫ d
+0
+μ(s;E) ds . (6.4)
+Thus, we can make a very important observation about the function of a CT
+scanner: The basic measurement of a CT scanner is a line integral of the linear
+attenuation coefﬁcient at the effective energy of the scanner.
+In an actual CT system, the reference intensity I
+0 must be measured for
+each detector; this is a calibration step. In fan-beam systems, an auxiliary
+measurement is typically made using a detector positioned at the end of the
+array so that there is always air between the source and this detector. Using this
+measurement, the reference intensities for the other detectors can be determined
+using prior calibration data of all detectors taken in air.

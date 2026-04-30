@@ -1,0 +1,47 @@
+2.3 Systems 25
+The linearity assumption leads to a class of relatively simple systems, which are
+tractable and enjoy a number of useful properties. Linearity is thus a critical
+assumption used in this book.
+How reasonable is the assumption of linearity in practice? Are linear systems
+good mathematical approximations of the physical phenomena underlying med-
+ical imaging? It turns out that many medical imaging systems are approximately
+linear. In practice, this means that the image of an ensemble of signals is (nearly)
+identical to the sum of separate images of each signal, which is considered next.
+2.3.2 Impulse Response
+We now investigate how a linear system responds to an arbitrary input signal
+f (x, y) and demonstrate the fact that linearity leads to tractable systems. How-
+ever, before we pursue this investigation, it will be beneﬁcial to ﬁrst consider the
+output of a system S to a point impulse. Let us denote byh(x, y;ξ, η) the output
+of system S to input δ
+ξη (x, y) = δ(x − ξ, y − η) [that is, a point impulse located
+at (ξ, η)]. In this case,
+h(x, y;ξ, η) = S[δξη (x, y)] . (2.32)
+In general, this output depends on four independent variables; it is therefore a
+four-dimensional signal. The response h(x, y;ξ, η) is known as the point spread
+function (PSF) of system S, or, equivalently, the impulse response function.
+Let us now assume thatS is a linear system. Iff (x, y) is an arbitrary input to
+S, then by starting with (2.30) and applying (2.6), (2.31), and (2.32), the output
+g(x, y) will be given by
+g(x, y) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (ξ, η)h(x, y;ξ, η) dξdη. (2.33)
+The integral in (2.33) is known as the superposition integral. This equation
+shows that the PSF h(x, y;ξ, η) uniquely characterizes a linear system; that is,
+we only need to know the PSF of a linear system in order to calculate its output
+in response to a given input.
+In fact, (2.33) facilitates computation of the outputg(x, y) from an arbitrary
+but known input f (x, y). If the PSF h(x, y;ξ, η) is known for every ( x, y, ξ, η),
+then this computation reduces to calculating the double integral in (2.33). In
+practice, however, knowing the PSF for every ( x, y, ξ, η) is a formidable task,
+since this either requires that h(x, y;ξ, η) is known analytically, which is true
+only in limited circumstances of usually no practical interest, or thath(x, y;ξ, η)
+is experimentally measured and stored in numerical form, which is usually
+not practical due to the four-dimensional nature of h(x, y;ξ, η). Therefore,
+additional simpliﬁcation is needed at this point, which may be achieved by
+imposing additional conditions on system S.
+2.3.3 Shift Invariance
+An additional simplifying assumption is shift invariance. A system S is shift-
+invariant if an arbitrary translation of the input results in an identical translation

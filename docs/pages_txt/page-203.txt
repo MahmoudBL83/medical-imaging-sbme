@@ -1,0 +1,46 @@
+184 Chapter 5 Projection Radiography
+(a) Assuming all other factors are constant, if the x-ray tube kilovolts were
+increased and the exposure time was appropriately adjusted to produce
+an optimal ﬁlm exposure, what would be the effect on SNR? Explain.
+(b) Assuming the same conditions as in (a), what would be the effect on
+the patient dose? Explain.
+(c) For each of the following changes, indicate the effect on the subject
+contrast using this notation: I=increase, D=decrease, N=no effect:
+• Increase in patient thickness
+• Reduction in kilovoltage
+• Increase in detector efﬁciency
+• Reduction in the x-ray ﬁeld size
+• Use of a high atomic number contrast media
+(d) Under what conditions is an airgap (space between the patient and
+the image detector) most effective in reducing the scatter fraction?
+(e) What ultimately limits the contrast sensitivity of an x-ray imaging
+system: geometric unsharpness, the display gamma, the image noise,
+or the scatter fraction?
+(f) The attenuation of a polychromatic x-ray spectrum can be approxi-
+mately determined using its average photon energy. For a given tube,
+the average photon energy is mainly determined by: the beam current,
+the Fourier transform of the x-ray spectrum, the material in the beam
+path, or the scatter fraction?
+5.27 Consider the x-ray projection radiography system shown in Figure P5.8.
+Relevant dimensions in the ﬁgure are L = 1m , D = 4m , w = 1c m ,
+h = 3c m ,R = 0.1 cm, and D
+td = 10 cm.
+Figure P5.8
+An x-ray projection
+radiography system to
+image a tumor.
+(Figure is not to scale.)
+See Problem 5.27.
+X-ray source
+Detector
+Tissue
+Dtd
+D
+h/2
+L/2
+L/2
+h/2
+w
+Tumor
+R
+R

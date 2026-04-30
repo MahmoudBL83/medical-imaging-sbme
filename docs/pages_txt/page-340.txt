@@ -1,0 +1,47 @@
+9.4 Summary and Key Concepts 321
+our consideration of contrast followed that ﬁrst introduced in (3.1), and recast
+speciﬁcally for planar imaging in (8.25). In SPECT and PET, the deﬁnition of
+contrast remains the same, butf
+max and fmin are from reconstructed images. The
+deﬁnition of local contrast also remains the same, with the values of foreground
+intensity and background intensity taken from the reconstructed images at the
+appropriate locations.
+9.3.5 Noise and Signal-to-Noise Ratio
+It is important to remember that deterministic effects inﬂuence only the signal
+component of an image’s signal-to-noise ratio; in other words, they inﬂuence
+only quantitative accuracy. Noise arises from the random statistical nature
+of radioactive decay, as well as potentially from the imaging hardware and
+certain image processing operations, and inﬂuences the noise component of
+the SNR; in other words, it inﬂuences precision. The noise in projection data
+in SPECT and PET is identical to the situation in planar scintigraphy and
+follows the development given in Section 8.4.5. However, the reconstruction
+process changes the noise magnitude and correlation in a fashion similar to
+the way that reconstruction changes the noise in CT compared with projection
+radiography.
+In practice, estimating the noise in a reconstructed SPECT or PET image
+is difﬁcult. In order to present a generic formulation, we make the same
+assumptions we made to derive an expression for variance in CT: The measured
+line integrals are statistically independent, and the object is sufﬁciently uniform
+that the line integrals are essentially equal. With these simplifying assumptions,
+the derivation of the variance in a reconstructed SPECT or PET image is identical
+to that presented in Section 6.4.2, is independent of (x, y) location, and is given
+by (6.72).
+In PET, a powerful concept called noise equivalent count rate (NEC) has
+been developed to reﬂect these concepts and include PET-speciﬁc issues (such as
+random coincidences). The NEC is given by:
+NEC = T
+2
+T + S + 2R , (9.41)
+where T is the true coincidence count rate,S is the scatter count rate, andR is the
+random coincidence count rate. NEC can be thought of as the equivalent true
+count rate of an ideal system (i.e., one with no scatter or random coincidences)
+that results in the same SNR as an actual system with given scatter and random
+coincidence count rates.
+Ultimately, key performance parameters such as lesion detectability or
+quantitative accuracy and precision depend on the signal-to-noise ratio and
+total error. Since both contrast and noise are deﬁned the same way in CT and
+SPECT/PET, the SNR formulation presented for CT in (6.73) applies, and the
+ﬁnal SNR formulation is the same as (6.74).
+9.4 Summary and Key Concepts
+Cross-sectional—i.e., tomographic—imaging in nuclear medicine is accom-
+plished with SPECT and PET. SPECT usually utilizes a rotating Anger camera

@@ -1,0 +1,45 @@
+86 Chapter 3 Image Quality
+Note that the part of the overall PSF due to the other individual components
+of resolution can be included in this analysis simply by considering h(x, y)t o
+be the overall PSF of the system rather than just the PSF of the area sampling
+component.
+EXAMPLE 3.13
+Consider a medical imaging system with sampling period/Delta1in both thex and y directions.
+Question What is the highest frequency allowed in the images so that the sampling
+is free of aliasing? If an anti-aliasing ﬁlter, whose PSF is modeled as a rect function, is
+used and we ignore all the side lobes of its transfer function, what are the widths of the
+rect function?
+Answer From the Nyquist sampling theorem, we know that if the image contains
+frequency higher than 1/2/Delta1, then there will be aliasing. So the highest allowed frequency
+is 1/2/Delta1.
+If an anti-aliasing ﬁlter is used, the highest frequency of the image being sampled is the
+cutoff frequency of the ﬁlter (here, we assume the transfer function of the ﬁlter has value
+0 outside the cutoff frequency). In this example, the anti-aliasing ﬁlter is modeled as a
+rect function. Its transfer function is given by the sinc function (we ignore the magnitude
+of the rect function, since it does not change the cutoff frequency),
+H(u, v) = sinc(/Delta1
+xu, /Delta1yv),
+where /Delta1x and /Delta1y are the widths of the ﬁlter in the x and y directions, respectively.
+If we ignore the side lobes of H(u, v), the cutoff frequencies of the ﬁlter are the ﬁrst zeros
+of the sinc function, which are 1 //Delta1x and 1//Delta1y. For the given sampling periods /Delta1,w e
+must have
+1
+/Delta1x
+≤ 1
+2/Delta1 and 1
+/Delta1y
+≤ 1
+2/Delta1,
+which is equivalent to
+/Delta1x ≥ 2/Delta1and /Delta1y ≥ 2/Delta1.
+Figure 3.13 shows the impact of sampling with and without anti-aliasing.
+When the sampling period is too small, there is spectral overlap and the resulting
+image has artifacts that are most typically seen as high-frequency patterns, as
+are visible in Figure 3.13(b). Anti-aliasing low-pass ﬁlters the image before
+sampling, making the image blurrier but devoid of artifacts, as is apparent in
+Figure 3.13(c).
+3.7 Other Effects
+3.7.1 Artifacts
+A problem that frequently affects image quality is the creation of image features
+known as artifacts that do not represent valid anatomical or functional objects.
+Artifacts can obscure important targets, and they can be falsely interpreted

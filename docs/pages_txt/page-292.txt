@@ -1,0 +1,46 @@
+8.4 Image Quality 273
+8.4.1 Resolution
+The ability of an Anger camera to localize a photon interaction is characterized
+by its resolution, deﬁned by a full width at half maximum (FWHM) value, as
+discussed in Section 3.3. Two factors affecting resolution are most important:
+collimator resolution and intrinsic resolution. These two factors combine to
+yield the system resolution of the Anger camera. Since scintigraphic scans can
+be lengthy, patient motion enters as another factor affecting resolution, but we
+will not develop a model for patient motion here.
+Collimator Resolution Since a parallel hole collimator is most commonly used,
+we focus on its performance here. With reference to the geometry shown in
+Figure 8.10, the collimator resolution is given by (see Problem 8.14)
+RC = d
+l (l + b +| z|) , (8.13)
+where d is the collimator hole diameter, l is the collimator hole length, b is the
+(effective) scintillator depth, and|z| is the collimator surface-to-patient distance.
+The most important feature of this equation is that the FWHM is dependent
+on target range |z|—that is, RC = RC(|z|). In particular, collimator resolution
+degrades as |z| increases; therefore, targets farther away are blurred more.
+EXAMPLE 8.5
+Making the collimator hole longer will reject more Compton scattered photons. This
+also has an impact on the resolution of the imaging system.
+Question If we double the hole length to reject more Compton-scattered photons, what
+is the collimator resolution? Is there a limit on the collimator resolution?
+Answer Equation (8.13) gives
+RC = d
+l (l + b + r) = d + b + r
+l d.
+When the collimator hole length is doubled, the collimator resolution becomes
+R′
+C = d
+2l (2l + b + r) = d + b + r
+2l d < RC.
+Figure 8.10
+Collimator geometry
+demonstrating
+depth-dependent
+resolution.
+b
+d
+Collimator
+Scintillation crystal
+l
+z
+h
+Point source

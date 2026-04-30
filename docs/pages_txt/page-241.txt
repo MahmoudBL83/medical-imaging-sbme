@@ -1,0 +1,46 @@
+222 Chapter 6 Computed Tomography
+in which the mean energy of the x-ray spectrum increases while propagating
+through the body. In the human body, the linear attenuation coefﬁcient decreases
+with increasing E, as shown in Figure 4.8. Therefore, low-energy photons are
+preferentially absorbed. Hence, since all CT x-ray sources have a distribution
+(spectrum) of energies, the propagating beam becomes richer in high-energy
+photons.
+We had concluded in Section 6.2 that the concept of effective energy could
+be used for polyenergetic sources. However, this concept assumes that the exit
+spectrum is the same as the entering spectrum. When this is not true, and
+standard reconstruction methods are used, the so-called interpetrous lucency
+artifact may appear. (It is called ‘‘interpetrous’’ because it often occurs in bone.)
+This artifact, which is particularly apparent in head scans (because of the outer
+ring of bone), creates a kind of halo effect around the brain parenchyma. In other
+parts of the body, streak artifacts, particularly at the tips of bones and at metal
+pieces within the body (shrapnel, surgical clips, screws, etc.) may also appear.
+Methods exist for compensating for or eliminating these artifacts, including
+preprocessing projection data, postprocessing images, and dual-energy imaging.
+In general, radiologists simply know to expect them and interpret the images
+accordingly.
+Other Artifacts Three other sources of artifacts in CT images are worth
+mentioning: (1) electronic or system drift, (2) x-ray scatter, and (3) motion. The
+electronic or system artifact of particular interest is that which is caused by
+miscalibration or gain drift. The most dramatic effect is caused by the complete
+failure of a detector. In a 3G scanner, this situation (usually) causes the detector
+to report zero photons, and thus 100% attenuation at all angular positions.
+The resulting reconstruction contains a ring artifact whose radius is equal to the
+position of the defective detector from the detector array’s center.
+X-ray scatter generally causes a convolutional blurring of each projection.
+3
+A blurred projection creates a blurry image. It is possible to prevent scatter by
+collimation and/or selective energy detection, but this comes at the expense of
+lower efﬁciency. It is also possible to compensate for scatter by deconvolution,
+but this has the tendency to further increase the noise in the projections. One
+way that has been used to measure the amount of scattering present is off-plane
+detectors.
+Finally, motion is a difﬁcult problem. Since a complete scan takes (typically)
+between 0.3 seconds (for a single slice) and 10 seconds (for a full thoracic scan),
+the heart is almost certainly going to have signiﬁcant motion during the scan.
+Breathing is going to be a problem on the longer scans or when patients cannot
+hold their breath. It is possible to gate the data acquisition so that data will be
+taken only at a certain stage in the cardiac cycle and/or breathing cycle. The
+data acquired over successive cycles can then be pieced together and treated as
+if they were taken simultaneously. These methods are used on some machines
+in certain clinical situations where deemed necessary.
+3This may have the desirable property of low-pass ﬁltering the projection if aliasing is a problem.

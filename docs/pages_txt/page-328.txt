@@ -1,0 +1,40 @@
+9.2 Image Formation 309
+from CT, but this is not as big a problem because the ﬁnal (corrected) SPECT
+image has SPECT, not CT, resolution anyway.)
+9.2.2 PET Image Formation
+Coordinate System As noted above, modern commercial PET systems usually
+operate in 3-D mode. For simplicity’s sake, here we consider only 2-D PET,
+the reconstruction of axial cross sections from data collected within isolated
+axial detector rings. In the case of a fully 3-D projection dataset, it is possible
+(and, indeed, common) to reorient the data into contiguous 2-D sinograms, for
+example, via Fourier rebinning. If we start with contiguous 2-D datasets, we
+need to consider only one detector ring, which can be taken to be in a ﬁxed
+z plane. Geometry within this plane is considered relative to a conventional
+cross-sectional x-y coordinate system, as in CT and SPECT.
+Lines of Response As with planar scintigraphy and SPECT, PET counts the
+number of detected photons, but these are now based onannihilation coincidence
+detections (ACDs) rather than single gamma ray detections. As shown in
+Figures 9.9 and 9.10, the line joining any two opposing detectors for which
+an ACD could be identiﬁed is called a line of response (LOR) or coincidence
+line. Over time, regions of high activity will generate more coincidence lines or
+Figure 9.9
+Integration geometry for
+PET imaging equation.
+x
+y
+s
+R
+/H11002R
+s0
+0
+u
+Figure 9.10
+Lines of response
+organized into a
+parallel-ray projection.
+u
+u
+Projection
+Line of response
+x
+y

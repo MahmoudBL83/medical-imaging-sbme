@@ -1,0 +1,48 @@
+8.2 Instrumentation 257
+Figure 8.2
+Different types
+of collimators:
+(a) parallel-hole,
+(b) converging,
+(c) diverging, and
+(d) pinhole.
+(a) (b)
+(c) (d)
+collimator holes were circular in cross section. This meant that the lead septa
+were thicker in some areas than in others. Today, collimators have square,
+hexagonal, or triangular holes, and the septa are of uniform thickness around
+each hole.
+Converging and diverging collimators are available as well but less frequently
+used in practice. A converging collimator, shown in Figure 8.2(b), has an array
+of tapered holes that aim at a point—the focal point—some distance in front of
+the collimator. The image that is presented to the crystal is a magniﬁed version
+of the real object. A diverging collimator, shown in Figure 8.2(c), is essentially
+an upside-down converging collimator. Diverging collimators have an array of
+tapered holes that diverge from a hypothetical focal point behind the crystal. In
+this case, the image presented to the crystal face is smaller than the real object.
+Since converging and diverging collimators are simply ﬂipped versions of each
+other, some collimator carriages actually have an insert that can be ﬂipped either
+way, in effect producing two collimators in one (a div/con collimator).
+EXAMPLE 8.1
+When a converging or diverging collimator is used in an Anger camera, the image on the
+crystal face is not of the same size as that of the object.
+Question Using a diverging collimator with a focal length of zf , what is the ratio
+between the size of the image and the size of the actual object when a planar object is
+placed parallel to the crystal face at a distance z away from the collimator face?
+Answer For a diverging collimator, only the photons traveling towards the focal point
+can be detected. (Others will be absorbed by the collimator walls.) Using geometry and
+ignoring the height of the collimator, we have the ratio between the size of the image and
+the size of the actual object as
+Si
+So
+= zf
+z + zf
+.
+Pinhole collimators comprise a different class of collimators. As shown in
+Figure 8.2(d), these are thick conical collimators with a single 2–5 mm hole in
+the bottom center. As the source object is moved away from the pinhole, its
+image on the scintillation crystal gets smaller. However, the image is not always
+magniﬁed (or miniﬁed) compared with the object. In fact, the camera image is
+magniﬁed (i.e., larger than real size) from the collimator face to a distance equal
+to the length of the collimator and is then progressively smaller (miniﬁed) at
+larger distances.

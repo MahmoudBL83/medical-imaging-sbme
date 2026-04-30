@@ -1,0 +1,61 @@
+Problems 227
+6.15 Show that
+∫ 2π
+0
+∫ ∞
+0
+ϱ Gθ (ϱ )ej2πϱω ·x dϱ dθ =
+∫ π
+0
+∫ ∞
+−∞
+|ϱ |Gθ (ϱ )ej2πϱω ·x dϱ dθ.
+6.16 In this problem, we want to ﬁgure out what is ‘‘wrong’’ with the backpro-
+jection summation image given by
+fb(x, y) =
+∫ π
+0
+g(x cos θ + y sin θ, θ)dθ ,
+and see how to ﬁx it.
+(a) Show that the 2-D Radon transform of the 2-D delta function δ(x, y)
+is δ(ℓ). (Hint: Use the projection slice theorem.)
+(b) Show that the backprojection summation image ofδ(x, y)i s 1√
+x2 + y2
+.
+(Hint: Write ( x, y) in polar coordinates ( r, φ), then use the fact that
+sin θ ≈ θ for small θ and the fact that δ(aℓ) = δ(ℓ)/|a|.)
+(c) Show that the backprojection summation image of δ(x − x0, y − y0)i s
+1/
+√
+(x − x0)2 + (y − y0)2 —that is, that the backprojection summation
+operator is shift invariant.
+(d) Show that fb(x, y) = f (x, y) ∗ (1/
+√
+x2 + y2).
+(e) Describe how one could, in principle, recover f (x, y)f r o mfb(x, y).
+Describe any problems you may foresee with your approach.
+6.17 With each measured projection g(ℓ, θ) (viewed as a function of ℓ)a
+backprojection image bθ (x, y) can be generated.
+(a) Write down a formula for bθ (x, y).
+Now assume that we know only one projection: g(ℓ,3 0◦) = e−|ℓ|.
+(b) What is the value of b30◦ (1, 2)?
+(c) Can you determine b45◦ (1, 2)? If yes, what is it? If no, why not?
+(d) Can you determine b210◦ (1, 2)? If yes, what is it? If no, why not?
+(e) Sketch b30◦ (x, y).
+Suppose g(ℓ, θ) is sampled so that only the following values are known:
+g(nT, θ), −∞ < n < ∞.
+(f) Can you determine b30◦ (1, 2) from the sampled projectiong(n,3 0◦)? If
+yes, what is it? If no, say why not and suggest an approximate value.
+(g) Can you determine b30◦ (2, 1) from the sampled projection g(n,3 0◦)?
+If yes, what is it? If no, say why not and suggest an approximate value.
+6.18 For fan beam geometry, prove the following relationship is satisﬁed by the
+ramp ﬁlter c(·):
+c(D′ sin γ) =
+( γ
+D′ sin γ
+)
+c(γ) .
+Image Quality
+6.19 In a CT system, each projection is actually obtained using a uniform
+scanning beam of width W instead of an inﬁnitesimal pencil beam. Find
+the resultant estimate ˆf (x, y) of the function f (x, y) when CBP is used.

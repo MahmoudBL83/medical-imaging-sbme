@@ -1,0 +1,47 @@
+278 Chapter 8 Planar Scintigraphy
+EXAMPLE 8.6
+We saw in Example 8.5 that use of a collimator with long holes can help to reject
+Compton scattered photons and improve collimator resolution.
+Question What is the change in sensitivity if we double the hole length and keep other
+parameters ﬁxed?
+Answer For simplicity, assume le = l. Then the sensitivity of a collimator is given
+by (8.20):
+ϵ =
+( Kd2
+le(d + h)
+)2
+.
+If the collimator hole length is doubled, we have
+ϵ′ =
+( Kd2
+2le(d + h)
+)2
+= ϵ/4 .
+So by doubling the collimator hole length, we reduce the sensitivity by 75 percent.
+Detector Efﬁciency A gamma ray may enter the detector crystal, fail to
+interact with the crystal, and exit without depositing any energy. If no energy
+is deposited, obviously no pulse will be generated. Scintillation detectors are
+between 10 and 50 percent efﬁcient for electromagnetic radiation. The wide
+difference in efﬁciencies is mostly the result of different designs trading off
+efﬁciency, resolution, and target gamma ray energy.
+The crystals used in Anger cameras vary from 10 to 25 inches in diameter
+and from 1/4 to 1 inch thick. The thicker the crystal, the higher the probability
+that an incoming photon will interact, deposit its energy, and be detected; thus,
+the higher the sensitivity of the camera. The thicker the crystal, however, the
+poorer the spatial resolution, due to the complex interaction between the crystal,
+the PMTs, and the light pipe that is generally used to optically couple the two.
+One-quarter-inch-thick crystals have about 1 mm better intrinsic resolution than
+one-half-inch-thick crystals. When counting low-energy radionuclides such as
+thallium-201, there is no difference in sensitivity. However, when counting
+technetium-99m, one-quarter-inch-thick crystals have 15 percent less sensitivity
+than one-half-inch-thick crystals. At higher energies, the difference in sensitivity
+is even more signiﬁcant.
+8.4.3 Uniformity
+Field uniformity is the ability of the camera to depict a uniform distribution of
+activity as uniform. At one time, it was thought that nonuniform response arose
+from changes in sensitivity across the crystal. To correct the nonuniformity, a
+uniform ﬂood or sheet source of radioactivity was imaged and recorded, and
+used as a reference. Clinical images were corrected during acquisition by either
+adding counts to the image in areas where the ﬂood had too few counts relative
+to the other areas or by subtracting (i.e., purposely not recording) counts in
+areas with too many counts.

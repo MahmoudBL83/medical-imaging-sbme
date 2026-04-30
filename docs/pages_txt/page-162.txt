@@ -1,0 +1,51 @@
+5.2 Instrumentation 143
+Figure 5.8
+Linear attenuation
+coefﬁcients of bone,
+muscle, fat, and two
+contrast agents. (Adapted
+from Johns and
+Cunningham, 1983.)
+10 20 30 40 50 60 70 80 100 150 200150.1
+1.0
+10
+100
+Linear attenuation coefficient(cm/H110021)
+Photon energy (keV)
+Hypaque
+Kedge
+37.4
+Kedge
+33.2
+Muscle
+Soft tissue
+Bone
+Fat
+BaSO4
+Mix
+soluble compounds that are safely introduced into the body through intravascu-
+lar injection or ingestion. Iodinated contrast compounds are used for enhancing
+the appearance of blood vessels, heart chambers, tumors, infections, and other
+abnormalities on x-ray images (projection radiography as well as computed
+tomography (CT) scans). Because these iodine compounds are concentrated
+by the kidney and excreted into the urine, they are also used for diagnosing
+problems of the kidneys and bladder using x-ray imaging.
+Barium is used exclusively to enhance contrast within the gastrointestinal
+tract. It is typically administered as a chalky ‘‘milkshake,’’ which passes through
+the gastrointestinal tract without being absorbed or altering the basic function of
+the stomach and bowel. Barium is the standard agent for enhancing the contrast
+of the stomach and small and large bowel in conjunction with projection
+radiography studies.
+Air itself can also be used as a contrast agent. Because it does not readily
+absorb x-rays, it is used as an ‘‘opposite’’ type of contrast to that of iodine and
+barium. For example, by inﬂating the lungs, air provides contrast for the lung
+tissue. Air is also used with barium to provide a double contrast between regions
+of the bowel containing barium and those containing air.
+5.2.4 Grids, Airgaps, and Scanning Slits
+X-ray photons that are not absorbed or scattered arrive at the detector from
+along a line segment originating at the x-ray source (anode of the x-ray tube).
+However, if an x-ray photon is scattered and still manages to hit the detector,
+its point of origin will not intersect the x-ray source (unless a highly unlikely
+multiple scattering sequence occurs). Since scattering is a random phenomenon,
+this process will cause a random ‘‘fog’’ throughout the image if left uncorrected,
+thereby reducing the contrast of the direct image (see Section 5.4.3).

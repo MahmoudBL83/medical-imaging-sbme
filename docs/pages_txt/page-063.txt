@@ -1,0 +1,46 @@
+44 Chapter 2 Signals and Systems
+PSF. A 2-D signal f (x, y) is deﬁned to be circularly symmetricif it satisﬁes
+fθ (x, y) = f (x, y), for every θ , (2.104)
+where fθ (x, y) is a rotated version of f (x, y) [see (2.89)]. It follows from (2.90)
+that F2D(fθ )(u, v) is also circularly symmetric. If f (x, y) is circularly symmetric,
+then it is even in both x and y, and F(u, v) is even in both u and v. In addition,
+F(u, v) is real; therefore,
+|F(u, v)|= F(u, v) and ̸ F(u, v) = 0 . (2.105)
+Functions f (x, y) that are circularly symmetric can be written as a function
+of radius only; that is,
+f (x, y) = f(r) , (2.106)
+where r =
+√
+x2 + y2. Since in this caseF(u, v) is also circularly symmetric,F(u, v)
+must satisfy
+F(u, v) = F(q) , (2.107)
+where q =
+√
+u2 + v2. The functions f(r) and F(q) are 1-D functions representing
+2-D functions that are related by the Fourier transform. It can be shown (see
+Problem 2.19) that f(r) and F(q) are related by
+F(q) = 2π
+∫ ∞
+0
+f(r)J0(2πqr) rd r, (2.108)
+where J0(r) is the zero-order Bessel function of the ﬁrst kind. The nth order
+Bessel function of the ﬁrst kind is given by
+Jn(r) = 1
+π
+∫ π
+0
+cos(nφ − r sin φ) dφ , n = 0, 1, 2,... , (2.109)
+and therefore
+J0(r) = 1
+π
+∫ π
+0
+cos(r sin φ) dφ. (2.110)
+The relation (2.108) is called the Hankel transform, and we will use the
+notation
+F(q) = H{f(r)} . (2.111)
+The inverse Hankel transform is identical to the forward transform,
+f(r) = 2π
+∫ ∞
+0
+F(q)J0(2πqr) qd q. (2.112)

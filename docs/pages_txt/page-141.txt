@@ -1,0 +1,50 @@
+122 Chapter 4 Physics of Radiography
+In x-ray imaging, a photon burst is always polyenergetic, since it arises
+mainly from bremsstrahlung. In principle, if only the photon count were impor-
+tant, photon ﬂuence rate could still be used as a valid measure of radiation
+strength. However, these measures are not very important in practice, since
+photons are not counted in x-ray imaging modalities, but instead their total
+energy is measured. It is more useful, therefore, to capture the idea of intensity
+for polyenergetic sources.
+Since each x-ray photon carries its own discrete energy, a plot of N as a
+function of E for polyenergetic sources is aline spectrum. Because of the random
+nature of bremsstrahlung, the ﬁne details of a line spectrum change with each
+photon burst; however, the line density—for example, number of photons per
+unit energy as a function of E—remains constant for a given source. The x-ray
+spectrum S(E) is this line density per unit area per unit time. Examples of x-ray
+spectra were shown in Figure 4.5. The energies at whichS(E) is large have larger
+numbers of x-ray photons per unit energy.
+Since the integral of a line density yields the number of lines, from the
+deﬁnition of S(E) and (4.14), the integral of the spectrum yields the photon
+ﬂuence rate
+φ =
+∫
+∞
+0
+S(E′) dE′ , (4.18)
+a quantity that does not depend on energy. Furthermore, by analogy to (4.17),
+it is natural to deﬁne the intensity of a polyenergetic source as
+I =
+∫ ∞
+0
+E′S(E′) dE′ . (4.19)
+EXAMPLE 4.4
+It is often desirable to model a polyenergetic x-ray beam as a monoenergetic source.3
+Question What energy would a (hypothetical) monoenergetic source have to be in
+order to produce the same intensity as the (true) polyenergetic source using the same
+number of photons?
+Answer For a given area A and time interval /Delta1t, the number of photons in the
+polyenergetic source is
+Np = A/Delta1t
+∫ ∞
+0
+S(E′) dE′ .
+The intensity of the polyenergetic source is
+Ip =
+∫ ∞
+0
+E′S(E′) dE′ .
+The equivalent monoenergetic beam has intensity
+Ip = E Np
+A/Delta1t .
+3In a monoenergetic beam, all photons have the same energy, hν.

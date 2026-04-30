@@ -1,0 +1,43 @@
+Problems 177
+divergence effect by weighting the outputs of your detectors appropriately.
+This way, the effective beam intensity should be uniform throughout the
+entire image.
+(a) Assume your detectors are very small and very close together and that
+the detector panel is a distance d away from the x-ray source. Find an
+appropriate weighting (as a function of r
+d) that will compensate for
+the beam divergence variation.
+(b) Do these adjustments improve the image quality? Explain.
+5.9 Consider the radiographic image of the prism, as developed in
+Example 5.4.
+(a) Determine an expression for the intensity image Id(x, y)o ft h ep r i s m .
+(b) Plot the intensity proﬁle along the line y = 0 on the detector plane.
+(c) Write an expression for the image on the developed radiographic ﬁlm
+of the prism.
+5.10 Derive (5.28) from ﬁrst principles.
+Image Quality
+5.11 Assume that each photon incident upon an x-ray image intensiﬁer is
+detected with probability (QE)p, independently from other photons. If the
+number N(t) of photons that arrive at the detector within the time interval
+[0, t) follows a Poisson distribution with mean μt, ﬁnd the probability
+mass function (PMF) of the number D(t) of photons detected in the time
+interval [0, t).
+5.12 Consider two 1-D functions
+h1(x) = e−x2/5 and h1(x) = e−x2/10.
+(a) Suppose h1(x) is the PSF of the extended source in a projection
+radiography system for an object at range z = 3d/4, where d is the
+source-to-detector distance. What is the PSF of the extended source as
+a function of z?
+(b) In this same projection radiography system, the intensiﬁer screen
+causes a blurring that can be modeled as h
+2(x). Find the MTF of the
+overall blurring as a function of source magniﬁcation, m.
+(c) What is the FWHM of the system as a function of m?
+5.13 We examine the effect on the SNR of an increase in the recorded scatter
+fraction from 0.35 to 0.8. Suppose that a 1 mm-thick bone presents a
+scatter-free subject contrast of 0.08, and suppose that 1,000 photons/mm2
+were collected. What would happen if the detector absorption efﬁciency
+were halved?
+5.14 Show that the quantum efﬁciency QE of a detector is at least as large as
+its DQE; that is,
+DQE ≤ QE .

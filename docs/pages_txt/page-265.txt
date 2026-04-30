@@ -1,0 +1,43 @@
+246 Chapter 7 The Physics of Nuclear Medicine
+A positron is actually an antimatter electron having a +1 charge and the same
+rest mass as that of an electron. The neutrino, emitted with the positron, is
+a massless, chargeless subatomic particle. For a given radionuclide undergoing
+positron decay, the total kinetic energy of the positron plus the neutrino is a
+constant; however, the division of this total energy among the positron and
+neutrino varies from emission to emission.
+Since a positron is an antimatter electron, an ‘‘unusual’’ atomic process
+occurs when a positron and electron meet. After a positron is emitted, it travels
+a short distance (several millimeters) in the material in which it is emitted,
+depositing its kinetic energy. (Its kinetic energy is transferred to the material by
+both collisional and radiative transfer, just as with a beta particle or energetic
+electron.) It then meets a free electron in the tissue, and—because the positron
+is an antimatter electron—mutual annihilation occurs. From conservation of
+energy, two 511 keV annihilation photons appear (511 keV is the energy equiva-
+lent to the rest mass of an electron or positron fromE = mc
+2); from conservation
+of momentum, they are emitted 180◦ back-to-back.
+Atoms that undergo positron decay have an alternative decay mode—the
+nucleus can actually capture an electron:
+p + e− → n + ν.
+Typically, an inner shell (K or L shell) electron is captured as these are in
+the closest physical proximity to the nucleus. A given radionuclide source will
+undergo electron capture at a certain fraction of time, and positron decays the
+other, but a given atom will (of course) only undergo decay once, by one of the
+two possible modes.
+7.4.2 Isomeric Transition
+A radionuclide may decay to a more stable nuclide that has the same atomic and
+mass numbers; both the parent and daughter are not only the same element but
+the same isotope of that element. In such a case, the parent usually represents
+a transient, metastable state with higher energy. This excess energy is released
+in the form of gamma rays. Recall from Chapter 4 that gamma rays are in
+practice indistinguishable from the x-rays that are now familiar to you. (Some
+textbooks indicate that the distinction between x-rays and gamma rays is based
+on wavelength or energy, but it is actually based on site of origin: gamma rays
+from the nucleus and x-rays from the electron cloud. In practice, most gamma
+rays have higher energies than many x-rays; hence, the common but incorrect
+distinction is based on wavelength or energy.)
+An example of an isomeric transition is
+Cs-137 → Ba-137m → Ba-137 + γ , (7.9)
+where γ represents the 662 keV gamma ray photon released when Ba-137m
+decays to Ba-137. Here, the ‘‘m’’ in Ba-137m represents the metastable
+state.

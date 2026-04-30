@@ -1,0 +1,59 @@
+18 Chapter 2 Signals and Systems
+Figure 2.3
+Signals derived from the
+point impulse: (a) point
+impulse δ(x, y), (b) shifted
+point impulse δ(x − ξ,
+y − η), (c) line impulse
+δ
+ℓ (x, y), and (d) sampling
+function δs(x, y; /Delta1x, /Delta1y)
+(note that the impulses
+extend to inﬁnity in both
+x and y directions).
+(a) (b)
+(c) (d)
+x
+yd(x, y) y
+x
+d(x /H11002 j, y /H11002 h)
+x
+y
+/H9004y
+/H9004x
+ds(x, y; /H9004x, /H9004y)
+y
+x
+d  (x, y)
+/H11005 x cosu /H11001 y sinu
+ul
+h
+j
+The 2-D point impulse (also not a function in the usual sense) models the
+property of a point source located at (0, 0) by having inﬁnitesimal width and
+unit volume. Figure 2.3(a) illustrates this concept.
+In (2.5), the point impulse ‘‘picks off’’ the value of f (x, y) at the location
+(0, 0) by multiplying f (x, y) with the point impulse followed by integration
+over all space. Suppose we shift the delta function to position ( ξ, η)—that is,
+δ(x − ξ, y − η)—as shown in Figure 2.3(b). Using a change of variables in (2.5),
+it can be shown that
+f (ξ, η) =
+∫
+∞
+−∞
+∫ ∞
+−∞
+f (x, y)δ(x − ξ, y − η) dx dy. (2.6)
+This important property of the point impulse is known as the sifting property.
+EXAMPLE 2.1
+Consider the point impulse shifted to position (ξ, η)—that is, δ(x − ξ, y − η).
+Question What is the nature of the function that is deﬁned as the product of f (x, y)
+with the shifted point impulse?
+Answer Let g(x, y) = f (x, y)δ(x − ξ, y − η). Whenever (x, y) ̸= (ξ, η), the function δ(x −
+ξ, y − η) is zero, which means that
+g(x, y) = 0, ( x, y) ̸= (ξ, η) .
+When (x, y) = (ξ, η), the shifted delta function is undeﬁned (because its value is inﬁnity), so
+g(ξ, η) is also undeﬁned. However, we know from (2.6) that the integral of g(x, y)—that
+is, its volume—is f (ξ, η). Therefore, we can conclude that g(x, y) is a point impulse
+function located at (ξ, η) having volume f (ξ, η), or
+g(x, y) = f (ξ, η)δ(x − ξ, y − η) . (2.7)

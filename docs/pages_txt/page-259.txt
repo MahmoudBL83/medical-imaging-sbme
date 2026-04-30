@@ -1,0 +1,49 @@
+240 Chapter 7 The Physics of Nuclear Medicine
+7.2 Nomenclature
+Recall from Chapter 4 that an atom consists of a nucleus of protons and
+neutrons, which together are called nucleons, surrounded by orbiting electrons.
+The atomic number Z is equal to the number of protons in the nucleus and
+deﬁnes the element. The mass number Ais equal to the number of nucleons in
+the nucleus. The term nuclide refers to any unique combination of protons and
+neutrons that forms a nucleus. If a particular nuclide is radioactive (i.e., it can
+undergo radioactive decay), it is termed a radionuclide. Nuclides are typically
+denoted by either A
+ZX or X-A, where X is the element symbol.
+Atoms with the same atomic number but different mass number (i.e., dif-
+ferent numbers of neutrons) are called isotopes. For example, carbon-11 is an
+isotope of carbon that decays by positron decay and is used in positron emission
+tomography, as discussed in Chapter 9. Because isotopes have the same number
+of protons (and hence electrons), they are chemically identical. Atoms with the
+same mass number but different atomic numbers are calledisobars. For example,
+carbon-11 decays to boron-11; the two are isobars. Atoms with the same number
+of neutrons are called isotones. Atoms with the same atomic and mass number
+(i.e., the same nuclide) but with different energy levels are called isomers.F o r
+example, technetium-99m decays to technetium-99; the two are isomers.
+This nomenclature becomes important when we consider the radionuclides
+used in nuclear medicine. Radioactive isotopes of certain elements serve as the
+source of ionizing radiation that we image in nuclear medicine. As discussed
+below, we are particularly interested in obtaining certain radiations that drive
+our choice of nuclides.
+7.3 Radioactive Decay
+7.3.1 Mass Defect and Binding Energy
+The sum of the masses of the constituents of an atom (i.e., the protons, neutrons,
+and electrons) is greater than the atom’s actual mass. The difference between
+the sum of the masses of the atom’s constituents and the actual mass is called
+the mass defect.
+As an example, consider stable carbon-12. An atom of carbon-12 has
+6 protons, 6 neutrons, and 6 electrons. On the atomic scale, it is common to
+express mass in uniﬁed atomic mass units(u), where 1 u is exactly 1/12 the mass
+of a carbon-12 atom. The mass of a proton is 1.007276 u, the mass of a neutron
+is 1.008665 u, and the mass of an electron is 0.000548 u. The mass defect of
+carbon-12 is therefore 6 × 1.008665 + 6 × 1.007276 + 6 × 0.000548 − 12 =
+0.098934 u.
+Einstein’s famous relationship, E = mc
+2, states that mass and energy are
+related and that matter and energy cannot be created or destroyed, they can
+only be transformed from one form into the other. Since mass and energy are
+related by Einstein’s equation, there is an amount of energy ‘‘missing’’ from the
+atom (equivalent to the mass defect) that would otherwise be predicted to be
+present based on the constituents of that atom. This missing energy is termed
+the binding energyand can be computed fromE = /Delta1mc
+2, where /Delta1m is the mass
+defect and c is the speed of light (3 × 108 m/s). The unit of energy that we have

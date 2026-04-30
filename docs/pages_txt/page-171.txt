@@ -1,0 +1,49 @@
+152 Chapter 5 Projection Radiography
+dimension (termed horizontal)—for example, the expected maximum width of
+a human chest. If demagniﬁcation is required, it is relatively small (on the order
+of 2:1 or 3:1), and it is carried out using ﬁber optic ‘‘light pipes’’ so that only
+a small proportion of light photons are lost. For example, a typical complete-
+coverage geometry would use eight detector arrays, each 5.5 cm by 1.1 cm, tiled
+together to yield a single linear detector of dimension 44 cm by 1.1 cm. The CCD
+detector might have 342 elements in the horizontal direction and 68 elements
+in the vertical direction. The x-rays are then collimated into a fan beam and
+directed at the linear CCD detector, which can collect data simultaneously for
+a small collection of horizontal rows—for example, 68 rows—of the digital
+image in parallel. To collect additional rows, either the entire apparatus—x-ray
+source, collimator, and detector—are translated (vertically) together or just the
+source collimator and detector are translated (vertically) together. Translation
+can be carried out, depending on the ﬁeld of view, over a time period between 8
+and 15 seconds. Patients having a chest x-ray using this type of system would be
+required to hold their breath for the duration of the scan in order to minimize
+motion artifacts due to breathing.
+Thin-Film-Transistor-Based Digital Radiography Systems CCD detectors have
+pixel sizes that are inherently small and cannot be scaled up due to noise
+that is added in the charge transfer mechanism with larger detector areas.
+Therefore, although constructing large CCD detectors—for example, large
+enough to be full-ﬁeld detectors such as that achieved by ﬁlm and PSPs—is
+technically possible, cost, sensitivity to x-ray damage, complexity, low-speed,
+and calibration issues currently make this impractical. However, the advantage
+of having a direct digital read-out afforded in CCD cameras is clear, and
+thin-ﬁlm-transistor-based digital radiography systems provide that capability.
+Thin ﬁlm transistors (TFTs) are made by depositing thin ﬁlms of a semi-
+conductor material, a dielectric, and metal conductors onto glass. In ﬂat panel
+displays, which are familiar to us because they are used in modern LCD and LED
+television systems, the transistors are laid out in a 2-D grid so that each pixel can
+be activated by addressing a horizontal and vertical wire simultaneously—this
+is the so-called active matrix technology. In x-ray ﬂat panel detectors, the TFT
+active matrix design is used to read out a charge that has accumulated at each
+pixel due to x-ray ﬂux.
+To completely specify the TFT-based ﬂat panel detector, we must specify
+how the x-rays will be detected and charge will be accumulated. There are two
+methods, so-called indirect and direct, both of which lead to charge stored on
+a capacitor associated with each image pixel. Indirect detection is very familiar
+to us: A scintillator, typically CsI:Tl, is placed between the x-ray source and the
+TFT matrix, which causes detected x-rays to generate light photons. Amorphous
+silicon (a-Si) is then used as a photodiode to convert the light emitted from the
+scintillator to charge on the storage capacitors. Direct detection, on the other
+hand, uses amorphous selenium (a-Se) to directly convert x-rays to electrons,
+which are then moved directly to the storage capacitors using an applied voltage
+across the selenium plate. Currently, ﬂat panel detectors based on the indirect
+detection method are more common, in part because these detectors are faster
+(i.e., high light output and shorter afterglow, which is important in temporal
+acquisitions such as ﬂuoroscopy) and they have lower noise. However, direct

@@ -1,0 +1,48 @@
+3.4 Noise 73
+by the probability mass function (PMF) Pr[N = ηi], for i = 1, 2,... , k, where
+Pr[N = ηi] is the probability that random variable N will take on the particular
+value ηi. The PMF satisﬁes the following three properties:
+0 ≤ Pr[N = ηi] ≤ 1, for i = 1, 2,... , k , (3.47)
+k∑
+i=1
+Pr[N = ηi] = 1 , (3.48)
+PN(η) = Pr[N ≤ η] =
+∑
+all ηi≤η
+Pr[N = ηi] . (3.49)
+It is permissible for k →∞ , meaning that there will be an inﬁnite (but still
+countable) number of possible outcomes.
+In the case of a discrete random variable, the mean value and variance are
+given by
+μN = E[N] =
+k∑
+i=1
+ηiPr[N = ηi] , (3.50)
+and
+σ2
+N = Var[N] = E[(N − μN)2] =
+k∑
+i=1
+(ηi − μN)2Pr[N = ηi] , (3.51)
+respectively. Notice that the integrals in (3.38) and (3.39) have been replaced by
+sums in (3.50) and (3.51).
+Poisson Random Variable Let N be a discrete random variable that takes
+values 0, 1,... , and has the PMF
+Pr[N = k] = ak
+k! e−a ,f o r k = 0, 1,... , (3.52)
+where a > 0 is a real-valued parameter. N is said to be a Poisson random
+variable, and it turns out that its mean equals its variance and
+μN = a , (3.53)
+σ2
+N = a . (3.54)
+Poisson random variables play an important role in medical imaging sys-
+tems, and most particularly in radiographic and nuclear medicine imaging. For
+example, they are used to statistically characterize the distribution of photons
+counted per unit area by an x-ray image intensiﬁer, or to characterize the photon
+counts produced by a radiotracer in nuclear medicine.
+EXAMPLE 3.7
+In x-ray imaging, the Poisson random variable is used to model the number of photons
+that arrive at a detector in time t, which is a random variable referred to as a Poisson
+process and given the notation N(t). The PMF of N(t) is given by
+Pr[N(t) = k] = (λt)k
+k! e−λt,

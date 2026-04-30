@@ -1,0 +1,40 @@
+8 Chapter 1 Introduction
+• Digital radiography, which includes all the scans in routine radiography, but
+with images that are recorded digitally instead of on ﬁlm
+• Angiography, including universal angiography and angiocardiography, in
+which the systems are specialized for imaging the body’s blood arteries and
+vessels
+• Neuroradiology, which includes specialized x-ray systems for precision
+studies of the skull and cervical spine
+• Mobile x-ray systems, which are small x-ray units designed for operating
+rooms or emergency vehicles
+• Mammography, which includes ﬁlm-based or digital-based systems opti-
+mized for breast imaging
+All of these modalities are called ‘‘projection’’ radiography because they all
+represent the projection of a 3-D object or signal onto a 2-D image.
+The common element in all of these systems is the x-ray tube. As we will
+see in Chapter 5, the x-ray tube generates an x-ray pulse in an approximately
+uniform ‘‘cone beam’’ (shaped like a cone) geometry. This pulse passes through
+the body and is attenuated by the intervening tissues. The x-ray intensity
+proﬁle across the beam exiting from the body is no longer uniform—shadows
+have been created by dense objects (such as bone) in the body. This intensity
+distribution is revealed using a scintillator, which converts the x-rays to visible
+light. Finally, the light image on the scintillator is captured either on a large
+sheet of photographic ﬁlm, a camera, or solid-state detectors.
+The most common modality in projection radiography is the chest x-ray;
+a typical unit is shown in Figure 1.1(a). Here, the x-ray tube is located on the
+column projecting down from the ceiling. The scintillator and detector can be
+located either in the pedestal unit on the right or in the table itself. The radiologic
+technologist stands at a console not shown, protected by lead, but able to see
+through a window. A typical chest x-ray is shown in Figure 1.1(b). This image
+shows the spine, ribs, heart, lungs, and many other features radiologists are
+trained to identify and interpret. A key feature of this image is that structures
+located at different depths in the body are overlaid (or superimposed) on the
+2-D image. For example, we can see both front and back ribs in the chest x-ray
+in Figure 1.1(b). This is a property of projection imaging, and it is common to
+Figure 1.1
+(a) A chest x-ray unit and
+(b) a chest x-ray image.
+Source: Courtesy of GE
+Healthcare.
+ (a)( b)

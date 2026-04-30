@@ -1,0 +1,48 @@
+Problems 253
+7.7 Consider the imaging system shown in Figure P7.1. The D × D square
+detector is on the x-y plane. The center of the detector coincides with the
+origin of the x-y plane. A point source, S, is on the z-axis a distance R
+away from the detector plane. The intensity on the detector is deﬁned as
+the energy of photons detected on a unit area of detector in unit time. If
+the radioactivity of the source at time t = 0i s A
+0,
+(a) What is the intensity at each point on the detector plane as a function
+of time?
+(b) What is the average intensity on the plane as a function of time?
+Figure P7.1
+A simple imaging system
+with a radioactive source
+and a planar detector. See
+Problem 7.7.D
+R
+S O
+P
+x
+y
+z
+7.8 (a) Show that the decay factor DF is related to the half-life by
+DF = e0.693t/T1/2 .
+(b) The average lifetime τ of a radioactive sample is given by τ = 1/λ.
+Find an expression for τ in terms of the half-life.
+7.9 A vial containing 99mTc is labeled ‘‘2 mCi/ml @ 8 a.m.’’
+(a) What is the activity of the sample at 4 p.m. on the same day?
+(b) What volume should be withdrawn at 4 p.m. on the same day to
+prepare an injection of 1.5 mCi for a patient?
+7.10 (a) Assume that 108 atoms (N0) are undergoing radioactive decay. If after
+864,000 seconds (10 days) there are 9 .9212 × 106 parent atoms left,
+what is the half-life of this radionuclide?
+(b) If for this experiment the Poisson rate is 267.42 disintegrations per
+second, what is the average number of disintegrations over 0.01
+seconds?
+(c) What is the probability that there are more than two disintegrations
+over this time period?
+7.11 At 1:00 p.m., we have 8 g of
+21
+11Ms, which has a half-life of 2 hours. How
+much will have decayed by 5:00 p.m.?
+7.12 A radioactive element is labeled 3 mCi/ml @ 8 a.m. One hour later its
+activity is 1 mCi/ml.
+(a) What is the half-life of this element?
+(b) What is the activity of the same sample at 12 noon on the same day?
+(c) What volume should be withdrawn at 12 noon on the same day to
+prepare an injection of 1.5 mCi for a patient?

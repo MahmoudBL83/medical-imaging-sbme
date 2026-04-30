@@ -1,0 +1,54 @@
+Problems 51
+Applications, Extensions, and Advanced Topics
+2.23 The PSF of a medical imaging system is given by
+h(x, y) = e−(|x|+|y|),
+where x and y are in millimeters.
+(a) Is the system separable? Explain.
+(b) Is this system isotropic? Explain.
+(c) What is the response of the system to the line impulse f (x, y) = δ(x)?
+(d) What is the response of the system to the line impulse f (x, y) =
+δ(x − y)?
+2.24 Consider a one-dimensional linear imaging system whose PSF is given by
+h(x;ξ) = e
+−(x−ξ)2
+2 ,
+which represents the response to the shifted impulse δ(x − ξ).
+(a) Is this imaging system shift-invariant? Explain.
+(b) Write the output image g(x) of this system when the input signal is
+f (x) = δ(x + 1) + δ(x) + δ(x − 1)?
+2.25 Consider a 1-D ideal high-pass ﬁlter whose spectrum is shown in
+Figure P2.1.
+Figure P2.1
+An ideal high-pass ﬁlter
+H(u). For Problem 2.25.
+H(u)
+uU0/H11002U0
+1
+(a) Compute the impulse response of the ﬁlter.
+(b) Using the linearity of convolution, compute the system response to (1)
+a constant function f (t) = c and (2) a unit step f (t) =
+{ 1, t ≥ 0
+0, t < 0 .
+2.26 The impulse response of a 1-D LTI system is
+h(t) = 1
+T
+[
+−rect
+( t + 0.75T
+0.5T
+)
++ rect
+( t
+T
+)
+− rect
+( t − 0.75T
+0.5T
+)]
+.
+(a) Plot h(t) with labeled axes. Is the system stable? Is it causal?
+(b) Find and plot the response of the system to a constant signal f (t) = c.
+(c) Find and plot the response of the system to a unit step signal
+f (t) =
+{ 1, t ≥ 0
+0, t < 0 .

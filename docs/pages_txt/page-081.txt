@@ -1,0 +1,50 @@
+62 Chapter 3 Image Quality
+The resulting image g(x, y) is only a function of x,s a yl(x). This is known
+as the line spread function(LSF) of the system under consideration, and it can
+be used to quantify resolution. This function is directly related to the PSFh(x, y)
+since, from (3.13), we have
+l(x) =
+∫ ∞
+−∞
+h(x, η) dη. (3.14)
+Notice that, since the PSF h(x, y) is assumed to be isotropic, l(x)i ss y m m e t r i c
+[i.e., l(x) = l(−x)], and since the PSF is normalized to 1,
+∫ ∞
+−∞
+l(x) dx = 1. (3.15)
+Moreover, the 1-D Fourier transform L(u)o ft h eL S F l(x) is related to the
+transfer function H(u, v) of the system, since
+L(u) = F1D[l](u)
+=
+∫ ∞
+−∞
+l(x)e−j2πux dx
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+h(x, η)e−j2πux dx dη
+= H(u,0 ). (3.16)
+Therefore, the values of the transfer function along the horizontal line that
+passes through the origin of the frequency domain are adequate for determining
+the 1-D Fourier transform of the LSF, and hence the LSF itself. Since the PSF
+h(x, y) is assumed to be isotropic, the transfer function is isotropic as well. Thus,
+the LSF is adequate for determining the PSF of the system. Indeed, from the
+LSF l(x), we can calculate the 1-D Fourier transform L(u), and H(u,0 ) = L(u).
+However, since the transfer function H(u, v) is isotropic, the values of H(u, v)
+along any line that passes through the origin of the frequency domain will be
+the same as the values of H(u,0 ) .
+3.3.2 Full Width at Half Maximum
+Given the LSF (or the PSF) of a medical imaging system, its resolution can be
+quantiﬁed using a measure called the full width at half maximum (FWHM).
+This is the (full) width of the LSF (or the PSF) at one-half its maximum value.
+The FWHM is usually expressed in millimeters. Provided there is no geometric
+scaling, the FWHM equals the minimum distance that two lines (or points)
+must be separated in space in order to appear as separate in the recorded image.
+This is depicted in Figure 3.6, where we see the proﬁles of two points through
+a 1-D imaging system with PSF h(x). The points move closer to each other as
+we go from (a) to (d). In a linear system, the observed proﬁle is the sum of the
+individual proﬁles from the two points. In practice, a residual ‘‘dip’’ between the
+points must occur in the (summed) proﬁle for the two points to be visualized or
+resolved as separate. The proﬁle depicted in Figure 3.6(c) shows the separation

@@ -1,0 +1,51 @@
+4.4 Nature and Properties of Ionizing Radiation 117
+Figure 4.6
+The photoelectric effect,
+shown in (a) and (b), and
+Compton scattering,
+shown in (c).
+Incident photon
+Incident photon
+Incident photon
+(a)
+(b)
+(c)
+Photoelectron
+Photoelectron
+Auger
+electron
+Compton
+electron
+Compton
+angle
+Compton
+photon
+Characteristic
+radiation
+u
+by the atom, and the ejected electron, called a photoelectron, propagates away
+with energy
+Ee− = hν − EB , (4.7)
+where EB is the binding energy of the ejected electron. The remaining atom is now
+an ion, having a hole, typically in the K-shell, which must be ﬁlled. The hole is
+ﬁlled by an electron transition from a higher orbit, which produces characteristic
+radiation, as discussed above and shown in Figure 4.6(a). Sometimes, the
+characteristic x-ray transfers its energy to an outer-orbit electron, called an
+Auger electron, which is ejected from the atom, accompanied by a readjustment
+of the remaining electron orbits, as shown in Figure 4.6(b). Photoelectrons and
+Auger electrons are energetic electrons that are free to interact with matter in
+the ways we described in the previous section. We will see below that these
+energetic electrons contribute to the detrimental biological effects of ionizing
+EM radiation by contributing radiation dose to the patient.
+Compton Scattering In Compton scattering, as shown in Figure 4.6(c), a
+photon with energy hν ejects a valence (outer-shell) electron, yielding a new
+energetic electron called a Compton electron. As a result of this interaction,
+the incident photon loses energy (to the Compton electron) and changes its
+direction. The energy of the scattered photon, the so-calledCompton photon,i s
+given by
+hν′ = hν
+1 + (1 − cos θ)hν/(m0c2) , (4.8)
+where m0c2 = 511 keV is the energy equivalent to the rest massm0 of an electron,
+and θ is the angle through which the photon is scattered [see Figure 4.6(c)]. We
+see that the amount of energy remaining with the Compton photon depends on
+the scatter angle. The more the photon is deﬂected, the more energy it loses.

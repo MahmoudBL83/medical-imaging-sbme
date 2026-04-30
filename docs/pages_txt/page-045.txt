@@ -1,0 +1,42 @@
+26 Chapter 2 Signals and Systems
+in the output. In mathematical terms, if
+fx0y0 (x, y) = f (x − x0, y − y0) (2.34)
+is a translated version of an input signal f (x, y) shifted at a point (x0, y0), then
+g(x − x0, y − y0) = S[fx0y0 (x, y)] , (2.35)
+where g(x, y) is given by (2.30). Therefore, the response of a shift-invariant
+system to a translated input equals the response of the system to the actual input
+translated by the same amount.
+Shift invariance does not require or imply linearity: a system may be
+shift-invariant but not linear and vice versa. However, if a linear system S
+is shift-invariant and
+h(x, y) = S[δ(x, y)] , (2.36)
+then
+S[δξη (x, y)] = h(x − ξ, y − η) . (2.37)
+In this case, the PSF is a 2-D signal. Therefore, by imposing shift invariance on
+a linear system, we are able to reduce the dimensionality of the PSF by a factor
+of two.
+In practice, this means that the PSF is the same throughout the ﬁeld-of-view
+of a shift-invariant imaging system. If we measure the PSF at one position, we
+can assume the same PSF at all other positions within the imaging ﬁeld. Such a
+measurement is accomplished by using a (very) small point object (to mimic a
+point impulse) and (2.36), which indicates that the image of this point object is
+the PSF.
+As y s t e mS that is both linear and shift-invariant is known as a linear
+shift-invariant (LSI) system.I f S is an LSI system, then [see (2.32), (2.33), and
+(2.37)]
+g(x, y) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (ξ, η)h(x − ξ, y − η) dξdη , (2.38)
+or, simply,
+g(x, y) = h(x, y) ∗ f (x, y) . (2.39)
+Equations (2.38) and (2.39) are known as the convolution integral and the
+convolution equation, respectively. Convolution plays a fundamental role in the
+theory of signals and systems. In this book, we almost exclusively deal with
+LSI systems. Treating imaging systems as LSI systems signiﬁcantly simpliﬁes our
+analysis of these systems, and in most cases is accurate enough for practical use.
+EXAMPLE 2.2
+Consider a continuous system with input-output equation
+g(x, y) = 2f (x, y) . (2.40)

@@ -1,0 +1,49 @@
+Problems 283
+projection images of radiotracer distribution using an Anger scintillation camera.
+In this chapter, we presented the following key concepts that you should now
+understand:
+1. Planar scintigraphyis the nuclear medicine analog of projection radiography.
+2. Planar scintigraphy makes use of an Anger scintillation camera , which
+consists of a collimator,a scintillation crystal, photomultiplier tubes, posi-
+tioning logic,a pulse height analyzer, and an image capture device(today, a
+computer).
+3. Typical collimators include parallel-hole, converging, diverging, andpinhole.
+4. Event positioning is based on a center-of-mass calculation; unlike radio-
+graphic image formation, this takes place on a photon-by-photon basis.
+5. The basic imaging equation includes terms for both activity (the desired
+parameter) and attenuation (an undesired, but extremely important, addi-
+tional factor); these two terms are not separable.
+6. Image quality depends on resolution (governed by both the collimator and
+the intrinsic resolution of the camera), noise (governed by the sensitivity of
+the system, the injected activity, and the acquisition time), and count rate
+factors.
+Further Reading
+Cherry, S.R., Sorenson, J.A., and Phelps, M.E.
+Physics in Nuclear Medicine, 4th ed. Philadel-
+phia, PA: W. B. Saunders, 2012.
+Christian, P.E. and Waterstram-Rich, K.M.Nuclear
+Medicine and PET/CT: Technology and Tech-
+niques, 7th ed. New York: Elsevier/Mosby,
+2012.
+Rollo, F.D. Nuclear Medicine Physics: Instrumenta-
+tion and Agents. St. Louis, MO: C. V. Mosby,
+1977.
+Problems
+Instrumentation
+8.1 (a) Explain with diagrams the design and operation of an Anger gamma
+camera.
+(b) What are some of the physical considerations when choosing which
+radionuclide to use for imaging.
+8.2 Suppose you are designing a collimator to be used in an Anger camera.
+Assume the radiotracer used emits 140 keV gamma rays and the collimator
+surface-to-patient distance r is 10 cm.
+(a) What is the minimum septal thickness h required for the septal pene-
+tration to be less than 60% for gamma rays incident at 45◦?
+(b) Suppose the resolution and sensitivity of the collimator are given by:
+Resolution = d
+(
+1 + r
+l
+)
+, Sensitivity = d4
+l2(d + h)2 ,

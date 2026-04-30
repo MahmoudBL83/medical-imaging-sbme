@@ -1,0 +1,52 @@
+6.4 Image Quality in CT 219
+We now interpret this expression for image noise variance with the following
+observations:
+• If we increase the bandwidth of the rectangular window, the image variance
+also increases. This follows one’s natural intuition that noise has high
+frequency components, while the image bandwidth tends to diminish at
+high frequencies. We will see in emission tomography (Chapter 9) that the
+design of windowing functions that optimally balance the increase in noise
+contributions with the loss of image sharpness is very important.
+• If we decrease T, the spacing between detectors, the variance decreases.
+Notice, however, that if the size of each detector is forced to decrease in
+order to do this, or if the detector efﬁciency decreases, then the decreased
+spacing will be offset by a lower
+N.
+• If we increase N, the variance decreases. In general, one increases N0 to
+do this. One could also increase N by increasing the incident x-ray energy,
+which lowers the amount of x-ray absorption. However, one would then
+have a loss of contrast, a subject that is considered in the following section
+on SNR.
+• If we increase M, the variance decreases. Thus, the more angles the better.
+This assumes constant acquisition time per angle—it would not be true with
+constant total scan time. (However, increasedM for constant total scan time
+could still provide beneﬁts from improved angular sampling.)
+• The fraction
+N/T indicates the average number of photons per unit distance
+along the detector array. In fan-beam geometries, we can increase this ratio,
+and hence decrease the image variance, by increasing N
+0.
+Image SNR Image variance is an important concept when we are trying to
+measure the linear attenuation coefﬁcient. However, in radiology we must also
+consider the contrast between tissues, since this is what creates the visual effect
+of objects or structures with boundaries in a medical image. Therefore, any
+useful deﬁnition of SNR must contain both contrast and noise. We deﬁne SNR
+here as
+SNR = Cμ
+σμ
+, (6.73)
+where C is the fractional change in μ from μ, μ is the mean linear attenuation
+coefﬁcient, and σμ is the standard deviation of the measurement (the square root
+of the variance). Equation (6.73) is thus the CT version of the differential SNR
+introduced in (3.69). Combining (6.72) with (6.73) gives
+SNR = Cμ
+π ϱ −3/2
+0
+√
+3
+2(N/T)M . (6.74)
+In a good CT scanner design, we set ϱ 0 ≈ k/d, where k ≈ 1 and d is the
+width of a detector. This gives
+SNR ≈ 0.4kCμd3/2
+√
+(N/T)M . (6.75)

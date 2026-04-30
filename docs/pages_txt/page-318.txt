@@ -1,0 +1,54 @@
+9.1 Instrumentation 299
+Figure 9.4
+Coincidence detection due
+to positron decay and
+annihilation.
+Detector
+Detector
+Site of 
+radioactive
+decay
+Positron
+path
+511 keV photon
+511 keV photon
+Electron
+path
+Annihilation
+Event: Yes or no?
+Coincidence
+detection
+circuit
+It is possible to use a single-head Anger camera to individually detect just one
+of the two 511 keV gamma ray photons that are emitted by positron-electron
+annihilation. Images could then be created using planar scintigraphy or SPECT
+reconstruction (if the camera rotates). With a multihead system, both photons
+might be detected if two of the Anger cameras were 180
+◦ apart and the photons
+made it through the opposing collimators. In this case, scintigraphy or SPECT
+techniques could be used to create an image as well.
+However, it is more advantageous (and this is what distinguishes PET from
+SPECT) to exploit the fact that a positron annihilation produces two gamma
+rays at the same time. PET uses electronic circuits, as shown in Figure 9.4, to
+detect a pair of 511 keV photons at the same time, in what is calledannihilation
+coincidence detection (ACD). With this approach, only simultaneous gamma
+rays are declared as events, and all other events are rejected. Whether two
+detected photons are declared as ‘‘simultaneous’’ depends on a user-set time
+interval, called a time window, which is typically 2–20 ns for modern scanners.
+Of major importance, if two opposing detectors simultaneously detect
+the (paired) 511 keV gamma rays, the annihilation event must have occurred
+somewhere along the line joining the two detectors (the so-called coincidence
+line). Said another way, ACD intrinsically provides information about the
+direction of travel of the photons. Detector collimation is not required with
+this approach and is in fact undesirable because it reduces the sensitivity of the
+detectors and may cause undesirable directional dependencies if the detectors
+remain in ﬁxed positions.
+Commercial dual-head SPECT scanners could be used, together with ACD
+circuitry, for PET (and some were sold this way in the early days of PET). In
+this case, the two heads are placed 180
+◦ apart and their collimators removed
+(or replaced with special collimators that isolate axial planes only). The heads
+must be rotated in order to pick up emissions from all angles around the
+patient, as tomographic reconstruction methods are used to reconstruct cross-
+sectional images (see Section 9.2). In order to efﬁciently stop 511 keV photons,
+it is generally necessary to make the NaI(Tl) crystals (in the Anger cameras)

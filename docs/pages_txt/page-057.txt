@@ -1,0 +1,48 @@
+38 Chapter 2 Signals and Systems
+where a and b are two nonzero constants, then
+F2D(fab)(u, v) = 1
+|ab|F
+( u
+a , v
+b
+)
+. (2.88)
+If we set a = b =− 1, then the Fourier transform of signal f (−x, −y) will be
+F(−u, −v). Thus, reversing a signal in space also reverses its Fourier transform.
+EXAMPLE 2.8
+Detectors of many medical imaging systems can be modeled as rect functions of different
+sizes and locations.
+Question Compute the Fourier transform of the following scaled and translated rect
+function:
+f (x, y) = rect
+( x − x0
+/Delta1x , y − y0
+/Delta1y
+)
+.
+Answer The Fourier transform of the rect function is the sinc function:
+F2D(rect)(u, v) = sinc(u, v) .
+We see that f (x, y) is the rect function scaled by factors /Delta1x and /Delta1y in each direction and
+then translated to ( x0, y0). By using the scaling property of the Fourier transform, we
+have
+F2D
+{
+rect
+( x
+/Delta1x , y
+/Delta1y
+)}
+= /Delta1x/Delta1y sinc(/Delta1xu, /Delta1yv) .
+By using the translation property, we have
+F2D(f )(u, v) = /Delta1x/Delta1y sinc(/Delta1xu, /Delta1yv)e−j2π(ux0+vy0) .
+2.5.5 Rotation
+Let us denote by fθ (x, y) the signal
+fθ (x, y) = f (x cos θ − y sin θ, x sin θ + y cos θ) . (2.89)
+We note that fθ (x, y) is a rotated version of f (x, y), rotated by an angle θ around
+the origin (0, 0). If F(u, v) is the Fourier transform of f (x, y), then
+F2D(fθ )(u, v) = F(u cos θ − v sin θ, u sin θ + v cos θ) . (2.90)
+If f (x, y) is rotated by an angle θ, then its Fourier transform is rotated by angle
+θ as well.
+2.5.6 Convolution
+If F(u, v) and G(u, v) are the Fourier transforms of two signalsf (x, y) and g(x, y),
+then the Fourier transform of the convolutionf (x, y) ∗ g(x, y) equals the product

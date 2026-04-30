@@ -1,0 +1,41 @@
+Contents ix
+3.7 Other Effects 86
+3.7.1 Artifacts 86
+3.7.2 Distortion 88
+3.8 Accuracy 88
+3.8.1 Quantitative Accuracy 89
+3.8.2 Diagnostic Accuracy 89
+3.9 Summary and Key Concepts 92
+Part II Radiographic Imaging 101
+4
+Physics of Radiography 106
+4.1 Introduction 106
+4.2 Ionization 107
+4.2.1 Atomic Structure 107
+4.2.2 Electron Binding Energy 109
+4.2.3 Ionization and Excitation 109
+4.3 Forms of Ionizing Radiation 110
+4.3.1 Particulate Radiation 110
+4.3.2 Electromagnetic Radiation 112
+4.4 Nature and Properties of Ionizing Radiation 113
+4.4.1 Primary Energetic Electron Interactions 114
+4.4.2 Primary Electromagnetic Radiation Interactions 116
+4.5 Attenuation of Electromagnetic Radiation 120
+4.5.1 Measures of X-Ray Beam Strength 121
+4.5.2 Narrow Beam, Monoenergetic Photons 123
+4.5.3 Narrow Beam, Polyenergetic Photons 125
+4.5.4 Broad Beam Case 127
+4.6 Radiation Dosimetry 127
+4.6.1 Exposure 127
+4.6.2 Dose and Kerma 128
+4.6.3 Linear Energy Transfer (LET) 128
+4.6.4 The f -Factor 128
+4.6.5 Dose Equivalent 129
+4.6.6 Effective Dose 130
+4.7 Summary and Key Concepts 131
+5
+Projection Radiography 135
+5.1 Introduction 135
+5.2 Instrumentation 136
+5.2.1 X-Ray Tubes 136
+5.2.2 Filtration and Restriction 139

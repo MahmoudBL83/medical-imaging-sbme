@@ -1,0 +1,49 @@
+220 Chapter 6 Computed Tomography
+If, in fact, d = T (as in a 3G scanner), then
+SNR ≈ 0.4kCμd
+√
+NM . (6.76)
+In the fan-beam case,
+Nf : mean photon count per fan-beam,
+D : number of detectors,
+L : length of detector array,
+and, therefore, N = Nf /D and d = L/D, which yields
+SNR ≈ 0.4kCμLD−3/2
+√
+Nf M . (6.77)
+Therefore, in the fan-beam case we have the odd situation that increasing the
+number of detectors actually lowers the SNR. The reason, it turns out, is that
+convolution of the projections with the ramp ﬁlter couples the noise between
+detectors and does so to a greater extent as the number of detectors increases.
+Why shouldn’t we reduce the number of detectors to, say, three or even one?
+Although such a system would give excellent SNR, we know from Section 6.4.1
+that the resolution would be abysmal.
+EXAMPLE 6.6
+Consider a fan-beam CT system with one source, D detectors, M angles, and J by J
+reconstructed images, where D = M = J = 256. Assume that the width of each detector
+is d = 0.25 cm and the ramp ﬁlter uses a rectangular window with cutoff ϱ 0 = 1/d.
+The scanner is used to image a lesion with contrast C = 0.005 embedded in water
+(μ = 0.15 cm−1).
+Question We require the image to have a SNR of at least 20 dB. What is the minimum
+number of photons per projection at the detectors that is required in order to meet this
+SNR constraint?
+Answer Since SNR(dB) = 20 log10 SNR, we have
+SNR = 1020dB/20 = 10.
+Since SNR = Cμ/σμ = 10, we have
+σμ = 0.005
+10 × 0.15 cm−1 = 7.5 × 10−5 cm−1.
+Thus,
+σ2
+μ = 5.625 × 10−9 cm−2 = 2π2
+3
+ϱ 3
+0T
+MN
+.
+The number of photons per projection is
+Pp = ND = 2π2
+3
+ϱ 3
+0T
+Mσ2μ
+D.

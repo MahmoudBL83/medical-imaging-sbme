@@ -1,0 +1,51 @@
+2.7 Circular Symmetry and the Hankel Transform 45
+TABLE 2.3
+Selected Hankel Transform Pairs
+Signal Hankel Transform
+exp{−πr2} exp{−πq2}
+1 δ(q)/πq = δ(u, v)
+δ(r − a)2 πaJ0(2πaq)
+rect(r) J1(πq)
+2q
+sinc(r) 2 rect(q)
+π
+√
+1−4q2
+1
+r
+1
+q
+If a 2-D signal is circularly symmetric, the Fourier transform of the signal can
+be found using the Hankel transform. Some Hankel transform pairs are given
+in Table 2.3.
+Table 2.1 presented the Fourier transform of the 2-D Gaussian function as
+F
+{
+e
+−π(x2+y2)
+}
+= e−π(u2+v2) , (2.113)
+which itself is a 2-D Gaussian function. These Gaussian functions are circularly
+symmetric, and by direct substitution of r2 = x2 + y2 and q2 = u2 + v2, we ﬁnd
+the Hankel transform pair
+H
+{
+e−πr2 }
+= e−πq2
+. (2.114)
+The Gaussian function is a good model for the blurring inherent in medical
+imaging systems, and we will have many occasions throughout the text to use it
+and its Fourier (or Hankel) transform.
+The unit disk, deﬁned as
+f(r) = rect(r) , (2.115)
+is another example of a circularly symmetric function. It can be shown (see
+Problem 2.20) that the Hankel transform of the unit disk is given by
+H {rect(r)} = J
+1(πq)
+2q , (2.116)
+where J1 is the ﬁrst-order Bessel function of the ﬁrst kind [see (2.109)]. Forming
+an analogy to the special relationship between the rect and sinc functions in
+Fourier transforms, the so-called jinc function is deﬁned as
+jinc(q) = J1(πq)
+2q . (2.117)
+Therefore, the rect and jinc form a Hankel transform pair.

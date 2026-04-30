@@ -1,0 +1,49 @@
+5.2 Instrumentation 151
+ranges of digital image created by scanning a PSP can be dramatically different
+depending on the anatomy being imaged as well as the kVp and mAs selected
+by the operator.
+Unlike ﬁlm, which saturates at high x-ray exposures, PSPs can store perfectly
+viable latent images over a wide range of incident x-ray exposures. This means
+that fewer images are ‘‘spoiled’’ by having poor latent images through improper
+x-ray tube parameter selection, but the downside is that very different dynamic
+ranges must be anticipated. Most systems use an air ionization photocell to
+perform AEC, as previously described for ﬁlm-based radiography. The technician
+must specify an appropriate exposure based on the patient size and anatomy
+being imaged. Many systems also permit some preprocessing of the scanned
+images prior to ﬁnalizing them for the patient record, which permits additional
+speciﬁcation of the image values in accordance with expected norms. Another
+somewhat unfortunate downside of the fact that few images are spoiled in CR
+acquisition is that, since lower exposures cause the usual quantum noise and
+higher exposures simply improve signal-to-noise ratio (SNR), there is a natural
+tendency to use higher x-ray exposures in CR. It is important to gaurd against
+this tendency since higher exposures yield higher doses to the patients.
+It turns out that the process of reading a PSP does not liberate all the
+electrons that are stored in the plate; in fact, a PSP can be scanned more than
+once without much degradation. In order to reuse the plate—that is, to create a
+new x-ray image—it must ﬁrst be erased, which is accomplished very simply by
+exposing it to very bright light. Usually this is done in the same mechanical unit
+that reads the plate.
+CCD-Based Digital Radiography Systems Charge coupled device (CCD) detec-
+tors combine a collection of light-sensitive capacitors, which store charge in
+proportion to incident light, with a CCD, which uses a linear charge transfer
+to permit a high-ﬁdelity readout of the stored charges. Two-dimensional CCD
+detector arrays capture 2-D light images and are used in high-quality photo-
+graphic equipment today. Their use in x-ray imaging is made possible simply
+by using a scintillator, typically Tl-doped CsI, to convert the x-rays to visible
+light.
+The main obstacle to the use of CCD detectors in projection radiography is
+that they are small devices, while the ﬁeld of view of most x-ray examinations is
+large. The most straightforward approach to solve this problem is the use of a
+lens to demagnify the scintillator image so that it ﬁts within the optical window
+of the CCD array. With a typical ﬁeld-of-view and typical CCD detector size,
+demagniﬁcation by a factor of roughly 10:1 is necessary. For example, to match
+a4 4c m × 44 cm ﬁeld of view (FOV) to a 4 cm × 4 cm CCD with 3,000 ×
+3,000 pixels, each 0.013 mm × 0.013 mm, a demagniﬁcation factor of just over
+11 is required. However, it turns out that there is a signiﬁcant loss of light—as
+much as 99%—with such demagniﬁcation, and this yields signiﬁcantly higher
+quantum noise in the resultant images. Use of higher x-ray doses can compensate
+for this loss, and because of the very low cost of CCD detectors, this is one
+approach that has been used to produce very low-cost digital x-ray systems.
+Another way to use CCD detectors is in a so-called slot-scan geometry. In
+this geometry, multiple CCD detector arrays are positioned in a line, long enough
+to cover the entire ﬁeld of view (or a signiﬁcant fraction of the FOV) in one

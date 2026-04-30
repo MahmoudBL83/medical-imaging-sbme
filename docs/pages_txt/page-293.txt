@@ -1,0 +1,61 @@
+274 Chapter 8 Planar Scintigraphy
+So by doubling the hole length, the collimator resolution is also improved. If we make
+the hole length go to inﬁnity, the collimator resolution tends to be the hole diameter, d,
+which is the limit to the resolution. We will see later, by using longer holes, we degrade
+the collimator sensitivity.
+We can factor collimator resolution into our imaging equation for planar
+sources quite readily. Equation (8.13) does not give an explicit formula for the
+collimator PSF, but it is common to assume that the PSF is Gaussian with
+FWHM equal to RC. For a Gaussian function (see Examples 3.4 and 3.5),
+FWHM = 2σ
+√
+2l n2 .
+Therefore, since FWHM = RC, a common approximation for the collimator
+PSF is
+hC(x, y;|z|) = exp
+{
+−4(x2 + y2)l n2/R2
+C(|z|)
+}
+, (8.14)
+where we have made the dependence on range |z| explicit.
+Consider our planar source f (x, y, z) = fz0 (x, y)δ(z − z0) from the previous
+section. By design, all the sources are at range r =| z0| from the collimator.
+Therefore, putting (8.14) together with (8.11) yields
+φ(x, y) = Ahfz0 (x, y) 1
+4πz2
+0
+exp
+{
+−
+∫ 0
+z0
+μ(x, y, z′;E) dz′
+}
+∗ hC(x, y;|z0|) . (8.15)
+The PSF blurring is a convolution in this case because the collimator is spatially
+t h es a m ei nt h ex-y plane. We could not write a 3-D convolution for a 3-D
+source, however, since there is depth dependency in both the basic imaging
+equation and the collimator PSF.
+Equation (8.13) is based on the assumption that photons are always
+absorbed in the septa. In reality, some fraction of photons will penetrate
+the septa, which causes R
+C to be somewhat larger than what is predicted above.
+A simple way to account for septal penetration (see Problem 8.5) is to assume
+in (8.13) that the hole length is slightly shorter than reality. The effective hole
+length (l
+e) is deﬁned as
+le = l − 2μ−1 , (8.16)
+where μ is the linear attenuation coefﬁcient of the collimator material, typically
+lead, at the photon energy under consideration. The effective hole length is
+shorter than the actual length and is shortest at the highest photon energies
+because these photons are more penetrating (recall that μ is smallest at the
+highest photon energies). Using this deﬁnition, the adjusted collimator resolution
+becomes
+R
+C = d
+le
+(le + b + r) . (8.17)
+This deﬁnition more accurately reﬂects the fact that a given collimator has a
+different (effective) spatial resolution depending on the energy of the radiotracer
+used. In particular, a collimator designed for low-energy radiotracers will have

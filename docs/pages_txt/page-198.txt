@@ -1,0 +1,43 @@
+Problems 179
+The detector is large enough to image object A and B. Suppose the
+geometric effects can be ignored and the x-rays are parallel and horizontal
+and are wide enough to image the objects.
+(a) Assume the intensity of the incoming x-ray beam is I
+p.G i v et h e
+intensity distribution I(d, y) on the detector for |y|≤ a.
+(b) What is the local contrast of object B on the detector? (Use the
+intensity at y = 0 as the target intensity.)
+(c) Under what condition is the local contrast of object B positive?
+Now let us consider the geometric effects. A point x-ray source lies at the
+origin (0, 0).
+(d) Consider the inverse square law, obliquity, and path length. Ignore
+scattering. Suppose without object A and B, at the center of the
+detector (on the x-axis), the intensity is I0. Give the intensity at
+(d, r√
+z2+2rz
+d) on the detector.
+(e) For a point on the detector (d, y0), what point y on the centerline (i.e.,
+x = z + r) of object A and B, contributes to the intensity I(d, y0)?
+Figure P5.3
+System geometry for
+Problem 5.19.
+y
+x
+z
+dX- ray source
+A
+A a
+a
+rB
+Applications
+5.20 Interesting properties of tissues can sometimes be revealed by imaging them
+at two x-ray energies. Suppose you are going to use your conventional
+chest x-ray setup to make two ﬁlms, one where the highest x-ray energies
+are at 30 keV and the other where the highest energies are at 100 keV.
+(a) In order to make these two images, what physical parameter will you
+change and to what values will you set it?
+(b) Assuming nothing else changes, which ﬁlm would you expect to be
+more exposed than the other? Explain.
+(c) At which energy is Compton scattering more of a problem? Describe
+how it will affect that image.
+(d) At which energy is the absorbed dose to the patient higher?

@@ -1,0 +1,47 @@
+8.2 Instrumentation 263
+detectors have imperfect energy resolution, it is not desirable to use an extremely
+narrow window, because desirable events (i.e., true photopeak events) would
+be excluded. Because the window has a ﬁnite width, some scattered photons
+may still be accepted (those which scatter through a small angle, and thus
+retain most of their energy). For example, 140-keV photons can scatter by as
+much as 50
+◦ and still be accepted by the often-used 20 percent window (i.e.,
+a window of ±10 percent around the photopeak energy). In practice, proper
+window setting is vital, as a window that is not centered around the photopeak
+(an offset window) can degrade ﬁeld uniformity of response for many cameras;
+this is typically a result of the slightly better light collection efﬁciency directly
+under each photomultiplier tube.
+Current cameras, with microprocessor-based correction circuitry (which
+will be described later), generally maintain good uniformity even with offset
+pulse height windows. Such cameras may be purposely peaked to the high
+side of the photopeak to further reduce scatter, by eliminating any Compton-
+scattered photons that show up in the lower half of the photopeak (due to every
+camera’s less than perfect energy resolution). Some cameras have two or three
+separate pulse height windows to simultaneously image the multiple emissions
+of some radionuclides (e.g., those from gallium-67). In this way, counts are
+acquired in a shorter amount of time as the multiple energy emissions are
+utilized.
+8.2.7 Image Capture
+Together, the positioning logic and pulse height analyzer (with its gating circuit)
+yield an estimated position (X, Y) of each scintillation event that falls within the
+energy discrimination window. Earlier Anger cameras were analog and relied on
+photographic image formation. In these systems, theX- and Y-pulses associated
+with each Z-pulse that passed through the pulse height analyzer were used to
+position a ﬁnely focused dot of light on a cathode ray tube face. A collection of
+these light dots over time would produce an image. Since it took a period of time
+for a complete picture to be obtained, perhaps up to several minutes to obtain
+several hundred thousand counts, an integrating medium was used to record the
+image. The most frequently used media were various types of photographic ﬁlm.
+A photographic camera was mounted on a cathode ray tube, and the shutter
+was left open during the entire image acquisition period. The ﬁlm was developed
+and an image of the distribution of radioactivity was obtained.
+It is standard today for an Anger camera to be interfaced to a computer.
+During the transition period from analog image capture, as described above,
+to digital capture via computer, the ( X, Y, Z) signals were digitized (typically
+with 16-bit quantization) and used by software to create images. In today’s
+cameras (see Figure 8.1), the output of each PMT is digitized by its own analog-
+to-digital converter, and the positioning logic and image formation described
+below are implemented in a fully digital fashion. As a result, the computer and
+its software become an integral and necessary part of the planar scintigraphy
+image formation process, as they do in computed tomography. We describe the
+computer-assisted image formation process in Section 8.3.

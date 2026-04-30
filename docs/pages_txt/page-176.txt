@@ -1,0 +1,41 @@
+5.3 Image Formation 157
+Figure 5.14
+The effect of obliquity on
+spot size.
+X-ray
+origin
+Line
+u
+d
+Unit
+area
+Projected
+unit area
+Obliquity Obliquity is a second factor that acts to decrease the beam intensity
+away from the detector origin. The obliquity effect is caused by the detector
+surface not being orthogonal to the direction of x-ray propagation (except at the
+detector origin). As shown in Figure 5.14, this fact implies that x-rays passing
+through a unit area orthogonal to the direction of x-ray propagation actually
+pass through a larger area on the detector. Thus, the x-ray ﬂux is lower, which
+directly results in a lower measured x-ray intensity on the detector surface.
+Given an area A orthogonal to the direction of x-ray propagation, the
+projected area on the detector isA
+d = A/cos θ. Therefore, the measured intensity
+due to obliquity alone is
+Id = I0 cos θ , (5.8)
+where we have again assumed that there is no object attenuation.
+Beam Divergence and Flat Detector The effects of beam divergence and the
+ﬂat detector act together to reduce intensity at the detector plane in two ways:
+(1) reduction in beam intensity due to the inverse square law effect [(5.6)] and
+(2) reduction in beam intensity due to obliquity [(5.8)]. The combination of
+these two effects is multiplicative. So, the overall beam intensity relative to the
+intensity I0 at the detector origin, assuming no object attenuation, is given by
+Id(x, y) = I0 cos3 θ. (5.9)
+If θ is small, then cos 3 θ ≈ 1, and both effects can be ignored. This is a good
+approximation for most projection radiography systems, where either the tube
+is very far away from the detector or the detector is small enough thatθ is small
+even at the edges of the detector.
+EXAMPLE 5.3
+Suppose a chest x-ray is taken at 2 yards using 14 inch by 17 inch ﬁlm.
+Question What will be the smallest ratio Id/I0 across the ﬁlm (assuming no object
+attenuation)?

@@ -1,0 +1,43 @@
+4.6 Radiation Dosimetry 127
+imaging properties, is intractable from a mathematical standpoint. The concept
+of effective energy (see Example 4.4) is more useful, as we shall see.
+4.5.4 Broad Beam Case
+Now consider the broad beam geometry in Figure 4.7(b), which should be
+compared with the narrow beam geometry in Figure 4.7(a). In (b), the x-ray
+beam is seven times wider and has 7 N as many photons (the number 7 being
+used here for illustration purposes). When the slab is removed, the detector,
+having the same width as in (a), will detect onlyN photons, since the remaining
+photons miss the detector. When the slab is in place, photons previously directed
+at the detector might be absorbed by photoelectric interactions or scattered by
+Compton events—just as they are in the narrow beam case. However, there is
+an additional possibility here: photons from outside the detector’s line-of-sight
+geometry might get scattered toward the detector by Compton interactions.
+Thus, in the broad beam case, more photons are generally detected than is
+predicted by a monoenergetic, narrow beam analysis. The general attenuation
+law [(4.24) and (4.25)] does not hold in this case, and the assumption of straight
+propagation of x-rays is also violated. Furthermore, the photons that comprise
+the detected burst are no longer monoenergetic, since the Compton scattering
+process reduces photon energy. In such a situation, the average or effective
+energy of the x-ray beam is reduced, a process called beam softening.
+Fortunately, most x-ray imaging modalities use detector collimation, which
+reduces the number of x-rays from nonnormal directions that can hit the
+detectors. Therefore, from an imaging standpoint, the narrow beam geometry
+assumption can be viewed as fairly accurate. We make the assumption of narrow
+beam geometry throughout this book. From the point of view of calculating
+the dose to the patient or determining how much lead is needed to shield a
+radiologist or technician, however, broad beam geometry must be considered.
+After all, there is no detector collimation on the ‘‘human detectors’’ involved in
+the imaging process.
+4.6 Radiation Dosimetry
+There are many ways to report the presence and amount of radiation. We have
+already described the ideas related to photon and energy ﬂow via ﬂuence and
+intensity concepts. We did so with a focus on the production of medical images.
+However, radiation also produces adverse biological effects. Here, we are now
+more concerned with what EM radiationdoes than what itis. That is the essence
+of the concept of dose.
+4.6.1 Exposure
+By deﬁnition, ionizing radiation is capable of ionizing the hydrogen atom.
+Therefore, it is capable of producing ions in air. It is straightforward to build
+and calibrate anionization chamberthat measures the current produced between
+two plates held at a ﬁxed potential due to radiation producing ions in the air
+between the two plates.

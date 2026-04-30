@@ -1,0 +1,50 @@
+174 Chapter 5 Projection Radiography
+Therefore, the effect of scatter is to reduce contrast by the factor 1 /(1 + Is/Ib).
+The ratio Is/Ib is called scatter-to-primary ratio; clearly, it should be kept as
+small as possible in order to preserve contrast.
+Signal-to-Noise Ratio with Scatter The derivation of SNR in the presence of
+Compton scattering follows the Compton-free derivation very closely:
+SNR′ = It − Ib
+σb
+= C Ib
+σb
+= C Nb√
+Nb + Ns
+= C
+√
+Nb√
+1 + Ns/Nb
+. (5.42)
+Here, the symbol Ns stands for the number of Compton scattered photons per
+burst per area A on the detector, and the symbol C is the underlying contrast
+(not the Compton scatter-reduced contrast).
+Equation (5.42) shows the reduction of SNR due to Compton scattering.
+The SNR with Compton scattering is related to the SNR without Compton
+scattering by
+SNR′ = SNR 1√
+1 + Is/Ib
+(5.43)
+Thus, in addition to the loss in contrast, there is an additional loss of
+1/
+√
+1 + Is/Ib in SNR due to the effects of Compton scattering.
+EXAMPLE 5.8
+Suppose 20 percent of the incident x-ray photons have been scattered in a certain material
+before they arrive at detectors.
+Question What is the scatter-to-primary ratio? By what factor is the SNR degraded?
+Answer The x-ray photons that contribute to the background intensity are those that
+hit the detectors without Compton scattering. The number of these photons is 0 .8N,
+where N is the number of incident x-ray photons. The number of scattered photons
+is 0.2N. Because the intensity of the image is proportional to the number of photons
+detected, we have
+Ib ∝ 0.8N, Is ∝ 0.2N .
+The scatter-to-primary ratio is
+Is
+Ib
+= 0.2N
+0.8N = 1
+4 .
+From (5.42), we can see that the loss of SNR is 1− 1/
+√
+1 + Is/Ib = 0.11. So the Compton
+scattering introduces 11 percent loss of SNR.

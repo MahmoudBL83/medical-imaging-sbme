@@ -1,0 +1,37 @@
+2.2 Signals 19
+This result tells us that we can interpret the product of a function with a point impulse as
+another point impulse whose volume is equal to the value of the function at the location
+of the point impulse.
+Two other properties of the point impulse will be used throughout the book.
+The scaling propertyof the point impulse is given by
+δ(ax, by) = 1
+|ab| δ(x, y) . (2.8)
+Finally, we occasionally need to use the fact that the point impulse is an even
+function; that is,
+δ(−x, −y) = δ(x, y) , (2.9)
+which follows from (2.8) by setting a = b =− 1.
+2.2.2 Line Impulse
+When calibrating medical imaging equipment, it is sometimes easier to use a
+linelike rather than a pointlike object. For example, it may be easier to position
+a wire than a small bead to assess the resolution of a projection radiography
+system. For this reason, we would like a mathematical model for a line source.
+Consider the set of points deﬁned by
+L(ℓ, θ) ={ (x, y) | x cos θ + y sin θ = ℓ} . (2.10)
+It can be shown that L(ℓ, θ) is a line whose unit normal is oriented at an angleθ
+relative to the x-axis and is at distance ℓ from the origin in the direction of the
+unit normal. This geometry can be seen in Figure 2.3(c).
+The line impulseδℓ(x, y) associated with line L(ℓ, θ) is given by
+δℓ(x, y) = δ(x cos θ + y sin θ − ℓ) . (2.11)
+This signal, illustrated in Figure 2.3(c), is effectively a 1-D impulse function
+‘‘spread out’’ on the line L(ℓ, θ).
+2.2.3 Comb and Sampling Functions
+We now consider two functions that are critical to the way medical images
+are produced, manipulated, and stored in real-world systems. In such systems,
+medical images are not treated as continuous functions, but as discrete functions.
+We will have more to say about this in Chapter 3. Here, we introduce these
+two critical functions in relation to the other functions being introduced in this
+chapter.
+We saw above that through the use of a shifted point impulse [within the
+double integral in (2.6)], we could ‘‘pick off’’ the value of a function at a single
+point. In nearly all medical imaging modalities, we need to pick off values not
+just at a single point but on a grid or matrix of points, a process that is called

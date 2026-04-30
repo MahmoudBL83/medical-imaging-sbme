@@ -1,0 +1,31 @@
+Planar Scintigraphy
+CHAPTER
+88
+8.1 Introduction
+As in diagnostic x-ray imaging, nuclear medicine imaging evolved from
+projection imaging to tomographic imaging. Projection studies in nuclear
+medicine, called planar scintigraphy, have always used the Anger scintillation
+camera, a type of electronic detection instrumentation. The corresponding
+tomographic imaging method, called single photon emission computed tomog-
+raphy (SPECT), uses one or more rotating Anger cameras to obtain projection
+data from multiple angles. These imaging methods depend on radiotracers
+labeled with radioactive atoms whose decay produces a single gamma photon
+directly. Another imaging method, called positron emission tomography(PET),
+is based on radiotracers labeled with radioactive atoms whose decay produces
+a positron that is subsequently annihilated, producing two gamma photons.
+PET is implemented only as a tomographic imaging method and does not
+have a corresponding projection imaging mode. Together, SPECT and PET are
+referred to as emission computed tomography; they are described in the next
+chapter. Here, we focus on planar (2-D projection) scintigraphy.
+8.2 Instrumentation
+The three basic imaging modalities in nuclear medicine—planar imaging,
+SPECT, and PET—can be logically grouped in two ways. Planar imaging and
+SPECT use radiotracers that are gamma emitters, while PET uses radiotracers
+that emit positrons. On the other hand, SPECT and PET require tomographic
+reconstruction techniques (like CT), while planar imaging forms images by
+projection (as in projection radiography). In this section, we describe the instru-
+mentation in planar scintigraphy, much of which is also used in SPECT, which
+is described in Chapter 9. Because of the peculiar nature of positron decay, PET
+scanners have signiﬁcantly different instrumentation, which we also describe in
+Chapter 9.
+255

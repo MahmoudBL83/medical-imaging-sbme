@@ -1,0 +1,47 @@
+8.3 Image Formation 269
+Figure 8.8
+One cycle of heartbeat is
+divided into frames. The R
+wave of the ECG signal is
+used to trigger acquisition
+in multiple-gated frame
+mode.
+RR
+One heartbeat
+One frame
+EXAMPLE 8.4
+The multiple-gated acquisition mode can be used to study beating hearts. In this mode,
+each cycle of the acquisition is triggered by the R wave of the ECG, as shown in
+Figure 8.8.
+Question Suppose the heart rate is 50 bpm (beats per minute). We want each frame to
+last for 75 ms. What is the total number of frames?
+Answer The heart rate is 50 bpm, so each heartbeat lasts for 60/50 = 1.2 s. Each frame
+lasts for 75 ms. Therefore, a heartbeat is divided into
+N = 1.2 second
+75 ms = 16 frames.
+8.3.3 Anger Camera Imaging Equation
+Consider what happens to a photon emitted from within the body. Statistically,
+the photon has equal probability to propagate in any direction. As shown in
+Figure 8.9, sometimes the photon will get absorbed (a), sometimes it will be
+scattered and then absorbed (b), and sometimes it will leave the body (with or
+without being scattered) (c, d, e). If it leaves the body, sometimes it will hit
+the Anger camera (d, e); more often it will not (c). When a gamma ray hits
+the camera, it will usually be absorbed by the lead in the collimator because it
+will either be traveling in an improper direction or will miss a collimator hole.
+We will ignore Compton scattering in our development of an imaging equation;
+hence, photons are assumed to travel in straight lines.
+After biodistribution, the radioactive atoms constituting a radiotracer are
+distributed throughout the body (or sample) as a spatially varying concentration
+Figure 8.9
+Imaging geometry
+showing the paths of ﬁve
+photons (a, b, c, d, and e)
+and a camera-centric
+coordinate system.
+z
+y
+x
+abcde
+Patient
+Gamma
+camera

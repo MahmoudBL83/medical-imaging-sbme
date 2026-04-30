@@ -1,0 +1,55 @@
+226 Chapter 6 Computed Tomography
+(c) Deﬁne the triangle functionas
+f (x, y) =
+{ 10 ≤ y ≤ 1 −| x|
+0 otherwise .
+Find mp
+(π
+4
+)
+and cp
+(π
+4
+)
+for the triangle function.
+6.12 Consider an object comprising two small metal pellets located at ( x, y) =
+(2, 0) and (2, 2) and a piece of wire stretched straight between (0,−2) and
+(0, 0).
+(a) Sketch this object.
+Assume that N photons are ﬁred at each lateral positionℓ in a parallel-ray
+conﬁguration. For simplicity, assume that each metal object stops 1/2t h e
+photons that are incident upon it no matter what angle it is hit.
+(b) Sketch the number of photons you would expect to see as a function
+of ℓ for θ = 0◦ and θ = 90◦.
+(c) Draw the projections you would see at θ = 0◦ and θ = 90◦.
+(d) Sketch the backprojection image you would get at θ = 0◦ (without
+ﬁltering).
+6.13 Consider the object in Figure P6.1 that is an equilateral triangle centered
+at the origin, each side of which is of length a and one side of which is
+parallel to the x axis. Suppose the object has constant linear attenuation
+coefﬁcient μ and is being imaged in a 1G CT scanner. Assume μ = 1 and
+a = 6.
+Figure P6.1
+Object geometry for
+Problem 6.13. a
+aa
+x
+y
+(0, 0)
+(a) Find a formula for the projection g(ℓ,6 0◦) and sketch it.
+(b) What is the value of b60◦ (0, a/4) for g(ℓ,6 0◦)?
+(c) Find F(ϱ cos 60◦, ϱ sin 60◦).
+6.14 In ﬁnding an approximation ˜c(ℓ) for the ramp ﬁlter in ﬁltered backpro-
+jection, you decide to multiply |ϱ | by the triangular window of width ϱ 0
+given by
+W(ϱ ) =
+⎧
+⎨
+⎩
+1 − |ϱ |
+ϱ 0
+|ϱ |≤ ϱ 0
+0 otherwise
+.
+(a) Derive an expression for the approximate ﬁlter ˜c(ℓ).
+(b) Describe what happens as ϱ 0 →∞ .

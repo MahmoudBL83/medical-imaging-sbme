@@ -1,0 +1,55 @@
+2.3 Systems 27
+Question Is this system linear and shift-invariant?
+Answer If g′(x, y) is the response of the system to input ∑ K
+k=1 wkfk(x, y), then
+g′(x, y) = 2
+⎛
+⎝
+K∑
+k=1
+wkfk(x, y)
+⎞
+⎠
+=
+K∑
+k=1
+wk2fk(x, y)
+=
+K∑
+k=1
+wkgk(x, y) , (2.41)
+where gk(x, y) is the response of the system to input fk(x, y). Therefore, the system is
+linear. On the other hand, ifg′(x, y) is the response of the system to inputf (x − x0, y − y0),
+then
+g′(x, y) = 2f (x − x0, y − y0) = g(x − x0, y − y0) , (2.42)
+and the system is also shift-invariant.
+EXAMPLE 2.3
+Consider a continuous system with input-output equation
+g(x, y) = xyf (x, y) . (2.43)
+Question Is this system linear and shift-invariant?
+Answer If g′(x, y) is the response of the system to input ∑ K
+k=1 wkfk(x, y), then
+g′(x, y) = xy
+⎛
+⎝
+K∑
+k=1
+wkfk(x, y)
+⎞
+⎠
+=
+K∑
+k=1
+wkxyfk(x, y)
+=
+K∑
+k=1
+wkgk(x, y) , (2.44)
+where gk(x, y) is the response of the system to input fk(x, y). Therefore, the system is
+linear. On the other hand, ifg′(x, y) is the response of the system to inputf (x − x0, y − y0)
+where x0 ̸= 0 and y0 ̸= 0, then
+g′(x, y) = xyf (x − x0, y − y0)
+̸= (x − x0)(y − y0)f (x − x0, y − y0) .
+Thus,
+g′(x, y) ̸= g(x − x0, y − y0) , (2.45)
+and the system is not shift-invariant.

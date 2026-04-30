@@ -1,0 +1,45 @@
+64 Chapter 3 Image Quality
+Notice that the separation between two adjacent maxima (or minima) of the
+sinusoidal input f (x, y)i s1 /u. The recorded imageg(x, y) is also sinusoidal, with
+1/u being the separation between two adjacent maxima (or minima) as well.
+However, the amplitude of the output image equals the amplitude of the input
+multiplied by the MTF at spatial frequencyu. In practice, MTF(u) ̸= 0, for every
+u ≤ uc, and MTF(u) = 0, for every u > uc, for some spatial cutoff frequency uc,
+in which case, g(x, y) = 0, for every u > uc. In this case, the resolution of the
+system will be 1/uc.
+EXAMPLE 3.3
+The MTF depicted in Figure 3.3 becomes zero at spatial frequencies larger than 0.8m m−1.
+Question What is the resolution of this system?
+Answer The resolution of a system with such an MTF is 1 /(0.8m m−1) = 1.25 mm.
+Fine structures of an object to be imaged by such a system with spatial frequencies larger
+than 0.8m m−1 cannot be seen at the output of the system.
+From our discussion, we ﬁnd that the MTF can be effectively used to
+compare two competing medical imaging systems in terms of their contrast and
+resolution. If the MTFs of the two systems under consideration are of a similar
+shape but have a different cutoff frequency u
+c, we can conclude that the system
+with higher MTF values will be better in terms of contrast and resolution.
+For example, the radiographic imaging system depicted in the ﬁrst panel in
+Figure 3.4 is better in terms of contrast and resolution than the system depicted
+in the third panel.
+If the MTF curves are of different shapes, the situation is more complicated.
+Figure 3.7 depicts two MTF curves that correspond to two competing medical
+imaging systems: SYSTEM 1 and SYSTEM 2. SYSTEM 1 has better low fre-
+quency contrast, and is thus better for imaging coarse details, while SYSTEM 2
+has a better high frequency contrast, and is thus better for imaging ﬁne details.
+Since contrast, as quantiﬁed by the MTF, is a function of spatial frequency, we
+can make this sort of frequency-by-frequency comparison. Spatial resolution,
+as described here, is not frequency-dependent, so it becomes harder to directly
+compare MTFs in the context of ‘‘better resolution.’’ As described above, the
+FWHM of the PSF or LSF is the most direct metric of resolution. Further
+Figure 3.7
+MTF curves of two
+competing medical
+imaging systems.
+0 0.2 0.4 0.6 0.8 1.0 1.2 1.4
+1.0
+MTF(u)
+SYSTEM 1
+SYSTEM 2
+mm/H110021
+Spatial frequency u

@@ -1,0 +1,47 @@
+56 Chapter 3 Image Quality
+that produces low contrast images, since anatomical and functional features are
+easier to identify in high contrast images.
+3.2.1 Modulation
+Use of a periodic signal and its modulation is an effective way to quantify
+contrast. The modulation m
+f of a periodic signal f (x, y), with maximum and
+minimum values fmax and fmin, is deﬁned by
+mf = fmax − fmin
+fmax + fmin
+. (3.1)
+Modulation quantiﬁes the relative amount by which the amplitude (or difference)
+(fmax − fmin)/2o f f (x, y) stands out from the average value (or background)
+(fmax + fmin)/2. In general, mf refers to the contrast of the periodic signal f (x, y)
+relative to its average value. We assume here thatf (x, y) has nonnegative values,
+in which case 0 ≤ mf ≤ 1. Of importance, mf = 1 only when fmin = 0. Thus, in
+practice, the usual presence of a nonzero ‘‘background’’ intensity in a medical
+image reduces image contrast. If mf = 0 (in which case, fmin = fmax), we say
+that f (x, y) has no contrast. If f (x, y) and g(x, y) are two periodic signals with
+the same average value, we say that f (x, y) has more contrast than g(x, y)i f
+mf > mg.
+3.2.2 Modulation Transfer Function
+The way a medical imaging system affects contrast can be investigated by
+imaging a sinusoidal object f(x, y)o ft h ef o r m
+f (x, y) = A + B sin(2πu0x) , (3.2)
+where A and B are two nonnegative constants such that A ≥ B.T h i si sa
+sinusoidal object that varies only in the x direction with spatial frequency u0.
+Notice that fmax = A + B and fmin = A − B, so the modulation off (x, y)i sg i v e n
+by
+mf = B
+A . (3.3)
+Figure 3.1 depicts four instances of f (x, y) for the cases when mf = 0, 0.2, 0.5,
+1. Notice that as modulation increases, it becomes much easier to distinguish
+differences in shades of gray in the image of f (x, y); in other words, contrast
+increases.
+We are now interested in determining how an linear shift-invariant (LSI)
+imaging system with point spread function (PSF) h(x, y) affects the modulation
+of f (x, y); that is, we are interested in mathematically relating the modulation
+mg of the output g(x, y) to the modulation mf of the input f (x, y). In order
+to simplify our discussion, we assume that h(x, y) is circularly symmetric [see
+(2.104)]. Since
+f (x, y) = A + B sin(2πu0x) = A + B
+2j
+[
+ej2πu0x − e−j2πu0x
+]
+, (3.4)

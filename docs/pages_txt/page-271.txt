@@ -1,0 +1,46 @@
+252 Chapter 7 The Physics of Nuclear Medicine
+3. A given radionuclide is characterized by its decay mode (which indicates
+the type of ionizing radiation emitted) and half-life (the time for half the
+radioactive atoms to decay, on average).
+4. Radioactive decay is a random process that is governed by the Poisson
+distribution. Its statistical properties are determined by the number of
+radioactive atoms, time, and a decay constant, which is a characteristic of a
+given radionuclide.
+5. Radiotracers make use of radionuclides that emit radiation of appropriate
+type and energy, have half-lives that are not too short or too long, and can
+be used safely in the body to reveal physiology or function.
+Further Reading
+Cherry, S.R., Sorenson, J.A., and Phelps, M.E.
+Physics in Nuclear Medicine, 4th ed. Philadel-
+phia, PA: W.B. Saunders, 2012.
+Christian, P.E. and Waterstram-Rich, K.M.Nuclear
+Medicine and PET/CT: Technology and Tech-
+niques, 7th ed. New York, NY: Elsevier/
+Mosby, 2012.
+Rollo, F.D. Nuclear Medicine Physics: Instrumenta-
+tion and Agents. St. Louis, MO: C. V. Mosby,
+1977.
+Wolbarst, A.B. Physics of Radiology, 2nd ed. Nor-
+walk, CT: Appleton and Lange, 2005.
+Problems
+Fundamentals of Atoms
+7.1 Show that 1 u is equivalent to 931 MeV.
+7.2 A deuteron has 1 proton and 1 neutron and has a mass of 2.01355 u.
+Compute its mass defect and binding energy.
+Radioactive Decay and Its Statistics
+7.3 Compute the mean and variance of a Poisson distribution with parametera.
+7.4 Suppose there are 1 × 109 radioactive atoms in a given sample of iodine-
+123 (123I), which has a half-life of 13 hours.
+(a) What is the radioactivity of the original sample?
+(b) How many radioactive atoms can be expected to be present after
+24 hours?
+(c) What is the probability that there will be 1 × 108 radioactive atoms
+left after 24 hours?
+7.5 Consider the problem in Example 7.1 and suppose we have 1 × 1012
+atoms of technetium-99m to start with. What is the intensity measured at
+t = 0 and at t = 1 hour?
+7.6 (a) How long will it take for a radioactive sample with activity 1 Ci to
+decay to activity 1 Bq if the half-life is τ.
+(b) What approximate order of magnitude would you want the half-life
+of a radioactive tracer used in nuclear medicine to be? Milliseconds?
+Seconds? Minutes? Hours? Days? Weeks? Years? Explain your answer.

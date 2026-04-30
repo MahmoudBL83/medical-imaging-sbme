@@ -1,0 +1,53 @@
+242 Chapter 7 The Physics of Nuclear Medicine
+protons repel each other when separated by a distance greater than the diameter
+of a nucleus. Within the nucleus, however, an attractive force, the nuclear
+or strong force, is responsible for holding neutrons and protons together.
+The energy required to separate the constituent protons and neutrons in a
+nucleus is the nuclear binding energy.
+Radioactive decayis the process by which an atom rearranges its constituent
+protons and neutrons to end up with lower inherent energy. Radioactive decay
+occurs spontaneously, and energy is released in the process. The result of
+radioactive decay is an atom (the daughter atom) with less inherent energy than
+that which preceded it (the radioactive parent atom). This change in energy is
+reﬂected in the nuclear binding energy discussed above. Since binding energy is
+the amount of energy missing from an atom, the daughter atom has a higher
+binding energy per nucleon than the parent atom.
+7.3.2 Line of Stability
+If the different unique combinations of protons and neutrons as a nucleus that
+are found in nature are cataloged, they can be separated into two groups:
+nonradioactive nuclides, which are stable, and radioactive nuclides, which are
+called radionuclides. In general, the total number of nucleons, and the ratio of
+neutrons to protons, determine whether a nuclide is stable or radioactive.
+A graph of the number of neutrons as a function of the number of protons
+for each unique stable nuclide produces a curve that follows the line of identity
+at low to intermediate atomic numbers (i.e., the nucleus has the same number
+of protons as neutrons), and then diverges up, so that for stable nuclides at
+higher atomic numbers there are more neutrons than protons in the nucleus.
+This curve, shown in Figure 7.2, is called the line of stability, because it depicts
+the data from all the stable nuclides. (It is called a ‘‘line’’ in practice even though
+it is not a straight line.) When plotted on the same graph, radionuclides fall
+off this line of stability. One way of conceptualizing radioactive decay is as the
+attempt of any radioactive atom that is ‘‘off’’ of this line of stability to reach the
+line of stability. In order to move toward the line of stability, an atom changes
+its proton to neutron ratio in the process of radioactive decay.
+The greater the binding energy per nucleon, the more stable the atom.
+Thus, a second way to conceptualize radioactive decay is as a process an atom
+undergoes to increase its binding energy per nucleon. Since the daughter atom
+will always have a higher binding energy per nucleon than the parent atom,
+Figure 7.2
+Stable elements having
+proton/neutron pairings
+that lie on the line of
+stability.
+20 40 60 80 100
+Number of protons, Z
+Number of neutrons, N
+20
+40
+60
+80
+100
+120
+Stable
+nuclides
+Z /H11005 N

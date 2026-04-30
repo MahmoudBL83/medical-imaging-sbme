@@ -1,0 +1,48 @@
+266 Chapter 8 Planar Scintigraphy
+Figure 8.6
+Arrangement of nine
+square PMTs of an Anger
+camera.
+2 mm x
+y
+O
+1
+4
+7
+2
+5
+8
+3
+6
+9
+(PROM) chips determines the event position utilizing the center-of-mass calcu-
+lation described above. An advantage of digital position estimation systems is
+that alternative algorithms can be easily implemented.
+EXAMPLE 8.3
+Consider an Anger camera with nine square PMTs arranged in a 3 × 3 array, as shown
+in Figure 8.6. Each tube is numbered, and the recorded pulse heights of the tubes are: 5,
+10, 15, 10, 40, 30, 0, 5, 10, in the order of the tube numbers.
+Question What is the value of the Z-pulse? What is the position of the event?
+Answer The value of theZ-pulse is the summation of the pulse height recorded by each
+tube:
+Z = 5 + 10 + 15 + 10 + 40 + 30 + 0 + 5 + 10 = 125 .
+The centers of the tubes are
+c1 = (−2, 2), c2 = (0, 2), c3 = (2, 2) ,
+c4 = (−2, 0), c5 = (0, 0), c6 = (2, 0) ,
+c7 = (−2, −2), c8 = (0, −2), c9 = (2, −2).
+The estimated position of the event is
+X = 1
+Z
+K∑
+k=1
+xkak = 80/125 = 0.64 mm,
+Y = 1
+Z
+K∑
+k=1
+ykak = 30/125 = 0.24 mm .
+8.3.2 Acquisition Modes
+For each scintillation event whose pulse height falls within the photopeak energy
+window, an Anger camera provides the estimated position ( X, Y) of the event,
+the time of the event, and the peak height of theZ-pulse. In list mode acquisition,
+the (X, Y) signals are transferred directly to computer memory in the form of

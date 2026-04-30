@@ -1,0 +1,35 @@
+CHAPTER
+44
+Physics of
+Radiography
+4.1 Introduction
+This chapter provides an introduction to the physics behind x-ray imaging
+modalities. Broadly speaking, these modalities can be divided into two types,
+projection radiography and computed tomography, which we cover in the
+next two chapters. These modalities do not involve radioactivity (a common
+misconception), so we delay the introduction of radioactivity until Chapter 7,
+where it is needed for the presentation of the nuclear medicine modalities in
+Chapters 8 and 9.
+As we pointed out in Chapter 1, x-rays were discovered in 1895 by Roentgen
+while working with a Crooke’s tube (a precursor to the modern x-ray tube).
+He noticed that ‘‘rays of mysterious origin,’’ which he named x-rays, caused a
+ﬂuorescent plate to glow. Upon investigation, he determined that these rays were
+in fact produced by the tube. The ﬁrst radiograph of a human being—the hand
+of Roentgen’s wife—was made by Roentgen within a month of the discovery.
+Roentgen’s discovery of x-rays and their immediate application to imaging the
+human body truly mark the birth of medical imaging.
+Today, we know that x-rays are electromagnetic (EM) waves whose fre-
+quencies are much higher than those of visible light. They are only one form
+of ionizing radiation —that is, radiation capable of ejecting electrons from
+atoms—used in medical imaging, however. Other forms of ionizing radiation
+used in medical imaging include particulate radiation and gamma rays.B o t h
+particulate radiation and gamma rays can be products of radioactive decay, and
+we will have more to say about this in Chapter 7. It also turns out that an
+electron beam, which is a form of particulate radiation, is used in the produc-
+tion of x-rays. So, we need to study certain aspects of particulate radiation in
+this chapter as well. Furthermore, gamma rays, like x-rays, are high-frequency
+EM waves. So, in studying the propagation properties of x-rays, we are also
+implicitly studying the same for gamma rays.
+This chapter provides a necessary background for all imaging modali-
+ties that use ionizing radiation, including projection radiography (Chapter 5),
+106

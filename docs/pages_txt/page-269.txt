@@ -1,0 +1,46 @@
+250 Chapter 7 The Physics of Nuclear Medicine
+TABLE 7.1
+Common Radionuclides in Nuclear Medicine
+Gamma Emitters
+Z Nuclide Half-life Photon Energy (keV)
+24 Chromium-51 28 d 320
+31 Gallium-67 79.2 h 92, 184, 296
+34 Selenium-75 120 d 265
+38 Strontium-87m 2.8 h 388
+43 Technetium-99m 6 h 140
+49 Indium-111 2.8 d 173, 247
+Indium-113m 1.73 h 393
+53 Iodine-123 13.3 h 159
+Iodine-125 60 d 35, 27
+Iodine-131 8.04 d 364
+54 Xenon-133 5.3 d 81
+80 Mercury-197 2.7 d 77
+81 Thallium-201 73 h 135, 167
+Positron Emitters
+Z Nuclide Half-life Positron Energy (keV)
+6 Carbon-11 20.3 min 326
+7 Nitrogen-13 10.0 min 432
+8 Oxygen-15 2.1 min 696
+9 Fluorine-18 110 min 202
+29 Copper-64 12.7 h 656
+31 Gallium-68 68 min 1,900
+33 Arsenic-72 26 h 3,340
+35 Bromine-76 16.1 h 3,600
+37 Rubidium-82 1.3 min 3,150
+53 Iodine-122 3.5 min 3,100
+Source: Wolbarst, 1993.
+renal function. Gaseous O 2 in which one oxygen atom has been replaced by
+oxygen-15 is used to measure blood ﬂow and to assess oxygen metabolism
+with positron emission tomography. Fluorodeoxyglucose (FDG) is used by the
+body like glucose, except that the (labeled) ﬂuorine-18 atoms remain where the
+molecule is ﬁrst used. Imaging the uptake of FDG in the brain, for example, is
+thought to reveal aspects of the mental processes involved in motor, perceptual,
+and cognitive tasks.
+A ﬁnal and somewhat subtle desirable characteristic for gamma emitters is
+that they should have monoenergetic (single energy) decay. The reason for this
+is that with monoenergetic emissions, energy-sensitive detection can be used to
+discriminate the primary photons from those that have been Compton scattered.
+It can be seen from Table 7.1 that most of these common radionuclides are
+monoenergetic. Even those that are not monoenergetic, such as Tl-201 and
+Ga-67, emit only two or three different energy photons, in contrast to a typical
+polyenergetic x-ray beam, which has a continuous spectrum of energies.

@@ -1,0 +1,42 @@
+3.5 Signal-to-Noise Ratio 77
+3.5.1 Amplitude SNR
+Most frequently, the SNR is expressed as the ratio of signal amplitude to noise
+amplitude:
+SNRa = Amplitude(f )
+Amplitude(N) . (3.58)
+We refer to SNR a as the amplitude SNR. Notice that there are many ways
+to specify what we mean by ‘‘signal’’ and ‘‘noise.’’ Moreover, exact def-
+inition of the amplitude SNR depends on specifying what we mean by
+‘‘signal amplitude’’ and ‘‘noise amplitude.’’ Thus, the amplitude SNR is case-
+dependent, and its deﬁnition must be speciﬁcally adapted to the particular
+situation at hand.
+EXAMPLE 3.10
+In projection radiography, the number of photons G counted per unit area by an x-ray
+image intensiﬁer follows a Poisson distribution as in (3.52). In this case, we may consider
+signal f to be the average photon count per unit area (i.e., the mean ofG) and noise N to
+be the random variation of this count around the mean, whose amplitude is quantiﬁed
+by the standard deviation of G.
+Question What is the amplitude SNR of such a system?
+Answer From (3.52) to (3.54), it follows that the amplitude SNR is given by
+SNRa = μG
+σG
+= μ√μ = √μ. (3.59)
+This quantity is known as the intrinsic SNR of x-rays, and we will have much more to
+say about this in Part II of the book. This tells us something very important and practical:
+The greater the average number μ of photons, the larger the amplitude SNR, and the
+smaller the relative amplitude of random ﬂuctuations in G. Therefore, a higher x-ray
+exposure generally improves the quality of radiographic images. Keep in mind, however,
+that greater exposure to ionizing radiation means more risk of radiogenic cancer.
+3.5.2 Power SNR
+Another way to express the SNR is as the ratio of signal power to noise power:
+SNRp = power(f )
+power(N) . (3.60)
+We refer to SNRp as the power SNR. Notice that exact deﬁnition of the power
+SNR depends on specifying what we mean by ‘‘signal power’’ and ‘‘noise
+power.’’ Thus, as with the amplitude SNR, the power SNR is case-dependent,
+and its deﬁnition must be speciﬁcally adapted to the particular situation at hand.
+EXAMPLE 3.11
+If f (x, y) is the input to a noisy medical imaging system with PSFh(x, y), then the output at
+(x, y) may be thought of as a random variable G(x, y) composed of signal h(x, y) ∗ f (x, y)
+and noise N(x, y), with mean μN(x, y) and variance σ2
+N(x, y).

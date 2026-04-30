@@ -1,0 +1,39 @@
+7.7 Summary and Key Concepts 251
+Technetium-99m (Tc-99m) is by far the most commonly used gamma ray
+producing radionuclide in nuclear medicine. It is easily generated on-site using
+a generator containing molybdenum-99, whose radioactive decay (half-life is
+67 hours) produces Tc-99m. Tc-99m can in turn be tagged to a variety of
+molecules, including sulfur colloids, glucoheptonate, albumin macroaggregates,
+and phosphates, which can be used to track a variety of physiological processes
+in the body. Tc-99m has a half-life of 6 hours and a monoenergetic gamma
+ray energy of 140 keV, which are both ideal in terms of balancing the various
+radionuclide requirements. As we describe in the following chapters the instru-
+mentation related to planar scintigraphy and SPECT, it will be useful to think
+of Tc-99m as the radioactive source and to work out examples with this source
+as well.
+EXAMPLE 7.4
+Consider an experiment that uses dual radionuclides, technetium-99m and thallium-201.
+At t = 0, we have equal number of atoms of both radionuclides.
+Question When will the count rate of technetium-99m be smaller than 20 percent of
+the total count rate?
+Answer The average number of photons from technetium-99m is given by
+/Delta1NTc(t) = λTcN0e−λTct.
+Similarly, for thallium-201, we have
+/Delta1NTl(t) = λTlN0e−λTlt.
+When the counts of technetium-99m are smaller than 20 percent of the total counts, we
+must have
+4/Delta1NTc(t) ≤ /Delta1NTl(t).
+From Table 7.1, we know λTc = 0.693/6h r−1 and λTl = 0.693/73 hr−1. Solving the
+above equation, we have
+t = 36.65 hr.
+7.7 Summary and Key Concepts
+Nuclear medicine makes use of radiotracers (compounds that are chemically
+labeled with radioactive atoms), which depend on the radioactive decay of
+radionuclides. The choice and behavior of speciﬁc radionuclides signiﬁcantly
+inﬂuences the utility of the radiotracer. In this chapter, we presented the
+following key concepts that you should now understand:
+1. Nuclear medicine produces images that depict the distribution of a radio-
+tracer; this distribution is governed by body function, not structure.
+2. Nuclear medicine makes use of radionuclides; these are unique nuclear
+species representing radioactive atoms, which emit ionizing radiation upon
+(spontaneous) decay.

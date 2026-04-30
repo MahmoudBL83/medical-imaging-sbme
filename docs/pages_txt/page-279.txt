@@ -1,0 +1,41 @@
+260 Chapter 8 Planar Scintigraphy
+Figure 8.4
+Example arrangement of
+61 PMTs on the face of a
+circular Anger camera.
+Rectangular scintillators
+are most commonly used
+today and more complex
+shapes and arrangements
+of the PMTs are used to
+ﬁt those crystals.
+x
+y
+8.2.4 Positioning Logic
+When a gamma photon interacts with the crystal, thousands of scintillation
+photons are produced, and every PMT produces an output pulse. The goal of
+the Anger camera’s positioning logic circuitry is to determine both where the
+event occurred on the face of the crystal (see Figure 8.4) and the combined
+output of all the tubes, which represents the light output of the crystal (which
+in turn represents the energy deposited by the gamma photon). These output
+signals are denoted asX and Y for the estimated two-dimensional position of the
+event and Z for the total light output (which is proportional to the total energy
+deposited in the crystal by that gamma photon). The amplitude of a given tube’s
+output is directly proportional to the amount of light (number of scintillation
+photons) its photocathode receives. The tubes closest to the scintillation event
+will have the largest output pulses, while those farther away will have smaller
+output pulses. By analyzing the spatial distribution of pulse heights, the location
+of a single scintillation event ( X, Y) can be determined quite accurately—to
+within a fraction of the diameter of a PMT, in fact. We will discuss this process
+later, but for now it is important to remember that the rate of (X, Y, Z) signals
+or pulses coming from the camera is proportional to total radioactivity, and
+the size or height of each Z-pulse is proportional to the energy deposited in the
+crystal by the gamma photon for the event that (X, Y, Z) represents.
+8.2.5 Pulse Height Analyzer
+The desired goal of the Anger camera is to create an image that portrays
+the distribution of radioactivity (i.e., sites and numbers of radioactive atoms)
+within the patient. Because the collimator only allows those photons traveling
+in predetermined directions to interact in the crystal, a line drawn from the
+scintillation event in the crystal through the nearest collimator hole is presumed
+to intersect the site of origin of the photon (i.e., the radioactive atom it came
+from) in the patient. If the photon has been Compton scattered in the patient,

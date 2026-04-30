@@ -1,0 +1,34 @@
+9.1 Instrumentation 297
+Specialized Geometry SPECT Systems Several manufacturers have released
+commercial SPECT systems that rely on a combination of more exotic detectors
+and specialized geometry in an attempt to signiﬁcantly enhance imaging perfor-
+mance, especially detection sensitivity. Many of these systems utilize a solid-state
+detector, cadmium-zinc-telluride (CZT), which we mentioned in Section 8.2.8.
+CZT has signiﬁcantly better energy resolution than NaI along with higher count-
+rate capability. It can be manufactured as a pixelated detector; with 1 × 1m m
+pixels, intrinsic spatial resolution < 2 mm can be achieved. The specialized
+SPECT systems combine CZT or another detector material with unique collima-
+tion approaches; for example, multiheads and a multipinhole array. A picture
+of one such system is shown in Figure 9.2.
+Some of these approaches involve movement of the detectors and/or colli-
+mators; others do not. In all cases, the specialized geometry yields signiﬁcantly
+higher detection sensitivity, by a factor of as much as eight, particularly for car-
+diac imaging (for which many of these systems have been speciﬁcally optimized).
+This increased sensitivity can be used to decrease dose, imaging time, and/or
+image noise. All such unique approaches require specialized reconstruction
+methods.
+Combined SPECT/CT Systems As we have emphasized throughout this book,
+each imaging modality yields a very different type of signal or signals, which
+is why each is clinically useful and none are redundant. Nuclear medicine
+images depict function (e.g., the activity of a physiological or biochemical
+process) rather than structure or anatomy. However, the spatial resolution
+in most nuclear medicine images is no better than several millimeters, and
+the radiotracer’s distribution does not necessarily follow anatomical borders,
+making anatomic localization difﬁcult. Accordingly, there has been a push in
+emission tomography, especially in PET (as we shall see below) and also in
+SPECT, to build combined systems that also incorporate CT. In such systems,
+Figure 9.2
+A GE Discovery NM
+530c cardiac SPECT
+system. Courtesy of GE
+Healthcare.

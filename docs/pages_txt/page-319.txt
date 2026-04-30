@@ -1,0 +1,36 @@
+300 Chapter 9 Emission Computed Tomography
+thicker, which increases positioning uncertainty. Because of this and because of
+the inefﬁcient angular acquisition, dual-head SPECT scanners are not an ideal
+solution for PET, and commercial PET systems based on this approach have not
+been available for a long time.
+Full-ﬂedged PET systems surround the patient with multiple rings of detec-
+tors, each having a diameter of about 100 cm, as shown in Figure 9.5. Each
+detector is electronically coupled to every other detector in a comprehensive
+ACD circuit. Older systems used a single scintillation crystal coupled to a PMT
+as the basic detector. The requirement for better resolution, however, has led
+to the development of so-called detector blocks that are based on the Anger
+camera principle. As an example, each detector block might comprise a single
+scintillation crystal backed by four PMTs, which are arranged in a 2× 2 matrix,
+as illustrated in Figure 9.6. The scintillation crystal is cut into an array of smaller
+crystals, typically 8 × 4, 8 × 7, or 8 × 8 arrays, which partially isolate the light
+burst from each scintillation event to one of these subcrystals. Relative PMT
+signal heights are used to identify which of the subcrystals contained the event
+in a crude approximation of the center of mass calculation, as in a conventional
+Anger camera (see Problem 9.7).
+With the block detector approach, a full PET scanner consists of a number
+of these blocks. As an example, a PET scanner might have three primary rings of
+detectors with 48 detector blocks in each ring for a total of 144 detector blocks
+(3 × 48). Each detector block has 64 subcrystals backed by four PMTs, which
+means that we can also think of this PET scanner as having 24 rings (3 rings ×
+8 subcrystals) and 384 detectors per ring (48 detector blocks × 8 subcrystals).
+Figure 9.5
+Geometry of a
+multiple-ring PET system. Detector blocks
+Multiple rings
+Figure 9.6
+Geometry of a PET
+detector block.
+Cuts in
+crystal
+BGO crystal
+Four PMTs

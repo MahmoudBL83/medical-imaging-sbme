@@ -1,0 +1,46 @@
+3.2 Contrast 55
+Sometimes, medical images are blurry and lack detail. The ability of a
+medical imaging system to depict details is known asresolution. High resolution
+systems create images of high diagnostic quality. Low resolution systems create
+images that lack ﬁne detail. For example, while the PET image in Figure I.4(c)
+has higher contrast than the CT image in Figure I.4(a) or the MRI image in
+Figure I.4(b), it has poorer spatial resolution.
+A medical image may be corrupted by random ﬂuctuations in image intensity
+that do not contribute to image quality. This is known as noise. The source,
+amount, and type of noise depends on the particular imaging modality used.
+Object visibility is often reduced by the presence of noise, because the noise
+masks image features. Nuclear medicine images tend to have the highest noise,
+as reﬂected in the PET image in Figure I.4(c).
+Most medical imaging systems can create image features that do not rep-
+resent a valid object within, or characteristic of, the patient. These features
+are known as artifacts, and can frequently obscure important features or be
+falsely interpreted as abnormal ﬁndings. Medical images should not only make
+desired features visible but should also give an accurate impression of their
+shape, size, position, and other geometric characteristics. Unfortunately, for
+many reasons to be explained later in this book, medical imaging systems
+frequently introduce distortion of these important factors. Distortion in med-
+ical images should be corrected in order to improve the diagnostic quality of
+these images.
+Ultimately, the quality of medical images should be judged on their utility in
+the context of a speciﬁc clinical application. For example, medical images that
+increase the chance of tumor detectability in nuclear medicine should be prefer-
+able to images with poor tumor detectability. Fundamentally, we are interested
+in the accuracy of medical images in the context of a clinical application, where
+‘‘accuracy’’ means both conformity to truth and clinical utility.
+The user of a medical imaging system is very interested in adjusting the
+system to produce images of the highest possible quality, while maintaining a
+safe environment for the patient. In order to achieve this, methods must be
+developed for evaluating image quality. Since image quality depends primarily
+on the six previously discussed factors, we need to mathematically quantify these
+factors and systematically study their inﬂuence on image quality. The purpose
+of this chapter is to provide a fundamental exposition on contrast, resolution,
+noise, artifacts, distortion, and accuracy. More detailed discussions on these
+factors, and how they affect image quality for a speciﬁc imaging modality, will
+be provided later.
+3.2 Contrast
+Contrast refers to differences between the image intensity of an object and
+surrounding objects or background. This difference, or image contrast,i si t s e l f
+the result of the inherent object contrast within the patient. In general, the goal
+of a medical imaging system is to accurately portray or preserve the true object
+contrast in the image. Particularly for detection of abnormalities, a medical
+imaging system that produces high contrast images is preferable to a system

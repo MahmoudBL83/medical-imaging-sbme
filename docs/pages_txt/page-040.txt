@@ -1,0 +1,56 @@
+2.2 Signals 21
+where the value at |x|= 1/2, |y|≤ 1/2o r |x|≤ 1/2, |y|= 1/2 is immaterial.
+(If this value is desired, we usually set it to 1 /2.) The rect function is a ﬁnite
+energy signal, with unit total energy, that models signal concentration over a
+unit square centered around point (0, 0). We can use the product
+f (x, y) rect
+( x − ξ
+X , y − η
+Y
+)
+(2.17)
+to select that part of signal f (x, y) centered at a point ( ξ, η) of the plane with
+width X and height Y, and set the rest to zero.
+The rect function can be written as the product of two 1-D rect functions,
+rect(x, y) = rect(x) rect(y) , (2.18)
+where
+rect(x) =
+⎧
+⎪⎪
+⎪⎨
+⎪⎪
+⎪⎩
+1, for |x| < 1
+2
+0, for |x| > 1
+2
+. (2.19)
+The 1-D rect function is plotted in Figure 2.4(a).
+The sinc functionis given by
+sinc(x, y) =
+⎧
+⎪⎪
+⎨
+⎪⎪⎩
+1, for x = y = 0
+sin(πx) sin(πy)
+π2xy , otherwise.
+(2.20)
+The sinc function is a ﬁnite energy signal with unit total energy. Its maximum
+value equals 1, and is attained at point (0, 0). The sinc function can be written
+as the product of two 1-D sinc functions,
+sinc(x, y) = sinc(x) sinc(y), (2.21)
+Figure 2.4
+(a) The 1-D rect function
+rect(x), and (b) the 1-D
+sinc function sinc(x).
+x
+1
+12 3 40
+rect(x)
+sinc(x)
+x1/2
+1
+0
+(a) (b)
+/H110021/2 /H110024 /H110023 /H110022 /H110021

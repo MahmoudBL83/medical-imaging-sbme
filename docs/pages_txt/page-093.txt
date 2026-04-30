@@ -1,0 +1,35 @@
+74 Chapter 3 Image Quality
+where λ is called the average arrival rateof the x-ray photons.
+Question What is the probability that there is no photon detected in time t?
+Answer The probability that there is no photon detected in time t is
+Pr[N(t) = 0] = (λt)0
+0! e−λt = e−λt.
+EXAMPLE 3.8
+For the Poisson process of Example 3.7, the time that the ﬁrst photon arrives is a random
+variable, say T.
+Question What is the pdf pT (τ) of random variable T?
+Answer Assume that the ﬁrst photon arrives in the interval t < T < t + /Delta1t. For very
+small /Delta1t, we have
+Prob[t < T < t + /Delta1t] ≈ pT (t)/Delta1t.
+For this to happen, it must be true that no photons arrived in the interval [0, t] and
+exactly one photon arrived in the interval [t, t + /Delta1t]. We learned from Example 3.7 that
+Prob[no photon detected in time t] = e−λt.
+The probability that exactly one photon will be detected in the interval [t, t + /Delta1t]i s
+Prob[One photon detected in interval [t, t + /Delta1t]] = (λ/Delta1t)1
+1! e−λ/Delta1t = λ/Delta1te −λ/Delta1t .
+Using the Taylor series expansion for the exponential function
+ex = 1 + x + x2
+2! + x3
+3! +···
+and the fact that /Delta1t is very small (and will go to zero in the limit) permits the
+approximation
+Prob[One photon detected in interval [t, t + /Delta1t]] ≈ λ/Delta1t
+where second-order terms in /Delta1t have been dropped. Putting all this together yields
+pT (t)/Delta1t ≈ Prob[no photon detected in time t]
+· Prob[One photon detected in interval [t, t + /Delta1t]]
+≈ e−λt · λ/Delta1t .
+As /Delta1t → 0, all approximations get tighter, and so we recognize by dividing both sides of
+the above equation by /Delta1t that
+pT (t) = λe−λt, t ∈ [0, ∞).
+The random variable T corresponding to this pdf is called the exponential random
+variable.

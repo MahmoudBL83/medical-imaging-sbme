@@ -1,0 +1,48 @@
+4.7 Summary and Key Concepts 131
+that any dose of radiation increases the risk of getting cancer, with larger
+doses proportionately increasing risk. Of importance, the physician and patient
+together usually make the decision that the medical beneﬁts of the imaging
+procedure outweigh any potential risks.
+4.7 Summary and Key Concepts
+Ionizing radiation is used in several imaging modalities, including projection
+radiography and CT. The interaction of particulate radiation creates x-rays
+used in these modalities; the interaction of the x-rays in the patient creates the
+radiograph. In this chapter, we presented the following key concepts that you
+should now understand:
+1. Ionization is the ejection of an orbiting electron from an atom; ionizing
+radiation has sufﬁcient energy to produce ionization.
+2. Ionizing radiation may be particulate or electromagnetic; the main ionizing
+radiations of interest in medical imaging are x-rays, gamma rays, energetic
+electrons, and positrons.
+3. Particulate ionizing radiation transfers energy via collisional transfer and
+radiative transfer(which results in bremsstrahlung x-rays).
+4. The probability of radiative transfer increases with increasing effective
+atomic number of the material through which the particulate radiation
+passes.
+5. EM ionizing radiation transfers energy in medical imaging applications via
+the photoelectric effector Compton scattering.
+6. The probability of electromagnetic interactions depends on the photon’s
+energy and the effective atomic number, density, and molecular weight of
+the material through which the EM radiation passes.
+7. Attenuation of the intensity of a beam of EM radiation by some material is
+described by a monoexponential relation and is a function of the thickness
+of the material and the linear attenuation coefﬁcient, which itself depends
+on characteristics of the material and photon energy.
+8. Radiation dose to tissues is characterized by effective dose, which itself
+includes considerations of deposited energy, the biological effectiveness of a
+given ionizing radiation, and the relative radiosensitivity of different tissues.
+Further Reading
+Attix, F.H.Introduction to Radiological Physics and
+Radiation Dosimetry. New York, NY: Wiley,
+1986.
+Bushberg, J.T., Seibert, J.A., Leidholdt, E.M., and
+Boone, J.M. The Essential Physics of Medical
+Imaging, 3rd ed. Philadelphia, PA: Lippincott
+Williams and Wilkins, 2012.
+Carlton, R.R. and Adler, A.M. Principles of Radio-
+graphic Imaging: An Art and a Science, 5th ed.
+Clifton Park, NY: Delmar Cengage Learning,
+2012.
+Hubbell, J.H. and Seltzer, S.M. Tables of X-Ray
+Mass Attenuation Coefﬁcients and Mass
+Energy-Absorption Coefﬁcients , version 1.4.

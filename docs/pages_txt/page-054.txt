@@ -1,0 +1,53 @@
+2.4 The Fourier Transform 35
+Figure 2.9
+Three images of
+decreasing spatial
+variation (from left to
+right) and the associated
+magnitude spectra
+[depicted as
+log(1 +| F(u, v)|)].
+Decreasing high-frequency content
+Magnitude spectrum Signal
+EXAMPLE 2.7
+Consider the 1-D rect function
+rect(x) =
+⎧
+⎨
+⎩
+1, for |x| < 1
+2
+0, for |x| > 1
+2
+. (2.75)
+Question What is its Fourier transform?
+Answer From (2.73), we have
+F1D(rect)(u) =
+∫ ∞
+−∞
+rect(x)e−j2πux dx
+=
+∫ 1/2
+−1/2
+e−j2πux dx
+= 1
+−j2πu e−j2πux
+⏐⏐⏐
+1/2
+−1/2
+= 1
+πu
+ejπu − e−jπu
+2j
+= sin(πu)
+πu = sinc(u) . (2.76)
+To derive (2.76), we have used the fact that if f (x) is a single-valued, bounded, and
+integrable function on [a, b] and there exists a function F(x) such that dF(x)/dx = f (x),
+for a ≤ x ≤ b, then
+∫ x
+a
+f (ξ) dξ = F(ξ)
+⏐⏐⏐
+x
+a
+= F(x) − F(a) , (2.77)

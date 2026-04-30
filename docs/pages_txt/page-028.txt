@@ -1,0 +1,41 @@
+1.5 Computed Tomography 9
+all projection radiographic methods. True tomography, the imaging of a 2-D
+slice of the 3-D body, cannot be directly accomplished using any modality in
+projection radiography. More details about projection radiography are given in
+Chapter 5.
+1.5 Computed Tomography
+As in projection radiography, CT uses x-rays. Unlike projection radiography,
+however, CT collects multiple projections of the same tissues from different
+orientations by moving the x-ray source around the body. CT systems have
+rows of digital detectors whose signals are input directly to a computer, and
+these signals are used to reconstruct one or more cross sections (slices) of
+the human body. In this way, although CT systems acquire projections that
+represent a ‘‘shadow’’ of the body, they generate truly tomographic images after
+reconstruction.
+The important historical phases in CT development are single-slice CT,
+helical CT, and multiple-row detector CT (MDCT). Single-slice CT systems
+acquire data within a single plane and reconstruct only one plane per rotation. In
+helical CT systems, the x-ray tube and detectors continuously rotate around in a
+large circle, while the patient is moved in a continuous motion through the circle’s
+center. From the patient’s perspective, the x-ray tube carves out a helix; hence,
+the name helical CT. The importance of this technique is in its ability to rapidly
+acquire 3-D data, such as a whole body scan, in less than a minute. In MDCT
+systems, there are many rows of detectors used to rapidly gather acone of x-ray
+data, comprising a 2-D projection of the 3-D patient. When the x-ray source and
+detectors revolve rapidly around the patient (one to two revolutions per second),
+very quick (near real-time) 3-D imaging is possible using these CT scanners.
+A typical CT scanner is shown in Figure 1.2(a). In the center of the picture,
+we can see the cylindrical opening in which the patient lies; a patient table is also
+visible. Around the cylindrical opening is a housing containing both the x-ray
+tube and the detector array. The gantry holding these components is capable
+of spinning rapidly around the patient. The computer displays and keyboard in
+the foreground are used for entering patient data and viewing images. Although
+CT images can be printed on paper or ﬁlm, the images are completely digital in
+nature since they are computed from the measured projections. The CT image
+Figure 1.2
+(a) A CT scanner and
+(b) a CT image of a slice
+through the liver.
+Source: Courtesy of GE
+Healthcare.
+(a) (b)

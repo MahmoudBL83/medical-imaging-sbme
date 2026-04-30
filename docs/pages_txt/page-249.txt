@@ -1,0 +1,45 @@
+230 Chapter 6 Computed Tomography
+Figure P6.2
+Object geometry for
+Problem 6.26.
+m1
+m2 10 20 30 cm
+x
+y
+(a) Calculate the incident intensity of the x-ray burst.
+(b) Ignore the dimension of the detector in this part. Find the intensity Id
+as a function of x for the measured projection at θ = 0◦. Sketch it.
+(c) Calculate the local contrast of the middle square given the measured
+projection Id(x). What is the local contrast of the projection g(ℓ,0 ) ?
+(d) Suppose the detector has a width of 1 cm. Find the measured projection
+Id(x)( x being a continuous variable) in this case, and sketch it. Will
+this change affect the local contrast? Explain.
+6.27 A CT system is designed to acquire M parallel-ray projections of f (x, y)a t
+angles θi = πi/M, i = 0, ... , M − 1. The collection of projections measured
+by this system (modeled to be continuous in ℓ) is deﬁned to be the
+M-projection Radon transform:
+DMf ={ g(ℓ, θi)| i = 0, ... , M − 1},
+where g(ℓ, θi) =
+∫∫
+f (x, y)δ(x cos θi + y sin θi − ℓ)dxdy is the projection at
+angle θi.
+(a) Draw a picture showing the four positions of the detector array
+required to determine D4f . Label which projection is acquired at each
+position.
+(b) Knowledge of DMf gives partial knowledge of the Fourier transform
+F(u, v)o f f (x, y). Draw a picture showing the set of points in the u-v
+plane where F(u, v) is known given D4f . Indicate which projection
+gave rise to each subset.
+(c) Now let G1 = DMf1. Deﬁne G2 = DM(f1 + f2), where f2 = cos 2πfxx
+cos 2πfyy, fx = cos(3π/16) and fy = sin(3π/16). Show that G2 = G1
+for M = 4.
+(d) For f2 given above, ﬁnd the minimum value ofM in order to guarantee
+that G2 ̸= G1.
+(e) The result of part (c) means that you can add a function to the original
+without changing its M-projection Radon transform. In this context,
+such functions are called a ghost functions. In theory, is it possible to
+make M large enough so that there are no ghost functions of DMf ?
+Explain your answer. What happens in practice?
+(f) Suppose one used large detectors, effectively low-pass ﬁltering each
+projection upon observation. Would f2 still be a ghost function?
+Explain.

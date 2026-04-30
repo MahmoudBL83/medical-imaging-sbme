@@ -1,0 +1,32 @@
+Contents
+Preface xv
+Part I Basic Imaging Principles 1
+1
+Introduction 5
+1.1 History of Medical Imaging 5
+1.2 Physical Signals 6
+1.3 Imaging Modalities 7
+1.4 Projection Radiography 7
+1.5 Computed Tomography 9
+1.6 Nuclear Medicine 10
+1.7 Ultrasound Imaging 11
+1.8 Magnetic Resonance Imaging 12
+1.9 Multimodality Imaging 13
+1.10 Summary and Key Concepts 13
+2
+Signals and Systems 15
+2.1 Introduction 15
+2.2 Signals 16
+2.2.1 Point Impulse 16
+2.2.2 Line Impulse 19
+2.2.3 Comb and Sampling Functions 19
+2.2.4 Rect and Sinc Functions 20
+2.2.5 Exponential and Sinusoidal Signals 22
+2.2.6 Separable Signals 23
+2.2.7 Periodic Signals 23
+2.3 Systems 24
+2.3.1 Linear Systems 24
+2.3.2 Impulse Response 25
+2.3.3 Shift Invariance 25
+2.3.4 Connections of LSI Systems 28
+vii

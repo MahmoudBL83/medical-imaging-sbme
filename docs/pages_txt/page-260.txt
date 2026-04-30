@@ -1,0 +1,67 @@
+7.3 Radioactive Decay 241
+been using throughout the book is the electron volt (eV), which is deﬁned as
+the amount of energy an electron gains when it is accelerated across a voltage
+potential of 1 volt. Based on E = mc2, one u is equivalent to 931 MeV.
+In general, a more massive nuclide is more likely to have a larger mass
+defect, and therefore a larger binding energy, without necessarily being more
+‘‘tightly bound.’’ Thus, it is often more appropriate to consider the bind-
+ing energy per nucleon rather than the total binding energy per se. As an
+example, we can again consider carbon-12. Since the mass defect of a carbon-
+12 atom is 0.098934 u, the binding energy is 0 .098934 × 931 = 92.1M e V .
+Since carbon-12 has 12 nucleons, the binding energy/nucleon = 92.1/12 =
+7.67 MeV/nucleon. A graph of the binding energy per nucleon as a function of
+mass number is shown in Figure 7.1. This graph is often referred to as thecurve of
+binding energy.
+Binding energy applies to both the protons and neutrons in the nucleus
+and to the orbiting electrons. An electrostatic attractive force exists between
+particles with opposite charge (e.g., positively charged protons in the nucleus
+and negatively charged orbiting electrons). An electron in an inner orbit is
+attracted to the positively charged nucleus with a greater force than an electron
+farther away. The energy required to remove an electron completely from an
+atom is the electron binding energy, which is greater for electrons in the orbits
+closer to the nucleus because of the greater attractive force of the nucleus for
+inner electrons.
+Why don’t the protons in the nucleus repel each other? Normally, an
+electrostatic repulsive force exists between particles with the same charge; Figure 7.1
+Average binding energy
+per nucleon as a function
+of mass number. All
+known nuclides are
+plotted; approximate
+positions of example
+nucleons are indicated.
+0 50 100 150 200 250 300
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+Number of Nucleons in the Nucleus, A
+Average Binding Energy  Per Nucleon, KeV
+Hydrogen-1
+Hydrogen-2
+Helium-3
+Hydrogen-3
+Lithium-6
+Lithium-7
+Beryllium-9
+Boron-11
+Nitrogen-14
+Fluorine-19
+Carbon-12
+Chlorine-35
+Iron-56
+Molybdenum-98
+Xenon-130
+Neodymium-150
+Tungsten-182
+Plutonium-208
+Xenon-136
+Hafnium-176
+Plutonium-194
+Uranium-235

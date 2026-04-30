@@ -1,0 +1,52 @@
+170 Chapter 5 Projection Radiography
+Suppose that all photons arriving at the detector have the same energy, hν,
+which might be called the effective energy in the actual case of a polyenergetic
+x-ray beam (see Example 4.4). In this case [combining (4.14) and (4.17)], the
+intensity is related to the number of photons by
+I = Nhν
+A/Delta1t , (5.35)
+where A is a small area on the detector—for example, a pixel—and /Delta1t is the
+duration of the x-ray burst. The number of photons N is a Poisson random
+variable, and in the background, we can denote the average number of photons
+per burst per area A as Nb. Then, the average background intensity is given by
+Ib = Nbhν
+A/Delta1t . (5.36)
+Also, the variance of the number of photons per burst per area A in the
+background is given by
+σ2
+b = Nb
+( hν
+A/Delta1t
+)2
+. (5.37)
+From (5.34), (5.35), (5.36), and (5.37), the local SNR is given by
+SNR = C
+√
+Nb . (5.38)
+Equation (5.38) reveals a fundamental tradeoff in x-ray imaging. In order to
+improve the visibility of a particular structure in a radiograph, it is necessary to
+either increase the contrast of the structure or to increase the number of photons
+used in the visualization or analysis (or both). The contrast of the structure
+might be improved by changing the energy of the x-rays or by using a contrast
+agent or dual-energy techniques. (See Problem 5.20.) The number of photons
+might be increased by several methods: by increasing the ﬁlament current, the
+duration of the x-ray pulse, or the energy of the x-rays (which would then
+penetrate the body better), or by using larger area elements (pixels) or a more
+efﬁcient detector.
+Recall that the x-ray tube provides a spectrum of x-ray energies ranging from
+low energies to the maximum energy determined by the peak kilovoltage applied
+to the x-ray tube anode. By changing the kVp, we modify the x-ray energy.
+Contrast, SNR, and patient radiation exposure (dose) are markedly affected by
+changes in the kVp. For example, at low kVp and therefore low x-ray energies,
+image contrast is high because the difference between the attenuation of different
+body tissues increases as energy decreases. However, the body is less transparent
+to x-rays at lower energies, so that fewer x-ray photons penetrate the body.
+Hence, although C is high, N is low, and it turns out that SNR is low. Because
+the body is highly absorbent to these low energy x-ray photons, the patient
+radiation dose is high.
+At high energies, on the other hand, contrast is low, as the attenuation
+coefﬁcients for different types of body tissues become similar. While the body is
+highly transparent at high energies, the number of x-ray photons per Roentgen
+decreases, and therefore for a given radiation exposure, the SNR will be low
+at very high energies. Between high and low x-ray energies, the SNR achieves a
+maximum at a point where there is reasonably good tissue contrast, the body is

@@ -1,0 +1,52 @@
+288 Chapter 8 Planar Scintigraphy
+(c) Suppose there is a tumor with 10% contrast, what is the approximate
+count for the ﬁrst image so that the tumor has a 5 dB local signal-to-
+noise ratio in the last image.
+8.13 Consider the cardiac study described in Example 8.4, and suppose the
+image for each frame is a 64 × 64 matrix. We need 1K counts for each
+pixel on average when the study is done. We can detect at most 128K
+photons per second on the entire camera.
+(a) How many heartbeats are needed?
+(b) How long does it take to complete the study?
+(c) What is the SNR for each pixel?
+(d) If we want to double the SNR by prolonging the study, how long will
+it take to complete the study?
+8.14 Using geometric arguments, derive the collimator resolution formula
+given in (8.13).
+8.15 A planar scintigraphy imaging system (assume a 2-D system) is set up
+with the collimator as shown in Figure P8.5.
+Figure P8.5
+System setup for Problem
+8.15.
+Collimator
+z
+R
+PQ
+x
+0.2 mm
+1 cm
+10 cm 10 cm
+2 mm
+35 mm
+10 cm
+Three compartments P, Q, and R mimick three different tissues, and
+have attenuations μP = 0, μQ = 0, and μR = 0.1m m−1, respectively.
+Assume δ ≈ 0 mm. N0 atoms of radionuclide A (tA
+1/2 = 3 hours) were
+put uniformly in compartment P, and 1
+2 N0 atoms of radionuclide B
+(tB
+1/2 = 6 hours) were put uniformly in compartment Q.
+(a) Compute the projection φ(x) [units of photons s −1 cm−1]a t1 )t i m e
+t = 0 and 2) time t = tA
+1/2.
+(b) Determine the time tmax at which the absolute signal difference
+|φ(5) − φ(−5)| is maximum.
+(c) What is the collimator efﬁciency and resolution?
+(d) What is the absolute signal difference at timet = 3 hours incorporating
+collimator efﬁciency.
+(e) What is the width of compartment P in the ﬁnal image? (Assume the
+system resolution is dominated by the collimator resolution.)
+8.16 An Anger camera collimator has the following dimensions: septal thickness
+h = 6 mm, septal height l = 10 cm, and hole diameter d = 3 mm. The
+detector thickness is b = 2.5 cm, and the range of the object z = 0.5m .

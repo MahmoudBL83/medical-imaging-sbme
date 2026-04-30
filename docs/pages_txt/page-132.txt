@@ -1,0 +1,46 @@
+4.4 Nature and Properties of Ionizing Radiation 113
+Although it is suggested by Table 4.2, x-rays and gamma rays are not dis-
+tinguished by their frequency or photon energies. Instead, they are distinguished
+by their point of origin. In particular, x-rays are created in the electron cloud
+of atoms while gamma rays are created in the nuclei of atoms, which in turn
+are undergoing reorganization due to radioactive decay. Thus, gamma rays are
+associated with radioactivity and x-rays are not. Although gamma rays tend to
+have higher frequencies (energies) than x-rays, there is a large overlap in the
+frequencies (energies) of x-rays and gamma rays used in medical imaging. Fur-
+thermore, once produced, x-rays and gamma rays behave the same in terms of
+their propagation properties and interaction with matter. Therefore, our under-
+standing of the propagation and detection of EM waves in the x-ray–gamma
+ray photon energy range is essential background material for all the medical
+imaging modalities using ionizing radiation.
+It turns out that both the production and detection of EM radiation over
+a large range of frequencies play major roles in medical imaging. Visible
+light is used in radiography to improve the efﬁciency of x-ray detection. The
+attenuation of x-rays is the primary mechanism used to create images in
+projection radiography and computed tomography. Finally, gamma rays are
+detected in order to locate radiotracers in nuclear medicine.
+4.4 Nature and Properties of Ionizing
+Radiation
+Particulate and EM ionizing radiations interact with the materials through
+which they are traveling, imparting energy to the material, losing energy from
+and redirecting their own radiation, and generating new types of particles and
+radiation. Generally speaking, the effects that we care about fall into two broad
+categories: (1) those that are used in imaging or that affect the imaging process
+and (2) those that are not used in imaging but contribute to dose—that is, have
+biological consequences. Speciﬁc concepts related to these two broad categories
+tend to apply separately to particulate radiation or EM radiation. Table 4.3
+lists speciﬁc concepts related to ionizing radiation, positioned according to the
+categories for which they largely apply. We will now begin to discuss each
+of these concepts, starting with those important in forming and analyzing
+TABLE 4.3
+Radiation Concepts
+Imaging Dose
+Particulate Bremsstrahlung Linear energy transfer
+Characteristic radiation Speciﬁc ionization
+Positron annihilation∗
+Positron range
+EM Attenuation Air kerma
+Photoelectric effect Dose
+Compton scatter Dose equivalent
+Characteristic radiation Effective dose
+Polyenergetic f-factor
+∗Italicized entries are discussed in Chapter 7.

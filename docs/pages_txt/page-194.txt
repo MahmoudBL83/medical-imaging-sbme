@@ -1,0 +1,47 @@
+Further Reading 175
+5.5 Summary and Key Concepts
+Projection radiography is the oldest and most fundamental medical imaging
+modality. This modality uses x-ray tubes and either ﬁlm or digital detectors
+to record images of the ‘‘shadow’’ created by body tissues. In this chapter, we
+presented the following key concepts that you should now understand:
+1. Projection radiographyproduces radiographs, which are 2-D projections of
+3-D objects.
+2. A projection radiography systemconsists of an x-ray tube, devices for beam
+ﬁltration and restriction, compensation ﬁlters, grids, and a ﬁlm-screen or
+digital detector.
+3. The basic imaging equation describes the energy- and material-dependent
+attenuation of the x-ray beam produced by the system as it passes through
+the patient.
+4. The basic imaging equation must be modiﬁed by several geometric effects,
+including the inverse square law, obliquity, beam divergence, anode heel
+effect, path length, and depth-dependent magniﬁcation.
+5. The ﬁlm-screen detector produces anoptical image on ﬁlm; the degree of ﬁlm
+blackening—the optical density—depends on ﬁlm exposure in a nonlinear
+way characterized by the H&D curve.
+6. Digital detectors convert x-rays by direct or indirect means to electronic
+signals that can be read directly into a computer and viewed on a computer
+display.
+7. Noise arising from the random nature of x-ray production and transmission
+reduces an image’s SNR, and thus the detective quantum efﬁciency of the
+system.
+8. Acceptance of Compton scattered photonsreduces both image contrast and
+SNR.
+Further Reading
+Bushberg, J.T., Seibert, J.A., Leidholdt, E.M., and
+Boone, J.M. The Essential Physics of Medical
+Imaging, 3rd ed. Philadelphia, PA: Lippincott
+Williams and Wilkins, 2012.
+Carlton, R.R. and Adler, A.M. Principles of Radio-
+graphic Imaging: An Art and a Science, 5th ed.
+Clifton Park, NY: Delmar Cengage Learning,
+2012.
+Johns, E.J. and Cunningham, J.R. The Physics of
+Radiology, 4th ed. Springﬁeld, IL: Charles C
+Thomas Publisher, 1983.
+Macovski, A. Medical Imaging Systems, Englewood
+Cliffs, NJ: Prentice Hall, 1983.
+Webster, J.G. Medical Instrumentation: Applica-
+tion and Design, 4th ed. New York, NY: Wiley,
+2009.
+Wolbarst, A.B. Physics of Radiology, 2nd ed. Nor-
+walk, CT: Appleton and Lange, 2005.

@@ -1,0 +1,35 @@
+CHAPTER
+66
+Computed
+Tomography
+6.1 Introduction
+A tomogram is an image of a plane or slice within the body. A conventional
+radiograph is 2-D, but it is not a tomogram because its data do not arise from
+a single plane. X-ray computed tomography (CT) is extremely popular because
+it generates images of slices of the body, thereby eliminating the artifacts of
+overlaying structures that dominate conventional radiographs. A typical CT
+scanner is shown in Figure 6.1. One way to think about the basic mechanism of
+CT is to imagine taking a series of conventional chest x-rays, where the patient
+is rotated slightly around an axis running from head to foot between each
+exposure. Each developed ﬁlm contains a 2-D projection of the 3-D body, but
+because they are each exposed at a different angle, there is different information
+in each one. In fact, each horizontal line within a ﬁlm gives a 1-D projection of a
+2-D axial cross section of the body at that angle. Thus, a collection of horizontal
+lines, one from each ﬁlm at the same height, contains information about only
+one axial cross section. These projection data are then used to reconstruct
+cross-sectional images—tomograms.
+What can we say about the tissues in an axial cross section from a collection
+of 1-D projections taken at different angles? Fortunately, we can say a great deal,
+and this is the basic premise of CT. The transformation that takes 1-D projections
+of a 2-D object over many angles is called the 2-D Radon transform, and it has
+a mathematical inverse. That is, given a collection of projections we can, in the-
+ory, reconstruct the axial cross section exactly. Practical implementation of the
+inverse 2-D Radon transformis accomplished in every CT scanner in one fashion
+or another. Therefore, after studying how a CT scanner acquires these projec-
+tions (after all, taking a collection of chest x-rays is hardly practical), we will
+study in detail the 2-D Radon transform and its theoretical and practical inverse.
+The advent of x-ray CT in the mid-1960s and its development all the way
+up to the present day has produced a profound change in the role of diagnostic
+imaging in medicine. A wide variety of medical conditions is visible in CT images
+that are not visible in conventional radiographs. Thus, diagnosis and monitoring
+186

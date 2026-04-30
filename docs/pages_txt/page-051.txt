@@ -1,0 +1,54 @@
+32 Chapter 2 Signals and Systems
+a different perspective on how signals and systems interact, and it leads to
+alternative tools for system analysis and implementation.
+Recall that the convolution equation [(2.39)] was obtained by decomposing
+a signal into point impulses [see (2.6), (2.32), and (2.33)]. An alternative way to
+decompose a signal is in terms of complex exponential signals. It can be shown
+that if
+F(u, v) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)e−j2π(ux+vy) dx dy, (2.62)
+then
+f (x, y) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+F(u, v)ej2π(ux+vy) du dv. (2.63)
+The double integral in (2.62) [as well as the function F(u, v)] is known as
+the (2-D) Fourier transform of f (x, y), whereas the double integral in (2.63) is
+known as the (2-D) inverse Fourier transform. We use the notation
+F(u, v) = F2D(f )(u, v) and f (x, y) = F −1
+2D (F)(x, y) (2.64)
+to denote the Fourier transform and its inverse, respectively. The subscript ‘‘2D’’
+is used to indicate that the Fourier transform is 2-D.
+Before we can use the Fourier transform and its inverse, we need to make
+sure that the integrals in (2.62) and (2.63) exist. A sufﬁcient condition for the
+existence of such integrals is that the signal f (x, y) is continuous, or has a ﬁnite
+number of discontinuities, and that it is absolutely integrable. These conditions
+are almost always satisﬁed in practice.
+Equation (2.63) shows that the Fourier transform produces a decomposition
+of a signal f (x, y) into complex exponentials ej2π(ux+vy) with strength F(u, v).
+The variables u and v are known as the x and y (spatial) frequencies of signal
+f (x, y), respectively. The Fourier transformF(u, v) is frequently referred to as the
+spectrum of f (x, y). Since
+ej2π(u0x+v0y) = cos[2π(u0x + v0y)] + j sin[2π(u0x + v0y)] , (2.65)
+the Fourier transform provides information on the sinusoidal composition
+of a signal f (x, y) at different frequencies. Notice the relationship between
+the Fourier transform and the exponential and sinusoidal signals discussed
+in Section 2.2.5.
+In practice, the Fourier transform allows us toseparately consider the action
+of an LSI system on each sinusoidal frequency. This general characterization of
+an LSI system then carries over to the action on arbitrary signals by considering
+the signals’ Fourier transforms.
+In general, the Fourier transform is a complex-valued signal, even if f (x, y)
+is real-valued. It is quite common then to separately consider the Fourier
+transform’s magnitude and phase, given by
+|F(u, v)| =
+√
+F2
+R(u, v) + F2
+I (u, v) , (2.66)

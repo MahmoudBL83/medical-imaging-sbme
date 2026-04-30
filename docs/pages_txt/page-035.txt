@@ -1,0 +1,43 @@
+16 Chapter 2 Signals and Systems
+distance of a particular ray from the center of the object, whereas θk is a
+discrete-valued variable, representing the beam’s angle relative to a reference
+coordinate system (see Chapter 6).
+Based on the previous signal classiﬁcation, systems can also be organized
+into categories. For example, we may consider a continuous-to-continuous
+system that responds to a continuous signal by producing a continuous signal,
+or a continuous-to-discrete system that responds to a continuous signal by
+producing a discrete signal. For example, an analog-to-digital converter takes a
+continuous signal as input and produces a discrete signal as output through a
+process called sampling (see Chapter 3).
+In this book, we consider one-dimensional (1-D), two-dimensional (2-D),
+and three-dimensional (3-D) signals and systems. In this chapter, we primarily
+develop 2-D continuous signals and systems; restriction to one dimension or
+extension to three dimensions is straightforward in most cases. In all cases, you
+can think of the input signal(to the imaging system) as coming from the patient
+and the output signal as coming from the imaging system. The challenge in
+medical imaging is to make the output signal a faithful representation of the
+input signal.
+2.2 Signals
+A continuous signal fis deﬁned as a function
+f (x, y), −∞ ≤ x, y ≤∞ (2.1)
+of two independent real-valued variablesx and y. This signal can be represented
+and visualized in two different ways. We may plot the signal as a function of
+the two independent variables x and y, or we may display it by assigning an
+intensity or brightness proportional to its value at ( x, y). This is illustrated in
+Figure 2.1. In the ﬁrst case, we call f (x, y)a function or a signal and (x, y)a
+point. In the second case, we call f an image and (x, y)a pixel, a word that
+is derived from ‘‘ picture element.’’ The 3-D analog of the pixel is the voxel,
+from ‘‘volume element.’’ This is illustrated in Figure 2.2. The representation in
+Figure 2.1(a) is useful in mathematical calculations, while that in Figure 2.1(b)
+is most appropriate for human observers. Accordingly, in this book, we focus
+primarily on two-dimensional pixel-based representations.
+A number of special signals will frequently be used throughout this book.
+These include the point impulse, the comb and sampling functions, the line
+impulse, the rect and sinc functions, and exponential and sinusoidal signals. In
+addition, many signals will have properties that distinguish them from other
+signals and make their use in analysis easier. Separability and periodicity are two
+such common properties. We now study these special signals and properties.
+2.2.1 Point Impulse
+It is very useful in medical imaging to mathematically model the concept of a
+point source, which is used in the characterization of imaging system resolution.
+For example, if the source is very small, yet appears to be very large (blurred out)

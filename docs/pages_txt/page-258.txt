@@ -1,0 +1,35 @@
+The Physics of
+Nuclear Medicine
+CHAPTER
+77
+7.1 Introduction
+Nuclear medicine relies on radiopharmaceuticals introduced into the body to
+trace the spatial and temporal distribution of the underlying physiological
+and biochemical processes that govern the radiopharmaceutical’s distribution.
+Radiopharmaceuticals are usually introduced in very small quantities that do
+not themselves affect the physiologic or biochemical processes. Radiopharma-
+ceuticals are thus often called radiotracers, reﬂecting both the fact that they are
+introduced into the body in trace quantities and that they trace body processes.
+Radiopharmaceuticals consist of both a chemical compound (the ‘‘pharmaceu-
+tical’’ portion of the word) and a radioactive atom (the ‘‘radio’’ portion of
+the word). When the radioactive atom undergoes radioactive decay, a process
+we describe below, radiation is emitted that leaves the body. External imaging
+devices, such as scintillation cameras, record these radiation emissions com-
+ing from the patient and produce either a planar, two-dimensional image or
+cross-sectional, tomographic images.
+Depending on the speciﬁc radiotracer, different physiological or biochemical
+functions are imaged. This is strikingly different than projection radiography
+or computed tomography. In these two transmission imaging modalities, while
+the speciﬁc characteristics of the signal depend on speciﬁc imaging and instru-
+ment parameters, the basic type of information does not change from image
+to image; it depends on tissue attenuation characteristics, as we have dis-
+cussed. In nuclear medicine, however, each different radiotracer produces a
+depiction of a completely different physiological or biochemical function, so
+the basic information itself is different. Further, since the radiation that forms
+the basis of the image is not transmitted through the body, but arises from the
+radioactive atoms within the body, nuclear medicine imaging is referred to as
+emission imaging.
+In this chapter, we consider the physical processes that give rise to radionu-
+clides, radioactive decay, and the emissions that form the basis of nuclear
+medicine imaging.
+239

@@ -1,0 +1,48 @@
+324 Chapter 9 Emission Computed Tomography
+The object is imaged using a SPECT scanner. Assume that there are ideal
+collimators having 100% efﬁciency.
+(a) Find the projections g(ℓ, 180◦) and g(ℓ,9 0◦). Neglect inverse square
+law effects.
+(b) The liquids are replaced by two positron emitting liquids of same
+concentrations. If the system is now imaged by a PET scanner, ﬁnd
+g(ℓ,0
+◦), assuming collimators have 100% efﬁciency.
+(c) Describe how to compensate for attenuation in PET reconstruction.
+Is the same approach applicable in SPECT? Explain with imaging
+equations.
+(d) Explain how the answers in part (a) and (b) would change if real
+collimators are used instead of ideal collimators.
+9.3 Suppose there are two kinds of radiotracers, P and Q. At time 0, there are
+N0 = 1 × 1015 atoms of each of them.
+(a) After 1 hour, there are 1
+3 N0 of P and 2
+3 N0 of Q remaining. What are
+the half-lives of P and Q?
+(b) What is the radioactivity AP and AQ at time 1 hour in units of curies?
+A square phantom with width 6 cm has a circle with radius 1 cm inside, as
+illustrated in Figure P9.3. The circle is ﬁlled with radiotracer Q, with the
+amount of radioactivity A
+Q in (b) everywhere, and the square excluding
+the circle is ﬁlled with radiotracer P, with the amount of radioactivity AP
+in (b) everywhere. The phantom is put into a SPECT system.
+Figure P9.3
+A square phantom.
+See Problem 9.3.
+3 cm
+2 cm
+1 cm
+Ap
+AQ
+/H9262square/H110051 cm/H110021
+/H9262circle/H110052 cm/H110021
+(c) What is the local contrast of the projectiong(ℓ, 180◦) if no attenuation
+is present? (Let the peak value in the circle be used as the intensity of
+the object, which applies to (d) as well.)
+(d) What is the answer to (c) if attenuation is present? Let the linear
+attenuation of the square excluding the circle be μsquare = 1c m−1 and
+that of the circle be μcircle = 2c m−1.
+(e) Take attenuation into account and estimate whether the absolute value
+of the local contrast (|C|) of the projection g(ℓ, 180◦) would be bigger
+or smaller than that of g(ℓ,0 ◦). Explain.
+9.4 Consider a 2-D object consisting of two triangle compartments, as shown in
+Figure P9.4. Suppose a solution containing a 511 KeV gamma ray emitting

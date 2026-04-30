@@ -1,0 +1,38 @@
+1.10 Summary and Key Concepts 13
+Figure 1.5
+(a) An MR scanner and
+(b) an MR image of a
+human knee.
+Source: Courtesy of GE
+Healthcare.
+(b)
+(a)
+• Diffusion MRI (dMRI), which images the degree and orientation of molec-
+ular diffusion in tissue
+We mainly discuss standard MRI in this book, and brief descriptions of fMRI
+and dMRI are also provided.
+An MR scanner is shown in Figure 1.5(a). Surrounding the tube in the
+center of the picture, within the housing, is a 3 tesla superconducting magnet.
+The ﬁeld is very uniform within the bore, which is required for geometrically
+accurate imaging. The MR image in Figure 1.5(b) shows a cross section of a
+human knee. MRI is discussed in detail in Chapters 12 and 13.
+1.9 Multimodality Imaging
+Different medical imaging modalities reveal different properties of the human
+body. As a result, it is often useful to obtain diagnostic images of a single
+patient and medical condition using multiple modalities. For example, one
+might look at bones using CT and soft tissues using MRI, or one might examine
+brain structure using MRI and brain function using PET. Combining CT and
+PET is particularly useful because PET provides functional information that
+complements the structural information provided by CT and also because the
+CT data can be directly used to improve the reconstructed PET images. Because
+of this, virtually all modern PET systems are sold as PET/CT systems that
+combine the two modalities within a single platform.
+1.10 Summary and Key Concepts
+In practice, radiologists look for speciﬁc patterns in medical images. These
+patterns depend on both the patient and the imaging modality. It is the job of
+the engineers and scientists who develop medical imaging systems to produce
+images that are as accurate and useful as possible; these systems depend on
+the physics of each modality. In this chapter, we presented the following key
+concepts that you should now understand:
+1. Medical imaging relies on noninvasive techniques to image body structures
+and function.

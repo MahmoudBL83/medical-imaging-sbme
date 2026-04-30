@@ -1,0 +1,42 @@
+Preface xvii
+• A new section on iterative reconstruction in emission tomography in nuclear
+medicine.
+• New sections on nonlinear wave propagation and harmonic imaging in
+ultrasound imaging.
+• New development and presentation of imaging equations in planar scintig-
+raphy, single photon emission computed tomography, and positron emission
+tomography.
+• New sections on three-dimensional imaging, noise, and speckle in ultrasound
+imaging.
+• New sections on susceptibility weighted imaging, functional magnetic res-
+onance imaging, and diffusion magnetic resonance imaging in magnetic
+resonance imaging.
+• Reorganization of the chapters on signals and systems and image quality to
+encourage a better pedagological ﬂow.
+• Many new problems, added primarily to the chapters having relatively fewer
+problems in the ﬁrst edition. There are a total of 261 problems in this second
+edition.
+Acknowledgments
+Many students, friends, colleagues, and teaching assistants contributed to this
+book through discussions and critiques. We wish to thank Elliot R. McVeigh and
+John I. Goutsias, who co-taught our course at Johns Hopkins University during
+the early years and helped draft the ﬁrst edition of the book. We are grateful to
+Drs. Avneesh Chhabra, Harvey Ziessman, Peter Calabresi, and David Yousem
+for providing several clinical images (and their descriptions) and to Vince Blasko
+and Beatrice Mudge for providing several images depicting artifacts that can arise
+in clinical imaging. Xiao Han, Xiaodong Tao, Li Pan, Vijay Parthasarathy, Tara
+Johnson, Minnan Xu, Abd El-Monem El-Sharkawy, Kahaled Abd-Elmoniem,
+Lotta Ellingsen, Jing Wan, Snehashis Roy, Harsh Agarwal, Issel Lim, Xian
+Fan, Nan Li, Sahar Soleimanifard, Nathanel Kuo, Jeffrey Pompe, Min Chen,
+Chuyang Ye, and Zhen Yang contributed problems and solutions, Dhruv Lamba
+helped ﬁnd new images, and Aaron Carass ﬁxed many LaTeX problems. We are
+grateful for the images provided to us by GE Healthcare, Philips Healthcare,
+and Osirix. We thank J. Webster Stayman for reviewing the digital radiography
+section. We would also like to thank six anonymous reviewers who provided
+comments on their experiences with the ﬁrst edition, which provided a basis for
+many of the changes we have made to this edition, and ﬁve anonymous reviewers
+who reviewed a draft of this edition, which helped us to better balance material
+in several sections. Finally, we would like to thank Dr. William R. Brody, who
+inspired the creation of the course out of which this book emerged.
+Jerry L. Prince
+Jonathan M. Links

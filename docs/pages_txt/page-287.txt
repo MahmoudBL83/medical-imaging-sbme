@@ -1,0 +1,50 @@
+268 Chapter 8 Planar Scintigraphy
+each (accepted) scintillation event. Finally, if there are 400,000 accepted events,
+then the sum of all the pixel values in the ﬁnal image will be 400,000—that is,
+the total countsfor the scan.
+Dynamic frame mode acquisition, as shown in Figure 8.7(c) is a temporal
+succession of frame mode images. After the ﬁrst image is created and stored,
+its buffer (matrix) is zeroed and another image is accumulated in identical
+fashion. This mode allows the study of transient physiological processes such
+as radiotracer uptake, washout, or redistribution. Movies of the temporal
+progression of a dynamic process can be created by appending the frames and
+replaying them after acquisition is complete. Generally, the number of pixels
+in dynamic frame mode images is smaller in order to yield higher counts (and
+correspondingly lower noise) in each pixel. [Increasing pixel size to reduce
+noise has already been discussed in the context of projection radiography;
+see (5.37).]
+A further extension of frame mode acquisition is multiple-gated acquisition
+(or MUGA), as depicted in Figure 8.7(d). In this mode, the data from the camera
+are distributed to a series of matrices in computer memory. A trigger signal
+(usually a physiological trigger such as the R wave of the ECG) controls the
+distribution of data among the matrices. Immediately after the trigger, data from
+the camera are placed in the ﬁrst matrix for a ﬁxed time interval. When the time
+interval has elapsed, data are then placed in the second matrix for the same time
+interval. This process continues until the occurrence of a new trigger signal, at
+which time data distribution restarts at the ﬁrst frame, or until all the assigned
+matrices in computer memory are used, in which case no data are acquired until
+the occurrence of a new trigger signal.
+Multiple-gated acquisition is used to study a repetitive (cyclic) dynamic pro-
+cess. For example, in a cardiac-gated blood pool study, in which the circulating
+blood is labeled with radioactive atoms and the beating chambers of the heart are
+examined, the data from the corresponding phases of many heartbeats are super-
+imposed during acquisition, resulting in a series of images representing one ‘‘aver-
+age’’ cardiac cycle. Typically, the cardiac cycle is divided into 16–64 frames,
+with each frame representing 1/16–1/64 of the cycle.
+Whole-body acquisition is yet another variation of static frame mode
+acquisition. In this mode, the body is divided into a matrix of pixels, as
+depicted in Figure 8.7(e) and a series of static frames are acquired to cover the
+body, in a ‘‘step and shoot’’ sequence. As an alternative, the camera or bed
+can continuously move. The position of the patient relative to the camera is
+maintained so that the camera can be scanned over the whole patient, thereby
+creating a whole-body image.
+The most common (2-D) matrix sizes used in nuclear medicine are 64× 64,
+128 × 128, and 256× 256, although matrices up to 1,024× 1,024 are available.
+The larger the matrix size, the better the digital spatial resolution in the image,
+up to the limit imposed by the intrinsic capabilities of the camera. The digital
+sampling requirements necessary to preserve the spatial resolution in the analog
+image are given by the Nyquist theorem in Section 3.6. This theorem states
+that, to accurately portray a signal, the sampling frequency must be twice the
+highest frequency present in the signal. Thus, pixel dimensions should be smaller
+than one-half of the spatial resolution of the Anger camera. In practice, pixel
+dimensions range from 2 to 6 mm.

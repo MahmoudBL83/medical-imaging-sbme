@@ -1,0 +1,44 @@
+Preface
+Although the underlying principles of medical imaging have not changed in the
+nine years since the ﬁrst edition of this book was published, the instrumentation
+and practices have continued to evolve and improve. This second edition
+maintains the signals and systems focus of the ﬁrst edition, with up-to-date
+descriptions of instrumentation. We still cover the most important imaging
+modalities in radiology: projection radiography, x-ray computed tomography,
+nuclear medicine scintigraphy and emission tomography, ultrasound imaging,
+and magnetic resonance imaging. But we now provide additional material
+on digital radiography, multi-row detector CT systems, 3D ultrasound, both
+functional and diffusion-weighted magnetic resonance imaging, and much more.
+As before, we expect the reader to be familiar with signals and systems, which are
+usually covered in the sophomore year of most engineering curricula, and with
+elementary probability. Freshman courses in physics, chemistry, and calculus
+are also assumed.
+As with the ﬁrst edition, the book is organized into parts emphasizing
+key overall conceptual divisions. Part I introduces basic imaging principles,
+including an introduction to medical imaging systems in Chapter 1, a review
+of signal processing (with emphasis on two-dimensional signals) in Chapter 2,
+and a discussion of image quality in Chapter 3. Our presentation of the theory
+of medical imaging systems is strongly based on continuous signals; however, a
+development of discrete signals is included to permit discussions on sampling and
+implementation. Issues of image quality, including resolution, noise, contrast,
+geometric distortion, and artifacts are described in a general context here, and
+are revisited within each modality in subsequent chapters.
+Part II describes key modalities in radiographic imaging. It begins in
+Chapter 4 with a brief presentation of the physics of radiography, including
+the generation and detection of ionizing radiation and its effect on the human
+body. Chapter 5 describes projection radiography systems, including chest x-ray,
+ﬂuoroscopy, and mammography systems. As in all subsequent chapters, cover-
+age focuses on signals, including only enough physics and biology to motivate
+the modality and provide a model for the analysis. Chapter 5 also presents the
+mathematics of projection imaging, a very fundamental idea in medical imaging.
+Chapter 6 covers x-ray computed tomography, expanding on the instrumen-
+tation and mathematics of projection imaging and introducing the concept
+of image reconstruction in medical imaging. Computed tomography produces
+true tomograms (images of cross sections of the body) rather than projections
+of the body.
+Part III presents the physics and modalities of nuclear medicine imaging.
+Chapter 7 describes the physics of nuclear medicine, focusing primarily on the
+concept of radioactivity. The major modalities in nuclear medicine imaging are
+described in Chapter 8, which covers planar scintigraphy, and Chapter 9, which
+covers emission computed tomography.
+xv

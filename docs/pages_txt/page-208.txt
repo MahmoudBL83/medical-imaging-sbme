@@ -1,0 +1,99 @@
+TABLE 6.1
+Comparison of CT Generations
+Source Detector Source–Detector
+Generation Source Collimation Detector Collimation Movement Advantages Disadvantages
+1G Single x-ray
+tube
+Pencil beam Single None Move linearly
+and rotate in
+unison
+Scattered energy
+is undetected
+Slow
+2G Single x-ray
+tube
+Fan beam, not
+enough to
+cover FOV
+Multiple Collimated
+to source
+direction
+Move linearly
+and rotate in
+unison
+Faster than 1G Lower efﬁciency
+and larger noise
+because of the
+collimation in
+detectors
+3G Single x-ray
+tube
+Fan beam,
+enough to
+cover FOV
+Many Collimated
+to source
+direction
+Rotate in
+synchrony
+Faster than 2G,
+continuous
+rotation using a
+slip ring
+More expensive
+than 2G, low
+efﬁciency
+4G Single x-ray
+tube
+Fan beam
+covers the
+FOV
+Stationary ring
+of detectors
+Cannot
+collimate
+detectors
+Detectors are
+ﬁxed, source
+rotates
+Higher efﬁciency
+than 3G
+High scattering
+since detectors
+are not
+collimated
+5G (EBCT) Many tungsten
+anodes in single
+large tube
+Fan beam Stationary ring
+of detectors
+Cannot
+collimate
+detectors
+No moving parts Extremely fast,
+capable of
+stop-action
+imaging of
+beating heart
+High cost,
+difﬁcult to
+calibrate
+6G (Helical CT) 3G/4G 3G/4G 3G/4G 3G/4G 3G/4G plus
+linear patient
+table motion
+Fast 3D images A bit more
+expensive
+7G
+(Multiple-row
+detector CT)
+Single x-ray
+tube
+Cone beam Multiple arrays
+of detectors
+Collimated
+to source
+direction
+3G/4G/6G
+motion
+Fast 3D images Expensive
+189

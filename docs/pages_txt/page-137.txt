@@ -1,0 +1,46 @@
+118 Chapter 4 Physics of Radiography
+This implies that the maximum energy loss occurs when the photon is deﬂected
+180◦ back towards the source, that is, a 180◦ backscatter. The kinetic energy of
+the Compton electron is given by
+Ee− = hν − hν′ . (4.9)
+EXAMPLE 4.3
+Compton scattering is usually undesirable in medical imaging. In planar scintigraphy
+(Chapter 8), the energy of a photon is used to determine whether it has been scattered
+prior to arrival at the detector.
+Question Suppose a photon with energy hν = 100 keV is incident to some material
+and exits with energy hν′. A detector decides that the photon has not been scattered if
+hν′ > 98 keV. What is the maximum angle by which the photon is scattered but is still
+being treated as a photon traveling along a straight path?
+Answer The energy of the photon after Compton scattering is
+hν′ = hν
+1 + (1 − cos θ)hν/(m0c2)
+= 100 keV
+1 + (1 − cos θ)100 keV/(511 keV)
+= 98 keV
+θ = cos−1
+(
+1 − 511
+100 ∗ 49
+)
+= 26.4◦
+So, a photon scattered by an angle up to 26 .4◦ is still considered as traveling along a
+straight path by the detector.
+Probability of EM Interactions We now consider the factors that make photo-
+electric and Compton events more likely to occur. There are many reasons why
+this subject is important. For example, the formation of a useful projection radio-
+graph depends on the differential attenuationof an x-ray beam passing through
+a patient, which is caused by the photoelectric effect and Compton scattering,
+as we shall see in the next chapter. As another example, we observed above
+that the photoelectric effect causes complete absorption of an incident photon.
+Therefore, if we ﬁnd a way to increase the likelihood of photoelectric events, we
+can block or shield objects (or patients, staff, and physicians) from the source of
+ionizing EM radiation. We should therefore be able to understand what makes
+lead a good x-ray shield while plastic is not; we should also be able to predict
+whether lead will shield high-energy photons better than low-energy photons. As
+another example, the reason why Compton scattering is detrimental to imaging
+is that it causes photons to deviate from straight-line paths. We would like to
+know the conditions under which Compton scattering is large so that instru-
+mentation can be designed to compensate for its effects. We might choose to use
+x-ray energies that minimize the Compton scattering effect to image patients.
+Consider a thin ‘‘slab’’ of material having a ﬁxed thickness. Suppose
+that an incident photon can either pass through the material or experience a

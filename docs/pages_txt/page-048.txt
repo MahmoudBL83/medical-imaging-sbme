@@ -1,0 +1,124 @@
+2.3 Systems 29
+The properties of associativity, commutativity, and distributivity associated
+with LSI systems signiﬁcantly simplify our analysis. (We imagine you are getting
+the idea why we like treating medical imaging systems as LSI so much!)
+EXAMPLE 2.4
+Consider two LSI systems connected in cascade, with Gaussian PSFs of the form
+h1(x, y) = 1
+2πσ 2
+1
+e−(x2+y2)/2σ2
+1 and h2(x, y) = 1
+2πσ 2
+2
+e−(x2+y2)/2σ2
+2 , (2.50)
+where σ1 and σ2 are two positive constants.
+Question What is the PSF of this system?
+Answer This connection is equivalent to a single LSI system with impulse response
+h(x, y), given by
+h(x, y) = h1(x, y) ∗ h2(x, y)
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+h2(ξ, η)h1(x − ξ, y − η) dξdη
+= 1
+4π2σ2
+1 σ2
+2
+∫ ∞
+−∞
+∫ ∞
+−∞
+e−(ξ2+η2)/2σ2
+2 e−[(x−ξ)2+(y−η)2]/2σ2
+1 dξdη
+= 1
+4π2σ2
+1 σ2
+2
+∫ ∞
+−∞
+e−ξ2/2σ2
+2 −(x−ξ)2/2σ2
+1 dξ
+∫ ∞
+−∞
+e−η2/2σ2
+2 −(y−η)2/2σ2
+1 dη. (2.51)
+However,
+∫ ∞
+−∞
+e−ξ2/2σ2
+2 −(x−ξ)2/2σ2
+1 dξ = e−x2/2(σ2
+1 +σ2
+2 )
+∫ ∞
+−∞
+e
+−
+σ2
+1 +σ2
+2
+2σ2
+1 σ2
+2
+{
+ξ−[σ2
+2 /(σ2
+1 +σ2
+2 )]x
+}2
+dξ
+= e−x2/2(σ2
+1 +σ2
+2 )
+∫ ∞
+−∞
+e
+−
+σ2
+1 +σ2
+2
+2σ2
+1 σ2
+2
+τ2
+dτ
+=
+√
+2πσ1σ2√
+σ2
+1 + σ2
+2
+e−x2/2(σ2
+1 +σ2
+2 ) , (2.52)
+in which case
+h(x, y) = 1
+2π(σ2
+1 + σ2
+2 ) exp
+{
+−(x2 + y2)
+2(σ2
+1 + σ2
+2 )
+}
+. (2.53)
+To obtain the second equality in (2.52), we have substituted the variable ξ − [σ2
+2 /(σ2
+1 +
+σ2
+2 )] x with τ; whereas, to obtain the third equality, we have used the fact that
+∫ ∞
+−∞
+e−a2τ2
+dτ =
+√π
+a , for a ̸= 0 . (2.54)
+The resulting PSF is Gaussian as well.

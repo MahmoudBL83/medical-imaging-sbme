@@ -1,0 +1,58 @@
+312 Chapter 9 Emission Computed Tomography
+it from the integral over s. We will also make the approximation that the ﬁeld
+of view containing radioactivity is very small with respect to R, which implies
+that |s|≪ R, and the inverse square law can also be removed the integrand.
+This leads to our ﬁnal imaging equation for PET:
+n(ℓ, θ) = ϵTAh ˜Ah
+4πR2
+∫ R
+−R
+f (x(s), y(s))ds exp
+{
+−
+∫ R
+−R
+μ(x(s′), y(s′);E)ds′
+}
+. (9.20)
+Equation (9.20) is similar to (9.6) for SPECT, but the fact that the integrals of
+activity concentration and linear attenuation are separate provides an opportu-
+nity for attenuation correction in PET that is not possible in SPECT, as we will
+see below.
+Image Reconstruction For our development here, we focus on 2-D recon-
+struction. In practice, much PET data are acquired in 3-D mode (as noted
+above) because of its higher sensitivity. 3-D data can be reconstructed via 3-D
+approaches, but it is common to reorient the 3-D projection data into 2-D
+projection datasets (via a variety of techniques, including Fourier rebinning). In
+2-D, coincidence counts can be organized into parallel-ray or fan-beam projec-
+tions. Here, we consider only parallel-ray projections, as shown in Figure 9.10.
+From (9.20), we see that although we desire to reconstruct activity con-
+centration f (x, y), the attenuation μ(x, y) also appears in the PET imaging
+equation.
+Let us start by ignoring attenuation, as we did in SPECT. Accordingly, we
+have an approximate imaging equation given by
+n(ℓ, θ) ≈ K
+∫ R
+−R
+f (x(s), y(s)) ds , (9.21)
+where
+K = ϵTAh ˜Ah
+4πR2 exp
+{
+−
+∫ R
+−R
+μ(x(s′), y(s′);E)ds′
+}
+. (9.22)
+So, if we deﬁne the scaled measurements
+g(ℓ, θ) = n(ℓ, θ)
+K , (9.23)
+then we see that a PET scanner measures the Radon transform of the radiotracer
+activity concentration f (x, y),
+g(ℓ, θ) ≈
+∫ R
+−R
+f (x(s), y(s)) ds . (9.24)
+Therefore, we can use the reconstruction methods such as CBP from Chapter 6
+to obtain an approximate reconstruction of f (x, y).

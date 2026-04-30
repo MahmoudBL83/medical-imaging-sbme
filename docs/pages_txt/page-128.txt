@@ -1,0 +1,44 @@
+4.2 Ionization 109
+4.2.2 Electron Binding Energy
+It is energetically more favorable for an electron to be bound in an atom rather
+than to be free. In other words, the total energy of the atom is less than the total
+energy of the atom (minus the electron) and the (free) electron. The difference
+between these two energies is called the electron binding energy. Binding energy
+is usually speciﬁed in units of electron volts (eV). Recall that one electron volt
+is equal to the kinetic energy gained by an electron when accelerated across
+one volt potential. For comparison with more conventional units of energy,
+1e V = 1.6 × 10−12 ergs = 1.6 × 10−19 J.
+A given electron’s binding energy depends on the element to which the
+electron is bound and the shell within which the given electron resides. For any
+given element, electron binding energy decreases with increasing shell number.
+The binding energy of the sole electron in a hydrogen atom is 13.6 eV, the
+smallest binding energy among all ‘‘lighter’’ atoms (i.e., those having smaller
+atomic numbers). There are even smaller electron binding energies in the outer
+orbits of the ‘‘heavier elements.’’ For example, some electrons in the O-shell
+of mercury atoms have binding energies equal to 7.8 eV. For our purposes,
+however, it is sufﬁcient to consider an ‘‘average’’ binding energy of the electrons
+in a given atom or even in a given molecule. For example, the average binding
+energy for air is about 34 eV. Metals have signiﬁcantly larger average electron
+binding energies. For example, the average binding energy of lead is about 1 keV
+and for tungsten it is about 4 keV.
+4.2.3 Ionization and Excitation
+If radiation (particulate or EM) transfers energy to an orbiting electron (in an
+atom of the material the radiation is passing through) which is equal to or
+greater than that electron’s binding energy, then the electron is ejected from the
+atom. This process, illustrated in Figure 4.3, is called ionization. It yields an
+ion (an atom with a +1 charge in this case) and the electron that came from
+it, which together are called an ion pair. By convention, radiation with energy
+greater than or equal to 13.6 eV is considered ionizing; all other radiations are
+considered nonionizing.
+It is possible for a single ionizing radiation emission to ionize many atoms
+along its path before its energy is exhausted. The ionizing radiation we use in Figure 4.3
+After an ionization event,
+the ejected electron plus
+the ion have more energy
+than the original atom.
+Atom Ion
+Free electron
+Radiation
+Bound energy /H11021 Unbound energy /H11001 Electron energy
+/H11002
+/H11002

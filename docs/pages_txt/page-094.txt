@@ -1,0 +1,48 @@
+3.4 Noise 75
+3.4.4 Independent Random Variables
+It is usual in imaging experiments to consider more than one random variable
+at a time. The theory that is required in order to characterize a collection of
+random variables follows from the theory of a single random variable, with
+parallel deﬁnitions of distribution, density, and mass functions. In this book,
+however, we require only a simpliﬁed discussion related tosums of independent
+random variables . Loosely speaking, a collection of random variables are
+independent if knowledge of some of the random variables (i.e., making a
+partial observation) tells you nothing, statistically speaking, about the remaining
+random variables.
+Consider the collection of random variables N
+1, N2, ... Nm, having the
+pdf’s p1(η), p2(η), ... , pm(η), respectively. The sum of these random variables
+S is another random variable having another pdf, pS(η). It is always the case
+that the mean of S is precisely the sum of the means of N1, N2, ... , Nm.
+That is,
+μS = μ1 + μ2 +···+ μm , (3.55)
+where μ1, ... , μm are the means of the pdf’s given above. Independence is not
+required for this to be true.
+When the random variables are independent, we can go a step further. In
+this case, the variance of S is the sum of the individual variances,
+σ2
+S = σ2
+1 + σ2
+2 +···+ σ2
+m . (3.56)
+We emphasize that the variances, not the standard deviations, are added. Also,
+in the case of independence, it is possible to determine the pdf of S by
+pS(η) = p1(η) ∗ p2(η) ∗···∗ pm(η) , (3.57)
+where ∗ is convolution. The facts that the variances add and that the pdf
+of the sum can be determined easily are powerful results following from
+the independence of random variables. We will use these facts to derive
+approximate noise and signal-to-noise ratio (SNR) expressions for CT imaging
+in Chapter 6.
+EXAMPLE 3.9
+Consider the sum S of two independent Gaussian random variables N1 and N2, each
+having a mean of zero and variance of σ2.
+Question What are the mean, variance, and pdf of the resulting random variable?
+Answer The mean of S is zero since
+μS = μ1 + μ2 = 0 + 0 = 0,
+and the variance of S is 2σ2 since
+σ2
+S = σ2
+1 + σ2
+2 = σ2 + σ2 = 2σ2 .
+Using the fact that the convolution of two Gaussian waveforms yields a Gaussian
+waveform, we conclude that the pdf of S has a Gaussian form. Furthermore,

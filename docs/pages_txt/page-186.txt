@@ -1,0 +1,54 @@
+5.3 Image Formation 167
+to understand the basic terminology and characteristics of ﬁlm, as similar
+concepts can be applied to CR and DR.
+The intrinsic spatial resolution of ﬁlm is generally signiﬁcantly better than
+that of the intensifying screen; so, for most situations, we can ignore the
+spatial frequency characteristics of the ﬁlm. If necessary or desirable, the spatial
+resolution of ﬁlm can be modeled by a point spread function analogous to
+that of the detector blur above; the overall performance would be a cascade
+of subsystems, as depicted in (2.46), (3.29), and (3.30). Rather than a ﬁlm’s
+spatial resolution properties, it is its intensity transformation properties that are
+of primary interest here.
+Because ﬁlm is a very poor direct detector of x-rays, we will ignore the image
+created directly on the ﬁlm by the x-rays themselves and only consider the image
+created by the light produced in the phosphors adjacent to the ﬁlm. The
+parameters of interest are the contrast or gamma of the ﬁlm, and its dynamic
+range or latitude; we will deﬁne these terms in a moment. We use many different
+types of ﬁlm with varying contrast and latitude depending upon the type of
+x-ray examination desired. Those of you who are amateur photographers may
+have a practical appreciation of these ﬁlm characteristics.
+We consider the relationship between the amount of light that is incident
+upon the ﬁlm and the ﬁnal image that is viewed when the ﬁlm is exposed, devel-
+oped, and placed on a light source (‘‘light box’’). The light photons that are
+captured by the ﬁlm produce a latent image(i.e., it is not visible). When the ﬁlm
+is developed, that latent image produces a blackening of the ﬁlm. We therefore
+characterize ﬁlm as a transformation between exposure to light and the degree of
+blackening of the ﬁlm, which is characterized by the optical densityof the ﬁlm.
+When a developed ﬁlm is viewed on a light box, the blacker parts of the
+ﬁlm absorb more of the light coming from the box, creating the impression of a
+gray level image when viewed by the eye. The optical transmissivity is deﬁned
+as the fraction of light transmitted through the exposed ﬁlm or
+T = I
+t
+Ii
+, (5.30)
+where Ii is the irradiance of the incident light and It is the irradiance of the
+transmitted light, both in units of energy per unit area per second. For example,
+the darker parts of the ﬁlm might have a transmissivity of 0.1, while the more
+transparent parts might have a transmissivity of 0.9. The optical opacity is the
+inverse of the transmissivity, and theoptical densityis deﬁned to be the common
+logarithm of the optical opacity,
+D = log
+10
+Ii
+It
+. (5.31)
+We see that the optical density characterizes how black the ﬁlm is on a
+logarithmic scale. Optical densities in the range of 0.25–2.25 are usable, but the
+human eye discriminates shades of gray best when 1.0 < D < 1.5.
+We now appreciate that the appearance of the x-ray ﬁlm after exposure
+and development is determined by the spatial distribution of optical density,
+D(x, y). How does x-ray exposure relate to optical density? We ﬁrst recall from
+Chapter 4 that x-ray exposure X is measured in units of roentgens (R); in
+particular, 3,876 R of exposure is equivalent to 1 C of charge per kilogram of
+air; the charge comes from the ions produced by the x-ray interactions. For

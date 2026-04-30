@@ -1,0 +1,48 @@
+296 Chapter 9 Emission Computed Tomography
+blur), and decreases tracer washout effects (which might lead to a mathemat-
+ically inconsistent projection dataset). Third, it may be ‘‘traded’’ for higher
+resolution through the use of higher resolution/lower sensitivity collimators.
+EXAMPLE 9.1
+Suppose a single-head system requiresN counts in a 30-minute scan using an all-purpose
+collimator. Let us imagine performing the same study with a two-head system instead,
+and let the two new collimators have higher resolution with just 75 percent of the
+sensitivity of the all-purpose collimator on the single-head system.
+Question How long will it take to achieve the same counts as the single-head system,
+and will the image quality be equivalent?
+Answer In 30 minutes, each (high-resolution) head collects 0 .75 × N counts (on aver-
+age, of course). This corresponds to 2 × 0.75 × N counts in 30 minutes. The time t to
+collect just N counts satisﬁes
+t
+30 minutes = N
+2 × 0.75 × N ,
+so
+t = 30 minutes
+1.5 = 20 minutes .
+The image obtained in just 20 minutes will be better because, although the total counts
+are the same in the two scans, the resolution is better in each of the dual-head collimators.
+Multihead systems have permitted a wide variety of SPECT scans to be
+performed in less than 30 minutes. This is an important time milestone because
+beyond 30 minutes patient motion becomes a very signiﬁcant factor in image
+quality. Three-head systems exist, and it would seem that M-head systems
+(where M > 3) would be in the ofﬁng. However, simple geometric constraints
+(packing that many heads in close to the patient), quality control issues (how
+do you keep all those detectors in calibration?), and cost ( M heads means M
+collimators and head components) make it impractical to go much further in this
+design direction. For higher sensitivity, manufacturers have gone to specialized
+geometries, as discussed below.
+Studies have shown that Anger cameras must have signiﬁcantly better per-
+formance for SPECT than for planar scintigraphy. For example, nonuniformity
+must be reduced to less than 1% in order to avoid reconstruction artifacts. This
+requires acquisition of a 30–120 million count reference image of a uniform
+ﬁeld for subsequent computer correction of nonuniformities. (There should be
+around 10,000 counts per pixel in order for the relative Poisson variation or
+noise in the uniformity calibration to be < 1% (√
+10,000/10,000), so a longer
+reference scan is required for 128 × 128 acquisition versus 64 × 64 acquisi-
+tion.) The camera image must also be mechanically properly aligned within the
+computer matrix, or an axis-of-rotation correctionmade. In addition, there are
+several other factors that must be accounted for to make SPECT truly quantita-
+tive. In the past, there was disagreement about the need for attenuation, scatter,
+and spatial resolution corrections for subjective visual interpretation of SPECT
+images, but it is now generally accepted that such corrections are desirable for
+both visual interpretation and quantitative analyses.

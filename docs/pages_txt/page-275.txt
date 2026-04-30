@@ -1,0 +1,43 @@
+256 Chapter 8 Planar Scintigraphy
+Figure 8.1
+Components of an Anger
+scintillation camera.
+Computer
+Gating circuit
+Pulse height
+analyzer
+ZYX
+Position logic circuit
+Photomultiplier tubes
+Scintillation crystal
+Collimator
+As described in the Overview to Part III, nuclear medicine images are based
+on the distribution of radioactivity. Unlike projection radiography and CT, we
+are thus interested not in total intensity but in the detected decay rate of the
+source, typically expressed ascounts per time. Nuclear medicine images are thus
+formed event-by-event.
+The Anger scintillation camera,o r gamma camera, was invented in the late
+1950s by Hal Anger of the Donner Laboratory at the University of California,
+Berkeley. It is the most commonly used imaging instrument in nuclear medicine
+today. The complete camera system consists of a multihole lead collimator, a 10-
+to 25-inch circular, square, or rectangular sodium iodide scintillation crystal,
+an array of photomultiplier tubes on the crystal, a positioning logic network, a
+pulse height analyzer, a gating circuit, and a computer, as shown in Figure 8.1.
+We now describe each of these components in detail.
+8.2.1 Collimators
+The collimator is a 1- to 2-inch thick slab of lead of the same dimensions as
+that of the scintillation crystal, with a geometric array of holes in it. The lead
+that separates each hole is called a septum; collectively the lead represent septa.
+The collimator provides an interface between the patient and the scintillation
+crystal by allowing only those photons traveling in an appropriate direction
+(i.e., those that can pass through the holes without being absorbed in the lead)
+to interact with the crystal. Thus, the collimator discriminates against photons
+based on their direction of travel, and restricts the ﬁeld of view of the crystal. In
+this regard, the collimator is not like a lens (although some authors draw that
+comparison) because it does not steer or focus the photons the way a lens does.
+There are several types of collimators used with Anger cameras: parallel-
+hole, converging, diverging, and pinhole (Figure 8.2). The most commonly used
+collimator is the parallel-hole collimator, which consists of an array of parallel
+holes perpendicular to the crystal face, as shown in Figure 8.2(a). With parallel-
+hole collimators, the image on the crystal face is the same size as the object. Such
+collimators are either cast or fabricated from corrugated lead sheets. Originally,

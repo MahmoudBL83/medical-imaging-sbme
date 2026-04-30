@@ -1,0 +1,51 @@
+8.4 Image Quality 275
+poor resolution when used for high-energy radiotracers (because photons can
+penetrate the septa without being absorbed), and is generally an ill-advised prac-
+tice for that reason. It should be noted that b, the effective scintillation crystal
+thickness, is also energy-dependent. Higher-energy photons will penetrate the
+crystal farther, on average, before being absorbed, which contributes an addi-
+tional degradation of resolution (R
+C becomes larger) with high-energy photons.
+Intrinsic Resolution The concept of collimator resolution incorporates both
+the geometry of the collimator and the energy-dependent septal penetration of
+photons. Additional blurring takes place in the scintillator itself, however, and
+this process is characterized by the intrinsic resolutionof the Anger camera.
+The concept of intrinsic resolution is not quite the same as that of resolution
+in an intensifying screen in radiography. In both projection radiography and
+planar scintigraphy, there is a ﬂash of light in the scintillator (or phosphor)
+when a photon is absorbed. In projection radiography, the spread of the light
+is permanently recorded on the (ﬁlm or solid state) detector. The amount that
+the light spreads represents the blurring of the image. In planar scintigraphy,
+the spreading of the ﬂash of light is used to estimate the position of the single
+absorption event. It is inaccuracy in the estimation of ( X, Y) that accounts for
+imperfect intrinsic resolution in planar scintigraphy.
+There are two primary reasons for inaccuracy in the estimation of (X, Y)i n
+an Anger camera. The ﬁrst reason is related to the path of the absorbed photon.
+As discussed in Chapter 4, a photon that is absorbed by the photoelectric
+effect may have experienced some Compton scattering events prior to the ﬁnal
+absorbing event. Those Compton events occurring in the scintillator generate
+ﬂashes of light, smaller in intensity than the ﬁnal event but spread out in space.
+These ﬂashes are detected in the array of photomultiplier tubes (as though they
+came from a single event) and they contribute to the error in estimating ( X, Y)
+by skewing the peak light distribution along the photon path.
+The second reason for inaccuracy in the estimation of ( X, Y) is noise or
+statistical ﬂuctuation. Consider a photon that goes straight through a collimator
+hole and is absorbed promptly in a single photoelectric event. This is an ideal
+event, devoid of geometric or Compton scattering problems and should be
+localized perfectly if we lived in a perfect world. In fact, the physics and
+electronics that follow are beset with inherent statistical ﬂuctuations that render
+the result less than perfect. First, both the number and the spatial distribution
+of scintillation light photons resulting from the photoelectric event are random.
+Although detailed analysis of the physics of the scintillator can provide good
+models for the mean numbers of these photons, the exact number cannot be
+known perfectly. Thus, the number and spatial distribution of light entering into
+any PMT are also random. The situation gets progressively worse within a PMT,
+where the electron cascade process is also random. All this leads to statistical
+variations in the peak pulse heights a
+k, k = 1, ... , K within the photomultiplier
+array. These variations lead to a statistical error variance associated with the
+estimation of ( X, Y), which causes additional blurring in the localization of
+radioactive sources in space.
+Intrinsic resolution of an Anger camera can be characterized by another
+FWHM, RI, which encompasses both sources of variation in the scintillation
+process. It is common to model the PSF associated with this process by a

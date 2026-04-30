@@ -1,0 +1,45 @@
+224 Chapter 6 Computed Tomography
+Problems
+Instrumentation
+6.1 A CT calibration experiment measures two Hounsﬁeld numbers:hW
+m = 10
+for water and hA
+m =− 1, 100 for air.
+(a) Find expressions for a and b so that
+ahW
+m + b = hW ,
+ahA
+m + b = hA .
+(b) What are the correct CT numbers hW and hA for water and air,
+respectively?
+(c) What are the values of a and b for this calibration experiment?
+6.2 Suppose a 6G CT scanner has a patient table which moves at a speed
+of 2 cm/s. The x-ray source detector apparatus rotates at a speed of 4 π
+radians per second. Also assume that it takes 1 ms to measure a projection.
+(a) What is the pitch of the helix?
+(b) How many projections does the system measure over a 2π angle?
+(c) How long does it take to do a 60 cm torso scan?
+Radon Transform
+6.3 Show that the Radon transform is a linear operator.
+6.4 Show that the Radon transform of f (x − x0, y − y0)i s g(ℓ − x0 cos θ −
+y0 sin θ, θ).
+6.5 Find the 2-D Radon transform g(ℓ, θ)o f f (x, y) = exp(−x2 − y2). (Hint:
+Use the rotational symmetry of f (x, y) to simply your integration.)
+6.6 Show that the functionhℓ(ℓ)hθ (θ) cannot represent a 2-D Radon transform
+g(ℓ, θ) unless hθ (θ) is a constant.
+6.7 (a) Find the 2-D Radon transform g(ℓ, θ) of the 2-D function f (x, y) =
+cos 2πf0x. Show that ﬁltered backprojection produces the correct
+reconstruction.
+(b) Repeat part (a) for f (x, y) = cos 2πax + cos 2πby and f (x, y) =
+cos 2π(ax + by).
+6.8 A ﬁrst-generation CT scanner is used to image a unit-square shaped object
+(i.e, length of each side = 1). The object is surrounded by air and has a
+constant linear attenuation coefﬁcient of μ0. The coordinate system is set
+up such that the origin is at the object center, and the x- and y-axes are
+parallel to the sides of the object.
+(a) Write a mathematical expression for the linear attenuation function
+μ(x, y). (Hint: Use the rect function.)
+(b) What is the Fourier transform of μ(x, y)?
+(c) Write a mathematical relationship between the projectiong(ℓ, θ) (com-
+puted using the observed x-ray intensities) and μ(x, y).
+(d) Using the projection-slice theorem, ﬁnd G(ϱ , θ).

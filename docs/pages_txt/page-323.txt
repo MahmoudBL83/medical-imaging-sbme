@@ -1,0 +1,41 @@
+304 Chapter 9 Emission Computed Tomography
+ﬁelds, and radio frequency signals from the MRI portion of the system interfere
+with PMTs and some of the PET electronics, which adversely affect the PET
+images. In addition, the PET detectors may produce inhomogeneities in the MRI
+magnetic ﬁeld, as well as electromagnetic interference, both of which adversely
+affect the MR images.
+Several approaches are being used to address these challenges, including
+using two separate scanners with a common patient bed (akin to the conven-
+tional PET/CT approach, which yields a very long gantry), integrating the PET
+detectors in the MRI scanner and guiding the scintillation light to an enclo-
+sure outside the MRI system proper, using a custom magnet architecture, and
+using new approaches to PET detectors, including the substitution of avalanche
+photodiodes for PMTs.
+9.2 Image Formation
+In considering reconstruction in emission tomography, we focus on the recon-
+struction of a 2-D cross-sectional image from observations of line integrals
+within the cross section. This approach is consistent with SPECT (with suitable
+approximation) and 2-D PET. It is completely analogous to our development of
+CT reconstruction methods in Chapter 6, upon which we draw heavily.
+9.2.1 SPECT Image Formation
+Coordinate Systems Our ﬁrst task is to set up a convenient (and conventional)
+coordinate system. Since the Anger camera rotates in SPECT, it is necessary
+to have both a laboratory (ﬁxed) coordinate system and a rotating coordinate
+system; these are both shown in Figure 9.7. It is important to realize that
+because of the requirement for rotation and to conform with our previously
+deﬁned notation for tomographic reconstruction, the notation shown in this
+ﬁgure differs from the ‘‘camera-centric’’ notation that we used for planar
+scintigraphy in Chapter 8.
+Applying the same approximations that we used in developing the imaging
+equation for planar scintigraphy (see Section 8.3), we assume that the photon
+Figure 9.7
+Geometry of a SPECT
+system.
+Patient
+R x
+u
+z
+z
+y
+Gamma
+camera

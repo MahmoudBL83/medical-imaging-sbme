@@ -1,0 +1,31 @@
+238 Part III Nuclear Medicine Imaging
+Figure III.3
+Whole-body FDG-PET.
+Left: anterior reprojected
+view. Middle: posterior
+reprojected view. Right:
+left lateral reprojected
+view. Images courtesy of
+Harvey Ziessman, MD,
+Johns Hopkins University
+and Hospital.
+structure in the images. The images represent tomographic slices from a 3-D
+single-photon emission computed tomography(SPECT) study. In contrast, the
+image in Figure III.1(a) is a projection image, which in nuclear medicine is often
+called a planar image or planar scintigraphy.
+In the same way that computed tomography is the 3-D tomographic modality
+based on projection radiography, SPECT is the 3-D nuclear medicine modality
+based on planar scintigraphy. In Figure III.2, the ﬁrst four rows are short axis
+slices (as though the heart were sliced like a bread loaf), the next two rows
+are horizontal long axisslices (orthogonal to the short axis), and the ﬁnal two
+rows are vertical long axis slices (orthogonal to the short axis and also to the
+horizontal long axis). These slices thus represent orientations relative to the
+heart, not the long axis of the (entire) body.
+Arguably the most advanced form of nuclear medicine imaging is positron
+emission tomography (PET), which utilizes specialized radiotracers and instru-
+mentation. Figure III.3 depicts a whole-body PET scan (in anterior, posterior,
+and left lateral reprojection views) of the distribution of ﬂuorine-18-labeled
+deoxyglucose (FDG), whose distribution reﬂects glucose metabolism. FDG-PET
+is the most commonly performed PET study with a focus on cancer detection
+and staging. These reprojection views are common in FDG-PET and are formed
+from the 3-D reconstructed dataset.

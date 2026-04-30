@@ -1,0 +1,50 @@
+308 Chapter 9 Emission Computed Tomography
+the attenuation factors are not separable in (9.6), and therefore no closed form
+solution exists to ﬁnd f from the observed pixel counts. However, once an
+approximate image of f is reconstructed using (9.10), it is straightforward to
+deduce a ﬁrst-order attenuation correction factor a(x, y) that can be applied to
+improve the image appearance and quantiﬁcation.
+Suppose we knew the linear attenuation coefﬁcient μ(x, y;E) on the plane
+of interest (perhaps by measuring it using CT) and imagine that we could
+distribute radioactivity uniformly—that is, f (x, y) = 1—throughout this object.
+From (9.6) we can then compute the expected measurementsnk(ℓ, θ) that would
+be theoretically produced by this object and then reconstruct an estimate of
+this object using (9.9). Let us denote the reconstructed image of this artiﬁcial
+uniform ﬁeld bya(x, y). We know that the values ofa(x, y) will be less than unity
+since attenuation has been applied numerically. It will also be ‘‘cup shaped,’’
+having lower values in the deep interior due to the higher overall attenuation.
+Since we have incorporated the attenuation factors (inverse square law and linear
+attenuation coefﬁcient) in computing the measurements, the reconstructed image
+a(x, y) will be degraded by the same factors as the true activity distribution that
+we are trying to reconstruct. In the case of the simulation, we know the ‘‘truth’’
+f (x, y) = 1 can be achieved by simply dividing a(x, y)b yi t s e l f .
+As a ﬁrst-order correction, we can therefore apply the same correction factor
+to our actual reconstructed image, yielding the attenuation compensated image
+ˆf
+c(x, y) =
+ˆf (x, y)
+a(x, y) . (9.13)
+Although (9.13) looks on the surface to be a valid correction method—and it
+is better than nothing—it is only an approximation because the inverse Radon
+transform is not theoretically exact for this problem since the observation
+equation (without approximation) is not a pure line integral. The notion of
+computing the expected observations is a very powerful concept, however,
+and it forms the basis of iterative reconstruction methods (see Section 9.2.3) in
+which attenuation correction can be incorporated iteratively and with theoretical
+justiﬁcation.
+Any attenuation correction approach requires knowledge of the distribution
+of the linear attenuation coefﬁcients. This distribution is usually obtained from
+a transmission dataset. That dataset may come from either a CT (e.g., in a
+combined SPECT/CT system) or from scanning line sources (e.g., long-lived
+radioactive sources arrayed as lines that scan across the patient, integrated
+into the SPECT system). With CT, the measured Hounsﬁeld units must be
+converted to attenuation coefﬁcients at the emission energy of the radiotracer
+(e.g., 140 keV for Tc-99m). This conversion is typically a bi- or tri-linear
+function. The big advantages of CT are speed, low noise, and—in the case of
+combined SPECT/CT systems—perfect registration between the emission and
+transmission images. With scanning line sources, there is usually less need for
+any numerical conversion (because a radionuclide with approximately the same
+energy photons as the emission radiotracer is chosen), but transmission images
+from scanning lines sources are signiﬁcantly noisier than those from CT, and the
+noise propagates into the attenuation-corrected emission images. (The spatial
+resolution of transmission images from scanning line sources is poorer than that

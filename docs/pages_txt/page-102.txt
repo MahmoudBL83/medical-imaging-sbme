@@ -1,0 +1,62 @@
+3.6 Sampling 83
+= 1
+/Delta1x/Delta1y F(u, v) ∗
+∞∑
+m=−∞
+∞∑
+n=−∞
+δ(u − m//Delta1x, v − n//Delta1y) [from (2.8)]
+= 1
+/Delta1x/Delta1y
+∞∑
+m=−∞
+∞∑
+n=−∞
+F(u, v) ∗ δ(u − m//Delta1x, v − n//Delta1y)
+= 1
+/Delta1x/Delta1y
+∞∑
+m=−∞
+∞∑
+n=−∞
+[∫ ∞
+−∞
+∫ ∞
+−∞
+F(ξ, η)δ(u − m//Delta1x − ξ, v − n//Delta1y − η) dξ dη
+]
+= 1
+/Delta1x/Delta1y
+∞∑
+m=−∞
+∞∑
+n=−∞
+F(u − m//Delta1x, v − n//Delta1y) [from (2.6)] , (3.76)
+where we have used the fact that the Fourier transform of the sampling function
+is given by
+F2D(δs(x, y;/Delta1x, /Delta1y)) = comb(u/Delta1x, v/Delta1y) , (3.77)
+as indicated in Table 2.1.
+From (3.76), it is clear that the spectrum Fs(u, v)o f fs(x, y) is calculated
+by shifting the spectrum F(u, v)o f f (x, y) to locations ( m//Delta1x, n//Delta1y), for all
+m and n, adding all shifted spectra and dividing the result by /Delta1x/Delta1y.T h i si s
+illustrated in Figure 3.14. If the shifted spectra in Fs(u, v) do not overlap, then
+the original spectrum F(u, v)o f f (x, y), and thus f (x, y) itself, can be recovered
+by ﬁltering fs(x, y) to ‘‘pick’’ one of the (equivalent) spectra. It is customary to
+use a low-pass ﬁlter [see (2.102)] to capture the spectrum centered at the origin,
+like the one outlined with a gray box in Figure 3.14(b).
+3.6.2 Nyquist Sampling Theorem
+In order that the spectra in Fs(u, v) do not overlap, it is ﬁrst necessary that the
+spectrum of f (x, y) be zero outside a rectangle in frequency space. Such signals
+are called band-limited. If the highest frequencies present in f (x, y)i nt h ex and
+y directions are U and V, respectively, then if
+/Delta1x ≤ 1
+2U and /Delta1y ≤ 1
+2V , (3.78)
+the spectrum F(u, v) can be reconstructed from the spectrum Fs(u, v), in which
+case f (x, y) can be reconstructed fromfs(x, y) and thus from the samplesfd(m, n).
+If /Delta1x > 1/2U or /Delta1y > 1/2V, there is overlap of ‘‘high’’ frequencies of
+F(u, v)i n Fs(u, v), producing aliasing. Aliasing is illustrated in Figure 3.14(c). In
+this case, the spectrum F(u, v) cannot be recovered from the spectrum Fs(u, v)
+and, therefore, f (x, y) cannot be reconstructed from its samples fd(m, n).
+In summary, we have the following important result: A 2-D continuous
+band-limited signal f (x, y), with cutoff frequencies U and V, can be uniquely

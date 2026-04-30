@@ -1,0 +1,48 @@
+196 Chapter 6 Computed Tomography
+but they are highly directional, and therefore appropriate for the geometry of 3G
+scanners. Solid-state detectors must be accompanied by external collimation in
+order to provide necessary directivity (i.e., scatter rejection). In order to provide
+both good resolution and high efﬁciency, in a single-slice scanner (single-row
+detector CT or SDCT) each crystal would typically be 1.0m m × 15 mm in area.
+An important concept related to detector dimensions is slice thickness.I na
+typical CT scanner, the axial response (along the z-direction) is a rect function
+whose width is the slice thickness. The maximum slice thickness is equal to the
+detector height, 15 mm in the typical SDCT case. Smaller slice thicknesses are
+created by further restricting the beam using movable blades in the x-ray tube
+collimator. Slice thickness is controlled at the console and is typically set in
+millimeter increments, starting from 1 mm.
+In a MDCT systems, as shown in Figure 6.6(c), the individual solid-state
+detectors are typically 1.0m m × 1.25 mm in size. In these systems, slice thickness
+is controlled by both the axial beam width and the combined detector height.
+In particular, MDCT systems have digital switching arrays that can group
+detectors together in order to synthesize detector widths in multiples of the
+physical detector heights. Accordingly, slice thicknesses are selected in multiples
+of the detector height and the beam width is chosen to cover the desired axial
+acquisition. For example, if there are 16 rows of detectors, each 1.25 mm in
+height, we could acquire 16 simultaneous projections, each 1.25 mm thick.
+Alternatively, we could acquire eight simultaneous projections, each 2.5 mm
+thick, and so on. We will see later that there is a tradeoff in image quality that
+must be addressed in selecting slice thickness, so it is not always a good idea to
+simply acquire the thinnest possible slices.
+6.2.5 Gantry, Slip Ring, and Patient Table
+The gantry of a CT system holds the x-ray tube and detectors so that they can
+be rotated around the patient rapidly and repeatably. The fan angle, size of the
+detector array, and separation between the x-ray tube and detector array must
+be capable of imaging a 50 cm (typical) FOV. A full 2-D scan in under 1 second
+is required. The gantry can typically be tilted in order to facilitate acquisition of
+nonaxial slices.
+Most modern scanners are capable of continuous rotation without requiring
+a ‘‘rewinding’’ of the source and detectors. Since there are large voltages that
+must go to the x-ray tube and hundreds of signals that must be transmitted out
+of the detectors, continuous rotation makes special demands on the mechanical
+and electrical design, which the slip ring solves. A slip ring contains a large
+cylinder with grooves on the outside so that brushes can make continuous
+electrical contact with the rotating cylinder. The x-ray tube and detectors are
+mounted inside the cylinder and are in continuous electrical contact with the
+(stationary) controlling and data processing electronic hardware.
+The patient table is more than just a place to put the patient. In helical
+scanners, it is an integral part of the data acquisition hardware, since it must
+be moved smoothly and precisely in synchrony with the source and detector
+rotation. Even in single-slice scanners, the table’s positioning capabilities must
+be quite ﬂexible. Typically, the table can be extended well out from the gantry
+and lowered in order to facilitate patient transfer from a hospital bed. It must

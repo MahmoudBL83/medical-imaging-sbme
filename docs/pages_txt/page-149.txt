@@ -1,0 +1,46 @@
+130 Chapter 4 Physics of Radiography
+TABLE 4.6
+X-Ray Mass Attenuation Coefﬁcients for Some Materi-
+als
+Material 20 keV 100 keV
+(cm2/g) (cm 2/g)
+Air 0.7779 0.1541
+Water 0.8096 0.1707
+Bone 0.4001 0.1855
+Muscle 0.8205 0.1693
+Lung 0.8316 0.1695
+Brain 0.8281 0.1701
+Source: Hubbell and Seltzer, NIST online tables.
+So the f -factor is
+f = 0.87(μ/ρ)lung
+(μ/ρ)air
+= 0.93 .
+The absorbed dose is related to the exposure by (4.35). If we want to limit the dose to be
+under 10 mrads, the exposure must be under 10/0.93 = 10.8m R .
+4.6.6 Effective Dose
+For the purpose of relating dose of ionizing radiation to risk, an extension of the
+dose equivalent is used to express dose as that which would have been received
+if the whole body had been irradiated uniformly. The effective doseis obtained
+as the sum of dose equivalents to different organs or body tissues weighted in
+such a fashion as to provide a value proportional to radiation-induced somatic
+and genetic risk even when the body is not uniformly irradiated. This can be
+expressed as
+D
+effective =
+∑
+organs
+Hjwj (4.38)
+where Deffective is effective dose, Hj is the dose equivalent for organ j, and wj is
+the weighting factor for organ j. The sum is over all organs; note that
+∑
+organs
+wj = 1. (4.39)
+In this fashion, risks may be compared for different radiations and different
+target tissues.
+On average our annual individual effective dose (exclusive of medical
+imaging procedures) is about 300 mrem. Medical imaging procedures produce
+doses over a wide range, depending on the speciﬁc procedure. At the low end,
+a typical chest x-ray might result in a dose of 3–4 mrem; at the high end, a
+ﬂuoroscopic study might yield several rem.
+The main risk from ionizing radiation at the doses involved in medical
+imaging is cancer production (radiogenic carcinogenesis). In practice, we assume

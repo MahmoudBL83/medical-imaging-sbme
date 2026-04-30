@@ -1,0 +1,52 @@
+4.4 Nature and Properties of Ionizing Radiation 119
+photoelectric or Compton event. What are the factors that make a photoelectric
+effect more likely? Since a photoelectric event occurs as a result of an interaction
+with the coulomb ﬁeld of the nucleus of an atom and if there are more (positively
+charged) protons in the nucleus, the likelihood should increase. The probability
+of a photoelectric event is related to the atom’s atomic numberZ. In a compound
+composed of a variety of different atoms, we deﬁne an effective atomic number
+Z
+eff, which characterizes the average atomic number in a certain sense. The
+probability of a photoelectric event is (approximately) proportional to Z4
+eff.2
+The other factor affecting the probability of a photoelectric event is the
+incident photon energy. Intuitively, we might expect that high-energy photons
+are more penetrating—that is, they pass farther into an object before being
+absorbed. This intuition is correct; in fact, the probability of a photoelectric
+event (given all else held constant) is proportional to 1 /(hν)3. Putting this
+together, we ﬁnd
+Prob[photoelectric event] ∝ Z4
+eff
+(hν)3 . (4.10)
+Finally, we note that when the photon energy rises above the binding energy
+of L-shell or K-shell electrons, experiments reveal that the probability of a
+photoelectric interaction increases abruptly, then begins to diminish as the
+energy is further increased. This sudden increase occurs because a large number
+of electrons has suddenly become available to be ejected from their host atoms.
+This property will be important in the use ofcontrast agentsin radiography and
+computed tomography.
+Now we ask another question: What are the factors that make a Compton
+scattering event more likely? Since Compton events occur with very loosely
+bound (or ‘‘free’’) electrons in the outer shells, what matters is the number
+of electrons per kilogram of material—the electron density (ED). The electron
+density is given by
+ED = N
+AZ
+Wm
+, (4.11)
+where NA is Avogadro’s number (atoms/mole), Z is the atomic number (elec-
+trons/atom), and Wm is the molecular weight of the atom (grams/mole). As
+shown in Table 4.4, except for hydrogen, the electron density for various bio-
+logical materials is nearly the same, 3 × 1026 electrons/kg (see Problem 4.7).
+Therefore, the probability of Compton scattering is nearly independent of the
+atomic number (actual or effective).
+The other factor that might inﬂuence the probability of Compton scatter
+is the photon energy. There is a fairly complicated relationship described by
+the Klein-Nishina formula, which predicts that the probability of a Compton
+event generally decreases with increasing energy. However, this decrease is a
+very gradual one, taking place over the very highest energies of interest in
+diagnostic imaging. Over the range of energies of importance in x-ray imaging,
+the probability is reasonably constant. In summary, we conclude that
+Prob[Compton event] ∝ ED . (4.12)
+2For high Z materials (as opposed to human tissues), it is more nearly proportional to Z3
+eff.

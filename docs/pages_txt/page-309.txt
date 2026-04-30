@@ -1,0 +1,49 @@
+290 Chapter 8 Planar Scintigraphy
+Figure P8.7
+(a) Detector without
+collimator. (b) Detector
+with collimator. See
+Problem 8.17.
+0.5 m 0.5 m
+0.5 m 0.5 m
+dh
+l
+0.8 m 0.8 m
+y
+y
+x
+x
+(a)( b)
+(f) If l gets larger, at some point radiation will only be able to hit the
+detector through one hole. Find the smallest l = l0 when this happens.
+What is Rc in this case?
+(g) If the camera sensitivity is ϵ when l = 8 cm, what is its sensitivity
+when l = l0? (For simplicity assume that the effective height of a
+collimator hole is equal to l.)
+Applications
+8.18 Suppose you replaced the standard collimator on an Anger camera with
+one that has only one hole with diameter d positioned at the center of the
+camera—i.e., at x = 0 and y = 0. Let the object be a small radioactive
+point source that is placed 20 cm away from the camera face in direct
+alignment with the center of the camera.
+(a) When a gamma ray photon goes through the collimator hole, the
+camera produces a response. Explain in words what happens to this
+photon and what sequence of events takes place in order to produce
+the X and Y signals and the Z-pulse.
+(b) Suppose the X signal is held constant until the next photon hits the
+camera (so it is a piecewise constant signal X(t) in time.) Draw X(t)
+when the hole has a small diameter [call this X1(t)] and then draw
+X(t) when the hole has a larger diameter [call this X2(t)]. Account for
+all effects that change when you increase the hole diameter and draw
+the signals on the same vertical and horizontal scales with clear labels.
+(c) Would you expect the sequence of Z-pulses to change when the hole
+diameter (of this single hole) is increased? Explain your answer.
+(d) If you double the hole diameter, what must you do to the hole length
+in order for the camera to have the same sensitivity?
+8.19 A planar scintigraphy calibration experiment is being performed using a
+uniform ﬂood phantom. With this phantom, each pixel out of 64 × 64
+pixels on an Anger camera is struck by four gamma photons per second
+on average.
+(a) If a total count of 2,000,000 across the whole camera is considered
+to be a complete experiment, how long will it take (on average) to
+complete the calibration scan?

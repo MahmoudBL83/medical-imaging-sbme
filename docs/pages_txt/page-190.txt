@@ -1,0 +1,42 @@
+5.4 Noise and Scattering 171
+still relatively transparent to x-rays, and the number of photons per Roentgen
+is high.
+We can express the SNR in more detail by adding several additional
+concepts. Since we indicated above that SNR is proportional to the number of
+photons per unit area of detector, if we increase the unit area we also increase
+the number of photons. Therefore, a detailed expression for SNR is given by
+SNR = C
+√
+/Phi1ARtη , (5.39)
+where /Phi1is the number of photons per Roentgen per cm 2, A is the unit area,
+R is the body’s radiation exposure in Roentgens, t is the fraction of photons
+transmitted through the body, and η is the detector efﬁciency.
+EXAMPLE 5.5
+Consider the following parameters, which are from a typical chest x-ray:
+/Phi1= 637 × 106 photons R−1 cm−2
+R = 50 mR
+t = 0.05
+η = 0.25 (25% efﬁciency)
+A = 1m m2
+Question What is the SNR of a lesion having 10% contrast, that is, C = 0.1?
+Answer Using (5.39), we compute that SNR = 16 dB.
+5.4.2 Quantum Efﬁciency and Detective Quantum Efﬁciency
+In projection radiography, x-rays that are not stopped by the body should
+be detected. Ideally, all photons incident upon a detector would be detected
+and characterized by their location, energy, and time-of-arrival. However, no
+detector can achieve these ideals. Instead, detector designs must emphasize
+certain performance measures at the expense of others, and these tradeoffs
+inﬂuence the quality of the measured radiographs. In this section, we develop
+the concept of detective quantum efﬁciency (DQE), which represents one way
+to characterize the performance of a detector that has a direct relation to the
+SNR of the images it produces.
+Quantum Efﬁciency Ideally, all photons incident upon a detector should be
+detected. What does this really mean? In order to be ‘‘detected,’’ an incident
+photon must interact with the detector—for example, it must be stopped by a
+photoelectric interaction—and that interaction must produce some measurable
+output—for example, a ﬂash of light, a collection of ionized atoms, or an
+electrical current. Quantum efﬁciency (QE) is the probability that a single
+photon incident upon the detector will be detected; it is a basic property of any
+x-ray detector.
+A detector with a higher QE does not necessarily mean that the detector
+or the image it produces is better, however. Consider two detectors having the

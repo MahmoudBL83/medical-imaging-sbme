@@ -1,0 +1,37 @@
+xii Contents
+8.4.5 Noise 280
+8.4.6 Factors Affecting Count Rate 281
+8.5 Summary and Key Concepts 282
+9
+Emission Computed Tomography 293
+9.1 Instrumentation 294
+9.1.1 SPECT Instrumentation 294
+9.1.2 PET Instrumentation 298
+9.2 Image Formation 304
+9.2.1 SPECT Image Formation 304
+9.2.2 PET Image Formation 309
+9.2.3 Iterative Reconstruction 313
+9.3 Image Quality in SPECT and PET 317
+9.3.1 Spatial Resolution 318
+9.3.2 Attenuation and Scatter 319
+9.3.3 Random Coincidences 320
+9.3.4 Contrast 320
+9.3.5 Noise and Signal-to-Noise Ratio 321
+9.4 Summary and Key Concepts 321
+Part IV Ultrasound Imaging 331
+10
+The Physics of Ultrasound 335
+10.1 Introduction 335
+10.2 The Wave Equation 336
+10.2.1 Three-Dimensional Acoustic Waves 336
+10.2.2 Plane Waves 338
+10.2.3 Spherical Waves 340
+10.3 Wave Propagation 341
+10.3.1 Acoustic Energy and Intensity 341
+10.3.2 Reﬂection and Refraction at Plane Interfaces 342
+10.3.3 Transmission and Reﬂection Coefﬁcients
+at Plane Interfaces 343
+10.3.4 Attenuation 344
+10.3.5 Scattering 347
+10.3.6 Nonlinear Wave Propagation 347
+10.4 Doppler Effect 349

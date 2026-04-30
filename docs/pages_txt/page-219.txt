@@ -1,0 +1,46 @@
+200 Chapter 6 Computed Tomography
+Figure 6.8
+Projection of a disk.
+x
+y
+0
+Answer This function is circularly symmetric so its projections are independent of the
+angle. It is therefore sufﬁcient to calculate the projection at θ = 0◦ where the lateral
+displacement ℓ is horizontal and line integrals are vertical. (See Figure 6.8.)
+Accordingly, we have
+g(ℓ, θ) =
+∫ ∞
+−∞
+f (ℓ, y) dy .
+Here, g(ℓ, θ) = 0 when |ℓ| > 1. When |ℓ|≤ 1, the integral must integrate the function
+value on the unit disk, just the number 1, from the bottom of the unit circle to the top.
+Accordingly, in this range we can write
+g(ℓ, θ) =
+∫ √
+1−ℓ2
+−
+√
+1−ℓ2
+dy .
+Performing the integration and supplying the known value outside this range yields
+g(ℓ, θ) =
+{
+2
+√
+1 − ℓ2 |ℓ|≤ 1
+0 otherwise ,
+which is the desired result.
+Sinogram An image of g(ℓ, θ) with ℓ and θ as rectilinear coordinates is called
+a sinogram. It is a pictorial representation of the Radon transform off (x, y) and
+represents the data that are necessary to reconstruct f (x, y).
+An object and its sinogram are shown in Figure 6.9. It is important to
+observe several features about this sinogram. First, by convention in this book,
+the bottommost row of the sinogram corresponds to the projection of the
+object at θ = 0. With reference to Figure 6.7, we see that this is the projection
+comprising vertical integrals of the object. Since the object in Figure 6.9(a) is
+widest in the horizontal direction, this gives the widest projection, which is
+evident in Figure 6.9(b).
+Moving up from the bottommost row in Figure 6.9(b), the projections
+are increasingly narrower and become narrowest at the angle θ = π/2. This
+corresponds to the projection comprising horizontal integrals. The topmost row
+of the sinogram corresponds to an angle just shy of θ = π, returning nearly

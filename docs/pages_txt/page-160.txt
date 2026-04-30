@@ -1,0 +1,44 @@
+5.2 Instrumentation 141
+Figure 5.6
+Different beam restrictors.
+Diaphragm
+beam restrictor
+Cone beam
+restrictor
+Collimator
+beam restrictors
+(a) (b) (c)
+window, as shown in Figure 5.6(a). They are simple and inexpensive but result
+in a ﬁxed geometry that can usually be used only in dedicated systems that have
+only one purpose (such as chest radiography). Cones or cylinders, as shown
+in Figure 5.6(b), are ﬁxed in their geometry but can have somewhat better
+performance. Collimators are more expensive but are so much more ﬂexible
+and better performing that they are used nearly all the time in projection x-
+ray systems. As shown in Figure 5.6(c), collimators have variable diaphragms
+comprising movable pieces of lead. Most often, there are two collimators, one
+near the tube and one farther away from the tube. Typically, there is a scored
+mirror in between these two collimators so that a light coming from the side
+will shine through the second collimator, illuminating the ﬁeld of view with an
+alignment grid.
+5.2.3 Compensation Filters and Contrast Agents
+Attenuation is the process by which x-rays are absorbed or redirected (scattered)
+within the body or other objects in the ﬁeld of view. Body tissues attenuate x-rays
+in different amounts depending on their linear attenuation coefﬁcients and the
+x-ray energies. It is this differential attenuation that gives rise to contrast—and
+therefore the ability to differentiate tissues—in an x-ray image. In certain
+circumstances, we may want to artiﬁcially change the natural attenuation of the
+body prior to detecting the x-rays. We now discuss compensation ﬁlters and
+contrast agents, both used for this purpose.
+Compensation Filters Thick body parts or dense materials (such as metal
+or bone) stop more x-rays than thinner body parts and normal soft tissues.
+For example, the torso attenuates more x-rays in the middle than at its edges,
+simply because it is thicker in the middle. Imaging both locations—that is, a
+location having large numbers of transmitted photons and a location having
+low numbers of photons—within the same exposure is difﬁcult because of the
+limited dynamic range of x-ray detectors. One region would be overexposed
+while the other is underexposed and neither would yield a usable diagnostic
+image.
+In these cases, acompensation ﬁlter, comprising a specially shaped aluminum
+or a leaded plastic object, can be placed between the x-ray source and the
+patient or in some cases between the patient and the detector. Several types
+of compensation ﬁlters are shown in Figure 5.7. Notice that the compensation

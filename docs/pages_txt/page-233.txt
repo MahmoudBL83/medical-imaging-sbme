@@ -1,0 +1,53 @@
+214 Chapter 6 Computed Tomography
+and there are sampling limitations, both in the number of projections and in
+the number of ray-paths per projection. As well, since the patient will absorb
+x-rays, we cannot use an arbitrarily large dose, and this limits the attainable
+signal-to-noise ratio (SNR). A third problem is beam hardening, which is a
+phenomenon caused by energy selective absorption of x-rays by human tissues
+(as discussed in Section 5.2.2). In this section, we describe these phenomena and
+indicate how they affect the appearance of reconstructed CT images.
+6.4.1 Resolution
+Filtered backprojection [see (6.23)] is an exact formula for the inverse Radon
+transform. As noted in (6.27), however, the ideal (ramp) ﬁlter|ϱ | is not realizable,
+so an approximate ﬁlter W(ϱ )|ϱ | using a window function W(ϱ ) [see (6.27)]
+must be used in practice. In addition, the line integrals themselves cannot be
+imaged exactly due to the ﬁnite size of the detectors. In fact, CT detectors are
+area detectors that locally integrate the underlying true signal, an effect that
+can be modeled using an additional ﬁlter S(ϱ ) [see (3.81)], which is the Fourier
+transform of the indicator function s(ℓ) deﬁning a detector. Combining these
+effects, the ﬁltered backprojection formula becomes
+ˆf (x, y) =
+∫
+π
+0
+[∫ ∞
+−∞
+G(ϱ , θ)S(ϱ )W(ϱ )|ϱ |ej2πϱℓ dϱ
+]
+ℓ=x cos θ+y sin θ
+dθ. (6.45)
+The reconstruction in (6.45) is approximate, and the resulting function is a
+blurred version of f (x, y). We can discover a relation between ˆf (x, y) and f (x, y)
+by manipulating (6.45).
+First, we recognize that (6.45) is precisely the inverse Radon transform of
+the function
+ˆg(ℓ, θ) = F −1{G(ϱ , θ)S(ϱ )W(ϱ )} . (6.46)
+By the 1-D convolution theorem,
+ˆg(ℓ, θ) = g(ℓ, θ) ∗ ˜h(ℓ) , (6.47)
+where
+˜h(ℓ) = s(ℓ) ∗ w(ℓ) . (6.48)
+The result of ﬁltered backprojection can therefore be interpreted as the inverse
+Radon transform of the blurry projections ˆg(ℓ, θ).
+In order to determine how the blurry projections cause the image of the
+object to be blurred, it is convenient to draw upon the convolution property of
+the Radon transform. In particular, it can be shown that the Radon transform of
+the convolution of two functions is the convolution of their Radon transforms
+(see Problem 6.9)
+R
+{
+f ∗ h
+}
+= R{f }∗ R{h} . (6.49)
+Notice that the convolution on the left in (6.49) is two-dimensional, while that on
+the right is one-dimensional. Comparing (6.47) with (6.49) allows us to identify
+R{h}= ˜h(ℓ) , (6.50)

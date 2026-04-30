@@ -1,0 +1,36 @@
+204 Chapter 6 Computed Tomography
+Figure 6.12
+The projection-slice
+theorem in graphical
+form.
+2-D Fourier transform
+1-D Fourier transform
+y
+f(x, y) F(u, v)
+v
+x
+u
+u
+u
+that angle corresponding to the projection. A graphical interpretation is shown
+in Figure 6.12. We see that ϱ and θ may be interpreted as the polar coordinates
+of the 2-D Fourier transform.
+EXAMPLE 6.4
+The projection-slice theorem helps us to understand how angular sampling can inﬂu-
+ence reconstructions. Suppose that only eight projections are acquired at angles θi =
+π(i + 0.5)/8, i = 0, ... , 7. Figure 6.13 shows the locations of the acquired Fourier data
+corresponding to these projections.
+Question Show that the function f (x, y) = cos x is invisible at these angles—that is, it
+will produce projections that are identically zero at these angles.
+Answer The 2-D Fourier transform of cos x is
+F(u, v) = π [δ(2πu − 1) + δ(2πu + 1)] δ(v),
+which has two 2-D impulse functions on theu-axis, as shown in Figure 6.13. On the other
+hand, the projection-slice theorem tells us that, given the available observations, we will
+know the Fourier transform of f only on the lines {(ϱ cos θi, ϱ sin θi)|−∞ <ϱ< ∞} for
+i = 0, ... , 7. Notice that although these lines are equally spaced over [0, π], they do not
+include the u-axis. Therefore, they will be zero, and the function cosx will be invisible.
+The Fourier Method A conceptually simple reconstruction method, called the
+Fourier method, follows immediately from the projection-slice theorem. One
+simply takes the 1-D Fourier transform of each projection, inserts it with the
+Figure 6.13
+See Example 6.4.

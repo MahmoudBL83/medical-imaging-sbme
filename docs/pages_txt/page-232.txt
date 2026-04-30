@@ -1,0 +1,44 @@
+6.4 Image Quality in CT 213
+for certain types of studies. These protocols balance the conﬂicting requirements
+of image quality with FOV requirements and speed of acquisition.
+6.3.6 Cone Beam CT
+With the goal of rapid coverage and reconstruction of 3-D volumes, it is natural
+to consider the use of a cone beam radiation pattern and an area detector (rather
+than a fan-beam and a linear detector). A standard ﬂuoroscope, for example,
+can rotate the cone-beam source and 2-D detector in a circle around the body,
+electronically recording 2-D projection images at a collection of different angles.
+Also, the geometry of MDCT systems with large-area detectors is correctly
+understood to be in the form of a cone beam. In either case, the data within
+the plane of the circular source path are exactly what one achieves with a
+conventional fan-beam CT scanner; thus, an image can be reconstructed by
+conventional means for this central image plane. It turns out, however, that
+there is not sufﬁcient coverage to yield mathematically correct reconstructions
+in any other plane through the object. The situation is further complicated by
+the fact that projections are often truncated; that is, the body extends beyond
+the x-ray cone.
+Despite these complications, so-called cone beam reconstruction algorithms
+have been developed to produce excellent 3-D reconstructions. The Feldkamp
+algorithm is the most well known and has been shown to produce excellent
+reconstructions for the geometry described above.
+6.3.7 Iterative Reconstruction
+For the past 40 years, commercial CT systems have all used variants of CBP
+for image reconstruction. However, current systems are rapidly changing over
+to iterative reconstruction methods because they offer equivalent (or better)
+reconstruction quality at substantially reduced dose. We describe iterative
+reconstruction methods in Chapter 9, when describing emission tomography
+systems.
+Iterative reconstruction methods are more computationally demanding than
+CBP. Since emission tomography’s data requirements are lower than that of
+most other imaging modalities (because larger and thus fewer voxels are used
+to represent a 3D volume), iterative reconstruction methods were introduced
+roughly two decades ago for emission tomographic reconstruction and are thus
+more fully developed in that application. Also, emission tomography is signiﬁ-
+cantly limited by noise, especially compared with most other imaging modalities,
+and iterative reconstruction methods are particularly adept at handling noise.
+The application of iterative reconstruction methods to CT is conceptually
+straightforward and follows the same development as in Chapter 9 for emission
+tomography.
+6.4 Image Quality in CT
+While the theory presented in the previous sections captures the ideal behavior
+of CT systems, in practice there are limitations to what one can achieve. It is not
+possible to achieve arbitrarily high resolution, since detectors have ﬁnite widths

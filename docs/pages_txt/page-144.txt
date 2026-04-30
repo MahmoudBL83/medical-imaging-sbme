@@ -1,0 +1,47 @@
+4.5 Attenuation of Electromagnetic Radiation 125
+Question What percentage of gamma rays will pass right through a 1.2 cm sodium
+iodide crystal?
+Answer We need to determine
+Percent transmitted = 100% × N
+N0
+= 100% × e−μ1.2c m .
+Since μ = ln 2/HVL, we have
+Percent transmitted = 100% × e−ln 2(1.2 cm)/(0.3 cm)
+= 100% × e−4l n2
+= 6.25% .
+Suppose the slab is not homogeneous. In this case, the linear attenuation
+coefﬁcient depends on the position x, and we are faced with solving
+dN
+N =− μ(x) dx . (4.28)
+Straightforward integration yields the number of photons at position x,
+N(x) = N0 exp
+{
+−
+∫ x
+0
+μ(x′) dx′
+}
+, (4.29)
+where x′ is a dummy variable for integration. The analogous relationship holds
+for intensity as well,
+I(x) = I0 exp
+{
+−
+∫ x
+0
+μ(x′) dx′
+}
+. (4.30)
+This form can be thought of as the integral form of the fundamental x-
+ray attenuation law. This equation is the most important physical model for
+projection radiography and computed tomography. It is also a valid model for
+the attenuation of gamma rays in nuclear medicine modalities.
+4.5.3 Narrow Beam, Polyenergetic Photons
+In the narrow beam case, photons (of any energy) are either completely absorbed
+or scattered away from the detector. Therefore, we can consider the attenuation
+principles in the narrow beam, polyenergetic case to be the same as in the
+monoenergetic case, except that they take place at each energy independently.
+In general, the linear attenuation coefﬁcient is different for different mate-
+rials, and it also varies as a function of energy for the same material. A plot
+showing these relationships for bone, muscle, and fat is given in Figure 4.8.
+This plot shows that bone is more attenuating than muscle, which is in turn

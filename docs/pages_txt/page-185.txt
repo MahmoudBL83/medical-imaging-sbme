@@ -1,0 +1,48 @@
+166 Chapter 5 Projection Radiography
+Figure 5.21
+A typical MTF for a
+ﬁlm-screen detector.
+0.2
+0.4
+0.6
+0.8
+1.0
+0.01 0.1 1.0 10.0
+MTF
+Spatial frequency (cycles/mm)
+phosphors—that is, the active parts of intensifying screens. For each x-ray
+photon that is absorbed by a phosphor (by photoelectric absorption), a large
+number of lower-energy light photons are produced. Unlike x-ray photons,
+these light photons are efﬁciently detected by ﬁlm emulsions (see Section 5.2.5).
+The light photons travel (approximately) isotropically from the point where the
+x-ray was absorbed, as shown in Figure 5.20. They can then be absorbed in the
+ﬁlm at locations far from the x-ray’s path. The union of detected light photons
+form a ‘‘spot’’ on the ﬁlm, which is effectively an impulse response to the x-ray
+‘‘impulse.’’ Using superposition, an imaging equation incorporating ﬁlm-screen
+blurring is readily derived. To good approximation, it is simply (5.28) with an
+additional convolution with the ﬁlm-screen impulse response function h(x, y),
+I
+d(x, y) = cos3 θ
+4πd2m2 s(x/m, y/m) ∗ tz(x/M, y/M) ∗ h(x, y) . (5.29)
+Typically, the impulse response of a ﬁlm-screen detector system is circularly
+symmetric. The modulation transfer function (MTF) of a typical ﬁlm-screen
+detector is shown in Figure 5.21.
+Use of a thinner phosphor yields less ﬁlm-screen blurring. However, thin
+screens do not stop as many x-rays, reducing the efﬁciency of the detector
+system. Detector efﬁciency η is deﬁned as the fraction of photons captured by
+the detector on average. Calcium tungstate is often used for intensifying screens
+because it has reasonably good efﬁciency for stopping x-ray photons (η ≈ 0.30).
+In general, the thicker the screen, the higher the efﬁciency and the worse the
+resolution. We will see in Section 5.4.1 that maintaining high efﬁciency is key
+to keeping image noise low. Thus, while thinner screens are desirable for good
+resolution, there is a tradeoff below which the improvements in resolution will
+be offset by increased noise.
+Digital detectors have different mechanisms that produce blurring at the
+detector. Like ﬁlm-screen blurring, there are effects derived from the thickness
+of the scintillators (when used). In addition, there is the effect in some systems
+of discrete detector ‘‘bins’’ that accumulate charge over speciﬁc regions within
+the detector. To a ﬁrst approximation, all digital systems can be modeled by the
+convolution model in (5.29) but each having their own unique PSF h(x, y).
+5.3.4 Film Characteristics
+As noted in Section 5.2.7, computed radiography and digital radiography sys-
+tems are replacing conventional ﬁlm-screen approaches. Even so, it is important

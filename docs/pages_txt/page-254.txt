@@ -1,0 +1,34 @@
+PART
+III
+Nuclear Medicine
+Imaging
+Overview
+In the preceding part of the book, we considered projection radiography and
+computed tomography, two imaging modalities that rely on the transmission
+of photons through the body to form images. We now turn our attention to
+nuclear medicine, an imaging modality that relies on the emission of photons
+from within the body.
+In contrast to projection radiography and computed tomography, in nuclear
+medicine, which we cover in this part of the book, the biological behavior of a
+substance’s biodistribution in the body is of interest; each molecule of the sub-
+stance is labeled with a radioactive atom. Here, the ionizing radiation emitted
+when the radioactive atom undergoes radioactive decay is used to determine the
+location of the molecule within the body; the ionizing radiation is of no medical
+interest per se. Since the biodistribution of the radiolabeled substance—the
+radiopharmaceutical or radiotracer—is determined by the body’s physiologi-
+cal and biochemical functioning, nuclear medicine is considered a functional
+imaging modality.
+Figure III.1 makes this point. Figure III.1(a) shows a whole-body bone scan.
+In this anterior view, image intensity is proportional to the distribution of
+a radiotracer that reﬂects the metabolic activity of bone. (The radiotracer is
+ultimately metabolized via the kidneys, which is why there is a hot spot of
+activity in the urinary bladder in the middle of the image.) Figure III.1(b) shows
+a stacked series of separate projection radiographs of the corresponding areas
+(from different patients). In these images, as discussed in the previous part of
+the book, image intensity reﬂects the varying absorption of transmitted x-rays
+through bone and other tissues.
+In general, a radiotracer is injected into a peripheral arm vein of the patient,
+or the patient inhales or ingests the radiotracer. Specialized instrumentation
+produces images of the internal distribution of radioactivity, which is assumed to
+mirror the distribution of the compound of interest. These images are compared
+with known distributions in different disease states. Because there are hundreds

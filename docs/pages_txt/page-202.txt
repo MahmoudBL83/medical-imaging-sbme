@@ -1,0 +1,49 @@
+Problems 183
+on the z = 3z0 plane. The two dark bars on the phantom have widths w
+and are separated by a distance w. The x-ray source ﬁres monochromatic
+x-ray beams that are uniformly shed upon the phantom.
+Figure P5.7
+A medical imaging system
+and a bar phantom. See
+Problem 5.25.
+Detector
+Phantom w
+w
+z0
+3z0
+x
+y
+o
+X-ray
+source
+Suppose the dark bars on the phantom absorb 75% of the photons passing
+through the phantom, and the white bars let all photons go through.
+Ignore scattering, the inverse square law, obliquity, and image noise.
+(a) Assume an ideal point source and ignore the thickness of the phantom.
+Sketch the intensity proﬁle on the detector as a function of position
+x for y = 0. Assume the intensity is 1 at x = 0, y = 0. Carefully label
+the axes.
+(b) What is the contrast of the image on the detector? Assume the dark
+bars are the targets.
+(c) The image on the detector will be digitized. Suppose the ﬁlm/screen
+combination blurs the image by the following point spread function
+prior to point sampling
+h(x, y) = sinc(αx)s i n c (βy), α> 0, β> 0 .
+What are the largest sampling periods (in x and y directions) that will
+give an aliasing-free sampling?
+(d) Now assume the phantom is a slab of a certain thickness. The dark
+bars attenuate the x-ray photons by the following linear attenuation
+coefﬁcient
+μ(E) = ln
+( 640 keV
+E
+)
+cm−1, 100 keV ≤ E ≤ 160 keV ,
+which is a function of energy, E. The x-ray source ﬁres N photons at
+E = 160 keV per unit area during a burst of a unit time. How thick is
+the phantom such that the dark bars attenuate 75% of the photons?
+5.26 Consider an x-ray imaging system using a ﬁlm-screen detector. Due to
+the limited dynamic range of ﬁlm, an essentially constant x-ray intensity
+is required for the ﬁlm to be properly exposed. Assume for simplicity that
+this means that a constant number of photons per unit area is incident on
+the image detector.

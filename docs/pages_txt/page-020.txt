@@ -1,0 +1,33 @@
+PART
+I
+Basic Imaging
+Principles
+Overview
+What does the human body look likeon the inside? The smart answer: It depends
+on how you look at it. The most direct way to look inside the human body is to
+cut it open, for example, through surgery. A reﬁnement of this procedure might
+be to use an endoscope, essentially a light tube that is ‘‘threaded’’ through the
+body, which conveys an image to a display device. Both methods offer direct
+optical viewing, but also involve cutting the body, putting something in it, or
+both. These are invasive techniques, which cause (potential) damage or trauma
+to the body.
+The beauty of medical imaging is that we can see inside the human body
+in ways that are less invasive than surgery or endoscopy. In some cases—for
+example, magnetic resonance imaging (MRI) and ultrasound imaging—the
+methods are completely noninvasive and risk-free so far as we know. In other
+cases—for example, projection radiography, x-ray computed tomography (CT),
+and nuclear medicine—there is some risk associated with the radiation exposure,
+even though these methods are considered noninvasive as well.
+Fundamentally, these medical imaging techniques mean that we do not need
+to cut the body or put a physical device into it in order to ‘‘see inside.’’ Of perhaps
+even greater importance, these techniques allow us to see things that are not
+visible to the naked eye in the ﬁrst place. For example, functional magnetic
+resonance imaging (fMRI) allows us to obtain images of organ perfusion or
+blood ﬂow, and positron emission tomography (PET) allows us to obtain
+images of metabolism or receptor binding. In other words, the various imaging
+techniques allow us to see inside the body in different ways—the ‘‘signal’’ is
+different in each case and can reveal information which the other methods
+cannot. Each of these different methods is a differentimaging modality, and the
+‘‘signals’’ that arise are intrinsically different. This hearkens back to the opening
+question: What does the human body look like on the inside? The answer: It
+depends on the measured signal of interest.

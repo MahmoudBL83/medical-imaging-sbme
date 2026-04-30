@@ -1,0 +1,41 @@
+244 Chapter 7 The Physics of Nuclear Medicine
+N represent the number of radioactive atoms in the source (and treating it as a
+continuous quantity), we have
+−dN
+dt = λN , (7.2)
+where λ, the constant of proportionality, is called thedecay constant. The decay
+constant has units of inverse time, and it is a constant for a given radionuclide.
+Assuming there are N0 atoms at time t = 0, this expression can be integrated to
+determine the number of atoms Nt at time t, yielding
+Nt = N0e−λt . (7.3)
+The radioactivity A of a source is deﬁned as the number of atoms disin-
+tegrating per unit time. (Do not confuse this A with the mass number A of a
+nuclide or the area element in computing ﬂuence.) Combining this fact with
+(7.2) and (7.3),
+A =− dN
+dt = λN , (7.4)
+and
+At = A0e−λt . (7.5)
+Either (7.3) or (7.5) is commonly referred to as the radioactive decay law.T h e
+factor that multiplies the initial value (N0 or A0) is called the decay factor(DF),
+and is given by
+DF = e−λt . (7.6)
+Recall that an exponential curve never goes to zero, so some radioactivity
+always remains. The half-life t1/2 is the time it takes for the radioactivity (or the
+number of radioactive atoms) to decrease by a factor of 2. By deﬁnition,
+At1/2
+A0
+= 1
+2 = e−λt1/2 . (7.7)
+Taking the natural logarithm of both sides and rearranging yields
+t1/2 = 0.693
+λ . (7.8)
+Thus, the half-life and decay constant have a ﬁxed relationship across radionu-
+clides. As with the decay constant, the half-life is a constant for a given
+radionuclide (but differs across radionuclides).
+EXAMPLE 7.2
+Consider two radionuclides P and Q. Suppose the half-life of P is twice that of Q,
+tP
+1/2 = 2tQ
+1/2.A t t = 0, we have N0 atoms of both radionuclides.
+Question When will the radioactivities of two radionuclides be equal?

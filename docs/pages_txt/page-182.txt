@@ -1,0 +1,40 @@
+5.3 Image Formation 163
+Figure 5.18
+Effects of extended
+source. (a) Ideal ﬁeld of
+view and object
+projection (with
+magniﬁcation). (b)
+Penumbra at edges of ﬁeld
+of view due to extended
+source. (c) Blurred object
+edges due to extended
+source.
+Field of view
+Object
+projection
+Extended
+source
+Point
+source
+Diaphragm
+Diaphragm
+Penumbra
+Penumbra
+Diaphragm
+Extended
+source
+Edge blurring}
+Edge blurring}
+(a)
+(b)
+(c)
+contributes to both a fuzziness at the edge of the ﬁeld-of-view and a fuzziness of
+an object boundary. Here, we care about the blurring caused to the object. We
+will show that the extended source effect is a convolution of the source shape
+with the object shape (with magniﬁcation effects also included). Because of this,
+extended sources produce a signiﬁcant loss of resolution of x-ray images. (This
+problem cannot be solved by shrinking the spot size on the anode because of
+heat dissipation requirements in the anode material.)
+The physical extent of blurring caused by an extended source depends on
+the size of the source spot and the location of the object. Consider, for example,

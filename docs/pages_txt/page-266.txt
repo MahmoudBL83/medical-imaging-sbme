@@ -1,0 +1,42 @@
+7.5 Statistics of Decay 247
+7.5 Statistics of Decay
+Radioactive decay is a random process. If you conduct two experiments in which
+you start with exactly N0 atoms of the same radionuclide in each experiment,
+and then count the number of decays over a period of exactly one thousandth
+of a half-life, you are very likely to get two different counts. The difference
+you observe is not due to experimental error but due to the inherently random
+nature of radioactive decay. This tells us immediately that the radioactive decay
+law described in the previous section [(7.3) and (7.5)] must be considered as
+a description of average behavior; the radioactive decay law predicts the mean
+number of radioactive atoms and activity not the exact instantaneous number
+and amount.
+For large numbers of radioactive atoms and for periods of time much smaller
+than their half-lives, the random behavior of radioactive decay is governed by
+the Poisson distribution, which was ﬁrst introduced in Section 3.4.3 and is
+given by
+Pr[N = k] = a
+ke−a
+k! , (7.10)
+where a is a parameter of the distribution. This is a probability mass function
+describing the probability that a random variable N will equal k i nag i v e n
+experiment. It can be shown that both the mean and variance of a Poisson
+random variable are equal to a, the only parameter of the distribution, as noted
+in (3.53) and (3.54).
+As an example, suppose that we have N0 identical radioactive atoms
+having a long half-life. Over a short period of time /Delta1t, only a tiny frac-
+tion of these atoms will disintegrate; therefore, we can assume that N0 is
+constant over this time. From the radioactive decay law [see in particular
+(7.2)], we would expect to see exactly /Delta1N = λN0/Delta1t disintegrations over
+this short time period. In fact, over repeated measurements we would actu-
+ally see a variable number of disintegrations. We would also notice that the
+average number of disintegrations would tend toward this predicted value.
+This value turns out to be the mean of a Poisson distribution, which describes
+the true random nature of radioactive decay. That is, for this experiment
+we have
+a = λN0/Delta1t ,
+and the Poisson distribution governing the decay of these radioactive atoms is
+Pr[/Delta1N = k] = (λN0/Delta1t)ke−λN0/Delta1t
+k! . (7.11)
+Let us consider the probability that there are no disintegrations in an
+extremely small time interval. Evaluating (7.11) for k = 0 yields
+Pr[/Delta1N = 0] = e−λN0/Delta1t , (7.12)

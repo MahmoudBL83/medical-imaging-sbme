@@ -1,0 +1,58 @@
+206 Chapter 6 Computed Tomography
+Convolution Backprojection From the convolution theorem of Fourier trans-
+forms [see (2.91)], we may write (6.23) as
+f (x, y) =
+∫ π
+0
+[
+F −1
+1D{|ϱ |} ∗g(ℓ, θ)
+]
+ℓ=x cos θ+y sin θ
+dθ. (6.24)
+Then, deﬁning c(ℓ) = F −1
+1D{|ϱ |}, we have
+f (x, y) =
+∫ π
+0
+[c(ℓ) ∗ g(ℓ, θ)]ℓ=x cos θ+y sin θ dθ (6.25)
+=
+∫ π
+0
+∫ ∞
+−∞
+g(ℓ, θ)c(x cos θ + y sin θ − ℓ) dℓdθ , (6.26)
+where (6.26) results from substitution of the convolution integral and is the
+equation for convolution backprojection. Performing a convolution rather than
+a ﬁltering operation (a pair of Fourier transforms with a multiplication in-
+between) is generally more efﬁcient if the impulse response is narrow. It is so in
+this case, and generally most CT scanners perform (some form of) convolution
+backprojection rather than ﬁltered backprojection.
+Unfortunately, c(ℓ) does not exist, since |ϱ | is not integrable (and therefore
+its inverse Fourier transform is undeﬁned). However, various formal expressions
+involving generalized functions (e.g., delta functions and their derivatives) or
+limits of functions have been developed. While these expressions are useful in a
+theoretical setting, we require a practical approach to design an impulse response
+that can be used in an actual CT scanner. This is accomplished bywindowing |ϱ |
+with a suitable windowing functionW(ϱ ), such as a square, Hamming, or cosine
+window. Here, windowing denotes the use of a ﬁlter, in addition to the ramp
+ﬁlter, that modiﬁes the observed projection. In practice, therefore, convolution
+backprojection (CBP) algorithms use the approximate impulse response
+˜c(ℓ) = F
+−1
+1D{|ϱ |W(ϱ )} . (6.27)
+It is also customary to set the ﬁlter value at ϱ = 0 to be nonzero, in order to
+produce the correct reconstructed average image value.
+Reconstruction in Three Steps Filtered backprojection (6.23) uses three basic
+steps to reconstruct an image from a sinogram: (1) ﬁltering, (2) backprojection,
+and (3) summation. Convolution backprojection (6.24) uses the same three
+steps except that the ﬁltering operation is implemented using a convolution.
+The reconstructed images resulting from these two approaches will be identical
+except for round-off errors due to numerical implementation issues.
+Figure 6.14 illustrates the ﬁltering (or convolution) step. Each row of the
+sinogram in Figure 6.14(a) is ﬁltered using a windowed ramp ﬁlter to yield the
+ﬁltered sinogram in Figure 6.14(b). The ramp ﬁlter is essentially a high-pass
+ﬁlter and its value at f = 0 is 0. As a result, high frequency detail is accentuated,
+the background value is now zero (gray in the ﬁltered sinogram), and there
+are negative values (dark values in the ﬁltered sinogram). A projection and its
+corresponding ﬁltered projection are also shown in this ﬁgure for comparison.

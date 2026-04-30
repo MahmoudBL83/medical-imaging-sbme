@@ -1,0 +1,40 @@
+7.3 Radioactive Decay 243
+Figure 7.1 can also be helpful in visualizing the relationships between parents
+and daughters in radioactive decay.
+For example, radon-222 is the daughter of radium-226. Radium-226 under-
+goes radioactive decay by alpha decay (see below) to produce radon-222.
+The alpha particle is emitted from the nucleus of a radium-226 atom during decay
+and carries off the ‘‘excess’’ energy of the atom. The binding energy/nucleon
+of radium-226 and radon-222 is 7.96 MeV/nucleon and 7.99 MeV/nucleon,
+respectively.
+7.3.3 Radioactivity
+The term radioactivity describes how many radioactive atoms are undergoing
+radioactive decay every second. It does not reﬂect what type of radiation is being
+emitted or the energy of that radiation. The common unit for radioactivity is
+the curie, abbreviated as Ci, where 1 Ci= 3.7 × 10
+10 disintegrations per second
+(dps). A disintegration refers to an atom undergoing radioactive decay. The SI
+unit of radioactivity is the becquerel, abbreviated as Bq, where 1 Bq = 1 dps.
+Clearly,
+1C i = 3.7 × 1010 Bq . (7.1)
+Radioactivity in the range of mCi or MBq is common in nuclear medicine
+procedures.
+EXAMPLE 7.1
+The intensity of radiation incident on a detector at range r from a radioactive source is
+given by
+I = AE
+4πr2 ,
+where A is the radioactivity of the material and E is the energy of each photon.
+Question For technetium-99m with radioactivity of 1 mCi, what is the intensity at a
+distance of 20 cm?
+Answer From Table 7.1 (see page 250), we know that the photon energy for
+technetium-99m is
+E = 140 keV .
+The radioactivity is A = 1m C i= 3.7 × 107 Bq. So the intensity at a distance 20 cm from
+the source is
+I = 3.7 × 107 Bq × 140 keV
+4π(0.2m )2 = 1.03 × 1010 keV
+sec · m2 .
+7.3.4 Radioactive Decay Law
+The radioactive decay law states that the loss of atoms in a radioactive source
+per unit time is proportional to the number of radioactive atoms. Thus, letting

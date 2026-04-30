@@ -1,0 +1,56 @@
+9.2 Image Formation 305
+ﬂuence rate is constant within each pixel on the gamma camera. Therefore,
+given the geometry in Figure 9.7, a cross-sectional image acquired at a ﬁxed
+position z— r e f e r r e dt oa sa naxial cross-section—must use pixels located at
+position z on the camera. These pixels will ‘‘see’’ an underlying radiotracer
+activity concentration f (x, y, z) only within the slice at z, and so we can
+identify and denote the image to be reconstructed as f
+z(x, y). When this image
+is viewed in a conventional orientation (positive x to the right and positive
+y pointing up), it is as if we are standing at the subject’s feet and looking
+at a slice of their body. This is a conventional radiographic view of the
+cross-sectional image.
+In principle, the imaging equation for SPECT (using an Anger camera)
+would be identical to the imaging equation for planar scintigraphy [see (8.9)].
+However, because of our choice of a laboratory coordinate system, it is necessary
+to use a coordinate system on the face of the Anger camera that is different from
+the one that is used in Chapter 8, and a somewhat different imaging equation
+will emerge below. As shown in Figure 9.7, we use the variableℓ to coincide with
+the x-axis when the rotation angleθ is zero. The other coordinate on the camera
+is z, coinciding with the laboratory coordinate z regardless of orientation. One
+further point is that the Anger camera is assumed to remain at a ﬁxed distance
+R from the origin. With this choice, the coordinate ℓ will represent the lateral
+position of a line integral, and the geometry used in the reconstruction of a cross
+section in SPECT corresponds exactly to that in CT.
+Imaging Equation We assume parallel-hole collimators, which implies parallel-
+ray geometry. When the camera is located in its ‘‘home’’ position θ = 0, we can
+map the coordinate system used in planar scintigraphy (Chapter 8) into that of
+SPECT. Letting x → z, y → ℓ, and z → y (compare Figure 8.9 and Figure 9.7),
+we can rewrite (8.7) as
+φ(z, ℓ) = Ah
+∫ R
+−∞
+f (x, y, z)
+4π(y − R)2 exp
+{
+−
+∫ R
+y
+μ(x, y′, z;E) dy′
+}
+dy . (9.2)
+Notice that there is a slight abuse of notation in keeping the arguments off and
+μ the same as in the laboratory frame; the present functions refer to the activity
+concentration and linear attenuation coefﬁcients deﬁned on the laboratory
+frame in Figure 9.7. Although the camera acquires data for all z positions
+while in any ﬁxed rotation, the two-dimensional reconstruction process of
+any slice is the same. In what follows, we drop the explicit dependence on
+z, but do not forget that there is a separate reconstruction problem (which
+can be implemented on a parallel computer, in fact) for each z coordinate on
+the camera.
+When the camera is rotated, the lines of integration are no longer in the y
+direction. By design of this coordinate system, the lines of integration are the
+same as those in CT [see (6.6)],
+L(ℓ, θ) ={ (x, y) | x cos θ + y sin θ = ℓ} . (9.3)
+Because of the exponential term in (9.2), we cannot use the set form of the line
+integral (i.e., using the impulse function). Instead, we use the parameterization

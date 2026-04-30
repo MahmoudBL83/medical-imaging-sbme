@@ -1,0 +1,42 @@
+Problems 327
+for NaI(Tl). BGO does not convert gamma ray photons to light photons
+as efﬁciently as NaI(Tl), and is in fact roughly 13% as efﬁcient.
+In this problem, suppose two detectors are designed, one from NaI(Tl) and
+one from BGO. Assume both are designed to stop 75% of the 511 keV
+photons that strike the crystal.
+(a) Find the detector thicknesses for NaI(Tl) and BGO.
+(b) A light burst from NaI(Tl) has a higher intrinsic SNR than that from
+BGO. Find the ratio of intrinsic SNRs, NaI(Tl) to BGO.
+9.8 You decide to build a PET scanner from a dual-head SPECT camera you
+own. It has two 30-cm square Anger cameras mounted facing each other
+1.5 m apart.
+(a) Would you use the low-energy collimators, the high-energy collima-
+tors, or no collimators? Explain.
+(b) What signiﬁcant piece of electronics would you have to add to the
+SPECT circuitry to make this work as a PET scanner?
+(c) Explain how you would use the X and Y signals coming out of the
+opposing Anger cameras. Would you use the Z-pulses? Why or why
+not?
+(d) You will have to rotate the Anger cameras at some point during the
+scan. What is the minimum number of angular positions of the two
+cameras that would be required in order to get full angular coverage
+for PET reconstruction?
+(e) Consider the radiotracer concentration in the body. Would you expect
+to require a higher, lower, or about the same dose in this make-shift
+PET scanner versus a real PET scanner? Explain your rationale.
+9.9 Consider the two-dimensional cross section shown in Figure P9.6 consist-
+ing of three separate compartments R
+1, R2, and R3.
+Figure P9.6
+Object geometry for
+Problem 9.9.
+y
+x
+R3R1 R2
+3 cm 1 cm 2 cm
+6 cm
+(a) Suppose a solution containing a 511 keV gamma ray emitting radionu-
+clide with concentration 0.3 mCi/cm3 ﬁlls only R2; R1 and R3 contain
+nonradioactive solutions. Let the linear attenuation coefﬁcients (at
+511 keV) in the three regions be μ1 = 0.2c m−1, μ2 = 0.3c m−1, and
+μ3 = 0.1c m−1, respectively. Suppose we image the radioactivity using

@@ -1,0 +1,44 @@
+Problems 291
+The burst of light from a scintillator—the Z-pulse—lasts for a brief
+moment every time a gamma ray hits it. Let us model this burst as a
+triangle with peak height A (e.g., in volts), dropping linearly to zero
+in 250 μs, as shown in Figure P8.8. The pulse height analyzer detects
+peaks and records their peak voltage. For the pulse shown in Figure P8.8,
+therefore, the pulse height analyzer records the value A. Assume that the
+response of two or more gamma rays is the sum of their Z-pulses, delayed
+in time according to their time-of-arrival.
+Figure P8.8
+Z-pulse waveform. See
+Problem 8.19.
+Z-pulse
+A
+0 250 Time (/H9262s)
+(b) Draw the combined Z-pulse arising from two photons, one striking
+the camera at t = 0 and the other at t = 100 μs. What will the output
+of the pulse height analyzer be? (It should be a sequence of heights at
+different times.)
+Assume the photopeak is set at A and a ±20% discriminator window is
+used.
+(c) Because of the discriminator, the second photon may not be detected if
+it arrives too soon after the ﬁrst. Determine the time separation required
+in order for the second photon to be detected as a separate event.
+(d) Is it theoretically possible to complete the experiment in the time you
+computed in part (a)? Explain.
+(e) Under what condition(s) will a photon be rejected because its Z-pulse
+height is too small? Explain.
+(f) Assume that the experiment is concluded when 2,000,000 counts are
+accepted no matter how long it takes. What is the intrinsic SNR in a
+single pixel?
+8.20 A small pellet is located at the origin and ﬁlled with a radiotracer, as
+shown in Figure P8.9(a). Assume a two-dimensional scenario in which
+the pellet emits gamma rays only in the x-y plane and the radioactivity is
+equal to A = 0.027 mCi.
+(a) What is the average rate of photons hitting the detector (1-D Anger
+camera)?
+Assume the detector is made of NaI(Tl) ( μ = 0.644 cm
+−1) and its
+thickness is b = 2.5c m .
+(b) What is the detector efﬁciency at the center of the detector?
+(c) If the Anger camera is rotated stepwise around the origin and requires
+2 × 105 detected counts at each orientation, how many orientations
+can be captured in 10 seconds? (Ignore rotation time.)

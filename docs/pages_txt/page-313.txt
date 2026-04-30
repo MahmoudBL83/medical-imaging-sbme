@@ -1,0 +1,33 @@
+294 Chapter 9 Emission Computed Tomography
+acquisition of serial studies on the same day without background activity from
+prior injections interfering with the measurements.
+The physics of PET permits greater quantitative accuracy and precision.
+The use of small, high-density detector crystals improves spatial resolution
+(about 4 mm in the best commercial whole-body PET scanners). The lack
+of collimation to determine photon direction dramatically increases sensitiv-
+ity. Finally, coincidence detection allows mathematically accurate attenuation
+correction, as we shall see.
+We now explore the instrumentation, reconstruction methods, and image
+quality of both SPECT and PET, which together comprise emission computed
+tomography (ECT) systems.
+9.1 Instrumentation
+9.1.1 SPECT Instrumentation
+SPECT refers to true transaxial tomography with standard nuclear medicine
+radiopharmaceuticals (i.e., those that emit a single photon upon decay). SPECT
+is performed with either specialized geometry detector systems or rotating Anger
+cameras. By far the most popular method of doing SPECT is with a rotating
+Anger camera, or more often multiple cameras, mounted on a special gantry
+that allows 360-degree rotation around the patient, and we mainly focus on this
+approach. A typical rotating Anger camera system is shown in Figure 9.1.
+In rotating Anger camera SPECT, the camera (also referred to as a head)
+is usually rotated either 180
+◦ or 360◦ (assuming a single-head system). At each
+angle, a projection image (a standard planar image) is acquired so that, effec-
+tively, multiple 1-D projections from different (contiguous) cross sections of the
+body are acquired simultaneously. After complete rotation of the camera, each
+cross section is reconstructed separately with either convolution backprojection
+or an iterative reconstruction method, yielding a collection of transverse images,
+Figure 9.1
+A dual-head SPECT
+system. Courtesy of GE
+Healthcare.

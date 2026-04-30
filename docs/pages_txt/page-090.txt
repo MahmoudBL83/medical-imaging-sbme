@@ -1,0 +1,61 @@
+3.4 Noise 71
+where E[·] and Var[·] denote expectation and variance, respectively. The square
+root σN of the variance is called the standard deviationof N.
+The mean can be thought of as the average value of the random variable,
+whereas the standard deviation can be thought of as the ‘‘average’’ variation
+of the values of the random variable about its mean. The larger the standard
+deviation, the ‘‘more random’’ the random variable. As the standard deviation
+approaches zero, the observed values of the random variable more tightly cluster
+around the mean and, in the limit, the random variable becomes a constant that
+equals μ
+N.
+Uniform Random Variable A random variable N is said to be uniform over
+the interval [a, b] if its pdf is of the form
+pN(η) =
+⎧
+⎪⎨
+⎪⎩
+1
+(b − a) ,f o r a ≤ η< b
+0, otherwise
+. (3.40)
+In this case, the distribution function is given by
+PN(η) =
+⎧
+⎪⎪
+⎪
+⎪
+⎪⎨
+⎪⎪⎪⎪
+⎪
+⎩
+0, for η< a
+η − a
+b − a ,f o r a ≤ η ≤ b
+1, for η> b
+, (3.41)
+and the expected value and variance are given by
+μN = a + b
+2 and σ2
+N = (b − a)2
+12 , (3.42)
+respectively.
+Gaussian Random Variable If the pdf of a random variable N is given by
+pN(η) = 1√
+2πσ 2
+e−(η−μ)2/2σ2
+, (3.43)
+then N is a Gaussian random variable. In this case, the distribution function is
+given by
+PN(η) = 1
+2 + erf
+( η − μ
+σ
+)
+, (3.44)
+where erf(x) denotes the error functiongiven by the integral
+erf(x) = 1√
+2π
+∫ x
+0
+e−u2/2 du . (3.45)

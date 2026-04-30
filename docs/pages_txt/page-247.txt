@@ -1,0 +1,49 @@
+228 Chapter 6 Computed Tomography
+6.20 Find the SNR of the CT reconstruction of a lesion immersed in a 20-cm
+(diameter) cylinder of water whose attenuation coefﬁcient is 5% different
+than that of the water. A scanned source is used providing 100 projections
+at 0.1 R (roentgen) per projection. The detector and beam dimensions
+are 2.0 × 2.0 mm. Make appropriate assumptions about the reconstruc-
+tion ﬁlter. Assume
+μ = 0.15 cm −1 and that the detectors are touching
+each other. Also assume that there are 2 .5 × 1010 photons/cm2 per
+roentgen.
+6.21 Joe is designing a new CT scanner. It will be a fan-beam design, with one
+source and D detectors. He will use M angles, reconstruct images with N
+by N pixels, and strictly enforce the design rule of thumb D = M = N.
+The width of each detector d will be selected to be as large as possible
+in order to completely ﬁll a 1 meter detector array with D detectors. The
+reconstruction ramp ﬁlter will be designed using a rectangular window
+with bandwidth ϱ 0 = 1/d.
+(a) Joe requires that a lesion with contrast C = 0.005 embedded in water
+(μ = 0.15 cm−1) will have a SNR of at least 20 dB. SupposeD = M =
+N = 300. What is the minimum number of photons per projection at
+the detectors that is required in order to meet this SNR constraint.
+(b) Assume the patient has 0.125 m2 cross-sectional area (lying completely
+in each fan beam). Assume that the patient is exposed to 1 roentgen
+when 2.5 × 1010 photons pass through 1 cm 2 of tissue, and assume
+that the dose to the patient in rads is equal to the exposure in roentgens.
+What is the largestD(= M = N) that can be selected which will satisfy
+the SNR requirement of part (a) and will keep the total dose for
+the entire cross-sectional scan less than or equal to 2 rads. (Neglect
+attenuation due to the patient and assume the detectors have 100%
+efﬁciency.)
+6.22 Your problem is to determine the number of detectors D to ﬁt into an
+array of ﬁxed length L in order to optimize the SNR of a third-generation
+CT scanner.
+(a) Assume the approximate ramp ﬁlter is ˜c(ℓ) = F
+−1{|ϱ |W(ϱ )}, where
+W(ϱ ) is a rectangular window with (single-sided) bandwidth ϱ 0.
+Assume that ϱ 0 = min{d−1, ϱ max}, where d is the width of a detector
+and ϱ max is a ﬁxed constant. Assume that the number of projectionsM
+is given by 1.5D. Find an expression for the SNR as a function of D.
+(b) To avoid aliasing a J × J pixel reconstructed image it is decided to
+choose ϱ max = J/(2L). We also restrict the number of detectors to lie
+in the range 1 ≤ D ≤ J. What D gives the best SNR?
+6.23 Suppose we have a ﬁrst-generation CT scanner with a mechanical problem.
+For each projection angle, it measures zero at ℓ = 0. Now we use the
+scanner to image a uniform disk.
+(a) Sketch the sinogram.
+(b) What would the reconstructed image look like?
+(c) If instead the scanner always zeroes the measurement at ℓ = ℓ0, what
+would the reconstructed image look like?

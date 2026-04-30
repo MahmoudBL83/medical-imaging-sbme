@@ -1,0 +1,45 @@
+1.4 Projection Radiography 7
+In this book, we express energy in units of electron volts (eV), where
+1 eV is the amount of energy an electron gains when accelerated across 1 volt
+potential. We will concentrate on electromagnetic radiation whose wavelengths
+correspond to energies of roughly 25–500 keV.
+Ultrasound imaging utilizes sound waves, and considerations of attenuation
+and detection are similar to those above. Image resolution is not adequate when
+wavelengths longer than a couple of millimeters are used, and attenuation is
+too high for very short wavelengths. An ideal frequency range for ultrasound in
+medical imaging is 1–20 MHz, where 1 Hz = 1 cycle/second.
+The signal in MRI arises from the precession (like the motion of a child’s
+top or dreidel) of nuclei of the hydrogen atom—that is, protons. When placed
+in a large magnetic ﬁeld, collections of protons, termed spin systems, can be
+set into motion by applying radio frequency (RF) currents through wire coils
+surrounding the patient. Although these spin systems precess at RF frequencies
+(64 MHz is typical), the primary signal source is not from radio waves, but from
+the Faraday induction of currents in the same or different wire coils.
+1.3 Imaging Modalities
+The medical imaging areas we consider in detail in this book are projection
+radiography, CT, nuclear medicine, ultrasound imaging, and MRI. An imaging
+modality is a particular imaging technique or system within one of these
+areas. In this section, we give a brief overview of these most common imaging
+modalities.
+Projection radiography, CT, and nuclear medicine all use ionizing radiation.
+The ﬁrst two transmit x-rays through the body, then use the fact that the body’s
+tissues selectively attenuate (reduce) the x-ray intensities to form an image.
+These are termed transmission imaging modalities because they transmit energy
+through the body. In nuclear medicine, radioactive compounds are injected into
+the body. These compounds or tracers move selectively to different regions or
+organs within the body, emitting gamma rays with intensity proportional to
+the compound’s local concentration. Nuclear medicine methods are emission
+imaging modalities because the radioactive sources emit radiation from within
+the body.
+Ultrasound imaging transmits high-frequency sound into the body and
+receives the echoes returning from structures within the body. This method is
+often called reﬂection imaging because it relies on acoustic reﬂections to create
+images. Finally, MRI requires a combination of a high-strength magnetic ﬁeld
+and radio frequency Faraday induction to image properties of the proton nucleus
+of the hydrogen atom. This technique is calledmagnetic resonance imagingsince
+it exploits the property of nuclear magnetic resonance.
+1.4 Projection Radiography
+Projection radiography includes the following modalities:
+• Routine diagnostic radiography, including chest x-rays, ﬂuoroscopy, mam-
+mography, and motion tomography (a form of tomography that is not
+computed tomography)

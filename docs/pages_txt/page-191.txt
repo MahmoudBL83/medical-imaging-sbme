@@ -1,0 +1,51 @@
+172 Chapter 5 Projection Radiography
+same thickness and linear attenuation coefﬁcients. They are capable of stopping
+the same fraction of incident photons; their basic ‘‘stopping power’’ is the same.
+Suppose that the output of a detected event is highly predictable in the ﬁrst
+detector and highly variable in the second. We intuitively understand that the
+ﬁrst detector is better. In order to more accurately characterize the quality of a
+detector, we must account for these variations in detector output given a single
+event. That is the goal of the parameter DQE.
+Detective Quantum Efﬁciency To better characterize detector performance,
+detective quantum efﬁciency (DQE) considers the transformation of SNR from
+a detector’s input to its output. In this way, DQE moves away from simply
+counting photons as in QE. The detective quantum efﬁciencyis deﬁned as
+DQE =
+( SNRout
+SNRin
+)2
+, (5.40)
+where SNRin is the intrinsic SNR of the incident radiation and SNR out is the
+SNR of the measured quantity—for example, ﬂash of light, detector voltage,
+ﬁlm density, etc. DQE can be viewed as a measure of the degradation in the SNR
+due to the detection process. It can also be viewed as the fraction of photons
+that are detected ‘‘correctly.’’ In general DQE ≤ QE ≤ 1.
+EXAMPLE 5.6
+Consider a hypothetical detector having QE = 0.5 and the ability to perfectly localize
+every photon that is stopped by the detector.
+Question What is the DQE of this detector?
+Answer Suppose a photon burst with an average of N is incident upon the detector.
+The SNR of the input is just the intrinsic SNR of the photon burst, which is given by
+SNRin =
+√
+N .
+Since QE = 0.5, we know that 0.5 × N photons (on average) are stopped by the detector.
+These photons are perfectly localized, meaning that the detector produces an accurate
+count of the number and position of all detected photons no matter what pixel resolution
+is desired. Therefore, the output SNR is
+SNRout =
+√
+0.5N ,
+and the DQE is
+DQE =
+( SNRout
+SNRin
+)2
+=
+( √
+0.5N√
+N
+)2
+= 0.5 .
+In this case, DQE = QE, which occurs because of the hypothetical perfect localization of
+all detected photons.

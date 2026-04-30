@@ -1,0 +1,37 @@
+14 Chapter 1 Introduction
+2. Each technique or method is a different imaging modality.
+3. The main imaging modalities are projection radiography, computed tomog-
+raphy, nuclear medicine , ultrasound imaging , and magnetic resonance
+imaging.
+4. The signal of interest is deﬁned by the modality and speciﬁc imaging
+parameters.
+5. Radiologists are trained to look forspeciﬁc patterns, deﬁned by the modality,
+speciﬁc imaging parameters, and differences in the expected signal in health
+and disease.
+Further Reading
+Brown, M.A. and Semelka, R.C. MRI Basic Prin-
+ciples and Applications. Hoboken, NJ: Wiley,
+2003.
+Bushberg, J.T., Seibert, J.A., Leidholdt, E.M., and
+Boone, J.M. The Essential Physics of Medical
+Imaging. 3rd ed. Philadelphia, PA: Lippincott
+Williams and Wilkins, 2012.
+Bushhong, S.C. Magnetic Resonance Imaging .
+3rd ed. St. Louis, MO: Mosby, 2003.
+Carlton, R.R. and Adler, A.M. Principles of Radio-
+graphic Imaging: An Art and a Science, 5th ed.
+Clifton Park, NY: Delmar Cengage Learning,
+2012.
+Christian, P.E. and Waterstram-Rich, K.M. (eds.)
+Nuclear Medicine and PET/CT: Technology
+and Techniques. 7th ed. St. Louis, MO: Elsevier/
+Mosby, 2011.
+Cobbold, R.S.C. Foundations of Biomedical Ultra-
+sound. New York, NY: Oxford University
+Press, USA, 2006.
+Hsieh, J. Computed Tomography: Principles,
+Design, Artifacts, and Recent Advances. 2nd ed.
+Bellingham, WA: SPIE Press, 2009.
+Mahesh, M. MDCT Physics: The Basics, Philadel-
+phia, PA: Lippincott Williams and Wilkins,
+2009.

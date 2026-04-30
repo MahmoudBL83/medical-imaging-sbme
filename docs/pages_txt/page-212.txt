@@ -1,0 +1,51 @@
+6.2 CT Instrumentation 193
+beam strikes the tungsten anode; the resultant radiation is collimated into a fan-
+beam, which passes through the patient and is detected on the other side by a
+stationary ring of detectors, as in 4G CT systems. Since the anodes and detectors
+are stationary, no moving parts are required, and this allows a full set of fan-beam
+projection data to be acquired in about 50 milliseconds. EBCT is an expensive
+design, but because of the extremely small scan-time it is the only commercially
+available CT method that can capture stop-action images of a beating heart
+without electrocardiographic (ECG) gating.
+Sometimes considered the sixth-generation (6G) scanner,t h e helical CT
+was developed in the late 1980s to address the need for rapid volumetric data
+acquisition. Today, most of the CT scanners in the United States are capable of
+helical CT. The reason is simple: With helical CT, a full 60-cm torso scan can
+be obtained in about 30 seconds, a full 24-cm lung study in 12 seconds, and a
+detailed 15-cm angiography study in 30 seconds. With these kinds of speeds,
+motion artifacts can be reduced or eliminated (using breath-holds), and critically
+ill patients can be scanned quickly. For entry-level scanners, the equipment may
+cost about US$500,000 for a helical CT unit versus about US$350,000 for
+a conventional CT unit. A top-of-the-line helical CT unit may reach the US
+$1 million mark.
+A helical CT scanner consists of a conventional arrangement of the x-ray
+source and detectors (as in 3G and 4G systems) which can continuously rotate.
+While the tube is rotating and acquiring projection data, the patient table is
+set into motion, sliding the patient through the source–detector plane. It is
+easy to see that with this geometry and movement, the position of the source
+carves out a helix with respect to the patient. Continuous rotation of the
+large mass comprising the x-ray source and detectors requires what is called
+slip ring technology in order to communicate with the controlling stationary
+hardware. In particular, power is provided using rings and brushes, while data
+are passed using optical links. Rotation periods are typically 0.3 to 0.5 seconds
+per revolution in modern scanners.
+A seventh-generation (7G) scannerhas emerged with the advent ofmultiple-
+row detector CT (MDCT) scanners. In these scanners, a ‘‘thick’’ fan-beam is
+used, and multiple (axial) parallel rows of detectors are used to collect the x-rays
+within this thick fan. (Some scanners have fan beams that are so thick they can
+be thought of as cone beams.) Essentially, multiple (up to 320) 1-D projections
+are collected at the same time using this geometry. This leads to more economical
+use of the x-ray tube since less of the generated beam must be absorbed by lead
+at the source. Also, provided that the x-ray tube and detectors are far enough
+apart, the simultaneous data that are collected from the parallel rows of detectors
+correspond approximately to parallel planes. This means that a ‘‘slab’’ of cross-
+sectional images can be imaged simultaneously. When a multiple detector array
+is combined with a helical scanner, the pitch of the helix can be larger, and full
+3-D scans can be even faster.
+The advent of helical and MDCT has made the requirement for new develop-
+ments in data processing even more critical. In particular, while a conventional
+CT might have reconstructed 40 slices over a region of interest, with helical CT
+and MDCT a clinician might acquire 80–120 slices over the same region in less
+time. Some extensive studies may comprise 500 slices—for example, a 50 cm
+scan at 1 mm intervals might be used for imaging the colon. The burden is now
+to medically interpret or ‘‘read’’ these slices, which takes time. A study was

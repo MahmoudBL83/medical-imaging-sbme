@@ -1,0 +1,42 @@
+112 Chapter 4 Physics of Radiography
+This speed is a signiﬁcant fraction of the speed of light, so our calculations are not
+accurate; they must be redone (see Problem 4.2). Looking ahead, this example tells us
+that the electrons in a typical x-ray tube are traveling at relativistic speeds by the time
+they strike the anode.
+4.3.2 Electromagnetic Radiation
+Electromagnetic radiation comprises an electric wave and a magnetic wave
+traveling together at right angles to each other. Radio waves, microwaves,
+infrared light, visible light, ultraviolet light, x-rays, and gamma rays are all
+examples of EM radiation. EM radiation has no rest mass and no charge, and
+can act like either a particle or a wave. When treated as a ‘‘particle,’’ EM
+radiation is conceptualized as ‘‘packets’’ of energy termed photons. The energy
+of a photon is given by
+E = hν , (4.5)
+where h = 6.626 × 10
+−34 joule-sec is Planck’s constant andν is the frequency of
+the radiation (in Hz). Viewed as a wave, EM radiation has a wavelength given
+by
+λ = c/ν , (4.6)
+where c = 3.0 × 108 meters/sec is the speed of light.
+Table 4.2 summarizes the frequencies, wavelengths, and photon energies
+of the EM spectrum relevant to medical imaging. Radio waves are very low
+frequency, very long wavelength EM radiations; their photon energy ranges
+from 10−10 to 10−2 eV. Since the photon energies of radio waves are below
+13.6 eV, radio waves are not considered to be ionizing radiation. Visible light is
+moderate frequency, long wavelength EM radiation. The photon energy of light
+is about 2 eV, which is also not large enough to be considered ionizing. (See
+Problem 4.6 for consideration of ultraviolet light.) X-rays and gamma rays, on
+the other hand, are higher frequency, shorter wavelength EM radiation, having
+energies in the keVs to MeV range. Both x-rays and gamma rays are clearly
+ionizing radiations.
+TABLE 4.2
+The EM Spectrum
+Frequency Range Wavelengths Photon Energies Description
+1.0 × 105 –3.0 × 1010 Hz 3 km–0.01 m 413 peV–124 μeV Radio waves
+3.0 × 1012 –3.0 × 1014 Hz 100–1 μm 12.4 meV–1.24 eV Infrared radiation
+4.3 × 1014 –7.5 × 1014 Hz 700–400 nm 1.77–3.1 eV Visible light
+7.5 × 1014 –3.0 × 1016 Hz 400–10 nm 3.1–124 eV Ultraviolet light
+3.0 × 1016 –3.0 × 1018 Hz 10 nm–100 pm 124 eV–12.4 keV Soft x-rays
+3.0 × 1018 –3.0 × 1019 Hz 100–10 pm 12.4–124 keV Diagnostic x-rays
+3.0 × 1019 –3.0 × 1020 Hz 10–1 pm 124 keV–1.24 MeV Gamma rays
+Adapted from Johns and Cunningham, 1983.

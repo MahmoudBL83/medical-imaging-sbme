@@ -1,0 +1,63 @@
+272 Chapter 8 Planar Scintigraphy
+particularly useful when we begin incorporating other effects such as blurring
+and noise in the next section.
+The source or object in nuclear medicine imaging is the activity concentration
+f (x, y, z). Let us deﬁne a planar sourcefz0 (x, y) which has radioactivity restricted
+to the plane deﬁned by z = z0; in other words,
+f (x, y, z) = fz0 (x, y)δ(z − z0) . (8.10)
+Because the units of δ(z) are inverse length (e.g., m −1), we recognize that the
+new source fz0 (x, y) has units of planar activity concentration (e.g., Bq/m 2). Of
+course, z0 < 0 in order to conform to the geometry of Figure 8.9. Substituting
+(8.10) into (8.7) and applying the sifting property of the impulse function
+[see (2.6)] yields
+φ(xd, yd) = Ahfz0 (xd, yd) 1
+4πz2
+0
+exp
+{
+−
+∫ 0
+z0
+μ(xd, yd, z′;E) dz′
+}
+. (8.11)
+Using (8.8) we see that the mean pixel count in pixel k is
+nk = ϵTAkAhfz0 (xk, yk) 1
+4πz2
+0
+exp
+{
+−
+∫ 0
+z0
+μ(xk, yk, z′;E) dz′
+}
+. (8.12)
+Equation (8.12) shows that the mean pixel count in an image of a planar
+source represents the planar activity concentration within the source plane scaled
+by three factors. This ﬁrst factor ϵTA
+kAh is image acquisition or instrument
+design variables that can be controlled to some extent. To get higher counts, we
+can increase the efﬁciency, acquisition time, pixel size, or collimator hole size.
+This all makes perfect sense, but by this point in the book we know there will be
+tradeoffs in image quality that must be considered when taking any one of these
+measures. The second factor 1/(4πz
+2
+0) represents a signal loss due to the inverse
+square law. The signal loss, while dependent onz0, is uniform in the plane—that
+is, independent of x and y—so it does not affect the relative amplitudes of the
+radioactive sources as they appear on the detector plane. The second factor is
+the effect of the integrated attenuation of photons as they travel from the plane
+z = z
+0 to the plane z = 0. Unless μ(x, y, z;E) is itself independent of x and y in
+the range z ∈ [z0, 0]—which is not likely in realistic scenarios—then this term
+is not uniform, and it causes a variation of the relative source amplitudes across
+the image plane. This emphasizes the inherent difﬁculty, even for ideal planar
+sources, in comparing relative intensities between sources located at different
+points within a planar scintigraphic image.
+8.4 Image Quality
+There are many factors that affect the performance of Anger cameras, including
+spatial resolution, sensitivity, and ﬁeld uniformity. Modern Anger cameras
+contain correction circuitry to improve performance in these areas as much as
+possible. We now explore these and other factors affecting image quality in
+planar scintigraphy.

@@ -1,0 +1,47 @@
+50 Chapter 2 Signals and Systems
+(d) c(x, y) = cos[2π(u0x + v0y)].
+(e) f (x, y) = 1
+2πσ 2 exp{−(x2 + y2)/2σ2}.
+2.14 Suppose F(u) is the Fourier transform of a 1-D real signal f (x),
+F(u) = F [f (x)]. Prove the following, where superscript ∗ denotes complex
+conjugate:
+(a) If f (x) = f (−x), then F∗(u) = F(u).
+(b) If f (x) =− f (−x), then F∗(u) =− F(u).
+2.15 In the previous problem, if f (x) is not a real signal, can we still arrive
+at the same conclusions? If not, what kind of symmetric property does
+F(u) = F [f (x)] have when f (x) = f (−x)?
+2.16 Prove the following properties of the Fourier transform:
+(a) Conjugate and conjugate symmetry.
+(b) Scaling.
+(c) Convolution.
+(d) Product.
+2.17 Show that the 2-D Fourier transform of the rect function is the sinc fun-
+ction, whereas the 2-D Fourier transform of the sinc function is the rect
+function. Determine the values of E∞ and P∞ for the sinc function (see
+Problem 2.3).
+2.18 Find the Fourier transform of the separable continuous signal f (x, y) =
+sin(2πax) cos(2πby).
+2.19 Prove that a circularly symmetric function and its Fourier transform are
+related by the zero-order Bessel function of the ﬁrst kind, as expressed by
+(2.108).
+2.20 Show that the Hankel transform of a unit disk is a jinc function.
+Transfer Function
+2.21 A new imaging system with which you are experimenting has anisotropic
+properties. You measure the impulse response function as h(x, y) =
+e−π(x2+y2/4).
+(a) Sketch the impulse response function.
+(b) What is the transfer function?
+2.22 A medical imaging system has the following line spread function, where
+α = 2 radians/cm:
+l(x) =
+{ cos(αx) |αx|≤ π/2
+0 otherwise .
+(a) Suppose a bar phantom is imaged, where the bars have width w,
+separation w, and unity height. Assume π/2α ≤ w ≤ π/α. What are
+the responses of the system at the center of a bar and halfway between
+two bars?
+(b) From the line spread function, can we tell whether the system is
+isotropic?
+(c) Assume the system is separable with h(x, y) = h
+1D(x)h1D(y). Compute
+its transfer function.

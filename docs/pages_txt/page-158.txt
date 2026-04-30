@@ -1,0 +1,49 @@
+5.2 Instrumentation 139
+5.2.2 Filtration and Restriction
+The bremsstrahlung x-rays that are generated within the anode do not all enter
+the patient, and not all that enter the patient end up leaving the patient. In this
+section, we discuss modiﬁcations to the x-ray beam that take place before the
+x-rays enter the body. Filtration is the process of absorbing low-energy x-ray
+photons before they enter the patient. Restriction is the process of absorbing
+the x-rays outside a certain ﬁeld of view. We now discuss these processes
+in detail.
+Filtration The maximum energy of the emitted x-ray photons is determined
+by the tube voltage. For example, if the tube voltage is 100 kVp, then the
+maximum photon energy is 100 keV (recall the deﬁnition of eV). However, there
+is a spectrum of lower energy x-ray photons that represent bremsstrahlung, as
+shown in Figure 5.5. The top line depicts the theoretical spectral distribution of
+bremsstrahlung radiation (normalized to 0.5 at 50 keV). The intensity ‘‘spikes’’
+also shown in Figure 5.5 are characteristic radiations, and they are due to
+electrons making transitions between speciﬁc electron shells in the anode atoms
+(as discussed in Chapter 4). Because the x-ray photons emitted from an x-ray
+tube have a distribution of energies, the x-ray sources used in medical imaging
+systems are polyenergetic.
+In practice, it is very undesirable for low-energy photons to enter the body,
+as these photons are almost entirely absorbed within the body, thus contributing
+to patient radiation dose but not to the image. There are three important ﬁltering
+processes in a projection x-ray machine that reduce the number of low-energy
+x-ray photons that enter the body (see Figure 5.5). First, the tungsten anode
+itself absorbs a large fraction of low-energy x-ray photons before they even
+leave the anode. Second, the glass housing of the x-ray tube and the dielectric
+oil that surrounds it ﬁlter out more low-energy photons. This effect might be
+accentuated over time since aging x-ray tubes tend to accumulate a tungsten ﬁlm
+on the inside of the housing due to vaporization of the ﬁlament during repeated
+heating. These ﬁrst two processes are referred to as inherent ﬁltering since they
+are caused by the x-ray tube itself.
+The third x-ray ﬁltering process is called added ﬁltering, since it arises
+from metal placed in the x-ray beam outside of the tube. The most common
+material used to ﬁlter x-rays is aluminum (1–3 mm thick), which is considered
+the standard x-ray ﬁlter material. Other ﬁlter materials are often rated in
+terms of the equivalent aluminum (Al/Eq) that would have to be used to
+achieve the same attenuation. For higher energy systems, copper might be
+used because it yields more attenuation for an equivalent actual thickness of
+aluminum. Note that copper must be followed by aluminum in order to attenuate
+the 8 keV characteristic x-ray photons created within the copper. Another
+ﬁltering effect comes from the silvered mirror placed within the collimator (as
+discussed in the next section). This might provide an additional 1.0 mm Al/Eq of
+ﬁltering.
+Figure 5.5 shows a progressive shift in the position of the spectrum ‘‘to the
+right’’ (i.e., to higher average energies) as the beam passes through successive
+materials. This increase in the beam’s ‘‘effective energy’’ (see Example 4.4) is
+called beam hardening. Beam hardening is caused by the preferential absorption
+of lower energy photons, for which the attenuation is higher in most materials

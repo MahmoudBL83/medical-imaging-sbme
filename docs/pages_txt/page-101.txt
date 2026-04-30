@@ -1,0 +1,43 @@
+82 Chapter 3 Image Quality
+(a)( b)( c)
+Figure 3.13
+(a) Original chest x-ray image and sampled images, (b) without, and (c) with anti-aliasing.
+Inserts show a zoomed region.
+Consider multiplying a continuous signal f (x, y) by the sampling function.
+We have
+fs(x, y) = f (x, y)δs(x, y;/Delta1x, /Delta1y)
+=
+∞∑
+m=−∞
+∞∑
+n=−∞
+f (x, y)δ(x − m/Delta1x, y − n/Delta1y) [from (2.14)]
+=
+∞∑
+m=−∞
+∞∑
+n=−∞
+f (m/Delta1x, n/Delta1y)δ(x − m/Delta1x, y − n/Delta1y) [from (2.7)]
+=
+∞∑
+m=−∞
+∞∑
+n=−∞
+fd(m, n)δ(x − m/Delta1x, y − n/Delta1y) , (3.75)
+where we have used (3.74) for the ﬁnal step. It follows that, given the discrete
+signal fd(m, n) = f (m/Delta1x, n/Delta1y), we can calculate the continuous signal fs(x, y)
+regardless of the sampling periods /Delta1x and /Delta1y. Thus, if we can reconstruct
+f (x, y)f r o mfs(x, y), then f (x, y) can also be reconstructed from fd(m, n). The
+most important point here is that, in order to understand the effects of sam-
+pling, we need only look at the continuous signal fs(x, y) and its relationship
+to f (x, y).
+Since fs(x, y) is the product of two functions, its Fourier transform is the
+convolution of the Fourier transforms of the two functions. This is a consequence
+of the product property (2.92) of the Fourier transform. Therefore,
+Fs(u, v) = F(u, v) ∗ comb(u/Delta1x, v/Delta1y)
+= F(u, v) ∗
+∞∑
+m=−∞
+∞∑
+n=−∞
+δ(u/Delta1x − m, v/Delta1y − n) [from (2.13)]

@@ -1,0 +1,47 @@
+156 Chapter 5 Projection Radiography
+The intensity at an arbitrary point ( x, y) on the detector is smaller than that at
+the detector origin simply because it is farther away from the x-ray source. Let
+r = r(x, y) be the distance between the x-ray origin and the detector point (x, y).
+Then the intensity at (x, y)i s
+I
+r = IS
+4πr2 , (5.5)
+where, again, we have assumed that there is no object attenuation. These
+relations, and the fact that cos θ = d/r (see Figure 5.13), yield
+Ir = I0
+d2
+r2 = I0 cos2 θ. (5.6)
+Thus, the inverse square law causes a cos2 θ drop-off of x-ray intensity away from
+the detector origin, even without object attenuation. Without compensation,
+this effect could be falsely interpreted as object attenuation in a circular pattern
+around the detector origin.
+EXAMPLE 5.2
+The inverse square law has a very practical use in radiography. Suppose an acceptable
+chest radiograph was taken using 30 mAs at 80 kVp from 1 m. Suppose that it was now
+requested that one be taken at 1.5 m at 80 kVp.
+Question What mAs setting should be used to yield the same exposure?
+Answer The intensity at the detector should remain constant in order to have the same
+exposure. We determine that
+Iold = IS(old)
+4πd2
+old
+= Inew = IS(new)
+4πd2new
+or
+IS(new) = IS(old)d2
+new
+d2
+old
+,
+where IS refers to the intensity at the x-ray source. X-ray intensity at the source is directly
+proportional to mAs, the product of the tube current and the exposure time. Therefore,
+mAs(new) = mAs(old)d2
+new
+d2
+old
+(5.7)
+= 30 mAs × (1.5m )2
+1m 2
+= 67.5m A s.
+Equation (5.7) is called the density maintenance formula; it is of signiﬁcant practical
+utility in maintaining equivalent x-ray exposures while varying patient distance.

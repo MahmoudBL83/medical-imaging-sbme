@@ -1,0 +1,52 @@
+90 Chapter 3 Image Quality
+Figure 3.17
+A contingency table.
+Disease
+ab
+/H11001
+/H11001
+/H11002
+/H11002cd
+Test
+test calls abnormal, whereas c and d are, respectively, the number of diseased
+and normal patients who the test calls normal. In this case, the sensitivity and
+speciﬁcity are given by
+sensitivity = a
+a + c and speciﬁcity = d
+b + d . (3.82)
+Typically, the ultimate diagnosis that conﬁrms the presence or absence of
+disease is through a more-invasive test than medical imaging, a ‘‘gold standard’’
+that is used to verify the accuracy of (noninvasive) medical imaging procedures.
+The diagnostic accuracy (DA) is the fraction of patients that are diagnosed
+correctly, and is given by
+DA = a + d
+a + b + c + d . (3.83)
+In order to maximize diagnostic accuracy, both sensitivity and speciﬁcity
+must be maximized. In practice, because of overlap in the distribution of
+parameter values between normal and diseased patients, a threshold must be
+established to call a study ‘‘abnormal,’’ as shown in Figure 3.18. A lower
+threshold implies that more studies will be called abnormal, thus increasing
+sensitivity but decreasing speciﬁcity. A higher threshold implies that fewer studies
+will be called abnormal, thus increasing speciﬁcity but decreasing sensitivity.
+One way of graphically depicting this relation is via a receiver operating
+characteristic (ROC) curve, which plots sensitivity as a function of 1− speciﬁcity
+(see Problem 3.29).
+Figure 3.18
+Probability distributions
+of the test results for
+normal subjects and
+patients with certain
+disease.
+Normal
+Disease
+Test result
+True
+positive
+t0
+Probability True
+negative
+Threshold
+False
+negative
+False
+positive

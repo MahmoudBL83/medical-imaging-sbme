@@ -1,0 +1,40 @@
+x Contents
+5.2.3 Compensation Filters and Contrast Agents 141
+5.2.4 Grids, Airgaps, and Scanning Slits 143
+5.2.5 Film-Screen Detectors 146
+5.2.6 X-Ray Image Intensiﬁers 148
+5.2.7 Digital Radiography 149
+5.2.8 Mammography 154
+5.3 Image Formation 154
+5.3.1 Basic Imaging Equation 154
+5.3.2 Geometric Effects 155
+5.3.3 Blurring Effects 162
+5.3.4 Film Characteristics 166
+5.4 Noise and Scattering 169
+5.4.1 Signal-to-Noise Ratio 169
+5.4.2 Quantum Efﬁciency and Detective
+Quantum Efﬁciency 171
+5.4.3 Compton Scattering 173
+5.5 Summary and Key Concepts 175
+6
+Computed Tomography 186
+6.1 Introduction 186
+6.2 CT Instrumentation 188
+6.2.1 CT Generations 188
+6.2.2 X-Ray Source and Collimation 194
+6.2.3 Dual-Energy CT 194
+6.2.4 CT Detectors 195
+6.2.5 Gantry, Slip Ring, and Patient Table 196
+6.3 Image Formation 197
+6.3.1 Line Integrals 197
+6.3.2 CT Numbers 198
+6.3.3 Parallel-Ray Reconstruction 198
+6.3.4 Fan-Beam Reconstruction 208
+6.3.5 Helical CT Reconstruction 212
+6.3.6 Cone Beam CT 213
+6.3.7 Iterative Reconstruction 213
+6.4 Image Quality in CT 213
+6.4.1 Resolution 214
+6.4.2 Noise 216
+6.4.3 Artifacts 221
+6.5 Summary and Key Points 223

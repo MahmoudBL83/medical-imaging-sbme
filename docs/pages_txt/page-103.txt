@@ -1,0 +1,28 @@
+84 Chapter 3 Image Quality
+(a) (b) (c)
+Figure 3.14
+(a) The spectrumF(u, v) of a band-limited continuous signalf (x, y) with cutoff frequencies
+U and V. (b) The spectrum Fs(u, v) of signal fs(x, y) obtained by sampling f (x, y) with
+sampling periods /Delta1x < 1/2U and /Delta1y < 1/2V. In this case, F(u, v) can be perfectly
+reconstructed from Fs(u, v). The spectrum F(u, v) takes value one within the light gray
+area and zero outside. (c) The spectrum Fs(u, v)o f fs(x, y) obtained by sampling f (x, y)
+with sampling periods /Delta1x > 1/2U and /Delta1y > 1/2V. In this case, fs(x, y) experiences
+aliasing and F(u, v) cannot be reconstructed perfectly in general.
+determined from its samplesfd(m, n) = f (m/Delta1x, n/Delta1y), if and only if the sampling
+periods /Delta1x and /Delta1y satisfy
+/Delta1x ≤ 1
+2U and /Delta1y ≤ 1
+2V .
+This is known as the sampling theorem(or the Nyquist sampling theorem, after
+its discoverer). To avoid aliasing, the maximum allowed values for /Delta1x and /Delta1y
+are given by
+(/Delta1x)max = 1
+2U and ( /Delta1y)max = 1
+2V , (3.79)
+and are known as the Nyquist sampling periods.
+From our previous discussion, aliasing-free sampling requires band-limited
+continuous signals. From (3.79), the minimum number of samples required for
+aliasing-free sampling is directly proportional to the cutoff frequenciesU and V.
+This veriﬁes the fact that slowly varying signals, which are characterized by small
+values of U and V, require fewer samples than rapidly varying signals, which
+are characterized by large values of U and V. From the preceding discussion,

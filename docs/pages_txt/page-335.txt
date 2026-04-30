@@ -1,0 +1,52 @@
+316 Chapter 9 Emission Computed Tomography
+then compared by subtraction to the actual observation. Thus, if the computed
+measurements agree with the measurements for all measurements, there will be
+no change in the object and the solution has been found. In general, a more
+modest criterion, such as an iteration producing only a very small change to ˆf,
+is a more reasonable stopping criterion.
+Maximum Likelihood by Expectation Maximization (ML-EM) The ART
+method captures the underlying concept of iterative reconstruction in
+mathematics quite elegantly. However, it is not used in practice, primarily
+because it does not consider the random factors that are inherent in both SPECT
+and PET systems. We see how the matrix A can, in principle, incorporate
+many deterministic factors such as detector size, shape, and efﬁciency, and
+object attenuation, but it is not immediately clear how one would incorporate
+the Poisson nature of photon counting and such factors as scattering and
+random coincidences. The maximum likelihood by expectation maximization
+(ML-EM) methods address this issue; they have become the most popular
+class of reconstruction algorithms in clinical use in emission tomography
+because they are capable of incorporating all of these deterministic and
+probabilistic factors.
+The ML-EM method starts with an imaging equation that directly expresses
+the number of photon counts that are expected in a detector. For example, (9.6)
+and (9.20) will work for SPECT and PET, respectively. We assume the same
+pixel basis as in (9.28) and ﬁnite number of observations as in ART above, and
+derive from the geometry the coefﬁcients a
+ij that will transform the pixel having
+activity concentration fj in it to the measurement gi. We can also add a factor to
+be determined from experiment (and thereafter assumed to be known) reﬂecting
+the extra counts
+ri that are expected to arise in detector i due to scattering and
+random coincidences, leading to the discrete imaging equation
+ni(f) =
+m∑
+j=1
+aijfj + ri . (9.35)
+In Sections 9.3.2 and 9.3.3, we discuss the estimation of the extra counts ri.
+We know that the quantity ni(f) represents the mean number of counts,
+whereas the actual observed count is the realization of a Poisson random variable
+with this mean. The form of the Poisson probability mass function can now be
+used to set up a likelihood function, which assumes that the actual observations
+ni, i = 1, ... , n are known—that is, they have been observed during image
+acquisition—and the image values are the unknowns. The maximum likelihood
+(ML) estimate is deﬁned as the collection of image pixel values f (or fj,
+j = 1, ... , m) that together maximize the likelihood function (or the logarithm
+of the likelihood function). Although various algorithms have been deﬁned to
+try to ﬁnd the ML solution, the most popular and computationally convenient
+method is the ML-EM method, which is inherently iterative.
+The ML-EM algorithm seeks to ﬁnd the image pixel values f that maximize
+the logarithm of the Poisson likelihood objective function, which is given by
+L(f) =
+m∑
+i=1
+ni ln ni(f) − ni(f) . (9.36)

@@ -1,0 +1,41 @@
+128 Chapter 4 Physics of Radiography
+The term exposure, which is given the symbolX, refers to the number of ion
+pairs produced in a speciﬁc volume of air by EM radiation. The International
+System unit for exposure is coulombs per kilogram of air (C/kg); however,
+a more useful unit in medical imaging is the roentgen (R), which equals
+2.58 × 10
+−4 C/kg. The conversion between the two is 1 C/kg = 3,876 R.
+EXAMPLE 4.6
+For a point source of radiation, the exposure at a distance d from the source follows an
+inverse square law.
+Question If the exposure atd = 30 cm from a point source is 1 R, what is the exposure
+at d = 5 cm from the source?
+Answer The exposure at d = 5 cm is 36 ((30 /5)2 = 36) times that at d = 30 cm. So
+the exposure at d = 5c mi s X5 = 36X30 = 36 R.
+4.6.2 Dose and Kerma
+As ionizing EM radiation passes through a material, it deposits energy into
+the material by both the photoelectric effect and Compton scattering. This is
+the concept of dose. The unit ofabsorbed doseis the rad, which is deﬁned as the
+absorption of 100 ergs per gram of material. It is given the symbol D. Notice
+that this unit refers to an energy-deposition concentration rather than a total
+amount of energy. The SI unit for absorbed dose is thegray (Gy); 1 Gy = 1J / k g
+= 100 rads. For the degree of accuracy required in biomedical dosimetry, one
+roentgen of exposure yields one rad of absorbed dose in soft tissue.
+There is a another quantity closely related to dose, called kerma, which is
+given the symbol K. Kerma is deﬁned as the amount of energy per unit mass
+imparted directly to the electrons in a given material. It is also measured in units
+of gray (Gy). As a practical matter, at diagnostic x-ray energies, kerma and
+dose are essentially equivalent. When kerma is being used in air for calibration
+purposes, it is referred to as air kermaand is given the symbol K
+air.
+4.6.3 Linear Energy Transfer (LET)
+The linear energy transfer is a measure of the energy transferred by radiation
+to the material through which it is passing per unit length; higher LET radiation
+tends to produce greater adverse biological consequences. Speciﬁc ionization
+(SI) is the number of ion pairs formed per unit length. LET and SI are related
+to each other by the average amount of energy required to form one ion pair
+(often referred to as W), which is a characteristic of the material.
+4.6.4 The f -Factor
+It is often useful to be able to measure exposure but to express the results as
+dose to an individual in that radiation ﬁeld. Because of the way in which the
+roentgen and rad are deﬁned, a relationship between exposure in air and dose

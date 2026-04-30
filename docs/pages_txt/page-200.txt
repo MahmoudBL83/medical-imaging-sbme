@@ -1,0 +1,44 @@
+Problems 181
+TABLE P5.1
+E1 E2
+μ1 0.2 0.4
+μ2 0.3 0.1
+μ3 0.5 0.4
+(b) Draw the total number of x-ray photons per cm that hit the detector
+as a function of position x.
+(c) Assume the x-ray intensity is proportional to the number of photons.
+Calculate the contrast of the image observed at the detector as a func-
+tion of positionx assuming that A is the target and B is the background.
+(d) Make a rough sketch of the proﬁle of optical density as a function of
+position x assuming x-ray ﬁlm is used as the detector. Which part of
+the ﬁlm is more transparent?
+5.23 An x-ray imaging system is set up as shown in Figure P5.5. All length
+units in the ﬁgure and in equations below are in cm. The overall system
+response can be modeled as
+Id(xd, yd) = Ks(xd/m, yd/m) ∗ t(xd/M, yd/M),
+where xd, yd denote coordinates in the detector plane and m and M
+are the source and object magniﬁcation respectively. K is a constant,
+s(x, y) denotes the x-ray source distribution, and t(x, y) is the spatial
+transmission function of the object (whose thickness is ignored). Assume
+the x-ray source can be modeled as a 1-D Gaussian distribution as
+s(x, y) = S0e−x2
+δ(y),
+where S0 is a constant.
+Figure P5.5
+Diagram for
+Problem 5.23.
+w
+x
+y
+z /H11005 40
+d /H11005 60
+Detector
+Object
+Source
+(a) Compute the object magniﬁcation M.
+(b) Compute the source magniﬁcation m.
+An ideal line phantom is to be imaged by the system, whose transmission
+function is given by
+t(x, y) = δ(x − w
+2 ) + δ(x + w
+2 ) .

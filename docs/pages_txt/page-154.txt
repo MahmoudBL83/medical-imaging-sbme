@@ -1,0 +1,35 @@
+Projection
+Radiography
+CHAPTER
+55
+5.1 Introduction
+Projection radiography, sometimes calledconventional radiography, refers to the
+most commonly used method of medical imaging utilizing x-rays. A conventional
+radiograph represents a projection of the three-dimensional volume of the body
+onto a two-dimensional imaging surface. The term projection will be deﬁned
+more rigorously shortly, but conceptually, the projection radiograph represents
+the transmission of the x-ray beam through the patient, weighted by the
+integrated loss of beam energy due to scattering and absorption in the body. The
+primary radiographic image is a two-dimensional display of these transmitted
+intensities. It is useful to think of a projection radiograph as a shadow cast by a
+semitransparent body illuminated by x-rays.
+There are many types of projection radiography systems in common use.
+While their overall system designs have common elements, there are different
+clinical requirements, which make the details differ. Three examples, represen-
+tative of the breadth of possibilities required by different clinical requirements,
+are shown in Figure 5.1.
+Overall, the advantages of projection radiographic systems include short
+exposure time (0.1 second), the production of a large area image (e.g., 14× 17 in),
+low cost, low radiation exposure (3–4 mR for a chest radiograph, roughly equiva-
+lent to about one-hundredth of the annual background dose exclusive of medical
+imaging procedures), and excellent contrast and spatial resolution. Projection
+radiography is used to screen for pneumonia, heart disease, lung disease, bone
+fractures, cancer, and vascular disease. Typically, the chest x-ray is the most
+common imaging examination performed in a hospital. Its major limitation is
+the lack of depth resolution—superimpositions of shadows from overlying and
+underlying tissues sometimes ‘‘hide’’ important details and limit contrast.
+In this chapter, we describe the components of standard projection radiog-
+raphy systems, develop mathematical models to characterize image formation,
+describe the factors affecting image quality, and look at several applications and
+special techniques for projection radiography systems.
+135

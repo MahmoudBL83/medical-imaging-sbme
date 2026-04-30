@@ -1,0 +1,47 @@
+6 Chapter 1 Introduction
+imaging. The concept of using radioactive tracers to study physiology was
+introduced by George de Hevesy in 1923; de Hevesy is considered the father
+of nuclear medicine. A radiotracer is a radioactively labeled drug that mimics
+a biological compound of interest; the distribution of the radioactivity implies
+the distribution of the drug. Early studies with radiotracers used conventional
+nonimaging radiation detectors to roughly determine amounts of radioactivity
+in various body regions. In 1949, Benedict Cassen at UCLA started the
+development of the ﬁrst imaging system in nuclear medicine, the rectilinear
+scanner. The modern Anger scintillation camera was developed by Hal Anger
+at UC Berkeley in 1952. The element of the most commonly used radionuclide
+in nuclear medicine, technetium-99m, was discovered in 1937 by Carlo Perrier
+and Emilio Segre; its ﬁrst use in medicine was in 1961.
+The interaction of acoustic waves with media was ﬁrst described by Lord
+John Rayleigh over one hundred years ago in the context of the propagation
+of sound in air. Modern ultrasound imaging had its roots in World War II
+Navy sonar technology, and initial medical applications focused on the
+brain. Ultrasound technology progressed through the 1960s from A-mode,
+B-mode, and M-mode scans to today’s two-dimensional (2-D) Doppler,
+three-dimensional (3-D), and nonlinear imaging systems.
+The phenomenon of nuclear magnetic resonance, from which magnetic
+resonance imaging (MRI) arises, was ﬁrst described by Felix Bloch and Edward
+Purcell; they shared the 1952 Nobel Prize in Physics. This work was extended
+by Richard Ernst, who received the Nobel Prize in Chemistry in 1991. In
+1971, Raymond Damadian published a paper suggesting the use of magnetic
+resonance (MR) in medical imaging; in 1973, a paper by Paul Lauterbur
+followed. Lauterbur received the Nobel Prize in Medicine in 2003, along with
+Peter Mansﬁeld, who developed key methods in MRI.
+1.2 Physical Signals
+In this book, we consider the detection of different physical signals arising from
+the patient and their transformation into medical images. In practice, these
+signals arise from four processes:
+• Transmission of x-rays through the body (in projection radiography and CT)
+• Emission of gamma rays from radiotracers in the body (in nuclear medicine)
+• Reﬂection of ultrasonic waves within the body (in ultrasound imaging)
+• Precession of spin systems in a large magnetic ﬁeld (in MRI)
+Radiography, CT scanning, and nuclear medicine all make use of elec-
+tromagnetic energy. Electromagnetic energy or waves consist of electric and
+magnetic waves traveling together at right angles. Wavelength and frequency
+are inversely related; frequency and energy are directly related. The electromag-
+netic spectrum spans the frequency range from zero to that of cosmic rays;
+only a relatively small portion of this spectrum is useful in medical imaging.
+At long wavelengths—for example, longer than 1 angstrom—most electromag-
+netic energy is highly attenuated by the body, prohibiting its exit and external
+detection. At wavelengths shorter than about 10
+−2 angstroms, the corresponding
+energy is too high to be readily detected.

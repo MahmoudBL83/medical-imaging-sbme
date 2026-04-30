@@ -1,0 +1,55 @@
+292 Chapter 8 Planar Scintigraphy
+A parallel hole collimator with septal thickness h = 5 mm, septal height
+l = 12 cm, and hole diameter d = 5 mm, is mounted on the camera, as
+shown in Figure P8.9(b).
+Figure P8.9
+See Problem 8.20.
+x
+y
+Pellet
+0.5 m
+0.5 m 0.5 m
+x
+y
+Pellet
+0.5 m 0.5 m
+... ...
+... ...
+... ...
+/H110022 /H1100210 1 2
+h d
+l
+(a) (b)
+(d) What is the collimator resolution Rc at the range of the pellet?
+(e) Assume that there is no Compton scattering and that the lead septa
+always absorb gamma rays incident upon them. Find the rate of
+photons hitting the detector in the three central holes. Plot this as a
+function of hole number for n =− 1, 0,+1.
+(f) What is the (approximate) resolution ˆR
+c that you would deduce
+from your result in part (e)? Compare with Rc and speculate on any
+difference you may observe.
+8.21 An Anger camera collimator has the following dimensions: septal thickness
+h = 6 mm, septal height l = 10 cm, and hole diameter d = 3 mm. The
+detector thickness is b = 2.5 cm. The range z = 0.5m .
+(a) Find the collimator resolution.
+(b) Suppose the intrinsic resolution of the Anger camera is 0.2 mm. Write
+an expression for the intrinsic PSF assuming it is Gaussian.
+(c) Find the overall resolution of the Anger camera.
+The ﬁnal image (static frame mode) on the Anger camera is shown in
+Figure P8.10.
+Figure P8.10
+See Problem 8.21.
+000000000
+000000000
+003333300
+003888300
+003888300
+003888300
+003333300
+000000000
+000000000
+/H11003 106
+(d) Find the total count of the scan.
+(e) Find the local contrast and SNR of the object comprising the nine
+pixels at the center of the camera.

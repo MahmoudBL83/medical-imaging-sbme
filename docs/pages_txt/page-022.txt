@@ -1,0 +1,32 @@
+Part I Basic Imaging Principles 3
+intensities in a CT system, or radio frequency waves in an MRI system. The
+ﬁnal output in this system is created through image reconstruction, the process
+of creating an image from measurements of signals. The overall quality of a
+medical image is determined by how well the image portrays the true spatial
+distribution of the physical parameter(s) of interest within the body. Resolution,
+noise, contrast, geometric distortion, and artifacts are important considerations
+in our study of image quality. Ultimately, the clinical utility of a medical image
+involves both the image’s quality and the medical information contained in the
+parameters themselves.
+Figure I.1 shows the four main medical imaging signals discussed in this
+book: (1) x-ray transmission through the body, (2) gamma ray emission from
+within the body, (3) ultrasound echoes, and (4) nuclear magnetic resonance
+induction. Part II covers modalities that use x-ray transmission signals, Part III
+covers modalities that use gamma ray emission, Part IV covers modalities that use
+ultrasound signals, and Part V covers magnetic resonance imaging, which uses
+signals that arise from nuclear magnetic resonance. The speciﬁc medical imaging
+modalities depicted in Figure I.1 are (1) projection radiography, (2) positron
+emission tomography, (3) ultrasound imaging, and (4) magnetic resonance
+imaging.
+In Figure I.1, parts (a) and (b) represent two-dimensional projection images
+of the three-dimensional human body. A projection is created as a two-
+dimensional ‘‘shadow’’ of the body, a process that is illustrated in Figure I.2.
+Figures I.1(c) and (d) are slices within the body. Figure I.3 depicts the three
+Figure I.2
+The creation of a
+two-dimensional
+projection through the
+body. In this case, x-rays
+are transmitted through a
+patient creating a
+radiograph.

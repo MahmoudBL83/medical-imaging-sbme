@@ -1,0 +1,46 @@
+3.6 Sampling 81
+Figure 3.12
+Illustration of coarse (left)
+and ﬁne (right)
+rectangular sampling
+schemes. Although coarse
+sampling results in fewer
+samples, it may not allow
+reconstruction of the
+original continuous signal
+from these samples.x
+y
+/H9004x/H9004x
+/H9004y /H9004y
+x
+y
+we give in to this temptation, we will end up (in the extreme case) with only one
+sample, which is clearly not enough to represent a continuous signal in general
+(unless the signal is constant).
+Sampling a continuous signal with too few samples results in a type of signal
+corruption called aliasing, in which higher frequencies ‘‘take the alias of’’ lower
+frequencies. A signal sampled with too few samples cannot be reconstructed
+from its discrete representation; the best possible continuous reconstruction
+from these samples will be corrupted by aliasing. The visual appearance of
+this artifact depends on the signal’s spectrum, but generally it appears as new
+high-frequency patterns where none should exist. The spatial frequency of
+these patterns is always lower than it should be but may be relatively high
+compared with other spatial information in the image. An example of this
+phenomenon is depicted in Figure 3.13. The improperly sampled image, as
+shown in Figure 3.13(b), is corrupted by a high-frequency texture that is not
+present in the original image. When proper anti-aliasing is used, as described in
+Section 3.6.3, sampling will produce an image with reduced resolution but no
+aliasing artifacts, as shown in Figure 3.13(c). Obviously, it is vital that medical
+imaging systems sample without aliasing.
+3.6.1 Signal Model for Sampling
+It is intuitive to believe that a slowly varying signal could be reconstructed
+from fewer samples than a rapidly varying signal, which may require ﬁner
+sampling at regions of rapid signal variation. Since signal variation in space
+is directly associated with frequency content, we suspect that there must be a
+direct relationship between the appropriate values of sampling periods /Delta1x and
+/Delta1y and the frequency content of the signal under consideration. Here, we prove
+this intuition mathematically, and derive a recipe for choosing appropriate
+values for /Delta1x and /Delta1y. We do this by using the comb function comb( x, y),
+given by (2.13), and its close relative, the sampling function δ
+s(x, y;/Delta1x, /Delta1y),
+given by (2.14).

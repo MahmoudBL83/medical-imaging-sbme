@@ -1,0 +1,47 @@
+3.6 Sampling 85
+we can see why undersampled signals tend to show high-frequency artifacts: The
+overlap of high-frequency spectra in the aliased Fourier transform artiﬁcially
+boosts high-frequency content.
+3.6.3 Anti-Aliasing Filters
+In medical imaging systems, there is an inherent trade-off between the number
+of samples acquired by a detector and image quality. Acquiring a large number
+of samples typically produces the highest image resolution but is almost always
+either expensive or time-consuming. Reducing the number of samples may lead to
+aliasing, which will introduce unwanted artifacts into the image. An alternative
+is to ﬁrst ﬁlter the continuous signal using a low-pass ﬁlter, and then sample
+with fewer samples. In this case, the image is degraded by blurring rather than
+aliasing artifacts, which is usually preferable. Such a low-pass ﬁlter is called an
+anti-aliasing ﬁlter, and must be applied before sampling.
+Anti-aliasing ﬁltering is often an inherent part of a medical imaging instru-
+ment because the true continuous signal is blurred by the impulse response of
+the system. It is useful to consider two sources of blurring, that caused by the
+inherent physics and geometry of the system and that caused by the detectors
+themselves. Ideally, the physics and geometry cause only a small amount of
+blurring and therefore a high frequency signal is presented to the detectors.
+Although this situation is highly dependent on the modality, it would be fairly
+accurate to say that very little anti-aliasing is accomplished by the physics and
+geometry of the system.
+Anti-aliasing is more often accomplished by the detectors, which (in most
+cases) integrate the incident signal over the area of each detector. This additional
+integration, which is still part of the overall PSF of the system, provides
+additional low-pass ﬁltering prior to sampling. Since the detectors are not point
+samplers, it is incorrect to model the discretization of a medical imaging system
+as the multiplication of the incident signal f (x, y) with the sampling function
+δ
+s(x, y;/Delta1x, /Delta1y). Instead, the effect of detector integration can be modeled by
+ﬁrst convolving f (x, y) with the PSF h(x, y) of the detector. The overall detector
+system PSF is the result of the cascade of PSFs that characterize the individual
+components of resolution, including the detector’s geometric resolution. Here
+we focus on a speciﬁc component of resolution: any sampling process that is
+not point sampling. In many cases, the sampling is area sampling rather than
+point sampling. This occurs when the detector is either intrinsically digital (i.e.,
+it is a pixelated detector) or its output is represented by an array of pixels.
+In either case, the PSF of the area sampling component can be represented
+by a rect function [(2.16)], and the sampling process can be mathematically
+modeled by
+f
+d(m, n) = fs(m/Delta1x, n/Delta1y) , (3.80)
+fs(x, y) = [h(x, y) ∗ f (x, y)] δs(x, y;/Delta1x, /Delta1y) . (3.81)
+Since integration is a low-pass process, this resembles the anti-aliasing ﬁltering
+approach described above: The continuous signal f (x, y) is ﬁrst ﬁltered by a
+low-pass ﬁlter with PSF h(x, y), from which fd(m, n) is obtained by sampling.

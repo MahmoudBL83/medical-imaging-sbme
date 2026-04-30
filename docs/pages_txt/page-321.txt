@@ -1,0 +1,50 @@
+302 Chapter 9 Emission Computed Tomography
+detected after Compton scattering in the patient are rejected, and multiple
+simultaneous detection of photons is also rejected. Sometimes, it is desirable
+to lower the discrimination window to include part of the Compton plateau.
+The reason for this is that it is common for there to be a Compton interaction
+within the detector, depositing a fairly large amount of energy, but allowing the
+photon to ultimately escape the detector without being fully absorbed. In this
+case, the primary Compton event is actually the correct event to detect as
+it represents the proper location of one of the two 511 keV photons created
+during positron annihilation. Setting the lower window threshold is therefore
+a matter of trading off the acceptance of two types of Compton events—those
+that occur in the patient, which we do not want to count and those that occur
+in the crystal, which we do want to count. A common lower energy threshold
+is 300–350 keV.
+Time-of-Flight PET For most of the discussion in this chapter, thedifference in
+arrival times (at the detectors) of the two 511 keV annihilation photons is not
+considered, as long as both arrivals are within the coincidence time window.
+However, it is important to note that the two photons only arrive at exactly
+the same time at two opposing detectors if the annihilation event is exactly
+halfway between the two detectors. Any offset will be reﬂected by one of the
+photons arriving sooner at its detector than the other at its detector. This
+difference in arrival times could be used to position the annihilation eventalong
+the coincidence line, potentially yielding better spatial resolution and/or higher
+signal-to-noise in the reconstructed image.
+Bearing in mind that the two annihilation photons are traveling at the speed
+of light, very high temporal resolution is required to take advantage of this
+so-called time-of-ﬂight (TOF) information in PET. In TOF-PET, the difference
+in arrival times is recorded and used in the reconstruction process. This arrival
+time difference increases as the annihilation event is farther from the midpoint
+of the coincidence line. Of importance, in order to have TOF information
+exactly locate the event, thus eliminating the need for reconstruction per se, the
+scanner’s temporal resolution would have to be on the order of 25 picoseconds.
+Unfortunately, modern scanners have temporal resolution of a few hundred
+picoseconds (equivalent to spatial resolution of a few centimeters if we only
+use TOF information to position the annihilation event), so some sort of
+reconstruction is still required. However, the TOF information can be used to
+constrain the reconstruction algorithm.
+The approximate improvement in SNR over that obtained with non-TOF
+PET is:
+SNR
+TOF =
+√
+2D
+c/Delta1t SNRnon-TOF , (9.1)
+where D is the diameter of the object being imaged,c is the speed of light, and/Delta1t
+is the temporal resolution of the scanner. All else being equal, the improvement
+in SNR is greatest for larger-sized objects (e.g., the human body as opposed to
+the brain) since larger-sized objects lead to greater differences in arrival times.
+In order to improve /Delta1t, very new detectors with a short scintillation decay time,
+such as lanthanum bromide (LaBr3), are used.

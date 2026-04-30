@@ -1,0 +1,44 @@
+158 Chapter 5 Projection Radiography
+Answer The corner of the ﬁlm is distance rd away from the detector origin, where
+rd =
+√
+72 + 8.52 = 11.0 in.
+The cosine of the largest angle θ made by the beam is therefore
+cos θ = d√
+d2 + r2
+d
+= 72√
+722 + 112
+= 0.989 .
+The smallest intensity ratio is therefore
+Id
+I0
+= cos3 θ = 0.966 ,
+which represents about a 3 percent variation. Given the other effects we will be
+exploring—anode heel effect, path length, depth-dependent magniﬁcation, noise, and
+scattering—this effect is a negligible intensity perturbation across the ﬁlm.
+Anode Heel Effect We have heretofore modeled the beam coming from an
+x-ray tube as having uniform intensity within a cone. The anode heel effect,
+however, predicts a stronger intensity beam in the cathode direction and no
+variation orthogonal to the cathode–anode direction. The reason for this effect
+is due to the geometry of the anode, as shown in Figure 5.4. Although the
+generation of x-rays within the anode is essentially isotropic at the atomic
+level, those x-rays traveling out of the anode in the forward (cathode-to-anode)
+direction have more anode material through which to propagate before leaving
+the anode itself than those leaving the anode in the backward direction. Thus,
+the beam intensity is higher in the cathode direction; the variation can be as
+much as 45 percent intensity variation in the cathode to anode direction. Thus,
+the anode heel effect far outweighs the effects of obliquity and inverse square
+law in its overall effect on the uniformity of intensity across the detector surface.
+The anode heel effect can be compensated by using an x-ray ﬁlter that is
+thicker in the cathode direction than in the anode direction. If it is not compen-
+sated by ﬁltration, then it must be recognized when positioning patients relative
+to the x-ray tube. In particular, the anode heel effect should be used as a kind of
+inherent compensation for natural gradients in the body’s x-ray attenuation pro-
+ﬁle. For example, when imaging the foot, the toes should be positioned toward
+the anode since that part of the foot is thinner; the cathode end will have more
+x-rays to penetrate the thicker (proximal) part of the foot. This principle can be
+applied throughout the body. In our development of x-ray imaging equations,
+we will assume that the anode heel effect is compensated by ﬁltration.
+Path Length Consider imaging a slab of material with a constant linear
+attenuation coefﬁcient μ and thickness L arranged parallel to the plane of the

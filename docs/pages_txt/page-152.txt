@@ -1,0 +1,48 @@
+Problems 133
+Attenuation of EM Radiation
+4.8 (a) Calculate the thickness of shielding material needed to block out
+99.5% of incident radiation for a material with linear attenuation
+coefﬁcient μ.
+(b) Range is deﬁned as the reciprocal of μ, the linear attenuation coefﬁ-
+cient. It represents the distance at which the intensity of a beam has
+been reduced to 1/e of its original value. What approximate order of
+magnitude would you want the range of an ionizing beam in tissue to
+be? Microns? Millimeters? Centimeters? Meters? Kilometers? Why?
+4.9 Prove Equation (4.24).
+4.10 A bar phantom of thickness 0.4 cm is uniformly irradiated by monoener-
+getic x-ray photons, and a screen is placed behind the phantom to detect
+the x-ray photons. The bars of the phantom are made from a material that
+has an HVL of 0.1 cm. In the space between the bars, x-ray photons pass
+without attenuation. Assuming the intensity of the image is proportional
+to the x-ray photons that hit the screen in a unit area, what is the contrast
+of the resulting image?
+4.11 Compton scattering of photons causes image blurring since the secondary
+x-ray photon diverges from the primary beam. You are designing an x-ray
+detector system and wish to eliminate all photons that have scattered more
+than 25 degrees in an attempt to improve the resulting image quality. You
+are using a mono-energetic x-ray source that emits photons with wave-
+length 8.9 × 10
+−2 angstroms. Your detector is capable of discriminating
+the energy of the incoming photon by examining the pulse height. What
+range of photon energies will your system accept?
+4.12 Suppose photons with energy hν = 100 keV are incident upon some mate-
+rial and some are scattered.
+(a) A detector decides that a photon has not been scattered if its energy
+satisﬁes hν
+′ > 99 keV. What is the maximum scattering angle such that
+a photon is still treated as traveling along a straight path?
+(b) You are designing a detector system to eliminate all photons that have
+been scattered more than 25◦. What range of photon energies will your
+system accept?
+4.13 Sodium iodide (NaI) crystals can be used to detect x-rays. Suppose the
+linear attenuation coefﬁcient of an NaI crystal is 2.31 cm−1 at 140 keV.
+(a) What is the HVL of this NaI crystal at 140 keV?
+(b) Suppose an x-ray photon with energy E = 140 keV hits the NaI
+crystal and scatters by 90◦. What is the energyE′ of the scattered x-ray
+photon?
+(c) Is the scattered photon more or less likely to be absorbed than the
+incident photon? Explain. (Note that iodine has a single K-edge at
+33 keV.)
+4.14 To block out 90% of the incident radiation, a 1.5 cm thickness of a
+particular shielding material is needed.
+(a) What is the HVL of this material?

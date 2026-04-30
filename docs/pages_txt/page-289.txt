@@ -1,0 +1,72 @@
+270 Chapter 8 Planar Scintigraphy
+given by the number of radioactive atoms per unit volume. From (7.4), we
+see that multiplying this quantity by the radioactive decay constant λ gives
+the radioactivity per unit volume. It is customary in nuclear medicine to view
+this quantity, the radiotracer activity concentration function, denoted here by
+f (x, y, z) and having, for example, units of Bq/m 3, as the fundamental quantity
+that is observed. Given this deﬁnition, the radioactivity within a differential
+volume element dxdydz is given by
+dA(x, y, z) = f (x, y, z)dxdydz . (8.4)
+A gamma camera counts individual photons hitting the detector, so unlike CT
+where intensity I is the appropriate raw measurement, in nuclear medicine the
+photon ﬂuence rate φ [see (4.14)] is the correct raw measurement. Accordingly,
+incorporating both the inverse square law and attenuation along the path the
+differential photon ﬂuence rate dφ(x
+d, yd) at the detector position (xd, yd, 0) due
+to the differential source at (x, y, z)i s
+dφ(xd, yd) = dA
+4πr2 exp
+{
+−
+∫ r
+0
+μ(s;E) ds
+}
+. (8.5)
+Here it is assumed that the origin ( s = 0) of the line is at the point ( x, y, z) and
+the end point of the line is at ( xd, yd, 0), which means that the total distance a
+photon travels from the source to the target is
+r =
+√
+(x − xd)2 + (y − yd)2 + z2 .
+In order to ﬁnd the total photon ﬂuence rate, we must integrate over all
+differential radioactivity elements that are physically able to contribute to the
+ﬂuence at ( xd, yd, 0) on the detector. This implies that the collimator must be
+considered since it is designed to restrict the view of the detector face.
+For simplicity, we restrict our attention to a parallel-hole collimator and
+consider the response at a detector point residing above (and within the projec-
+tion of) a hole (see Figure 8.9). We further simplify our analysis by assuming
+that the only part of the object that is ‘‘seen’’ by this point is formed by a
+cylindrical tube created by extending the collimator hole along the z-axis into
+the object. Then the desired integral is given by
+φ(xd, yd) =
+∫∫∫
+Tube
+f (x, y, z)
+4πr2 exp
+{
+−
+∫ r
+0
+μ(s;E) ds
+}
+dx dy dz. (8.6)
+This integral can be worked out in principle, but it suits our purpose better—in
+order to get at the essence of the situation—to make additional approxima-
+tions to achieve further simpliﬁcation. First, we assume that both the activity
+concentration f (x, y, z) and linear attenuation coefﬁcient μ(x, y, z) are constant
+within the tube at any given depth z. Second, we assume that r ≈| z| for any
+differential radioactive element within the same tube. These assumptions allow
+us to substantially simplify the volume integral, yielding
+φ(xd, yd) = Ah
+∫ 0
+−∞
+f (xd, yd, z)
+4πz2 exp
+{
+−
+∫ 0
+z
+μ(xd, yd, z′;E) dz′
+}
+dz , (8.7)

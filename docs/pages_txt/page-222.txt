@@ -1,0 +1,61 @@
+6.3 Image Formation 203
+Figure 6.11
+A backprojection image.
+y
+x
+/H110011
+/H110021
+Projection-Slice Theorem In this section, we develop a very important rela-
+tionship between the 1-D Fourier transform of a projection and the 2-D Fourier
+transform of the object.
+We begin by taking the 1-D Fourier transform of a projection with respect
+to ℓ:
+G(ϱ , θ) = F1D{g(ℓ, θ)}=
+∫ ∞
+−∞
+g(ℓ, θ)e−j2πϱℓ dℓ , (6.15)
+where ϱ denotes spatial frequency (like u or v, except in an arbitrary direction).
+Now we substitute the analytic expression for g(ℓ, θ) given in (6.10) and
+manipulate this expression:
+G(ϱ , θ) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)δ(x cos θ + y sin θ − ℓ)e−j2πϱℓ dx dy dℓ
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)
+∫ ∞
+−∞
+δ(x cos θ + y sin θ − ℓ)e−j2πϱℓ dℓ dx dy
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)e−j2πϱ (x cos θ+y sin θ) dx dy, (6.16)
+where the last step followed from the sifting property of the delta function
+[see (2.6)].
+The ﬁnal expression for G(ϱ , θ) in (6.16) is reminiscent of the 2-D Fourier
+transform of f (x, y), deﬁned as
+F(u, v) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)e−j2π(xu+yv) dx dy, (6.17)
+where the variables u and v are the frequency variables in thex and y directions,
+respectively. In fact, making the identiﬁcation u = ϱ cos θ and v = ϱ sin θ leads
+directly to the equivalence and to the very important relationship
+G(ϱ , θ) = F(ϱ cos θ, ϱ sin θ) . (6.18)
+Equation (6.18) is known as the projection-slice theorem, and it is the basis
+of three important reconstruction methods. The relationship states that the 1-D
+Fourier transform of a projection is a slice of the 2-D Fourier transform of the
+object. Said another way, the 1-D Fourier transform of the projection equals
+a line passing through the origin of the 2-D Fourier transform of the object at

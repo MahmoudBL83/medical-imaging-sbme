@@ -1,0 +1,38 @@
+6.3 Image Formation 209
+Figure 6.17
+Fan-beam geometry.
+b
+ug
+D
+L(  , u)
+measured around the source position, and it is zero for rays that pass through
+the center of the detector array.
+It is easiest to derive the fan-beam CBP formula by starting with what we
+already know about parallel-ray reconstruction. Within the fan-beam projection
+we have identiﬁed a lineL(ℓ, θ) in Figure 6.7, where ℓ is the lateral displacement
+and θ is the angular orientation, exactly as before. We can see from the
+geometry that the parameters of this line, ℓ and θ, are related to the fan-beam
+parameters by
+θ = β + γ , (6.28)
+ℓ = D sin γ , (6.29)
+where D is the distance from the source to the origin (isocenter).
+Fan-Beam Reconstruction Formula Our development of a fan-beam recon-
+struction formula begins with the equation for parallel-ray CBP [(6.26)], which
+we repeat here for convenience:
+f (x, y) =
+∫ π
+0
+∫ ∞
+−∞
+g(ℓ, θ)c(x cos θ + y sin θ − ℓ) dℓ dθ. (6.30)
+From the geometry of parallel-ray tomography,
+f (x, y) = 1
+2
+∫ 2π
+0
+∫ T
+−T
+g(ℓ, θ)c(x cos θ + y sin θ − ℓ) dℓ dθ , (6.31)
+where we have assumed that g(ℓ, θ) = 0f o r|ℓ| > T. Thus, in (6.31) we consider
+rotation over the full circle and objects that are zero outside the disk with radius
+T, centered at the origin.

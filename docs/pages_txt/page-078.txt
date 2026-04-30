@@ -1,0 +1,31 @@
+3.2 Contrast 59
+Figure 3.3
+A typical MTF of a
+medical imaging system.Spatial frequency u
+0.80 0.60.2 0.4 1.0 1.2 1.4
+0.5
+1.0
+mm/H110021
+MTF(u)
+Figure 3.4
+Impact of the MTF of a
+medical imaging system
+on contrast. Clearly, a
+poorer MTF results in
+lower contrast. Original
+image courtesy of GE
+Healthcare.Decreasing contrast
+MTF
+ Output signal
+system, the proﬁle through the PSF changes with orientation; thus, the system has
+an orientation-dependent response. In the nonisotropic (2-D) case, the MTF is
+rotationally dependent, and (3.7) can be generalized to
+MTF(u, v) = m
+g
+mf
+= |H(u, v)|
+H(0, 0) , (3.9)
+in which case
+mg = mf
+|H(u, v)|
+H(0, 0) . (3.10)

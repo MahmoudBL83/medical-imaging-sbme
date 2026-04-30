@@ -1,0 +1,32 @@
+Problems 53
+Given a and b, determine all possible values of A and B for which this is
+possible. Explain your answers in full detail. You might use the formula
+∫ ∞
+−∞
+sin(αt)
+πt e−jτtdt =
+{ 1, for |τ|≤ α
+0, for |τ| >α .
+2.30 The discrete-time Fourier transform (DTFT) of a 1-D aperiodic discrete
+time signal with ﬁnite energy, f (m), is deﬁned as
+F(eiω) =
++∞∑
+m=−∞
+f (m)e−jωm
+and the inverse transform is
+f (m) = 1
+2π
+∫ π
+−π
+F(eiω)ejωmdω.
+A continuous signal g(x) = rect(x/2) is sampled with a given sampling
+period /Delta1x1 to give a discrete signal g1(m).
+(a) Compute and plot the continuous Fourier transform of g(x).
+(b) Let /Delta1x1 = 1/2. Compute and plot G1(ω), the DTFT of g1(m) =
+g(m/Delta1x1).
+(c) Let /Delta1x2 = 1. Compute and plotG2(ω), the DTFT ofg2(m) = g(m/Delta1x2).
+(d) Derive a relationship between the continuous Fourier transform of
+g(x) and its discrete version sampled with /Delta1x.
+(e) Prove the convolution property of the DTFT:
+FDTFT{x(m) ∗ y(m)}= FDTFT{x(m)}FDTFT{y(m)}.
+(f) Verify the convolution property by computing g1(m) ∗ g2(m).

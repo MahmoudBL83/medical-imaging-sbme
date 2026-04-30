@@ -1,0 +1,48 @@
+5.2 Instrumentation 153
+detection has the potential for higher spatial resolution and are being rapidly
+improved in materials that will offer lower noise designs.
+CMOS-Based Digital Radiography Systems Complementary metal oxide semi-
+conductor (CMOS) active-pixel sensor (APS) imagers are the most common
+optical sensor for consumer cameras. Their use in x-ray detection is relatively
+new and the advantages and disadvantages are still being discovered even as
+the technology continues to improve. Current technology allows for pixels in
+CMOS sensors to be made larger than CCD elements, they have low cost and
+low power consumption, they are tolerant to x-ray irradiation, and they have
+fast pixel readout capability.
+Each pixel in a CMOS APS comprises a photodiode and three or more
+MOSFET transistors. Because light is used as an input, these detectors are
+indirect and must be coupled to a scintillator as in a-Si TFT detectors. Like
+TFTs, the pixels within a CMOS APS are accessed by activating an access
+enable conductor, which identiﬁes the row and then reads a particular output
+conductor, which identiﬁes the column. As opposed to the CMOS passive-pixel
+sensor (an earlier design that has only has one transister per pixel), the CMOS
+APS uses extra transistors to amplify the signal (accumulated charge) prior to
+readout, yielding much lower noise and faster readouts.
+The pixel size in CMOS sensors can be much larger than that of CCD
+detectors, which is an advantage. A typical pixel size is 0.075 mm× 0.075 mm,
+and they can be grouped together to make larger ‘‘superpixels’’—for example,
+up to 4 × 4 to make pixels of size 0.3 mm × 0.3 mm—which enables faster
+readout rates for real-time applications. Like CCD imaging arrays, CMOS
+imaging arrays must be manufactured on a single semiconductor substrate and
+this is a limiting factor in comparison to TFT-based detectors. Second generation
+sizes support up to 5 cm × 10 cm substrates and these can be tiled (with greater
+ease than tiling CCD arrays) to make up larger panels, currently up to 290 mm×
+230 mm, which is suitable for mammography applications.
+Wireless and Rechargable DR Detectors In addition to its capability for high
+resolution, convenience of workﬂow is a key reason that CR got an early
+headstart in the digital x-ray area. In particular, existing x-ray systems could
+be retroﬁtted to support the CR cartridge instead of ﬁlm screen cartridges,
+and only a separate processing unit needed to be purchased to replace the
+chemical ﬁlm developers. Early DR systems were sold to replace existing x-ray
+systems—not just their detectors—and therefore represented a considerable
+capital investment.
+Newer DR detectors are completely portable plates or cartridges that have
+their own rechargable battery power sources and wireless ethernet connectivity.
+They are completely encased in plastic so that they can be easily cleaned and will
+survive minor bumps in the course of normal use. These detectors can be shared
+between multiple rooms or x-ray systems and can be retroﬁt into existing table
+and wall-mounted systems. Data from these detectors can be transmitted directly
+to a viewing station or departmental picture archiving and communication
+system. Because of these conveniences, the improving resolution and SNR, and
+the lack of a requirement for separate reading and erasing hardware, DR systems
+are beginning to overtake CR in modern radiology departments.

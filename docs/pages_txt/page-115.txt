@@ -1,0 +1,43 @@
+96 Chapter 3 Image Quality
+We sample the signal with a sampling period of /Delta1T = 0.25T.
+(a) What is fs(t), and what is fd(m)?
+(b) Deﬁne a new signal fh(t)a s
+fh(t) = fd(k), for k/Delta1T ≤ t < (k + 1)/Delta1T.
+Sketch fh(t) and ﬁnd its Fourier transform.
+(c) Repeat the above using a sampling period of /Delta1T = 0.5T.
+3.19 The Nyquist sampling periods for 1-D band-limited signals f (x) and g(x)
+are /Delta1f and /Delta1g, respectively. Find the Nyquist sampling periods for the
+following signals:
+(a) f (x − x0), where x0 is a given constant.
+(b) f (x) + g(x).
+(c) f (x) ∗ f (x).
+(d) f (x)g(x).
+(e)
+⏐⏐f (x)
+⏐⏐.
+3.20 We want to sample the 2-D continuous signalf (x, y) = exp
+{
+−π(x2 + y2)
+}
+by means of a rectangular sampling scheme to obtain 1 .5 samples per
+millimeter. Determine the PSF h(x, y) of an ideal low-pass anti-aliasing
+ﬁlter with the maximum possible frequency content. What percentage of
+the spectrum energy (see Problem 2.3) of f (x, y) is preserved by this ﬁlter?
+In practice, can we sample f (x, y) alias-free without using an anti-aliasing
+ﬁlter?
+3.21 In a medical imaging system, small detectors having width w can be
+used individually or be grouped together into larger (2x2) detectors.
+Two example groupings are shown in Figure P3.2. Assume that the small
+detectors have uniform response over their spatial extent and that the
+detector array is stationary.
+Figure P3.2
+Grouping detectors.
+A 2x2 grouping
+xx
+w
+yy
+(a) Find the impulse response, the MTF, and the (horizontal) FWHM of
+the system when the small detectors are used.
+(b) Consider the small detectors, and assume that a sinc function is zero
+except for its main lobe. What property of the imaged object guarantees
+that no aliasing will occur?

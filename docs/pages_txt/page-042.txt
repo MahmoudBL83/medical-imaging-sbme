@@ -1,0 +1,34 @@
+2.2 Signals 23
+Figure 2.5
+Six instances of the
+sinusoidal signal s(x, y) =
+sin[2π(u0x + v0y)],
+0 ≤ x, y ≤ 1, for various
+values of the fundamental
+frequencies u0, v0. Notice
+that small values result in
+slow oscillations in the
+corresponding direction,
+whereas large values
+result in fast oscillations.
+u0 /H11005 1, v0 /H11005 0 u0 /H11005 2, v0 /H11005 0 u0 /H11005 4, v0 /H11005 0
+u0 /H11005 4, v0 /H11005 1 u0 /H11005 4, v0 /H11005 2 u0 /H11005 4, v0 /H11005 4
+2.2.6 Separable Signals
+Separable signals form another class of continuous signals. A signal f (x, y)i sa
+separable signalif there exist two 1-D signals f1(x) and f2(y) such that
+f (x, y) = f1(x)f2(y) . (2.28)
+A 2-D separable signal that is a function of two independent variables x and
+y can be separated into a product of two 1-D signals, one of which is only
+a function of x and the other only of y. Notice that the point impulse is a
+separable signal, since δ(x, y) = δ(x)δ(y). From (2.18) and (2.21), the rect and
+sinc functions are separable signals as well.
+Separable signals are limited in the sense that they can only model signal
+variations independently in the x and y directions. However, there are instances
+in which use of separable signals is appropriate. Of major importance is the fact
+that operating on separable signals is much simpler than operating on purely 2-D
+signals, since, for separable signals 2-D operations reduce to simpler consecutive
+1-D operations.
+2.2.7 Periodic Signals
+A signal f (x, y)i sa periodic signal if there are two positive constants X and Y
+such that
+f (x, y) = f (x + X, y) = f (x, y + Y) , (2.29)

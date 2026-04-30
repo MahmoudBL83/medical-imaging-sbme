@@ -1,0 +1,71 @@
+9.2 Image Formation 311
+Now consider moving the differential source to position s ̸= 0 within the
+imaginary tube connecting the detectors (but still remaining on the central axis
+between the detectors). Now one detector is farther away from the differential
+source and will experience lower ﬂuence simply due to the inverse square law.
+This leads to a slightly modiﬁed equation
+dφ(x
+d, yd) = dA
+4π(R +| s|)2 exp
+{
+−
+∫ R
+−R
+μ(s′;E)ds′
+}
+, (9.16)
+where (xd, yd) must be selected such that the line passing through ( xd, yd) and
+the source position will also hit the opposite detector.
+Now consider moving the source back to s = 0 but then move it off
+the central axis. Simple geometric considerations dictate that, for this source
+position, lines of coincidence between these two detectors cannot exist across
+the whole face of either detector. This amounts to a further reduction in
+effective photon ﬂuence rate between these detectors from this shifted source. It
+is complicated to ﬁnd this reduction factor for even simple detector geometries
+and not necessary for our purposes. Rather, we simply acknowledge that if
+we model the activity concentration as constant across the tube connecting the
+two detectors, its effective activity cannot be the product of the activity at the
+central point times the cross-sectional area of the tube; it will be less than that.
+For simplicity, we will use the notation ˜A
+h for effective cross-sectional area of
+the tube lying between the two detector. With this assumption, the differential
+radioactivity under consideration then becomes a function of position along
+the tube
+dA(s) = ˜A
+hf (x(s), y(s), z)ds , (9.17)
+where ds is a differential element in the direction of the line parameterized by
+(x(s), y(s)) connecting the detectors [see (9.4) and (9.5)]. Then the total ﬂuence
+at (xd, yd) is given by the integral over the tube by combining (9.17) and (9.16),
+yielding
+φ(xd, yd) = ˜Ah
+∫ R
+−R
+f (x(s), y(s))
+4π(R +| s|)2 exp
+{
+−
+∫ R
+−R
+μ(s′, E)ds′
+}
+ds , (9.18)
+where we have dropped the explicit dependence of f on z since this 2D analysis
+can be carried out for each z independently.
+Considering the area Ah of the detector and image acquisition time T,
+we can write the expected number of coincidence detections for the LOR at
+(ℓ, θ)a s
+n(ℓ, θ) = ϵTAh ˜Ah
+∫ +R
+−R
+f (x(s), y(s))
+4π(R +| s|)2 exp
+{
+−
+∫ R
+−R
+μ(x(s′), y(s′);E)ds′
+}
+ds ,
+(9.19)
+where we have also incorporated an additional (unitless) detector efﬁciency
+term ϵ. The exponential factor in (9.19) does not depend ons, so we can remove

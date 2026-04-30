@@ -1,0 +1,59 @@
+6.3 Image Formation 205
+corresponding correct angular orientation into the correct slice of the 2-D Fourier
+plane, and takes the inverse 2-D Fourier transform of the result. Accordingly,
+we have
+f (x, y) = F
+−1
+2D{G(ϱ , θ)} . (6.19)
+The Fourier method is not widely used in CT due to the practical problem of
+interpolating polar data onto a Cartesian grid, and the need to use the relatively
+time-consuming 2-D inverse Fourier transform. Further analytic manipulation
+of (6.19), however, leads to improvements, as we shall see below.
+Filtered Backprojection The inverse Fourier transform of F(u, v) [see (6.17)]
+can be written in polar coordinates as
+f (x, y) =
+∫ 2π
+0
+∫ ∞
+0
+F(ϱ cos θ, ϱ sin θ)ej2πϱ (x cos θ+y sin θ)ϱ dϱ dθ. (6.20)
+Using the projection-slice theorem, we have
+f (x, y) =
+∫ 2π
+0
+∫ ∞
+0
+G(ϱ , θ)ej2πϱ (x cos θ+y sin θ)ϱ dϱ dθ , (6.21)
+from which it follows that
+f (x, y) =
+∫ π
+0
+∫ ∞
+−∞
+|ϱ |G(ϱ , θ)ej2πϱ (x cos θ+y sin θ) dϱ dθ , (6.22)
+after some work and use of the fact that g(ℓ, θ) = g(−ℓ, θ + π).
+From the point of view of integration over ϱ ,t h et e r m(x cos θ + y sin θ)i n
+(6.22) is a constant, say ℓ. Hence, (6.22) may be written as
+f (x, y) =
+∫ π
+0
+[∫ ∞
+−∞
+|ϱ |G(ϱ , θ)ej2πϱℓ dϱ
+]
+ℓ=x cos θ+y sin θ
+dθ. (6.23)
+We recognize the inner integral in (6.23) as an inverse 1-D Fourier transform
+[see (2.63)], where the term |ϱ | makes (6.23) a ﬁltering equation. Here, the
+Fourier transform of the projection g(ℓ, θ) is multiplied by the frequency ﬁlter
+|ϱ | and inverse-transformed. After the inverse transform, the ﬁltered projection
+is backprojected (this is accomplished by replacing ℓ with x cos θ + y sin θ),
+which is followed by a ‘‘summation’’ of all ﬁltered projections. This recon-
+struction approach is appropriately called ﬁltered backprojection, and it is a
+considerable improvement over the Fourier method in speed and ﬂexibility.
+The term |ϱ | is known as the ramp ﬁlter because of its appearance in Fourier
+space.
+An intuitive understanding of the role of the ramp ﬁlter can be found from
+inspection of Figure 6.13. Here, the straight application of the Fourier method
+leads to sampling that is inversely proportional toϱ . Additional area or ‘‘weight’’
+is required to compensate for the sparser sampling at higher frequencies.

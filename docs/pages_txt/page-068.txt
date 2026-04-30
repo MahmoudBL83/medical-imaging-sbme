@@ -1,0 +1,49 @@
+Problems 49
+2.6 Determine whether the system g(x, y) = f (x, −1) + f (0, y)i s
+(a) linear.
+(b) shift-invariant.
+2.7 For each system with the following input-output equation, determine
+whether the system is (1) linear and (2) shift-invariant.
+(a) g(x, y) = f (x, y)f (x − x0, y).
+(b) g(x, y) =
+∫∞
+−∞ f (x, η)dη.
+2.8 For each system with the following PSF, determine whether the system is
+stable.
+(a) h(x, y) = x2 + y2.
+(b) h(x, y) = exp{−(x2 + y2)}.
+(c) h(x, y) = x2 exp{−y2}.
+2.9 Consider the 1-D system whose input-output equation is given by
+g(x) = f (x) ∗ f (x),
+where * denotes convolution.
+(a) Write an integral expression that gives g(x) as a function of f (x).
+(b) Determine whether the system is linear.
+(c) Determine whether the system is shift-invariant.
+Convolution of Signals
+2.10 Given a continuous signal f (x, y) = x + y2, evaluate the following:
+(a) f (x, y)δ(x − 1, y − 2).
+(b) f (x, y) ∗ δ(x − 1, y − 2).
+(c)
+∫∞
+−∞
+∫∞
+−∞ δ(x − 1, y − 2)f (x,3 )dx dy.
+(d) δ(x − 1, y − 2) ∗ f (x + 1, y + 2).
+2.11 Consider two continuous signals f (x, y) and g(x, y) that are separa-
+ble—that is, f (x, y) = f1(x)f2(y) and g(x, y) = g1(x)g2(y).
+(a) Show that their convolution is also separable.
+(b) Express the convolution in terms of f1(x), f2(y), g1(x), and g2(y).
+2.12 By using two 1-D convolution integrals, calculate the 2-D convo-
+lution of signal f (x, y) = x + y with the exponential PSF h(x, y) =
+exp{−(x2 + y2)}.
+Fourier Transforms and Their Properties
+2.13 Find the Fourier transforms of the following continuous signals:
+(a) δs(x, y) = ∑ ∞
+m=−∞
+∑ ∞
+n=−∞ δ(x − m, y − n).
+(b) δs(x, y;/Delta1x, /Delta1y) = ∑ ∞
+m=−∞
+∑ ∞
+n=−∞ δ(x − m/Delta1x, y − n/Delta1y).
+(c) s(x, y) = sin[2π(u0x + v0y)].

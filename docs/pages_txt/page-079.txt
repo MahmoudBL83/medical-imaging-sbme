@@ -1,0 +1,44 @@
+60 Chapter 3 Image Quality
+For a typical nonisotropic medical imaging system,
+0 ≤ MTF(u, v) = |H(u, v)|
+H(0, 0) ≤ MTF(0, 0) = 1, for every u, v. (3.11)
+3.2.3 Local Contrast
+The identiﬁcation of some speciﬁc object or feature within an image is only
+possible if its value differs from that of surrounding areas. The deﬁnition of
+modulation or contrast for sinusoidal signals can be adapted for use in this
+situation as well. It is common in many imaging modalities (e.g., nuclear
+medicine) to refer to an object of interest (e.g., a tumor in the liver) as the
+target, as illustrated in Figure 3.5. Suppose that the target has a nominal image
+intensity of f
+t. The target (i.e., the tumor) is surrounded by other tissues (i.e.,
+the liver tissue), called the background, which may obscure our ability to see or
+detect the target. Suppose that the background has a nominal image intensity of
+fb. The difference between the target and its background is captured by thelocal
+contrast, deﬁned as
+C = ft − fb
+fb
+. (3.12)
+The deﬁnition of local contrast in (3.12) differs from the deﬁnition of
+modulation in (3.1) for sinusoidal signals in that the intensities ft and fb may
+be selected locally—for example, within the liver—and they need not be the
+maximum and minimum intensities within the image as a whole. For example,
+ft could be taken to be the average image intensity within the tumor, whereas
+fb could be taken as the average image intensity within the liver. The tumor
+intensity could be larger than fb or less than fb.I f ft is less than fb, then C
+is negative and, in certain circumstances, it may be convenient to report its
+absolute value.
+EXAMPLE 3.2
+Consider an image showing an organ with intensityIo and a tumor with intensityIt > Io.
+Question What is the local contrast of the tumor? If we add a constant intensityIc > 0
+to the image, what is the local contrast? Is the local contrast improved?
+Answer By deﬁnition, the local contrast of the tumor is
+C = It − Io
+Io
+.
+Figure 3.5
+Local contrast scenario.
+x
+ft
+fb
+Target
+Background

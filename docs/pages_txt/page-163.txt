@@ -1,0 +1,46 @@
+144 Chapter 5 Projection Radiography
+Figure 5.9
+A typical x-ray grid.
+Radius
+X-rays
+X-ray tube
+Interspace material
+Lead strips
+Height, h
+Width, b
+In nuclear medicine, where inherently monoenergetic radiation is used,
+energy-sensitive detectors can be used to discriminate between the primary
+radiation and the scattered radiation, which has lower energy photons. However,
+this concept cannot be employed in conventional radiography because the
+radiation that emerges from an x-ray tube is inherently polyenergetic and because
+an integrated measurement of beam intensity is made. Instead, there are three
+other methods used in conventional radiography to reduce the effects of scatter:
+(1) grids, (2) airgaps, and (3) scanning slits. We now describe these in detail.
+Grids Scatter-reducing grids use thin strips of lead alternating with highly
+transmissive interspace material, typically aluminum and sometimes plastic. A
+typical x-ray grid is shown in Figure 5.9. This linear, focused grid has lead
+strips that are arranged in lines and angled toward the x-ray tube. By careful
+placement of the grid, photons that travel from the source to the detector pass
+through the interspace material and are not severely attenuated by the grid.
+Photons that arise from Compton scattering within the patient, however, travel
+off-axis, intercept the lead strips, and are absorbed in the grid.
+Other combinations of grid geometries are sometimes used as well. For
+example, ‘‘crosshatch’’ grids have lead strips arranged in an actual grid pattern
+(as in the original design of Gustav Bucky), and ‘‘parallel’’ grids have lead strips
+that are parallel to each other (so that the focal radius is inﬁnite). Linear grids,
+however, have the advantage that the x-ray beam can be angulated along the
+grid line direction, allowing adjustments of the viewing angle. Furthermore,
+focused grids have the advantage that very few x-rays are actually blocked by
+the geometry of the grid.
+The effectiveness of the grid for reducing scatter is a function of the grid
+ratio, deﬁned as
+grid ratio = h
+b , (5.1)
+where h is the height of the lead strips and b is the spacing between the lead
+strips (see Figure 5.9). This fraction is generally reported as a normalized ratio
+in which the denominator is unity. Grid ratios ranging from 6:1 to 16:1 are used
+in conventional radiographic systems and can be as low as 2:1 in mammography
+systems. Grid spacing is generally reported using its reciprocal, which is known
+as grid frequency, which ranges from 60 cm
+−1 for conventional radiographic
+systems to as much as 80 cm−1 for mammography systems.

@@ -1,0 +1,40 @@
+12 Chapter 1 Introduction
+Figure 1.4
+(a) An ultrasound scanner
+and (b) an ultrasound
+image of a kidney.
+Source: Courtesy of GE
+Healthcare.
+ (a) (b)
+An ultrasound imaging system is shown in Figure 1.4(a). In addition to
+being inexpensive, ultrasound systems are small; most systems are on wheels,
+and can be rolled to the bedside or wherever needed. Very compact systems with
+limited functionality comprising just a transducer and a tablet or a smart phone
+are currently being marketed. Two transducers are shown in the ﬁgure, with
+their connecting cables; only one is used at any given time. Transducers with dif-
+fering frequencies and geometries are usually available to serve the examination
+requirements. The ultrasound image shown in Figure 1.4(b) shows a human kid-
+ney. The textured appearance of ultrasound images is called speckle, and it is a
+form of artifact. Ultrasound imaging is described in detail in Chapters 10 and 11.
+1.8 Magnetic Resonance Imaging
+Magnetic resonance (MR) scanners use the property of nuclear magnetic reso-
+nance to create images. In a strong magnetic ﬁeld, the nucleus of the hydrogen
+atom—a proton—tends to align itself with the ﬁeld. Given the vast numbers of
+hydrogen atoms in the body, this tendency results in a net magnetization of the
+body. It is then possible to selectively excite regions within the body, causing
+groups of these ‘‘little magnets’’ to tip away from the magnetic ﬁeld direction.
+As the protons return back into alignment with the ﬁeld, they wobble like
+children’s tops. Because protons are charged particles, this precession generates
+an RF electromagnetic signature, which can be sensed with an antenna.
+There are many modes in which an MR scanner can operate; these scanners
+are incredibly ﬂexible imaging devices. The most general categories of operation
+are the following:
+• Standard MRI, which includes a whole host of pulse sequences (time-series
+of different excitation pulses)
+• Echo-planar imaging (EPI), which utilizes specialized methods to generate
+images in real time
+• Magnetic resonance spectroscopic imaging(MRS), which records images of
+other nuclei besides that of the hydrogen atom
+• Functional MRI (fMRI), which uses oxygenation-sensitive pulse sequences
+to image blood oxygenation in the brain, which can be related to brain
+activity

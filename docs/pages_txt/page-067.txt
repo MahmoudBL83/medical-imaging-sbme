@@ -1,0 +1,74 @@
+48 Chapter 2 Signals and Systems
+Problems
+Signals and Their Properties
+2.1 Determine whether the following signals are separable. Fully justify your
+answers.
+(a) δs(x, y) = ∑ ∞
+m=−∞
+∑ ∞
+n=−∞ δ(x − m, y − n).
+(b) δℓ(x, y) = δ(x cos θ + y sin θ − ℓ).
+(c) e(x, y) = exp{j2π(u0x + v0y)}.
+(d) s(x, y) = sin[2π(u0x + v0y)].
+2.2 Determine whether the following signals are periodic. If they are, ﬁnd the
+smallest periods.
+(a) δ(x, y).
+(b) comb(x, y).
+(c) f (x, y) = sin(2πx) cos(4πy).
+(d) f (x, y) = sin(2π(x + y)).
+(e) f (x, y) = sin(2π(x2 + y2)).
+(f) fd(m, n) = sin
+(π
+5 m
+)
+cos
+(π
+5 n
+)
+.
+(g) fd(m, n) = sin
+(1
+5 m
+)
+cos
+(1
+5 n
+)
+.
+2.3 We deﬁne the energy of a signal f in the ﬁnite rectangular window deﬁned
+by −X ≤ x ≤ X and −Y ≤ y ≤ Y, where X, Y < ∞,b y
+EXY =
+∫ X
+−X
+∫ Y
+−Y
+|f (x, y)|2 dx dy,
+where f might be complex-valued, in which case |·| denotes complex
+magnitude (or modulus). The total energyis deﬁned as
+E∞ = lim
+X→∞
+lim
+Y→∞
+EXY .
+The power of signal f is deﬁned as
+PXY = 1
+4XY
+∫ X
+−X
+∫ Y
+−Y
+|f (x, y)|2 dx dy= EXY
+4XY
+and the total poweras
+P∞ = lim
+X→∞
+lim
+Y→∞
+PXY .
+For each of the signals in Problem 2.1, determine the values of E∞ and
+P∞.
+Systems and Their Properties
+2.4 Two LSI systems are connected in cascade. Show that the overall system
+is an LSI system and prove equations (2.46) and (2.47).
+2.5 Show that an LSI system is BIBO stable if and only if its PSF is absolutely
+integrable.

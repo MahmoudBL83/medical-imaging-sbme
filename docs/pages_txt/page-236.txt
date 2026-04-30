@@ -1,0 +1,69 @@
+6.4 Image Quality in CT 217
+where N0 is the incident photon count and Nij is the number of detected
+photons. Unfortunately, because the absorption of photons is a statistical phe-
+nomenon, the same experiment repeated again would probably yield a different
+measurement. In fact, N
+ij is a Poisson random variable with mean
+Nij = N0 exp
+(
+−
+∫
+Lij
+μ(s) ds
+)
+, (6.58)
+where Lij is the ray-path from the source to detectori for the jth projection angle.
+Equation (6.58) is just another way of writing the line integral introduced in
+(6.1). Notice that the mean depends on the number of incident photons and on
+the line integral of the linear attenuation coefﬁcient along the ray-path between
+the source and detector. In fact, the mean is the desired measurement.
+The basic measurement g
+ij is a transformation of the random variable Nij,
+however, not a transformation of the mean of Nij. Therefore, gij is a random
+variable and, assuming N0 is large, its meangij and variance var(gij) are given by
+gij ≈− ln
+(
+Nij
+N0
+)
+, (6.59)
+var(gij) ≈ 1
+Nij
+. (6.60)
+We assume that the random variablesNij are independent, and it follows that the
+random variables gij are also independent. Given this second-order characteri-
+zation of the basic CT measurements, we are now in a position to determine the
+second-order statistics of the images that we create from these measurements.
+These second-order statistics will permit us to deﬁne a signal-to-noise ratio of
+reconstructed images, which is a measure of the quality of reconstructions.
+Image Statistics In this section, we develop an expression for the mean and
+variance of the reconstructed linear attenuation coefﬁcients. For simplicity, we
+assume parallel-ray geometry. It is mathematically convenient to use a discrete
+approximation to the convolution backprojection (CBP) integral in (6.26), which
+is given by
+ˆμ(x, y) = πT
+M
+M∑
+j=1
+N/2∑
+i=−N/2
+gθj (iT) ˜c
+(
+x cos θj + y sin θj − iT
+)
+, (6.61)
+where M is the number of projections taken over the range [0, π), N + 1 (odd)
+is the number of ray-paths per projection, T is the physical spacing between
+detectors, and gij = gθj (iT). Notice that ˜c(·) is a realizable approximation to the
+ramp ﬁlter. The mean of the reconstructed image is therefore
+mean[ ˆμ(x, y)] = πT
+M
+M∑
+j=1
+N/2∑
+i=−N/2
+gij ˜c
+(
+x cos θj + y sin θj − iT
+)
+, (6.62)

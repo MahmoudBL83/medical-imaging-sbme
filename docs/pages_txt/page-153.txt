@@ -1,0 +1,21 @@
+134 Chapter 4 Physics of Radiography
+(b) Suppose a photon with energy E = 102.2 keV is scattered by 90 ◦
+within the shielding material. What is the energy E′ of the scattered
+photon?
+4.15 Consider a narrow beam geometry. X-rays with intensity I0 are incident
+upon a 1 cm thick material for which μ = 0.3c m−1.
+(a) What intensity will be detected?
+(b) What thickness of the same material will block 1/2 of the incident
+x-rays?
+(c) If the broad beam geometry is used instead, will the detected intensity
+be larger or smaller? Explain.
+Radiation Dosimetry
+4.16 Consider a chest x-ray given by a point source operating at an energy of
+20 keV. The exposure at d = 1 cm is 10 R. If we want to keep the dose
+equivalent to be under 10 mrems, how far should the patient be away
+from the x-ray source? (Ignore the tissues other than the lung, and ignore
+the size of the lung.)
+4.17 Consider the case of hand x-ray imaging. For simplicity, assume that the
+hand consists of only bone and muscle, and the weighting factors for the
+bone and the muscle in the hand are wbone = wmuscle = 0.002. What is
+the effective dose for an exposure of X = 1 R for x-rays at 20 keV?

@@ -1,0 +1,32 @@
+4 Part I Basic Imaging Principles
+Figure I.3
+The three standard
+orthogonal tomographic
+or slice or section views:
+(a) axial or transaxial or
+transverse, (b) coronal or
+frontal, and (c) sagittal.
+ (a)( c)(b)
+Figure I.4
+Representative transverse
+slice through the brain
+from three different
+imaging modalities: (a)
+computed tomography,
+(b) magnetic resonance
+imaging, and (c) positron
+emission tomography.
+ (a) (c)(b)
+standard orientations of slice (or tomographic) images, axial, coronal, and
+sagittal. Figure I.1(d) is a sagittal slice, while Figure I.1(c) is an oblique slice,
+that is, an orientation not corresponding to one of the standard slice orientations.
+Figure I.4 also shows slice images. In this case, each image is a transverse
+slice, oriented perpendicular to the head and body axis through the brain. Each
+image is obtained from a different imaging modality: (a) computed tomography,
+(b) magnetic resonance imaging, and (c) positron emission tomography. Even
+though each image depicts (a slice through) the brain, the images are strikingly
+different, because the signals giving rise to each image are themselves strikingly
+different. In this part of the book, we study the common signal processing
+concepts that relate to all imaging modalities, setting the groundwork for
+adding the physical differences that account for the different appearances of the
+imaging modalities, and hence their different uses in medicine.

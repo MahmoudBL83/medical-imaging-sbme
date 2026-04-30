@@ -1,0 +1,39 @@
+68 Chapter 3 Image Quality
+of this situation is in ultrasound imaging systems where the range resolution
+(along the transducer axis) is usually substantially better than the lateral reso-
+lution (orthogonal to the transducer axis). (See Chapters 10 and 11 for more
+details.) In the nonisotropic case, the MTF is given by (3.9).
+It is also possible for a medical imaging system to be linear but not shift-
+invariant. Then, the resolution is spatially dependent. For example, this situation
+exists in ultrasound systems because the acoustic energy spreads out with
+increasing distance from the transducer. This makes the FWHM increase with
+depth, which corresponds to a degradation of lateral resolution. Magniﬁcation
+in pinhole collimators, or focused collimators in nuclear medicine, also leads
+to spatially dependent resolution, in which case the image plane resolution is
+related, in a precise geometric way, to actual resolution within the object.
+3.3.5 Resolution Tool
+Images with better resolution are preferable to images with poorer resolution,
+since they contain more image details. Resolution can be quantiﬁed in terms of
+the ability of a system to image details of a given test pattern. For example,
+one common way to measure resolution for a particular system is to image the
+so-called resolution toolor bar phantom, such as the one depicted in Figure 3.9.
+This tool is composed of groups of parallel lines of a certain width, separated by
+gaps having the same width as the line width (yielding an overall duty cycle of
+50 percent). Each group is characterized by the density of such lines, measured
+in line pairs per millimeter (lp/mm). The tool is imaged through the system
+under consideration, and system resolution is reported as the frequency (in
+lp/mm) of the ﬁnest line group that can be resolved at the output. For example,
+the resolution might be 6–8 lp/mm for a projection radiography system and
+2 lp/mm for a CT scanner.
+3.3.6 Temporal and Spectral Resolution
+The preceding discussion on spatial resolution and the concepts embodied in the
+PSF, LSF, and FWHM apply equally well to temporal and spectral resolution.
+Figure 3.9
+A resolution tool or bar
+phantom.
+0.5
+1.0
+2.0
+2.5
+1.5
+lp/mm

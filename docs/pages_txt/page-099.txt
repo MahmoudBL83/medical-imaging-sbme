@@ -1,0 +1,42 @@
+80 Chapter 3 Image Quality
+the average photon count per unit area λb). To achieve a desirable differential SNR, it is
+required that
+λb = SNR2
+diff
+C2A . (3.71)
+This relationship was ﬁrst suggested by Albert Rose and is known as the Rose model.
+Clearly, to maintain good image quality (i.e., to obtain images with high SNR), high
+radiation dose is required when viewing small, low-contrast objects.
+3.5.4 Decibels
+The SNR is sometimes given in decibels (dB). When the SNR is the ratio of
+amplitudes, such as with the amplitude SNR or the differential SNR, then
+SNR (in dB) = 20 × log10 SNR (ratio of amplitudes) . (3.72)
+When the SNR is the ratio of powers, such as with the power SNR, then
+SNR (in dB) = 10 × log10 SNR (ratio of powers) . (3.73)
+3.6 Sampling
+To electronically sense, store, and process continuous signals using computers,
+we must transform them into collections of numbers. This transformation, called
+discretization or sampling, means that we only retain representative signal values
+and discard the rest. There are many ways to do this. In this book, we focus
+our attention on the so-called rectangular sampling scheme. According to this
+scheme, a 2-D continuous signal is replaced by a discrete signal whose values
+are the values of the continuous signal at the vertices of a 2-D rectangular
+grid. More precisely, given a 2-D continuous signalf (x, y), rectangular sampling
+generates a 2-D discrete signal f
+d(m, n), such that
+fd(m, n) = f (m/Delta1x, n/Delta1y), for m, n = 0, 1,.... (3.74)
+In (3.74), /Delta1x and /Delta1y are the sampling periods in the x and y directions,
+respectively. This is illustrated in Figure 3.12. Notice that fd(m, n) forms an
+array of numbers that contains the values of the 2-D continuous signal f (x, y)
+at the discrete points ( m/Delta1x, n/Delta1y). The inverses 1//Delta1x and 1//Delta1y of /Delta1x and /Delta1y
+are referred to as the sampling frequenciesin the x and y direction, respectively.
+As shown below, these sampling frequencies are related to the comb and
+sampling functions presented in Chapter 2.
+Ideally, we would like to keep as few samples as possible. This strategy
+minimizes the number of detectors (or the scanning time needed by a single
+detector) and reduces signal storage and subsequent processing requirements. So
+we ask: Given a 2-D continuous signal f (x, y), what are the maximum possible
+values for /Delta1x and /Delta1y such that f (x, y) can be reconstructed from the 2-D discrete
+signal f
+d(m, n), obtained by (3.74)? As illustrated in Figure 3.12, we may be
+tempted to perform coarse sampling as opposed to ﬁne sampling. However, if

@@ -1,0 +1,55 @@
+58 Chapter 3 Image Quality
+Figure 3.2
+Basic principles for
+determining the
+modulation of the output
+of an LSI medical imaging
+system from the
+modulation of the input,
+when the input object is
+sinusoidal.
+A /H11001 B
+A /H11002 B
+A
+Medical
+imaging
+system
+Input f(x, y) Output g(x, y)
+mf /H11005B
+A mg /H11005B/H20870H(u0, 0)/H20870
+AH(0, 0)
+AH(0, 0) /H11001 B/H20870H(u0, 0)/H20870
+AH(0, 0) /H11002 B/H20870H(u0, 0)/H20870
+AH(0, 0)
+This shows that the MTF of a medical imaging system is, in essence, the
+‘‘frequency response’’ of the system, and it can be directly obtained from
+the Fourier transform of the PSF of the system (remember that H(u, v) =
+F
+2D{h(x, y)}). Since |H(u,0 )|=| H(−u,0 )|, the MTF is usually considered only
+at nonnegative frequencies. Since the MTF, which characterizes contrast, can be
+mathematically related to the PSF, which characterizes blurring (or resolution),
+we can assume that blurring reduces contrast. We will have more to say about
+this in Section 3.3.3.
+The MTF quantiﬁes degradation of contrast as a function of spatial fre-
+quency. For most medical imaging systems,
+0 ≤ MTF(u) ≤ MTF(0) = 1, for every u , (3.8)
+with the MTF becoming signiﬁcantly less than unity (or even zero) at high
+spatial frequencies.
+EXAMPLE 3.1
+A typical MTF is depicted in Figure 3.3. Note that 0 ≤ MTF(u) ≤ 1, with the maximum
+value attained at u = 0. Note also that the MTF monotonically decreases to zero with
+increasing frequency, becoming zero at spatial frequencies larger than 0.8m m−1.
+Question What can we learn about the contrast behavior of an imaging system with
+this MTF?
+Answer At spatial frequency 0.6m m−1, the MTF takes a value of 0.5. This means that
+the contrast of a sinusoidal object at spatial frequency 0.6m m−1 is reduced by half when
+imaged through this system. Moreover, since the MTF is zero at all spatial frequencies
+larger than 0.8m m−1, any sinusoidal input with frequency larger than 0.8m m−1 will be
+imaged as a constant output of zero contrast.
+As indicated above, we can think of loss of contrast as the result of the
+blurring action of a medical imaging system. This is illustrated in Figure 3.4,
+which depicts the outputs of three radiographic imaging systems with increas-
+ingly poorer MTFs. Here, a poorer MTF is one that drops to zero at lower
+spatial frequencies. A poorer MTF results in less contrast.
+It should be noted here that the PSF of a medical imaging system need not
+be isotropic—that is, equivalent in all (2-D or 3-D) directions. In a nonisotropic

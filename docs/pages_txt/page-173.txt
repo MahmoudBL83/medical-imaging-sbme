@@ -1,0 +1,47 @@
+154 Chapter 5 Projection Radiography
+5.2.8 Mammography
+Mammography is a sufﬁciently specialized and widely used modality within
+projection radiography that we consider it separately here. Mammography is
+used for the early detection of breast cancer either by direct detection of tumors
+in the images or by detection of microcalciﬁcations (tiny deposits of calcium) that
+sometimes indicate the presence of breast cancer. A conventional mammography
+unit is based on a traditional projection radiography system, whose size is
+optimized for the breast. Low-energy x-rays (around 30 kVp) are typically
+used. A signiﬁcant feature of such systems is the integration of compression
+via a paddle to produce a reduced and more uniform (and somewhat more
+standardized across patients) thickness organ for imaging. In this approach,
+the breast is compressed between the paddle and the detector; compression
+thus also reduces motion during imaging. Another important feature of most
+conventional mammography systems is an automated intensity control system
+that optimizes detector exposure.
+With the advent of full ﬁeld digital mammography , more than half of
+all mammography systems are now direct digital radiography systems. Early
+digital systems had 70 micron pixels, leading to spatial resolution around
+3.5 line pairs/mm (compared with 12 or so line pairs/mm to as much as 20 line
+pairs/mm for ﬁlm-screen-based systems); current systems have resolution around
+6–8 line pairs/mm. However, digital systems have much greater dynamic range
+than ﬁlm, avoiding problems of under- or over-exposure. The digital display
+of images provides control over brightness and contrast. Furthermore, digital
+systems have advanced processing algorithms for contrast enhancement and
+small-structure enhancement, as well as computed-aided detection and diagnosis
+(CAD) algorithms that help the radiologist to interpret the images.
+The most advanced mammography systems use tomosynthesis or stereo
+digital mammography. In the latter, two mammograms shifted by 5–10 degrees
+are captured and digitally fused and displayed. In the former, multiple (typically,
+7–12) angular views are captured over a 50-degree arc, and then digitally
+reconstructed to yield a volumetric dataset, from which individual tomographic
+slices can be extracted and displayed. Most tomosynthesis systems are based
+on the concept of linear tomography and are only implemented in state-of-
+the-art full-ﬁeld digital mammography systems. Now that the technology is
+becoming more widely accepted, more mammography systems can be equipped
+for tomosynthesis, and some have iterative reconstruction methods that permit
+dose reduction and improved visualization of microcalciﬁcations.
+5.3 Image Formation
+5.3.1 Basic Imaging Equation
+The x-ray tube emits a burst of x-rays that, after ﬁltration and restriction, are
+incident upon the patient. These x-rays are then attenuated as they pass through
+the body in a spatial pattern that depends on the linear attenuation coefﬁcient
+distribution in the body. Consider a particular line segment through the object
+starting at the x-ray origin and ending on the detector plane at point ( x, y), as
+shown in Figure 5.13. The linear attenuation is a function of x, y, and z,i n
+general; on the line, it can be considered to be a function of its distance s from

@@ -1,0 +1,50 @@
+2.6 Transfer Function 41
+Figure 2.10
+Calculation of the 2-D
+Fourier transform by
+using two 1-D Fourier
+transforms in cascade.
+1-D Fourier transform
+f(x, y) r(u, y) F(u, v)
+x
+y
+(0, 0) (0, 0)
+(0, 0)
+yy
+u
+u
+1-D Fourier transform
+The ﬁrst step ﬁxes y, treats image f (x, y) as a 1-D signal, and calculates
+its 1-D Fourier transform r(u, y). The second step ﬁxes u, treats r(u, y)a s
+a 1-D signal, and calculates its 1-D Fourier transform. This is illustrated in
+Figure 2.10. Notice that calculation of 1-D Fourier transforms is simpler than
+their 2-D counterparts. Therefore, this technique is strongly recommended for
+calculating 2-D Fourier transforms (and their inverses).
+2.6 Transfer Function
+In (2.38), we represented an image as the convolution of the object with the
+PSF. Using the Fourier transform, we can develop an equivalent representation
+in Fourier space. In order to do so we need to introduce the Fourier space
+equivalent of the PSF.
+In order to determine the PSF h(x, y) of an LSI system S, we observe
+the output of the system to a point impulse [see (2.36)]. We now replace
+the point impulse with one of the complex exponential signals e
+j2π(ux+vy) in
+decomposition (2.63), for any arbitrary but ﬁxed (u, v). As a direct consequence
+of the convolution integral (2.38), following a short derivation that uses (2.48),
+we have
+g(x, y) = H(u, v)ej2π(ux+vy) , (2.98)
+where
+H(u, v) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+h(ξ, η)e−j2π(uξ+vη) dξ dη. (2.99)
+Notice that in (2.98) the output equals the input multiplied byH(u, v). Recalling
+that (2.98) applies to any arbitrary but ﬁxed ( u, v), this means that when the
+input to an LSI system is a complex exponential the output will be the same
+complex exponential but scaled by H(u, v).
+From (2.62) and (2.99), it is clear that H(u, v) is the Fourier transform of
+the PSF h(x, y). H(u, v) is known as the transfer function of the LSI system S.
+H(u, v) is also known as the frequency response or the optical transfer function
+(OTF) of system S. The transfer function uniquely characterizes an LSI system

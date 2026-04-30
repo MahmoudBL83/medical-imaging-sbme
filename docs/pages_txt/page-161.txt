@@ -1,0 +1,46 @@
+142 Chapter 5 Projection Radiography
+Figure 5.7
+Various compensation
+ﬁlters. (Adapted from
+Carlton and Adler, 2001,
+and Wolbarst, 1993.)
+Wedge
+filter Trough
+filter
+Trough
+filter
+(a) (b) (c)
+ﬁlter is thicker where the body part is thinner and vice versa so that the x-ray
+detector requires a smaller dynamic range.
+Contrast Agents Differential attenuation in the body gives rise to contrast
+in the x-ray image. Put another way, in order to see the difference between
+anatomical structures on a radiograph, these structures must have different
+x-ray attenuations. Often, however, different soft tissue structures are difﬁcult
+to visualize because of insufﬁcient intrinsic contrast. This situation can be
+improved by using contrast agents—chemical compounds that are introduced
+into the body in order to increase x-ray absorption within the anatomical regions
+into which they are introduced, thereby enhancing x-ray contrast (compared
+with neighboring regions without such agents).
+The two most common contrast agents used in x-ray diagnosis are iodine
+(Z = 53) and barium ( Z = 56). In addition to their relatively high atomic
+numbers, iodine and barium also have K-shell electrons whose binding energy
+falls within the diagnostic x-ray energy range; E
+k = 33.2 keV for iodine and
+Ek = 37.4 keV for barium. As we have already discussed, when the energy of
+x-ray photons slightly exceeds the K-shell binding energy of a material, the
+probability of photoelectric interaction signiﬁcantly rises. Such a photoelectric
+interaction will cause electrons from the K-shell to be ejected, and the x-
+ray photons will be completely absorbed. This effect, called K-edge absorption,
+signiﬁcantly increases the attenuation coefﬁcient of the material in x-ray energies
+slightly higher than the K-shell energy. The linear attenuation coefﬁcients of
+bone, muscle, fat, and two contrast agents, one made using iodine and one
+using barium, are shown in Figure 5.8. This stepwise increase in attenuation
+apparent in these plots is called the K absorption edge; the location of these
+edges on the energy scale is directly related to the energies of the characteristic
+radiations of the contrast agents themselves. There is a dramatically higher
+absorption of x-rays that are slightly above the K-edge, leading to a very
+high differential absorption between the contrast agent and the surrounding
+tissues. These physical properties make iodine and barium radiologically ideal
+compounds for enhancing contrast.
+Because iodine is naturally abundant in the thyroid gland, the thyroid itself is
+readily imaged in x-ray studies. Fortunately, iodine can also be synthesized into

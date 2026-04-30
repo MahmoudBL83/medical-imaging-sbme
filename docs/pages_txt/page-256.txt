@@ -1,0 +1,37 @@
+Part III Nuclear Medicine Imaging 237
+of different radiotracers routinely available in nuclear medicine, there are literally
+hundreds of different nuclear medicine studies, each of which assesses the
+function of a different physiologic process or organ system within the body. The
+technology of nuclear medicine permits direct measurements to be made of body
+processes in humans that in the past could be examined only in experimental
+animals. In order to most accurately depict the biodistribution of radiotracers,
+instrumentation that emphasizes high image quality and quantitative accuracy
+has been developed. Digital image processing plays an important role in nuclear
+medicine, not only in image enhancement but also in extraction of quantitative
+information about physiological function.
+Nuclear medicine is used whenever a physician needs information on
+physiologic or biochemical function. For example, the two most common nuclear
+medicine procedures are bone scanning and myocardial perfusion imaging. Bone
+scanning, as shown in Figure III.1(a), looks at the metabolic activity of bones; this
+is complementary to the structural (anatomical) information from a projection
+radiograph (e.g., Figure III.1(b)). A projection radiograph can show a fracture;
+a bone scan can show active metabolism during the healing process. Similarly,
+coronary angiography (a projection radiography technique), which depicts the
+anatomy of the coronary arteries, shows the vessels that supply blood to the
+heart muscle, whereas myocardial perfusion imaging shows the distribution of
+blood ﬂow in the muscle. Figure III.2 illustrates the use of nuclear medicine
+to depict myocardial perfusion. The images show the distribution of a speciﬁc
+radiotracer that distributes in heart muscle according to blood ﬂow. The left
+ventricle of the heart has the greatest blood ﬂow and is by far the most prominent
+Figure III.2
+Myocardial perfusion
+imaging via SPECT. Top
+four rows: short axis
+slices. Next two rows:
+horizontal long axis
+slices. Bottom two rows:
+vertical long axis slices.
+Image courtesy of Harvey
+Ziessman, MD, Johns
+Hopkins University and
+Hospital.

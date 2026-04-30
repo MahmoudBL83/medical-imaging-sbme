@@ -1,0 +1,52 @@
+9.1 Instrumentation 301
+As the quest for better and better spatial resolution continues, limitations of
+the current detector block approach become signiﬁcant; these include concerns
+with efﬁciency, resolution, and contrast. Accordingly, cutting-edge approaches
+are being developed, including the use of the very same solid state approaches
+as discussed for planar scintigraphy in Section 8.2.8.
+PET scanners have lead or tungsten septa between the detector rings
+(although this is increasingly rare because of the routine use of 3-D mode;
+see below). The purpose of the septa is to collimate the photons into a set of
+2-D slices. In this mode, PET reconstruction methods reduce to 2-D reconstruc-
+tion applied to each slice or cross section separately. This geometry reduces
+the contribution of scattered photons between slices and is very similar to
+that of SPECT. When the septa are removed, the scanner operates in 3-D
+mode, and coincidence events between any crystal pair are accepted. This fully
+3-D (‘‘septa-less’’) acquisition and reconstruction is a big advance; the use
+of 3-D mode provides about a factor of 5–10 increase in sensitivity. This increase
+in sensitivity comes with a cost—signiﬁcantly higher acquired scatter events
+(scatter coincidences, in which at least one of the two annihilation photons
+scatters in the patient before detection)—but accurate postacquisition software
+algorithms now exist for scatter correction in 3-D PET.
+The original commercial PET scanners used sodium iodide NaI(Tl) as the
+detector scintillation crystal, the same material used in planar scintigraphy
+and SPECT. Since 511 keV photons are harder to stop than the lower energy
+photons used in planar scintigraphy and SPECT, next-generation PET systems
+used bismuth germanate (BGO) instead of NaI(Tl) as the scintillation crystal.
+The linear attenuation coefﬁcient of BGO at 511 keV is 0.964 cm
+−1 as opposed
+to 0.343 cm−1 for NaI(Tl). Therefore, BGO detectors can be about one-third
+the thickness of what would be required for NaI(Tl) in order to yield the
+same stopping power. For example, a typical BGO crystal is about 3 cm deep.
+Each crystal is typically ‘‘cut’’ into smaller subcrystals that are on the order of
+6 × 6 mm. The downside of BGO as compared with NaI(Tl) is that it is only
+12–14 percent as efﬁcient in light conversion.
+Both NaI(Tl) and BGO are relatively slow scintillators having scintillation
+decay timesof 230 ns and 300 ns, respectively. (In this context, the scintillation
+decay time is the time it takes for the scintillation light output to decay to
+e
+−1 of its initial value.) Faster scintillators would be advantageous because it
+would permit narrower time windows to be used in ACD circuits. Narrower
+time windows would in turn reject more random coincidences, which are the
+detection of two photons that are deemed to be from the same annihilation
+event but are actually from two different annihilations. Accordingly, current-
+generation PET systems use other detector materials, including cerium-doped
+lutetium oxyorthosilicate (LSO) and gadolinium oxyorthosilicate (GSO), which
+are single-crystal inorganic scintillators. The decay times of LSO and GSO are
+on the order of 50 ns, a very signiﬁcant improvement over NaI(Tl) and BGO.
+The attenuation coefﬁcients are comparable, as well, so these crystals can be
+made relatively small for good spatial resolution and still retain good stopping
+power (which translates to good detection sensitivity).
+Just as in planar scintigraphy, the outputs of PET detectors are analyzed
+by energy discrimination circuits. An energy discrimination window, centered
+on the photopeak, is usually desirable. In this way, photons that have been

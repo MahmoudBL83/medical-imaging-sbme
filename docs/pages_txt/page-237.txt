@@ -1,0 +1,107 @@
+218 Chapter 6 Computed Tomography
+which for large N0, M, and N is exactly what we want. Therefore, CBP has the
+desirable property that the mean of the reconstructed image approaches exact
+reconstruction as the quality of measurement increases.
+Since g
+ij are assumed to be independent random variables, the variance of
+the sum is the sum of the variances (see (3.56)), given by
+σ2(x, y) = var[ ˆμ(x, y)] (6.63)
+= π2T2
+M2
+M∑
+j=1
+N/2∑
+i=−N/2
+var[gij]
+[
+c
+(
+x cos θj + y sin θj − iT
+)]2 (6.64)
+= π2T2
+M2
+M∑
+j=1
+N/2∑
+i=−N/2
+1
+Nij
+[
+c
+(
+x cos θj + y sin θj − iT
+)]2 . (6.65)
+To proceed, we make a rather drastic approximation: Nij ≈ N. That the mean
+number of detected photons is a constant is clearly false for nearly all objects;
+however, by using this approximation, we can develop some important relation-
+ships that are otherwise obscured in the summations.
+Using the approximation
+Nij ≈ N,
+σ2(x, y) = σ2
+μ = π2T2
+M2N
+M∑
+j=1
+N/2∑
+i=−N/2
+[
+c
+(
+x cos θj + y sin θj − iT
+)]2 . (6.66)
+For large N and M, we may make the approximation
+π
+M
+M∑
+j=1
+T
+N∑
+i=1
+[
+c
+(
+x cos θj + y sin θj − iT
+)]2
+≈
+∫ π
+0
+∫ ∞
+−∞
+[c (x cos θ + y sin θ − ℓ)]2 dℓdθ (6.67)
+= π
+∫ ∞
+−∞
+[c (ℓ)]2 dℓ (6.68)
+= π
+∫ ∞
+−∞
+|C(ϱ )|2 dϱ , (6.69)
+where the last equality follows from Parseval’s theorem [see (2.96)]. For a
+rectangular window with bandwidth ϱ 0 applied to the ramp ﬁlter,
+π
+∫ ∞
+−∞
+|C(ϱ )|2 dϱ = π
+∫ ϱ 0
+−ϱ 0
+ϱ 2 dϱ = 2πϱ 3
+0
+3 . (6.70)
+Thus, for a rectangular windowed ramp ﬁlter and the approximation Nij = N,
+the reconstructed image variance is independent of (x, y), and is given by
+σ2
+μ ≈ πT
+M
+1
+N
+2πϱ 3
+0
+3 (6.71)
+≈ 2π2
+3 ϱ 3
+0
+1
+M
+1
+N/T
+. (6.72)

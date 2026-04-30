@@ -1,0 +1,46 @@
+viii Contents
+2.3.5 Separable Systems 30
+2.3.6 Stable Systems 31
+2.4 The Fourier Transform 31
+2.5 Properties of the Fourier Transform 36
+2.5.1 Linearity 36
+2.5.2 Translation 37
+2.5.3 Conjugation and Conjugate Symmetry 37
+2.5.4 Scaling 37
+2.5.5 Rotation 38
+2.5.6 Convolution 38
+2.5.7 Product 39
+2.5.8 Separable Product 40
+2.5.9 Parseval’s Theorem 40
+2.5.10 Separability 40
+2.6 Transfer Function 41
+2.7 Circular Symmetry and the Hankel Transform 43
+2.8 Summary and Key Concepts 47
+3
+Image Quality 54
+3.1 Introduction 54
+3.2 Contrast 55
+3.2.1 Modulation 56
+3.2.2 Modulation Transfer Function 56
+3.2.3 Local Contrast 60
+3.3 Resolution 61
+3.3.1 Line Spread Function 61
+3.3.2 Full Width at Half Maximum 62
+3.3.3 Resolution and Modulation Transfer Function 63
+3.3.4 Subsystem Cascade 65
+3.3.5 Resolution Tool 68
+3.3.6 Temporal and Spectral Resolution 68
+3.4 Noise 69
+3.4.1 Random Variables 70
+3.4.2 Continuous Random Variables 70
+3.4.3 Discrete Random Variables 72
+3.4.4 Independent Random Variables 75
+3.5 Signal-to-Noise Ratio 76
+3.5.1 Amplitude SNR 77
+3.5.2 Power SNR 77
+3.5.3 Differential SNR 79
+3.5.4 Decibels 80
+3.6 Sampling 80
+3.6.1 Signal Model for Sampling 81
+3.6.2 Nyquist Sampling Theorem 83
+3.6.3 Anti-Aliasing Filters 85

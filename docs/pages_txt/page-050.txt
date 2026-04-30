@@ -1,0 +1,51 @@
+2.4 The Fourier Transform 31
+2-D Gaussian PSF of the form
+h(x, y) = 1
+2πσ 2 e−(x2+y2)/2σ2
+, (2.57)
+with σ = 4, by using two 1-D steps in cascade. This PSF is separable, with
+h1(x) = 1√
+2πσ
+e−x2/2σ2
+and h2(y) = 1√
+2πσ
+e−y2/2σ2
+. (2.58)
+In practice, it is often faster (and easier) to execute two consecutive 1-D
+operations than a single 2-D operation, so the concept of separability is quite
+useful (when applicable).
+2.3.6 Stable Systems
+Stability is an important property of medical imaging systems. Informally, a
+medical imaging system is stable if small inputs lead to outputs that do not
+diverge. Although there are many ways to characterize system stability, we
+only consider bounded-input bounded-output (BIBO) stability here. A system is
+a bounded-input bounded-output (BIBO) stable system if, when the input is a
+bounded signal—that is, when
+⏐⏐f (x, y)
+⏐⏐≤ B < ∞, for every ( x, y) , (2.59)
+for some ﬁnite B—there exists a ﬁnite B′ such that
+⏐⏐g(x, y)
+⏐⏐=
+⏐⏐h(x, y) ∗ f (x, y)
+⏐⏐≤ B′ < ∞, for every ( x, y) , (2.60)
+in which case the output will also be a bounded signal. It can be shown that an
+LSI system is a BIBO stable system if and only if its PSF is absolutely integrable,
+in which case
+∫ ∞
+−∞
+∫ ∞
+−∞
+⏐⏐h(x, y)
+⏐⏐dx dy< ∞. (2.61)
+In practice, it is very important to design medical imaging systems that are
+stable. The output of an unstable system may grow out of bound, even if the
+input is small. This is an undesirable problem that strongly affects the accuracy
+and diagnostic utility of a medical imaging system. In the physical world, most
+systems are stable. However, when we design a medical imaging system, we may
+occasionally be tempted to model it using a PSF that does not satisfy (2.61), in
+which case we need to ﬁnd alternative stable PSFs. This will be encountered in
+Chapter 6, for example, where computed tomography is discussed.
+2.4 The Fourier Transform
+Although the convolution equation provides a means of relating the output of
+an LSI system to its input, there exists an alternative (and equivalent) way of
+viewing this relationship: the Fourier transform. The Fourier transform provides

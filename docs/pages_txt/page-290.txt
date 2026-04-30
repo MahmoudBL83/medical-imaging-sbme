@@ -1,0 +1,55 @@
+8.3 Image Formation 271
+where Ah is the area of the collimator hole. The geometry in Figure 8.9, where
+the camera itself contains the laboratory origin, is used to establish the limits of
+integration of the integrals.
+Equation (8.7) speciﬁes the photon ﬂuence rate at any position on the
+detector (given the stated assumptions); therefore, the expected number of
+counts in a planar scintigraphy image pixel can now be determined. First, the
+photon ﬂuence can be computed by multiplying the photon ﬂuence rateφ by the
+image acquisition time T. Second, the (mean) number of photons hitting a given
+pixel on the camera face is the integral of the photon ﬂuence over the region
+deﬁning the pixel. Making the assumption that the photon ﬂuence is constant
+within the pixel means that we get the photon count by simply multiplying the
+photon ﬂuence by the area of the pixel. Putting these facts together yields the
+mean photon count in pixel k as
+nk = ϵTAkφ(xk, yk) (8.8)
+= ϵTAkAh
+∫ 0
+−∞
+f (xk, yk, z)
+4πz2 exp
+{
+−
+∫ 0
+z
+μ(xk, yk, z′;E) dz′
+}
+dz , (8.9)
+where ( xk, yk) and Ak are the position and area of pixel k, respectively. A
+detector efﬁciency factor ϵ has been introduced to account for losses of expected
+counts due to many factors such as collimator and scintillator losses.
+We see from (8.9) that the pixel counts in a planar scintigraphy image
+are acquired by a type of projection of the underlying activity concentration.
+This is analogous to projection radiography—for example, (5.3)—but there
+are important differences. On the one hand, this equation is simpler because
+there is (typically) only one energy to consider; therefore, there is no integral
+over an energy spectrum as there is in radiography and CT. On the other
+hand, (8.9) is not a simple line integral of f (x, y, z) since there are two sources
+of depth-dependent signal loss, one arising from the inverse square law and
+the other from object-dependent attenuation between the radiation source
+and the detector. Because of these effects, we can expect that radioactivity close
+to the camera will contribute more counts than an equivalent radioactivity that
+is farther away from the camera. This means that images from one side of the
+body will generally be very different than images acquired from the opposite
+side—that is, they will not just be mirror images. This is especially true for low-
+energy radiotracers since the body’s attenuation is larger. Like the reading of
+x-ray ﬁlms, where magniﬁcation distorts sizes of objects that are near versus far,
+we can get accustomed to reading planar images in nuclear medicine, knowing
+about object-dependent attenuation and the anatomy of the body. It will turn
+out this object-dependent attenuation causes problems for SPECT, and we will
+require a simpler imaging model for computational tractability, in analogy to
+the effective energy model employed in CT.
+Planar Sources We saw above that the image formed on an Anger camera is a
+projection of the radioactivity within the body with depth-dependent effects. As
+in projection radiography, it is useful to consider a planar source in order to see
+what the image would be like without depth-dependent effects. This concept is

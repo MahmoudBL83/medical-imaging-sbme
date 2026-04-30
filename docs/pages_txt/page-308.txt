@@ -1,0 +1,45 @@
+Problems 289
+(a) Find the collimator resolution at the given range.
+(b) Suppose the intrinsic resolution of the Anger camera is 0.2 mm. Write
+an expression for the overall PSF of the Anger camera at the given
+range, assuming both hC and hI are Gaussian.
+Photons sometimes penetrate the collimator’s septa, which means that
+a photon entering one collimator hole can sometimes be detected under
+another hole, as shown in Figure P8.6.
+Figure P8.6
+Septal penetration by a
+photon. See Problem
+8.16.
+Primary hole Adjacent hole
+Photon
+w
+In parts (c), (d), and (e), we consider the effect of septal penetration on
+collimator design and collimator resolution. Assume the linear attenuation
+coefﬁcient for lead is μ.
+(c) Assume a photon enters one hole, penetrates an adjacent septum and
+is detected in the adjacent hole. What is the minimum length w of the
+path through the septum as shown in the ﬁgure? (The result should
+be in units of mm.)
+(d) Suppose we desire septal thickness to be large enough to stop 95%
+of the photons that pass through the minimum distance w. For ﬁxed
+l and d, what inequality should h satisfy?
+(e) How does septal penetration inﬂuence collimator resolution?
+(f) Can we use the acceptance window to reject photons that penetrate
+septa and are detected in adjacent holes? Explain.
+(g) A photon can be rejected if its Z-pulse is too small. What physical
+event(s) could cause this low Z-pulse?
+8.17 Assume a 2-D scenario in which a pellet ﬁlled with radiotracer is located
+at the origin. The pellet emits gamma rays in the x-y plane and its
+radioactivity is A = 0.54 mCi as shown in Figure P8.7(a). The detector is
+made of a material with μ = 0.64 cm−1 and thickness of b = 2c m .
+(a) What is the average rate of photons per second hitting the detector (in
+photons per second)?
+(b) Find the efﬁciency of the detector at its center (that is, at x = 0).
+A parallel hole collimator with septal thickness h = 2.5 mm, septal height
+l = 8 cm, and hole diameter d = 5 mm is added onto the detector, as
+shown in Figure P8.7(b).
+(c) What is the collimator resolution RC?
+(d) Assume the intrinsic resolution of the detector is 1 mm. What is the
+overall PSF of the camera knowing that both hC and hI are Gaussian?
+(e) Given the geometry, how many holes receive radiation that can hit
+the detector?

@@ -1,0 +1,48 @@
+8.4 Image Quality 279
+It is now well-known that the majority of the nonuniformity in a camera
+occurs as a result ofspatial distortion; that is, the mispositioning of events (errors
+in determining the (X, Y) location). To correct this distortion, reference images
+are acquired, and digital correction maps generated and stored. Each map con-
+tains values that represent (X, Y) correction shifts. Sophisticated microprocessor
+circuitry is used to reposition each count in real time during acquisition using
+these shifts. With many current cameras, it is best to acquire correction maps
+with the same radionuclide that is used for patient imaging. In some cameras,
+several sets of corrections maps are stored on the computer, representing all the
+radionuclides used in the nuclear medicine department, and the appropriate set
+chosen for a given patient study.
+Variation in the position of a pulse from different areas of the camera
+within the pulse height window can also produce nonuniformities. This spatially
+dependent energy variation may also be corrected by microprocessor circuitry.
+The combination of energy variation and spatial distortion is responsible for
+loss of spatial resolution and imperfect linearity and uniformity. In today’s
+cameras, explicit uniformity correction is typically carried out with multiplicative
+factors, only after spatial distortion (and spatially dependent energy response)
+corrections.
+8.4.4 Energy Resolution
+Pulse height analysis is critical for rejection of scattered photons, whose inclusion
+in the image would reduce contrast. Thus, the performance of the detector
+system, and especially its energy resolution, is critical. In an ideal detector, the
+photopeak would be a single vertical line at that pulse height representing the
+energy of the emitted x-ray or gamma ray. In reality, the statistical nature of
+the light emission and the ﬁnite energy resolution of the detector system smears
+out this line, producing a bell-shaped photopeak. In essence, the observed pulse
+height spectrum can be treated as the convolution of the ideal spectrum with the
+energy impulse response function of the system.
+The worse the energy resolution of the detector system, the broader the
+photopeak. Energy resolution can be quantiﬁed as the FWHM of the photopeak
+in a fashion similar to the use of FWHM to characterize spatial resolution.
+This is measured by ﬁrst determining the counts at the peak of the photopeak
+and locating the points on either side of the peak where the counts are half of
+the peak counts. The width of the photopeak in pulse height units is obtained
+by subtracting the lower pulse height from the upper. Finally, this width is
+divided by the pulse height at the apex of the photopeak to yield a percentage of
+energy resolution measurement. The smaller the number, the better the energy
+resolution; typical scintillation detector systems average 8–12 percent FWHM.
+It is important to note that the time resolution of the scintillation detector system
+also plays a role in energy resolution, in that two scintillation events occurring
+within the time resolution will produce a single, sum pulse. There is clearly a
+relation between energy resolution and the optimum width of the pulse height
+window discussed in Section 8.2.6 and illustrated in Figure 8.5.
+In order to calibrate a pulse height analyzer to establish the quantitative
+relationship between energy deposited and pulse height, either the applied
+voltage across the PMT or the ampliﬁcation in the electronics is adjusted until

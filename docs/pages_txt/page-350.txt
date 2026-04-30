@@ -1,0 +1,33 @@
+PART
+IV
+Ultrasound Imaging
+Overview
+In the preceding two parts of the book, we considered those imaging modalities
+that rely on ionizing radiation to create the signals. We saw that these modalities
+produce images of structure and function through a variety of mechanisms, all
+based on ionizing radiation. The modalities are of high clinical utility—that is
+why they are so commonly used—but the use of ionizing radiation carries some
+risk. At the low doses used in medical imaging, the main biological risk is cancer;
+the probability of inducing cancer from a diagnostic imaging examination is
+very, very low, but it is not zero. Sometimes this is of concern, such as when
+imaging in utero.
+Here, we examine a modality considered to be fully noninvasive and risk
+free: ultrasound imaging. In projection radiography and computed tomography,
+we were interested in the transmission of a beam of radiation through the
+patient; the medical signal of interest was produced by the variable attenuation
+of this beam by body tissues. In contrast, with ultrasound, we are interested in
+the reﬂection of a beam of sound by internal structures within the patient. The
+medical signal of interest here is produced by the variable reﬂectance of this
+sound beam by different body tissues.
+A basic ultrasound imaging system consists of a transducer and associated
+electronics, including a display. The transducer itself is both a transmitter and
+receiver of ultrasound energy. In practice, the electronics ‘‘steer’’ the beam so
+that (typically) an arc is covered within the patient, producing a 2-D image on
+the display. Many modern systems have 3-D capability whereby they produce
+successive 2-D arcs on different planes which, when pieced together, form a
+3-D volumetric image. Therefore, in its most basic form, ultrasound imaging
+systems can be used to directly visualize the shape and size of various anatomical
+structures of interest.
+The most common ultrasound procedures involve imaging the developing
+fetus in uteroand echocardiography for heart imaging. A representative echocar-
+diogram is shown in Figure IV.1(a). Here, the transducer is positioned at the tip

@@ -1,0 +1,45 @@
+188 Chapter 6 Computed Tomography
+is necessary since it leads to the actual methods, implemented in software and
+hardware, used in modern-day clinical scanners. As well, the same mathematics
+and methods can be used in single photon emission computed tomography
+(SPECT), positron emission tomography (PET), and magnetic resonance imag-
+ing (MRI).
+6.2 CT Instrumentation
+The fundamental measurement required by a CT scanner is the measurement of
+x-ray attenuation along a line between an x-ray source and an x-ray detector.
+In order to reconstruct an image of a 2-D cross section, a collection of such
+measurements are required along all lines within the cross section. Seven
+generations of basic CT designs have been developed to obtain these fundamental
+data. Roughly speaking, the seven generations were developed in sequence to
+improve overall performance, mostly toward faster acquisition of both cross-
+sectional and volumetric data. Although ﬁrst- and second-generation scanners
+are no longer used in medical imaging, it is still important to understand their
+geometry. In particular, the parallel ray geometry of ﬁrst-generation scanners is
+used to explain the reconstruction formulas that underlie all CT scanners. As
+we describe the CT generations, it may be helpful to refer to Table 6.1, which
+compares various properties of CT scanners across the generations.
+6.2.1 CT Generations
+First-generation (1G) scannersare no longer manufactured for medical imaging,
+but their geometry is still used to explain the theoretical ideas underlying image
+reconstruction. The geometry of a 1G scanner is shown in Figure 6.2. It consists
+of a single source, collimated (meaning that its beam is restricted) to a thin line,
+and a single detector that move in unison along a linear path tangent to a circle
+that contains the patient. After making a linear scan, the source and detector
+apparatus are rotated so that a linear scan at a different angle can be made, and so
+on. The 1G geometry has the advantage that an arbitrary number ofrays—that
+is, paths between source and detector—can be measured within a given projec-
+tion, and an arbitrary number of angular projections may be measured. It has
+the further advantage that scattered radiation goes mostly undetected (because
+it misses the detector), and therefore, the measured attenuation of the beam
+is almost certainly due to tissues along the ray.
+A second-generation (2G) scanner, as illustrated in Figure 6.3, has additional
+detectors, forming a detector array, arranged along a line or a circle. As in the
+1G scanner, the source and detector array move linearly in unison to cover
+the ﬁeld of view (FOV). However, unlike the 1G scanner, the source in a 2G
+scanner is collimated as a fan beam so that energy is kept within the slice but
+spread over the detector array. Therefore, while the source and central detector
+scan the same projection as the 1-D projection, the additional detectors are
+simultaneously obtaining additional projections from different angles.
+With the 2G scanner geometry, we can make a larger rotation after each
+linear scan and thereby complete a full scan in less time, making the 2G
+scanner faster. Scattering effects must be considered, however, in the design of

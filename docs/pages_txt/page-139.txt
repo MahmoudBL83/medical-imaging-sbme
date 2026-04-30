@@ -1,0 +1,44 @@
+120 Chapter 4 Physics of Radiography
+TABLE 4.4
+Physical Properties of Some Materials
+Density Electron Density
+Material (kg/m 3)Z eff (electrons/kg)
+Hydrogen 0 .0899 1 5 .97 × 1026
+Carbon 2, 250 6 3 .01 × 1026
+Air 1 .293 7 .83 .01 × 1026
+Water 1, 000 7 .53 .34 × 1026
+Muscle 1, 040 7 .63 .31 × 1026
+Fat 916 6 .53 .34 × 1026
+Bone 1, 650 12 .33 .19 × 1026
+From A. B. Wolbarst, p. 119, 1993.
+TABLE 4.5
+Photoelectric Versus Compton Interactions in Water
+Photon Energy Percentage of Compton Percentage of Compton
+(keV) Interactions Energy
+10.0 3.2 0.1
+15.0 11.8 0.4
+20.0 26.4 1.3
+30.0 58.3 6.8
+40.0 77.9 19.3
+50.0 88.0 37.2
+60.0 93.0 55.0
+80.0 97.0 78.8
+100.0 98.4 89.6
+150.0 99.5 97.4
+Adapted from Johns and Cunningham, p. 163, 1983.
+Since photoelectric and Compton events affect diagnostic images differently,
+it is also important to understand the relative frequency of occurrence of these
+two events in body tissues. There are two ways to look at this: by a relative
+frequency or percentage of occurrence or by the percentage of energy deposited
+by a given type of event. Table 4.5 summarizes these two characterizations over
+the diagnostic range of energies. We see that the relative frequency of Compton
+interactions increases as diagnostic x-ray energy increases, becoming the domi-
+nant type of interaction above 30 keV. However, even at 60 keV, when Compton
+events occur over 90 percent of the time (whenever either event occurs), these
+events account for only 55 percent of the energy deposited in the tissue. This
+apparent discrepancy occurs because photoelectric events deposit all of their
+incident photon energy, while Compton events deposit only a fraction of their
+incident photon energy.
+4.5 Attenuation of Electromagnetic Radiation
+Attenuation is the process describing the loss of strength of a beam of EM
+radiation. Tissue-dependent attenuation is the primary mechanism by which

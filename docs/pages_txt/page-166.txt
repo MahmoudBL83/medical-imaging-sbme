@@ -1,0 +1,51 @@
+5.2 Instrumentation 147
+place entirely within 1 × 10−8 second of the excitation, and phosphorescence,
+in which light emission can be delayed and extended over a longer period of
+time. For screens, it is desirable to use a luminescent material that is much
+more ﬂuorescent than phosphorescent. This way, there is little chance of an
+afterglow that might spoil the exposure by either motion after exposure or by
+light from a previous exposure.
+Among the many luminescent materials, good intensifying screen phosphors
+should also be highly x-ray attenuating and should emit many light photons for
+every x-ray photon that is stopped. Thus, the best phosphors have high atomic
+numbers (so the linear attenuation coefﬁcient is large) and high conversion
+efﬁciencies. Theconversion efﬁciencyis a measure of the number of light photons
+emitted per incident x-ray photon. Typical conversion efﬁciencies are between
+5 and 20 percent depending on the type of phosphor used and its thickness.
+A typical conversion efﬁciency for modern screens yields 1 × 10
+3 light
+photons per incident 50 keV x-ray photon. This number depends on the energy
+of the incident x-ray photon as well since the conversion of a higher energy x-ray
+photon will produce more light. Total light output depends on the combination
+of attenuation of the material at a given x-ray energy and the conversion
+efﬁciency at that energy. The speed of a screen is really just a measure of its
+conversion efﬁciency. If the conversion efﬁciency is higher, then the screen is
+‘‘faster,’’ because the larger numbers of light photons emitted by the phosphor
+will expose the ﬁlm faster.
+Thomas Edison explored many phosphors in the early 1900s for their
+possible use in radiography. He discovered that calcium tungstate (CaWO
+4)i s
+an excellent ﬂuorescent phosphor for radiological applications. Until relatively
+recently, nearly all intensifying screens were made from calcium tungstate. In
+the late 1970s, rare earth phosphors were introduced and are more commonly
+used today because they have higher conversion efﬁciencies.
+Radiographic Film After Roentgen discovered x-rays by observation of a
+mysteriously glowing phosphor, he quickly learned that x-rays could also
+expose a photographic emulsion. Although digital detectors (see Section 5.2.7)
+are undergoing rapid development and widespread adoption, ﬁlm is still very
+commonly used in radiography both as an x-ray receptor and as an archival
+storage mechanism for radiographic images (even for those acquired digitally).
+Because of the nearly exclusive use of scintillation screens, radiographic ﬁlm
+is really just optical ﬁlm, designed to capture the optical image created within
+the screens that sandwich the ﬁlm. Common sizes in the United States include
+14 × 17, 14 × 14, 11 × 14, 10 × 12, 8 × 10, and 7 × 17 inches.
+Many different ﬁlm speeds are available, depending on the application. The
+detailed optical properties of ﬁlm greatly inﬂuence the resultant quality of the
+developed image. Also, the precise details of chemical development play a large
+role in the ﬁnal appearance of the ﬁlm as well. We will only consider these issues
+from the highest level, in enough detail so that we can understand the broad
+issues relating x-ray exposure to ﬁlm appearance (see Section 5.3.4).
+Radiographic Cassette A radiographic cassette is really just a holder for two
+intensifying screens and the ﬁlm ‘‘sandwiched’’ between. One side of the cassette
+is radiolucent, while the other usually includes a sheet of lead foil. Therefore,
+the cassette can be loaded only one way into the x-ray machine. At least one side

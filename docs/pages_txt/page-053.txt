@@ -1,0 +1,63 @@
+34 Chapter 2 Signals and Systems
+EXAMPLE 2.6
+Consider the complex exponential signal
+f (x, y) = ej2π(u0x+v0y) . (2.70)
+Question What is its Fourier transform?
+Answer From (2.62), we have
+F2D(f )(u, v) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (x, y)e−j2π(ux+vy) dx dy
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+ej2π(u0x+v0y)e−j2π(ux+vy) dx dy
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+e−j2π[(u−u0)x+(v−v0)y] dx dy
+= δ(u − u0, v − v0) , (2.71)
+where the last step is based on the fact that
+∫ ∞
+−∞
+∫ ∞
+−∞
+e−j2π(ux+vy) dx dy= δ(u, v) , (2.72)
+which relates the complex exponential to the point impulse. In this case, the magnitude
+spectrum is a point impulse located at frequency (u0, v0), whereas the phase spectrum is 0.
+When u0 = v0 = 0, the complex exponential becomes the unit-valued signal f (x, y) = 1,
+for every (x, y), in which case (2.71) implies that the Fourier transform of a unit-valued
+signal is a point impulse at frequency (0, 0).
+A point impulse, which has an extremely concentrated proﬁle in space,
+results in a uniform frequency content (i.e., a magnitude spectrum with constant
+value). On the other hand, a constant signal, which does not vary in space, has
+a spectrum that is all concentrated at frequency (0, 0). This extreme behavior
+reveals a more general property. Slow signal variation in space produces a
+spectral content that is primarily concentrated at low frequencies, whereas fast
+signal variation results in spectral content at high frequencies. This is illustrated
+in Figure 2.9, where three images with decreasing spatial variation (from left to
+right) produce spectra with decreasing high frequency content. Notice that in
+order to reduce the dynamic range of values in the magnitude spectrum |F(u, v)|
+for display purposes, we calculate and display the 2-D function log(1+| F(u, v)|)
+instead.
+The Fourier transform of a 1-D signal and its inverse can be easily obtained
+from (2.62) and (2.63) by simply eliminating one of the two dimensions. In fact,
+if f (x), −∞ ≤ x ≤∞ , is a 1-D signal, then
+F(u) = F
+1D(f )(u) =
+∫ ∞
+−∞
+f (x)e−j2πux dx , (2.73)
+and
+f (x) = F −1
+1D (F)(x) =
+∫ ∞
+−∞
+F(u)ej2πux du , (2.74)
+where the subscript ‘‘1D’’ denotes that the Fourier transform is one-dimensional.

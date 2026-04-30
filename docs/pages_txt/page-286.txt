@@ -1,0 +1,121 @@
+8.3
+Image Formation
+267
+Figure 8.7
+Anger camera acquisition
+modes: (a) list mode;
+(b) static frame mode;
+(c) dynamic frame mode;
+(d) multiple-gated
+acquisition; and (e) whole
+body.
+(
+X
+1
+, 
+Y
+1
+, 
+Z
+1
+, 
+t
+1
+)
+(
+X
+2
+, 
+Y
+2
+, 
+Z
+2
+, 
+t
+2
+)
+(
+X
+3
+, 
+Y
+3
+, 
+Z
+3
+, 
+t
+3
+)
+(
+X
+n
+, 
+Y
+n
+, 
+Z
+n
+, 
+t
+n
+)
+y
+x
+(b)
+(a)
+(d)
+(c)
+(
+e
+)
+Time
+Cardiac
+phase
+a list of (
+X
+,
+Y
+) coordinates, as shown in Figure 8.7(a). In addition to the (
+X
+,
+Y
+)
+signals, typically the
+Z
+-pulse value is also recorded, and timing markers at evenly
+spaced intervals (e.g., every 10 ms) are also included. Physiological trigger marks,
+such as the occurrence of the R-wave from an electrocardiogram (ECG) monitor
+of the patient’s heart, can also be inserted. In list mode acquisition, no matrices
+or images are formed within computer memory during acquisition. Although
+no images are produced immediately, list mode acquisition is useful because the
+(
+X
+,
+Y
+) signals are permanently recorded in computer memory, allowing ﬂexible
+control over subsequent formatting into digital matrices. The precision of the
+event position is limited only by the number of bits used to store the
+X
+and
+Y
+positions. The downside is that a large amount of storage space is required even
+for a single study.
+Static frame mode acquisition
+, as shown in Figure 8.7(b), represents the face
+of the Anger camera as a computer matrix—that is, a ﬁnite collection of discrete
+bins, or
+pixels
+, as introduced in Section 2.2. Accordingly, each pixel corresponds
+to a certain area of the camera face and is designated by a speciﬁc range of
+(
+X
+,
+Y
+) signal values. An image is created by starting with a zero image at the
+beginning of the scan and then incrementing the pixel containing (
+X
+,
+Y
+)w i t h

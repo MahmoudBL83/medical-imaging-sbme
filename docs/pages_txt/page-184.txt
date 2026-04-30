@@ -1,0 +1,38 @@
+5.3 Image Formation 165
+regardless of z, but k might depend on z. Using the Fourier transform,
+km2(z)S(0, 0) = constant , (5.25)
+which implies that
+k ∝ 1
+m2(z) . (5.26)
+This implies that the amplitude of the blurring caused by the extended source
+depends on the location of the object relative to the detector plane. In particular,
+if the object approaches the detector, then m(z) → 0, and
+s(x/m, y/m)
+m2 → S(0, 0)δ(x, y) . (5.27)
+In this case, there is no loss of resolution or amplitude; the image of the extended
+source is actually perfect.
+The above analysis holds for a point hole located anywhere in the same
+z-plane. We can then use superposition [see (2.33)] to understand the behavior
+of a spatial distribution of attenuating objects within a givenz plane, such as the
+transmittivity function tz(x, y) used before in describing imaging under object
+magniﬁcation [see (5.19)]. This analysis leads to an imaging equation that is the
+convolution of the magniﬁed object by the magniﬁed and scaled source function,
+Id(x, y) = cos3 θ
+4πd2m2 s(x/m, y/m) ∗ tz(x/M, y/M) . (5.28)
+Notice that the term 4πd2 is included to account for the fact that there is loss of
+source intensity due to the inverse square law. For objects close to the detector,
+M ≈ 1 and m ≈ 0; the object will have unity magniﬁcation and will not be
+blurred by the source focal spot, regardless of the size of that focal spot. This is
+just one more motivation for putting the patient directly against the detector.
+Film-Screen and Digital Detector Blurring The detailed geometry of a ﬁlm-
+screen detector is shown in Figure 5.20. The ﬁlm is sandwiched between two
+Figure 5.20
+A ﬁlm-screen detector.
+Film
+X-ray
+photon
+r
+x
+L
+Light photons
+Phosphors

@@ -1,0 +1,45 @@
+198 Chapter 6 Computed Tomography
+6.3.2 CT Numbers
+A CT scanner reconstructs the value of μ at each pixel within a cross section,
+using a process that we will describe in detail in the following sections. Different
+CT scanners, however, have different x-ray tubes, which in turn have different
+effective energies. Thus, the exact same object will produce different numerical
+values of μ on different scanners. Worse, since the x-ray tube on a busy CT
+scanner may need to be replaced about once every year, the same CT scanner
+will produce a different scan of the same object in successive years. This is
+clearly not a desirable situation.
+In order to compare data from different scanners, which may have different
+x-ray sources and hence different effective energies, CT numbers are computed
+from the measured linear attenuation coefﬁcients at each pixel. The CT number
+is deﬁned as
+h = 1, 000× μ − μ
+water
+μwater
+, (6.5)
+and is expressed in Hounsﬁeld units (HU). Clearly,h = 0 HU for water, and since
+μ = 0 in air, we ﬁnd thath =− 1, 000 HU for air. The largest CT numbers typi-
+cally found naturally in the body are for bone, whereh ≈ 1, 000 HU for average
+bone, although CT numbers can surpass h ≈ 3, 000 HU for metal and contrast
+agents. Usually, CT numbers are rounded or truncated to the nearest integer; they
+are typically reproducible to about ±2 HU between scans and across scanners.
+6.3.3 Parallel-Ray Reconstruction
+We have learned that the basic CT measurement is a line integral of the effective
+linear attenuation coefﬁcient within a cross section. But line integrals are not
+what we desire; we really want a picture of μ, or equivalently its CT number h,
+over the entire cross section. Therefore, the important question is this: Can we
+reconstruct a picture of μ given a collection of its line integrals? The answer is
+‘‘yes,’’ and in this section we explore the theory and practice of reconstruction
+from projections for parallel-ray geometry.
+Geometry Let x and y be rectilinear coordinates in the plane. A line in the
+plane is given by
+L(ℓ, θ) ={ (x, y)|x cos θ + y sin θ = ℓ} , (6.6)
+where ℓ is the lateral position of the line and θ is the angle of a unit normal to
+the line, as ﬁrst introduced in (2.10) and shown in Figure 6.7. The line integral
+of function f (x, y) is given by
+g(ℓ, θ) =
+∫ ∞
+−∞
+f (x(s), y(s)) ds , (6.7)
+where
+x(s) = ℓ cos θ − s sin θ , (6.8)
+y(s) = ℓ sin θ + s cos θ. (6.9)

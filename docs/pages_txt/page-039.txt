@@ -1,0 +1,61 @@
+20 Chapter 2 Signals and Systems
+sampling. Collectively, this matrix of values represents the medical image that
+is observed. For example, a CT image is typically a 1,024 × 1,024 matrix of
+CT numbers, representing a physical parameter called the linear attenuation
+coefﬁcient of a cross-section of the human body. A magnetic resonance (MR)
+image is typically a 256 × 256 matrix of values, representing one of several
+possible nuclear magnetic resonance (NMR) properties of tissues.
+As a ﬁrst step toward characterizing sampling mathematically, we introduce
+the comb function, given by
+comb(x) =
+∞∑
+n=−∞
+δ(x − n) . (2.12)
+The comb function is also known as the shah function. It is called the comb
+function because the set of shifted point impulses constituting it resembles the
+teeth of a comb. In 2-D, the comb function is given by
+comb(x, y) =
+∞∑
+m=−∞
+∞∑
+n=−∞
+δ(x − m, y − n) . (2.13)
+It is useful in describing signal sampling (see Section 3.6) to space the point
+impulses in the comb function by amounts /Delta1x in the x direction, and /Delta1y in the
+y direction. This yields the sampling functionδs(x, y;/Delta1x, /Delta1y), deﬁned by
+δs(x, y;/Delta1x, /Delta1y) =
+∞∑
+m=−∞
+∞∑
+n=−∞
+δ(x − m/Delta1x, y − n/Delta1y). (2.14)
+It can be shown using the scaling property (2.8) of the point impulse, that the
+sampling function is related to the comb function as follows:
+δs(x, y;/Delta1x, /Delta1y) = 1
+/Delta1x/Delta1y comb
+( x
+/Delta1x , y
+/Delta1y
+)
+. (2.15)
+The sampling function is a sequence of point impulses located at points
+(m/Delta1x, n/Delta1y), −∞ < m, n < ∞, in the plane, as illustrated in Figure 2.3(d).
+The concept of the sampling function is critical for understanding discretiza-
+tion—the process of going from a continuous signal to a discrete signal.
+2.2.4 Rect and Sinc Functions
+Two signals that are frequently used in the study of medical imaging systems
+are the rect and sinc functions. The rect function is given by
+rect(x, y) =
+⎧
+⎪⎪
+⎪
+⎨
+⎪⎪
+⎪⎩
+1, for |x| < 1
+2 and |y| < 1
+2
+0, for |x| > 1
+2 or |y| > 1
+2
+, (2.16)

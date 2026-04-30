@@ -1,0 +1,40 @@
+28 Chapter 2 Signals and Systems
+2.3.4 Connections of LSI Systems
+LSI systems can be stand-alone or connected with other LSI systems. Two types
+of connections are usually considered: (1) cascade or serial connections and
+(2) parallel connections.
+Figure 2.7(a) illustrates two equivalent cascade connections of two LSI
+systems with PSFs h1(x, y) and h2(x, y), as well as the equivalent ‘‘single’’ LSI
+system. In this case, the following is true:
+g(x, y) = h2(x, y) ∗ [h1(x, y) ∗ f (x, y)]
+= h1(x, y) ∗ [h2(x, y) ∗ f (x, y)]
+= [h1(x, y) ∗ h2(x, y)] ∗ f (x, y) , (2.46)
+and
+h1(x, y) ∗ h2(x, y) = h2(x, y) ∗ h1(x, y) . (2.47)
+Equations (2.46) and (2.47) are two properties of convolution, known as
+associativity and commutativity, respectively. From the commutativity property,
+we see that g(x, y) = h(x, y) ∗ f (x, y) = f (x, y) ∗ h(x, y), which leads to
+g(x, y) =
+∫ ∞
+−∞
+∫ ∞
+−∞
+f (ξ, η)h(x − ξ, y − η) dξdη
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+h(ξ, η)f (x − ξ, y − η) dξdη. (2.48)
+Figure 2.7(b) illustrates a parallel connection of two LSI systems with PSFs
+h1(x, y) and h2(x, y), as well as the resulting equivalent single LSI system. In this
+case,
+g(x, y) = h1(x, y) ∗ f (x, y) + h2(x, y) ∗ f (x, y)
+= [h1(x, y) + h2(x, y)] ∗ f (x, y) , (2.49)
+which is another property of convolution, known as distributivity.
+Figure 2.7
+(a) Cascade connection of
+two LSI systems.
+(b) Parallel connection of
+two LSI systems.
+ (a) (b)

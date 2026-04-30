@@ -1,0 +1,26 @@
+6.1 Introduction 187
+Figure 6.1
+A typical CT scanner.
+(Courtesy of GE
+Healthcare.)
+of many diseases are possible through CT alone; this has reduced the amount
+of exploratory surgery previously required for these diseases. As a measuring
+device, the x-ray CT scanner has also come a long way since its origins. Now,
+through standard calibration procedures, CT scanners measure CT numbers
+in Hounsﬁeld units, which are constant from scan-to-scan and across different
+scanners. Therefore, quantitative analysis is possible and is in common practice
+today.
+Because of the growing importance of CT during the early years, manu-
+facturers put considerable effort toward lowering both the scanning and image
+reconstruction times. Accordingly, the time required to scan a patient and gener-
+ate an image has dropped from several hours with the earliest clinical machines
+to under 100 milliseconds for some current machines. Multiple cross sections
+can now be collected rapidly using helical CT and multiple-row detector CT
+(MDCT); hence, 3-D data sets are readily available. A very important area
+of current research and development in both academic and industrial arenas
+involves the display and analysis of 3-D CT data sets.
+In this chapter, we present the fundamentals of x-ray CT imaging. Since
+the properties of x-rays—their generation, detection, and interaction with the
+human body—have been discussed in Chapter 5, the focus of this chapter is on
+the various geometries of CT scanners and on a mathematical description of
+the algorithms necessary to reconstruct images. The mathematical abstraction

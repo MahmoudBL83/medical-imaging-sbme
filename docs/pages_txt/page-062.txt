@@ -1,0 +1,46 @@
+2.7 Circular Symmetry and the Hankel Transform 43
+Figure 2.11
+The response of an ideal
+low-pass ﬁlter for two
+values of the cutoff
+frequency c (c1 > c2).
+Ideal low-pass filter
+c1
+c2
+As an example, consider an LSI system S whose transfer function H(u, v)i s
+given by
+H(u, v) =
+{ 1, for
+√
+u2 + v2 ≤ c
+0, for
+√
+u2 + v2 > c . (2.102)
+This is known as an ideal low-pass ﬁlterwith cutoff frequency c. From (2.101)
+and (2.102), we have
+G(u, v) =
+{ F(u, v), for
+√
+u2 + v2 ≤ c
+0, for
+√
+u2 + v2 > c . (2.103)
+Therefore, the input spectrum will be eliminated at high spatial frequencies (u, v)
+given by
+√
+u2 + v2 > c. Applying such a system to an input signal will result in
+signal smoothing, with ﬁne signal details (details that are mainly responsible for
+high-frequency spectral content) being eliminated. The amount of smoothing
+depends directly on the value of c, with smaller values of c producing more
+smoothing. This is illustrated in Figure 2.11. Most imaging systems can be
+modeled as some sort of low-pass ﬁlter.
+We should point out here that, usually, the numerical implementation of the
+convolution equation (2.39) is not done in the space domain [i.e., by calculating
+the double integral in (2.38)], but in the frequency domain, using (2.101). The
+main reason is the existence of an efﬁcient algorithm (thefast Fourier transform,
+or FFT) that allows a fast computer implementation of (2.101).
+2.7 Circular Symmetry and the Hankel
+Transform
+Often, the performance of a medical imaging system does not depend on
+the orientation of the patient with respect to the system. This orientation
+independence arises from the circular symmetry of certain signals, especially the

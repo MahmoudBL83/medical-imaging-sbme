@@ -1,0 +1,49 @@
+6.3 Image Formation 211
+Figure 6.18
+Rotating polar
+coordinates for fan-beam
+geometry.
+D
+D/H11032
+g/H11032
+r
+f b /H11002 f
+b
+It can be shown (see Problem 6.18) that
+c(D′ sin γ) =
+( γ
+D′ sin γ
+)2
+c(γ) . (6.38)
+Accordingly, looking back at (6.37), we see that it is useful to deﬁne
+cf (γ) = 1
+2D
+( γ
+sin γ
+)2
+c(γ) . (6.39)
+Combining (6.37) and (6.38) with this deﬁnition, we ﬁnd that
+f (r, φ) =
+∫ 2π
+0
+1
+(D′)2
+∫ γm
+−γm
+˜p(γ, β)cf (γ′ − γ) dγdβ , (6.40)
+where ˜p(γ, β) = cos γp(γ, β), which is our ﬁnal fan-beam reconstruction
+formula.
+To more clearly identify the ‘‘convolution’’ part and the ‘‘backprojection’’
+part, we split the reconstruction formula of (6.40) into two pieces:
+q(γ, β) = ˜p(γ, β) ∗ cf (γ) , (6.41)
+f (r, φ) =
+∫ 2π
+0
+1
+(D′)2 q(γ′, β) dβ. (6.42)
+Here, q(·) is simply a ﬁltered projection where the impulse response cf (·)i sa
+weighted (or windowed) version of c(·), the usual (approximate) ramp ﬁlter
+[as in (6.27)]. However, the backprojection operator is a bit different since D′
+depends on the image coordinate ( r, φ) or, equivalently, ( x, y). Therefore, each
+ﬁltered projection backprojects along the ray-paths of integration but does so
+with a weighting that depends on the distance from the source. Thus, one should

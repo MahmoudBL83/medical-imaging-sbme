@@ -1,0 +1,48 @@
+10 Chapter 1 Introduction
+shown in Figure 1.2(b) is a slice through the liver; the data used to reconstruct
+this image were acquired in just one second. Computed tomography is described
+in more detail in Chapter 6.
+1.6 Nuclear Medicine
+Nuclear medicine imaging is distinguished from all other medical imaging
+modalities by the fact that images can only be made when appropriate radioactive
+substances are introduced into the body. These substances, which are either
+injected, ingested, or inhaled into the body, are trace amounts of biochemically
+active drugs whose molecules are labeled with radionuclides that emit gamma
+rays. These so-called radiotracers move within the body according to the body’s
+natural uptake of the biological carrier molecule. For example, radioactive
+iodine can be used to study thyroid function. A nuclear medicine image reﬂects
+the local concentration of a radiotracer within the body. Since this concentration
+is tied to the physiological behavior of the carrier molecule within the body,
+nuclear medicine imaging is an example of afunctional imagingmethod, whereas
+standard CT and MRI are anatomical or structural imagingmethods.
+There are three modalities within nuclear medicine: conventional radionu-
+clide imagingor scintigraphy, single-photon emission CT(SPECT), and positron
+emission tomography (PET). Conventional radionuclide imaging and SPECT
+typically utilize a special 2-D gamma ray scintillation detector called an Anger
+camera. This camera is designed to detect single x-rays or gamma rays, rather
+than simply detecting the intensity of a collective beam as in projection radiogra-
+phy and CT. In conventional radionuclide imaging, this camera is conceptually
+analogous to the ﬁlm or digital detector in projection radiography. A complica-
+tion is that this procedure combines the effects of emission with the effects of
+attenuation of the rays by intervening body tissues, producing images that are
+2-D projections of the 3-D distribution of radiotracers (which we wish to know)
+confounded by attenuation.
+SPECT and PET produce images of slices within the body. SPECT does
+this by rotating the Anger camera around the body. Since the Anger camera is
+a 2-D imager, SPECT is fundamentally a 3-D imaging technique. In conven-
+tional radionuclide imaging and SPECT, a radioactive atom’s decay produces
+a single gamma ray, which may intercept the Anger camera. In PET, however,
+a radionuclide decay produces a positron, which immediately annihilates (with
+an electron) to produce two gamma rays ﬂying off in opposite directions. The
+PET scanner looks for coincident detections from opposing detectors in its
+ring, thus determining the line that passes through the site where the annihila-
+tion occurred. Both SPECT and PET use computed tomography reconstruction
+techniques including iterative reconstruction in order to create diagnostic images.
+A SPECT scanner is shown in Figure 1.3(a). The Anger camera at the top
+(and side) is capable of rotating completely around the patient, who lies on
+the table. The table can move in coordination with the camera (for a helical
+tomographic scan), or the table can move with a stationary camera (for a
+whole-body standard projection scan). The collection of SPECT images shown
+in Figure 1.3(b) are cardiac scans taken at different spatial positions in the heart
+depicting blood ﬂow to the heart muscle. Nuclear medicine imaging is described
+in more detail in Chapters 7 through 9.

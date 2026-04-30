@@ -1,0 +1,44 @@
+176 Chapter 5 Projection Radiography
+Problems
+Instrumentation
+5.1 Examine the projection radiography system in Figure 5.13. Is this system
+linear? Is it shift invariant?
+5.2 (a) What determines the highest energy of x-ray photons emitted from
+an x-ray tube? What determines the energy spectrum of the x-ray
+photons?
+(b) In radiographic imaging, why are low-energy photons undesired?
+What measures can be taken to reduce the number of the low-energy
+photons entering the human body?
+(c) What is beam hardening? What are the causes of beam hardening?
+5.3 We are designing an x-ray tube and want to use a lighter ﬁlter. Suppose we
+have, in addition to copper, a new material with a density of 5,000 kg/m3
+and a mass attenuation coefﬁcient of 0.08 m 2/kg at 80 kVp. In order
+to satisfy the NCRP recommendation of 2.5 mm Al/Eq at 80kVp, what
+should we use, copper or the new material? Explain.
+5.4 (a) Why are iodine and barium commonly used as contrast agents?
+(b) Explain with a diagram why an airgap can be used to reject scattered
+photons. What is the main problem with airgaps?
+5.5 (a) Why is Compton scattering bad for the images produced using projec-
+tion radiography?
+(b) For a ﬁlm with a given H&D curve, why is it better to have a range of
+x-ray exposures that are in the linear region of the curve?
+(c) Why do we have to ﬁlter x-rays from the x-ray source?
+(d) Lead strips can be used (e.g., in a grid) to reduce scatter in radiography
+systems. If the height of the grid is eight times its width, what is the
+maximum scatter angle of the photon after which the photon cannot
+pass through the grid? (Assume an orientation that is orthogonal to
+the grid lines.)
+Image Formation
+5.6 Suppose a chest x-ray imaging system with a perfect point source can
+provide images with acceptable quality when the intensity variation is
+smaller than 5% when imaging a slab of material with uniform attenuation
+coefﬁcient. Suppose the source-to-detector distance is 2 m, what is the
+maximal size of the image?
+5.7 (a) Derive a simple expression for the magniﬁcation of a thin object on a
+projection radiograph. Assume x-ray source-to-object and source-to-
+detector distances.
+(b) In practice, what simple strategies can an x-ray technician use to reduce
+the magniﬁcation and distortion effects of the projection radiography
+system?
+5.8 You are designing a digital x-ray detector panel with an array of discrete
+detectors. You decide that you are able to compensate for the beam

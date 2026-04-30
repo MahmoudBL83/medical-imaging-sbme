@@ -1,0 +1,30 @@
+Problems 99
+Figure P3.3
+Bilinear interpolation.
+E
+F
+GH
+A /H11005 (x0, y1) B /H11005 (x1, y1)
+C /H11005 (x0, y0) D /H11005 (x1, y0)
+P(x, y)
+(c) In Problem 3.25, if we take measurements on rectangular grids in the
+image plane at (m/Delta1x, n/Delta1y), with /Delta1x = /Delta1y = 1 and m, n are integers,
+how should we interpolate the value for ξ = 3 and η = 3.5i nt h e
+physical domain?
+3.29 As we mentioned in Example 3.14, diagnostic accuracy alone is not enough
+to determine whether a test is good. In this problem, we will introduce the
+concept of receiver operating characteristic (ROC) curves with a simple
+example. Consider the situation described in Problem 3.26; suppose the
+mean and variance of the test value for the normal subjects areμ
+0 = 2 and
+σ2
+0 = 1, with arbitrary units. The mean and variance of the test value for
+the diseased subjects are μ1 = 8 and σ2
+1 = 4, with arbitrary units.
+(a) For threshold value t0 in the interval μ0 ≤ t0 ≤ μ1, plot the curve of
+sensitivity (vertical axis) against 1 − speciﬁcity (horizontal axis). This
+is the ROC curve.
+(b) What is the ROC curve for a perfect diagnostic test?
+(c) For a given ROC curve, if we deﬁne the optimal test to be the one that
+is closest to the perfect test, determine the optimal test (threshold) for
+the above case.

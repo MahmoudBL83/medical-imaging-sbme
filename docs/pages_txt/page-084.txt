@@ -1,0 +1,46 @@
+3.3 Resolution 65
+understanding of a system’s resolution from its MTF usually comes from MTF
+values at higher spatial frequencies and the cutoff frequency uc.
+The MTF can be directly obtained from the LSF. Indeed, from (3.7) and
+(3.16),
+MTF(u) = |L(u)|
+L(0) , for every u. (3.18)
+Therefore, the MTF equals the (normalized) magnitude of the 1-D Fourier
+transform of the LSF. The next example shows that this relationship can be used
+to determine the FWHM of a medical imaging system directly from its MTF.
+EXAMPLE 3.4
+Sometimes, the PSF, LSF, or MTF can be described by a mathematical function by either
+ﬁtting observed data or by making simplifying assumptions about its shape. Assume that
+the MTF of a medical imaging system is given by
+MTF(u) = e−πu2
+. (3.19)
+Question What is the FWHM of this system?
+Answer By using the 1-D inverse Fourier transform and the fact that|L(u)|= MTF(u),
+we have l(x) = e−πx2
+. The FWHM will then be given by FWHM= 2x0, where x0 is such
+that
+e−πx2
+0 = 1
+2 . (3.20)
+This results in FWHM = 2
+√
+ln 2/π.
+3.3.4 Subsystem Cascade
+Medical imaging systems are often modeled as a cascade of LSI subsystems,
+as introduced in Section 2.3.4. Accordingly, the recorded image g(x, y) can be
+modeled as the convolution of the input object f (x, y) with the PSF of the ﬁrst
+subsystem, followed by the convolution with the PSF of the second subsystem,
+etc. (see Section 2.3.4). For example, in the case of K subsystems with PSFs
+h1(x, y), h2(x, y), ... , hK(x, y),
+g(x, y) = hK(x, y) ∗···∗ (h2(x, y) ∗ (h1(x, y) ∗ f (x, y))) . (3.21)
+The quality of the overall system, in terms of contrast and resolution, can be
+predicted by considering the quality of each subsystem.
+If resolution is quantiﬁed using the FWHM, then the FWHM of the overall
+system can be determined approximately from the FWHMs R1, R2, ... , RK of
+the individual subsystems, by
+R =
+√
+R2
+1 + R2
+2 +···+ R2
+K . (3.22)

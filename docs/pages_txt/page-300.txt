@@ -1,0 +1,48 @@
+8.4 Image Quality 281
+It is often very useful to characterize our ability to discern a hot spot or
+cold spot from the background. This requires the concept of contrast C,a s
+introduced in Section 3.2. The contrast here is the fractional change in counts
+in a pixel or set of pixels from the background. If Nb is the mean background
+count and Nt is the mean target count, then the contrast is deﬁned [in a fashion
+analogous to (3.12)] as
+C = Nt − Nb
+Nb
+. (8.25)
+The local SNR is deﬁned as
+SNRl = Nt − Nb√
+Nb
+, (8.26)
+which is readily simpliﬁed [see (5.38)] to yield
+SNRl = C
+√
+Nb . (8.27)
+As a practical matter, the mean count is not known, anywhere, since it is
+a parameter of an unknown probability mass function. Instead, averages are
+used to approximate means. For example, if tn, n = 1, ... , N represents N pixel
+counts within a target and bm, m = 1, ... , M represents M pixel counts within
+the background (e.g., surrounding the target), then the means are estimated as
+ˆNt = 1
+N
+N∑
+n=1
+tn , (8.28)
+ˆNb = 1
+M
+M∑
+m=1
+bm . (8.29)
+These estimates are then used in (8.27) to provide an estimate of the local
+SNR. This kind of calculation is used in practice to evaluate the detectability
+of objects, providing guidance about the choices of collimators, imaging times,
+pixel dimensions, etc.
+8.4.6 Factors Affecting Count Rate
+It is clear from the previous section that increasing the total number of detected
+and correctly positioned events will improve the SNR in images created using an
+Anger camera. The simplest approach to achieve this would be to increase the
+image acquisition duration, but this is usually undesirable in nuclear medicine for
+several reasons. The longer the acquisition, the greater the chance the patient will
+move, introducing motion blur in the image. As well, the longer the acquisition,
+the greater the chance that the radiotracer’s distribution will change (because of
+the underlying physiological and biochemical processes). Finally, the longer the
+acquisition, the fewer the number of patients who can be imaged in a workday
+and the greater the discomfort and inconvenience each patient experiences.

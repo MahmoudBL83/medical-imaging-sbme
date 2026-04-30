@@ -1,0 +1,26 @@
+Problems 185
+A contrast agent is used to enhance the image of the tumor. Assume a
+35 keV (monochromatic) x-ray source and linear attenuation coefﬁcients
+given in the table below.
+Linear Attenuation Coefﬁcient (cm
+−1)
+Energy(keV) Tissue Tumor Tumor with contrast agent
+35 1 0.75 10
+(a) The K-shell energies of iodine and barium are 33.2 keV and 37.4 keV,
+respectively. Assuming that either agent could be made into a
+compound that would go to the tumor, what would be the best agent
+to use and why?
+(b) Let the local contrast of the tumor be deﬁned as C = (I
+t − Ib)/Ib,
+where It is the intensity at the center of the tumor and Ib is the
+intensity just outside the edge of the tumor. Neglecting Compton
+scatter, ﬁnd both the local contrast C1 of the tumor before contrast is
+applied and the local contrastC2 of the tumor after contrast is applied.
+In the next parts, assume that Compton scattering events are taking place
+throughout the tissue and, for simplicity, assume that w ≈ 0.
+(c) Make a sketch of the photon path that yields a photon hitting
+the detector with the lowest possible energy. (Assume that only
+single-scatter Compton events can occur.)
+(d) Find the energy of the Compton scattered photon in part (c) (that has
+the lowest possible energy to be detected given the assumed imaging
+geometry).

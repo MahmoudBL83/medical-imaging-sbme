@@ -1,0 +1,46 @@
+xvi Preface
+Part IV covers ultrasound imaging. It begins in Chapter 10 with a brief
+presentation of the physics of sound, and continues in Chapter 11 with the
+various imaging modes offered within this rich modality. Part V covers mag-
+netic resonance imaging. Chapter 12 presents the physics of nuclear magnetic
+resonance, and Chapter 13 continues with a presentation of various magnetic
+resonance imaging techniques.
+We have used the ﬁrst edition of this book for a one-semester upper-
+level/graduate course on medical imaging systems. In order to cover the material
+in one semester, we routinely skip some material in the book, and we move
+at a very brisk pace. Although it was very tempting to add more depth
+in modern instrumentation, reconstruction methods, and diagnostic uses of
+medical imaging, we feel that this breadth of material could not be covered in
+one semester with sufﬁcient depth, and would be inconsistent with our primary
+goal of providing a uniﬁed view of medical imaging from a signals and systems
+point of view. On the other hand, we feel that this book could be used as the basis
+for a two-semester course, perhaps by covering Parts I–III in the ﬁrst semester
+and Parts IV–V in the second semester. A two-semester approach would allow
+instructors to use supplementary materials for additional depth in the physics
+and instrumentation of medical imaging, or to present current research topics.
+Medical imaging is very visual—just ask any radiologist. Although the
+formalism of signals and systems is mathematical, we understand the advan-
+tages offered through visualization. Therefore, the book contains many images
+and diagrams. Some are strictly pedagogical, offered in conjunction with the
+exposition or an example problem. Others are motivational, revealing inter-
+esting features for discussion or study. Special emphasis is made to provide
+biologically relevant examples, so that the important context of medical imag-
+ing can be appreciated by students. Many images have been added or replaced
+in this edition, in order to provide better coverage of current use and to provide
+reference images to help explain features and qualities of the various modalilties.
+New to This Edition
+The second edition of this book arose primarily from the need to provide
+updates to the technology and methods in medical imaging systems, which have
+undergone substantial development since the ﬁrst edition. At the same time,
+we were able to incorporate changes to the organization of the book and to
+improve certain aspects of pedagogy. Instructors and students alike now have
+more modern material from the core medical imaging modalities while still
+maintaining the signal processing perspective in a uniﬁed treatment of medical
+imaging signal and systems.
+The most signiﬁcant changes to this new edition include:
+• Completely rewritten overview sections including many new images to better
+motivate and explain the core modalities that use x-rays, radioactivity,
+ultrasound, and nuclear magnetic resonance.
+• New sections on digital radiography systems and mammography in projec-
+tion radiography.
+• A new section on multi-row detectors in computed tomography.

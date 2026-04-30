@@ -1,0 +1,43 @@
+3.8 Accuracy 89
+are used for diagnosis (‘‘Is the disease present?’’), prognosis (‘‘How will the
+disease progress, and what is the expected outcome?’’), treatment planning
+(‘‘Which treatment will work best?’’), and treatment monitoring (‘‘Is the treat-
+ment reversing the disease, and to what extent?’’). Fundamentally, we are
+interested in the accuracy of medical images in the context of these clinical
+applications. Here, ‘‘accuracy’’ means both conformity to truth (i.e., free-
+dom from error) and clinical utility. In practice, we are usually interested in
+quantitative accuracyand diagnostic accuracy.
+3.8.1 Quantitative Accuracy
+Sometimes, we are interested in the numerical value of a given anatomic or
+functional feature within an image. For example, we may wish to measure
+tumor dimensions from a radiograph, or estimate glucose metabolic rate from
+a nuclear medicine image. In such situations, we need to know the error
+in our measurement. This error, or difference from the true value, arises
+from two sources: bias, which represents a systematic, reproducible difference
+from the truth, and imprecision, which represents a random, measurement-to-
+measurement variation.
+It is helpful to separate the component of error due to bias from that
+due to imprecision. If we can establish that the measurement is precise (i.e.,
+reproducible), then we can correct for systematic errors through the use of
+a calibration standard that converts the measured value to the true value. In
+practice, error usually arises from both components, and our measurements are
+never error-free.
+3.8.2 Diagnostic Accuracy
+We can conceptualize a medical image as representing some parameter (or set
+of parameters) of interest in a patient. For the sake of simplicity, we assume
+that the diagnostic process involves a test that extracts this parameter (or set of
+parameters), which is then used to classify a given patient as either normal or
+diseased. We further conceptualize two Gaussian distributions of the parameter
+(or set of parameters), one for normal patients and another for diseased patients,
+with (usually) some degree of overlap. This implies that some normal patients
+may be classiﬁed as diseased and vice versa.
+In a clinical setting, we are interested in two parameters:
+• Sensitivity, also known as the true-positive fraction ; this is the frac-
+tion of patients with disease who the test (e.g., the medical image) calls
+abnormal.
+• Speciﬁcity, also known as the true-negative fraction; this is the fraction
+of patients without disease who the test (e.g., the medical image) calls
+normal.
+In practice, sensitivity and speciﬁcity are established in a group of patients
+through the use of a 2 × 2 contingency table, as shown in Figure 3.17. Here,
+a and b are, respectively, the number of diseased and normal patients who the

@@ -1,0 +1,34 @@
+PART
+II
+Radiographic
+Imaging
+Overview
+Ionizing radiation—radiation capable of ejecting electrons from atoms—forms
+the basis of a number of important imaging modalities. In some cases, we are
+interested in the transmission of ionizing radiation through the body. In other
+cases, we are interested in the emission of ionizing radiation from the body.
+In this part of the book, we consider the two main imaging modalities that
+make use of the transmission of ionizing radiation through the body: projection
+radiography and computed tomography.
+Projection radiography and computed tomography rely on thetransmission
+of ionizing radiation through the body. Various tissues and organs within the
+body attenuate or decrease the intensity of the beam of ionizing radiation as it
+passes through the body. Thus, even if the beam entering the body is of uniform
+intensity, the beam exiting the body contains ‘‘shadows’’ of tissues and organs as
+a ‘‘latent image’’ of varying beam intensity. Since it is the physical characteristics
+of the tissues or organs (e.g., effective atomic number and density) that determine
+that tissue’s attenuation abilities, the resulting images depict structures within
+the body, and projection radiography and computed tomography are considered
+anatomical imaging modalities, since they portray anatomy.
+In Figure 1.1(b), we showed the most classic projection radiograph—a
+‘‘chest x-ray.’’ In Figure II.1, we show several other transmission images.
+Figure II.1(a) is also a projection radiograph—this time, of a hand. Notice
+the dominance of bone in this image and the homogeneity of soft tissues. This
+is because soft tissues do not attenuate x-rays as well as bone and the difference
+in attenuation between different types of soft tissues is very small. Figure II.1(b)
+shows a radiograph of the head and neck. Because the shoulders are wide in this
+lateral (left-to-right) view and they contain bone, the attenuation there is quite
+large, and the image is washed out (white) there. The brain, being all soft tissue,
+is virtually devoid of features in this image. This lack of detail in the brain was of
+great frustration to radiologists until computed tomography (CT) and magnetic
+resonance imaging (MRI) burst onto the scene in the 1970s and 1980s.

@@ -1,0 +1,56 @@
+168 Chapter 5 Projection Radiography
+Figure 5.22
+An H&D curve.
+10/H110021 100 101 102 103
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+(a) High-speed
+film with
+CaWO4
+screens
+(b) Direct x-ray
+film
+(c) High-speed
+film without
+screens
+Fog level
+Exposure, mR
+Optical density
+Toe
+Linear
+region
+Shoulder
+direct exposure (no screens) and D < 2, D is directly proportional to X. When
+screens are used and D > 2, however, the relationship between X and D is
+nonlinear, and it is given by the classic H&D curve (named after Hurter and
+Drifﬁeld, who ﬁrst described this function), as shown in Figure 5.22. A typical
+H&D curve is S-shaped, with a low exposure–low D toe, a linear portion, and
+a high exposure–high D shoulder. Notice that D never goes to zero; there is
+always a base fogoptical density, even in the absence of exposure.
+In the linear region of an H&D curve, the response between the common
+logarithm of exposure and optical density is approximately linear,
+D = /Gamma1log10(X/X0) , (5.32)
+where /Gamma1is the slope of the H&D curve in the linear region and X0 is the
+exposure at which the linear region would hit the horizontal axis (D = 0) of the
+H&D curve.
+The quantity /Gamma1is called the ﬁlm gamma. It is unique to a particular ﬁlm and
+a particular method of developing that ﬁlm (that is, it is a function of the devel-
+oping chemicals, temperature, time of development, etc.), and it is typically in the
+range of 0.5–3. Increasing the gamma of the ﬁlm increases contrast but reduces
+the range of exposures over which the optical density response is linear. Correct
+exposure of a ﬁlm occurs only in the linear range of its H&D curve. Thelatitude
+of a ﬁlm is the range of exposures over which the H&D curve is linear. Thespeed
+of a ﬁlm is the inverse of the exposure at which D = 1 + fog level. Consider the
+radiographic ﬁlms shown in Figure 5.22. Clearly, the ﬁlm/screen combination
+(a) is the fastest ﬁlm. The direct x-ray exposure ﬁlm (b) is next fastest and
+has the largest gamma and lowest latitude. Finally, standard high-speed optical
+ﬁlm (c) without screens is the slowest; it would require the largest x-ray expo-
+sure of all three ﬁlms in order to achieve optical densities in the typical range
+of 1–1.5.

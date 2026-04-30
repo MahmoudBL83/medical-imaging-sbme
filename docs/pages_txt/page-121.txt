@@ -1,0 +1,22 @@
+102 Part II Radiographic Imaging
+Figure II.1
+Representative x-ray
+transmission images of
+various parts of the body:
+(a) hand, (b) head and
+neck, (c) knee, (d) chest,
+(e) feet, and (f) pelvis. All
+images courtesy of GE
+Healthcare.
+(a)
+(b)
+(c) (d)
+(e) (f)
+It is instructive to look at the bones around the knee in Figure II.1(c). Why
+do they appear to have bright outlines? We know that bones are ﬁlled with
+marrow, which is a soft tissue. Therefore, around the edges, the x-rays have to
+travel farther in the bone itself and therefore they experience more attenuation,
+yielding a brighter image. If the bones were solid, then they would be brighter
+in the middle on a radiograph.
+Figure II.1(d) shows a chest x-ray, a staple of modern radiography. In one
+single, quick acquisition the physician can examine the lungs, the heart, and

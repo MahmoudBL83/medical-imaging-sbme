@@ -1,0 +1,40 @@
+182 Chapter 5 Projection Radiography
+(c) Determine the image of the phantom on the detector plane.
+(d) Determine the minimal value of w such that the images of the two
+lines on the detector plane can be distinguished from each other.
+5.24 A slab of soft tissue with one blood vessel running in the middle is imaged
+using an x-ray imaging system, as shown in Figure P5.6. For ease of
+computation, assume the tissue and the vessel both have square-shaped
+cross sections; the dimensions are shown in the ﬁgure. Assume that the
+x-ray source produces N
+i = 4 × 106 photons at either 15 keV or 40 keV,
+and the photons are uniformly shed upon the side of the tissue.
+Figure P5.6
+Figure for Problem 5.24.
+0.5 cm
+2.0 cm
+NtNi
+The linear attenuation coefﬁcients μ of the soft tissue, blood, and a radio-
+graphic contrast agent at two energy levels are given in the table below.
+Linear Attenuation Coefﬁcient (cm−1)
+Energy(keV) Soft Tissue Blood Contrast Agent
+15 4.0 3.0 5.0
+40 0.4 0.2 20
+Ignoring photon noise, detector efﬁciency, beam divergence, scattering,
+path length, and magniﬁcation effects:
+(a) Determine the total number of exiting photons at the two energy
+levels respectively. At which energy level are more photons absorbed?
+(b) Calculate the local contrast of the blood vessel (target) at each energy
+level. At which energy level is the local contrast of the blood vessel
+better?
+(c) Suppose the contrast agent whose linear attenuation coefﬁcient is
+given in the table were injected into the blood vessel. Would you
+expect there to be much difference in the local contrast at 15 keV
+after injection? How about at 40 keV? (No calculations are needed;
+just use mathematical reasoning.)
+(d) Explain why it is expected that the linear attenuation coefﬁcient of
+the contrast agent is much larger at 40 keV than at 15 keV?
+5.25 An x-ray imaging system is shown in Figure P5.7 to image a bar phantom.
+The detector is placed on the z = 0 plane. The bar phantom with two
+dark bars is placed on the z = z
+0 plane, and the x-ray source is placed

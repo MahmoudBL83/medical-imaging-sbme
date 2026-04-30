@@ -1,0 +1,46 @@
+5.2 Instrumentation 149
+The remainder of the XRII resembles a standard image intensiﬁer, such
+as that found in night vision devices. The light photons generated in the input
+phosphor strike a photocathode, which in turn generates free electrons within the
+vacuum tube. The electrons are accelerated through a series of electrodes (called
+dynodes) toward the anode, which is kept at a voltage of 25–35 kV relative to
+the cathode. The free electrons do not strike the dynodes as in photomultiplier
+tubes (see Chapter 8). Instead, the electrons are shaped by the dynodes into an
+(inverted) electron intensity image that represents the intensity of x-rays entering
+the XRII. The voltage proﬁle of the dynodes can be altered—continuously in
+some systems and in discrete steps in other systems—to provide variable image
+magniﬁcation. For example, a 40-cm XRII could be used to image a 20 cm ﬁeld
+of view.
+The electrons accelerate through the XRII until they are absorbed by either
+the anode or the output phosphor screen. The output phosphor is a P20-type
+phosphor deposited on the output window, typically a 15-mm piece of glass
+25–35 mm in diameter. A thin aluminum ﬁlm placed on the inner side of
+the phosphor acts as the anode and a reﬂector, keeping light from passing
+back into the XRII, which might otherwise cause secondary excitation of the
+photocathode. The light passing through the output window typically encounters
+a lens, which magniﬁes the image.
+The magniﬁed light image leaving the XRII can be used in several ways,
+three of which are depicted in Figure 5.11. First, a light sensor can be put into
+the ﬁeld to provide an automatic gain control—that is, feedback to the x-ray
+tube current—to provide a relatively constant image brightness throughout an
+exam. Second, the main function of a ﬂuoroscope is achieved by feeding the
+light image into a TV camera, which provides real-time viewing capability by
+sending the camera’s signal into a standard TV monitor. Finally, using a splitter,
+the image can also be fed into a ﬁlm camera, which can capture selected still
+images onto ﬁlm.
+5.2.7 Digital Radiography
+Digital radiographic systems are rapidly replacing ﬁlm-screen combinations.
+Although the ﬁrst version of such systems was introduced in the 1980s, it
+took over twenty years for the cost to be driven down and for the quality to
+improve sufﬁciently for these systems (and subsequent versions of these systems)
+to compete successfully with ﬁlm-based systems. There are four types of digital
+systems, which we describe next, all of which are in clinical use today.
+Computed Radiography Systems Computed radiography (CR) systems store
+latent images inphotostimulable imaging plates(PSPs), which are removed from
+the x-ray system and scanned using a special laser scanner to form a digital
+image. The PSP is a phosphor typically made from barium ﬂuorohalide bromides
+and iodides with europium activators. Detected x-ray photons are absorbed in
+the phospor by the photoelectric effect, which causes electrons to be ejected
+from atoms in the detector. About half of these electrons will recombine with
+the resulting ions causing light to be emitted (as in a typical image intensifying
+screen). The remaining electrons will be temporarily trapped in the ﬂuorohalides,

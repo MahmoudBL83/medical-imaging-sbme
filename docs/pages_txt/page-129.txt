@@ -1,0 +1,42 @@
+110 Chapter 4 Physics of Radiography
+medical imaging has energies ranging from about 25 keV to 500 keV. Broadly
+speaking, the ‘‘easiest’’ atom to ionize is a hydrogen atom, since it has the
+smallest average electron binding energy. Tungsten may be about the ‘‘most
+difﬁcult’’ to ionize in the substances normally encountered in medical imaging.
+Using the range of ionizing radiations energies given above and the binding
+energies for these two elements, we can conclude that a single ionizing particle
+or ray used in medical imaging is capable of ionizing between 10 and 40,000
+atoms before its energy is exhausted.
+If an ionizing particle or ray transfers some energy to a bound electron but
+less than the electron’s binding energy, then the electron is raised to a higher
+energy state—to a more outer orbit—but is not ejected. This process is called
+excitation. In both ionization and excitation, an electron shell is left with a
+‘‘hole’’ that must be ﬁlled in order to return the atom to a lower energy state.
+The ﬁlling of these open holes comprises an important source of secondary
+radiation called characteristic radiation, which we will explore below.
+EXAMPLE 4.1
+Suppose an electron is accelerated within a vacuum from a heated cathode held at ground
+potential to an anode held at 120 kV (DC).
+Question If the anode is made of tungsten, what is the maximum number of tungsten
+atoms that can be ionized on average?
+Answer The electron will have kinetic energy equal to 120 keV upon reaching the
+anode (recall the deﬁnition of eV). The average binding energy of tungsten is 4 keV.
+Therefore, the maximum number of tungsten atoms that can be ionized on average is
+120 keV/4k e V= 30.
+4.3 Forms of Ionizing Radiation
+Ionizing radiation can be divided into two broad categories: particulate and
+electromagnetic. We now describe these types of radiation in some detail.
+4.3.1 Particulate Radiation
+Any subatomic particle (i.e., a proton, neutron, or electron) can be considered
+to be ionizing radiation if it possesses enough kinetic energy to ionize an atom.
+In calculating the kinetic energy of these particles, relativistic effects cannot be
+ignored since the particles often travel at a signiﬁcant fraction of the speed of
+light. As a particle approaches the speed of light, its relativistic mass increases,
+which signiﬁcantly increases its kinetic energy above that which would be
+calculated using the usual low-speed approximation.
+From Einstein’s theory of relativity, we know that the (relativistic) mass of
+a particle is given by
+m = m
+0√
+1 − v2/c2
+, (4.1)

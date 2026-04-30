@@ -1,0 +1,15 @@
+254 Chapter 7 The Physics of Nuclear Medicine
+Radiotracers
+7.13 (a) Explain whether each radiotracer listed below is good or bad for
+medical imaging.
+(i) E
+γ = 30 KeV, t1/2 = 7 hours;
+(ii) Eγ = 150 KeV, t1/2 = 5 hours; and
+(iii) Eγ = 200 KeV, t1/2 = 10 days.
+(b) The activity of an object at t = 0i s4 × 1010 dps. Its activity reduces
+to 1 × 1010 dps after 5 hours. Compute the expected number of
+radioatoms present at t = 0.
+7.14 A doctor referred a patient to have a SPECT scan using a speciﬁc
+radiotracer. That radiotracer was not available in the lab, but another
+radiotracer with the same emitted photon energy and half-life was avail-
+able. Should the technician make the substitution? Explain.

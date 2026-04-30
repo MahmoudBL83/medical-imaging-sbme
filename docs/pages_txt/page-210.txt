@@ -1,0 +1,28 @@
+6.2 CT Instrumentation 191
+Still, the payoff in scan time is so great that slightly increasing the dose to
+counter the deleterious effects from collimation is worth it.
+EXAMPLE 6.1
+Consider a 1G or 2G scanner whose source–detector apparatus can move linearly at
+a speed of 1.0 m/s and that the FOV has a diameter of 0.5 m. Suppose further that
+360 projections over 180 ◦ are required and that it takes 0.5 s for the source–detector
+apparatus to rotate one angular increment, regardless of the angle.
+Question What is the scan time for a 1G scanner? What is the scan time for a 2G
+scanner having nine detectors spaced 0.5◦ apart?
+Answer It takes 0 .5/1.0 = 0.5 s to measure one projection. So the time used for
+making measurements is 360 × 0.5s = 180 s, and 360 rotations are needed, which take
+360 × 0.5s = 180 s. So the total scan time is 180 + 180 = 360 s, or 6 minutes.
+For the 2G scanner, nine projections are acquired simultaneously. (The required angular
+increment is 180 ◦/360 = 0.5◦, which agrees with the detector separation.) Therefore,
+only 360 /9 = 40 rotations are required, which takes 40 × 0.5s = 20 s. Ignoring the
+small amount of overscanning required to cover the fan angle itself, the time for each
+linear scan is still 0.5 s. Therefore, the total scan time is 40 × 0.5 + 20 = 40 s.
+The geometry of a third-generation (3G) scanner, as shown in Figure 6.4,
+has a fan-beam that covers the image region with the source held in a single
+position. Therefore, the source and detector array need not perform a linear
+scan; instead they simply rotate in synchrony. To obtain a sufﬁcient number of
+samples per (fan-beam) projection, there must be a large number of detectors
+and this pushes the cost of a 3G scanner beyond that of a 2G scanner. The simple
+Figure 6.4
+The geometry of a
+third-generation (3G)
+CT scanner.

@@ -1,0 +1,49 @@
+9.1 Instrumentation 303
+Combined PET/CT Systems As noted above, in discussing nuclear medicine
+we always emphasize the ‘‘functional’’ nature of the image data. There is now
+ample evidence that clinical interpretation of nuclear medicine studies, especially
+in PET, can beneﬁt from reference to anatomic images from CT or MRI. In
+the past, a physician would review the PET images on a computer display and
+the CT ﬁlms on a light box and then perform mental ‘‘image fusion.’’ This
+prompted the development of software for postacquisition image registration
+and fusion. This process requires the images from both procedures to be on a
+common computer (typically via transfer of the CT exam to a nuclear medicine
+computer workstation); the PET images are interpolated to a common voxel
+size and registered with the CT exam, and the fused or overlaid images are
+displayed.
+At least in theory, the best way of registering PET and CT is if both
+studies are acquired via a combined system with a common gantry and patient
+table. Accordingly, virtually all PET equipment manufacturers have developed
+combined PET/CT systems, and these represent the vast majority of PET systems
+sold today.
+In a combined PET/CT system, both PET and CT exams may be performed
+without moving the patient relative to the table between the two exams. This
+provides functional and anatomical images that can be registered and fused
+with a higher degree of positional accuracy than is permitted by imaging on
+two separate scanners, especially because of differences in body shape and
+position introduced by the use of two different tables. The improved registration
+accuracy with a combined PET/CT system thus mainly results from the patient
+being in the same position on one table. However, physiologic motion such as
+breathing and abdominal motion cannot be avoided. These motions decrease
+the registration accuracy and may produce artifacts in attenuation-corrected
+PET images using the CT map (see below). Notice that the CT exam is typically
+taken during a breath-hold, but the PET exam requires breathing. In addition
+to improved positional accuracy, there is easier availability of both the PET and
+CT data for the fusion software with a combined PET/CT system since they are
+combined within one system.
+As with combined SPECT/CT systems, in addition to their use for anatomic
+localization, the CT images may be used as attenuation maps for performing
+attenuation correction on the PET images. As noted above, one of the theoretical
+advantages of PET over SPECT is that measured tissue attenuation values can
+be used to exactly correct for the effects of attenuation in the emission data,
+as discussed below in Section 9.2.2. In this regard, the attraction of using CT
+is that it provides high resolution, high contrast, and low noise attenuation
+maps obtained quickly using a fast helical scan. As with SPECT, note that using
+x-ray CT images for attenuation correction requires converting attenuation
+values measured with a low-energy, polychromatic x-ray beam into 511 keV,
+monoenergetic attenuation values.
+Combined PET/MRI Systems As we will subsequently discuss in forthcoming
+chapters, MRI offers certain advantages over CT. Accordingly, it is not surprising
+that manufacturers have been developing combined PET/MRI systems, and these
+are now becoming commercially available. However, combining PET and MRI is
+technically challenging. The high static magnetic ﬁeld, quickly changing gradient

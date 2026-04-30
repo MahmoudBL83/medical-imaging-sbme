@@ -1,0 +1,47 @@
+5.4 Noise and Scattering 169
+5.4 Noise and Scattering
+Until now, we have only considered the effects of the x-ray source and the
+composition of the object. We have implicitly assumed that the intensity of the
+x-ray beam at the detector plane is faithfully reproduced by the detector. In
+reality, of course, the detector does not faithfully reproduce the incident intensity
+distribution. Furthermore, x-rays arrive in discrete packets of energy (quanta or
+photons, as discussed in Section 4.3.2). The discrete nature of their arrival can
+lead to ﬂuctuations in the image. In the following sections, we discuss some of
+the additional factors introduced by x-ray physics and the image recorder.
+5.4.1 Signal-to-Noise Ratio
+Assuming unity magniﬁcation and inﬁnitesimal source size, a rectangular object,
+like that depicted in Figure 5.17, will cast a rectangular shadow on the detector
+with dimensions equal to the object dimensions. A 1-D slice through the
+intensities on the detector will look like a rect function, as deﬁned by (2.19)
+and shown in Figure 5.23. Let I
+b be the background intensity and It be the
+object (target) intensity on the detector plane, with It > Ib in this example. As
+discussed in Section 3.2, the local contrastof this object is given by
+C = It − Ib
+Ib
+. (5.33)
+Because the x-rays arrive in discrete quanta (photons), there will be random
+ﬂuctuations in the number of photons arriving in each small area of the detector,
+leading to noise, as discussed in Section 3.4. This effect is called quantum
+mottle, and it is responsible for the imprecision of detector measurements of
+x-ray intensity.
+We can quantify the effect of noise on image formation using the concept
+of SNR, as presented in Section 3.5. The higher the SNR, the less evident will
+be the granularity in the image resulting from this quantum effect. In this
+scenario, the ‘‘signal’’ is It − Ib, the difference between the target intensity and
+the background intensity. The noise is caused by quantum-related ﬂuctuations
+in the background, and it can be characterized by a standard deviation σb.
+Therefore, the basic SNR in this scenario is given by
+SNR = It − Ib
+σb
+= CIb
+σb
+. (5.34)
+Figure 5.23
+Detector intensities from
+a rectangular object.
+It
+Ib
+Object
+Background
+x

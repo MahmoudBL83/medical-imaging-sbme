@@ -1,0 +1,46 @@
+Problems 323
+Problems
+SPECT
+9.1 Consider a 2-D cross section consisting of three separate compartments,
+R1, R2, and R3, as shown in Figure P9.1.
+Figure P9.1
+Geometry of a radioactive
+cross section. See
+Problem 9.1.
+x
+(5,5)cm(/H110025,5)cm
+(5,/H110025)cm(/H110025,/H110025)cm
+R1 r/H110052cm
+R3
+y
+R2
+(a) Suppose a solution containing a 511 keV gamma ray emitting radionu-
+clide with concentration 0.5 mCi/cm 3 ﬁlls R2. The object is imaged
+using a (2-D) SPECT scanner. Find expressions for gSPECT(ℓ,0 ◦) and
+gSPECT(ℓ, 180◦). (Ignore the inverse square law.)
+(b) Suppose that the radionuclide in part (a) is replaced with a positron-
+emitting radionuclide with the same concentration and the object is
+imaged using a (2-D) PET scanner. Find expressions forgPET(ℓ,0 ◦) and
+gPET(ℓ, 180◦).
+For parts (c) and (d), let μ1 = 0.3c m−1, μ2 = 0.4c m−1, and μ3 =
+0.2c m−1.
+(c) Calculate gSPECT(0, 0◦) and gSPECT(0, 180◦).
+(d) Calculate gPET(0, 0◦) and gPET(0, 180◦).
+9.2 Consider a slice of an object, as shown in Figure P9.2, with two compart-
+ments ﬁlled with radioactive liquids emitting gamma photons with energy
+150 keV.
+Figure P9.2
+Two-compartment object.
+See Problem 9.2.
+1
+2
+(/H110021, 0)
+(1, 0)
+2 cm
+1 cm
+y
+x
+The linear attenuation coefﬁcients of the liquids are given by μ1(150 keV)
+= 0.2c m−1, μ2(150 keV) = 0.4c m−1, μ1(511 keV) = 0.1c m−1, and
+μ2(511 keV) = 0.3c m−1. The concentrations f (dps per unit volume)
+of the liquids are given by f1 = 0.2 mCi/cm3 and f2 = 0.4 mCi/cm3.

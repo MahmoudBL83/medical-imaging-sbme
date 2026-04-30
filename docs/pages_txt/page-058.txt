@@ -1,0 +1,75 @@
+2.5 Properties of the Fourier Transform 39
+of the individual Fourier transforms:
+F2D(f ∗ g)(u, v) = F(u, v)G(u, v) . (2.91)
+This property, known as the convolution theorem, provides a fundamental and
+very useful link between the space (f ) and frequency (F) domains.
+EXAMPLE 2.9
+The convolution theorem provides a practical tool for computing the convolution of two
+signals, which may be difﬁcult to conduct in the spatial domain.
+Question Consider the two signals f (x, y) and g(x, y) given by
+f (x, y) = sinc (Ux, Vy) ,
+g(x, y) = sinc (Vx, Uy) ,
+where 0 < V ≤ U. What is the convolution f (x, y) ∗ g(x, y)?
+Answer From Table 2.1, we know that
+F2D{sinc(x, y)}= rect(u, v) .
+By using the scaling property of the Fourier transform, we have
+F(u, v) = F2D(f )(u, v) = 1
+UV rect
+( u
+U , v
+V
+)
+and
+G(u, v) = F2D(g)(u, v) = 1
+UV rect
+( u
+V , v
+U
+)
+.
+The convolution of f (x, y) and g(x, y)i s
+f (x, y) ∗ g(x, y) = F −1
+2D {F(u, v)G(u, v)}
+= F −1
+2D
+{ 1
+(UV)2 rect
+( u
+U , v
+V
+)
+rect
+( u
+V , v
+U
+)}
+= F −1
+2D
+{ 1
+(UV)2 rect
+( u
+V , v
+V
+)}
+= 1
+U2 F −1
+2D
+{ 1
+V2 rect
+( u
+V , v
+V
+)}
+= 1
+U2 sinc (Vx, Vy) .
+2.5.7 Product
+If F(u, v) and G(u, v) are the Fourier transforms of two signalsf (x, y) and g(x, y),
+the Fourier transform of the product f (x, y)g(x, y) equals the convolution of the
+two Fourier transforms:
+F2D(fg)(u, v) = F(u, v) ∗ G(u, v)
+=
+∫ ∞
+−∞
+∫ ∞
+−∞
+G(ξ, η)F(u − ξ, v − η) dξdη. (2.92)

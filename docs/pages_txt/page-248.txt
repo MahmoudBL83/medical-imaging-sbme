@@ -1,0 +1,52 @@
+Problems 229
+Applications and Advanced Topics
+6.24 Suppose we know that f (x, y) = ∑ n
+j=1 fjφj(x, y). Deﬁne the ith line inte-
+gral as gi =
+∫
+Li
+f (x, y)ds, i = 1, ... , m, and the ith measured line integral
+as yi = gi + vi, i = 1, ... , m, where vi is noise. Now deﬁne the follow-
+ing vectors f = [f1 ··· fn]T, y = [y1 ··· ym]T, and v = [v1 ··· vm]T. Then in
+matrix notation, our measurements are given by y = Hf + v, where H is
+an m × n matrix.
+(a) Determine Hij,t h e(i, j)th entry in H.
+(b) In an ideal world we would ﬁnd that v = 0, m = n, and H−1 exits
+In this case, f = H−1y gives an exact reconstruction of f (and we
+never even spoke of the Radon transform!). Discuss the meaning of
+the following situations:
+(1) H
+−1 exists but v ̸= 0.
+(2) v = 0 but m < n.
+(3) v = 0 but m > n.
+(c) Suppose m > n and assume that the rank ofH is n. Find an expression
+for ˆf , the vector that minimizesE = (y − Hf )T(y − Hf ). (Hint: Multiply
+out E and take the derivative with respect to each component of f
+and set each to zero. Organize your answer using matrix notation and
+solve for f .)
+(d) In a typical system we may have 256 × 256 pixels in a recon-
+structed image and 360× 512 line integral measurements. Given these
+sizes, explain the main difﬁculty with the above approach to image
+reconstruction.
+6.25 (a) Find the 2-D Radon transform gθ (ℓ), for 0 ≤ θ ≤ π/4 only, of the unit
+square indicator function:
+f (x, y) =
+{ 1 −1/2 ≤ x, y ≤ 1/2
+0 elsewhere .
+(b) Sketch gθ (ℓ)f o rs o m eθ, where 0 <θ<π / 4.
+(c) Find
+∫∞
+−∞ gθ (ℓ) dℓ.
+(d) Suppose only two projections, for θ = 0 and θ = π/2, are available.
+Find an expression for the approximate summation backprojection
+image ˆfb(x, y) (given only these two images) and make a sketch of the
+result.
+(e) In general, is it possible to reconstruct f (x, y) perfectly given only a
+ﬁnite number of projections? Explain your answer.
+6.26 A ﬁrst-generation CT scanner is used to image the object shown in
+Figure P6.2 (surrounded by air). Suppose for E > 100 keV
+μ1(E) = 1.0 exp−E[keV]/100[ keV] cm −1 ,
+μ2(E) = 2.0 exp−E[ keV]/100[ keV] cm −1.
+Suppose that each incident photon burst is polychromatic, but has only
+two photon energies, and that there are 10 6 photons at 100 keV, and
+0.5 × 106 at 140 keV.

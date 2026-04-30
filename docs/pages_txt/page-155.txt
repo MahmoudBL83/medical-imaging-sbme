@@ -1,0 +1,43 @@
+136 Chapter 5 Projection Radiography
+Figure 5.1
+(a) A general projection
+radiography system; (b) a
+ﬂuoroscopy system; and
+(c) a mammography
+system. Courtesy of GE
+Healthcare.
+(a) (b) (c)
+5.2 Instrumentation
+A diagram of a conventional projection radiographic system is shown in
+Figure 5.2. The x-ray tube generates a short pulse of x-rays as a beam that
+travels through the patient. X-ray photons that are not absorbed within the
+patient or scattered outside the region of the detector impinge upon the large
+area detector, ultimately creating an image on a sheet of ﬁlm or electronic
+detector. We now examine each element of this imaging system in detail.
+5.2.1 X-Ray Tubes
+X-rays are used in projection radiography and computed tomography because
+they penetrate the body well and their wavelengths are small enough for high-
+resolution imaging. X-rays are generated using an x-ray tube, as shown in
+Figure 5.3. The operation of an x-ray tube is shown schematically in Figure 5.4.
+A current, typically 3–5 amperes at 6–12 volts, is passed through a thin
+thoriated tungsten wire, called the ﬁlament, contained within the cathode
+assembly. Electrical resistance causes the ﬁlament to heat up and discharge
+electrons in a cloud around the ﬁlament through a process called thermionic
+emission. These electrons are now available to ﬂow (i.e., be accelerated) toward
+the anode when the anode voltage is applied, producing thetube current, which
+is referred to as the mA. The ﬁlament current directly controls the tube current
+Figure 5.2
+A conventional projection
+radiographic system.
+X-rays
+Collimator
+X-ray tube
+and
+housing
+Table
+Ionization
+chamber
+Bucky assembly
+Grid
+Cassette
+Patient

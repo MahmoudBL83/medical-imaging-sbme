@@ -1,0 +1,36 @@
+4.6 Radiation Dosimetry 129
+in air may be easily derived: 1 R = 0.87 rad. To compute the dose to a material
+other than air, the f -factor is used as a conversion,
+D = fX . (4.35)
+The f -factor is deﬁned as
+f = 0.87(μ/ρ)material
+(μ/ρ)air
+, (4.36)
+where μ is the linear attenuation coefﬁcient and ρ is the mass density of the
+material (numerator) and air (denominator). The quantity ( μ/ρ) is called the
+mass attenuation coefﬁcient.
+4.6.5 Dose Equivalent
+We are all exposed to ionizing radiation, from cosmic rays, radioactivity in
+building materials and soil, and even from radioactivity in our bodies. Although
+dose itself is a well-deﬁned quantity, different types of radiation, when delivering
+the same dose, can actually have different effects on the body. In order to
+account for this, the concept of dose equivalent, given the symbol H, is used.
+Dose equivalent is deﬁned as
+H = DQ , (4.37)
+where Q is the so-called quality factor, a property of the type of radiation
+used. For example, the quality factor of x-rays, gamma rays, electrons, and beta
+particles is Q ≈ 1, whereas that for neutrons and protons is Q ≈ 10, and for
+alpha particles is Q ≈ 20.
+Since Q ≈ 1 for radiation used in medical imaging, dose equivalent is equal
+to dose. When D is measured in rads H is considered to have the units rems.I n
+SI units, the dose is measured in grays. For a dose of 1 gray and Q = 1 the dose
+equivalent H is 1 sievert (Sv).
+EXAMPLE 4.7
+Consider a chest x-ray at an energy of 20 keV. For simplicity ignore all tissues except
+the lung.
+Question If we want to keep the absorbed dose below 10 mrads (i.e., 0.01 rads), what
+should be the limit on the exposure?
+Answer From Table 4.6, we ﬁnd that at 20 keV,
+(μ/ρ)air = 0.78 cm2/g ,
+and
+(μ/ρ)lung = 0.83 cm2/g .

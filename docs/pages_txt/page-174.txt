@@ -1,0 +1,60 @@
+5.3 Image Formation 155
+Figure 5.13
+The geometry of a
+conventional projection
+radiographic system.
+Line
+X-ray
+origin s /H11005 0
+s /H11005 r
+u
+z
+d
+Detector
+plane
+Detector
+origin
+(x, y)
+Object
+the origin. Suppose that the length of the line segment is r = r(x, y), where it is
+made explicit that the length of the line depends on the position ( x, y). Then,
+referring to (4.34), the intensity of x-rays incident on the detector at ( x, y)i s
+given by
+I(x, y) =
+∫ Emax
+0
+S0(E′)E′ exp
+{
+−
+∫ r(x,y)
+0
+μ(s;E′, x, y)ds
+}
+dE′ , (5.3)
+where S0(E) is the spectrum of the incident x-rays. Given a different line, the
+linear attenuation function is usually different since it passes through different
+materials; that is whyμ is made explicitly dependent onx and y here. Therefore,
+if we were to actually evaluate this double integral, we would have to ﬁrst
+determine the function μ(s;E, x, y) for the particular line of interest and then
+proceed with the integration. Any photon ‘‘surviving’’ its passage through the
+body then hits the detector apparatus (radiographic cassette or digital detector),
+and is either absorbed by the detector itself, is absorbed by the detector packaging
+including its lead backing, is scattered in an abitrary direction, or exits out the
+back of the detector.
+5.3.2 Geometric Effects
+X-ray images are created from a diverging beam of x-rays (see again Figure 5.13);
+this divergence produces a number of undesirable effects that arise from
+geometric considerations. These effects are multiplicative; we now study them
+in sequence.
+Inverse Square Law The inverse square lawstates that the net ﬂux of photons
+(i.e., photons per unit area) decreases as 1 /r2, where r is the distance from the
+x-ray origin. Assume that the beam intensity integrated over a small sphere
+surrounding the source is given by I
+S. Let the source-to-detector distance be d,
+as shown in Figure 5.13. Let the detector origin ( x = 0 and y = 0) be deﬁned
+by the point on the detector whose normal direction passes through the x-ray
+source. Then, assuming there is no object causing beam attenuation between the
+source and detector, the intensity at the origin of the detector
+I
+0 = IS
+4πd2 . (5.4)

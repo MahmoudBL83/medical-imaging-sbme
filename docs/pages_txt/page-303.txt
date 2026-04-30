@@ -1,0 +1,49 @@
+284 Chapter 8 Planar Scintigraphy
+where d is the collimator hole diameter and l is the collimator hole
+length. Assume h = 0.2 mm. What values of l and d should be chosen
+for the resolution and sensitivity of the collimator to be 7.8 mm and
+28.9 × 10−4, respectively?
+(c) Describe the advantage(s) and disadvantage(s) of making the holes
+longer (with no other changes to the design).
+(d) Can you compensate for the longer holes by changing the scintillator
+in any way?
+8.3 A photon that has undergone Compton scattering has both changed its
+direction of ﬂight and lost some energy. Pulse height analysis is used
+to reject these scattered photons during nuclear imaging. A pulse height
+window is symmetrically set around the photopeak of the pulse height
+spectrum. The full width of this window is usually expressed as a percent
+of the photopeak energy.
+(a) Calculate the maximum angle through which a 140 keV photon can
+be scattered and still be accepted within a 20% offset window centered
+at 150 keV.
+(b) What are the maximum acceptable scattering angles for 140 keV and
+364 keV photons if 20% windows centered at photopeak are used.
+(c) Draw a conclusion about the ‘‘directional selectivity’’ of an Anger
+camera as a function of energy.
+8.4 Consider an Anger camera with only one parallel collimator hole. The mea-
+sured intensity is the energy deposited on the camera per unit time per unit
+area. Suppose the hole diameter is d, and a point source with radioactivity
+of A is at a distance of r from the camera, directly below the hole.
+(a) What is the measured intensity?
+(b) What is the measured intensity if we double the hole diameter?
+(c) What is the measured intensity if we double the source–camera
+distance?
+8.5 Photons can penetrate (i.e., go through) a collimator’s septa, which means
+that a photon entering one collimator hole can sometimes be detected under
+another hole. Here we consider the effect of septal penetration on collima-
+tor design and collimator resolution. Let the hole diameter bed, the septal
+thickness be h, and the hole length be l. Ignore Compton scattering—that
+is, photons go straight—and ignore the scintillator thickness.
+(a) What is the minimum distancew through a septum that the photon can
+pass under the condition that it enters one hole and is detected in the
+adjacent one? Simplify your expression by assuming that l ≫ 2d + h.
+(b) Suppose we desire septal thickness to be large enough to stop 95% of
+the photons that pass through the minimum distancew. What inequal-
+ity should h satisfy? [Use the simpliﬁed expression from part (a)].
+(c) How does septal penetration inﬂuence collimator resolution?
+8.6 A radioactive pellet containing a 140 keV gamma ray emitting substance
+with activity A mCi is placed 1 m away from an Anger camera such
+that one-fourth of its total disintegrations hit the detector. Assume
+t
+1/2 = 6 hours. Assume that the Z-pulse height—that is, the photopeak—
+is equal to the energy of the incident photon.

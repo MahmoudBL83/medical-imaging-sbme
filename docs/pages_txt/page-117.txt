@@ -1,0 +1,51 @@
+98 Chapter 3 Image Quality
+where x and y are the coordinates in the image plane and ξ and η are
+coordinates in the physical domain.
+(a) If we take measurements on rectangular grids in the image plane, ﬁnd
+a way to correct the geometric distortion.
+(b) If we want to take measurements on rectangular grids in the physical
+domain, on what points should we take measurements in the image
+domain?
+3.26 Suppose the pdfs of the test result for patients with and without a disease
+are modeled as Gaussian with different mean values and variances, as
+shown in Figure 3.18. We design a diagnostic test by selecting a threshold
+t
+0. For a patient whose test value is below t0, we call it normal. If the test
+value is above t0, we call is diseased. By selecting different thresholds, we
+obtain different diagnostic tests. Denote the means and variances of the
+test result of the normal and diseased subjects as μ0, σ2
+0 , and μ1, σ2
+1 .A n d
+assume μ0 <μ 1.
+(a) Find expressions for the pdfs of the test value for normal and diseased
+subjects.
+(b) If we choose t0 = (μ0 + μ1)/2, compute the sensitivity and the speci-
+ﬁcity.
+(c) Derive an expression for the sensitivity as a function of the threshold
+value.
+(d) Derive an expression for the diagnostic accuracy as a function of the
+threshold value.
+Applications, Extensions and Advanced Topics
+3.27 Show that a medical imaging system composed of several subsystems
+will be inferior to each individual subsystem in terms of contrast and
+resolution.
+3.28 In most modern medical imaging systems, images are measured at discrete
+grid points. Interpolation is needed when we want to treat the images
+as functions deﬁned on a continuous domain. For 1-D signals, linear
+interpolation is one of the simplest. It can easily be extended to bilinear
+interpolation in 2-D and trilinear interpolation in 3-D. Linear interpolation
+is deﬁned as
+f (x) = x
+1 − x
+x1 − x0
+f (x0) + x − x0
+x1 − x0
+f (x1), x0 ≤ x ≤ x1 .
+In 2-D, bilinear interpolation for f (p)f r o mf (A), f (B), f (C), and f (D)i s
+done in the following steps (see Figure P3.3):
+• Using linear interpolation to get f (E)f r o mf (A) and f (B).
+• Using linear interpolation to get f (F) from f (C) and f (D).
+• Using linear interpolation to get f (P)f r o mf (E) and f (F).
+(a) Derive an explicit expression for f (P)u s i n gf (A), f (B), f (C), and f (D).
+(b) Prove that the results are the same whether we get f (P) from f (E) and
+f (F), or from f (G) and f (H).

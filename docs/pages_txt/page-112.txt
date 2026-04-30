@@ -1,0 +1,40 @@
+Problems 93
+Smith, N.B. and Webb, A. Introduction to Med-
+ical Imaging: Physics, Engineering, and Clini-
+cal Applications. Cambridge, UK: Cambridge
+University Press, 2011.
+Wolbarst, A.B. Physics of Radiology , 2nd ed.
+Norwalk, CT: Appleton and Lange, 2005.
+Problems
+Contrast
+3.1 Prove Equation (3.5).
+3.2 Consider an LSI medical imaging system with PSF given by
+h(x, y) = 1
+2π e−(x2+y2)/2.
+(a) Calculate the MTF associated with this system.
+(b) Plot the MTF as a function of frequency.
+(c) If a sinusoidal object f (x, y) = 2 + sin(πx) is imaged through the
+system, what is the percentage change in modulation caused by this
+system?
+3.3 Let H1 and H2 be two 1-D LTI systems whose PSFs are h1(x) and h2(x):
+h1(x) = e−x2/5, h1(x) = e−x2/10.
+(a) Find the MTF of system H1.
+(b) Find the MTF of the cascade system of H1 and H2.
+3.4 Show that the MTF of a nonisotropic medical imaging system is given by
+Equation (3.9).
+3.5 Consider an organ with a tumor is imaged. In the resulting image, the
+organ has intensity Io and the tumor has intensity It > Io. Which of the
+following methods can improve the local contrast if the organ is treated as
+background:
+(a) Multiplying the image by a constant α.
+(b) Subtracting a constant 0 < Is < Io from the image.
+Resolution
+3.6 A new imaging system with which you are experimenting has anisotropic
+properties. You measure the impulse response function as h(x, y) =
+e−π(x2+y2/4). What is the FWHM of the system as a function of polar
+angle θ?
+3.7 A medical imaging system has the following line spread function, where
+α = 2 radians/cm:
+l(x) =
+{ cos(αx) |αx|≤ π/2
+0 otherwise .

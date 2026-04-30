@@ -1,0 +1,33 @@
+Introduction
+CHAPTER
+11
+In this book, we take a signals and systems approach to the characterization of
+medical imaging. As discussed in the Overview, there are a variety of signals in
+which we are interested; ultimately, this interest stems from the biological and
+medical signiﬁcance of these signals in patients with various diseases. In practice,
+these signals are transformed into images via medical imaging modalities. In this
+chapter, we begin to consider these modalities and their characteristics.
+1.1 History of Medical Imaging
+The ﬁrst published medical image was a radiograph of the hand of Wilhelm Con-
+rad Roentgen’s wife in December 1895. Roentgen had been experimenting with
+a Crooke’s tube (the forerunner of today’s x-ray tube) and noticed that ‘‘a new
+kind of rays’’ (hence, x-rays) were emitted that could expose a photographic
+plate even when optically shielded. It was immediately obvious to Roentgen that
+his discovery could have a profound impact in medicine. Indeed, the ﬁrst clinical
+use of x-rays occurred only two months later, in February 1896. The use of x-rays
+became widespread, and both static and dynamic (ﬂuoroscopic) techniques were
+developed. Here, a static technique refers to an image taken at a single point in
+time, whereas adynamic technique refers to a series of images acquired over time.
+For many decades, these planar (i.e., two-dimensional projection) radio-
+graphs were the only medical images being produced. Ultimately, radiography
+was extended into transmission computed tomography, orcross-sectional imag-
+ing. Godfrey Hounsﬁeld produced the ﬁrst true computed tomography (CT)
+scanner in 1972 at EMI in England. He used mathematical methods for image
+reconstruction developed a decade earlier by Allan Cormack of the United
+States. Hounsﬁeld and Cormack shared the Nobel Prize in Medicine in 1979.
+Many radiologists consider CT scanning to be the most important development
+in medical imaging since Roentgen’s original discovery.
+As radiography arose from the discovery of x-rays, nuclear medicine arose
+from the discovery of radioactivity by Antoine Henri Becquerrel in 1896.
+Initially, radionuclides were used in cancer therapy rather than in medical
+5

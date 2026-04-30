@@ -1,0 +1,70 @@
+Problems 233
+Draw the trajectory on a sinogram diagram and explain whether there
+are repeated line integrals or not.
+(e) Devise a strategy based on the ideas in (c) and (d) that will scan a
+sinogram without redundancy. In order to approximately obey the
+‘‘CT rule of thumb,’’ how many rotations will be required to scan the
+sinogram? Explain.
+(f) What is so bad about this CT scanner that it should never be used to
+scan patients?
+6.32 Object motion can cause artifacts in CT images. This happens in part
+because object motion produces an observation that is not a legitimate
+Radon transform of any object. Assume parallel ray geometry.
+(a) Prove that the Radon transform of δ(x, y)i s δ(ℓ)? Sketch its sinogram.
+(b) Prove the following theorem:
+Rf (x − x0, y − y0) = g(ℓ − x0 cos θ − y0 sin θ, θ).
+(c) Find the Radon transform of δ(x − 1, y). Sketch its sinogram.
+We now assume that while the scanner acquires data over θ ∈ [0, π/2]
+the object is δ(x, y) and while the scanner acquired data over θ ∈ [π/2, π)
+the object is δ(x − 1, y). In other words, the object moved during the scan
+from (0, 0) to (1, 0).
+(d) Sketch the sinogram that is acquired by this scan.
+(e) Prove the following:
+∫ ∞
+−∞
+ℓg(ℓ, θ)dℓ = qx cos θ + qy sin θ ,
+where
+qx =
+∫ ∞
+−∞
+∫ ∞
+−∞
+xf (x, y)dxdy ,
+qy =
+∫ ∞
+−∞
+∫ ∞
+−∞
+yf (x, y)dxdy.
+(f) Show that the sinogram acquired by the scanner when the object
+moved cannot be the Radon transform of any object.
+6.33 The plot in Figure P6.5(a) shows the input energy spectrum of a polychro-
+matic x-ray source and the linear attenuation coefﬁcient of a material as a
+function of photon energy.
+Figure P6.5
+Problem 6.33.
+Input energy
+spectrum
+0.6
+0.4
+0.2
+20 40 60 80
+Photon Energy (keV)
+0.1
+1
+10
+Relative intensity of
+x-ray photons
+Linear attenuation
+coefficient (cm–1)
+Aluminum Water
+Detector
+Detector
+Projection
+Aluminum Water
+Projection
+Source
+Source
+(a) (b)
+u /H11005 270/H11034
+u /H11005 90/H11034

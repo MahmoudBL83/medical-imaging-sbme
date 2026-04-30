@@ -1,0 +1,45 @@
+5.3 Image Formation 161
+Figure 5.17
+Imaging a rectangular
+prism.
+z0
+d
+LW
+W
+Detector
+plane
+Prism
+object
+Ideal
+boundary
+X-ray
+origin
+EXAMPLE 5.4
+Consider imaging the rectangular prism shown in Figure 5.17, deﬁned by
+μ(x, y, z) = μa rect(y/W)r e c t (x/W) rect([z − z0]/L) , (5.15)
+where [see (2.16)]
+rect(x) =
+{ 1 |x|≤ 1/2
+0 otherwise .
+Question How is this rectangular prism portrayed in a radiograph?
+Answer In the center of the ﬁgure, the appearance of the image is governed by the
+inverse square law, obliquity, and path length variations, so (5.12) applies,
+Id(x, y) = I0 cos3 θ e−μaL/cos θ .
+However, when the x-rays are passing through the edges of the object, there is a loss
+of object path length and corresponding reduction in attenuation. Suppose a ray passes
+through the edge of the prism at range z′. Then, using simple trigonometry, we ﬁnd that
+the path length through the prism is [z′ − (z0 − L/2)]/cos θ. (Notice that ifz′ = z0 + L/2,
+this yields the path length L/cos θ, as above.) In this case,
+Id(x, y) = I0 cos3 θ e−μa(z′−(z0−L/2))/cos θ .
+The third possibility is that the ray misses the prism entirely. In this case,
+Id(x, y) = I0 cos3 θ.
+Given (x, y) on the detector, what is required to complete this analysis is to determine
+which of the three ranges apply and if at the edge, the value of z′. This analysis is left as
+an exercise for the reader in Problem 5.9(a).
+This example shows that divergent rays lead to edge blurring, an additional
+distortion to understand when viewing radiographs. This effect can be reduced
+by keeping the x-ray source as far from the detector plane as possible and
+keeping the object (the patient) as close to the detector as possible. For example,
+for routine chest radiography, the distance between the x-ray source and the
+detector (ﬁlm) is typically six feet. However, for other examinations (such as
+imaging extremities), the source-to-detector distance may be much smaller.

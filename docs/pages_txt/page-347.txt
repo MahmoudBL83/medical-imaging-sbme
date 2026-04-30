@@ -1,0 +1,44 @@
+328 Chapter 9 Emission Computed Tomography
+a (2-D) SPECT scanner outside the object. Compute the projected
+radioactivities gSPECT(ℓ,9 0◦) and gSPECT(ℓ, 270◦).
+(b) Now assume the radionuclide in (a) is replaced by a positron emitting
+radionuclide with the same concentration. Assume the linear atten-
+uation coefﬁcients in the three regions are the same. This time the
+body is imaged using a (2-D) PET scanner. Compute g
+PET(ℓ,9 0◦) and
+gPET(ℓ, 270◦).
+(c) Explain how to compensate for attenuation in a PET scanner in order
+to reconstruct an accurate image of the radionuclide concentration.
+Can you do the same for a SPECT scanner?
+9.10 Suppose a PET scanner has 1,000 detectors packed tightly around a circle
+of diameter of 1.5 m.
+(a) What is the approximate size (width) of each detector? Explain the
+tradeoff between using deep (long) and shallow (short) detectors.
+(b) What is the purpose of coincidence detection in PET? What is a
+nominal time interval deﬁning a coincidence ‘‘event window’’ for
+PET? Explain why is it undesirable to make the event window (1)
+smaller or (2) longer.
+(c) Assume there is no ‘‘wobbling’’ or ‘‘dichotomic’’ motion of the PET
+gantry. What is the line integral sampling interval (which has the
+symbol T in CT) in the center of the scanner? Assuming the usual
+sampling ‘‘rule of thumb’’ from CT, how many pixels would be in a
+typical PET image. Explain why motion of the PET gantry is desirable.
+(d) Explain why resolution of the PET scanner is typically worse away
+from the center of the scanner.
+9.11 A PET-CT system is shown in Figure P9.7. There are N
+0 positron anni-
+hilations at the origin of the circle whose gamma rays travel on the line
+L(0, 0
+◦). N+ of these positron annihilations reach detector A andN− reach
+detector B.
+Figure P9.7
+See Problem 9.11.
+3 cm
+Detector A
+Detector B
+2 cm1 cm
+I1 I2 I
+1 cm
+0
+/H9262circle
+/H9262square
