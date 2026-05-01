@@ -50,7 +50,7 @@ export default function Chapter5() {
                   <Activity className="w-4 h-4" /> The mAs Parameter
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                  Tube current (mA) × exposure time (s) = mAs. This controls the total number of photons (quantity). <strong>Density Maintenance</strong> dictates that if you change distance, you must compensate mAs via the inverse square law:
+                  Tube currents (mA) × exposure time (s) = mAs. This controls the total number of photons (quantity). <strong>Density Maintenance</strong> dictates that if you change distance, you must compensate mAs via the inverse square law:
                 </p>
                 <div className="bg-slate-950 p-4 rounded border border-slate-800 text-center">
                   <Latex formula="\text{mAs}_{\text{new}} = \text{mAs}_{\text{old}} \times \left(\frac{d_{\text{new}}}{d_{\text{old}}}\right)^2" displayMode />
