@@ -217,6 +217,7 @@ export default function Chapter2() {
               <div className="claude-panel p-4">
                 <div className="text-purple-300 text-sm font-semibold mb-2">Line impulse</div>
                 <Latex formula={String.raw`\delta_\ell(x,y)=\delta(x\cos\theta+y\sin\theta-\ell)`} displayMode />
+                represents the normal form (or perpendicular form) of a straight line in a 2D Cartesian plane. In this formula, \(\ell \) represents the perpendicular distance (p) from the origin to the line, and \(\theta \) is the angle the perpendicular makes with the x-axis.
               </div>
               <div className="claude-panel p-4">
                 <div className="text-emerald-300 text-sm font-semibold mb-2">Comb + sampling</div>
