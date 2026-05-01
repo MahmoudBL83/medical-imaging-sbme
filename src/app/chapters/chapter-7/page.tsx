@@ -1,218 +1,227 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Zap, History, Activity, Info, FlaskConical, Radiation, Layers, Shield } from 'lucide-react';
 import Latex from '@/components/Latex';
+import ExamTip from '@/components/ExamTip';
+import FormulaBox from '@/components/FormulaBox';
 
 export default function Chapter7() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 pb-20">
       <div className="flex items-center gap-4 text-sm text-slate-400">
-        <Link href="/" className="hover:text-white">Home</Link>
+        <Link href="/" className="hover:text-white transition-colors">Home</Link>
         <span>/</span>
         <span className="text-white">Chapter 7: Physics of Nuclear Medicine</span>
       </div>
 
-      <header className="border-b border-slate-800 pb-6">
-        <h1 className="text-4xl font-bold text-white mb-2">Chapter 7: The Physics of Nuclear Medicine</h1>
-        <p className="text-xl text-slate-400">Radioactivity, Decay Modes, Radiotracers</p>
-        <div className="flex gap-4 mt-4">
-          <span className="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Radionuclides</span>
-          <span className="bg-emerald-900 text-emerald-200 px-3 py-1 rounded-full text-sm">Poisson Statistics</span>
+      <header className="border-b border-slate-800 pb-8">
+        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">
+          Chapter 7: Physics of Nuclear Medicine
+        </h1>
+        <p className="text-xl text-slate-400 max-w-3xl leading-relaxed">
+          The chemistry of light: Understanding radioactive decay, radiotracers, and the statistics of emission imaging.
+        </p>
+        <div className="flex gap-4 mt-6">
+          <span className="bg-rose-950/40 text-rose-400 border border-rose-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <Radiation className="w-4 h-4" /> Radioactive Decay
+          </span>
+          <span className="bg-blue-950/40 text-blue-400 border border-blue-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <FlaskConical className="w-4 h-4" /> Radiotracers
+          </span>
         </div>
       </header>
 
-      <div className="claude-surface p-6">
-        <h2 className="text-xl font-bold text-white mb-4">What is this Chapter About?</h2>
-        <p className="text-slate-300">
-          Nuclear medicine images function by tracking radioactive decay. This chapter defines nuclides,
-          decay laws, and the physics behind the radiotracers used in SPECT and PET.
+      {/* Chapter Overview */}
+      <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 shadow-2xl backdrop-blur-sm">
+        <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+          <Info className="w-6 h-6 text-blue-400" /> Emission vs. Transmission
+        </h2>
+        <p className="text-slate-300 text-lg leading-relaxed mb-6">
+          Unlike X-ray imaging, where the source is outside the body, Nuclear Medicine relies on <strong>emission</strong>. We inject a radiotracer—a molecule bound to a radioactive isotope—which targets specific organs or metabolic processes. The body itself becomes the source of radiation.
         </p>
-        <div className="claude-diagram mt-4">
-          <div className="claude-kicker">From nucleus to image</div>
-          <div className="flex flex-wrap items-center gap-2 text-xs mt-2">
-            <span className="claude-chip">Radionuclide</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Decay</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Photons</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Image</span>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { title: 'Decay Modes', icon: <Zap className="w-5 h-5 text-amber-400" />, desc: 'Alpha, Beta, Gamma, Positron.' },
+            { title: 'Activity', icon: <Activity className="w-5 h-5 text-rose-400" />, desc: 'Becquerels and Curies.' },
+            { title: 'Half-Life', icon: <History className="w-5 h-5 text-blue-400" />, desc: 'Physical vs. Biological decay.' },
+            { title: 'Annihilation', icon: <Layers className="w-5 h-5 text-purple-400" />, desc: 'The physics behind PET.' },
+          ].map((item, i) => (
+            <div key={i} className="bg-slate-800/50 border border-slate-700/50 p-4 rounded-xl hover:border-slate-600 transition-colors cursor-default">
+              <div className="flex items-center gap-3 mb-2">
+                {item.icon}
+                <span className="font-bold text-white">{item.title}</span>
+              </div>
+              <p className="text-slate-400 text-sm leading-snug">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">7.1 Nomenclature and Binding Energy</h2>
+      {/* 7.3 Radioactive Decay Law */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-rose-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-rose-900/20">7.3</div>
+          <h2 className="text-3xl font-bold text-white italic">The Radioactive Decay Law</h2>
         </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Nuclides are defined by proton and neutron counts. Unstable combinations sit off the line
-              of stability and decay to increase binding energy per nucleon.
-            </p>
-          </div>
 
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Key Definitions</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Nuclide notation</div>
-                <Latex formula={String.raw`^{A}_{Z}X`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Mass defect</div>
-                <Latex formula={String.raw`\Delta m=Z m_p + N m_n - M_{nucleus}`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Binding energy</div>
-                <Latex formula={String.raw`E=\Delta m c^2`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Stability trend</div>
-                <Latex formula={String.raw`N \approx Z \ (low\ Z);\ N>Z \ (high\ Z)`} displayMode />
-              </div>
-            </div>
-            <div className="claude-note mt-4">
-              <div className="claude-kicker">Nuclear terms</div>
-              <p className="text-slate-400 text-sm">Isotopes share Z, isobars share A, isotones share N, isomers share Z and A.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">7.3 Radioactive Decay</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Decay is exponential. Activity falls by half every half-life, and the process is random
-              (Poisson) at short time scales.
-            </p>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Decay Law</h4>
-            <div className="space-y-3">
-              <div className="bg-slate-800 p-4 rounded-lg text-center">
-                <Latex formula={String.raw`N(t)=N_0 e^{-\lambda t}`} displayMode />
-                <Latex formula={String.raw`A(t)=\lambda N(t)`} displayMode />
-              </div>
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 space-y-6">
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-6">Exponential Disintegration</h3>
+              <p className="text-slate-300 leading-relaxed mb-6">
+                Radioactive decay is a stochastic (random) process. The number of atoms <Latex formula="N(t)" /> decreases exponentially over time.
+              </p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="claude-panel p-3">
-                  <div className="text-slate-300 text-xs">Half-life</div>
-                  <Latex formula={String.raw`t_{1/2}=\frac{0.693}{\lambda}`} displayMode />
+                <FormulaBox 
+                  name="Fundamental Decay Law"
+                  formula={String.raw`N(t) = N_0 e^{-\lambda t}`}
+                  symbols={[
+                    { symbol: 'N_0', meaning: 'Initial number of atoms' },
+                    { symbol: 'λ', meaning: 'Decay constant (probability per unit time)' }
+                  ]}
+                />
+                <FormulaBox 
+                  name="Physical Half-Life"
+                  formula={String.raw`T_{1/2} = \frac{\ln 2}{\lambda} \approx \frac{0.693}{\lambda}`}
+                  intuition="The time required for exactly half of the atoms to decay."
+                />
+              </div>
+            </div>
+
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                <Activity className="w-5 h-5 text-rose-400" /> Measuring Activity
+              </h3>
+              <p className="text-slate-300 text-sm mb-4">
+                Activity <Latex formula="A(t)" /> is the rate of disintegration (decays per second).
+              </p>
+              <div className="space-y-4">
+                <FormulaBox 
+                  name="Activity Equation"
+                  formula={String.raw`A(t) = \lambda N(t) = A_0 e^{-\lambda t}`}
+                  intuition="Activity follows the same exponential decay as the number of atoms."
+                />
+                <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <div className="text-rose-400 font-black text-xs uppercase">Becquerel (Bq)</div>
+                    <div className="text-white text-sm font-bold">1 decay / sec</div>
+                  </div>
+                  <div>
+                    <div className="text-blue-400 font-black text-xs uppercase">Curie (Ci)</div>
+                    <div className="text-white text-sm font-bold">3.7 x 10¹⁰ Bq</div>
+                  </div>
                 </div>
-                <div className="claude-panel p-3">
-                  <div className="text-slate-300 text-xs">Decay factor</div>
-                  <Latex formula={String.raw`DF=e^{-\lambda t}`} displayMode />
-                </div>
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Poisson statistics</div>
-                <Latex formula={String.raw`P(\Delta N=k)=\frac{(\lambda N_0\Delta t)^k}{k!}e^{-\lambda N_0\Delta t}`} displayMode />
               </div>
             </div>
           </div>
 
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Know the decay law and half-life relationship.</li>
-              <li>Activity is proportional to number of undecayed atoms.</li>
-              <li>Short-time counts are Poisson distributed.</li>
+          <aside className="space-y-6">
+            <ExamTip type="remember" title="Effective Half-Life">
+              In a patient, the tracer disappears due to <strong>Physical Decay</strong> AND <strong>Biological Excretion</strong>.
+              <br/><br/>
+              <div className="bg-slate-900 p-3 rounded border border-slate-700">
+                <Latex formula={String.raw`\frac{1}{T_e} = \frac{1}{T_p} + \frac{1}{T_b}`} displayMode />
+              </div>
+              <p className="text-[10px] text-slate-500 mt-2 italic">
+                The effective half-life is ALWAYS shorter than either the physical or biological half-life.
+              </p>
+            </ExamTip>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+              <h4 className="text-xs font-bold text-slate-500 mb-4 uppercase flex items-center gap-2">
+                <Zap className="w-4 h-4 text-amber-400" /> Statistics
+              </h4>
+              <p className="text-slate-400 text-[10px] leading-relaxed mb-4 italic">
+                Because decay is random, photon counting follows <strong>Poisson Statistics</strong>.
+              </p>
+              <div className="p-2 bg-slate-900 rounded border border-slate-800 text-center">
+                <span className="text-white text-xs font-bold">SNR = √Counts</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      {/* 7.4 Decay Modes */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-amber-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-amber-900/20">7.4</div>
+          <h2 className="text-3xl font-bold text-white italic">Decay Modes & PET Physics</h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-blue-400 mb-6 uppercase tracking-wider italic">Isomeric Transition</h3>
+            <p className="text-slate-300 text-sm leading-relaxed mb-6">
+              A metastable nucleus drops to a lower energy state by emitting a <strong>Gamma Ray</strong>. This is the primary signal for SPECT.
+            </p>
+            <div className="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+              <div className="text-blue-300 font-bold text-xs uppercase mb-2">Technetium-99m</div>
+              <p className="text-slate-400 text-xs">The workhorse of nuclear medicine. 140 keV gamma emission, 6-hour half-life.</p>
+            </div>
+          </div>
+
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-purple-400 mb-6 uppercase tracking-wider">Positron Decay & Annihilation</h3>
+            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+              A proton converts to a neutron, emitting a <strong>Positron</strong> (<Latex formula="\beta^+" />) and a neutrino.
+            </p>
+            <div className="space-y-4">
+              <div className="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                <h4 className="text-xs font-bold text-purple-300 uppercase mb-2">The Annihilation Event</h4>
+                <p className="text-slate-400 text-[10px] leading-relaxed italic">
+                  "The positron meets an electron. They annihilate, converting mass into energy: two <strong>511 keV photons</strong> emitted <strong>180° back-to-back</strong>."
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <span className="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-lg text-[10px] font-bold">PET Imaging</span>
+                <span className="bg-slate-900 text-slate-500 px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-800">Coincidence Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Chapter Summary */}
+      <section className="bg-gradient-to-br from-slate-800 to-slate-950 rounded-2xl border border-slate-700 p-10 shadow-2xl">
+        <h2 className="text-3xl font-bold text-white mb-8 uppercase tracking-widest text-center">Chapter 7 Recap</h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-4">
+            <h3 className="text-rose-400 font-bold uppercase tracking-widest text-sm">Key Principles</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Emission imaging uses tracers injected into the patient.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Physical and biological half-lives combine for effective half-life.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Positron annihilation produces two 511 keV photons.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Gamma rays originate from the nucleus.</li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-orange-400 font-bold uppercase tracking-widest text-sm">Likely Exam Tasks</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Calculate Activity A(t) after a specific time interval.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Derive the effective half-life for a patient study.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Explain the 511 keV energy requirement for PET.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Convert between Becquerels and Curies.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">7.4 Modes of Radioactive Decay</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Decay Modes</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-blue-300 font-medium">Alpha</div>
-                <p className="text-slate-400 text-xs mt-2">Heavy, short range, not used for imaging.</p>
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-purple-300 font-medium">Beta minus</div>
-                <Latex formula={String.raw`n\rightarrow p + e^- + \bar{\nu}`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-blue-300 font-medium">Beta plus</div>
-                <Latex formula={String.raw`p\rightarrow n + e^+ + \nu`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-purple-300 font-medium">Electron capture</div>
-                <Latex formula={String.raw`p+e^-\rightarrow n+\nu`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-emerald-300 font-medium">Gamma / isomeric</div>
-                <p className="text-slate-400 text-xs mt-2">Excited nucleus releases a gamma photon.</p>
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-amber-300 font-medium">Annihilation</div>
-                <Latex formula={String.raw`e^+ + e^- \rightarrow 2\gamma\ (511\ \text{keV})`} displayMode />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h5 className="text-white font-semibold mb-2">Common Radionuclides</h5>
-            <div className="claude-panel p-3">
-              <ul className="text-slate-400 text-sm space-y-1">
-                <li>Tc-99m: 6 hours, 140 keV gamma (SPECT).</li>
-                <li>F-18: 110 minutes, positron (PET).</li>
-                <li>I-131: therapy and thyroid imaging.</li>
-              </ul>
-            </div>
-            <div className="claude-note mt-3">
-              <div className="claude-kicker">Monoenergetic emissions</div>
-              <p className="text-slate-400 text-sm">Single-energy gammas enable energy windowing to reject scatter.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">Chapter 7 Summary</h2>
-        </div>
-        <div className="p-6 grid md:grid-cols-2 gap-6">
+      <div className="flex justify-between pt-10 border-t border-slate-800">
+        <Link href="/chapters/chapter-6" className="flex items-center gap-3 text-slate-400 hover:text-white group transition-all">
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> 
           <div>
-            <h3 className="text-blue-400 font-semibold mb-3">Key Equations</h3>
-            <ul className="text-slate-300 text-sm space-y-3">
-              <li><Latex formula={String.raw`N(t)=N_0 e^{-\lambda t}`} /></li>
-              <li><Latex formula={String.raw`t_{1/2}=0.693/\lambda`} /></li>
-              <li><Latex formula={String.raw`A=\lambda N`} /></li>
-            </ul>
+            <div className="text-xs uppercase text-slate-500">Previous</div>
+            <div className="font-bold">Chapter 6: Computed Tomography</div>
           </div>
-          <div>
-            <h3 className="text-purple-400 font-semibold mb-3">High-Yield Concepts</h3>
-            <ul className="text-slate-300 text-sm space-y-2">
-              <li>Decay modes determine which modality can image the tracer.</li>
-              <li>Half-life must match imaging time and patient safety.</li>
-              <li>Poisson statistics govern counting noise.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div className="flex justify-between">
-        <Link href="/chapters/chapter-6" className="flex items-center gap-2 text-slate-400 hover:text-white">
-          <ArrowLeft className="w-4 h-4" /> Chapter 6
         </Link>
-        <Link href="/chapters/chapter-8" className="flex items-center gap-2 text-blue-400 hover:text-white">
-          Chapter 8: Planar Scintigraphy <ArrowRight className="w-4 h-4" />
+        <Link href="/chapters/chapter-8" className="flex items-center gap-3 text-blue-400 hover:text-white text-right group transition-all">
+          <div>
+            <div className="text-xs uppercase text-slate-500">Next</div>
+            <div className="font-bold">Chapter 8: Planar Scintigraphy</div>
+          </div>
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </div>

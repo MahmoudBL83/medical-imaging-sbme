@@ -16,7 +16,7 @@ export default function Chapter5() {
       </div>
 
       <header className="border-b border-slate-800 pb-8">
-        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight">
+        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">
           Chapter 5: Projection Radiography
         </h1>
         <p className="text-xl text-slate-400 max-w-3xl leading-relaxed">
