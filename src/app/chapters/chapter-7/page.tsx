@@ -1,229 +1,206 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Zap, History, Activity, Info, FlaskConical, Radiation, Layers, Shield } from 'lucide-react';
+import { Target, Zap, Activity, Info, Radiation, Layers, Shield, Clock, BoxIcon } from 'lucide-react';
 import Latex from '@/components/Latex';
-import ExamTip from '@/components/ExamTip';
-import FormulaBox from '@/components/FormulaBox';
 
 export default function Chapter7() {
   return (
-    <div className="space-y-10 pb-20">
+    <div className="space-y-12 pb-20 fade-up">
+      {/* Navigation */}
       <div className="flex items-center gap-4 text-sm text-slate-400">
         <Link href="/" className="hover:text-white transition-colors">Home</Link>
         <span>/</span>
-        <span className="text-white">Chapter 7: Physics of Nuclear Medicine</span>
+        <span className="text-white">Chapter 7</span>
       </div>
 
-      <header className="border-b border-slate-800 pb-8">
-        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">
-          Chapter 7: Physics of Nuclear Medicine
+      {/* Header */}
+      <header className="border-b border-slate-800 pb-8 stagger">
+        <span className="claude-kicker text-red-500">Section 7.1 - 7.6</span>
+        <h1 className="text-5xl font-extrabold text-white mt-3 mb-6 tracking-tight">
+          Physics of Nuclear Medicine
         </h1>
         <p className="text-xl text-slate-400 max-w-3xl leading-relaxed">
-          The chemistry of light: Understanding radioactive decay, radiotracers, and the statistics of emission imaging.
+          Delving into the energetic heart of matter. We explore radioactive decay mechanisms,
+          the mathematics of halflives, and the behavior of the radiotracers that power
+          scintigraphy, SPECT, and PET imaging.
         </p>
         <div className="flex gap-4 mt-6">
-          <span className="bg-rose-950/40 text-rose-400 border border-rose-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
-            <Radiation className="w-4 h-4" /> Radioactive Decay
+          <span className="claude-chip">
+            <Radiation className="w-4 h-4 mr-2 inline text-red-400" /> Radioactivity
           </span>
-          <span className="bg-blue-950/40 text-blue-400 border border-blue-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
-            <FlaskConical className="w-4 h-4" /> Radiotracers
+          <span className="claude-chip">
+            <Clock className="w-4 h-4 mr-2 inline text-amber-400" /> Decay Law
           </span>
         </div>
       </header>
 
-      {/* Chapter Overview */}
-      <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 shadow-2xl backdrop-blur-sm">
-        <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-          <Info className="w-6 h-6 text-blue-400" /> Emission vs. Transmission
-        </h2>
-        <p className="text-slate-300 text-lg leading-relaxed mb-6">
-          Unlike X-ray imaging, where the source is outside the body, Nuclear Medicine relies on <strong>emission</strong>. We inject a radiotracer—a molecule bound to a radioactive isotope—which targets specific organs or metabolic processes. The body itself becomes the source of radiation.
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            { title: 'Decay Modes', icon: <Zap className="w-5 h-5 text-amber-400" />, desc: 'Alpha, Beta, Gamma, Positron.' },
-            { title: 'Activity', icon: <Activity className="w-5 h-5 text-rose-400" />, desc: 'Becquerels and Curies.' },
-            { title: 'Half-Life', icon: <History className="w-5 h-5 text-blue-400" />, desc: 'Physical vs. Biological decay.' },
-            { title: 'Annihilation', icon: <Layers className="w-5 h-5 text-purple-400" />, desc: 'The physics behind PET.' },
-          ].map((item, i) => (
-            <div key={i} className="bg-slate-800/50 border border-slate-700/50 p-4 rounded-xl hover:border-slate-600 transition-colors cursor-default">
-              <div className="flex items-center gap-3 mb-2">
-                {item.icon}
-                <span className="font-bold text-white">{item.title}</span>
-              </div>
-              <p className="text-slate-400 text-sm leading-snug">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* Atomic Nomenclature & Mass Defect */}
+      <section className="space-y-6 stagger">
+        <span className="claude-kicker text-amber-400">Atomic Properties</span>
+        <h2 className="text-3xl font-bold text-white">Nuclides & The Mass Defect</h2>
 
-      {/* 7.3 Radioactive Decay Law */}
-      <section className="space-y-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="bg-rose-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-rose-900/20">7.3</div>
-          <h2 className="text-3xl font-bold text-white italic">The Radioactive Decay Law</h2>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 space-y-6">
-            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
-              <h3 className="text-xl font-semibold text-white mb-6">Exponential Disintegration</h3>
-              <p className="text-slate-300 leading-relaxed mb-6">
-                Radioactive decay is a stochastic (random) process. The number of atoms <Latex formula="N(t)" /> decreases exponentially over time.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <FormulaBox 
-                  name="Fundamental Decay Law"
-                  formula={String.raw`N(t) = N_0 e^{-\lambda t}`}
-                  symbols={[
-                    { symbol: 'N_0', meaning: 'Initial number of atoms' },
-                    { symbol: 'λ', meaning: 'Decay constant (probability per unit time)' }
-                  ]}
-                />
-                <FormulaBox 
-                  name="Physical Half-Life"
-                  formula={String.raw`T_{1/2} = \frac{\ln 2}{\lambda} \approx \frac{0.693}{\lambda}`}
-                  intuition="The time required for exactly half of the atoms to decay."
-                />
-              </div>
-            </div>
-
-            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
-              <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-rose-400" /> Measuring Activity
-              </h3>
-              <p className="text-slate-300 text-sm mb-4">
-                Activity <Latex formula="A(t)" /> is the rate of disintegration (decays per second).
-              </p>
-              <div className="space-y-4">
-                <FormulaBox 
-                  name="Activity Equation"
-                  formula={String.raw`A(t) = \lambda N(t) = A_0 e^{-\lambda t}`}
-                  intuition="Activity follows the same exponential decay as the number of atoms."
-                />
-                <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-rose-400 font-black text-xs uppercase">Becquerel (Bq)</div>
-                    <div className="text-white text-sm font-bold">1 decay / sec</div>
-                  </div>
-                  <div>
-                    <div className="text-blue-400 font-black text-xs uppercase">Curie (Ci)</div>
-                    <div className="text-white text-sm font-bold">3.7 x 10¹⁰ Bq</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8">
+          <div className="claude-surface p-8 space-y-6">
+             <p className="text-slate-300 text-sm leading-relaxed mb-6">
+               Atoms are defined by their mass number (<Latex formula="A = Z + N" />) where <Latex formula="Z" /> is protons and <Latex formula="N" /> is neutrons. Nuclei are kept stable by the strong nuclear force overcoming electrostatic repulsion. 
+             </p>
+             <h3 className="font-bold text-amber-400 text-sm uppercase tracking-widest mb-3 border-b border-slate-700 pb-2">Terminology</h3>
+             <ul className="text-sm text-slate-300 space-y-3">
+               <li><strong className="text-white font-mono bg-slate-800 px-1 rounded">Isotopes</strong>: Same protons (Z), different neutrons. (e.g., C-12 vs C-14)</li>
+               <li><strong className="text-white font-mono bg-slate-800 px-1 rounded">Isobars</strong>: Same mass number (A), different protons.</li>
+               <li><strong className="text-white font-mono bg-slate-800 px-1 rounded">Isotones</strong>: Same neutrons (N), different protons.</li>
+               <li><strong className="text-white font-mono bg-slate-800 px-1 rounded">Isomers</strong>: Same nucleus (same A, Z, N), different energy state (e.g., Tc-99m vs Tc-99).</li>
+             </ul>
           </div>
 
-          <aside className="space-y-6">
-            <ExamTip type="remember" title="Effective Half-Life">
-              In a patient, the tracer disappears due to <strong>Physical Decay</strong> AND <strong>Biological Excretion</strong>.
-              <br/><br/>
-              <div className="bg-slate-900 p-3 rounded border border-slate-700">
-                <Latex formula={String.raw`\frac{1}{T_e} = \frac{1}{T_p} + \frac{1}{T_b}`} displayMode />
-              </div>
-              <p className="text-[10px] text-slate-500 mt-2 italic">
-                The effective half-life is ALWAYS shorter than either the physical or biological half-life.
-              </p>
-            </ExamTip>
-
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
-              <h4 className="text-xs font-bold text-slate-500 mb-4 uppercase flex items-center gap-2">
-                <Zap className="w-4 h-4 text-amber-400" /> Statistics
-              </h4>
-              <p className="text-slate-400 text-[10px] leading-relaxed mb-4 italic">
-                Because decay is random, photon counting follows <strong>Poisson Statistics</strong>.
-              </p>
-              <div className="p-2 bg-slate-900 rounded border border-slate-800 text-center">
-                <span className="text-white text-xs font-bold">SNR = √Counts</span>
-              </div>
-            </div>
-          </aside>
+          <div className="claude-panel p-8 border-l-4 border-l-red-500 flex flex-col justify-center bg-red-950/10">
+             <h3 className="text-red-400 font-bold mb-4 flex items-center gap-2">
+               <Zap className="w-4 h-4" /> The Mass Defect
+             </h3>
+             <p className="text-xs text-slate-400 leading-relaxed mb-6">
+               The actual mass of a nucleus is <em>less</em> than the sum of its individual protons and neutrons. This missing mass (<Latex formula="\Delta m" />) has been converted into nuclear binding energy holding the atom together.
+             </p>
+             <div className="bg-slate-900 border border-red-900/50 p-4 rounded text-center shadow-inner">
+                <Latex formula="E = \Delta m c^2" displayMode />
+             </div>
+             <p className="text-[10px] text-slate-500 mt-4 text-center">
+               Nuclei with excess energy shed it through radioactive decay to return to the Line of Stability.
+             </p>
+          </div>
         </div>
       </section>
 
-      {/* 7.4 Decay Modes */}
-      <section className="space-y-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="bg-amber-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-amber-900/20">7.4</div>
-          <h2 className="text-3xl font-bold text-white italic">Decay Modes & PET Physics</h2>
-        </div>
+      {/* Law of Radioactive Decay */}
+      <section className="space-y-6 stagger mt-12">
+        <span className="claude-kicker text-blue-400">Kinetics</span>
+        <h2 className="text-3xl font-bold text-white">The Decay Law & Activity</h2>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-xl font-bold text-blue-400 mb-6 uppercase tracking-wider italic">Isomeric Transition</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-6">
-              A metastable nucleus drops to a lower energy state by emitting a <strong>Gamma Ray</strong>. This is the primary signal for SPECT.
-            </p>
-            <div className="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
-              <div className="text-blue-300 font-bold text-xs uppercase mb-2">Technetium-99m</div>
-              <p className="text-slate-400 text-xs">The workhorse of nuclear medicine. 140 keV gamma emission, 6-hour half-life.</p>
+        <div className="claude-surface p-8">
+          <p className="text-slate-300 text-sm leading-relaxed mb-8">
+            Radioactive decay is a fundamentally random process modeled by Poisson statistics. 
+            The number of atoms decaying per unit time is proportional to the total number of unstable atoms present (<Latex formula="N" />), scaled by a decay constant <Latex formula="\lambda" />.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 relative overflow-hidden flex flex-col justify-center">
+               <h4 className="text-blue-400 font-bold text-sm mb-4 uppercase tracking-widest text-center">Population Equation</h4>
+               <div className="bg-slate-950 py-4 rounded border border-slate-800 shadow-inner">
+                 <Latex formula="\frac{dN}{dt} = -\lambda N \quad \Longrightarrow \quad N(t) = N_0 e^{-\lambda t}" displayMode />
+               </div>
+               <p className="text-xs text-slate-400 leading-relaxed mt-6">
+                 Here, <Latex formula="N_0" /> is the starting quantity at <Latex formula="t=0" />.
+               </p>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 relative overflow-hidden flex flex-col justify-center">
+               <h4 className="text-emerald-400 font-bold text-sm mb-4 uppercase tracking-widest text-center">Activity & Half-Life</h4>
+               <div className="bg-slate-950 py-4 rounded border border-slate-800 shadow-inner mb-4">
+                 <Latex formula="A(t) = \lambda N(t) = A_0 e^{-\lambda t}" displayMode />
+               </div>
+               <div className="bg-slate-950 py-4 rounded border border-slate-800 shadow-inner">
+                 <Latex formula="T_{1/2} = \frac{\ln(2)}{\lambda} \approx \frac{0.693}{\lambda}" displayMode />
+               </div>
             </div>
           </div>
-
-          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-xl font-bold text-purple-400 mb-6 uppercase tracking-wider">Positron Decay & Annihilation</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
-              A proton converts to a neutron, emitting a <strong>Positron</strong> (<Latex formula="\beta^+" />) and a neutrino.
-            </p>
-            <div className="space-y-4">
-              <div className="bg-slate-950 p-4 rounded-xl border border-slate-800">
-                <h4 className="text-xs font-bold text-purple-300 uppercase mb-2">The Annihilation Event</h4>
-                <p className="text-slate-400 text-[10px] leading-relaxed italic">
-                  "The positron meets an electron. They annihilate, converting mass into energy: two <strong>511 keV photons</strong> emitted <strong>180° back-to-back</strong>."
+          
+          <div className="mt-8 bg-blue-950/20 p-4 rounded-xl border border-blue-900/50 flex gap-4 items-start">
+             <Info className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+             <div className="text-sm">
+                <strong className="text-blue-400 block mb-1">Poisson Counting Statistics</strong>
+                <p className="text-slate-300">
+                  Because decay events are random, if we measure <Latex formula="N" /> counts from a detector, the variance is exactly equal to the mean. Therefore, the standard deviation is <Latex formula="\sigma = \sqrt{N}" />. To lower SNR and get higher resolution images, we must collect vastly more counts.
                 </p>
-              </div>
-              <div className="flex gap-2">
-                <span className="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-lg text-[10px] font-bold">PET Imaging</span>
-                <span className="bg-slate-900 text-slate-500 px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-800">Coincidence Detection</span>
-              </div>
-            </div>
+             </div>
           </div>
         </div>
       </section>
 
-      {/* Chapter Summary */}
-      <section className="bg-gradient-to-br from-slate-800 to-slate-950 rounded-2xl border border-slate-700 p-10 shadow-2xl">
-        <h2 className="text-3xl font-bold text-white mb-8 uppercase tracking-widest text-center">Chapter 7 Recap</h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-4">
-            <h3 className="text-rose-400 font-bold uppercase tracking-widest text-sm">Key Principles</h3>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Emission imaging uses tracers injected into the patient.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Physical and biological half-lives combine for effective half-life.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Positron annihilation produces two 511 keV photons.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div> Gamma rays originate from the nucleus.</li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-orange-400 font-bold uppercase tracking-widest text-sm">Likely Exam Tasks</h3>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Calculate Activity A(t) after a specific time interval.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Derive the effective half-life for a patient study.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Explain the 511 keV energy requirement for PET.</li>
-              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Convert between Becquerels and Curies.</li>
-            </ul>
-          </div>
+      {/* Modes of Decay Flow */}
+      <section className="claude-surface p-10 stagger mt-8 border-t-[3px] border-purple-900">
+        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+           <Layers className="text-purple-400" /> Modes of Decay
+        </h2>
+        
+        <p className="text-slate-300 text-sm leading-relaxed mb-8">
+          Unstable nuclides attempt to reach stability through distinct quantum mechanisms depending on whether they have too many neutrons, too many protons, or simply too much bulk energy.
+        </p>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+           <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 relative">
+              <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2 py-1 rounded-bl-lg">Neutron Heavy</div>
+              <h3 className="text-white font-bold mb-3 mt-4"><Latex formula="\beta^-" /> Decay</h3>
+              <p className="text-xs text-slate-400 mb-4 leading-relaxed h-16">
+                 A neutron converts into a proton, ejecting an electron (<Latex formula="\beta^-" />) and an antineutrino.
+              </p>
+              <div className="border-t border-slate-800 pt-4 text-center">
+                 <Latex formula="{}^{A}_{Z}X \rightarrow \! {}^{A}_{Z+1}Y + e^- \!+ \bar{\nu}" />
+              </div>
+           </div>
+
+           <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 relative">
+              <div className="absolute top-0 right-0 bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-1 rounded-bl-lg">Proton Heavy</div>
+              <h3 className="text-white font-bold mb-3 mt-4"><Latex formula="\beta^+" /> Decay (PET)</h3>
+              <p className="text-xs text-slate-400 mb-4 leading-relaxed h-16">
+                 A proton converts into a neutron, ejecting a positron (<Latex formula="\beta^+" />). The positron later annihilates with an electron yielding two 511 keV gamma rays.
+              </p>
+              <div className="border-t border-slate-800 pt-4 text-center">
+                 <Latex formula="{}^{A}_{Z}X \rightarrow \! {}^{A}_{Z-1}Y + e^+ \!+ \nu" />
+              </div>
+           </div>
+
+           <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 relative border-b-4 border-b-purple-500 shadow-[0_4px_15px_rgba(168,85,247,0.15)]">
+              <div className="absolute top-0 right-0 bg-purple-500/20 text-purple-400 text-[10px] font-bold px-2 py-1 rounded-bl-lg">High Energy State</div>
+              <h3 className="text-white font-bold mb-3 mt-4">Isomeric Transition</h3>
+              <p className="text-xs text-slate-400 mb-4 leading-relaxed h-16">
+                 A metastable nucleus drops to the ground state by emitting a pure gamma ray, with no change to Z or N. <strong>Crucial for SPECT.</strong>
+              </p>
+              <div className="border-t border-slate-800 pt-4 text-center">
+                 <Latex formula="{}^{A}_{Z}X^m \rightarrow \! {}^{A}_{Z}X + \gamma" />
+              </div>
+           </div>
         </div>
       </section>
 
-      <div className="flex justify-between pt-10 border-t border-slate-800">
-        <Link href="/chapters/chapter-6" className="flex items-center gap-3 text-slate-400 hover:text-white group transition-all">
-          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> 
-          <div>
-            <div className="text-xs uppercase text-slate-500">Previous</div>
-            <div className="font-bold">Chapter 6: Computed Tomography</div>
-          </div>
-        </Link>
-        <Link href="/chapters/chapter-8" className="flex items-center gap-3 text-blue-400 hover:text-white text-right group transition-all">
-          <div>
-            <div className="text-xs uppercase text-slate-500">Next</div>
-            <div className="font-bold">Chapter 8: Planar Scintigraphy</div>
-          </div>
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </Link>
-      </div>
+      {/* Radiotracers */}
+      <section className="space-y-6 stagger mt-12 pb-10">
+        <span className="claude-kicker text-pink-400">Clinical Agents</span>
+        <h2 className="text-3xl font-bold text-white">Medical Radiotracers</h2>
+
+        <div className="claude-panel p-8 space-y-6 bg-gradient-to-br from-slate-900 to-slate-950">
+           <p className="text-slate-300 text-sm leading-relaxed mb-2">
+             Ideal diagnostic radiotracers share specific characteristics to maximize image quality while minimizing patient dose:
+           </p>
+           <ul className="text-xs text-slate-400 space-y-2 list-disc pl-6 mb-6">
+             <li>Emit purely Gamma rays (Alpha/Beta particles cause severe tissue damage without exiting the body).</li>
+             <li>Optimal decay energy (100–200 keV) to easily escape the body but still interact fully with detectors.</li>
+             <li>Physical half-life matching the biological examination time (hours, not days).</li>
+           </ul>
+
+           <div className="grid md:grid-cols-2 gap-4">
+             <div className="bg-slate-800/50 p-4 border border-slate-700 rounded-xl">
+                <h4 className="font-bold text-pink-400 mb-2 flex items-center justify-between">
+                  Technetium-99m (Tc-99m)
+                  <span className="text-[10px] bg-slate-900 px-2 py-1 rounded">SPECT</span>
+                </h4>
+                <p className="text-xs text-slate-300 mb-1"><strong>Energy:</strong> 140 keV (Almost ideal)</p>
+                <p className="text-xs text-slate-300 mb-1"><strong>Half-life:</strong> 6.02 Hours</p>
+                <p className="text-xs text-slate-400 mt-2 line-clamp-2">Eluted daily from a Molybdenum-99 generator. Decays purely via Isomeric Transition.</p>
+             </div>
+             
+             <div className="bg-slate-800/50 p-4 border border-slate-700 rounded-xl">
+                <h4 className="font-bold text-blue-400 mb-2 flex items-center justify-between">
+                  Fluorine-18 (F-18 / FDG)
+                  <span className="text-[10px] bg-slate-900 px-2 py-1 rounded">PET</span>
+                </h4>
+                <p className="text-xs text-slate-300 mb-1"><strong>Interaction:</strong> 511 keV annihilation pairs</p>
+                <p className="text-xs text-slate-300 mb-1"><strong>Half-life:</strong> 110 Minutes</p>
+                <p className="text-xs text-slate-400 mt-2 line-clamp-2">Attached to glucose (FDG) to map rapid cellular metabolism, especially powerful for oncology.</p>
+             </div>
+           </div>
+        </div>
+      </section>
+
     </div>
   );
 }
