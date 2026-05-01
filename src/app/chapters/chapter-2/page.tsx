@@ -519,6 +519,56 @@ export default function Chapter2() {
         </div>
       </section>
 
+      <section className="claude-surface overflow-hidden">
+        <div className="p-6 border-b border-slate-800">
+          <h2 className="text-2xl font-bold text-white">2.7 Circular Symmetry and the Hankel Transform</h2>
+        </div>
+        <div className="p-6 space-y-6">
+          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
+            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
+            <p className="text-slate-300 leading-relaxed">
+              When an imaging system (or an object like a spherical tumor) looks exactly the same from all angles, we say it is circularly symmetric. In this case, we don't need a full 2D Fourier transform. We can use a 1D transform based on the radius alone. This is called the Hankel transform. 
+            </p>
+          </div>
+
+          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
+            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
+            <div className="space-y-4">
+              <p className="text-slate-300 text-sm">
+                A 2D signal <Latex formula="f(x,y)" /> is circularly symmetric if it can be written purely as a function of the radius <Latex formula="r = \sqrt{x^2 + y^2}" />. Thus, <Latex formula="f(x,y) = f(r)" />. Its Fourier transform <Latex formula="F(u,v)" /> will also be circularly symmetric and can be written as <Latex formula="F(q)" /> where <Latex formula="q = \sqrt{u^2 + v^2}" />.
+              </p>
+              <div className="bg-slate-800 p-4 rounded-lg text-center">
+                <Latex formula={String.raw`F(q) = \mathcal{H}\{f(r)\} = 2\pi \int_{0}^{\infty} f(r) J_0(2\pi q r) r \, dr`} displayMode />
+              </div>
+              <p className="text-slate-300 text-sm">
+                Where <Latex formula="J_0" /> is the zero-order Bessel function of the first kind.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4 mt-4">
+                <div className="claude-panel p-4">
+                  <div className="text-blue-300 text-sm font-semibold mb-2">Gaussian Transform Pair</div>
+                  <p className="text-slate-400 text-xs mb-2">The Hankel transform of a Gaussian is another Gaussian.</p>
+                  <Latex formula={String.raw`\mathcal{H}\{e^{-\pi r^2}\} = e^{-\pi q^2}`} displayMode />
+                </div>
+                <div className="claude-panel p-4">
+                  <div className="text-purple-300 text-sm font-semibold mb-2">Unit Disk / Jinc Function</div>
+                  <p className="text-slate-400 text-xs mb-2">The transform of a circular "rect" (unit disk) is the "jinc" function.</p>
+                  <Latex formula={String.raw`\mathcal{H}\{\text{rect}(r)\} = \text{jinc}(q) = \frac{J_1(\pi q)}{2q}`} displayMode />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
+            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
+            <ul className="text-slate-300 text-sm space-y-1">
+              <li>Just like rect $\leftrightarrow$ sinc in 1D, rect(r) $\leftrightarrow$ jinc(q) in 2D circularly symmetric systems.</li>
+              <li>The Gaussian is its own Hankel transform.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="claude-surface">
         <div className="p-6 border-b border-slate-800">
           <h2 className="text-2xl font-bold text-white">Chapter 2 Summary</h2>
