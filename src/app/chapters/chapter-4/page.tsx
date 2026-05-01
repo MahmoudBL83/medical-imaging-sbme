@@ -1,471 +1,322 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Atom, Zap, Shield, Activity, Info, AlertCircle, Layers } from 'lucide-react';
 import Latex from '@/components/Latex';
+import ExamTip from '@/components/ExamTip';
+import FormulaBox from '@/components/FormulaBox';
 
 export default function Chapter4() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 pb-20">
       <div className="flex items-center gap-4 text-sm text-slate-400">
-        <Link href="/" className="hover:text-white">Home</Link>
+        <Link href="/" className="hover:text-white transition-colors">Home</Link>
         <span>/</span>
         <span className="text-white">Chapter 4: Physics of Radiography</span>
       </div>
 
-      <header className="border-b border-slate-800 pb-6">
-        <h1 className="text-4xl font-bold text-white mb-2">Chapter 4: Physics of Radiography</h1>
-        <p className="text-xl text-slate-400">Atoms, Radiation, Attenuation, Dosimetry</p>
-        <div className="flex gap-4 mt-4">
-          <span className="bg-orange-900 text-orange-200 px-3 py-1 rounded-full text-sm">X-ray Physics</span>
-          <span className="bg-emerald-900 text-emerald-200 px-3 py-1 rounded-full text-sm">Safety</span>
+      <header className="border-b border-slate-800 pb-8">
+        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">
+          Chapter 4: Physics of Radiography
+        </h1>
+        <p className="text-xl text-slate-400 max-w-3xl leading-relaxed">
+          The fundamental building blocks: atomic structure, radiation interactions, and the mathematics of attenuation and dose.
+        </p>
+        <div className="flex gap-4 mt-6">
+          <span className="bg-blue-950/40 text-blue-400 border border-blue-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <Atom className="w-4 h-4" /> Atomic Physics
+          </span>
+          <span className="bg-emerald-950/40 text-emerald-400 border border-emerald-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <Shield className="w-4 h-4" /> Radiation Safety
+          </span>
         </div>
       </header>
 
-      <div className="claude-surface p-6">
-        <h2 className="text-xl font-bold text-white mb-4">What is this Chapter About?</h2>
-        <p className="text-slate-300 leading-relaxed">
-          This chapter builds the physical foundation for every x-ray based modality. You will connect atomic
-          structure to ionization, learn how radiation interacts with matter, derive attenuation, and track
-          how dose is defined and measured. This is where image contrast and patient safety become physics.
+      {/* Chapter Overview */}
+      <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 shadow-2xl backdrop-blur-sm">
+        <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+          <Info className="w-6 h-6 text-blue-400" /> Physical Foundation
+        </h2>
+        <p className="text-slate-300 text-lg leading-relaxed mb-6">
+          Every X-ray image is the result of billions of individual photon-atom interactions. Understanding these physics is critical for controlling image contrast, reducing noise, and ensuring patient safety through proper dosimetry.
         </p>
-        <div className="claude-diagram mt-4">
-          <div className="claude-kicker">From atoms to images</div>
-          <div className="flex flex-wrap items-center gap-2 text-xs mt-2">
-            <span className="claude-chip">Atoms</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Radiation</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Attenuation</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Dose</span>
-          </div>
-        </div>
-        <div className="claude-note mt-4">
-          <div className="claude-kicker">Study note</div>
-          <p className="text-slate-400 text-sm">Write the governing equation first, then explain its clinical meaning.</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { title: 'Atomic Theory', icon: <Atom className="w-5 h-5 text-blue-400" />, desc: 'Shell models and binding energies.' },
+            { title: 'Ionization', icon: <Zap className="w-5 h-5 text-amber-400" />, desc: 'Energy transfer mechanisms.' },
+            { title: 'Interactions', icon: <Layers className="w-5 h-5 text-purple-400" />, desc: 'Photoelectric vs Compton effects.' },
+            { title: 'Dosimetry', icon: <Activity className="w-5 h-5 text-emerald-400" />, desc: 'Risk, dose, and Sv/Gy units.' },
+          ].map((item, i) => (
+            <div key={i} className="bg-slate-800/50 border border-slate-700/50 p-4 rounded-xl hover:border-slate-600 transition-colors cursor-default">
+              <div className="flex items-center gap-3 mb-2">
+                {item.icon}
+                <span className="font-bold text-white">{item.title}</span>
+              </div>
+              <p className="text-slate-400 text-sm leading-snug">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.1 Atoms and Electrons</h2>
+      {/* 4.1 - 4.2 Atoms & Energy */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-blue-900/20">4.1</div>
+          <h2 className="text-3xl font-bold text-white">Atoms and Energy States</h2>
         </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Electrons live in shells around the nucleus. The shell structure sets the binding energy and
-              determines how x-rays interact with matter. High atomic number materials have tightly bound
-              electrons and attenuate x-rays strongly.
-            </p>
-          </div>
 
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Shell model</div>
-              <div className="flex items-center justify-center py-4">
-                <div className="relative w-32 h-32">
-                  <div className="absolute inset-0 border-2 border-dashed border-slate-600 rounded-full"></div>
-                  <div className="absolute inset-4 border border-slate-500 rounded-full"></div>
-                  <div className="absolute inset-8 border border-slate-400 rounded-full"></div>
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-orange-500 rounded-full"></div>
-                </div>
-              </div>
-              <div className="text-center text-slate-400 text-xs">K, L, M shells with increasing radius</div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Electrons per shell</div>
-                <Latex formula={String.raw`N_{\text{max}}=2n^2`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Atomic number</div>
-                <Latex formula={String.raw`Z=\text{number of protons}`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Mass number</div>
-                <Latex formula={String.raw`A=\text{protons} + \text{neutrons}`} displayMode />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>High Z materials attenuate x-rays more strongly.</li>
-              <li>Shell structure drives characteristic radiation and K-edge behavior.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.2 Ionization and Excitation</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Ionization removes an electron completely; excitation lifts it to a higher shell. Both create
-              a vacancy that can generate secondary radiation. Ionization is the source of biological risk.
-            </p>
-          </div>
-
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Electron shell transitions</div>
-              <div className="grid md:grid-cols-2 gap-4 mt-3">
-                <div className="claude-panel p-3">
-                  <div className="text-blue-300 text-sm font-semibold">Excitation</div>
-                  <div className="mt-3 h-10 bg-gradient-to-t from-slate-700 to-blue-500/70 rounded"></div>
-                  <p className="text-slate-400 text-xs mt-2">Electron moves to a higher shell.</p>
-                </div>
-                <div className="claude-panel p-3">
-                  <div className="text-purple-300 text-sm font-semibold">Ionization</div>
-                  <div className="mt-3 h-10 bg-gradient-to-t from-slate-700 to-purple-500/70 rounded"></div>
-                  <p className="text-slate-400 text-xs mt-2">Electron escapes the atom.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Photon energy</div>
-                <Latex formula={String.raw`E=h\nu`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Wavelength</div>
-                <Latex formula={String.raw`\lambda=\frac{c}{\nu}`} displayMode />
-              </div>
-            </div>
-            <div className="claude-note mt-4">
-              <div className="claude-kicker">Diagnostic range</div>
-              <p className="text-slate-400 text-sm">Typical x-ray photon energies are about 25 to 500 keV.</p>
-            </div>
-          </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Ionization creates ions and can damage DNA.</li>
-              <li>Excitation does not eject the electron but can produce characteristic x-rays.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.3 Forms of Ionizing Radiation</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Ionizing radiation is either particulate (massive charged particles) or electromagnetic
-              (photons such as x-rays and gamma rays). EM radiation dominates diagnostic imaging.
-            </p>
-          </div>
-
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Two families</div>
-              <div className="grid md:grid-cols-2 gap-4 mt-3">
-                <div className="claude-panel p-3">
-                  <div className="text-blue-300 font-semibold text-sm">Particulate</div>
-                  <p className="text-slate-400 text-xs mt-2">Alpha, beta, heavy charged particles</p>
-                </div>
-                <div className="claude-panel p-3">
-                  <div className="text-purple-300 font-semibold text-sm">Electromagnetic</div>
-                  <p className="text-slate-400 text-xs mt-2">X-rays and gamma rays (photons)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Relativistic mass</div>
-                <Latex formula={String.raw`m=\frac{m_0}{\sqrt{1-v^2/c^2}}`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-sm mb-2">Photon energy scale</div>
-                <Latex formula={String.raw`E=h\nu \quad (\text{keV to MeV range})`} displayMode />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>EM radiation is massless; particulate has mass and charge.</li>
-              <li>Diagnostic x-rays are in the tens to hundreds of keV range.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.4 Radiation Interactions</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Electrons lose energy by collisions and radiation. Photons interact mainly via the photoelectric
-              effect and Compton scatter at diagnostic energies. These processes drive contrast and noise.
-            </p>
-          </div>
-
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Interaction map</div>
-              <div className="flex flex-wrap items-center gap-2 text-xs mt-2">
-                <span className="claude-chip">Electron</span>
-                <span className="text-slate-400">-&gt;</span>
-                <span className="claude-chip">Collisional</span>
-                <span className="text-slate-400">/</span>
-                <span className="claude-chip">Radiative</span>
-                <span className="text-slate-400">|</span>
-                <span className="claude-chip">Photon</span>
-                <span className="text-slate-400">-&gt;</span>
-                <span className="claude-chip">Photoelectric</span>
-                <span className="text-slate-400">+</span>
-                <span className="claude-chip">Compton</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid lg:grid-cols-2 gap-4">
-              <div className="claude-panel p-4">
-                <div className="text-blue-300 text-sm font-semibold mb-2">Photoelectric effect</div>
-                <p className="text-slate-400 text-xs">Photon absorbed, electron ejected; drives contrast.</p>
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-purple-300 text-sm font-semibold mb-2">Compton scattering</div>
-                <Latex
-                  formula={String.raw`h\nu' = \frac{h\nu}{1 + (1-\cos\theta)\,h\nu/(m_0 c^2)}`}
-                  displayMode
-                />
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-emerald-300 text-sm font-semibold mb-2">Pair production</div>
-                <Latex formula={String.raw`E_{\text{threshold}}=1.02\,\text{MeV}`} displayMode />
-                <p className="text-slate-400 text-xs mt-2">Not relevant for diagnostic x-rays.</p>
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-amber-300 text-sm font-semibold mb-2">Electron radiation</div>
-                <p className="text-slate-400 text-xs">Characteristic x-rays and bremsstrahlung are radiative losses.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Photoelectric effect increases contrast but raises dose.</li>
-              <li>Compton scatter reduces contrast and adds noise.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.5 Attenuation of EM Radiation</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              As an x-ray beam travels through tissue, photons are removed by interactions. The loss is
-              exponential and depends on material and energy.
-            </p>
-          </div>
-
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Exponential loss</div>
-              <div className="flex items-center justify-center gap-4 py-4">
-                <span className="claude-chip">I0</span>
-                <span className="text-slate-400">-&gt;</span>
-                <span className="claude-chip">Material</span>
-                <span className="text-slate-400">-&gt;</span>
-                <span className="claude-chip">I</span>
-              </div>
-              <div className="text-center text-slate-400 text-xs">
-                <Latex formula={String.raw`I=I_0 e^{-\mu x}`} />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="space-y-3">
-              <div className="bg-slate-800 p-4 rounded-lg text-center">
-                <Latex formula={String.raw`N=N_0 e^{-\mu x}`} displayMode />
-                <Latex formula={String.raw`I=I_0 e^{-\mu x}`} displayMode />
-              </div>
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 space-y-6">
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-4 italic">The Shell Model</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Electrons are restricted to discrete shells (K, L, M, N). The binding energy of these shells determines how much energy is needed to eject an electron (ionization).
+              </p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="claude-panel p-3">
-                  <div className="text-slate-300 text-xs">Half value layer</div>
-                  <Latex formula={String.raw`HVL=\frac{\ln 2}{\mu}`} displayMode />
-                </div>
-                <div className="claude-panel p-3">
-                  <div className="text-slate-300 text-xs">Fluence and intensity</div>
-                  <Latex formula={String.raw`\phi=\int_0^{\infty} S(E')\,dE'`} displayMode />
-                  <Latex formula={String.raw`I=\int_0^{\infty} E' S(E')\,dE'`} displayMode />
+                <FormulaBox 
+                  name="Max Electrons per Shell"
+                  formula={String.raw`N_{max} = 2n^2`}
+                  symbols={[{ symbol: 'n', meaning: 'Shell number (K=1, L=2...)' }]}
+                />
+                <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+                  <h4 className="text-white font-bold text-sm mb-2 uppercase tracking-tighter">Energy Scale</h4>
+                  <ul className="text-slate-400 text-xs space-y-2">
+                    <li><strong className="text-blue-300">Ground State:</strong> Lowest energy configuration.</li>
+                    <li><strong className="text-amber-300">Excitation:</strong> Lifting to a higher shell.</li>
+                    <li><strong className="text-red-400">Ionization:</strong> Total removal of electron.</li>
+                  </ul>
                 </div>
               </div>
-              <div className="bg-slate-800 p-4 rounded-lg text-center">
-                <Latex formula={String.raw`S(E)=S_0(E) e^{-\mu(E) x}`} displayMode />
-                <Latex
-                  formula={String.raw`S(x;E)=S_0(E)\exp\left(-\int_0^x \mu(x';E)\,dx'\right)`}
-                  displayMode
+            </div>
+
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-amber-400" /> Electromagnetic Radiation
+              </h3>
+              <div className="space-y-4">
+                <FormulaBox 
+                  name="Photon Energy"
+                  formula={String.raw`E = h\nu = \frac{hc}{\lambda}`}
+                  symbols={[
+                    { symbol: 'h', meaning: "Planck's constant" },
+                    { symbol: 'ν', meaning: 'Frequency' },
+                    { symbol: 'λ', meaning: 'Wavelength' }
+                  ]}
+                  intuition="Energy is directly proportional to frequency and inversely proportional to wavelength."
+                />
+                <p className="text-slate-400 text-sm">
+                  <strong className="text-white">Diagnostic Range:</strong> X-ray photons used in imaging typically range from <strong className="text-blue-400">25 keV to 124 keV</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside className="space-y-6">
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+              <h4 className="text-xs font-bold text-slate-500 mb-4 uppercase">Particulate Physics</h4>
+              <p className="text-slate-400 text-xs leading-relaxed mb-4">
+                Because electrons in X-ray tubes travel at a significant fraction of light speed, we must use <strong>Relativistic Mass</strong>.
+              </p>
+              <Latex formula={String.raw`m = \frac{m_0}{\sqrt{1 - v^2/c^2}}`} displayMode />
+              <div className="mt-4 p-3 bg-blue-900/20 border border-blue-800 rounded text-[10px] text-blue-300 italic">
+                "Wait... massless photons act like particles, and massive electrons act like waves. Welcome to Quantum Mechanics."
+              </div>
+            </div>
+
+            <ExamTip type="remember" title="Tungsten Binding">
+              In diagnostic X-ray tubes (Tungsten target), the <strong>K-shell binding energy is ~69.5 keV</strong>. Electrons must have at least this much energy to eject a K-shell electron and create characteristic radiation.
+            </ExamTip>
+          </aside>
+        </div>
+      </section>
+
+      {/* 4.4 Radiation Interactions */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-purple-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-purple-900/20">4.4</div>
+          <h2 className="text-3xl font-bold text-white">Radiation Interactions with Matter</h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-blue-400 mb-4 uppercase tracking-wider">The Photoelectric Effect</h3>
+            <p className="text-slate-300 mb-6">
+              The incident photon is <strong>completely absorbed</strong> by a bound electron, which is then ejected. This is the primary driver of <strong className="text-white">image contrast</strong>.
+            </p>
+            <div className="bg-slate-800 p-4 rounded-lg border border-slate-700 mb-6">
+              <p className="text-xs text-slate-400 mb-1">Probability (P) is proportional to:</p>
+              <Latex formula={String.raw`P \propto \frac{Z^3}{E^3}`} displayMode />
+            </div>
+            <ExamTip type="tip">
+              Because probability depends on <strong>Z³</strong>, bone (high Z) absorbs much more than soft tissue (low Z), creating the bright shadows we see on X-rays.
+            </ExamTip>
+          </div>
+
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-amber-400 mb-4 uppercase tracking-wider">Compton Scattering</h3>
+            <p className="text-slate-300 mb-6">
+              The photon <strong>collides</strong> with an outer-shell electron, loses some energy, and <strong>deflects</strong> at an angle. This is the primary driver of <strong className="text-white">image noise and scatter</strong>.
+            </p>
+            <FormulaBox 
+              name="Compton Shift Formula"
+              formula={String.raw`h\nu' = \frac{h\nu}{1 + (1-\cos\theta)\frac{h\nu}{m_0 c^2}}`}
+              intuition="The energy of the scattered photon depends on the deflection angle θ. 180° backscatter yields the maximum energy loss."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 4.5 Attenuation */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-emerald-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-emerald-900/20">4.5</div>
+          <h2 className="text-3xl font-bold text-white">Attenuation Law</h2>
+        </div>
+
+        <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-6">The Exponential Decay</h3>
+              <p className="text-slate-300 mb-6">
+                As a beam passes through matter, the number of photons decreases exponentially. This assumes a <strong>monoenergetic</strong> beam and a <strong>homogeneous</strong> slab.
+              </p>
+              <div className="space-y-6">
+                <FormulaBox 
+                  name="Fundamental Attenuation Law"
+                  formula={String.raw`I = I_0 e^{-\mu x}`}
+                  symbols={[
+                    { symbol: 'I', meaning: 'Transmitted intensity' },
+                    { symbol: 'μ', meaning: 'Linear attenuation coefficient' },
+                    { symbol: 'x', meaning: 'Thickness of material' }
+                  ]}
+                />
+                <FormulaBox 
+                  name="Half-Value Layer (HVL)"
+                  formula={String.raw`HVL = \frac{\ln 2}{\mu} \approx \frac{0.693}{\mu}`}
+                  intuition="The thickness required to reduce the beam intensity by exactly 50%."
                 />
               </div>
-              <div className="claude-note">
-                <div className="claude-kicker">Beam hardening</div>
-                <p className="text-slate-400 text-sm">Lower energy photons are removed first, raising the mean energy.</p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                <h4 className="text-white font-bold mb-4 flex items-center gap-2">
+                  <Layers className="w-5 h-5 text-blue-400" /> Beam Hardening
+                </h4>
+                <p className="text-slate-400 text-sm leading-relaxed italic mb-4">
+                  "Real X-ray beams are polyenergetic. As they pass through a patient, the low-energy 'soft' photons are filtered out first, leaving only the high-energy 'hard' photons."
+                </p>
+                <div className="flex gap-2">
+                  <span className="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-lg text-[10px] font-bold">Increases mean energy</span>
+                  <span className="bg-orange-900/30 text-orange-300 px-3 py-1 rounded-lg text-[10px] font-bold">Changes HVL</span>
+                </div>
+              </div>
+              
+              <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
+                <h4 className="text-amber-400 font-bold text-xs uppercase mb-3">Material Densities (kg/m³)</h4>
+                <div className="space-y-2">
+                  {[
+                    { name: 'Air', value: '1.29' },
+                    { name: 'Fat', value: '916' },
+                    { name: 'Water', value: '1,000' },
+                    { name: 'Muscle', value: '1,040' },
+                    { name: 'Bone', value: '1,650' }
+                  ].map((m, i) => (
+                    <div key={i} className="flex justify-between items-center py-1 border-b border-slate-800 last:border-0">
+                      <span className="text-slate-400 text-xs">{m.name}</span>
+                      <span className="text-white font-mono text-xs font-bold">{m.value}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Memorize the exponential attenuation law and HVL.</li>
-              <li>Know monoenergetic vs polyenergetic differences.</li>
+      {/* 4.6 Dosimetry */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-red-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-red-900/20">4.6</div>
+          <h2 className="text-3xl font-bold text-white">Radiation Dosimetry</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:bg-slate-800/50 transition-colors">
+            <h3 className="text-blue-400 font-bold text-sm mb-4 uppercase">Exposure (X)</h3>
+            <p className="text-slate-400 text-xs mb-4">Quantity of ionization produced in <strong>air</strong>.</p>
+            <div className="bg-slate-950 p-3 rounded font-mono text-center text-blue-300 mb-4">C / kg (or Roentgen)</div>
+            <Latex formula={String.raw`D = f \cdot X`} />
+            <p className="text-[10px] text-slate-500 mt-2">f is the f-factor converting air exposure to tissue dose.</p>
+          </div>
+
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:bg-slate-800/50 transition-colors">
+            <h3 className="text-purple-400 font-bold text-sm mb-4 uppercase">Absorbed Dose (D)</h3>
+            <p className="text-slate-400 text-xs mb-4">Energy deposited per unit <strong>mass of tissue</strong>.</p>
+            <div className="bg-slate-950 p-3 rounded font-mono text-center text-purple-300 mb-4">Gray (Gy) = 1 J / kg</div>
+          </div>
+
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:bg-slate-800/50 transition-colors">
+            <h3 className="text-emerald-400 font-bold text-sm mb-4 uppercase">Equivalent Dose (H)</h3>
+            <p className="text-slate-400 text-xs mb-4">Dose weighted by <strong>radiation type</strong> (Q factor).</p>
+            <div className="bg-slate-950 p-3 rounded font-mono text-center text-emerald-300 mb-4">Sievert (Sv)</div>
+            <Latex formula={String.raw`H = Q \cdot D`} />
+            <p className="text-[10px] text-slate-500 mt-2">For X-rays, Q = 1, so 1 Gy = 1 Sv.</p>
+          </div>
+        </div>
+
+        <div className="bg-red-950/20 border border-red-900/50 p-6 rounded-2xl">
+          <h4 className="text-red-400 font-bold mb-2 flex items-center gap-2">
+            <AlertCircle className="w-5 h-5" /> Effective Dose (Deff)
+          </h4>
+          <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            The sum of doses to specific organs, weighted by their <strong>radiosensitivity (wj)</strong>. This is the single best measure of overall biological risk.
+          </p>
+          <div className="bg-slate-900 p-4 rounded-lg text-center border border-slate-700">
+            <Latex formula={String.raw`D_{eff} = \sum_j H_j \cdot w_j`} displayMode />
+          </div>
+        </div>
+      </section>
+
+      {/* Chapter Summary */}
+      <section className="bg-gradient-to-br from-slate-800 to-slate-950 rounded-2xl border border-slate-700 p-10 shadow-2xl">
+        <h2 className="text-3xl font-bold text-white mb-8">Chapter 4 Recap</h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-4">
+            <h3 className="text-blue-400 font-bold uppercase tracking-widest text-sm">Key Principles</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Binding energy sets the threshold for ionization.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Photoelectric is absorption; Compton is scattering.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div> μ and Z³ drive differential attenuation (contrast).</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Effective dose Sv is the metric for cancer risk.</li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-orange-400 font-bold uppercase tracking-widest text-sm">Likely Exam Tasks</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Calculate HVL given linear attenuation μ.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Predict mAs change for distance (Inverse Square).</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Solve for Compton scattered photon energy hν'.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Explain why K-edges are useful for contrast agents.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">4.6 Radiation Dosimetry</h2>
-        </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Dose quantifies how much energy radiation deposits in tissue. Exposure is measured in air;
-              dose, equivalent dose, and effective dose tie that exposure to biological risk.
-            </p>
-          </div>
-
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Dose ladder</div>
-              <div className="grid md:grid-cols-4 gap-3 mt-3">
-                <div className="claude-panel p-3 text-center">
-                  <div className="text-blue-300 text-xs">Exposure</div>
-                  <div className="text-slate-400 text-xs">C/kg or R</div>
-                </div>
-                <div className="claude-panel p-3 text-center">
-                  <div className="text-purple-300 text-xs">Absorbed dose</div>
-                  <div className="text-slate-400 text-xs">Gy (J/kg)</div>
-                </div>
-                <div className="claude-panel p-3 text-center">
-                  <div className="text-emerald-300 text-xs">Equivalent dose</div>
-                  <div className="text-slate-400 text-xs">Sv</div>
-                </div>
-                <div className="claude-panel p-3 text-center">
-                  <div className="text-amber-300 text-xs">Effective dose</div>
-                  <div className="text-slate-400 text-xs">Sv (risk)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid lg:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Exposure conversion</div>
-                <Latex formula={String.raw`D=fX`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Equivalent dose</div>
-                <Latex formula={String.raw`H=QD`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Effective dose</div>
-                <Latex formula={String.raw`D_{\text{eff}}=\sum_j H_j w_j`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Inverse square law</div>
-                <Latex formula={String.raw`X\propto \frac{1}{d^2}`} displayMode />
-              </div>
-            </div>
-            <div className="claude-note mt-4">
-              <div className="claude-kicker">LET</div>
-              <p className="text-slate-400 text-sm">Higher LET means more energy per unit length and more damage.</p>
-            </div>
-          </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Know units: X in C/kg or R, D in Gy, H and effective dose in Sv.</li>
-              <li>Be able to compute dose using the f-factor and inverse square law.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">Chapter 4 Summary</h2>
-        </div>
-        <div className="p-6 grid md:grid-cols-2 gap-6">
+      <div className="flex justify-between pt-10 border-t border-slate-800">
+        <Link href="/chapters/chapter-3" className="flex items-center gap-3 text-slate-400 hover:text-white group transition-all">
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> 
           <div>
-            <h3 className="text-blue-400 font-semibold mb-3">Key Equations</h3>
-            <ul className="text-slate-300 text-sm space-y-3">
-              <li><Latex formula={String.raw`E=h\nu`} /></li>
-              <li><Latex formula={String.raw`I=I_0 e^{-\mu x}`} /></li>
-              <li><Latex formula={String.raw`HVL=\frac{\ln 2}{\mu}`} /></li>
-              <li><Latex formula={String.raw`D=fX`} /></li>
-              <li><Latex formula={String.raw`D_{\text{eff}}=\sum_j H_j w_j`} /></li>
-            </ul>
+            <div className="text-xs uppercase text-slate-500">Previous</div>
+            <div className="font-bold">Chapter 3: Image Quality</div>
           </div>
-          <div>
-            <h3 className="text-purple-400 font-semibold mb-3">High-Yield Concepts</h3>
-            <ul className="text-slate-300 text-sm space-y-2">
-              <li>Photoelectric vs Compton determines contrast and scatter.</li>
-              <li>Attenuation depends on energy and material composition.</li>
-              <li>Dosimetry links exposure to biological risk.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div className="flex justify-between">
-        <Link href="/chapters/chapter-3" className="flex items-center gap-2 text-slate-400 hover:text-white">
-          <ArrowLeft className="w-4 h-4" /> Chapter 3
         </Link>
-        <Link href="/chapters/chapter-5" className="flex items-center gap-2 text-blue-400 hover:text-white">
-          Chapter 5: Projection Radiography <ArrowRight className="w-4 h-4" />
+        <Link href="/chapters/chapter-5" className="flex items-center gap-3 text-blue-400 hover:text-white text-right group transition-all">
+          <div>
+            <div className="text-xs uppercase text-slate-500">Next</div>
+            <div className="font-bold">Chapter 5: Projection Radiography</div>
+          </div>
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </div>

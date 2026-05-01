@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="min-h-screen bg-slate-950 font-sans">
+      <body className="min-h-screen bg-slate-950 font-sans theme-claude">
         <div className="flex min-h-screen">
           <Sidebar />
           <main className="flex-1 p-4 lg:p-8 overflow-y-auto">

@@ -1,276 +1,340 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Zap, Target, Activity, Info, Settings, Maximize, Layers, AlertCircle } from 'lucide-react';
 import Latex from '@/components/Latex';
+import ExamTip from '@/components/ExamTip';
+import FormulaBox from '@/components/FormulaBox';
 
 export default function Chapter6() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 pb-20">
       <div className="flex items-center gap-4 text-sm text-slate-400">
-        <Link href="/" className="hover:text-white">Home</Link>
+        <Link href="/" className="hover:text-white transition-colors">Home</Link>
         <span>/</span>
         <span className="text-white">Chapter 6: Computed Tomography</span>
       </div>
 
-      <header className="border-b border-slate-800 pb-6">
-        <h1 className="text-4xl font-bold text-white mb-2">Chapter 6: Computed Tomography</h1>
-        <p className="text-xl text-slate-400">Instrumentation, Reconstruction, Image Quality</p>
-        <div className="flex gap-4 mt-4">
-          <span className="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Reconstruction</span>
-          <span className="bg-emerald-900 text-emerald-200 px-3 py-1 rounded-full text-sm">Math-Heavy</span>
+      <header className="border-b border-slate-800 pb-8">
+        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">
+          Chapter 6: Computed Tomography
+        </h1>
+        <p className="text-xl text-slate-400 max-w-3xl leading-relaxed">
+          From line integrals to cross-sectional slices. The physics of scanners and the mathematics of the Radon transform.
+        </p>
+        <div className="flex gap-4 mt-6">
+          <span className="bg-cyan-950/40 text-cyan-400 border border-cyan-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <Zap className="w-4 h-4" /> Reconstruction Math
+          </span>
+          <span className="bg-emerald-950/40 text-emerald-400 border border-emerald-800/50 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+            <Settings className="w-4 h-4" /> Scanner Generations
+          </span>
         </div>
       </header>
 
-      <div className="claude-surface p-6">
-        <h2 className="text-xl font-bold text-white mb-4">What is this Chapter About?</h2>
-        <p className="text-slate-300">
-          CT converts x-ray line integrals into cross-sectional images. You learn the scanner geometry,
-          the Radon transform, and the filtered backprojection pipeline that reconstructs slices.
+      {/* Intro */}
+      <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 shadow-2xl backdrop-blur-sm">
+        <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+          <Info className="w-6 h-6 text-cyan-400" /> The CT Revolution
+        </h2>
+        <p className="text-slate-300 text-lg leading-relaxed mb-6">
+          CT (Computed Tomography) overcomes the primary limitation of projection radiography: <strong>superposition</strong>. By rotating the X-ray source around the patient, we can mathematically invert the line integrals to reconstruct a 3D volume as a series of axial slices.
         </p>
-        <div className="claude-diagram mt-4">
-          <div className="claude-kicker">CT pipeline</div>
-          <div className="flex flex-wrap items-center gap-2 text-xs mt-2">
-            <span className="claude-chip">Projections</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Filter</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Backproject</span>
-            <span className="text-slate-400">-&gt;</span>
-            <span className="claude-chip">Slice</span>
-          </div>
-        </div>
-        <div className="claude-note mt-4">
-          <div className="claude-kicker">Study note</div>
-          <p className="text-slate-400 text-sm">Expect derivations: line integrals, Fourier slice theorem, and filters.</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { title: 'Generations', icon: <Settings className="w-5 h-5 text-cyan-400" />, desc: 'Evolution from 1G to 7G scanners.' },
+            { title: 'HU Units', icon: <Target className="w-5 h-5 text-blue-400" />, desc: 'Standardizing attenuation values.' },
+            { title: 'Radon Math', icon: <Maximize className="w-5 h-5 text-purple-400" />, desc: 'Filtered Backprojection and FT.' },
+            { title: 'Artifacts', icon: <Activity className="w-5 h-5 text-emerald-400" />, desc: 'Beam hardening and metal streaks.' },
+          ].map((item, i) => (
+            <div key={i} className="bg-slate-800/50 border border-slate-700/50 p-4 rounded-xl hover:border-slate-600 transition-colors cursor-default">
+              <div className="flex items-center gap-3 mb-2">
+                {item.icon}
+                <span className="font-bold text-white">{item.title}</span>
+              </div>
+              <p className="text-slate-400 text-sm leading-snug">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">6.2 CT Instrumentation</h2>
+      {/* 6.2 Instrumentation */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-cyan-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-cyan-900/20">6.2</div>
+          <h2 className="text-3xl font-bold text-white">Instrumentation & Generations</h2>
         </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              CT generations evolved from translate-rotate to rotate-only and multirow acquisition. Modern
-              systems use fan-beam geometry, slip rings for continuous rotation, and helical scanning.
-            </p>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 space-y-6">
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-6 italic">The Evolution of Speed</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { gen: '1G', tech: 'Translate-Rotate', desc: 'Single detector, parallel beam. 5+ min per slice.' },
+                  { gen: '2G', tech: 'Narrow Fan Beam', desc: 'Small detector array, translate-rotate. Faster.' },
+                  { gen: '3G', tech: 'Rotate-Rotate', desc: 'Wide fan beam, large detector arc. Most common today.' },
+                  { gen: '4G', tech: 'Stationary Ring', desc: 'Rotating source, fixed detector ring (360°).' },
+                  { gen: '6G', tech: 'Helical / Spiral', desc: 'Continuous rotation + table motion. Uses slip rings.' },
+                  { gen: '7G', tech: 'Multi-Detector (MDCT)', desc: 'Multiple rows (64, 128, 256+) for volumetric imaging.' }
+                ].map((g, i) => (
+                  <div key={i} className="p-4 bg-slate-800/40 border border-slate-700 rounded-lg">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-cyan-400 font-black text-lg">{g.gen}</span>
+                      <span className="text-slate-500 text-[10px] font-bold uppercase">{g.tech}</span>
+                    </div>
+                    <p className="text-slate-300 text-xs leading-relaxed">{g.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-4">Hardware Constraints</h3>
+              <ul className="space-y-4 text-slate-300 text-sm">
+                <li className="flex gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 shrink-0"></div>
+                  <span><strong className="text-white">Slip Rings:</strong> Electromechanical brushes that allow the gantry to rotate indefinitely without tangling cables. Essential for Helical CT.</span>
+                </li>
+                <li className="flex gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 shrink-0"></div>
+                  <span><strong className="text-white">Bow-Tie Filters:</strong> Specifically shaped to equalize the X-ray intensity reaching the detector, accounting for the body's cylindrical shape.</span>
+                </li>
+                <li className="flex gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 shrink-0"></div>
+                  <span><strong className="text-white">X-ray Tube Cooling:</strong> CT tubes operate at high power for long durations, requiring massive oil-cooled heat exchangers.</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Visual Explanation</h4>
-            <div className="claude-diagram">
-              <div className="claude-kicker">Generations</div>
-              <div className="grid md:grid-cols-2 gap-4 mt-3 text-sm">
-                <div className="claude-panel p-3">
-                  <div className="text-blue-300 font-medium">1G</div>
-                  <p className="text-slate-400 text-xs">Single detector, translate-rotate, parallel beam.</p>
+          <aside className="space-y-6">
+            <ExamTip type="remember" title="Why CT is Monoenergetic?">
+              Image reconstruction math assumes X-rays are <strong>monoenergetic</strong>. In practice, we use heavy filtration (Cu + Al) to "harden" the beam and minimize beam hardening artifacts.
+            </ExamTip>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+              <h4 className="text-xs font-bold text-slate-500 mb-4 uppercase flex items-center gap-2">
+                <Layers className="w-4 h-4" /> Slice Thickness
+              </h4>
+              <p className="text-slate-400 text-[10px] leading-relaxed mb-4">
+                Controlled by collimator slit width and detector row grouping.
+              </p>
+              <div className="bg-slate-900 p-3 rounded-lg border border-slate-700 text-center">
+                <span className="text-white text-xs font-bold">Standard: 1 mm - 10 mm</span>
+              </div>
+              <p className="text-[10px] text-slate-500 mt-3 italic">
+                Thinner slices = higher resolution but <strong className="text-red-400 font-bold uppercase tracking-tighter">higher noise</strong>.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      {/* 6.3 Hounsfield Units */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-blue-900/20">6.3</div>
+          <h2 className="text-3xl font-bold text-white">CT Numbers & Sinograms</h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-wider">Hounsfield Units (HU)</h3>
+              <p className="text-slate-300 text-sm mb-6 leading-relaxed">
+                Because different scanners use different effective energies (kVp), the raw attenuation μ varies. We normalize these values using water as a reference.
+              </p>
+              <FormulaBox 
+                name="CT Number Calculation"
+                formula={String.raw`h = 1000 \cdot \frac{\mu - \mu_{water}}{\mu_{water}}`}
+                symbols={[
+                  { symbol: 'h', meaning: 'CT number in Hounsfield Units' },
+                  { symbol: 'μ', meaning: 'Measured linear attenuation of pixel' }
+                ]}
+              />
+              <div className="grid grid-cols-3 gap-2 mt-4 text-center">
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                  <div className="text-blue-400 font-black">-1000</div>
+                  <div className="text-slate-500 text-[8px] uppercase">Air</div>
                 </div>
-                <div className="claude-panel p-3">
-                  <div className="text-purple-300 font-medium">2G</div>
-                  <p className="text-slate-400 text-xs">Detector array, translate-rotate, fan beam.</p>
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                  <div className="text-blue-400 font-black">0</div>
+                  <div className="text-slate-500 text-[8px] uppercase">Water</div>
                 </div>
-                <div className="claude-panel p-3">
-                  <div className="text-blue-300 font-medium">3G</div>
-                  <p className="text-slate-400 text-xs">Rotate-only, fan beam, detector arc.</p>
-                </div>
-                <div className="claude-panel p-3">
-                  <div className="text-purple-300 font-medium">4G/5G</div>
-                  <p className="text-slate-400 text-xs">Stationary ring or electron beam (EBCT).</p>
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                  <div className="text-blue-400 font-black">+1000</div>
+                  <div className="text-slate-500 text-[8px] uppercase">Bone</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Technical Depth</h4>
-            <div className="grid lg:grid-cols-2 gap-4">
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-sm mb-2">Key components</div>
-                <ul className="text-slate-400 text-xs space-y-1">
-                  <li>X-ray tube with fan-beam collimation.</li>
-                  <li>Detector arrays and slip ring for continuous rotation.</li>
-                  <li>Multi-detector rows for volumetric data.</li>
-                </ul>
+          <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-wider italic">The Sinogram</h3>
+            <p className="text-slate-300 text-sm mb-6 leading-relaxed">
+              If we plot the 1D projections <Latex formula="g(\ell, \theta)" /> as a 2D image where one axis is position <Latex formula="\ell" /> and the other is angle <Latex formula="\theta" />, a single point in space traces out a <strong>sine wave</strong>.
+            </p>
+            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-32 h-32 border-2 border-slate-600 rounded-full flex items-center justify-center mb-2">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_#22d3ee]"></div>
+                </div>
+                <p className="text-slate-500 text-[10px] uppercase">Point Object trace</p>
               </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-sm mb-2">Slice thickness</div>
-                <p className="text-slate-400 text-xs">Set by collimation and detector height; thinner slices mean more noise.</p>
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-sm mb-2">Helical pitch</div>
-                <Latex formula={String.raw`\zeta = z_{j+M}-z_j`} displayMode />
-                <p className="text-slate-400 text-xs mt-2">Pitch controls table motion per rotation.</p>
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-sm mb-2">Dual-energy CT</div>
-                <p className="text-slate-400 text-xs">Two spectra differentiate materials and reduce beam hardening.</p>
+              <ArrowRight className="mx-6 text-slate-700" />
+              <div className="w-32 h-32 bg-gradient-to-t from-slate-900 via-slate-700 to-slate-900 border border-slate-700 rounded-lg flex items-center justify-center">
+                <span className="text-cyan-400 text-4xl font-bold opacity-20">~</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">6.3 Projections and CT Numbers</h2>
+      {/* 6.3.3 Reconstruction Math */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-purple-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-purple-900/20">6.3.3</div>
+          <h2 className="text-3xl font-bold text-white italic">Reconstruction Mathematics</h2>
         </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Each projection is a line integral of attenuation. Stacking projections over angle creates a
-              sinogram. CT numbers normalize attenuation across scanners.
-            </p>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 space-y-6">
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-purple-400 mb-6 uppercase tracking-widest">Fourier Slice Theorem</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                The core logic of CT: The 1D Fourier Transform of a projection at angle θ is exactly equal to a radial line through the 2D Fourier Transform of the original image.
+              </p>
+              <div className="bg-slate-900 p-6 rounded-xl border border-slate-700">
+                <Latex formula={String.raw`G(\rho, \theta) = F(\rho \cos \theta, \rho \sin \theta)`} displayMode />
+              </div>
+            </div>
+
+            <div className="bg-slate-900/40 border border-slate-800 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-widest">Filtered Backprojection (FBP)</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                Backprojecting raw data results in a blurry image (convolved with <Latex formula="1/r" />). To fix this, we apply a <strong>Ramp Filter</strong> <Latex formula="|\rho|" /> before backprojecting.
+              </p>
+              <FormulaBox 
+                name="The FBP Reconstruction Formula"
+                formula={String.raw`f(x,y) = \int_0^\pi \left[ \mathcal{F}^{-1} \{ |\rho| \cdot G(\rho, \theta) \} \right]_{\ell = x \cos \theta + y \sin \theta} d\theta`}
+                intuition="Filter projections in frequency space, then smear them back across the image at their respective angles."
+              />
+            </div>
           </div>
 
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Core Equations</h4>
-            <div className="grid lg:grid-cols-2 gap-4">
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-xs">Line equation</div>
-                <Latex formula={String.raw`L(\ell,\theta)=\{(x,y)\mid x\cos\theta+y\sin\theta=\ell\}`} displayMode />
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-xs">Projection</div>
-                <Latex formula={String.raw`g(\ell,\theta)=\int_{-\infty}^{\infty} f(x(s),y(s))\,ds`} displayMode />
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-xs">Parametric line</div>
-                <Latex formula={String.raw`x(s)=\ell\cos\theta-s\sin\theta`} displayMode />
-                <Latex formula={String.raw`y(s)=\ell\sin\theta+s\cos\theta`} displayMode />
-              </div>
-              <div className="claude-panel p-4">
-                <div className="text-slate-300 text-xs">CT number</div>
-                <Latex formula={String.raw`h=1000\,\frac{\mu-\mu_{water}}{\mu_{water}}`} displayMode />
+          <div className="space-y-6">
+            <div className="bg-purple-950/20 border border-purple-900/30 rounded-xl p-6">
+              <h4 className="text-purple-400 font-bold text-xs uppercase mb-4 flex items-center gap-2">
+                <Maximize className="w-4 h-4" /> Filter Windows
+              </h4>
+              <p className="text-slate-400 text-[10px] leading-relaxed mb-4 italic">
+                In practice, a pure Ramp filter amplifies noise. We use windows like:
+              </p>
+              <div className="space-y-3">
+                {[
+                  { name: 'Ram-Lak', desc: 'Sharp edges, high noise.' },
+                  { name: 'Shepp-Logan', desc: 'Better noise reduction.' },
+                  { name: 'Hamming', desc: 'Smoother, lower resolution.' }
+                ].map((f, i) => (
+                  <div key={i} className="p-3 bg-slate-800/50 rounded border border-slate-700 flex justify-between items-center">
+                    <span className="text-white text-xs font-bold">{f.name}</span>
+                    <span className="text-slate-500 text-[8px] italic">{f.desc}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="claude-note mt-4">
-              <div className="claude-kicker">Quick HU anchors</div>
-              <p className="text-slate-400 text-sm">Water 0 HU, air about minus 1000 HU, bone typically positive.</p>
-            </div>
+
+            <ExamTip type="trap" title="Blur Factor">
+              Simple backprojection (no filter) produces an image convolved with <strong>1/|r|</strong>. This is a classic exam question.
+            </ExamTip>
           </div>
         </div>
       </section>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">6.3.3 Reconstruction</h2>
+      {/* 6.4 Image Quality & Artifacts */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-emerald-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-emerald-900/20">6.4</div>
+          <h2 className="text-3xl font-bold text-white italic tracking-tighter">Image Quality & Artifacts</h2>
         </div>
-        <div className="p-6 space-y-6">
-          <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-blue-400 mb-2">Simple Intuition</h4>
-            <p className="text-slate-300">
-              Backprojection alone blurs. Filtering each projection with a ramp filter restores edges,
-              then backprojection and summation yield the slice.
-            </p>
-          </div>
 
-          <div className="bg-emerald-900/20 border-l-4 border-emerald-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-emerald-400 mb-4">Key Formulas</h4>
-            <div className="space-y-3">
-              <div className="bg-slate-800 p-4 rounded-lg text-center">
-                <Latex formula={String.raw`f_b(x,y)=\int_0^{\pi} b_\theta(x,y)\,d\theta`} displayMode />
-              </div>
-              <div className="bg-slate-800 p-4 rounded-lg text-center">
-                <Latex
-                  formula={String.raw`f(x,y)=\int_0^{\pi}\left[\mathcal{F}^{-1}\{|\rho|\,G(\rho,\theta)\}\right]_{\ell=x\cos\theta+y\sin\theta} d\theta`}
-                  displayMode
-                />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Windowed filter</div>
-                <Latex formula={String.raw`\tilde{c}(\ell)=\mathcal{F}^{-1}\{|\rho|W(\rho)\}`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Projection-slice theorem</div>
-                <Latex formula={String.raw`G(\rho,\theta)=F(\rho\cos\theta,\rho\sin\theta)`} displayMode />
-              </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { 
+              name: 'Beam Hardening', 
+              cause: 'Soft photons absorb first.', 
+              effect: 'Cupping artifact (edges look brighter than center).',
+              icon: <AlertCircle className="w-5 h-5 text-red-400" />
+            },
+            { 
+              name: 'Partial Volume', 
+              cause: 'Object spans only half a slice.', 
+              effect: 'Blurring/incorrect HU values.',
+              icon: <AlertCircle className="w-5 h-5 text-orange-400" />
+            },
+            { 
+              name: 'Metal Artifact', 
+              cause: 'Total photon starvation.', 
+              effect: 'Dark/bright starburst streaks.',
+              icon: <AlertCircle className="w-5 h-5 text-yellow-400" />
+            },
+            { 
+              name: 'Motion', 
+              cause: 'Patient moves during scan.', 
+              effect: 'Ghosting or misalignment.',
+              icon: <AlertCircle className="w-5 h-5 text-blue-400" />
+            }
+          ].map((a, i) => (
+            <div key={i} className="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex flex-col items-center text-center">
+              <div className="mb-4 p-3 bg-slate-800 rounded-full">{a.icon}</div>
+              <h4 className="text-white font-bold text-sm mb-2">{a.name}</h4>
+              <p className="text-slate-400 text-[10px] mb-2 font-mono">Cause: {a.cause}</p>
+              <p className="text-slate-300 text-[10px] leading-snug italic">{a.effect}</p>
             </div>
-          </div>
+          ))}
+        </div>
+      </section>
 
-          <div className="bg-purple-900/20 border-l-4 border-purple-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-purple-400 mb-4">Fan-Beam and Helical</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Fan-beam projection</div>
-                <Latex formula={String.raw`p(\gamma,\beta)=g(D\sin\gamma,\beta+\gamma)`} displayMode />
-              </div>
-              <div className="claude-panel p-3">
-                <div className="text-slate-300 text-xs">Helical interpolation</div>
-                <Latex
-                  formula={String.raw`\hat{p}_z(\gamma,\beta_j)=\frac{z-z_{j+kM}}{\zeta}p_{z_{j+(k+1)M}}+\frac{z_{j+(k+1)M}-z}{\zeta}p_{z_{j+kM}}`}
-                  displayMode
-                />
-              </div>
-            </div>
+      {/* Chapter Summary */}
+      <section className="bg-gradient-to-br from-slate-800 to-slate-950 rounded-2xl border border-slate-700 p-10 shadow-2xl">
+        <h2 className="text-3xl font-bold text-white mb-8">Chapter 6 Recap</h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-4">
+            <h3 className="text-cyan-400 font-bold uppercase tracking-widest text-sm">Key Principles</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-cyan-500"></div> CT is the inversion of the 2D Radon Transform.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-cyan-500"></div> HU scales attenuation relative to water and air.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-cyan-500"></div> Filtered Backprojection is the standard reconstruction method.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-cyan-500"></div> Helical scanning allows for volumetric, fast acquisitions.</li>
+            </ul>
           </div>
-
-          <div className="bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-            <h4 className="text-sm font-semibold text-amber-400 mb-2">Exam Focus</h4>
-            <ul className="text-slate-300 text-sm space-y-1">
-              <li>Backprojection must be filtered with a ramp-like filter.</li>
-              <li>Fourier slice theorem links 1D projection FT to 2D image FT.</li>
-              <li>Fan-beam geometry requires weighting or rebinning.</li>
+          <div className="space-y-4">
+            <h3 className="text-orange-400 font-bold uppercase tracking-widest text-sm">Likely Exam Tasks</h3>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Convert μ to HU for different tissues.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Explain the 1/r blur in simple backprojection.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Calculate Helical Pitch given table speed and width.</li>
+              <li className="flex items-center gap-3"><div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Identify artifacts (cupping, streaking) and their causes.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section className="claude-surface overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">6.4 Image Quality</h2>
-        </div>
-        <div className="p-6 space-y-4">
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="claude-panel p-4">
-              <div className="text-blue-300 text-sm font-semibold">Resolution</div>
-              <p className="text-slate-400 text-xs mt-2">Detector size, focal spot, and reconstruction filter set blur.</p>
-            </div>
-            <div className="claude-panel p-4">
-              <div className="text-purple-300 text-sm font-semibold">Noise</div>
-              <p className="text-slate-400 text-xs mt-2">Noise falls with higher mAs and thicker slices.</p>
-            </div>
-            <div className="claude-panel p-4">
-              <div className="text-emerald-300 text-sm font-semibold">Artifacts</div>
-              <p className="text-slate-400 text-xs mt-2">Beam hardening, metal streaks, motion, partial volume.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="claude-surface">
-        <div className="p-6 border-b border-slate-800">
-          <h2 className="text-2xl font-bold text-white">Chapter 6 Summary</h2>
-        </div>
-        <div className="p-6 grid md:grid-cols-2 gap-6">
+      <div className="flex justify-between pt-10 border-t border-slate-800">
+        <Link href="/chapters/chapter-5" className="flex items-center gap-3 text-slate-400 hover:text-white group transition-all">
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> 
           <div>
-            <h3 className="text-blue-400 font-semibold mb-3">Key Equations</h3>
-            <ul className="text-slate-300 text-sm space-y-3">
-              <li><Latex formula={String.raw`g(\ell,\theta)=\int f(x(s),y(s))\,ds`} /></li>
-              <li><Latex formula={String.raw`h=1000\,\frac{\mu-\mu_{water}}{\mu_{water}}`} /></li>
-              <li><Latex formula={String.raw`f(x,y)=\int \mathcal{F}^{-1}\{|\rho|G\}\,d\theta`} /></li>
-            </ul>
+            <div className="text-xs uppercase text-slate-500">Previous</div>
+            <div className="font-bold">Chapter 5: Projection Radiography</div>
           </div>
-          <div>
-            <h3 className="text-purple-400 font-semibold mb-3">High-Yield Concepts</h3>
-            <ul className="text-slate-300 text-sm space-y-2">
-              <li>CT is inversion of line integrals (Radon transform).</li>
-              <li>Filtering is mandatory before backprojection.</li>
-              <li>Helical scanning relies on interpolation between slices.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div className="flex justify-between">
-        <Link href="/chapters/chapter-5" className="flex items-center gap-2 text-slate-400 hover:text-white">
-          <ArrowLeft className="w-4 h-4" /> Chapter 5
         </Link>
-        <Link href="/chapters/chapter-7" className="flex items-center gap-2 text-blue-400 hover:text-white">
-          Chapter 7: Nuclear Medicine <ArrowRight className="w-4 h-4" />
+        <Link href="/chapters/chapter-7" className="flex items-center gap-3 text-blue-400 hover:text-white text-right group transition-all">
+          <div>
+            <div className="text-xs uppercase text-slate-500">Next</div>
+            <div className="font-bold">Chapter 7: Physics of Nuclear Medicine</div>
+          </div>
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </div>
