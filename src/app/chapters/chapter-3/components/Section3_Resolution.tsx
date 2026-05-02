@@ -40,6 +40,30 @@ export default function Section3_Resolution() {
           <h3 className="text-2xl font-bold text-white flex items-center gap-2">
             <Maximize className="w-6 h-6 text-indigo-400" /> Full Width at Half Maximum
           </h3>
+          
+          <svg viewBox="0 0 200 120" className="w-full h-40 mb-4 bg-slate-900/50 rounded-lg p-4">
+             {/* Axes */}
+             <line x1="20" y1="100" x2="180" y2="100" className="stroke-slate-500 stroke-1" />
+             <line x1="100" y1="100" x2="100" y2="10" className="stroke-slate-700 stroke-1 stroke-dashed" />
+             
+             {/* Gaussian Curve representing LSF/PSF */}
+             <path d="M 20 100 Q 80 100, 100 20 Q 120 100, 180 100" className="fill-none stroke-blue-400 stroke-2" />
+             
+             {/* Half max line */}
+             <line x1="20" y1="60" x2="180" y2="60" className="stroke-slate-600 stroke-1 stroke-dashed" />
+             <text x="5" y="63" className="fill-slate-400 text-[8px]">50%</text>
+             
+             {/* FWHM indicators */}
+             <line x1="75" y1="60" x2="125" y2="60" className="stroke-indigo-400 stroke-2" />
+             <circle cx="75" cy="60" r="2" className="fill-indigo-400" />
+             <circle cx="125" cy="60" r="2" className="fill-indigo-400" />
+             <text x="100" y="55" textAnchor="middle" className="fill-indigo-400 text-[10px] font-bold">FWHM</text>
+             
+             {/* Labels */}
+             <text x="100" y="115" textAnchor="middle" className="fill-slate-400 text-[8px]">Distance (x)</text>
+             <text x="100" y="15" textAnchor="middle" className="fill-blue-400 text-[8px] bg-slate-900">LSF / PSF</text>
+          </svg>
+
           <p className="text-slate-300 leading-relaxed">
             The <strong>FWHM</strong> is the full width of the LSF (or PSF) at one-half its maximum value. Provided there is no geometric scaling, the FWHM equals the minimum distance that two lines (or points) must be separated in space to appear as separate in the recorded image.
           </p>

@@ -94,10 +94,40 @@ export default function Section8_Accuracy() {
          </div>
 
          <div className="border-l-4 border-purple-500 bg-purple-950/20 p-6 rounded-r-lg">
-            <h4 className="text-purple-400 font-bold mb-2">Receiver Operating Characteristic (ROC)</h4>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              Because of overlap in the distribution of parameter values between normal and diseased patients, a threshold must be established. A lower threshold increases sensitivity but decreases specificity. An ROC curve plots <strong>Sensitivity vs. (1 - Specificity)</strong> to graphically depict this trade-off and determine clinical utility.
-            </p>
+            <h4 className="text-purple-400 font-bold mb-4">Receiver Operating Characteristic (ROC)</h4>
+            
+            <div className="flex flex-col md:flex-row gap-6 items-center">
+               <div className="w-full md:w-1/2">
+                 <svg viewBox="0 0 200 200" className="w-full max-w-[200px] mx-auto bg-slate-900 rounded-lg p-4 border border-slate-700">
+                   {/* Axes */}
+                   <line x1="20" y1="20" x2="20" y2="180" className="stroke-slate-500 stroke-1" />
+                   <line x1="20" y1="180" x2="180" y2="180" className="stroke-slate-500 stroke-1" />
+                   
+                   {/* Diagonal Line (Random Guess) */}
+                   <line x1="20" y1="180" x2="180" y2="20" className="stroke-slate-600 stroke-1 stroke-dashed" />
+                   <text x="140" y="150" transform="rotate(-45 140 150)" className="fill-slate-500 text-[8px]">Random Guess (AUC = 0.5)</text>
+                   
+                   {/* Moderate Test Curve */}
+                   <path d="M 20 180 Q 40 60, 180 20" className="fill-none stroke-blue-400 stroke-2" />
+                   
+                   {/* Excellent Test Curve */}
+                   <path d="M 20 180 Q 20 20, 180 20" className="fill-none stroke-purple-400 stroke-2" />
+                   
+                   {/* Labels */}
+                   <text x="50" y="195" className="fill-slate-400 text-[8px]">1 - Specificity (FPR)</text>
+                   <text x="10" y="120" transform="rotate(-90 10 120)" className="fill-slate-400 text-[8px]">Sensitivity (TPR)</text>
+                   
+                   <text x="40" y="30" className="fill-purple-400 text-[8px]">Excellent Test</text>
+                   <text x="60" y="80" className="fill-blue-400 text-[8px]">Moderate Test</text>
+                 </svg>
+               </div>
+               
+               <div className="w-full md:w-1/2 text-sm text-slate-300 leading-relaxed">
+                 Because of overlap in the distribution of parameter values between normal and diseased patients, a threshold must be established. A lower threshold increases sensitivity but decreases specificity. 
+                 <br/><br/>
+                 An ROC curve plots <strong>Sensitivity vs. (1 - Specificity)</strong> to graphically depict this trade-off. The Area Under the Curve (AUC) is the definitive measure of a test's clinical utility.
+               </div>
+            </div>
          </div>
          
          <div className="mt-6 bg-slate-900 border border-slate-800 p-4 rounded text-center">

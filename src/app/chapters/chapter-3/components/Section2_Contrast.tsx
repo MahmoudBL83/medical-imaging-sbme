@@ -54,13 +54,36 @@ export default function Section2_Contrast() {
             </div>
           </div>
 
-          <div className="claude-diagram flex flex-col p-6 bg-slate-900 border border-slate-700 relative rounded-xl h-full justify-between shadow-[0_0_20px_rgba(16,185,129,0.1)]">
-             <h4 className="text-sm font-bold text-slate-300 mb-4">Nonisotropic MTF</h4>
-             <p className="text-sm text-slate-400 mb-6">
+          <div className="claude-diagram flex flex-col p-6 bg-slate-900 border border-slate-700 relative rounded-xl h-full shadow-[0_0_20px_rgba(16,185,129,0.1)]">
+             <h4 className="text-sm font-bold text-slate-300 mb-4">Typical MTF Curve</h4>
+             
+             <svg viewBox="0 0 200 120" className="w-full h-32 mb-4 bg-slate-950 rounded p-2">
+               {/* Axes */}
+               <line x1="20" y1="10" x2="20" y2="100" className="stroke-slate-500 stroke-1" />
+               <line x1="20" y1="100" x2="180" y2="100" className="stroke-slate-500 stroke-1" />
+               
+               {/* Grid line at 1.0 */}
+               <line x1="15" y1="20" x2="180" y2="20" className="stroke-slate-700 stroke-1 stroke-dashed" />
+               <text x="5" y="24" className="fill-slate-400 text-[8px]">1.0</text>
+               <text x="5" y="104" className="fill-slate-400 text-[8px]">0.0</text>
+               
+               {/* Labels */}
+               <text x="90" y="115" className="fill-slate-400 text-[8px]">Spatial Frequency (u)</text>
+               <text x="10" y="55" transform="rotate(-90 10 55)" className="fill-slate-400 text-[8px]">MTF</text>
+               
+               {/* MTF Curve (Gaussian drop-off) */}
+               <path d="M 20 20 Q 80 20, 100 60 T 160 98" className="fill-none stroke-emerald-400 stroke-2" />
+               
+               {/* System limit line */}
+               <line x1="160" y1="100" x2="160" y2="15" className="stroke-red-400 stroke-1 stroke-dashed" />
+               <text x="165" y="50" className="fill-red-400 text-[8px]">Cutoff Freq</text>
+             </svg>
+             
+             <p className="text-sm text-slate-400 mb-2">
                 In a nonisotropic system, the profile through the PSF changes with orientation; thus, the system has an orientation-dependent response.
              </p>
-             <div className="bg-slate-950 p-4 rounded border border-slate-800 mb-4">
-                <Latex formula="\text{MTF}(u, v) = \frac{|H(u, v)|}{H(0, 0)}" displayMode />
+             <div className="bg-slate-950 p-2 rounded border border-slate-800 mb-2 text-center">
+                <Latex formula="\text{MTF}(u, v) = \frac{|H(u, v)|}{H(0, 0)}" />
              </div>
              <p className="text-xs text-slate-500 italic">
                For a typical medical imaging system, <Latex formula="0 \le \text{MTF}(u, v) \le 1" />.
