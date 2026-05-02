@@ -14,32 +14,7 @@ import Section9_Practice from './components/Section9_Practice';
 
 export default function Chapter3() {
   return (
-    <div className="pb-20 fade-up max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12">
-      {/* Sticky Navigation Sidebar */}
-      <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
-        <div className="sticky top-24 space-y-6">
-          <div className="text-sm text-slate-400 mb-8">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white font-medium">Chapter 3</span>
-          </div>
-
-          <nav className="space-y-3 border-l border-slate-800 pl-4">
-            <h4 className="text-white font-bold uppercase tracking-wider text-xs mb-4">Contents</h4>
-            <a href="#introduction" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.1 Introduction</a>
-            <a href="#contrast" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.2 Contrast</a>
-            <a href="#resolution" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.3 Resolution</a>
-            <a href="#noise" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.4 Noise</a>
-            <a href="#snr" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.5 Signal-to-Noise Ratio</a>
-            <a href="#sampling" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.6 Sampling</a>
-            <a href="#effects" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.7 Other Effects</a>
-            <a href="#accuracy" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.8 Accuracy</a>
-            <a href="#practice" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">3.9 Practice Problems</a>
-          </nav>
-        </div>
-      </aside>
-
-      {/* Main Content Area */}
+    <div className="pb-20 fade-up max-w-[1400px] mx-auto">
       <main className="flex-1 min-w-0 space-y-12">
         {/* Header */}
         <header className="border-b border-slate-800 pb-8 stagger">

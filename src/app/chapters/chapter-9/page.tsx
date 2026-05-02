@@ -9,27 +9,7 @@ import Section4_Practice from './components/Section4_Practice';
 
 export default function Chapter9() {
   return (
-    <div className="pb-20 fade-up max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12">
-      {/* Sticky Navigation Sidebar */}
-      <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
-        <div className="sticky top-24 space-y-6">
-          <div className="text-sm text-slate-400 mb-8">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white font-medium">Chapter 9</span>
-          </div>
-
-          <nav className="space-y-3 border-l border-slate-800 pl-4">
-            <h4 className="text-white font-bold uppercase tracking-wider text-xs mb-4">Contents</h4>
-            <a href="#instrumentation" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">9.1 Instrumentation</a>
-            <a href="#formation" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">9.2 Image Formation</a>
-            <a href="#quality" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">9.3 Image Quality</a>
-            <a href="#practice" className="block text-sm text-slate-400 hover:text-teal-400 transition-colors">9.4 Practice Problems</a>
-          </nav>
-        </div>
-      </aside>
-
-      {/* Main Content Area */}
+    <div className="pb-20 fade-up max-w-[1400px] mx-auto">
       <main className="flex-1 min-w-0 space-y-12">
         {/* Header */}
         <header className="border-b border-slate-800 pb-8 stagger">
