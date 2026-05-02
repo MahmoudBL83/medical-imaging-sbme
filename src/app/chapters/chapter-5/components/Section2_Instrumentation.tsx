@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Zap, Server, Shield } from 'lucide-react';
+import { Target, Zap, Server, Shield, Camera } from 'lucide-react';
 import Latex from '@/components/Latex';
 
 export default function Section2_Instrumentation() {
