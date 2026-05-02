@@ -8,9 +8,73 @@ export default function Section2_Instrumentation() {
       <header>
         <span className="claude-kicker text-indigo-400">Section 8.2</span>
         <h2 className="text-3xl font-bold text-white mt-2">The Anger Camera</h2>
-        <p className="text-slate-400 mt-4 leading-relaxed">
+        <p className="text-slate-400 mt-4 leading-relaxed mb-6">
           The primary instrument for planar scintigraphy is the Anger scintillation camera (invented by Hal Anger in the 1950s). It consists of a collimator, a large scintillation crystal, an array of photomultiplier tubes (PMTs), and positioning logic circuitry.
         </p>
+        
+        <svg viewBox="0 0 400 200" className="w-full max-w-2xl mx-auto h-48 mb-8 bg-slate-900 border border-slate-700 rounded-lg p-2 shadow-inner">
+           {/* Patient / Source */}
+           <path d="M 120,180 Q 200,160, 280,180" className="fill-none stroke-purple-700 stroke-[10]" />
+           <circle cx="200" cy="170" r="5" className="fill-red-400" /> {/* Tumor / Hotspot */}
+           <text x="215" y="175" className="fill-red-400 text-[10px]">Source</text>
+           
+           {/* Gamma Rays */}
+           <path d="M 200,165 L 200,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Straight */}
+           <path d="M 200,165 L 160,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Angled */}
+           <path d="M 200,165 L 240,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Angled */}
+           
+           {/* Collimator (Lead Septa) */}
+           <rect x="100" y="100" width="200" height="25" className="fill-slate-800" />
+           {/* Holes */}
+           <g className="stroke-slate-950 stroke-[4]">
+              <line x1="120" y1="100" x2="120" y2="125" />
+              <line x1="140" y1="100" x2="140" y2="125" />
+              <line x1="160" y1="100" x2="160" y2="125" />
+              <line x1="180" y1="100" x2="180" y2="125" />
+              <line x1="200" y1="100" x2="200" y2="125" /> {/* Open path */}
+              <line x1="220" y1="100" x2="220" y2="125" />
+              <line x1="240" y1="100" x2="240" y2="125" />
+              <line x1="260" y1="100" x2="260" y2="125" />
+              <line x1="280" y1="100" x2="280" y2="125" />
+           </g>
+           
+           {/* Gamma Ray blocked */}
+           <circle cx="160" cy="125" r="2" className="fill-red-500" />
+           <circle cx="240" cy="125" r="2" className="fill-red-500" />
+           
+           {/* Gamma Ray passes */}
+           <path d="M 200,100 L 200,85" className="stroke-red-400 stroke-1 stroke-dashed" />
+           
+           {/* Scintillation Crystal NaI(Tl) */}
+           <rect x="100" y="70" width="200" height="15" className="fill-yellow-400/20 stroke-yellow-400 stroke-1" />
+           <text x="310" y="80" className="fill-yellow-400 text-[10px]">NaI(Tl) Crystal</text>
+           <text x="310" y="115" className="fill-slate-400 text-[10px]">Lead Collimator</text>
+           
+           {/* Light Flash */}
+           <circle cx="200" cy="80" r="4" className="fill-yellow-400" />
+           <path d="M 200,75 L 200,65 M 195,75 L 180,65 M 205,75 L 220,65" className="stroke-blue-300 stroke-1" />
+           
+           {/* Light Pipe (Optional) - skipped for simplicity */}
+           
+           {/* PMTs */}
+           <g className="fill-blue-900/30 stroke-blue-500 stroke-1">
+              <rect x="110" y="20" width="30" height="40" />
+              <rect x="150" y="20" width="30" height="40" />
+              <rect x="190" y="20" width="20" height="40" /> {/* Center PMT directly above hit */}
+              <rect x="220" y="20" width="30" height="40" />
+              <rect x="260" y="20" width="30" height="40" />
+           </g>
+           <text x="310" y="45" className="fill-blue-400 text-[10px]">PMT Array</text>
+           
+           {/* Signals to Logic */}
+           <path d="M 200,20 L 200,10 L 280,10" className="stroke-blue-400 stroke-1 stroke-dashed" />
+           <path d="M 165,20 L 165,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
+           <path d="M 235,20 L 235,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
+           
+           {/* Logic Circuit Box */}
+           <rect x="280" y="5" width="40" height="20" className="fill-slate-800 stroke-slate-500 stroke-1" />
+           <text x="300" y="17" textAnchor="middle" className="fill-slate-300 text-[8px]">Anger Logic</text>
+        </svg>
       </header>
 
       <div className="grid lg:grid-cols-2 gap-8">

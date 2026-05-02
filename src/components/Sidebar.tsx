@@ -143,7 +143,7 @@ export default function Sidebar() {
 
       {/* Sidebar */}
       <aside className={`
-        fixed lg:static inset-y-0 left-0 z-50 w-64 bg-slate-900 text-slate-100 min-h-screen flex flex-col border-r border-slate-700 transform transition-transform duration-300
+        fixed lg:sticky lg:top-0 inset-y-0 left-0 z-50 w-64 bg-slate-900 text-slate-100 lg:h-screen min-h-screen flex flex-col border-r border-slate-700 transform transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="p-4 border-b border-slate-700">
