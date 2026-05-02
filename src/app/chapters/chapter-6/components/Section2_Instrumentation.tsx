@@ -8,9 +8,59 @@ export default function Section2_Instrumentation() {
       <header>
         <span className="claude-kicker text-purple-400">Section 6.2</span>
         <h2 className="text-3xl font-bold text-white mt-2">CT Instrumentation & Generations</h2>
-        <p className="text-slate-400 mt-4 leading-relaxed">
+        <p className="text-slate-400 mt-4 leading-relaxed mb-8">
           The fundamental measurement required by a CT scanner is the x-ray attenuation along a line between the source and a detector. Seven generations of scanner designs have been developed to acquire this data.
         </p>
+
+        <svg viewBox="0 0 400 150" className="w-full max-w-2xl mx-auto h-48 mb-8 bg-slate-900 border border-slate-700 rounded-lg p-2 shadow-[0_0_15px_rgba(168,85,247,0.1)]">
+           {/* 3rd Generation (Rotate-Rotate) */}
+           <text x="100" y="20" textAnchor="middle" className="fill-purple-400 text-[10px] font-bold">3rd Gen (Rotate-Rotate)</text>
+           
+           <g transform="translate(100, 90)">
+              {/* Patient */}
+              <circle cx="0" cy="0" r="15" className="fill-purple-900/40 stroke-purple-700 stroke-1" />
+              
+              {/* X-ray tube */}
+              <circle cx="0" cy="-45" r="5" className="fill-yellow-400" />
+              
+              {/* Fan beam */}
+              <path d="M 0,-45 L -25,35 L 25,35 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+              
+              {/* Detector Arc */}
+              <path d="M -30,40 Q 0,50, 30,40" className="fill-none stroke-emerald-400 stroke-4" />
+              
+              {/* Rotation arrows */}
+              <path d="M -50,0 A 50 50 0 0 1 -35,-35" className="fill-none stroke-slate-400 stroke-1" />
+              <polygon points="-35,-35 -38,-30 -32,-32" className="fill-slate-400" />
+              
+              <path d="M 50,0 A 50 50 0 0 1 35,35" className="fill-none stroke-slate-400 stroke-1" />
+              <polygon points="35,35 38,30 32,32" className="fill-slate-400" />
+           </g>
+
+           {/* Divider */}
+           <line x1="200" y1="10" x2="200" y2="140" className="stroke-slate-700 stroke-1 stroke-dashed" />
+
+           {/* 4th Generation (Rotate-Fixed) */}
+           <text x="300" y="20" textAnchor="middle" className="fill-purple-400 text-[10px] font-bold">4th Gen (Rotate-Fixed)</text>
+           
+           <g transform="translate(300, 90)">
+              {/* Fixed Detector Ring */}
+              <circle cx="0" cy="0" r="45" className="fill-none stroke-emerald-400 stroke-4 stroke-dasharray-[2,1]" />
+              
+              {/* Patient */}
+              <circle cx="0" cy="0" r="15" className="fill-purple-900/40 stroke-purple-700 stroke-1" />
+              
+              {/* X-ray tube (rotating inside) */}
+              <circle cx="-35" cy="-25" r="5" className="fill-yellow-400" />
+              
+              {/* Fan beam (wide) */}
+              <path d="M -35,-25 L 35,25 L 10,40 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+              
+              {/* Tube Rotation arrow */}
+              <path d="M -15,-40 A 45 45 0 0 1 15,-40" className="fill-none stroke-yellow-400 stroke-1" />
+              <polygon points="15,-40 10,-38 12,-43" className="fill-yellow-400" />
+           </g>
+        </svg>
       </header>
 
       {/* Generations Table */}

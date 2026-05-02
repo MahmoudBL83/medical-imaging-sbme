@@ -46,10 +46,48 @@ export default function Section4_Noise() {
 
       {/* Characteristic Artifacts */}
       <div className="claude-surface p-8 mt-8 border-l-4 border-l-red-500">
-         <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+         <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
             <AlertTriangle className="w-6 h-6 text-red-500" /> Characteristic CT Artifacts
          </h3>
          
+         <div className="grid md:grid-cols-3 gap-6 mb-6">
+            <svg viewBox="0 0 150 150" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700">
+               {/* Beam Hardening */}
+               <text x="75" y="15" textAnchor="middle" className="fill-red-400 text-[10px] font-bold">Beam Hardening</text>
+               <circle cx="75" cy="80" r="40" className="fill-slate-600" /> {/* Brain */}
+               <circle cx="75" cy="80" r="45" className="fill-none stroke-white stroke-[8]" /> {/* Dense Skull */}
+               {/* Dark Halo */}
+               <circle cx="75" cy="80" r="35" className="fill-none stroke-slate-900 stroke-[8]" />
+               <path d="M 75 40 L 75 25" className="stroke-red-400 stroke-1" />
+               <polygon points="75,40 73,35 77,35" className="fill-red-400" />
+               <text x="75" y="22" textAnchor="middle" className="fill-red-400 text-[8px]">Dark Halo</text>
+            </svg>
+            
+            <svg viewBox="0 0 150 150" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700">
+               {/* Ring Artifact */}
+               <text x="75" y="15" textAnchor="middle" className="fill-red-400 text-[10px] font-bold">Ring Artifact (3rd Gen)</text>
+               <circle cx="75" cy="80" r="40" className="fill-slate-600" /> {/* Brain */}
+               <circle cx="75" cy="80" r="20" className="fill-none stroke-white stroke-[2]" /> {/* Bright Ring */}
+               <path d="M 95 80 L 115 80" className="stroke-red-400 stroke-1" />
+               <polygon points="95,80 100,78 100,82" className="fill-red-400" />
+               <text x="118" y="83" className="fill-red-400 text-[8px]">Bad Detector</text>
+            </svg>
+            
+            <svg viewBox="0 0 150 150" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700">
+               {/* Motion Artifact */}
+               <text x="75" y="15" textAnchor="middle" className="fill-red-400 text-[10px] font-bold">Motion Artifact</text>
+               <circle cx="75" cy="80" r="20" className="fill-white" />
+               {/* Streaks */}
+               <line x1="55" y1="80" x2="10" y2="80" className="stroke-white stroke-2 opacity-50" />
+               <line x1="95" y1="80" x2="140" y2="80" className="stroke-white stroke-2 opacity-50" />
+               <line x1="75" y1="60" x2="75" y2="20" className="stroke-white stroke-2 opacity-50" />
+               <line x1="75" y1="100" x2="75" y2="140" className="stroke-white stroke-2 opacity-50" />
+               <line x1="60" y1="65" x2="30" y2="35" className="stroke-white stroke-1 opacity-40" />
+               <line x1="90" y1="95" x2="120" y2="125" className="stroke-white stroke-1 opacity-40" />
+               <text x="75" y="145" textAnchor="middle" className="fill-red-400 text-[8px]">Streaking</text>
+            </svg>
+         </div>
+
          <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-slate-900 border border-slate-800 p-4 rounded-lg">
                <h4 className="text-red-400 font-bold text-sm mb-2">Beam Hardening</h4>
