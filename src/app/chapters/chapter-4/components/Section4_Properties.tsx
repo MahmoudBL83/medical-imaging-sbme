@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Cpu, ActivitySquare } from 'lucide-react';
+import { Target, Cpu, ActivitySquare, ScanLine } from 'lucide-react';
 import Latex from '@/components/Latex';
 
 export default function Section4_Properties() {
