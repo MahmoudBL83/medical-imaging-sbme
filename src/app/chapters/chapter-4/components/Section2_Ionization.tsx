@@ -76,6 +76,30 @@ export default function Section2_Ionization() {
               <h3 className="text-lg font-bold text-white flex items-center gap-2 mb-2">
                  <Zap className="w-5 h-5 text-red-400" /> Ionization
               </h3>
+              
+              <svg viewBox="0 0 200 100" className="w-full h-24 mb-4 bg-slate-950/50 rounded p-2">
+                 {/* Nucleus */}
+                 <circle cx="50" cy="50" r="8" className="fill-purple-600" />
+                 {/* Shells */}
+                 <circle cx="50" cy="50" r="20" className="fill-none stroke-slate-600 stroke-1" />
+                 <circle cx="50" cy="50" r="35" className="fill-none stroke-slate-700 stroke-1" />
+                 
+                 {/* Incoming Radiation */}
+                 <path d="M 10 50 L 15 45 L 20 55 L 25 45 L 30 50" className="stroke-yellow-400 stroke-2 fill-none" />
+                 <polygon points="30,50 26,46 26,54" className="fill-yellow-400" />
+                 
+                 {/* Ejected Electron */}
+                 <circle cx="30" cy="50" r="2" className="fill-red-400" /> {/* Hole */}
+                 <circle cx="30" cy="50" r="3" className="fill-none stroke-red-400 stroke-1 stroke-dashed" />
+                 <circle cx="90" cy="20" r="3" className="fill-blue-400" />
+                 <path d="M 30 50 L 85 22" className="stroke-blue-400 stroke-1 stroke-dashed" />
+                 <polygon points="85,22 80,26 86,28" className="fill-blue-400" />
+                 
+                 <text x="100" y="25" className="fill-blue-400 text-[8px]">Ejected (Free) e-</text>
+                 <text x="10" y="35" className="fill-yellow-400 text-[8px]">Incident Photon</text>
+                 <text x="50" y="80" textAnchor="middle" className="fill-slate-400 text-[8px]">Atom becomes positive Ion</text>
+              </svg>
+
               <p className="text-sm text-slate-300 leading-relaxed mb-4">
                  If radiation transfers energy to an orbiting electron that is greater than or equal to its binding energy, the electron is ejected. The ejected electron + the ion = an <strong>ion pair</strong>.
               </p>
@@ -91,6 +115,29 @@ export default function Section2_Ionization() {
               <h3 className="text-lg font-bold text-white flex items-center gap-2 mb-2">
                  <Target className="w-5 h-5 text-yellow-400" /> Excitation
               </h3>
+              
+              <svg viewBox="0 0 200 100" className="w-full h-24 mb-4 bg-slate-950/50 rounded p-2">
+                 {/* Nucleus */}
+                 <circle cx="100" cy="80" r="8" className="fill-purple-600" />
+                 {/* Shells (Partial arc) */}
+                 <path d="M 50 80 A 50 50 0 0 1 150 80" className="fill-none stroke-slate-600 stroke-1" />
+                 <path d="M 30 80 A 70 70 0 0 1 170 80" className="fill-none stroke-slate-700 stroke-1" />
+                 
+                 {/* Incoming Radiation (Low Energy) */}
+                 <path d="M 20 60 Q 35 45, 50 60" className="stroke-orange-400 stroke-1 fill-none" />
+                 <polygon points="50,60 45,55 45,65" className="fill-orange-400" />
+                 
+                 {/* Electron Jump */}
+                 <circle cx="50" cy="60" r="2" className="fill-yellow-400" /> {/* Hole */}
+                 <circle cx="50" cy="60" r="3" className="fill-none stroke-yellow-400 stroke-1 stroke-dashed" />
+                 <circle cx="120" cy="30" r="3" className="fill-blue-400" />
+                 <path d="M 50 60 Q 80 20, 115 30" className="stroke-blue-400 stroke-1 stroke-dashed" />
+                 <polygon points="115,30 110,25 110,35" className="fill-blue-400" />
+                 
+                 <text x="130" y="30" className="fill-blue-400 text-[8px]">Moves to higher shell</text>
+                 <text x="10" y="50" className="fill-orange-400 text-[8px]">Low E Photon</text>
+              </svg>
+
               <p className="text-sm text-slate-300 leading-relaxed">
                  If the transferred energy is less than the binding energy, the electron is raised to a higher orbit but not ejected. Both excitation and ionization leave a "hole" in the inner shell that must be filled, which leads to secondary characteristic radiation.
               </p>
