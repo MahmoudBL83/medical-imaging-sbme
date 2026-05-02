@@ -12,31 +12,7 @@ export default function Home() {
         <p className="text-sm text-slate-500 mt-2">Comprehensive exam preparation for 4th-year Systems & Biomedical Engineering</p>
       </header>
 
-      <div className="bg-gradient-to-r from-blue-900 to-slate-900 rounded-2xl p-8 border border-blue-800">
-        <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-          <Play className="w-6 h-6 text-blue-400" />
-          How to Use This Website
-        </h2>
-        <div className="grid md:grid-cols-2 gap-4 text-slate-300">
-          <div className="bg-slate-800/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-white mb-2">1. Start with Chapters 2 & 3</h3>
-            <p className="text-sm">These are the FOUNDATIONAL chapters covering Signals & Systems and Image Quality. Master these first!</p>
-          </div>
-          <div className="bg-slate-800/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-white mb-2">2. Each Section Has 4 Layers</h3>
-            <p className="text-sm">Simple intuition → Visual diagrams → Technical depth → Exam focus</p>
-          </div>
-          <div className="bg-slate-800/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-white mb-2">3. Use Resources Page</h3>
-            <p className="text-sm">Glossary, formulas, high-yield points, and practice questions are in the sidebar</p>
-          </div>
-          <div className="bg-slate-800/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-white mb-2">4. Focus on Your Doctor's Style</h3>
-            <p className="text-sm">Emphasis on mathematical problem solving, derivations, and signal sketching</p>
-          </div>
-        </div>
-      </div>
-
+      
       <div className="grid md:grid-cols-3 gap-6">
         <Link href="/chapters/chapter-2" className="group">
           <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-600 transition-colors">

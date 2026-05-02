@@ -29,7 +29,7 @@ export default function Section3_Fourier() {
          </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 gap-8 mb-8">
          {/* Properties */}
          <div className="space-y-6">
             <h3 className="text-xl font-bold text-white flex items-center gap-2">
@@ -64,6 +64,55 @@ export default function Section3_Fourier() {
                <Latex formula="H(u,v)" />, the Fourier Transform of the PSF <Latex formula="h(x,y)" />, is called the <strong>Transfer Function</strong>. For imaging systems, the normalized magnitude of the transfer function is the Modulation Transfer Function (MTF).
             </p>
          </div>
+      </div>
+
+      {/* Fourier Transform Tables */}
+      <div className="claude-panel p-8 bg-slate-900 border border-slate-700 rounded-xl relative overflow-x-auto">
+         <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-6">
+            <Waves className="w-5 h-5 text-blue-400" /> Selected Fourier Transform Pairs (Table 2.1)
+         </h3>
+         <table className="w-full text-left text-sm text-slate-300 border-collapse">
+            <thead>
+               <tr className="border-b border-slate-700 text-slate-400">
+                  <th className="pb-3 font-semibold">Signal <Latex formula="f(x,y)" /></th>
+                  <th className="pb-3 font-semibold">Fourier Transform <Latex formula="F(u,v)" /></th>
+               </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-800">
+               <tr>
+                  <td className="py-3"><Latex formula="\text{rect}(x,y)" /></td>
+                  <td className="py-3"><Latex formula="\text{sinc}(u,v)" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\text{sinc}(x,y)" /></td>
+                  <td className="py-3"><Latex formula="\text{rect}(u,v)" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\text{comb}(x,y)" /></td>
+                  <td className="py-3"><Latex formula="\text{comb}(u,v)" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\exp(-\pi(x^2+y^2))" /></td>
+                  <td className="py-3"><Latex formula="\exp(-\pi(u^2+v^2))" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\delta(x-x_0, y-y_0)" /></td>
+                  <td className="py-3"><Latex formula="\exp(-j2\pi(ux_0+vy_0))" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\exp(j2\pi(u_0x+v_0y))" /></td>
+                  <td className="py-3"><Latex formula="\delta(u-u_0, v-v_0)" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\cos(2\pi(u_0x+v_0y))" /></td>
+                  <td className="py-3"><Latex formula="\frac{1}{2}[\delta(u-u_0, v-v_0) + \delta(u+u_0, v+v_0)]" /></td>
+               </tr>
+               <tr>
+                  <td className="py-3"><Latex formula="\sin(2\pi(u_0x+v_0y))" /></td>
+                  <td className="py-3"><Latex formula="\frac{1}{2j}[\delta(u-u_0, v-v_0) - \delta(u+u_0, v+v_0)]" /></td>
+               </tr>
+            </tbody>
+         </table>
       </div>
 
     </section>
