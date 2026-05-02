@@ -38,6 +38,32 @@ export default function Section3_Decay() {
            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
               <Activity className="w-5 h-5 text-blue-400" /> Line of Stability
            </h3>
+           
+           <svg viewBox="0 0 250 180" className="w-full max-w-[250px] mx-auto h-40 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-3 shadow-inner">
+              {/* Axes */}
+              <line x1="30" y1="150" x2="230" y2="150" className="stroke-slate-500 stroke-1" />
+              <line x1="30" y1="150" x2="30" y2="10" className="stroke-slate-500 stroke-1" />
+              <text x="220" y="165" className="fill-slate-400 text-[8px]">Protons (Z)</text>
+              <text x="5" y="20" className="fill-slate-400 text-[8px]" transform="rotate(-90 15 20)">Neutrons (N)</text>
+              
+              {/* N = Z Line */}
+              <line x1="30" y1="150" x2="160" y2="20" className="stroke-slate-600 stroke-1 stroke-dashed" />
+              <text x="165" y="25" className="fill-slate-500 text-[8px]">N = Z</text>
+              
+              {/* Line of Stability Curve */}
+              <path d="M 30,150 Q 100,80 150,10" className="fill-none stroke-blue-500 stroke-2" />
+              <text x="100" y="50" className="fill-blue-400 text-[8px] font-bold" transform="rotate(-55 100 50)">Line of Stability</text>
+              
+              {/* Radionuclide */}
+              <circle cx="70" cy="50" r="3" className="fill-red-400" />
+              <text x="75" y="45" className="fill-red-400 text-[8px]">Radionuclide</text>
+              
+              {/* Decay Arrow */}
+              <path d="M 72,52 L 85,65" className="stroke-red-400 stroke-1 stroke-dashed" />
+              <polygon points="85,65 82,60 87,60" className="fill-red-400" transform="rotate(-45 85 65)" />
+              <text x="85" y="75" className="fill-red-400 text-[6px]">Decay</text>
+           </svg>
+
            <p className="text-slate-300 text-sm leading-relaxed mb-4">
              If we plot the number of neutrons (<Latex formula="N" />) vs. protons (<Latex formula="Z" />) for all stable nuclides, they form a curve called the <strong>line of stability</strong>.
            </p>
