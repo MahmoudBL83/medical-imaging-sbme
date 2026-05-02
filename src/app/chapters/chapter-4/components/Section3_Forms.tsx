@@ -20,6 +20,40 @@ export default function Section3_Forms() {
            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-6">
               <ScanLine className="w-5 h-5 text-indigo-400" /> Particulate Radiation
            </h3>
+           
+           <svg viewBox="0 0 300 120" className="w-full h-32 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-2 shadow-inner">
+              <text x="15" y="20" className="fill-indigo-400 text-[10px] font-bold">Electron Beam (Particulate)</text>
+              <text x="15" y="30" className="fill-slate-400 text-[8px]">Has Mass (m₀), Has Charge (-1)</text>
+              
+              {/* Cathode / Anode setup */}
+              <rect x="20" y="40" width="10" height="60" className="fill-slate-600" />
+              <text x="25" y="110" textAnchor="middle" className="fill-slate-400 text-[8px]">Cathode (-)</text>
+              
+              <rect x="270" y="40" width="10" height="60" className="fill-slate-600" />
+              <text x="275" y="110" textAnchor="middle" className="fill-slate-400 text-[8px]">Anode (+)</text>
+              
+              {/* Electric Field lines */}
+              <line x1="30" y1="50" x2="270" y2="50" className="stroke-slate-700 stroke-1 stroke-dashed" />
+              <line x1="30" y1="70" x2="270" y2="70" className="stroke-slate-700 stroke-1 stroke-dashed" />
+              <line x1="30" y1="90" x2="270" y2="90" className="stroke-slate-700 stroke-1 stroke-dashed" />
+              
+              {/* Electron */}
+              <circle cx="80" cy="70" r="4" className="fill-blue-400" />
+              <text x="80" y="62" textAnchor="middle" className="fill-blue-400 text-[8px] font-bold">e⁻</text>
+              
+              {/* Motion blur/trail */}
+              <line x1="40" y1="70" x2="70" y2="70" className="stroke-blue-400 stroke-[3] opacity-30" />
+              <line x1="50" y1="70" x2="70" y2="70" className="stroke-blue-400 stroke-[3] opacity-60" />
+              
+              {/* Acceleration arrow */}
+              <path d="M 90,70 L 150,70" className="stroke-indigo-400 stroke-2" />
+              <polygon points="150,70 145,67 145,73" className="fill-indigo-400" />
+              <text x="120" y="65" textAnchor="middle" className="fill-indigo-400 text-[10px]">Acceleration (kVp)</text>
+              
+              {/* Velocity */}
+              <text x="120" y="85" textAnchor="middle" className="fill-slate-400 text-[8px]">v ≈ 0.5c</text>
+           </svg>
+
            <p className="text-slate-300 text-sm leading-relaxed mb-6">
              Any subatomic particle (proton, neutron, electron) can be ionizing radiation if it possesses enough kinetic energy. In x-ray imaging, we are primarily concerned with <strong>unbound electrons</strong> accelerated across a potential difference in an x-ray tube.
            </p>
