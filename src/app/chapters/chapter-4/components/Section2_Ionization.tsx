@@ -20,6 +20,35 @@ export default function Section2_Ionization() {
            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
               <CircleDashed className="w-5 h-5 text-indigo-400" /> Atomic Structure
            </h3>
+           
+           <svg viewBox="0 0 200 200" className="w-full max-w-[200px] mx-auto h-40 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-2 shadow-inner">
+              {/* Nucleus */}
+              <circle cx="100" cy="100" r="10" className="fill-purple-600" />
+              <text x="100" y="103" textAnchor="middle" className="fill-white text-[8px] font-bold">Z</text>
+              
+              {/* Shells */}
+              <circle cx="100" cy="100" r="30" className="fill-none stroke-slate-500 stroke-2" />
+              <circle cx="100" cy="100" r="55" className="fill-none stroke-slate-600 stroke-2" />
+              <circle cx="100" cy="100" r="80" className="fill-none stroke-slate-700 stroke-2" />
+              
+              {/* Electrons */}
+              <circle cx="100" cy="70" r="3" className="fill-blue-400" />
+              <circle cx="100" cy="130" r="3" className="fill-blue-400" />
+              <text x="80" y="65" className="fill-blue-400 text-[8px]">K-Shell</text>
+              
+              <circle cx="155" cy="100" r="3" className="fill-blue-400" />
+              <circle cx="45" cy="100" r="3" className="fill-blue-400" />
+              <text x="145" y="90" className="fill-blue-400 text-[8px]">L-Shell</text>
+              
+              <circle cx="100" cy="20" r="3" className="fill-blue-400" />
+              <text x="80" y="15" className="fill-blue-400 text-[8px]">M-Shell</text>
+              
+              {/* Binding Energy Arrow */}
+              <line x1="100" y1="100" x2="190" y2="100" className="stroke-indigo-400 stroke-1 stroke-dashed" />
+              <polygon points="190,100 185,97 185,103" className="fill-indigo-400" />
+              <text x="130" y="115" className="fill-indigo-400 text-[8px]">Decreasing Binding Energy</text>
+           </svg>
+
            <p className="text-slate-300 text-sm leading-relaxed mb-4">
              Based on the planetary model, an atom consists of a nucleus (protons and neutrons) surrounded by orbiting electrons in shells (K, L, M, N). 
            </p>

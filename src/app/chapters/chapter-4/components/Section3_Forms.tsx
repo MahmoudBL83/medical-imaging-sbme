@@ -38,6 +38,29 @@ export default function Section3_Forms() {
            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-6">
               <Radio className="w-5 h-5 text-emerald-400" /> Electromagnetic Radiation
            </h3>
+           
+           <svg viewBox="0 0 300 120" className="w-full h-32 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-2 shadow-inner">
+              {/* EM Wave */}
+              <text x="15" y="20" className="fill-emerald-400 text-[10px] font-bold">EM Wave (Photon)</text>
+              <text x="15" y="30" className="fill-slate-400 text-[8px]">No Mass, No Charge</text>
+              
+              {/* Electric field wave */}
+              <path d="M 20 80 Q 40 40, 60 80 T 100 80 T 140 80 T 180 80 T 220 80 T 260 80" className="fill-none stroke-emerald-400 stroke-2" />
+              {/* Magnetic field wave (perspective) */}
+              <path d="M 20 80 Q 40 100, 60 80 T 100 80 T 140 80 T 180 80 T 220 80 T 260 80" className="fill-none stroke-blue-400 stroke-1 stroke-dashed" />
+              
+              {/* Direction of travel arrow */}
+              <line x1="20" y1="80" x2="280" y2="80" className="stroke-slate-500 stroke-1" />
+              <polygon points="280,80 275,77 275,83" className="fill-slate-500" />
+              <text x="285" y="83" className="fill-slate-400 text-[10px]">c</text>
+              
+              {/* Wavelength lambda */}
+              <line x1="60" y1="40" x2="140" y2="40" className="stroke-pink-400 stroke-1" />
+              <line x1="60" y1="38" x2="60" y2="45" className="stroke-pink-400 stroke-1" />
+              <line x1="140" y1="38" x2="140" y2="45" className="stroke-pink-400 stroke-1" />
+              <text x="100" y="35" textAnchor="middle" className="fill-pink-400 text-[10px]">λ</text>
+           </svg>
+
            <p className="text-slate-300 text-sm leading-relaxed mb-6">
              EM radiation consists of oscillating electric and magnetic waves traveling at the speed of light. It has no rest mass and no charge. It can be treated as a wave or as packets of energy called <strong>photons</strong>.
            </p>
