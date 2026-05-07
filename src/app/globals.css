@@ -238,3 +238,28 @@ a:hover {
   height: 1px;
   width: 100%;
 }
+
+/* Custom Scrollbar UI/UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--paper-2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-2);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--paper-2);
+}
