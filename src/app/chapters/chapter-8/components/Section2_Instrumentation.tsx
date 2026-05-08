@@ -19,9 +19,15 @@ export default function Section2_Instrumentation() {
            <text x="215" y="175" className="fill-red-400 text-[10px]">Source</text>
            
            {/* Gamma Rays */}
-           <path d="M 200,165 L 200,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Straight */}
-           <path d="M 200,165 L 160,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Angled */}
-           <path d="M 200,165 L 240,125" className="stroke-red-400 stroke-1 stroke-dashed" /> {/* Angled */}
+           <path d="M 200,165 L 200,125" className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+             <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.8s" repeatCount="indefinite" />
+           </path> {/* Straight */}
+           <path d="M 200,165 L 160,125" className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+             <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.8s" repeatCount="indefinite" />
+           </path> {/* Angled */}
+           <path d="M 200,165 L 240,125" className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+             <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.8s" repeatCount="indefinite" />
+           </path> {/* Angled */}
            
            {/* Collimator (Lead Septa) */}
            <rect x="100" y="100" width="200" height="25" className="fill-slate-800" />
@@ -43,7 +49,9 @@ export default function Section2_Instrumentation() {
            <circle cx="240" cy="125" r="2" className="fill-red-500" />
            
            {/* Gamma Ray passes */}
-           <path d="M 200,100 L 200,85" className="stroke-red-400 stroke-1 stroke-dashed" />
+           <path d="M 200,100 L 200,85" className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+             <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.8s" repeatCount="indefinite" />
+           </path>
            
            {/* Scintillation Crystal NaI(Tl) */}
            <rect x="100" y="70" width="200" height="15" className="fill-yellow-400/20 stroke-yellow-400 stroke-1" />
@@ -51,8 +59,14 @@ export default function Section2_Instrumentation() {
            <text x="310" y="115" className="fill-slate-400 text-[10px]">Lead Collimator</text>
            
            {/* Light Flash */}
-           <circle cx="200" cy="80" r="4" className="fill-yellow-400" />
-           <path d="M 200,75 L 200,65 M 195,75 L 180,65 M 205,75 L 220,65" className="stroke-blue-300 stroke-1" />
+           <circle cx="200" cy="80" r="4" className="fill-yellow-400">
+             <animate attributeName="r" values="0; 6; 0" dur="0.8s" repeatCount="indefinite" />
+             <animate attributeName="opacity" values="0; 1; 0" dur="0.8s" repeatCount="indefinite" />
+           </circle>
+           <g className="stroke-blue-300 stroke-1">
+             <animate attributeName="opacity" values="0; 1; 0" dur="0.8s" repeatCount="indefinite" />
+             <path d="M 200,75 L 200,65 M 195,75 L 180,65 M 205,75 L 220,65" />
+           </g>
            
            {/* Light Pipe (Optional) - skipped for simplicity */}
            
@@ -67,9 +81,12 @@ export default function Section2_Instrumentation() {
            <text x="310" y="45" className="fill-blue-400 text-[10px]">PMT Array</text>
            
            {/* Signals to Logic */}
-           <path d="M 200,20 L 200,10 L 280,10" className="stroke-blue-400 stroke-1 stroke-dashed" />
-           <path d="M 165,20 L 165,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
-           <path d="M 235,20 L 235,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
+           <g strokeDasharray="4 2">
+             <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.4s" repeatCount="indefinite" />
+             <path d="M 200,20 L 200,10 L 280,10" className="stroke-blue-400 stroke-1 stroke-dashed" />
+             <path d="M 165,20 L 165,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
+             <path d="M 235,20 L 235,15 L 280,15" className="stroke-blue-400 stroke-1 stroke-dashed" />
+           </g>
            
            {/* Logic Circuit Box */}
            <rect x="280" y="5" width="40" height="20" className="fill-slate-800 stroke-slate-500 stroke-1" />
