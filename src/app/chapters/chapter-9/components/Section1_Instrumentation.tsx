@@ -40,21 +40,33 @@ export default function Section1_Instrumentation() {
                <ellipse cx="100" cy="100" rx="40" ry="30" className="fill-purple-900/30 stroke-purple-700 stroke-1" />
                
                {/* Annihilation Event */}
-               <circle cx="90" cy="95" r="3" className="fill-yellow-400" />
+               <circle cx="90" cy="95" r="3" className="fill-yellow-400">
+                  <animate attributeName="r" values="0; 6; 0" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" />
+               </circle>
                <text x="80" y="85" className="fill-yellow-400 text-[6px]">β⁺/e⁻</text>
                
                {/* Line of Response (LOR) */}
-               <line x1="26" y1="65" x2="154" y2="125" className="stroke-emerald-400 stroke-1 stroke-dashed" />
+               <line x1="26" y1="65" x2="154" y2="125" className="stroke-emerald-400/30 stroke-1 stroke-dashed" />
                
                {/* Gamma Photons */}
-               <path d="M 90,95 L 45,75" className="stroke-emerald-400 stroke-1" />
-               <polygon points="45,75 48,78 42,75" className="fill-emerald-400" transform="rotate(-65 45 75)" />
-               <path d="M 90,95 L 135,115" className="stroke-emerald-400 stroke-1" />
-               <polygon points="135,115 132,112 138,115" className="fill-emerald-400" transform="rotate(-65 135 115)" />
+               <g>
+                 <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" />
+                 <path d="M 90,95 L 26,65" className="stroke-emerald-400 stroke-1" strokeDasharray="70" strokeDashoffset="70">
+                    <animate attributeName="stroke-dashoffset" values="70; 0; 0" dur="2s" repeatCount="indefinite" />
+                 </path>
+                 <path d="M 90,95 L 154,125" className="stroke-emerald-400 stroke-1" strokeDasharray="70" strokeDashoffset="70">
+                    <animate attributeName="stroke-dashoffset" values="70; 0; 0" dur="2s" repeatCount="indefinite" />
+                 </path>
+               </g>
                
                {/* Lit Detectors */}
-               <circle cx="26" cy="65" r="4" className="fill-emerald-400" />
-               <circle cx="154" cy="125" r="4" className="fill-emerald-400" />
+               <circle cx="26" cy="65" r="4" className="fill-emerald-400">
+                  <animate attributeName="opacity" values="0; 0; 1; 0" keyTimes="0; 0.4; 0.5; 1" dur="2s" repeatCount="indefinite" />
+               </circle>
+               <circle cx="154" cy="125" r="4" className="fill-emerald-400">
+                  <animate attributeName="opacity" values="0; 0; 1; 0" keyTimes="0; 0.4; 0.5; 1" dur="2s" repeatCount="indefinite" />
+               </circle>
                
                <text x="165" y="140" className="fill-emerald-400 text-[6px]">Hits in coincidence</text>
                <text x="25" y="55" className="fill-slate-400 text-[6px]">(within ~5ns)</text>

@@ -42,6 +42,56 @@ export default function Section3_Quality() {
             <p className="text-sm text-slate-300 mb-4">
               Electronic collimation is sensitive to three types of coincidence events:
             </p>
+            
+            <svg viewBox="0 0 300 120" className="w-full h-32 mb-6 bg-slate-950/50 rounded-lg p-2 border border-slate-700 shadow-inner">
+               {/* 1. True Coincidence */}
+               <g transform="translate(50, 60)">
+                  <circle cx="0" cy="0" r="40" className="fill-none stroke-slate-700 stroke-[4] stroke-dasharray-[3,1]" />
+                  <ellipse cx="0" cy="0" rx="20" ry="15" className="fill-slate-800" />
+                  <circle cx="-5" cy="5" r="2" className="fill-yellow-400" />
+                  <path d="M -5,5 L -30,-25" className="stroke-green-400 stroke-1 stroke-dashed" />
+                  <path d="M -5,5 L 20,35" className="stroke-green-400 stroke-1 stroke-dashed" />
+                  <line x1="-30" y1="-25" x2="20" y2="35" className="stroke-green-500/50 stroke-2" />
+                  <circle cx="-30" cy="-25" r="3" className="fill-green-400" />
+                  <circle cx="20" cy="35" r="3" className="fill-green-400" />
+                  <text x="0" y="-45" textAnchor="middle" className="fill-green-400 text-[8px] font-bold">True</text>
+               </g>
+
+               {/* 2. Scatter Coincidence */}
+               <g transform="translate(150, 60)">
+                  <circle cx="0" cy="0" r="40" className="fill-none stroke-slate-700 stroke-[4] stroke-dasharray-[3,1]" />
+                  <ellipse cx="0" cy="0" rx="20" ry="15" className="fill-slate-800" />
+                  <circle cx="-5" cy="5" r="2" className="fill-yellow-400" />
+                  <circle cx="10" cy="-5" r="1.5" className="fill-slate-400" /> {/* Scatter point */}
+                  <path d="M -5,5 L -30,-25" className="stroke-green-400 stroke-1 stroke-dashed" />
+                  <path d="M -5,5 L 10,-5" className="stroke-yellow-400 stroke-1 stroke-dashed" />
+                  <path d="M 10,-5 L 35,-5" className="stroke-yellow-400 stroke-1 stroke-dashed" />
+                  <line x1="-30" y1="-25" x2="35" y2="-5" className="stroke-yellow-500/50 stroke-2" /> {/* Incorrect LOR */}
+                  <circle cx="-30" cy="-25" r="3" className="fill-green-400" />
+                  <circle cx="35" cy="-5" r="3" className="fill-yellow-400" />
+                  <text x="0" y="-45" textAnchor="middle" className="fill-yellow-400 text-[8px] font-bold">Scatter</text>
+               </g>
+
+               {/* 3. Random Coincidence */}
+               <g transform="translate(250, 60)">
+                  <circle cx="0" cy="0" r="40" className="fill-none stroke-slate-700 stroke-[4] stroke-dasharray-[3,1]" />
+                  <ellipse cx="0" cy="0" rx="20" ry="15" className="fill-slate-800" />
+                  
+                  {/* Event A */}
+                  <circle cx="-10" cy="10" r="2" className="fill-yellow-400" />
+                  <path d="M -10,10 L -35,10" className="stroke-red-400 stroke-1 stroke-dashed" />
+                  <circle cx="-35" cy="10" r="3" className="fill-red-400" />
+                  
+                  {/* Event B */}
+                  <circle cx="15" cy="-10" r="2" className="fill-yellow-400" />
+                  <path d="M 15,-10 L 25,-30" className="stroke-red-400 stroke-1 stroke-dashed" />
+                  <circle cx="25" cy="-30" r="3" className="fill-red-400" />
+
+                  <line x1="-35" y1="10" x2="25" y2="-30" className="stroke-red-500/50 stroke-2" /> {/* Incorrect LOR */}
+                  <text x="0" y="-45" textAnchor="middle" className="fill-red-400 text-[8px] font-bold">Random</text>
+               </g>
+            </svg>
+
             <div className="space-y-3 text-sm text-slate-300">
                <div>
                   <strong className="text-green-400">True Coincidences:</strong> Two unscattered photons from the same annihilation event hit opposing detectors simultaneously. (The good signal).
