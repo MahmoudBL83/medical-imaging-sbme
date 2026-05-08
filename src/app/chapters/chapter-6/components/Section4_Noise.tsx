@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, Activity, EyeOff } from 'lucide-react';
+import { AlertTriangle, Activity, EyeOff, Cuboid } from 'lucide-react';
 import Latex from '@/components/Latex';
 
 export default function Section4_Noise() {
@@ -44,6 +44,46 @@ export default function Section4_Noise() {
          </div>
       </div>
 
+      {/* Partial Volume Effect */}
+      <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl relative overflow-hidden mt-8">
+         <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
+            <Cuboid className="w-5 h-5 text-indigo-400" /> Partial Volume Effect
+         </h3>
+         <div className="grid md:grid-cols-[1.5fr_1fr] gap-6 items-center">
+            <div>
+               <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                 A CT image is composed of 3D pixels called <strong>voxels</strong>. The thickness of the voxel depends on the physical slice thickness of the x-ray beam. 
+               </p>
+               <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                 If a single voxel contains multiple tissue types (e.g., half dense bone, half water), the resulting Hounsfield Unit assigned to that pixel will be a <strong>weighted average</strong> of all tissues inside it. This blurs sharp edges and can completely obscure small lesions.
+               </p>
+               <div className="bg-slate-950 border border-slate-800 p-3 rounded text-center">
+                  <span className="text-slate-300 text-xs">Voxel Volume = Pixel Area × Slice Thickness</span>
+               </div>
+            </div>
+            <svg viewBox="0 0 200 120" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700 shadow-inner">
+               {/* Grid / Voxel */}
+               <rect x="50" y="20" width="100" height="80" className="fill-slate-800 stroke-slate-500 stroke-2" />
+               
+               {/* Bone partial */}
+               <path d="M 50 100 L 150 100 L 150 60 L 50 60 Z" className="fill-white/80" />
+               <text x="100" y="85" textAnchor="middle" className="fill-slate-900 text-[10px] font-bold">Bone (+1000 HU)</text>
+               
+               {/* Water partial */}
+               <path d="M 50 20 L 150 20 L 150 60 L 50 60 Z" className="fill-blue-500/50" />
+               <text x="100" y="45" textAnchor="middle" className="fill-white text-[10px] font-bold">Water (0 HU)</text>
+               
+               {/* Result Arrow */}
+               <path d="M 160 60 L 175 60" className="stroke-slate-400 stroke-2" />
+               <polygon points="175,60 170,57 170,63" className="fill-slate-400" />
+               
+               {/* Resulting Displayed Pixel */}
+               <rect x="180" y="45" width="25" height="30" className="fill-slate-400 stroke-white stroke-1" />
+               <text x="192.5" y="62" textAnchor="middle" className="fill-slate-900 text-[8px] font-bold">+500</text>
+            </svg>
+         </div>
+      </div>
+
       {/* Characteristic Artifacts */}
       <div className="claude-surface p-8 mt-8 border-l-4 border-l-red-500">
          <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
@@ -57,33 +97,46 @@ export default function Section4_Noise() {
                <circle cx="75" cy="80" r="40" className="fill-slate-600" /> {/* Brain */}
                <circle cx="75" cy="80" r="45" className="fill-none stroke-white stroke-[8]" /> {/* Dense Skull */}
                {/* Dark Halo */}
-               <circle cx="75" cy="80" r="35" className="fill-none stroke-slate-900 stroke-[8]" />
+               <circle cx="75" cy="80" r="35" className="fill-none stroke-slate-950 stroke-[10]">
+                 <animate attributeName="opacity" values="0; 0.8; 0" dur="3s" repeatCount="indefinite" />
+               </circle>
                <path d="M 75 40 L 75 25" className="stroke-red-400 stroke-1" />
                <polygon points="75,40 73,35 77,35" className="fill-red-400" />
-               <text x="75" y="22" textAnchor="middle" className="fill-red-400 text-[8px]">Dark Halo</text>
+               <text x="75" y="22" textAnchor="middle" className="fill-red-400 text-[8px]">Pulsating Dark Halo</text>
             </svg>
             
             <svg viewBox="0 0 150 150" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700">
                {/* Ring Artifact */}
                <text x="75" y="15" textAnchor="middle" className="fill-red-400 text-[10px] font-bold">Ring Artifact (3rd Gen)</text>
                <circle cx="75" cy="80" r="40" className="fill-slate-600" /> {/* Brain */}
-               <circle cx="75" cy="80" r="20" className="fill-none stroke-white stroke-[2]" /> {/* Bright Ring */}
-               <path d="M 95 80 L 115 80" className="stroke-red-400 stroke-1" />
-               <polygon points="95,80 100,78 100,82" className="fill-red-400" />
-               <text x="118" y="83" className="fill-red-400 text-[8px]">Bad Detector</text>
+               <circle cx="75" cy="80" r="20" className="fill-none stroke-white stroke-[2]" strokeDasharray="126" strokeDashoffset="126">
+                 <animate attributeName="stroke-dashoffset" from="126" to="0" dur="2s" repeatCount="indefinite" />
+               </circle>
+               <g>
+                 <animateTransform attributeName="transform" type="rotate" from="0 75 80" to="360 75 80" dur="2s" repeatCount="indefinite" />
+                 <path d="M 95 80 L 125 80" className="stroke-red-400 stroke-1 stroke-dashed" />
+                 <polygon points="95,80 100,78 100,82" className="fill-red-400" />
+                 <text x="135" y="83" textAnchor="middle" className="fill-red-400 text-[8px]" transform="rotate(-90 135 83)">Bad Detector</text>
+               </g>
             </svg>
             
             <svg viewBox="0 0 150 150" className="w-full h-32 bg-slate-950/50 rounded-lg p-2 border border-slate-700">
                {/* Motion Artifact */}
                <text x="75" y="15" textAnchor="middle" className="fill-red-400 text-[10px] font-bold">Motion Artifact</text>
-               <circle cx="75" cy="80" r="20" className="fill-white" />
+               <g>
+                 <animateTransform attributeName="transform" type="translate" values="-5 0; 5 0; -5 0" dur="0.2s" repeatCount="indefinite" />
+                 <circle cx="75" cy="80" r="20" className="fill-white" />
+               </g>
                {/* Streaks */}
-               <line x1="55" y1="80" x2="10" y2="80" className="stroke-white stroke-2 opacity-50" />
-               <line x1="95" y1="80" x2="140" y2="80" className="stroke-white stroke-2 opacity-50" />
-               <line x1="75" y1="60" x2="75" y2="20" className="stroke-white stroke-2 opacity-50" />
-               <line x1="75" y1="100" x2="75" y2="140" className="stroke-white stroke-2 opacity-50" />
-               <line x1="60" y1="65" x2="30" y2="35" className="stroke-white stroke-1 opacity-40" />
-               <line x1="90" y1="95" x2="120" y2="125" className="stroke-white stroke-1 opacity-40" />
+               <g>
+                 <animate attributeName="opacity" values="0; 1; 0" dur="0.2s" repeatCount="indefinite" />
+                 <line x1="55" y1="80" x2="10" y2="80" className="stroke-white stroke-2 opacity-50" />
+                 <line x1="95" y1="80" x2="140" y2="80" className="stroke-white stroke-2 opacity-50" />
+                 <line x1="75" y1="60" x2="75" y2="20" className="stroke-white stroke-2 opacity-50" />
+                 <line x1="75" y1="100" x2="75" y2="140" className="stroke-white stroke-2 opacity-50" />
+                 <line x1="60" y1="65" x2="30" y2="35" className="stroke-white stroke-1 opacity-40" />
+                 <line x1="90" y1="95" x2="120" y2="125" className="stroke-white stroke-1 opacity-40" />
+               </g>
                <text x="75" y="145" textAnchor="middle" className="fill-red-400 text-[8px]">Streaking</text>
             </svg>
          </div>
