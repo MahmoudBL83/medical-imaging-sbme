@@ -54,12 +54,15 @@ export default function Section3_Formation() {
               
               {/* X-ray paths at angle theta */}
               <g transform="rotate(-30 100 100)">
-                 {/* Ray 1 */}
-                 <line x1="100" y1="180" x2="100" y2="20" className="stroke-yellow-400 stroke-1 stroke-dashed" />
-                 {/* Ray 2 (through dense part) */}
-                 <line x1="110" y1="180" x2="110" y2="20" className="stroke-yellow-400 stroke-1 stroke-dashed" />
-                 {/* Ray 3 */}
-                 <line x1="120" y1="180" x2="120" y2="20" className="stroke-yellow-400 stroke-1 stroke-dashed" />
+                 <g strokeDasharray="6 4">
+                   <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite" />
+                   {/* Ray 1 */}
+                   <line x1="100" y1="180" x2="100" y2="20" className="stroke-yellow-400 stroke-1" />
+                   {/* Ray 2 (through dense part) */}
+                   <line x1="110" y1="180" x2="110" y2="20" className="stroke-yellow-400 stroke-[1.5]" />
+                   {/* Ray 3 */}
+                   <line x1="120" y1="180" x2="120" y2="20" className="stroke-yellow-400 stroke-1" />
+                 </g>
                  
                  {/* L-axis */}
                  <line x1="50" y1="20" x2="150" y2="20" className="stroke-blue-400 stroke-1" />
@@ -129,12 +132,13 @@ export default function Section3_Formation() {
                  <rect x="120" y="25" width="60" height="60" className="fill-none stroke-slate-600 stroke-1" />
                  
                  {/* Smearing lines */}
-                 <g className="stroke-emerald-400/30 stroke-2">
-                    <line x1="130" y1="25" x2="130" y2="85" />
-                    <line x1="140" y1="25" x2="140" y2="85" />
-                    <line x1="150" y1="25" x2="150" y2="85" className="stroke-emerald-400/80" /> {/* Peak */}
-                    <line x1="160" y1="25" x2="160" y2="85" />
-                    <line x1="170" y1="25" x2="170" y2="85" />
+                 <g strokeDasharray="6 4">
+                    <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1.5s" repeatCount="indefinite" />
+                    <line x1="130" y1="25" x2="130" y2="85" className="stroke-emerald-400/30 stroke-1" />
+                    <line x1="140" y1="25" x2="140" y2="85" className="stroke-emerald-400/50 stroke-1" />
+                    <line x1="150" y1="25" x2="150" y2="85" className="stroke-emerald-400/80 stroke-2" /> {/* Peak */}
+                    <line x1="160" y1="25" x2="160" y2="85" className="stroke-emerald-400/50 stroke-1" />
+                    <line x1="170" y1="25" x2="170" y2="85" className="stroke-emerald-400/30 stroke-1" />
                  </g>
                  <text x="150" y="100" textAnchor="middle" className="fill-slate-400 text-[6px]">Across image plane</text>
                  
@@ -148,6 +152,7 @@ export default function Section3_Formation() {
                  
                  {/* Star artifact/summation */}
                  <g className="stroke-emerald-400/40 stroke-2">
+                    <animateTransform attributeName="transform" type="rotate" from="0 250 55" to="180 250 55" dur="15s" repeatCount="indefinite" />
                     <line x1="250" y1="25" x2="250" y2="85" />
                     <line x1="220" y1="55" x2="280" y2="55" />
                     <line x1="228" y1="33" x2="272" y2="77" />

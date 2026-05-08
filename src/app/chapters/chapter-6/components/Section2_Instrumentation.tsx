@@ -20,16 +20,21 @@ export default function Section2_Instrumentation() {
               {/* Patient */}
               <circle cx="0" cy="0" r="15" className="fill-purple-900/40 stroke-purple-700 stroke-1" />
               
-              {/* X-ray tube */}
-              <circle cx="0" cy="-45" r="5" className="fill-yellow-400" />
+              {/* Rotating Source and Detector */}
+              <g>
+                 <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
+                 
+                 {/* X-ray tube */}
+                 <circle cx="0" cy="-45" r="5" className="fill-yellow-400" />
+                 
+                 {/* Fan beam */}
+                 <path d="M 0,-45 L -25,35 L 25,35 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+                 
+                 {/* Detector Arc */}
+                 <path d="M -30,40 Q 0,50, 30,40" className="fill-none stroke-emerald-400 stroke-4" />
+              </g>
               
-              {/* Fan beam */}
-              <path d="M 0,-45 L -25,35 L 25,35 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
-              
-              {/* Detector Arc */}
-              <path d="M -30,40 Q 0,50, 30,40" className="fill-none stroke-emerald-400 stroke-4" />
-              
-              {/* Rotation arrows */}
+              {/* Rotation arrows (Fixed) */}
               <path d="M -50,0 A 50 50 0 0 1 -35,-35" className="fill-none stroke-slate-400 stroke-1" />
               <polygon points="-35,-35 -38,-30 -32,-32" className="fill-slate-400" />
               
@@ -50,15 +55,20 @@ export default function Section2_Instrumentation() {
               {/* Patient */}
               <circle cx="0" cy="0" r="15" className="fill-purple-900/40 stroke-purple-700 stroke-1" />
               
-              {/* X-ray tube (rotating inside) */}
-              <circle cx="-35" cy="-25" r="5" className="fill-yellow-400" />
-              
-              {/* Fan beam (wide) */}
-              <path d="M -35,-25 L 35,25 L 10,40 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+              {/* Rotating Source inside fixed detector */}
+              <g>
+                 <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3s" repeatCount="indefinite" />
+                 
+                 {/* X-ray tube */}
+                 <circle cx="0" cy="-40" r="5" className="fill-yellow-400" />
+                 
+                 {/* Fan beam (wide) */}
+                 <path d="M 0,-40 L -35,25 A 45 45 0 0 0 35,25 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+              </g>
               
               {/* Tube Rotation arrow */}
-              <path d="M -15,-40 A 45 45 0 0 1 15,-40" className="fill-none stroke-yellow-400 stroke-1" />
-              <polygon points="15,-40 10,-38 12,-43" className="fill-yellow-400" />
+              <path d="M -20,-45 A 50 50 0 0 1 20,-45" className="fill-none stroke-yellow-400/50 stroke-1" />
+              <polygon points="20,-45 15,-43 17,-48" className="fill-yellow-400/50" />
            </g>
         </svg>
       </header>
