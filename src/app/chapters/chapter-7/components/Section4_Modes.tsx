@@ -29,38 +29,69 @@ export default function Section4_Modes() {
            
            <div className="border-l-4 border-emerald-500 bg-emerald-950/20 p-6 rounded-r-lg">
               <h4 className="text-emerald-400 font-bold mb-4">Annihilation Reaction</h4>
-              
-              <svg viewBox="0 0 300 120" className="w-full max-w-[300px] mx-auto h-32 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-3 shadow-inner">
+                            <svg viewBox="0 0 300 120" className="w-full max-w-[300px] mx-auto h-32 mb-6 bg-slate-900 border border-slate-700 rounded-lg p-3 shadow-inner">
                  {/* Incoming Electron */}
-                 <circle cx="120" cy="30" r="4" className="fill-blue-400" />
-                 <text x="110" y="25" className="fill-blue-400 text-[10px] font-bold">e⁻</text>
-                 <path d="M 125,35 L 140,50" className="stroke-blue-400 stroke-1 stroke-dashed" />
-                 <polygon points="140,50 135,48 138,45" className="fill-blue-400" transform="rotate(45 140 50)" />
+                 <g>
+                   <animateTransform attributeName="transform" type="translate" values="-40 -40; 0 0; 0 0; 0 0" keyTimes="0; 0.4; 0.9; 1" dur="4s" repeatCount="indefinite" />
+                   <circle cx="120" cy="30" r="4" className="fill-blue-400">
+                     <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.38; 0.4; 1" dur="4s" repeatCount="indefinite" />
+                   </circle>
+                   <text x="110" y="25" className="fill-blue-400 text-[10px] font-bold">
+                     <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.38; 0.4; 1" dur="4s" repeatCount="indefinite" />
+                     e⁻
+                   </text>
+                 </g>
+                 
+                 <path d="M 125,35 L 140,50" className="stroke-blue-400/30 stroke-1 stroke-dashed" />
                  
                  {/* Incoming Positron */}
-                 <circle cx="180" cy="30" r="4" className="fill-red-400" />
-                 <text x="180" y="25" className="fill-red-400 text-[10px] font-bold">β⁺</text>
-                 <path d="M 175,35 L 160,50" className="stroke-red-400 stroke-1 stroke-dashed" />
-                 <polygon points="160,50 162,45 165,48" className="fill-red-400" transform="rotate(-45 160 50)" />
+                 <g>
+                   <animateTransform attributeName="transform" type="translate" values="40 -40; 0 0; 0 0; 0 0" keyTimes="0; 0.4; 0.9; 1" dur="4s" repeatCount="indefinite" />
+                   <circle cx="180" cy="30" r="4" className="fill-red-400">
+                     <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.38; 0.4; 1" dur="4s" repeatCount="indefinite" />
+                   </circle>
+                   <text x="180" y="25" className="fill-red-400 text-[10px] font-bold">
+                     <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.38; 0.4; 1" dur="4s" repeatCount="indefinite" />
+                     β⁺
+                   </text>
+                 </g>
                  
-                 {/* Annihilation point */}
-                 <circle cx="150" cy="60" r="6" className="fill-yellow-400" />
-                 <path d="M 140,50 L 160,70 M 160,50 L 140,70 M 150,45 L 150,75 M 135,60 L 165,60" className="stroke-yellow-400 stroke-2" />
+                 <path d="M 175,35 L 160,50" className="stroke-red-400/30 stroke-1 stroke-dashed" />
+                 
+                 {/* Annihilation point / Flash */}
+                 <g>
+                   <circle cx="150" cy="60" r="6" className="fill-yellow-400">
+                     <animate attributeName="r" values="0; 0; 15; 0; 0" keyTimes="0; 0.38; 0.42; 0.5; 1" dur="4s" repeatCount="indefinite" />
+                     <animate attributeName="opacity" values="0; 0; 1; 0; 0" keyTimes="0; 0.38; 0.42; 0.5; 1" dur="4s" repeatCount="indefinite" />
+                   </circle>
+                 </g>
                  
                  {/* 511 keV Gamma 1 (Left) */}
-                 <path d="M 140,60 Q 120,50, 100,60 T 60,60 T 20,60" className="fill-none stroke-emerald-400 stroke-2" />
-                 <polygon points="20,60 25,57 25,63" className="fill-emerald-400" />
-                 <text x="40" y="50" className="fill-emerald-400 text-[10px] font-bold">511 keV γ</text>
+                 <g>
+                   <path d="M 140,60 Q 120,50, 100,60 T 60,60 T 20,60" className="fill-none stroke-emerald-400 stroke-2" strokeDasharray="150" strokeDashoffset="150">
+                     <animate attributeName="stroke-dashoffset" values="150; 150; 0; 0" keyTimes="0; 0.4; 0.8; 1" dur="4s" repeatCount="indefinite" />
+                   </path>
+                   <polygon points="20,60 25,57 25,63" className="fill-emerald-400">
+                     <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.79; 0.8; 0.9; 1" dur="4s" repeatCount="indefinite" />
+                   </polygon>
+                   <text x="40" y="50" className="fill-emerald-400 text-[10px] font-bold">511 keV γ</text>
+                 </g>
                  
                  {/* 511 keV Gamma 2 (Right) */}
-                 <path d="M 160,60 Q 180,70, 200,60 T 240,60 T 280,60" className="fill-none stroke-emerald-400 stroke-2" />
-                 <polygon points="280,60 275,57 275,63" className="fill-emerald-400" />
-                 <text x="220" y="50" className="fill-emerald-400 text-[10px] font-bold">511 keV γ</text>
+                 <g>
+                   <path d="M 160,60 Q 180,70, 200,60 T 240,60 T 280,60" className="fill-none stroke-emerald-400 stroke-2" strokeDasharray="150" strokeDashoffset="150">
+                     <animate attributeName="stroke-dashoffset" values="150; 150; 0; 0" keyTimes="0; 0.4; 0.8; 1" dur="4s" repeatCount="indefinite" />
+                   </path>
+                   <polygon points="280,60 275,57 275,63" className="fill-emerald-400">
+                     <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.79; 0.8; 0.9; 1" dur="4s" repeatCount="indefinite" />
+                   </polygon>
+                   <text x="220" y="50" className="fill-emerald-400 text-[10px] font-bold">511 keV γ</text>
+                 </g>
                  
                  {/* 180 Degree Angle Arc */}
                  <path d="M 70,60 A 80 80 0 0 1 230 60" className="fill-none stroke-slate-500 stroke-1 stroke-dashed" />
                  <text x="150" y="95" textAnchor="middle" className="fill-slate-400 text-[10px]">180° Back-to-Back</text>
-              </svg>
+               </svg>
 
               <p className="text-sm text-slate-300">
                 A positron is an antimatter electron. It travels a short distance (millimeters), deposits kinetic energy, and then meets a free electron. The positron and electron annihilate each other. From conservation of energy (<Latex formula="E=mc^2" />), two 511 keV annihilation photons appear. From conservation of momentum, they are emitted 180° back-to-back. This forms the basis of PET imaging.

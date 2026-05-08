@@ -59,9 +59,13 @@ export default function Section3_Decay() {
               <text x="75" y="45" className="fill-red-400 text-[8px]">Radionuclide</text>
               
               {/* Decay Arrow */}
-              <path d="M 72,52 L 85,65" className="stroke-red-400 stroke-1 stroke-dashed" />
-              <polygon points="85,65 82,60 87,60" className="fill-red-400" transform="rotate(-45 85 65)" />
-              <text x="85" y="75" className="fill-red-400 text-[6px]">Decay</text>
+              <g>
+                <path d="M 72,52 L 85,65" className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+                   <animate attributeName="stroke-dashoffset" from="6" to="0" dur="1s" repeatCount="indefinite" />
+                </path>
+                <polygon points="85,65 82,60 87,60" className="fill-red-400" transform="rotate(-45 85 65)" />
+                <text x="85" y="75" className="fill-red-400 text-[6px]">Decay</text>
+              </g>
            </svg>
 
            <p className="text-slate-300 text-sm leading-relaxed mb-4">
