@@ -15,22 +15,68 @@ export default function Section4_Noise() {
 
       <div className="grid lg:grid-cols-2 gap-8">
          {/* SNR and Quantum Mottle */}
-         <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl relative overflow-hidden">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
-               <Activity className="w-5 h-5 text-red-400" /> Quantum SNR
-            </h3>
-            <p className="text-sm text-slate-300 mb-4 leading-relaxed">
-              Because photon detection follows Poisson statistics, the variance in the number of background photons <Latex formula="N_b" /> is proportional to <Latex formula="N_b" /> itself. For a structure with local contrast <Latex formula="C" />, the ideal SNR is:
-            </p>
-            <div className="bg-slate-950 border border-slate-800 p-3 rounded text-center mb-4">
-               <Latex formula="SNR = C \sqrt{N_b} = C \sqrt{\Phi A R t \eta}" displayMode />
+         <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl relative overflow-hidden flex flex-col justify-between">
+            <div>
+               <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
+                  <Activity className="w-5 h-5 text-red-400" /> Quantum SNR
+               </h3>
+               <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                 Because photon detection follows Poisson statistics, the variance in the number of background photons <Latex formula="N_b" /> is proportional to <Latex formula="N_b" /> itself. For a structure with local contrast <Latex formula="C" />, the ideal SNR is:
+               </p>
+               <div className="bg-slate-950 border border-slate-800 p-3 rounded text-center mb-4">
+                  <Latex formula="SNR = C \sqrt{N_b} = C \sqrt{\Phi A R t \eta}" displayMode />
+               </div>
             </div>
-            <div className="text-xs text-slate-400 space-y-2">
-               <p><strong><Latex formula="\Phi" /></strong>: Photons per Roentgen per cm².</p>
-               <p><strong><Latex formula="A" /></strong>: Pixel area.</p>
-               <p><strong><Latex formula="R" /></strong>: Radiation exposure (Dose).</p>
-               <p><strong><Latex formula="t" /></strong>: Transmission fraction through body.</p>
-               <p><strong><Latex formula="\eta" /></strong>: Detector efficiency.</p>
+            
+            <svg viewBox="0 0 200 120" className="w-full h-28 mb-4 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <style>
+                 {`
+                   @keyframes mottleFlicker {
+                     0%, 100% { opacity: 0.8; }
+                     50% { opacity: 0.3; }
+                   }
+                   @keyframes smoothFlicker {
+                     0%, 100% { opacity: 0.9; }
+                     50% { opacity: 0.7; }
+                   }
+                 `}
+               </style>
+               {/* Low Dose / Low SNR */}
+               <text x="50" y="15" textAnchor="middle" className="fill-red-400 text-[8px] font-bold">Low Dose (Low N_b)</text>
+               <rect x="20" y="25" width="60" height="60" className="fill-slate-800" />
+               <circle cx="50" cy="55" r="15" className="fill-slate-700" /> {/* Target object */}
+               {/* Simulate noisy pixels */}
+               <g style={{ animation: 'mottleFlicker 0.2s infinite alternate' }}>
+                  {Array.from({ length: 60 }).map((_, i) => (
+                     <rect key={`low-${i}`} x={20 + Math.random() * 58} y={25 + Math.random() * 58} width="2" height="2" fill="#fff" opacity={Math.random() * 0.5} />
+                  ))}
+               </g>
+               <text x="50" y="100" textAnchor="middle" className="fill-slate-400 text-[6px]">High Quantum Mottle</text>
+               <text x="50" y="110" textAnchor="middle" className="fill-red-400 text-[6px] font-bold">Low SNR</text>
+               
+               {/* Divider */}
+               <line x1="100" y1="20" x2="100" y2="100" className="stroke-slate-700 stroke-1 stroke-dashed" />
+               
+               {/* High Dose / High SNR */}
+               <text x="150" y="15" textAnchor="middle" className="fill-emerald-400 text-[8px] font-bold">High Dose (High N_b)</text>
+               <rect x="120" y="25" width="60" height="60" className="fill-slate-800" />
+               <circle cx="150" cy="55" r="15" className="fill-slate-600" /> {/* Target object - clearer */}
+               {/* Simulate smoother pixels (less relative noise) */}
+               <g style={{ animation: 'smoothFlicker 0.5s infinite alternate' }}>
+                  {Array.from({ length: 150 }).map((_, i) => (
+                     <rect key={`high-${i}`} x={120 + Math.random() * 58} y={25 + Math.random() * 58} width="1.5" height="1.5" fill="#fff" opacity={Math.random() * 0.2} />
+                  ))}
+               </g>
+               <text x="150" y="100" textAnchor="middle" className="fill-slate-400 text-[6px]">Smooth Image</text>
+               <text x="150" y="110" textAnchor="middle" className="fill-emerald-400 text-[6px] font-bold">High SNR</text>
+            </svg>
+
+            <div className="text-[10px] text-slate-400 grid grid-cols-2 gap-x-2 gap-y-1 bg-slate-900 p-2 rounded">
+               <p><strong><Latex formula="\Phi" /></strong>: Photons/Roentgen/cm²</p>
+               <p><strong><Latex formula="A" /></strong>: Pixel area</p>
+               <p><strong><Latex formula="R" /></strong>: Radiation Dose</p>
+               <p><strong><Latex formula="t" /></strong>: Transmission</p>
+               <p className="col-span-2"><strong><Latex formula="\eta" /></strong>: Detector efficiency</p>
             </div>
          </div>
 

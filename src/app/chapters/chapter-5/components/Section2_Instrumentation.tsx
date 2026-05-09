@@ -80,31 +80,120 @@ export default function Section2_Instrumentation() {
 
       <div className="grid lg:grid-cols-2 gap-8 mb-8">
          {/* Filtration & Restriction */}
-         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-               <Shield className="w-4 h-4 text-blue-400" /> 2. Filtration & Restriction
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              <strong>Filtration</strong> absorbs low-energy x-rays that would otherwise be absorbed by the patient without reaching the detector. It "hardens" the beam and lowers patient dose (e.g., using Aluminum/Copper).
-            </p>
-            <p className="text-sm text-slate-300">
-              <strong>Restriction (Collimation)</strong> shapes the beam to the exact field of view, minimizing dose and reducing scatter.
-            </p>
+         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+            <div>
+               <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+                  <Shield className="w-4 h-4 text-blue-400" /> 2. Filtration & Restriction
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 <strong>Filtration</strong> absorbs low-energy x-rays that would otherwise be absorbed by the patient without reaching the detector. It "hardens" the beam and lowers patient dose (e.g., using Aluminum/Copper).
+               </p>
+               <p className="text-sm text-slate-300 mb-4">
+                 <strong>Restriction (Collimation)</strong> shapes the beam to the exact field of view, minimizing dose and reducing scatter.
+               </p>
+            </div>
+            <svg viewBox="0 0 200 120" className="w-full h-28 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <style>
+                 {`
+                   @keyframes moveFast {
+                     to { stroke-dashoffset: -20; }
+                   }
+                 `}
+               </style>
+               {/* Source */}
+               <circle cx="100" cy="5" r="2" className="fill-yellow-400" />
+               
+               {/* Collimator */}
+               <rect x="70" y="20" width="20" height="6" className="fill-slate-600" />
+               <rect x="110" y="20" width="20" height="6" className="fill-slate-600" />
+               <text x="50" y="25" className="fill-slate-400 text-[6px]">Collimator</text>
+               
+               {/* Filter */}
+               <rect x="85" y="40" width="30" height="4" className="fill-blue-800/80" />
+               <text x="140" y="43" className="fill-blue-400 text-[6px]">Al Filter</text>
+               
+               {/* Rays (Before Collimator) */}
+               <path d="M 100,5 L 60,30 M 100,5 L 140,30" className="stroke-red-500/50 stroke-1" strokeDasharray="2 2" />
+               <circle cx="65" cy="22" r="1.5" className="fill-red-500" /> {/* Blocked by collimator */}
+               <circle cx="135" cy="22" r="1.5" className="fill-red-500" /> {/* Blocked by collimator */}
+               
+               {/* Rays (Between Collimator and Filter) - Mixed energy */}
+               <path d="M 100,5 L 85,40" className="stroke-red-400 stroke-1" strokeDasharray="3 3" style={{ animation: 'moveFast 1s linear infinite' }} />
+               <path d="M 100,5 L 115,40" className="stroke-blue-400 stroke-1" strokeDasharray="3 3" style={{ animation: 'moveFast 1s linear infinite' }} />
+               
+               {/* Rays (After Filter) - Hardened beam */}
+               {/* Low energy stopped */}
+               <circle cx="85" cy="40" r="1.5" className="fill-red-500" />
+               <text x="65" y="48" className="fill-red-400 text-[5px]">Absorbed</text>
+               
+               {/* High energy passes */}
+               <path d="M 115,40 L 130,90" className="stroke-blue-400 stroke-1.5" strokeDasharray="3 3" style={{ animation: 'moveFast 1s linear infinite' }} />
+               <path d="M 100,40 L 100,90" className="stroke-blue-400 stroke-1.5" strokeDasharray="3 3" style={{ animation: 'moveFast 1s linear infinite' }} />
+               
+               <text x="100" y="105" textAnchor="middle" className="fill-blue-300 text-[8px] font-bold">Hardened Beam</text>
+            </svg>
          </div>
 
          {/* Contrast Agents */}
-         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-               <Target className="w-4 h-4 text-pink-400" /> 3. Contrast Agents
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              Materials introduced to increase differential attenuation. 
-            </p>
-            <div className="bg-slate-950 p-3 rounded border border-slate-800 text-xs text-slate-400 mb-2">
-              <strong>Iodine (<Latex formula="Z=53" />):</strong> Intravascular injection. K-edge = 33.2 keV.<br/>
-              <strong>Barium (<Latex formula="Z=56" />):</strong> GI tract ingestion. K-edge = 37.4 keV.
+         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+            <div>
+               <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+                  <Target className="w-4 h-4 text-pink-400" /> 3. Contrast Agents
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 Materials introduced to increase differential attenuation. 
+               </p>
+               <div className="bg-slate-950 p-3 rounded border border-slate-800 text-xs text-slate-400 mb-2">
+                 <strong>Iodine (<Latex formula="Z=53" />):</strong> Intravascular injection. K-edge = 33.2 keV.<br/>
+                 <strong>Barium (<Latex formula="Z=56" />):</strong> GI tract ingestion. K-edge = 37.4 keV.
+               </div>
             </div>
-            <p className="text-xs text-slate-500 italic">
+            
+            <svg viewBox="0 0 200 120" className="w-full h-28 mb-4 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <style>
+                 {`
+                   @keyframes photonHit {
+                     0% { transform: translate(-40px, -20px); opacity: 0; }
+                     20% { opacity: 1; }
+                     50% { transform: translate(0, 0); opacity: 1; }
+                     51%, 100% { opacity: 0; }
+                   }
+                   @keyframes electronEject {
+                     0%, 50% { transform: translate(0, 0); opacity: 1; }
+                     100% { transform: translate(40px, -20px); opacity: 0; }
+                   }
+                 `}
+               </style>
+               {/* Atom Nucleus */}
+               <circle cx="100" cy="80" r="10" className="fill-purple-600 stroke-purple-400 stroke-1" />
+               <text x="100" y="83" textAnchor="middle" className="fill-white text-[8px] font-bold">Z</text>
+               
+               {/* K-Shell */}
+               <circle cx="100" cy="80" r="25" className="fill-none stroke-slate-600 stroke-1 stroke-dashed" />
+               <text x="100" y="115" textAnchor="middle" className="fill-slate-500 text-[6px]">K-Shell</text>
+               
+               {/* L-Shell */}
+               <circle cx="100" cy="80" r="40" className="fill-none stroke-slate-700 stroke-1 stroke-dashed" />
+               
+               {/* Electrons */}
+               <circle cx="75" cy="80" r="2" className="fill-blue-400" />
+               <circle cx="100" cy="55" r="2" className="fill-blue-400" />
+               <circle cx="138" cy="68" r="2" className="fill-blue-400" />
+               <circle cx="62" cy="90" r="2" className="fill-blue-400" />
+               
+               {/* Interaction Node (K-shell electron) */}
+               <g transform="translate(115, 60)">
+                  <circle cx="0" cy="0" r="2" className="fill-pink-400" style={{ animation: 'electronEject 2s ease-out infinite' }} />
+                  {/* Incoming Photon */}
+                  <path d="M -30,-15 Q -20,-20 -10,-5 T 0,0" className="fill-none stroke-yellow-400 stroke-1" style={{ animation: 'photonHit 2s ease-in infinite' }} />
+                  <circle cx="0" cy="0" r="4" className="fill-yellow-400/50" style={{ animation: 'photonHit 2s ease-in infinite' }} />
+               </g>
+
+               <text x="50" y="20" className="fill-yellow-400 text-[6px]">Incident Photon (E ≈ K-edge)</text>
+               <text x="150" y="20" className="fill-pink-400 text-[6px]">Photoelectron</text>
+            </svg>
+            
+            <p className="text-xs text-slate-500 italic text-center mt-2">
               Their K-shell binding energies perfectly align with diagnostic x-ray energies to maximize the photoelectric effect.
             </p>
          </div>

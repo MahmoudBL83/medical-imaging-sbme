@@ -84,13 +84,49 @@ export default function Section1_Intro() {
               </p>
            </div>
 
-           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl border-l-4 border-l-red-500">
-              <h3 className="text-white font-bold text-sm mb-3 flex items-center gap-2">
-                 <Layers className="w-4 h-4 text-red-400" /> Major Limitation
-              </h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                 Lack of depth resolution. Superimpositions of shadows from overlying and underlying tissues hide details and limit contrast.
-              </p>
+           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl border-l-4 border-l-red-500 flex flex-col justify-between">
+              <div>
+                 <h3 className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                    <Layers className="w-4 h-4 text-red-400" /> Major Limitation
+                 </h3>
+                 <p className="text-sm text-slate-400 leading-relaxed mb-4">
+                    Lack of depth resolution. Superimpositions of shadows from overlying and underlying tissues hide details and limit contrast.
+                 </p>
+              </div>
+              <svg viewBox="0 0 200 120" className="w-full h-24 bg-slate-950/50 rounded-lg p-2 mt-auto">
+                 <style>
+                   {`
+                     @keyframes floatObj1 {
+                       0%, 100% { transform: translateX(0); }
+                       50% { transform: translateX(10px); }
+                     }
+                     @keyframes floatObj2 {
+                       0%, 100% { transform: translateX(0); }
+                       50% { transform: translateX(-10px); }
+                     }
+                   `}
+                 </style>
+                 <circle cx="100" cy="10" r="2" className="fill-yellow-400" />
+                 {/* Rays */}
+                 <path d="M 100,10 L 60,110 M 100,10 L 140,110" className="stroke-yellow-400/20 stroke-1" strokeDasharray="2 2" />
+                 
+                 {/* Object 1 (Top) */}
+                 <g style={{ animation: 'floatObj1 4s ease-in-out infinite' }}>
+                    <circle cx="100" cy="40" r="10" className="fill-blue-500/60 stroke-blue-400 stroke-1" />
+                 </g>
+                 
+                 {/* Object 2 (Bottom) */}
+                 <g style={{ animation: 'floatObj2 5s ease-in-out infinite' }}>
+                    <rect x="90" y="70" width="20" height="10" className="fill-red-500/60 stroke-red-400 stroke-1" />
+                 </g>
+
+                 {/* Detector */}
+                 <line x1="40" y1="110" x2="160" y2="110" className="stroke-slate-500 stroke-2" />
+                 
+                 {/* Shadows blending */}
+                 <ellipse cx="100" cy="110" rx="20" ry="2" className="fill-black/60" />
+                 <text x="100" y="105" textAnchor="middle" className="fill-slate-400 text-[6px]">Overlapping Shadow</text>
+              </svg>
            </div>
         </div>
       </div>

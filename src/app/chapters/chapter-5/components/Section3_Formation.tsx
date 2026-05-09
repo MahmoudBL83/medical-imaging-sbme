@@ -35,6 +35,37 @@ export default function Section3_Formation() {
            
            <div className="bg-slate-900 border border-slate-700 p-5 rounded-xl border-l-2 border-l-blue-500">
               <h4 className="text-blue-400 font-bold text-sm mb-2">Inverse Square Law & Obliquity</h4>
+              
+              <svg viewBox="0 0 200 120" className="w-full h-32 mb-4 bg-slate-950/50 rounded-lg p-2">
+                 <style>
+                   {`
+                     @keyframes pulseBeamArea {
+                       0%, 100% { fill-opacity: 0.1; }
+                       50% { fill-opacity: 0.4; }
+                     }
+                   `}
+                 </style>
+                 <circle cx="10" cy="60" r="3" className="fill-blue-400 animate-pulse" />
+                 
+                 {/* Rays */}
+                 <path d="M 10,60 L 180,20 M 10,60 L 180,100" className="stroke-blue-400/30 stroke-1" strokeDasharray="3 3" />
+                 <path d="M 10,60 L 180,40 M 10,60 L 180,80" className="stroke-blue-400/10 stroke-1" />
+                 
+                 {/* Area 1 at distance r */}
+                 <rect x="80" y="41" width="10" height="38" className="fill-blue-400 stroke-blue-300 stroke-1" style={{ animation: 'pulseBeamArea 2s infinite' }} />
+                 <text x="85" y="35" textAnchor="middle" className="fill-blue-300 text-[8px]">Area A</text>
+                 <line x1="10" y1="110" x2="85" y2="110" className="stroke-slate-500 stroke-1" />
+                 <text x="47" y="118" textAnchor="middle" className="fill-slate-400 text-[6px]">Distance r</text>
+                 
+                 {/* Area 2 at distance 2r */}
+                 <rect x="160" y="24" width="10" height="72" className="fill-blue-400 stroke-blue-300 stroke-1" style={{ animation: 'pulseBeamArea 2s infinite 0.5s' }} />
+                 <text x="165" y="18" textAnchor="middle" className="fill-blue-300 text-[8px]">Area 4A</text>
+                 <line x1="85" y1="110" x2="165" y2="110" className="stroke-slate-500 stroke-1" />
+                 <text x="125" y="118" textAnchor="middle" className="fill-slate-400 text-[6px]">Distance 2r</text>
+                 
+                 <text x="165" y="62" textAnchor="middle" className="fill-blue-900 text-[6px] font-bold">1/4 Intensity</text>
+              </svg>
+
               <p className="text-xs text-slate-300 mb-2">
                 Beam intensity decreases away from the central axis. The inverse square law causes a <Latex formula="\cos^2 \theta" /> drop, and obliquity (detector not orthogonal to beam) causes a <Latex formula="\cos \theta" /> drop.
               </p>
@@ -144,7 +175,69 @@ export default function Section3_Formation() {
            </h3>
 
            <div className="bg-slate-900 border border-slate-700 p-5 rounded-xl">
-              <h4 className="text-white font-bold text-sm mb-2">Extended Source Blurring (Penumbra)</h4>
+              <h4 className="text-white font-bold text-sm mb-4">Extended Source Blurring (Penumbra)</h4>
+              
+              <svg viewBox="0 0 400 160" className="w-full h-40 mb-4 bg-slate-950/50 rounded-lg p-2">
+                 {/* Left side: Point Source */}
+                 <g transform="translate(50, 0)">
+                    <text x="50" y="15" textAnchor="middle" className="fill-slate-300 text-[10px] font-bold">Point Source (Ideal)</text>
+                    
+                    {/* Point Source */}
+                    <circle cx="50" cy="30" r="1.5" className="fill-yellow-400 animate-pulse" />
+                    
+                    {/* Object */}
+                    <rect x="30" y="80" width="40" height="10" rx="2" className="fill-purple-500/80 stroke-purple-400 stroke-1" />
+                    
+                    {/* Rays */}
+                    <path d="M 50,30 L 10,130" className="stroke-yellow-400/50 stroke-1" />
+                    <path d="M 50,30 L 90,130" className="stroke-yellow-400/50 stroke-1" />
+                    
+                    {/* Detector */}
+                    <line x1="0" y1="130" x2="100" y2="130" className="stroke-slate-500 stroke-2" />
+                    
+                    {/* Shadow (Perfectly Sharp) */}
+                    <rect x="10" y="130" width="80" height="4" className="fill-black" />
+                    <text x="50" y="145" textAnchor="middle" className="fill-emerald-400 text-[8px]">Sharp Edge</text>
+                 </g>
+
+                 {/* Divider */}
+                 <line x1="200" y1="20" x2="200" y2="140" className="stroke-slate-700 stroke-1 stroke-dashed" />
+
+                 {/* Right side: Extended Source */}
+                 <g transform="translate(250, 0)">
+                    <text x="50" y="15" textAnchor="middle" className="fill-slate-300 text-[10px] font-bold">Extended Source (Real)</text>
+                    
+                    {/* Extended Source (Focal spot width D) */}
+                    <rect x="35" y="28" width="30" height="4" rx="1" className="fill-yellow-400/80 animate-pulse" />
+                    <text x="80" y="32" className="fill-yellow-400 text-[6px]">Width D</text>
+                    
+                    {/* Object */}
+                    <rect x="30" y="80" width="40" height="10" rx="2" className="fill-purple-500/80 stroke-purple-400 stroke-1" />
+                    
+                    {/* Rays from Left Edge of Source */}
+                    <path d="M 35,30 L 0,130" className="stroke-yellow-400/30 stroke-1" />
+                    <path d="M 35,30 L 80,130" className="stroke-yellow-400/30 stroke-1" />
+                    
+                    {/* Rays from Right Edge of Source */}
+                    <path d="M 65,30 L 20,130" className="stroke-yellow-500/30 stroke-1" />
+                    <path d="M 65,30 L 100,130" className="stroke-yellow-500/30 stroke-1" />
+                    
+                    {/* Detector */}
+                    <line x1="0" y1="130" x2="100" y2="130" className="stroke-slate-500 stroke-2" />
+                    
+                    {/* Shadows */}
+                    {/* Umbra (Complete Shadow) */}
+                    <rect x="20" y="130" width="60" height="4" className="fill-black" />
+                    <text x="50" y="145" textAnchor="middle" className="fill-slate-300 text-[6px]">Umbra</text>
+                    
+                    {/* Penumbra (Partial Shadow / Blur) */}
+                    <rect x="0" y="130" width="20" height="4" className="fill-slate-800" />
+                    <rect x="80" y="130" width="20" height="4" className="fill-slate-800" />
+                    <text x="10" y="145" textAnchor="middle" className="fill-red-400 text-[6px]">Penumbra (Blur)</text>
+                    <text x="90" y="145" textAnchor="middle" className="fill-red-400 text-[6px]">Penumbra</text>
+                 </g>
+              </svg>
+
               <p className="text-xs text-slate-300 mb-2">
                 X-rays don't originate from a perfect point. A focal spot of diameter <Latex formula="D" /> causes blurred object edges. If the object is at depth <Latex formula="z" />, the source magnification <Latex formula="m(z)" /> is:
               </p>
