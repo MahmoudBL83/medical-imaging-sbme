@@ -41,13 +41,43 @@ export default function Section1_Intro() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-              <h3 className="text-white font-bold text-sm mb-3 flex items-center gap-2">
-                 <Disc className="w-4 h-4 text-blue-400" /> The Basic Mechanism
-              </h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                 Imagine taking a series of conventional x-rays while rotating the patient slightly between each exposure. Each 1-D projection line from these views contains information about an axial cross-section from a different angle.
-              </p>
+           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+              <div>
+                 <h3 className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                    <Disc className="w-4 h-4 text-blue-400" /> The Basic Mechanism
+                 </h3>
+                 <p className="text-sm text-slate-400 leading-relaxed mb-4">
+                    Imagine taking a series of conventional x-rays while rotating the patient slightly between each exposure. Each 1-D projection line from these views contains information about an axial cross-section from a different angle.
+                 </p>
+              </div>
+              
+              <svg viewBox="0 0 200 120" className="w-full h-24 mt-auto bg-slate-950/50 rounded-lg p-2">
+                 <g transform="translate(100, 60)">
+                    {/* Patient Cross-section */}
+                    <circle cx="0" cy="0" r="15" className="fill-purple-900/50 stroke-purple-500 stroke-1" />
+                    <circle cx="-5" cy="-5" r="4" className="fill-slate-600" />
+                    <circle cx="5" cy="5" r="3" className="fill-slate-500" />
+                    
+                    {/* Rotating System */}
+                    <g>
+                       <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
+                       
+                       {/* Source */}
+                       <circle cx="0" cy="-40" r="4" className="fill-yellow-400" />
+                       <text x="10" y="-40" className="fill-yellow-400 text-[6px]">Source</text>
+                       
+                       {/* Beam */}
+                       <path d="M 0,-40 L -25,35 L 25,35 Z" className="fill-yellow-400/20 stroke-yellow-400 stroke-1 stroke-dashed" />
+                       
+                       {/* Detector */}
+                       <path d="M -30,40 Q 0,45 30,40" className="fill-none stroke-emerald-400 stroke-4" />
+                       <text x="0" y="52" textAnchor="middle" className="fill-emerald-400 text-[6px]">Detector</text>
+                       
+                       {/* Detected Profile */}
+                       <path d="M -25,40 Q -15,35 -5,40 T 15,35 T 25,40" className="fill-none stroke-white stroke-1" />
+                    </g>
+                 </g>
+              </svg>
            </div>
 
            <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">

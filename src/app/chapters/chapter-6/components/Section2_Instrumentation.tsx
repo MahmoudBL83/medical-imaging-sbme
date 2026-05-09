@@ -191,31 +191,96 @@ export default function Section2_Instrumentation() {
 
       <div className="grid lg:grid-cols-2 gap-8 mb-8">
          {/* Hardware Innovations */}
-         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-               <Zap className="w-4 h-4 text-purple-400" /> Key Hardware Innovations
-            </h3>
-            <ul className="text-sm text-slate-300 space-y-4">
-              <li>
-                <strong>Slip Rings:</strong> Replaced heavy cables, allowing continuous 360-degree rotation of the heavy gantry without needing to "rewind." Power is transferred via brushes on grooved cylinders, and data via optical links.
-              </li>
-              <li>
-                <strong>Solid-State Detectors:</strong> Scintillation crystals (e.g., cadmium tungstate, CsI) coupled with photodiodes. They have replaced old xenon gas chambers due to much higher detection efficiency.
-              </li>
-            </ul>
+         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+            <div>
+               <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+                  <Zap className="w-4 h-4 text-purple-400" /> Key Hardware Innovations
+               </h3>
+               <ul className="text-sm text-slate-300 space-y-4 mb-4">
+                 <li>
+                   <strong>Slip Rings:</strong> Replaced heavy cables, allowing continuous 360-degree rotation of the heavy gantry without needing to "rewind." Power is transferred via brushes on grooved cylinders, and data via optical links.
+                 </li>
+                 <li>
+                   <strong>Solid-State Detectors:</strong> Scintillation crystals (e.g., cadmium tungstate, CsI) coupled with photodiodes. They have replaced old xenon gas chambers due to much higher detection efficiency.
+                 </li>
+               </ul>
+            </div>
+            
+            <svg viewBox="0 0 200 120" className="w-full h-28 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <style>
+                 {`
+                   @keyframes spark {
+                     0%, 100% { opacity: 0; }
+                     10%, 30% { opacity: 1; }
+                     20% { opacity: 0.5; }
+                   }
+                 `}
+               </style>
+               {/* Fixed Brush Assembly */}
+               <rect x="20" y="50" width="30" height="20" rx="2" className="fill-slate-700" />
+               <rect x="50" y="55" width="10" height="10" className="fill-slate-500" />
+               <text x="35" y="45" textAnchor="middle" className="fill-slate-400 text-[6px]">Stationary Brush</text>
+               
+               {/* Rotating Slip Ring */}
+               <g transform="translate(140, 60)">
+                  <ellipse cx="0" cy="0" rx="20" ry="50" className="fill-slate-800 stroke-slate-600 stroke-2" />
+                  
+                  {/* Conductive grooves */}
+                  <ellipse cx="-5" cy="0" rx="20" ry="50" className="fill-none stroke-yellow-500/50 stroke-2" />
+                  <ellipse cx="-10" cy="0" rx="20" ry="50" className="fill-none stroke-emerald-500/50 stroke-2" />
+                  
+                  <g>
+                     <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite" />
+                     {/* Rotating connection point */}
+                     <circle cx="-10" cy="50" r="3" className="fill-slate-400" />
+                     <text x="0" y="65" textAnchor="middle" className="fill-slate-300 text-[6px]">Rotating Gantry</text>
+                  </g>
+               </g>
+               
+               {/* Contact Point / Spark */}
+               <circle cx="115" cy="60" r="2" className="fill-yellow-400" style={{ animation: 'spark 0.5s infinite' }} />
+               <path d="M 60,60 L 115,60" className="stroke-yellow-400 stroke-1" strokeDasharray="2 2" />
+               <text x="85" y="55" textAnchor="middle" className="fill-yellow-400 text-[6px]">Continuous Power/Data</text>
+            </svg>
          </div>
 
          {/* Dual Energy CT */}
-         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-               <Target className="w-4 h-4 text-pink-400" /> Dual-Energy CT
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              Because linear attenuation depends on energy, scanning the patient at two different effective energies (e.g., 80 kVp and 140 kVp) provides vastly more information about tissue composition.
-            </p>
-            <p className="text-sm text-slate-300">
-              Modern scanners use <strong>Dual Source CT</strong> (two separate x-ray tubes offset by 90 degrees) to acquire this data simultaneously without motion artifacts.
-            </p>
+         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+            <div>
+               <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+                  <Target className="w-4 h-4 text-pink-400" /> Dual-Energy CT
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 Because linear attenuation depends on energy, scanning the patient at two different effective energies (e.g., 80 kVp and 140 kVp) provides vastly more information about tissue composition.
+               </p>
+               <p className="text-sm text-slate-300 mb-4">
+                 Modern scanners use <strong>Dual Source CT</strong> (two separate x-ray tubes offset by 90 degrees) to acquire this data simultaneously without motion artifacts.
+               </p>
+            </div>
+            
+            <svg viewBox="0 0 200 120" className="w-full h-28 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <g transform="translate(100, 60)">
+                  {/* Patient */}
+                  <circle cx="0" cy="0" r="15" className="fill-purple-900/40 stroke-purple-700 stroke-1" />
+                  
+                  {/* Rotating Dual Source System */}
+                  <g>
+                     <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
+                     
+                     {/* Tube A (Low Energy - Red) */}
+                     <circle cx="0" cy="-40" r="4" className="fill-red-400" />
+                     <path d="M 0,-40 L -25,35 L 25,35 Z" className="fill-red-400/20 stroke-red-400 stroke-1 stroke-dashed" />
+                     <path d="M -30,40 Q 0,45 30,40" className="fill-none stroke-red-400 stroke-2" />
+                     <text x="0" y="-48" textAnchor="middle" className="fill-red-400 text-[6px] font-bold">80 kVp</text>
+                     
+                     {/* Tube B (High Energy - Blue) Offset 90 deg */}
+                     <circle cx="40" cy="0" r="4" className="fill-blue-400" />
+                     <path d="M 40,0 L -35,-25 L -35,25 Z" className="fill-blue-400/20 stroke-blue-400 stroke-1 stroke-dashed" />
+                     <path d="M -40,-30 Q -45,0 -40,30" className="fill-none stroke-blue-400 stroke-2" />
+                     <text x="50" y="0" textAnchor="middle" className="fill-blue-400 text-[6px] font-bold" transform="rotate(90 50 0)">140 kVp</text>
+                  </g>
+               </g>
+            </svg>
          </div>
       </div>
     </section>

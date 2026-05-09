@@ -15,16 +15,83 @@ export default function Section4_Noise() {
 
       <div className="grid lg:grid-cols-2 gap-8">
          {/* Noise and SNR */}
-         <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl relative overflow-hidden">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
-               <Activity className="w-5 h-5 text-red-400" /> Noise and SNR
-            </h3>
-            <p className="text-sm text-slate-300 mb-4 leading-relaxed">
-              Assuming a monoenergetic beam, the number of detected photons <Latex formula="N_{ij}" /> follows a Poisson distribution. The variance of the reconstructed image depends on the number of projections <Latex formula="M" />, the photons per detector <Latex formula="N" />, and the detector spacing <Latex formula="T" />.
-            </p>
-            <div className="bg-slate-950 border border-slate-800 p-3 rounded text-center mb-4">
-               <Latex formula="\sigma_\mu^2 \approx \frac{2\pi^2}{3} \rho_0^3 \frac{1}{M} \frac{1}{N/T}" displayMode />
+         <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl relative overflow-hidden flex flex-col justify-between">
+            <div>
+               <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
+                  <Activity className="w-5 h-5 text-red-400" /> Noise and SNR
+               </h3>
+               <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                 Assuming a monoenergetic beam, the number of detected photons <Latex formula="N_{ij}" /> follows a Poisson distribution. The variance of the reconstructed image depends on the number of projections <Latex formula="M" />, the photons per detector <Latex formula="N" />, and the detector spacing <Latex formula="T" />.
+               </p>
+               <div className="bg-slate-950 border border-slate-800 p-3 rounded text-center mb-4">
+                  <Latex formula="\sigma_\mu^2 \approx \frac{2\pi^2}{3} \rho_0^3 \frac{1}{M} \frac{1}{N/T}" displayMode />
+               </div>
             </div>
+            
+            <svg viewBox="0 0 250 150" className="w-full h-32 mb-4 bg-slate-950/50 rounded-lg p-2 mt-auto">
+               <style>
+                 {`
+                   @keyframes heavyFlicker {
+                     0%, 100% { opacity: 0.3; }
+                     50% { opacity: 0.9; }
+                   }
+                   @keyframes lightFlicker {
+                     0%, 100% { opacity: 0.7; }
+                     50% { opacity: 0.9; }
+                   }
+                 `}
+               </style>
+               {/* Left: Narrow Detector (High Res, High Noise) */}
+               <g transform="translate(30, 10)">
+                  <text x="30" y="0" textAnchor="middle" className="fill-blue-400 text-[8px] font-bold">Narrow Detectors</text>
+                  
+                  {/* Object Profile */}
+                  <path d="M 0,20 L 20,20 L 20,10 L 40,10 L 40,20 L 60,20" className="fill-none stroke-purple-400 stroke-1 stroke-dashed" />
+                  
+                  {/* Rays */}
+                  <path d="M 10,20 L 10,50 M 30,10 L 30,50 M 50,20 L 50,50" className="stroke-yellow-400/30 stroke-1" />
+                  
+                  {/* Narrow Detectors */}
+                  <rect x="0" y="50" width="12" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <rect x="12" y="50" width="12" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <rect x="24" y="50" width="12" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <rect x="36" y="50" width="12" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <rect x="48" y="50" width="12" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <text x="65" y="55" className="fill-slate-400 text-[5px]">Low N</text>
+                  
+                  {/* Output Signal (Noisy but sharp edges) */}
+                  <path d="M 0,80 L 12,80 L 12,65 L 24,65 L 24,60 L 36,60 L 36,80 L 48,80 L 48,85 L 60,85" className="fill-none stroke-red-400 stroke-1" style={{ animation: 'heavyFlicker 0.2s infinite' }} />
+                  
+                  <text x="30" y="100" textAnchor="middle" className="fill-emerald-400 text-[6px]">High Spatial Resolution</text>
+                  <text x="30" y="110" textAnchor="middle" className="fill-red-400 text-[6px]">High Noise (Low SNR)</text>
+               </g>
+
+               {/* Divider */}
+               <line x1="125" y1="10" x2="125" y2="130" className="stroke-slate-700 stroke-1 stroke-dashed" />
+
+               {/* Right: Wide Detector (Low Res, Low Noise) */}
+               <g transform="translate(150, 10)">
+                  <text x="30" y="0" textAnchor="middle" className="fill-blue-400 text-[8px] font-bold">Wide Detectors</text>
+                  
+                  {/* Object Profile */}
+                  <path d="M 0,20 L 20,20 L 20,10 L 40,10 L 40,20 L 60,20" className="fill-none stroke-purple-400 stroke-1 stroke-dashed" />
+                  
+                  {/* Rays */}
+                  <path d="M 10,20 L 10,50 M 30,10 L 30,50 M 50,20 L 50,50" className="stroke-yellow-400/30 stroke-1" />
+                  
+                  {/* Wide Detectors */}
+                  <rect x="0" y="50" width="30" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <rect x="30" y="50" width="30" height="6" className="fill-slate-600 stroke-slate-400 stroke-[0.5]" />
+                  <text x="65" y="55" className="fill-slate-400 text-[5px]">High N</text>
+                  
+                  {/* Output Signal (Smooth but blurred edges) */}
+                  <path d="M 0,75 L 30,75 L 30,68 L 60,68" className="fill-none stroke-emerald-400 stroke-[1.5]" style={{ animation: 'lightFlicker 0.5s infinite' }} />
+                  
+                  <text x="30" y="100" textAnchor="middle" className="fill-red-400 text-[6px]">Low Spatial Resolution (Blurred)</text>
+                  <text x="30" y="110" textAnchor="middle" className="fill-emerald-400 text-[6px]">Low Noise (High SNR)</text>
+               </g>
+            </svg>
+
             <p className="text-xs text-slate-400">
                To improve SNR, we must increase the dose (photon count <Latex formula="N" />) or use wider detectors (sacrificing spatial resolution). Interestingly, in fan-beam systems, increasing the number of detectors actually <em>lowers</em> SNR because the ramp filter couples noise across adjacent detectors.
             </p>

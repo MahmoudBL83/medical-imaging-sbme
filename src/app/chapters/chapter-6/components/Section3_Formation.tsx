@@ -141,12 +141,58 @@ export default function Section3_Formation() {
               <text x="160" y="52" className="fill-slate-400 text-[8px]">at angle θ</text>
            </svg>
            
-           <div className="bg-slate-900 border border-slate-700 p-5 rounded-xl border-l-2 border-l-teal-500">
-              <h4 className="text-teal-400 font-bold text-sm mb-2">Projection-Slice Theorem</h4>
-              <p className="text-xs text-slate-300 mb-2">
-                The 1-D Fourier transform of a projection at angle <Latex formula="\theta" /> is exactly equal to a slice of the 2-D Fourier transform of the object taken at the exact same angle <Latex formula="\theta" />.
-              </p>
-              <Latex formula="G(\rho, \theta) = F(\rho \cos \theta, \rho \sin \theta)" displayMode />
+           <div className="bg-slate-900 border border-slate-700 p-5 rounded-xl border-l-2 border-l-teal-500 flex flex-col justify-between">
+              <div>
+                 <h4 className="text-teal-400 font-bold text-sm mb-2">Projection-Slice Theorem</h4>
+                 <p className="text-xs text-slate-300 mb-4">
+                   The 1-D Fourier transform of a projection at angle <Latex formula="\theta" /> is exactly equal to a slice of the 2-D Fourier transform of the object taken at the exact same angle <Latex formula="\theta" />.
+                 </p>
+                 <div className="mb-4">
+                    <Latex formula="G(\rho, \theta) = F(\rho \cos \theta, \rho \sin \theta)" displayMode />
+                 </div>
+              </div>
+              
+              <svg viewBox="0 0 250 120" className="w-full h-28 bg-slate-950/50 rounded-lg p-2 mt-auto">
+                 {/* 1D Projection Domain */}
+                 <g transform="translate(50, 60)">
+                    <text x="0" y="-45" textAnchor="middle" className="fill-blue-400 text-[8px] font-bold">1D Space</text>
+                    <line x1="-30" y1="0" x2="30" y2="0" className="stroke-slate-500 stroke-1" />
+                    <path d="M -20,0 Q -10,-30 0,0 T 20,0" className="fill-blue-400/20 stroke-blue-400 stroke-1" />
+                    <text x="0" y="20" textAnchor="middle" className="fill-blue-300 text-[6px]">g(ℓ, θ)</text>
+                 </g>
+                 
+                 {/* Arrow 1D FT */}
+                 <g transform="translate(90, 60)">
+                    <path d="M -10,-10 C 0,-30 20,-30 30,-10" className="fill-none stroke-yellow-400 stroke-1 stroke-dashed">
+                       <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite" />
+                    </path>
+                    <polygon points="30,-10 28,-14 24,-10" className="fill-yellow-400 transform rotate(45 30 -10)" />
+                    <text x="10" y="-25" textAnchor="middle" className="fill-yellow-400 text-[6px] font-bold">1D FFT</text>
+                 </g>
+                 
+                 {/* 2D Frequency Domain */}
+                 <g transform="translate(180, 60)">
+                    <text x="0" y="-45" textAnchor="middle" className="fill-teal-400 text-[8px] font-bold">2D Fourier Space</text>
+                    {/* Axes (kx, ky) */}
+                    <line x1="-30" y1="0" x2="30" y2="0" className="stroke-slate-600 stroke-1" />
+                    <line x1="0" y1="-30" x2="0" y2="30" className="stroke-slate-600 stroke-1" />
+                    
+                    {/* F(kx, ky) Blob */}
+                    <circle cx="0" cy="0" r="25" className="fill-teal-900/40" />
+                    <circle cx="0" cy="0" r="10" className="fill-teal-500/40 blur-[2px]" />
+                    
+                    {/* Radial Slice at angle theta */}
+                    <g>
+                       <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="180 0 0" dur="8s" repeatCount="indefinite" />
+                       <line x1="-35" y1="0" x2="35" y2="0" className="stroke-yellow-400 stroke-[1.5]" />
+                       
+                       {/* Overlay 1D FFT result on this slice */}
+                       <path d="M -20,0 Q -10,-15 0,0 T 20,0" className="fill-none stroke-white stroke-[0.5]" />
+                    </g>
+                    
+                    <text x="0" y="45" textAnchor="middle" className="fill-teal-300 text-[6px]">F(k_x, k_y)</text>
+                 </g>
+              </svg>
            </div>
         </div>
 
