@@ -139,11 +139,37 @@ export default function Section2_Instrumentation() {
                      The Anger logic circuit calculates the exact (x, y) coordinates of the event by taking a weighted centroid of the signals from all the PMTs. The PMT closest to the flash produces the strongest signal.
                   </p>
                </div>
-               <div className="bg-slate-950 p-4 border border-slate-800 rounded">
-                  <h4 className="text-blue-400 font-bold text-sm mb-2">Energy Selection (Z)</h4>
-                  <p className="text-xs text-slate-400">
-                     The signals from all PMTs are summed to produce a total energy signal, <Latex formula="Z" />. A Pulse Height Analyzer (PHA) accepts only events whose <Latex formula="Z" /> signal falls within a narrow photopeak window (e.g., 140 keV ± 10% for Tc-99m) to reject scatter.
-                  </p>
+               <div className="bg-slate-950 p-4 border border-slate-800 rounded flex flex-col justify-between">
+                  <div>
+                     <h4 className="text-blue-400 font-bold text-sm mb-2">Energy Selection (Z)</h4>
+                     <p className="text-xs text-slate-400 mb-4">
+                        The signals from all PMTs are summed to produce a total energy signal, <Latex formula="Z" />. A Pulse Height Analyzer (PHA) accepts only events whose <Latex formula="Z" /> signal falls within a narrow photopeak window (e.g., 140 keV ± 10% for Tc-99m) to reject scatter.
+                     </p>
+                  </div>
+                  
+                  <svg viewBox="0 0 200 120" className="w-full h-24 bg-slate-900 border border-slate-700 rounded p-2 mt-auto">
+                     {/* Axes */}
+                     <line x1="20" y1="100" x2="180" y2="100" className="stroke-slate-500 stroke-1" />
+                     <line x1="20" y1="10" x2="20" y2="100" className="stroke-slate-500 stroke-1" />
+                     <text x="100" y="115" textAnchor="middle" className="fill-slate-400 text-[6px]">Energy (keV)</text>
+                     <text x="10" y="50" textAnchor="middle" transform="rotate(-90 10 50)" className="fill-slate-400 text-[6px]">Counts</text>
+
+                     {/* Spectrum Curve */}
+                     {/* Compton tail, Compton edge, valley, Photopeak */}
+                     <path d="M 20,95 Q 40,80 60,85 T 100,95 Q 120,90 140,20 Q 150,90 160,98 T 180,98" className="fill-none stroke-blue-500 stroke-[1.5]" />
+                     
+                     <text x="60" y="70" textAnchor="middle" className="fill-slate-400 text-[6px]">Compton Scatter</text>
+                     <text x="140" y="10" textAnchor="middle" className="fill-blue-400 text-[6px] font-bold">140 keV Peak</text>
+
+                     {/* Acceptance Window (PHA) */}
+                     <rect x="130" y="20" width="20" height="80" className="fill-emerald-500/20 stroke-emerald-400 stroke-1 stroke-dashed" />
+                     <text x="140" y="50" textAnchor="middle" className="fill-emerald-400 text-[6px] font-bold">Accept</text>
+                     
+                     {/* Reject Regions */}
+                     <path d="M 130,50 L 115,50" className="stroke-red-400 stroke-1" />
+                     <polygon points="115,50 120,48 120,52" className="fill-red-400" />
+                     <text x="105" y="52" textAnchor="middle" className="fill-red-400 text-[6px]">Reject</text>
+                  </svg>
                </div>
             </div>
          </div>

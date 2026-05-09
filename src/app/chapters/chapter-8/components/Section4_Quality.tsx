@@ -76,18 +76,100 @@ export default function Section4_Quality() {
             </p>
          </div>
 
-         {/* Sensitivity and Noise */}
-         <div className="claude-surface p-6 border-l-4 border-l-yellow-500">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-               <AlertTriangle className="w-5 h-5 text-yellow-400" /> Noise and Sensitivity
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              Nuclear imaging is extremely <strong>photon-starved</strong>. With so few photons reaching the detector, the image is dominated by Poisson quantum noise.
-            </p>
-            <p className="text-sm text-slate-300 mb-4">
-              To decrease noise, we must increase the number of recorded counts (<Latex formula="N" />). SNR is proportional to <Latex formula="\sqrt{N}" />.
-            </p>
-            <p className="text-xs text-slate-400">
+         <div className="claude-surface p-6 border-l-4 border-l-yellow-500 flex flex-col justify-between">
+            <div>
+               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-yellow-400" /> Noise and Sensitivity
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 Nuclear imaging is extremely <strong>photon-starved</strong>. With so few photons reaching the detector, the image is dominated by Poisson quantum noise.
+               </p>
+               <p className="text-sm text-slate-300 mb-4">
+                 To decrease noise, we must increase the number of recorded counts (<Latex formula="N" />). SNR is proportional to <Latex formula="\sqrt{N}" />.
+               </p>
+            </div>
+            
+            <svg viewBox="0 0 250 150" className="w-full h-36 bg-slate-900 border border-slate-700 rounded p-2 mb-4">
+               <style>
+                 {`
+                   @keyframes photonFlicker {
+                     0%, 100% { opacity: 0; }
+                     50% { opacity: 1; }
+                   }
+                 `}
+               </style>
+               {/* Left: Wide Holes (High Sensitivity, Poor Resolution) */}
+               <g transform="translate(30, 10)">
+                  <text x="30" y="0" textAnchor="middle" className="fill-yellow-400 text-[8px] font-bold">Wide Holes (High Sensitivity)</text>
+                  
+                  {/* Source */}
+                  <circle cx="30" cy="110" r="4" className="fill-red-400" />
+                  
+                  {/* Many Photons passing through */}
+                  <g className="stroke-yellow-400 stroke-[1.5] stroke-dashed" strokeDasharray="4 2">
+                     <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.5s" repeatCount="indefinite" />
+                     <line x1="30" y1="105" x2="30" y2="40" />
+                     <line x1="30" y1="105" x2="15" y2="40" />
+                     <line x1="30" y1="105" x2="45" y2="40" />
+                     <line x1="30" y1="105" x2="5" y2="40" />
+                     <line x1="30" y1="105" x2="55" y2="40" />
+                  </g>
+                  
+                  {/* Collimator with wide holes */}
+                  <rect x="0" y="40" width="60" height="15" className="fill-slate-800" />
+                  <g className="stroke-slate-950 stroke-[4]">
+                     <line x1="5" y1="40" x2="5" y2="55" />
+                     <line x1="17.5" y1="40" x2="17.5" y2="55" />
+                     <line x1="30" y1="40" x2="30" y2="55" />
+                     <line x1="42.5" y1="40" x2="42.5" y2="55" />
+                     <line x1="55" y1="40" x2="55" y2="55" />
+                  </g>
+                  
+                  {/* Detector Hit Profile (Wide and Bright) */}
+                  <rect x="0" y="25" width="60" height="10" className="fill-yellow-400/80" />
+                  <text x="30" y="32" textAnchor="middle" className="fill-slate-900 text-[5px] font-bold">Blurry / Low Noise</text>
+               </g>
+
+               {/* Divider */}
+               <line x1="125" y1="10" x2="125" y2="140" className="stroke-slate-700 stroke-1 stroke-dashed" />
+
+               {/* Right: Narrow Holes (Low Sensitivity, High Resolution) */}
+               <g transform="translate(160, 10)">
+                  <text x="30" y="0" textAnchor="middle" className="fill-blue-400 text-[8px] font-bold">Narrow Holes (High Resolution)</text>
+                  
+                  {/* Source */}
+                  <circle cx="30" cy="110" r="4" className="fill-red-400" />
+                  
+                  {/* Few Photons passing through */}
+                  <g className="stroke-blue-400 stroke-1 stroke-dashed" strokeDasharray="4 2">
+                     <animate attributeName="stroke-dashoffset" from="6" to="0" dur="0.5s" repeatCount="indefinite" />
+                     <line x1="30" y1="105" x2="30" y2="40" />
+                  </g>
+                  {/* Blocked Photons */}
+                  <g className="stroke-slate-500 stroke-1 stroke-dashed">
+                     <line x1="30" y1="105" x2="15" y2="55" />
+                     <line x1="30" y1="105" x2="45" y2="55" />
+                     <line x1="30" y1="105" x2="5" y2="55" />
+                     <line x1="30" y1="105" x2="55" y2="55" />
+                  </g>
+                  
+                  {/* Collimator with narrow holes */}
+                  <rect x="0" y="40" width="60" height="15" className="fill-slate-800" />
+                  <g className="stroke-slate-950 stroke-[6]">
+                     <line x1="5" y1="40" x2="5" y2="55" />
+                     <line x1="17.5" y1="40" x2="17.5" y2="55" />
+                     <line x1="30" y1="40" x2="30" y2="55" />
+                     <line x1="42.5" y1="40" x2="42.5" y2="55" />
+                     <line x1="55" y1="40" x2="55" y2="55" />
+                  </g>
+                  
+                  {/* Detector Hit Profile (Narrow but Dim/Noisy) */}
+                  <rect x="25" y="25" width="10" height="10" className="fill-blue-400/40" style={{ animation: 'photonFlicker 0.2s infinite' }} />
+                  <text x="30" y="20" textAnchor="middle" className="fill-blue-300 text-[5px]">Sharp / High Noise</text>
+               </g>
+            </svg>
+            
+            <p className="text-xs text-slate-400 mt-auto">
               If we want to double the resolution by making collimator holes smaller, sensitivity plummets, requiring unacceptably long scan times or dangerous patient doses to recover the SNR.
             </p>
          </div>
