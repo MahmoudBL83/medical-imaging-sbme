@@ -45,29 +45,44 @@ export default function Section3_Formation() {
               <h4 className="text-purple-400 font-bold text-sm mb-4">Anode Heel Effect</h4>
               
               <svg viewBox="0 0 200 120" className="w-full h-32 mb-4 bg-slate-950/50 rounded-lg p-2">
+                 <style>
+                   {`
+                     @keyframes strongPulse {
+                       0%, 100% { stroke-width: 2; opacity: 1; }
+                       50% { stroke-width: 3; opacity: 0.8; }
+                     }
+                     @keyframes weakPulse {
+                       0%, 100% { opacity: 0.4; }
+                       50% { opacity: 0.8; }
+                     }
+                     @keyframes eBeamPulse {
+                       to { stroke-dashoffset: -10; }
+                     }
+                   `}
+                 </style>
                  {/* Anode */}
                  <polygon points="120,20 180,20 180,50 100,50" className="fill-slate-600" />
                  <polygon points="100,50 180,50 150,80" className="fill-purple-900/50" />
                  <line x1="100" y1="50" x2="150" y2="80" className="stroke-slate-500 stroke-2" />
                  
                  {/* Incident Electrons */}
-                 <path d="M 120,5 L 120,35" className="stroke-blue-400 stroke-2" />
+                 <path d="M 120,5 L 120,35" className="stroke-blue-400 stroke-2" strokeDasharray="3 3" style={{ animation: 'eBeamPulse 0.4s linear infinite' }} />
                  <polygon points="120,40 117,33 123,33" className="fill-blue-400" />
                  
-                 <path d="M 135,5 L 135,45" className="stroke-blue-400 stroke-2" />
+                 <path d="M 135,5 L 135,45" className="stroke-blue-400 stroke-2" strokeDasharray="3 3" style={{ animation: 'eBeamPulse 0.4s linear infinite 0.2s' }} />
                  <polygon points="135,50 132,43 138,43" className="fill-blue-400" />
                  
                  <text x="145" y="15" className="fill-blue-400 text-[8px]">e- beam</text>
                  
                  {/* X-ray photons emitted downwards */}
                  {/* Cathode side (left) - less attenuation, higher intensity */}
-                 <path d="M 120,40 L 90,110" className="stroke-yellow-400 stroke-2" />
-                 <path d="M 120,40 L 70,100" className="stroke-yellow-400 stroke-2" />
+                 <path d="M 120,40 L 90,110" className="stroke-yellow-400" style={{ animation: 'strongPulse 1s infinite' }} />
+                 <path d="M 120,40 L 70,100" className="stroke-yellow-400" style={{ animation: 'strongPulse 1s infinite 0.2s' }} />
                  <text x="60" y="115" className="fill-yellow-400 text-[8px] font-bold">Stronger (Cathode side)</text>
                  
                  {/* Anode side (right) - more attenuation, lower intensity */}
-                 <path d="M 135,50 L 150,100" className="stroke-yellow-500 stroke-1 stroke-dashed" />
-                 <path d="M 135,50 L 170,90" className="stroke-yellow-500 stroke-1 stroke-dashed" />
+                 <path d="M 135,50 L 150,100" className="stroke-yellow-500 stroke-1 stroke-dashed" style={{ animation: 'weakPulse 1.5s infinite' }} />
+                 <path d="M 135,50 L 170,90" className="stroke-yellow-500 stroke-1 stroke-dashed" style={{ animation: 'weakPulse 1.5s infinite 0.3s' }} />
                  <text x="150" y="115" className="fill-yellow-500 text-[8px]">Weaker (Anode side)</text>
                  
                  {/* Attenuation material path */}
@@ -81,7 +96,40 @@ export default function Section3_Formation() {
            </div>
 
            <div className="bg-slate-900 border border-slate-700 p-5 rounded-xl border-l-2 border-l-emerald-500">
-              <h4 className="text-emerald-400 font-bold text-sm mb-2">Depth-Dependent Magnification</h4>
+              <h4 className="text-emerald-400 font-bold text-sm mb-4">Depth-Dependent Magnification</h4>
+              
+              <svg viewBox="0 0 200 120" className="w-full h-32 mb-4 bg-slate-950/50 rounded-lg p-2">
+                 <style>
+                   {`
+                     @keyframes rayPulse {
+                       from { stroke-dashoffset: 40; }
+                       to { stroke-dashoffset: 0; }
+                     }
+                   `}
+                 </style>
+                 <circle cx="100" cy="10" r="3" className="fill-emerald-400 animate-pulse" />
+                 
+                 {/* Rays */}
+                 <path d="M 100,10 L 40,110" className="stroke-emerald-400/30 stroke-1" strokeDasharray="4 4" style={{ animation: 'rayPulse 2s linear infinite' }} />
+                 <path d="M 100,10 L 160,110" className="stroke-emerald-400/30 stroke-1" strokeDasharray="4 4" style={{ animation: 'rayPulse 2s linear infinite' }} />
+                 
+                 {/* Closer Object (Magnified more) */}
+                 <rect x="80" y="40" width="40" height="10" rx="2" className="fill-purple-500/50 stroke-purple-400 stroke-1" />
+                 <text x="100" y="47" textAnchor="middle" className="fill-white text-[6px]">z_1 (Closer)</text>
+                 
+                 {/* Projected shadow for closer object */}
+                 <line x1="70" y1="110" x2="130" y2="110" className="stroke-purple-400 stroke-4" />
+                 
+                 {/* Further Object (Magnified less) */}
+                 <rect x="80" y="70" width="40" height="10" rx="2" className="fill-blue-500/50 stroke-blue-400 stroke-1" />
+                 <text x="100" y="77" textAnchor="middle" className="fill-white text-[6px]">z_2 (Further)</text>
+                 
+                 {/* Projected shadow for further object */}
+                 <line x1="78" y1="112" x2="122" y2="112" className="stroke-blue-400 stroke-2" />
+                 
+                 <text x="30" y="115" className="fill-slate-400 text-[8px]">Detector (d)</text>
+              </svg>
+
               <p className="text-xs text-slate-300 mb-2">
                 Because the beam diverges, objects closer to the source cast larger shadows. An object at depth <Latex formula="z" /> (where <Latex formula="d" /> is source-to-detector distance) has magnification:
               </p>
@@ -111,7 +159,15 @@ export default function Section3_Formation() {
                  <Contrast className="w-4 h-4 text-slate-400" /> Film Characteristics (H&D Curve)
               </h4>
               
-              <svg viewBox="0 0 200 140" className="w-full h-40 mb-4 bg-slate-950/50 rounded-lg p-3">
+              <svg viewBox="0 0 200 140" className="w-full h-40 mb-4 bg-slate-950/50 rounded-lg p-3 group">
+                 <style>
+                   {`
+                     @keyframes drawCurve {
+                       from { stroke-dasharray: 200; stroke-dashoffset: 200; }
+                       to { stroke-dasharray: 200; stroke-dashoffset: 0; }
+                     }
+                   `}
+                 </style>
                  {/* Axes */}
                  <line x1="30" y1="10" x2="30" y2="110" className="stroke-slate-500 stroke-1" />
                  <line x1="30" y1="110" x2="180" y2="110" className="stroke-slate-500 stroke-1" />
@@ -120,22 +176,25 @@ export default function Section3_Formation() {
                  <line x1="25" y1="95" x2="180" y2="95" className="stroke-slate-700 stroke-1 stroke-dashed" />
                  <text x="5" y="98" className="fill-slate-500 text-[6px]">Base+Fog</text>
                  
-                 {/* H&D Curve (S-shape) */}
-                 <path d="M 40 95 Q 80 95, 105 55 T 170 15" className="fill-none stroke-blue-400 stroke-2" />
+                 {/* H&D Curve (S-shape) animated on load/hover */}
+                 <path d="M 40 95 Q 80 95, 105 55 T 170 15" className="fill-none stroke-blue-400 stroke-2 group-hover:stroke-indigo-400 transition-colors" style={{ animation: 'drawCurve 2s ease-out forwards' }} />
                  
-                 {/* Labels for regions */}
-                 <text x="55" y="105" className="fill-slate-400 text-[8px]">Toe</text>
-                 <text x="145" y="25" className="fill-slate-400 text-[8px]">Shoulder</text>
+                 {/* Regions highlighting on hover */}
+                 <circle cx="55" cy="93" r="10" className="fill-pink-500/0 group-hover:fill-pink-500/20 transition-all duration-300" />
+                 <text x="55" y="105" className="fill-slate-400 group-hover:fill-pink-400 transition-colors text-[8px]">Toe</text>
+                 
+                 <circle cx="145" cy="25" r="15" className="fill-emerald-500/0 group-hover:fill-emerald-500/20 transition-all duration-300" />
+                 <text x="145" y="25" className="fill-slate-400 group-hover:fill-emerald-400 transition-colors text-[8px]">Shoulder</text>
                  
                  {/* Gamma slope line */}
-                 <line x1="80" y1="90" x2="115" y2="35" className="stroke-pink-400 stroke-1 stroke-dashed" />
+                 <line x1="80" y1="90" x2="115" y2="35" className="stroke-pink-400 stroke-1 stroke-dashed opacity-50 group-hover:opacity-100 transition-opacity" />
                  <text x="70" y="55" className="fill-pink-400 text-[8px] font-bold">Gamma (γ)</text>
                  
                  {/* Latitude indicator */}
-                 <line x1="85" y1="115" x2="125" y2="115" className="stroke-emerald-400 stroke-1" />
-                 <line x1="85" y1="112" x2="85" y2="118" className="stroke-emerald-400 stroke-1" />
-                 <line x1="125" y1="112" x2="125" y2="118" className="stroke-emerald-400 stroke-1" />
-                 <text x="105" y="125" textAnchor="middle" className="fill-emerald-400 text-[6px]">Latitude</text>
+                 <line x1="85" y1="115" x2="125" y2="115" className="stroke-emerald-400 stroke-1 opacity-50 group-hover:opacity-100 transition-opacity" />
+                 <line x1="85" y1="112" x2="85" y2="118" className="stroke-emerald-400 stroke-1 opacity-50 group-hover:opacity-100 transition-opacity" />
+                 <line x1="125" y1="112" x2="125" y2="118" className="stroke-emerald-400 stroke-1 opacity-50 group-hover:opacity-100 transition-opacity" />
+                 <text x="105" y="125" textAnchor="middle" className="fill-emerald-400 text-[6px] opacity-50 group-hover:opacity-100 transition-opacity">Latitude</text>
 
                  {/* Axis Labels */}
                  <text x="105" y="135" textAnchor="middle" className="fill-slate-400 text-[8px]">log10(Exposure)</text>

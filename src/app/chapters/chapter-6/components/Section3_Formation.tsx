@@ -24,9 +24,63 @@ export default function Section3_Formation() {
          <div className="bg-slate-950 p-4 rounded text-center border border-slate-800 mb-4">
            <Latex formula="g_d = - \ln \left( \frac{I_d}{I_0} \right) = \int_{0}^{d} \mu(s; \bar{E}) ds" displayMode />
          </div>
-         <p className="text-xs text-slate-400">
-           These measurements are normalized into <strong>Hounsfield Units (HU)</strong> via: <Latex formula="h = 1000 \times \frac{\mu - \mu_{water}}{\mu_{water}}" />. Air is -1000 HU, Water is 0 HU, and Bone is ~+1000 HU.
+      </div>
+
+      {/* Hounsfield Scale */}
+      <div className="claude-panel p-8 bg-slate-900 border border-slate-700 rounded-xl mb-8 overflow-hidden relative">
+         <h3 className="text-white font-bold mb-4 flex items-center gap-2">
+            The Hounsfield Scale (HU)
+         </h3>
+         <p className="text-sm text-slate-300 mb-10 leading-relaxed">
+            These measurements are normalized to the attenuation of water. This creates a standardized, quantitative scale where Water is exactly 0 HU, and Air is -1000 HU.
          </p>
+         <div className="bg-slate-950 border border-slate-800 p-4 rounded-lg inline-block mb-12">
+            <Latex formula="h = 1000 \times \frac{\mu - \mu_{water}}{\mu_{water}}" />
+         </div>
+         
+         <div className="relative h-28 mx-8">
+            {/* The Gradient Bar */}
+            <div className="absolute top-8 left-0 right-0 h-6 rounded-full shadow-[0_0_15px_rgba(255,255,255,0.1)] border border-slate-600" 
+                 style={{ background: 'linear-gradient(to right, #000000, #333333, #777777, #bbbbbb, #ffffff)' }}>
+            </div>
+            
+            {/* Markers */}
+            <div className="absolute top-4 left-0 flex flex-col items-center transform -translate-x-1/2">
+               <div className="text-xs font-bold text-slate-300">-1000</div>
+               <div className="h-4 w-px bg-slate-500 my-1"></div>
+               <div className="text-xs font-bold text-slate-400 mt-6">Air</div>
+            </div>
+            
+            <div className="absolute top-4 left-[20%] flex flex-col items-center transform -translate-x-1/2">
+               <div className="text-xs font-bold text-slate-300">-100</div>
+               <div className="h-4 w-px bg-slate-500 my-1"></div>
+               <div className="text-xs text-slate-400 mt-6">Fat</div>
+            </div>
+
+            <div className="absolute top-4 left-[50%] flex flex-col items-center transform -translate-x-1/2 z-10">
+               <div className="text-sm font-bold text-blue-400">0</div>
+               <div className="h-6 w-0.5 bg-blue-400 my-1"></div>
+               <div className="text-sm font-bold text-blue-400 mt-4">Water</div>
+            </div>
+
+            <div className="absolute top-4 left-[65%] flex flex-col items-center transform -translate-x-1/2">
+               <div className="text-xs font-bold text-slate-300">+40</div>
+               <div className="h-4 w-px bg-slate-500 my-1"></div>
+               <div className="text-xs text-slate-400 mt-6">Soft Tissue</div>
+            </div>
+
+            <div className="absolute top-4 left-[85%] flex flex-col items-center transform -translate-x-1/2">
+               <div className="text-xs font-bold text-slate-300">+1000</div>
+               <div className="h-4 w-px bg-slate-500 my-1"></div>
+               <div className="text-xs font-bold text-slate-400 mt-6">Bone</div>
+            </div>
+
+            <div className="absolute top-4 left-full flex flex-col items-center transform -translate-x-1/2">
+               <div className="text-xs font-bold text-slate-300">&gt; +3000</div>
+               <div className="h-4 w-px bg-slate-500 my-1"></div>
+               <div className="text-xs text-slate-400 mt-6">Metal</div>
+            </div>
+         </div>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8">

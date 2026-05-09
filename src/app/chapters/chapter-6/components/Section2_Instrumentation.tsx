@@ -131,6 +131,64 @@ export default function Section2_Instrumentation() {
         </table>
       </div>
 
+      {/* Helical CT / Pitch */}
+      <div className="claude-panel p-6 bg-slate-900 border border-slate-700 rounded-xl mb-8">
+         <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
+            <Server className="w-5 h-5 text-emerald-400" /> 6th Gen: Helical (Spiral) CT & Pitch
+         </h3>
+         <div className="grid md:grid-cols-[1.5fr_1fr] gap-8 items-center">
+            <div>
+               <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                 Helical CT changed the game by continuously rotating the gantry while the patient table translates at a constant speed. This creates a spiral (helical) data acquisition path, allowing for extremely rapid 3D volume acquisition.
+               </p>
+               <div className="bg-slate-950 border border-slate-800 p-4 rounded-lg">
+                  <h4 className="text-emerald-400 font-bold mb-2">Pitch (<Latex formula="p" />)</h4>
+                  <p className="text-xs text-slate-400 mb-2">
+                    Pitch describes how tightly coiled the spiral is. It is the ratio of table travel per rotation to the x-ray beam width.
+                  </p>
+                  <div className="text-center text-slate-300 my-3">
+                    <Latex formula="\text{Pitch} = \frac{\Delta d}{W}" displayMode />
+                  </div>
+                  <ul className="text-xs text-slate-400 mt-2 space-y-1">
+                     <li><strong className="text-slate-300">p = 1</strong>: Contiguous spirals (perfect coverage)</li>
+                     <li><strong className="text-slate-300">p &lt; 1</strong>: Overlapping spirals (higher dose, better spatial resolution)</li>
+                     <li><strong className="text-slate-300">p &gt; 1</strong>: Gaps between spirals (faster scan, lower dose, potential artifacting)</li>
+                  </ul>
+               </div>
+            </div>
+
+            <svg viewBox="0 0 200 150" className="w-full h-40 bg-slate-950/50 rounded-lg p-2 border border-slate-700 shadow-inner">
+               {/* 3D Cylinder / Patient */}
+               <path d="M 50,40 L 150,40 A 20 40 0 0 1 150 120 L 50,120 A 20 40 0 0 1 50 40 Z" className="fill-slate-800/30 stroke-slate-500 stroke-1" />
+               <ellipse cx="50" cy="80" rx="20" ry="40" className="fill-slate-800/50 stroke-slate-500 stroke-1" />
+               <text x="100" y="83" textAnchor="middle" className="fill-slate-500 text-[8px] font-bold">Patient Translated</text>
+               
+               {/* Arrow indicating table movement */}
+               <path d="M 50,135 L 150,135" className="stroke-slate-400 stroke-1 stroke-dashed" />
+               <polygon points="150,135 145,132 145,138" className="fill-slate-400" />
+               <text x="100" y="145" textAnchor="middle" className="fill-slate-400 text-[6px]">Table Feed (Δd)</text>
+
+               {/* Helical Path */}
+               <g className="stroke-emerald-400 stroke-[1.5] fill-none">
+                 {/* Back spirals (dimmer) */}
+                 <path d="M 60,40 Q 70,40 75,80 T 90,120" className="stroke-emerald-400/30" />
+                 <path d="M 100,40 Q 110,40 115,80 T 130,120" className="stroke-emerald-400/30" />
+                 
+                 {/* Front spirals */}
+                 <path d="M 50,120 Q 40,120 45,80 T 60,40" />
+                 <path d="M 90,120 Q 80,120 85,80 T 100,40" />
+                 <path d="M 130,120 Q 120,120 125,80 T 140,40" />
+               </g>
+
+               {/* Moving Tube along path */}
+               <g>
+                 <animateMotion path="M 50,120 Q 40,120 45,80 T 60,40 Q 70,40 75,80 T 90,120 Q 80,120 85,80 T 100,40 Q 110,40 115,80 T 130,120 Q 120,120 125,80 T 140,40" dur="5s" repeatCount="indefinite" />
+                 <circle cx="0" cy="0" r="4" className="fill-yellow-400" />
+               </g>
+            </svg>
+         </div>
+      </div>
+
       <div className="grid lg:grid-cols-2 gap-8 mb-8">
          {/* Hardware Innovations */}
          <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">

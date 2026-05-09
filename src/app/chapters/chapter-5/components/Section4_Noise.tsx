@@ -58,6 +58,22 @@ export default function Section4_Noise() {
          </p>
          
          <svg viewBox="0 0 400 120" className="w-full max-w-2xl mx-auto h-40 mb-8 bg-slate-900 border border-slate-700 rounded-lg p-4 shadow-inner">
+            <style>
+              {`
+                @keyframes noiseFlicker {
+                  0% { opacity: 0.2; transform: translateY(0px); }
+                  25% { opacity: 0.4; transform: translateY(-2px); }
+                  50% { opacity: 0.3; transform: translateY(1px); }
+                  75% { opacity: 0.5; transform: translateY(-1px); }
+                  100% { opacity: 0.2; transform: translateY(0px); }
+                }
+                @keyframes signalPulse {
+                  0%, 100% { stroke-width: 2; }
+                  50% { stroke-width: 2.5; }
+                }
+              `}
+            </style>
+            
             {/* Ideal Signal (Left) */}
             <text x="100" y="20" textAnchor="middle" className="fill-white text-[12px] font-bold">Without Scatter</text>
             
@@ -66,13 +82,13 @@ export default function Section4_Noise() {
             <text x="10" y="50" transform="rotate(-90 10 50)" className="fill-slate-400 text-[8px]">Intensity</text>
             
             {/* Background intensity */}
-            <line x1="20" y1="80" x2="70" y2="80" className="stroke-emerald-400 stroke-2" />
-            <line x1="130" y1="80" x2="180" y2="80" className="stroke-emerald-400 stroke-2" />
+            <line x1="20" y1="80" x2="70" y2="80" className="stroke-emerald-400" style={{ animation: 'signalPulse 2s infinite' }} />
+            <line x1="130" y1="80" x2="180" y2="80" className="stroke-emerald-400" style={{ animation: 'signalPulse 2s infinite' }} />
             
             {/* Target pulse */}
-            <line x1="70" y1="80" x2="70" y2="40" className="stroke-emerald-400 stroke-2" />
-            <line x1="70" y1="40" x2="130" y2="40" className="stroke-emerald-400 stroke-2" />
-            <line x1="130" y1="40" x2="130" y2="80" className="stroke-emerald-400 stroke-2" />
+            <line x1="70" y1="80" x2="70" y2="40" className="stroke-emerald-400" style={{ animation: 'signalPulse 2s infinite' }} />
+            <line x1="70" y1="40" x2="130" y2="40" className="stroke-emerald-400" style={{ animation: 'signalPulse 2s infinite' }} />
+            <line x1="130" y1="40" x2="130" y2="80" className="stroke-emerald-400" style={{ animation: 'signalPulse 2s infinite' }} />
             
             <text x="100" y="65" textAnchor="middle" className="fill-emerald-400 text-[10px] font-bold">High Contrast</text>
             
@@ -87,8 +103,20 @@ export default function Section4_Noise() {
             {/* Axis */}
             <line x1="220" y1="90" x2="380" y2="90" className="stroke-slate-500 stroke-1" />
             
-            {/* Added scatter fog background */}
+            {/* Added scatter fog background (animated noise overlay) */}
             <rect x="220" y="60" width="160" height="30" className="fill-red-900/30" />
+            
+            {/* Simulated noise particles */}
+            <g style={{ animation: 'noiseFlicker 0.4s infinite alternate' }}>
+              <circle cx="230" cy="70" r="1" fill="#f87171" opacity="0.8" />
+              <circle cx="250" cy="85" r="1.5" fill="#f87171" opacity="0.6" />
+              <circle cx="280" cy="65" r="1" fill="#f87171" opacity="0.9" />
+              <circle cx="310" cy="80" r="1.2" fill="#f87171" opacity="0.5" />
+              <circle cx="350" cy="75" r="1" fill="#f87171" opacity="0.7" />
+              <circle cx="370" cy="65" r="1.5" fill="#f87171" opacity="0.8" />
+              <circle cx="340" cy="85" r="1" fill="#f87171" opacity="0.6" />
+              <circle cx="260" cy="75" r="1.2" fill="#f87171" opacity="0.7" />
+            </g>
             <text x="300" y="80" textAnchor="middle" className="fill-red-400 text-[8px]">Scatter Fog (+Is)</text>
             
             {/* Background intensity (shifted up) */}
