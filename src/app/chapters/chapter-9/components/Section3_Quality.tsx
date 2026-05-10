@@ -14,24 +14,71 @@ export default function Section3_Quality() {
       </header>
 
       <div className="grid lg:grid-cols-2 gap-8">
-         {/* PET Resolution Limits */}
-         <div className="claude-surface p-6 border-l-4 border-l-orange-500">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-               <Maximize2 className="w-5 h-5 text-orange-400" /> Fundamental PET Resolution Limits
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              Even with a perfect detector, PET spatial resolution is fundamentally limited by physics:
-            </p>
-            <ul className="space-y-3">
-               <li className="bg-slate-900 p-3 rounded border border-slate-800 text-sm text-slate-300">
-                  <strong className="text-orange-300 block mb-1">1. Positron Range</strong>
-                  Before annihilating, the positron travels a short, random distance from the nucleus (e.g., ~1mm for F-18, up to several mm for other isotopes). The scanner localizes the annihilation event, not the actual tracer molecule.
-               </li>
-               <li className="bg-slate-900 p-3 rounded border border-slate-800 text-sm text-slate-300">
-                  <strong className="text-orange-300 block mb-1">2. Non-Collinearity</strong>
-                  Because the positron and electron have small residual momentum when they annihilate, the two gamma photons are not emitted exactly 180° apart (usually off by ~0.25°). In a scanner with a large ring diameter, this small angular deviation causes significant positioning error.
-               </li>
-            </ul>
+         <div className="claude-surface p-6 border-l-4 border-l-orange-500 flex flex-col justify-between">
+            <div>
+               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <Maximize2 className="w-5 h-5 text-orange-400" /> Fundamental PET Resolution Limits
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 Even with a perfect detector, PET spatial resolution is fundamentally limited by physics:
+               </p>
+               
+               <svg viewBox="0 0 300 120" className="w-full h-32 mb-6 bg-slate-950/50 rounded-lg p-2 border border-slate-700 shadow-inner">
+                  {/* Part 1: Positron Range */}
+                  <g transform="translate(70, 60)">
+                     <text x="0" y="-45" textAnchor="middle" className="fill-orange-400 text-[8px] font-bold">1. Positron Range</text>
+                     <circle cx="-20" cy="0" r="4" className="fill-purple-500" />
+                     <text x="-35" y="15" className="fill-purple-400 text-[6px]">Nucleus</text>
+                     
+                     <path d="M -20,0 Q -10,-20 0,0 T 20,0" className="fill-none stroke-yellow-400 stroke-1 stroke-dasharray-[2,2]" />
+                     <circle cx="20" cy="0" r="3" className="fill-yellow-400" />
+                     <text x="15" y="15" className="fill-yellow-400 text-[6px]">Annihilation</text>
+                     
+                     <path d="M 20,0 L 20,-30" className="stroke-emerald-400 stroke-1 stroke-dashed" />
+                     <path d="M 20,0 L 20,30" className="stroke-emerald-400 stroke-1 stroke-dashed" />
+                     
+                     {/* Error bracket */}
+                     <path d="M -20,-20 L -20,-25 L 20,-25 L 20,-20" className="fill-none stroke-slate-500 stroke-[0.5]" />
+                     <text x="0" y="-30" textAnchor="middle" className="fill-slate-400 text-[6px]">Localization Error</text>
+                  </g>
+
+                  {/* Divider */}
+                  <line x1="150" y1="10" x2="150" y2="110" className="stroke-slate-700 stroke-1 stroke-dashed" />
+
+                  {/* Part 2: Non-Collinearity */}
+                  <g transform="translate(230, 60)">
+                     <text x="0" y="-45" textAnchor="middle" className="fill-orange-400 text-[8px] font-bold">2. Non-Collinearity</text>
+                     <circle cx="0" cy="0" r="3" className="fill-yellow-400" />
+                     
+                     {/* Ideal 180 degree line */}
+                     <line x1="-50" y1="0" x2="50" y2="0" className="stroke-slate-600 stroke-[0.5] stroke-dasharray-[2,2]" />
+                     <text x="-45" y="-5" className="fill-slate-500 text-[5px]">Ideal 180°</text>
+                     
+                     {/* Actual paths slightly off */}
+                     <path d="M 0,0 L -50,-10" className="stroke-emerald-400 stroke-1 stroke-dashed" />
+                     <path d="M 0,0 L 50,10" className="stroke-emerald-400 stroke-1 stroke-dashed" />
+                     
+                     {/* Angle arc */}
+                     <path d="M -20,0 A 20 20 0 0 1 -19.6,-3.9" className="fill-none stroke-orange-400 stroke-[0.5]" />
+                     <text x="-30" y="-12" className="fill-orange-400 text-[5px]">0.25°</text>
+                     
+                     {/* Detectors far away amplify error */}
+                     <rect x="-55" y="-15" width="5" height="30" className="fill-slate-800 stroke-slate-600 stroke-[0.5]" />
+                     <rect x="50" y="-15" width="5" height="30" className="fill-slate-800 stroke-slate-600 stroke-[0.5]" />
+                  </g>
+               </svg>
+               
+               <ul className="space-y-3">
+                  <li className="bg-slate-900 p-3 rounded border border-slate-800 text-sm text-slate-300">
+                     <strong className="text-orange-300 block mb-1">1. Positron Range</strong>
+                     Before annihilating, the positron travels a short, random distance from the nucleus (e.g., ~1mm for F-18, up to several mm for other isotopes). The scanner localizes the annihilation event, not the actual tracer molecule.
+                  </li>
+                  <li className="bg-slate-900 p-3 rounded border border-slate-800 text-sm text-slate-300">
+                     <strong className="text-orange-300 block mb-1">2. Non-Collinearity</strong>
+                     Because the positron and electron have small residual momentum when they annihilate, the two gamma photons are not emitted exactly 180° apart (usually off by ~0.25°). In a scanner with a large ring diameter, this small angular deviation causes significant positioning error.
+                  </li>
+               </ul>
+            </div>
          </div>
 
          {/* False Coincidences */}

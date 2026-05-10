@@ -14,14 +14,68 @@ export default function Section1_Instrumentation() {
 
       <div className="grid lg:grid-cols-2 gap-8">
          {/* SPECT */}
-         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-               <Rotate3D className="w-5 h-5 text-indigo-400" /> SPECT Instrumentation
-            </h3>
-            <p className="text-sm text-slate-300 mb-4">
-              SPECT systems are essentially 1, 2, or 3 Anger cameras mounted on a rotating gantry. They physically rotate around the patient, stopping at discrete angles to acquire 2-D projections.
-            </p>
-            <p className="text-xs text-slate-400">
+         <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl flex flex-col justify-between">
+            <div>
+               <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+                  <Rotate3D className="w-5 h-5 text-indigo-400" /> SPECT Instrumentation
+               </h3>
+               <p className="text-sm text-slate-300 mb-4">
+                 SPECT systems are essentially 1, 2, or 3 Anger cameras mounted on a rotating gantry. They physically rotate around the patient, stopping at discrete angles to acquire 2-D projections.
+               </p>
+            </div>
+            
+            <svg viewBox="0 0 200 200" className="w-full max-w-[200px] mx-auto h-40 mb-4 bg-slate-950/50 rounded-lg p-2 shadow-inner">
+               {/* Fixed Patient */}
+               <ellipse cx="100" cy="100" rx="25" ry="20" className="fill-purple-900/30 stroke-purple-700 stroke-1" />
+               <circle cx="105" cy="95" r="3" className="fill-red-400" /> {/* Tumor */}
+               
+               {/* Emission rays */}
+               <g className="stroke-red-400 stroke-1 stroke-dashed" strokeDasharray="2 2">
+                 <animate attributeName="stroke-dashoffset" from="4" to="0" dur="0.5s" repeatCount="indefinite" />
+                 <line x1="105" y1="95" x2="105" y2="45" />
+                 <line x1="105" y1="95" x2="105" y2="155" />
+               </g>
+
+               {/* Rotating Gantry with Dual Detectors */}
+               <g>
+                  <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="10s" repeatCount="indefinite" />
+                  
+                  {/* Circular Gantry Track */}
+                  <circle cx="100" cy="100" r="65" className="fill-none stroke-slate-700 stroke-2 stroke-dashed" />
+                  
+                  {/* Detector 1 (Top) */}
+                  <g transform="translate(100, 35)">
+                     <rect x="-30" y="-10" width="60" height="20" className="fill-slate-800 stroke-indigo-400 stroke-1" />
+                     {/* Collimator lines */}
+                     <g className="stroke-slate-950 stroke-1">
+                       <line x1="-25" y1="10" x2="-25" y2="0" />
+                       <line x1="-15" y1="10" x2="-15" y2="0" />
+                       <line x1="-5" y1="10" x2="-5" y2="0" />
+                       <line x1="5" y1="10" x2="5" y2="0" />
+                       <line x1="15" y1="10" x2="15" y2="0" />
+                       <line x1="25" y1="10" x2="25" y2="0" />
+                     </g>
+                  </g>
+                  
+                  {/* Detector 2 (Bottom) */}
+                  <g transform="translate(100, 165)">
+                     <rect x="-30" y="-10" width="60" height="20" className="fill-slate-800 stroke-indigo-400 stroke-1" />
+                     {/* Collimator lines */}
+                     <g className="stroke-slate-950 stroke-1">
+                       <line x1="-25" y1="-10" x2="-25" y2="0" />
+                       <line x1="-15" y1="-10" x2="-15" y2="0" />
+                       <line x1="-5" y1="-10" x2="-5" y2="0" />
+                       <line x1="5" y1="-10" x2="5" y2="0" />
+                       <line x1="15" y1="-10" x2="15" y2="0" />
+                       <line x1="25" y1="-10" x2="25" y2="0" />
+                     </g>
+                  </g>
+               </g>
+               <text x="100" y="15" textAnchor="middle" className="fill-indigo-400 text-[8px] font-bold">Dual-Head SPECT</text>
+               <text x="100" y="195" textAnchor="middle" className="fill-slate-400 text-[6px]">Mechanical Rotation</text>
+            </svg>
+            
+            <p className="text-xs text-slate-400 mt-auto">
               Because they still rely on lead collimators (usually parallel-hole), SPECT suffers from the same brutal resolution/sensitivity trade-offs as planar scintigraphy. Only a tiny fraction of emitted photons are actually recorded.
             </p>
          </div>
